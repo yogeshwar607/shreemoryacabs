@@ -1,0 +1,216 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { routes, getRouteBySlug } from "@/data/routes";
+import { vehicles } from "@/data/vehicles";
+import { generateRouteSchema } from "@/lib/seo";
+import { MapPin, Clock, Route as RouteIcon, Check } from "lucide-react";
+
+export async function getStaticPaths() {
+  return routes.map((route) => ({
+    params: { slug: route.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const route = getRouteBySlug(slug);
+
+if (!route) {
+  return Astro.redirect("/404");
+}
+
+// Generate structured data
+const routeSchema = generateRouteSchema(route);
+---
+
+<MainLayout
+  title={`${route.name} Electric Cab - Book Online from ₹${route.pricing.kiaCarens} | GreenEVCabs`}
+  description={`Book electric cab for ${route.name}. ${route.distance} journey in ${route.duration}. Zero emissions, comfortable travel. Starting ₹${route.pricing.kiaCarens}. ${route.highlights.slice(0, 2).join('. ')}.`}
+  keywords={[
+    `${route.from} to ${route.to}`,
+    `${route.from} ${route.to} cab`,
+    `${route.from} ${route.to} electric cab`,
+    route.slug,
+    "electric cab booking",
+    "EV taxi intercity",
+  ]}
+>
+  <StructuredData data={routeSchema} />
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl">
+        <Breadcrumbs
+          items={[
+            { name: "Routes", url: "/routes" },
+            { name: route.name, url: `/routes/${route.slug}` },
+          ]}
+        />
+        {route.popular && (
+          <Badge variant="secondary" className="mb-4">
+            Popular Route
+          </Badge>
+        )}
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-4">
+          {route.name}
+        </h1>
+
+        <div class="flex flex-wrap gap-6 text-lg mb-6">
+          <div class="flex items-center gap-2">
+            <MapPin class="w-5 h-5 text-primary" />
+            <span class="font-medium">{route.from} → {route.to}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <RouteIcon class="w-5 h-5 text-primary" />
+            <span>{route.distance}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Clock class="w-5 h-5 text-primary" />
+            <span>{route.duration}</span>
+          </div>
+        </div>
+
+        <p class="text-lg text-muted-foreground">
+          {route.description}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="w-full py-12 md:py-24">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">Route Highlights</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {route.highlights.map((highlight) => (
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5">
+              <Check class="w-5 h-5 text-primary" />
+            </div>
+            <p class="text-muted-foreground">{highlight}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="w-full py-12 md:py-24 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">Pricing Options</h2>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl">
+        {vehicles.map((vehicle) => (
+          <Card>
+            <CardHeader>
+              <div class="flex items-start justify-between">
+                <div>
+                  <CardTitle>{vehicle.name}</CardTitle>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    {vehicle.seating} Seater • {vehicle.range}
+                  </p>
+                </div>
+                <Badge variant="secondary">{vehicle.seating} Seater</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Route Price</p>
+                  <p class="text-4xl font-bold">
+                    ₹{vehicle.slug === 'kia-carens-ev' ? route.pricing.kiaCarens : route.pricing.bydEmax7}
+                  </p>
+                </div>
+
+                <div class="pt-4 border-t space-y-2">
+                  <div class="flex justify-between text-sm">
+                    <span class="text-muted-foreground">Per KM Rate</span>
+                    <span class="font-medium">₹{vehicle.pricing.perKm}/km</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-muted-foreground">Distance</span>
+                    <span class="font-medium">{route.distance}</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-muted-foreground">Est. Duration</span>
+                    <span class="font-medium">{route.duration}</span>
+                  </div>
+                </div>
+
+                <Button className="w-full">Book {vehicle.name}</Button>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section class="w-full py-12 md:py-24">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">What's Included</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Professional Driver</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              Experienced, verified drivers with excellent knowledge of routes
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>All Tolls & Taxes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              No hidden charges - all tolls and taxes included in the price
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Free Cancellation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              Cancel up to 24 hours before trip for full refund
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-24 bg-primary/10">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+          Ready to Book Your Trip?
+        </h2>
+        <p class="text-muted-foreground">
+          Book now on WhatsApp or call us for instant confirmation
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <Button size="lg">
+            Book on WhatsApp
+          </Button>
+          <a href="/routes">
+            <Button size="lg" variant="outline">
+              View Other Routes
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

@@ -1,0 +1,269 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo";
+
+const faqCategories = [
+  {
+    category: "Booking & Pricing",
+    questions: [
+      {
+        question: "How do I book an electric cab with GreenEVCabs?",
+        answer: "Booking your eco-friendly electric cab is simple! You can book instantly through WhatsApp by clicking the chat button on our website, call us directly at +919876543210, or use our online booking form. We offer 24/7 booking service with instant confirmation for all routes across Maharashtra including Pune, Mumbai, Shirdi, and more."
+      },
+      {
+        question: "What is the pricing structure for electric cab services?",
+        answer: "We offer transparent and competitive pricing for our electric cab services. Our Kia Carens EV starts at ₹18 per kilometer with a minimum booking of 250 km or ₹5,500 for a full day. The premium BYD E-MAX 7 is ₹22 per kilometer with similar terms or ₹6,500 per day. We also offer special rates for popular routes like Pune-Mumbai (starting ₹4,500), Pune-Shirdi (starting ₹5,500), and customized packages for corporate bookings and monthly rentals."
+      },
+      {
+        question: "Are there any hidden charges in electric cab booking?",
+        answer: "No hidden charges! Our electric cab pricing is completely transparent. The quoted price includes driver charges, tolls (on popular routes), and standard parking. You only pay extra for extended waiting time beyond 30 minutes, multiple stops beyond the agreed route, or state border crossings. All charges are communicated upfront during booking."
+      },
+      {
+        question: "Do you offer discounts for corporate or bulk bookings?",
+        answer: "Yes! We offer attractive discounts for corporate clients, monthly rental packages, and bulk bookings. Corporate clients get dedicated account management, priority booking, invoice facility, and special rates for regular travel. Contact us at info@greenevcabs.com for customized corporate EV cab packages tailored to your business needs."
+      },
+      {
+        question: "Can I cancel or modify my electric cab booking?",
+        answer: "Yes, you can cancel or modify your booking. Free cancellation is available up to 12 hours before the scheduled pickup time. Cancellations between 6-12 hours incur a 25% charge, and cancellations within 6 hours incur a 50% charge. You can modify pickup time, location, or route details up to 6 hours before departure at no extra cost, subject to availability."
+      }
+    ]
+  },
+  {
+    category: "Electric Vehicles & Fleet",
+    questions: [
+      {
+        question: "What electric vehicles are in your fleet?",
+        answer: "Our premium 100% electric fleet features the Kia Carens EV and BYD E-MAX 7. The Kia Carens EV offers spacious 6-7 seater capacity with a range of 400+ km, perfect for families and groups. The BYD E-MAX 7 is our luxury electric MPV with extended 530+ km range, leather interiors, and advanced features ideal for long-distance travel and premium experiences. Both vehicles ensure zero emissions and maximum comfort."
+      },
+      {
+        question: "How far can electric cabs travel on a single charge?",
+        answer: "Our electric cabs have impressive ranges that eliminate range anxiety. The Kia Carens EV offers 400+ km on a single charge, while the BYD E-MAX 7 provides an extended 530+ km range. This is more than sufficient for popular routes like Pune-Mumbai (148 km), Pune-Shirdi (185 km), and Pune-Nashik (210 km) with plenty of charge remaining. We also have access to fast-charging networks across Maharashtra for longer journeys."
+      },
+      {
+        question: "What if the electric cab runs out of charge during my trip?",
+        answer: "This is extremely rare as we carefully plan routes and ensure adequate charge before every trip. Our electric vehicles have much longer ranges (400-530 km) than typical intercity trips require. However, in the unlikely event of low charge, we have partnerships with charging networks along major routes. DC fast charging can replenish 10-80% battery in just 40-45 minutes. We monitor battery levels throughout your journey to ensure a smooth, worry-free experience."
+      },
+      {
+        question: "Are electric cabs safe compared to regular cabs?",
+        answer: "Electric cabs are actually safer than traditional vehicles. Our Kia Carens EV and BYD E-MAX 7 come with advanced safety features including ADAS Level 2, multiple airbags, ABS with EBD, electronic stability control, 360-degree cameras, and reinforced battery protection. Electric vehicles have a lower center of gravity making them more stable, and our drivers are specially trained in EV operation. All vehicles undergo regular safety inspections and maintenance."
+      },
+      {
+        question: "How comfortable is travel in electric vehicles?",
+        answer: "Electric cabs offer superior comfort compared to traditional vehicles. Benefits include: Silent operation for peaceful travel, instant torque for smooth acceleration, no engine vibrations, spacious premium interiors, climate control, panoramic sunroof, comfortable seating for 6-7 passengers, ample luggage space, and advanced suspension. Our BYD E-MAX 7 features luxury leather seats with ventilation, dual-zone climate control, and premium sound system for the ultimate travel experience."
+      }
+    ]
+  },
+  {
+    category: "Service Areas & Routes",
+    questions: [
+      {
+        question: "Which areas does GreenEVCabs serve?",
+        answer: "We provide comprehensive electric cab services across Maharashtra. Major service areas include Pune city and suburbs (Hinjewadi, Wakad, Kothrud, Hadapsar, Viman Nagar), Mumbai and suburbs (Andheri, Bandra, Powai, Thane), and popular destinations including Shirdi, Lonavala, Mahabaleshwar, Nashik, Aurangabad, and more. We also offer customized routes to any destination within Maharashtra. Airport transfers are available for Pune Airport and Mumbai Airport with 24/7 service."
+      },
+      {
+        question: "Do you provide airport transfer services with electric cabs?",
+        answer: "Yes! We specialize in eco-friendly airport transfers for both Pune International Airport and Chhatrapati Shivaji Maharaj International Airport Mumbai. Our services include: Flight tracking for timely pickup, meet and greet service, spacious luggage capacity, comfortable 24/7 service, door-to-door transfers, and competitive fixed rates. Our electric cabs are perfect for airport transfers with zero emissions, quiet operation, and professional drivers who know the best routes."
+      },
+      {
+        question: "Can I book electric cabs for outstation trips?",
+        answer: "Absolutely! Outstation travel in electric cabs is our specialty. Popular outstation routes include Pune-Mumbai Expressway, Pune-Shirdi pilgrimage trips, Pune-Lonavala hill station getaways, Pune-Mahabaleshwar weekend trips, Mumbai-Pune business travel, and Pune-Nashik wine tours. Our electric vehicles have sufficient range (400-530 km) for all major outstation routes. We offer flexible packages including round trips, one-way travel, multi-day trips with overnight stays, and customized itineraries."
+      },
+      {
+        question: "Are electric cabs available 24/7?",
+        answer: "Yes, GreenEVCabs operates 24/7 with round-the-clock booking and service availability. Whether you need an early morning airport transfer at 3 AM, a late-night pickup from Mumbai, or emergency travel, our electric cab fleet is ready to serve you at any time. Simply book through WhatsApp, call us, or use our online booking form anytime, and we'll confirm your booking instantly with professional service."
+      },
+      {
+        question: "Do you offer city tours and local sightseeing in electric cabs?",
+        answer: "Yes! Experience eco-friendly city tours and local sightseeing in our comfortable electric vehicles. We offer customized tour packages for Pune sightseeing (including Shaniwar Wada, Aga Khan Palace, Osho Ashram), Mumbai darshan, Lonavala-Khandala tours, Mahabaleshwar viewpoints, Nashik wine tours and temple visits. Our drivers are knowledgeable about local attractions and can suggest the best routes. Full-day and half-day packages available with flexible itineraries."
+      }
+    ]
+  },
+  {
+    category: "Environmental & Technology",
+    questions: [
+      {
+        question: "How do electric cabs help reduce carbon emissions?",
+        answer: "Electric cabs produce zero tailpipe emissions, making them completely eco-friendly. A typical 150 km trip (like Pune-Mumbai) in our electric cab saves approximately 15-20 kg of CO2 compared to diesel vehicles. Over a year, if you use our electric cab service regularly, you can personally save several tons of CO2 emissions. Maharashtra's electricity grid increasingly uses renewable energy, making our electric cabs even more sustainable. Choose GreenEVCabs for guilt-free, environmentally responsible travel."
+      },
+      {
+        question: "What are the benefits of choosing electric cabs over regular cabs?",
+        answer: "Electric cabs offer multiple advantages: Environmental benefits with zero emissions and lower carbon footprint; Cost benefits with competitive pricing despite premium vehicles; Comfort benefits including silent operation, smooth acceleration, no vibrations, and better air quality inside the cabin; Technology benefits with advanced features like ADAS, 360° cameras, and connectivity; and Social responsibility showing your commitment to sustainable transportation. You get premium service while contributing to a cleaner Maharashtra."
+      },
+      {
+        question: "How are electric vehicles charged for cab service?",
+        answer: "Our electric vehicles are charged using a combination of home/depot charging and public fast-charging networks. Each vehicle is fully charged before your trip. We use: DC fast chargers (10-80% in 40-45 minutes) at strategic locations, overnight AC charging at our depots for full battery, and partnerships with charging networks along major routes like Mumbai-Pune Expressway. Our advanced battery management systems and route planning ensure you never experience range issues. The charging is seamless and doesn't affect your travel time."
+      },
+      {
+        question: "Are electric cabs more expensive to maintain?",
+        answer: "Actually, electric vehicles have lower maintenance costs than traditional vehicles, and these savings help us offer competitive prices. EVs have fewer moving parts (no engine oil changes, no transmission repairs, no exhaust systems), regenerative braking reduces brake wear, battery warranties cover major components, and overall mechanical reliability is higher. While the vehicles are premium, the reduced maintenance and zero fuel costs allow us to price our services competitively while offering superior comfort."
+      }
+    ]
+  },
+  {
+    category: "Safety & Hygiene",
+    questions: [
+      {
+        question: "What COVID-19 safety measures do you follow?",
+        answer: "Your health and safety are our top priorities. Our electric cabs follow strict hygiene protocols: Complete sanitization of vehicles before and after every trip, mandatory masks for drivers (masks available for passengers), hand sanitizer provided in vehicles, regular temperature checks for drivers, contactless payment options, UV sanitization of high-touch surfaces, properly ventilated cabins with air purification, and social distancing protocols followed. Our electric vehicles' advanced air filtration systems provide cleaner cabin air."
+      },
+      {
+        question: "Are your drivers verified and trained?",
+        answer: "All our electric cab drivers undergo thorough verification and specialized training. Our process includes: Comprehensive background verification, valid driving license with clean record, special training in electric vehicle operation, customer service training, route knowledge assessment, emergency handling procedures, regular performance reviews, and verification of all documents with police verification. Our drivers are professional, courteous, and knowledgeable about EV technology and Maharashtra's routes."
+      },
+      {
+        question: "What should I do in case of emergency during the trip?",
+        answer: "Safety is paramount. In case of any emergency: Our 24/7 customer support is always available at +919876543210, all vehicles have GPS tracking for location monitoring, drivers carry emergency contact numbers, vehicles are equipped with first-aid kits, we have tie-ups with roadside assistance across Maharashtra, and our advanced fleet monitoring ensures rapid response. You can also use the emergency button in our booking confirmation for instant connection to our support team."
+      },
+      {
+        question: "Is insurance included in the electric cab service?",
+        answer: "Yes, comprehensive insurance coverage is included in all our electric cab bookings. All our vehicles carry: Valid comprehensive vehicle insurance, passenger insurance coverage up to ₹15 lakhs per person, third-party liability insurance, and driver insurance. You can travel with complete peace of mind knowing that you, your family, and your belongings are fully protected during your journey with GreenEVCabs."
+      }
+    ]
+  },
+  {
+    category: "Corporate & Special Services",
+    questions: [
+      {
+        question: "Do you offer corporate electric cab services?",
+        answer: "Yes! We provide specialized corporate electric cab services with benefits tailored for businesses: Dedicated account management, priority booking and fleet allocation, monthly invoicing with GST, flexible billing cycles, customized corporate rates, employee transport services, airport transfers for business travelers, client transportation solutions, and detailed travel reports. Our electric fleet helps your company meet sustainability goals while ensuring comfortable, professional transportation. Contact us for corporate packages."
+      },
+      {
+        question: "Can I book electric cabs for weddings and events?",
+        answer: "Absolutely! Make your special occasions eco-friendly with our premium electric cab services. Perfect for: Wedding guest transportation with our spacious 7-seater vehicles, bride/groom family transport, corporate events and conferences, birthday parties and celebrations, religious ceremonies and temple visits, and anniversary trips. Our clean, quiet, and luxurious electric vehicles add sophistication to your events while showing environmental responsibility. Bulk booking discounts available. We can provide decorated vehicles for weddings."
+      },
+      {
+        question: "Are monthly rental packages available for electric cabs?",
+        answer: "Yes, we offer cost-effective monthly rental packages for electric cabs. Ideal for: Regular office commute with fixed monthly rates, corporate employee transportation, visiting executives needing dedicated vehicles, daily school/college drops, regular medical appointments or hospital visits, and long-term project assignments. Monthly packages include: Dedicated vehicle and driver, flexible hours, priority service, significant cost savings over daily bookings, and detailed monthly reports. Contact us for customized monthly rental plans for electric vehicles."
+      }
+    ]
+  }
+];
+
+const allQuestions = faqCategories.flatMap(cat =>
+  cat.questions.map(q => ({
+    question: q.question,
+    answer: q.answer
+  }))
+);
+
+const faqSchema = generateFAQSchema(allQuestions);
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "https://greenevcabs.com/" },
+  { name: "FAQ", url: "https://greenevcabs.com/faq" }
+]);
+---
+
+<MainLayout
+  title="FAQ - Electric Cab Services | GreenEVCabs - Pune Mumbai Maharashtra"
+  description="Frequently asked questions about GreenEVCabs electric cab services. Find answers about booking, pricing, electric vehicles, safety, routes, and more. 24/7 EV taxi service in Maharashtra."
+  keywords={[
+    "electric cab FAQ",
+    "EV cab questions",
+    "electric taxi booking help",
+    "EV cab pricing Pune",
+    "electric vehicle cab service",
+    "eco-friendly cab FAQ",
+    "Pune Mumbai electric cab",
+    "electric cab safety",
+    "EV taxi Maharashtra"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "FAQ", href: "/faq" }
+  ]} />
+
+  <StructuredData data={[faqSchema, breadcrumbSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Page Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+        Frequently Asked Questions
+      </h1>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Everything you need to know about GreenEVCabs electric cab services in Maharashtra.
+        From booking your first EV ride to understanding our eco-friendly fleet, corporate packages,
+        and outstation travel options - find all answers here.
+      </p>
+    </div>
+
+    <!-- Introduction -->
+    <div class="prose prose-lg max-w-4xl mx-auto mb-12">
+      <p class="text-muted-foreground">
+        Welcome to GreenEVCabs FAQ section! As Maharashtra's premier electric cab service provider,
+        we understand you may have questions about our 100% electric vehicle fleet, service areas,
+        pricing, safety measures, and booking process. Whether you're planning a Pune to Mumbai trip,
+        need airport transfers, corporate transportation, or exploring outstation destinations like
+        Shirdi, Lonavala, or Mahabaleshwar - we've got you covered. Browse through our comprehensive
+        FAQ below or contact our 24/7 customer support team for personalized assistance.
+      </p>
+    </div>
+
+    <!-- FAQ Categories -->
+    <div class="space-y-8 max-w-5xl mx-auto">
+      {faqCategories.map((category, categoryIndex) => (
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-6 text-primary">
+            {category.category}
+          </h2>
+          <div class="space-y-4">
+            {category.questions.map((item, questionIndex) => (
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg md:text-xl text-foreground">
+                    {item.question}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p class="text-muted-foreground leading-relaxed">
+                    {item.answer}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Additional Help Section -->
+    <div class="mt-16 bg-muted/50 rounded-lg p-8 text-center max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Still Have Questions About Our Electric Cab Services?
+      </h2>
+      <p class="text-muted-foreground mb-6 text-lg">
+        Our customer support team is available 24/7 to assist you with any questions about electric vehicle
+        cab bookings, routes, pricing, or special requirements. Get instant responses via WhatsApp or call us directly.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20have%20a%20question%20about%20GreenEVCabs%20electric%20cab%20service" target="_blank" rel="noopener noreferrer">
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-green-500 text-white hover:bg-green-600 h-11 px-8">
+            Chat on WhatsApp
+          </button>
+        </a>
+        <a href="tel:+919876543210">
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8">
+            Call +91 98765 43210
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- SEO-Rich Footer Content -->
+    <div class="mt-12 prose prose-lg max-w-4xl mx-auto text-muted-foreground">
+      <h3 class="text-xl font-semibold text-foreground">About GreenEVCabs Electric Taxi Service</h3>
+      <p>
+        GreenEVCabs is Maharashtra's leading electric vehicle cab service provider, specializing in eco-friendly,
+        zero-emission transportation solutions. Our premium fleet includes Kia Carens EV and BYD E-MAX 7 electric
+        vehicles, offering comfortable, sustainable travel across Pune, Mumbai, and all major destinations in
+        Maharashtra. With 24/7 availability, professional drivers, and competitive pricing, we're revolutionizing
+        intercity and intracity transportation with electric mobility. Book your electric cab today and experience
+        the future of sustainable, comfortable travel in India.
+      </p>
+    </div>
+  </div>
+</MainLayout>

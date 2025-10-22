@@ -1,0 +1,290 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { vehicles } from "@/data/vehicles";
+import { getPopularRoutes } from "@/data/routes";
+import {
+  generateLocalBusinessSchema,
+  generateOrganizationSchema,
+  generateWebsiteSchema,
+  generateServiceSchema,
+  generateFAQSchema,
+} from "@/lib/seo";
+import { Leaf, Zap, Shield, Clock } from "lucide-react";
+
+const popularRoutes = getPopularRoutes();
+
+// Generate structured data
+const localBusinessSchema = generateLocalBusinessSchema();
+const organizationSchema = generateOrganizationSchema();
+const websiteSchema = generateWebsiteSchema();
+const serviceSchema = generateServiceSchema();
+
+// FAQ Schema
+const faqSchema = generateFAQSchema([
+  {
+    question: "What areas do you serve?",
+    answer: "We serve Pune, Mumbai, and all major cities across Maharashtra including Shirdi, Lonavala, Nashik, and Mahabaleshwar. We also offer custom routes to any destination in the state.",
+  },
+  {
+    question: "Are your cabs really 100% electric?",
+    answer: "Yes, our entire fleet consists of 100% electric vehicles including the Kia Carens EV and BYD E-MAX 7. All our cabs run on battery power with zero emissions.",
+  },
+  {
+    question: "How do I book a cab?",
+    answer: "You can book instantly through WhatsApp by clicking the chat button on our website, or call us directly. We offer 24/7 booking service with instant confirmation.",
+  },
+  {
+    question: "What is your pricing structure?",
+    answer: "We offer flexible pricing starting from ₹18 per kilometer for the Kia Carens EV and ₹22 per kilometer for the BYD E-MAX 7. We also have full-day packages and special rates for popular routes.",
+  },
+  {
+    question: "Do you provide airport transfers?",
+    answer: "Yes, we provide reliable airport transfer services for Pune and Mumbai airports. Our drivers track your flight and ensure timely pickup and drop-off.",
+  },
+]);
+---
+
+<MainLayout
+  title="GreenEVCabs - Premium Electric Cab Services in Maharashtra | Book EV Cabs Online"
+  description="Book premium electric cabs in Pune, Mumbai & Maharashtra. 100% EV fleet with Kia Carens & BYD E-MAX 7. Zero emissions, 24/7 service. Airport transfers, outstation trips & corporate bookings."
+  keywords={[
+    "electric cab Pune",
+    "EV cab Mumbai",
+    "electric taxi Maharashtra",
+    "eco-friendly cab service",
+    "Pune Mumbai cab",
+    "airport transfer Pune",
+    "outstation EV cab",
+  ]}
+>
+  <!-- Structured Data -->
+  <StructuredData
+    data={[
+      localBusinessSchema,
+      organizationSchema,
+      websiteSchema,
+      serviceSchema,
+      faqSchema,
+    ]}
+  />
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="flex flex-col items-center space-y-4 text-center">
+        <div class="space-y-2">
+          <Badge variant="secondary" className="mb-4">
+            100% Electric • Zero Emissions
+          </Badge>
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            Travel Green, Travel Clean
+          </h1>
+          <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+            Experience the future of transportation with our premium electric cab services.
+            Comfortable, sustainable, and reliable journeys across Maharashtra.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/fleet">
+            <Button size="lg" className="w-full sm:w-auto">
+              View Our Fleet
+            </Button>
+          </a>
+          <a href="/routes">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              Popular Routes
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Why Choose GreenEVCabs?
+        </h2>
+        <p class="mt-4 text-muted-foreground md:text-lg">
+          Sustainable travel without compromising on comfort or reliability
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Leaf class="w-6 h-6 text-primary" />
+            </div>
+            <CardTitle>100% Electric</CardTitle>
+            <CardDescription>
+              Zero emissions for a cleaner environment
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Zap class="w-6 h-6 text-primary" />
+            </div>
+            <CardTitle>Modern Fleet</CardTitle>
+            <CardDescription>
+              Latest EV models with premium features
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Shield class="w-6 h-6 text-primary" />
+            </div>
+            <CardTitle>Safe & Reliable</CardTitle>
+            <CardDescription>
+              Professional drivers and well-maintained vehicles
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Clock class="w-6 h-6 text-primary" />
+            </div>
+            <CardTitle>24/7 Available</CardTitle>
+            <CardDescription>
+              Round-the-clock service for all your travel needs
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Preview -->
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Our Electric Fleet
+        </h2>
+        <p class="mt-4 text-muted-foreground md:text-lg">
+          Choose from our premium selection of electric vehicles
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {vehicles.map((vehicle) => (
+          <Card>
+            <CardHeader>
+              <div class="aspect-video bg-muted rounded-md mb-4 flex items-center justify-center">
+                <span class="text-4xl">🚗</span>
+              </div>
+              <div class="flex items-start justify-between">
+                <div>
+                  <CardTitle>{vehicle.name}</CardTitle>
+                  <CardDescription className="mt-2">{vehicle.tagline}</CardDescription>
+                </div>
+                <Badge variant="secondary">{vehicle.seating} Seater</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 text-sm text-muted-foreground">
+                  <div class="flex items-center gap-1">
+                    <Zap class="w-4 h-4" />
+                    <span>{vehicle.range}</span>
+                  </div>
+                  <div>₹{vehicle.pricing.perKm}/km</div>
+                </div>
+                <a href={`/fleet/${vehicle.slug}`}>
+                  <Button className="w-full">View Details</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes -->
+  <section class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Popular Routes
+        </h2>
+        <p class="mt-4 text-muted-foreground md:text-lg">
+          Most traveled destinations with competitive pricing
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {popularRoutes.map((route) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-xl">{route.name}</CardTitle>
+              <CardDescription>
+                {route.distance} • {route.duration}
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-4">
+                <p class="text-sm text-muted-foreground">
+                  {route.description.slice(0, 100)}...
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium">From ₹{route.pricing.kiaCarens}</span>
+                  <a href={`/routes/${route.slug}`}>
+                    <Button size="sm" variant="outline">Details</Button>
+                  </a>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/routes">
+          <Button size="lg" variant="outline">
+            View All Routes
+          </Button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+      <div class="flex flex-col items-center space-y-4 text-center">
+        <div class="space-y-2">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Ready to Go Green?
+          </h2>
+          <p class="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
+            Book your electric cab now and experience sustainable travel at its finest
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button size="lg">
+            Book Now on WhatsApp
+          </Button>
+          <a href="/fleet">
+            <Button size="lg" variant="outline">
+              Explore Fleet
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

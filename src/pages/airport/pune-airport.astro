@@ -1,0 +1,58 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+
+const title = "Electric Cab Pune Airport (PNQ) | Zero Emission Taxi Lohegaon Airport";
+const description = "Book electric cab to/from Pune Airport (PNQ). Hinjewadi, Wakad, Kothrud to Pune Airport. 24/7 EV taxi, Mumbai-Pune Airport ₹4,800. Eco-friendly transfer service.";
+---
+
+<MainLayout title={title} description={description}>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Airport Transfers", href: "/airport" },
+    { name: "Pune Airport", href: "/airport/pune-airport" }
+  ]} />
+
+  <div class="container px-4 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+      Electric Cab to Pune Airport
+    </h1>
+    <p class="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      Premium electric cab service to Pune International Airport (Lohegaon). 
+      All Pune areas covered, 24/7 service, zero emissions.
+    </p>
+    
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-2xl font-bold mb-4">Pune Airport Transfer Routes</h2>
+      <ul class="space-y-3 text-left max-w-2xl mx-auto mb-8">
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Hinjewadi to Pune Airport</span>
+          <strong>₹800</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Wakad to Pune Airport</span>
+          <strong>₹700</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Kothrud to Pune Airport</span>
+          <strong>₹500</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Mumbai to Pune Airport</span>
+          <strong>₹4,800</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Hadapsar to Pune Airport</span>
+          <strong>₹400</strong>
+        </li>
+      </ul>
+      
+      <a href="https://wa.me/919876543210?text=Pune%20Airport%20Transfer" target="_blank">
+        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+          Book Pune Airport Transfer
+        </Button>
+      </a>
+    </div>
+  </div>
+</MainLayout>

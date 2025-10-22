@@ -1,0 +1,94 @@
+---
+import { Mail, Phone, MapPin } from "lucide-react";
+---
+
+<footer class="w-full border-t bg-background">
+  <div class="container py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl">🌿</span>
+          <span class="text-lg font-bold">GreenEVCabs</span>
+        </div>
+        <p class="text-sm text-muted-foreground">
+          Sustainable, comfortable, and reliable electric cab services for all your travel needs.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="/" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/fleet" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Our Fleet
+            </a>
+          </li>
+          <li>
+            <a href="/routes" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Routes
+            </a>
+          </li>
+          <li>
+            <a href="/about" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="/faq" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              FAQ
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold">Services</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="/airport" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Airport Transfers
+            </a>
+          </li>
+          <li>
+            <a href="/routes" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Outstation Travel
+            </a>
+          </li>
+          <li class="text-sm text-muted-foreground">Corporate Bookings</li>
+          <li class="text-sm text-muted-foreground">Event Transportation</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold">Contact Us</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2 text-sm text-muted-foreground">
+            <Phone class="h-4 w-4 mt-0.5 flex-shrink-0" />
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="flex items-start gap-2 text-sm text-muted-foreground">
+            <Mail class="h-4 w-4 mt-0.5 flex-shrink-0" />
+            <span>info@greenevcabs.com</span>
+          </li>
+          <li class="flex items-start gap-2 text-sm text-muted-foreground">
+            <MapPin class="h-4 w-4 mt-0.5 flex-shrink-0" />
+            <span>Pune, Maharashtra, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+      <p>&copy; {new Date().getFullYear()} GreenEVCabs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

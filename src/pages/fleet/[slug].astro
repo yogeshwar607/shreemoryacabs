@@ -1,0 +1,215 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { vehicles, getVehicleBySlug } from "@/data/vehicles";
+import { generateVehicleSchema } from "@/lib/seo";
+import { Check, Zap, Battery, Gauge, Clock } from "lucide-react";
+import { generateBookingMessage } from "@/lib/whatsapp";
+
+export async function getStaticPaths() {
+  return vehicles.map((vehicle) => ({
+    params: { slug: vehicle.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const vehicle = getVehicleBySlug(slug);
+
+if (!vehicle) {
+  return Astro.redirect("/404");
+}
+
+// Generate structured data
+const vehicleSchema = generateVehicleSchema(vehicle);
+
+// Extract brand name for keywords
+const brandName = vehicle.name.split(' ')[0];
+---
+
+<MainLayout
+  title={`${vehicle.name} - Book Electric Cab Online | GreenEVCabs`}
+  description={`Book ${vehicle.name} for your journey in Maharashtra. ${vehicle.seating}-seater electric cab with ${vehicle.range} range. Features: ${vehicle.features.slice(0, 3).join(', ')}. Starting from ₹${vehicle.pricing.perKm}/km.`}
+  keywords={[
+    `${vehicle.name}`,
+    `${brandName} electric cab`,
+    `book ${vehicle.name}`,
+    `${vehicle.seating} seater EV`,
+    "electric cab booking",
+    "EV taxi Maharashtra",
+  ]}
+  ogType="product"
+>
+  <StructuredData data={vehicleSchema} />
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <Breadcrumbs
+        items={[
+          { name: "Fleet", url: "/fleet" },
+          { name: vehicle.name, url: `/fleet/${vehicle.slug}` },
+        ]}
+      />
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+          <Badge variant="secondary">{vehicle.seating} Seater</Badge>
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            {vehicle.name}
+          </h1>
+          <p class="text-xl text-muted-foreground">{vehicle.tagline}</p>
+          <p class="text-muted-foreground">{vehicle.description}</p>
+
+          <div class="flex flex-wrap gap-4 pt-4">
+            <div class="flex items-center gap-2">
+              <Battery class="w-5 h-5 text-primary" />
+              <span class="font-medium">{vehicle.range} Range</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Zap class="w-5 h-5 text-primary" />
+              <span class="font-medium">{vehicle.specifications.battery}</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <Button size="lg">Book Now</Button>
+            <Button size="lg" variant="outline">Get Quote</Button>
+          </div>
+        </div>
+
+        <div class="aspect-video bg-muted rounded-lg flex items-center justify-center">
+          <span class="text-8xl">🚗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="w-full py-12 md:py-24">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">Pricing</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Per Kilometer</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold">₹{vehicle.pricing.perKm}</div>
+            <p class="text-sm text-muted-foreground mt-2">Flexible pay-as-you-go</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Minimum Booking</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold">{vehicle.pricing.minimumKm} km</div>
+            <p class="text-sm text-muted-foreground mt-2">Minimum distance required</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Full Day Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold">₹{vehicle.pricing.fullDay}</div>
+            <p class="text-sm text-muted-foreground mt-2">12 hours / 300 km</p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="w-full py-12 md:py-24 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">Key Features</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {vehicle.features.map((feature) => (
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5">
+              <Check class="w-5 h-5 text-primary" />
+            </div>
+            <p class="text-muted-foreground">{feature}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications Section -->
+  <section class="w-full py-12 md:py-24">
+    <div class="container px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8">Technical Specifications</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Card>
+          <CardHeader>
+            <Battery class="w-8 h-8 text-primary mb-2" />
+            <CardTitle>Battery</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-2xl font-bold">{vehicle.specifications.battery}</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Zap class="w-8 h-8 text-primary mb-2" />
+            <CardTitle>Charging</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-lg font-semibold">{vehicle.specifications.charging}</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Gauge class="w-8 h-8 text-primary mb-2" />
+            <CardTitle>Top Speed</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-2xl font-bold">{vehicle.specifications.topSpeed}</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Clock class="w-8 h-8 text-primary mb-2" />
+            <CardTitle>Acceleration</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-lg font-semibold">{vehicle.specifications.acceleration}</p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-24 bg-primary/10">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+          Ready to Book the {vehicle.name}?
+        </h2>
+        <p class="text-muted-foreground">
+          Contact us now to check availability and book your eco-friendly journey
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <Button size="lg">
+            Book on WhatsApp
+          </Button>
+          <a href="/fleet">
+            <Button size="lg" variant="outline">
+              View Other Vehicles
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

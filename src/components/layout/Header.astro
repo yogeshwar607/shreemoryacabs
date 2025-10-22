@@ -1,0 +1,40 @@
+---
+import { ThemeToggle } from "@/components/react/ThemeToggle";
+import { MobileMenu } from "@/components/react/MobileMenu";
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/fleet", label: "Our Fleet" },
+  { href: "/routes", label: "Routes" },
+  { href: "/airport", label: "Airport Transfer" },
+  { href: "/about", label: "About" },
+  { href: "/faq", label: "FAQ" },
+];
+---
+
+<header class="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+  <div class="container flex h-16 items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-primary">🌿</span>
+        <span class="text-xl font-bold">GreenEVCabs</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            class="text-sm font-medium transition-colors hover:text-primary"
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <ThemeToggle client:load />
+      <MobileMenu links={links} client:load />
+    </div>
+  </div>
+</header>

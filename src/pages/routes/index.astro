@@ -1,0 +1,128 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { routes } from "@/data/routes";
+import { generateRouteSchema } from "@/lib/seo";
+import { MapPin, Clock, Route as RouteIcon } from "lucide-react";
+
+// Generate structured data for all routes
+const routeSchemas = routes.map((route) => generateRouteSchema(route));
+---
+
+<MainLayout
+  title="Electric Cab Routes in Maharashtra - Pune, Mumbai, Shirdi & More | GreenEVCabs"
+  description="Book electric cabs for popular routes: Pune-Mumbai, Pune-Shirdi, Pune-Lonavala, Mumbai-Pune, Pune-Nashik. Competitive pricing, zero emissions, 24/7 service. Starting from ₹2800."
+  keywords={[
+    "Pune Mumbai cab",
+    "Pune Shirdi electric cab",
+    "Mumbai Pune taxi",
+    "Pune Lonavala cab",
+    "outstation electric cab",
+    "intercity EV taxi",
+  ]}
+>
+  <StructuredData data={routeSchemas} />
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl">
+        <Breadcrumbs items={[{ name: "Routes", url: "/routes" }]} />
+        <Badge variant="secondary" className="mb-4">
+          Our Routes
+        </Badge>
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-4">
+          Popular Travel Routes
+        </h1>
+        <p class="text-lg text-muted-foreground">
+          Explore our most popular electric cab routes across Maharashtra. Experience eco-friendly
+          travel to your favorite destinations with competitive pricing and zero emissions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes Grid -->
+  <section class="w-full py-12 md:py-24">
+    <div class="container px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {routes.map((route) => (
+          <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div class="flex items-start justify-between mb-2">
+                <div class="flex-1">
+                  <CardTitle class="text-xl">{route.name}</CardTitle>
+                  <CardDescription class="mt-2">
+                    <div class="flex items-center gap-2">
+                      <MapPin class="w-4 h-4" />
+                      <span>{route.from} → {route.to}</span>
+                    </div>
+                  </CardDescription>
+                </div>
+                {route.popular && (
+                  <Badge variant="secondary">Popular</Badge>
+                )}
+              </div>
+            </CardHeader>
+
+            <CardContent>
+              <div class="space-y-4">
+                <!-- Distance & Duration -->
+                <div class="flex gap-4 text-sm">
+                  <div class="flex items-center gap-1 text-muted-foreground">
+                    <RouteIcon class="w-4 h-4" />
+                    <span>{route.distance}</span>
+                  </div>
+                  <div class="flex items-center gap-1 text-muted-foreground">
+                    <Clock class="w-4 h-4" />
+                    <span>{route.duration}</span>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm text-muted-foreground line-clamp-3">
+                  {route.description}
+                </p>
+
+                <!-- Pricing -->
+                <div class="pt-4 border-t">
+                  <p class="text-xs text-muted-foreground mb-2">Starting from</p>
+                  <div class="flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹{route.pricing.kiaCarens}</span>
+                    <span class="text-sm text-muted-foreground">Kia Carens</span>
+                  </div>
+                </div>
+
+                <!-- Action Button -->
+                <a href={`/routes/${route.slug}`} class="block">
+                  <Button className="w-full">View Details</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Routes CTA -->
+  <section class="w-full py-12 md:py-24 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+          Need a Custom Route?
+        </h2>
+        <p class="text-muted-foreground">
+          Don't see your destination? We offer custom routes across Maharashtra and beyond.
+          Contact us for a personalized quote.
+        </p>
+        <Button size="lg">
+          Contact for Custom Route
+        </Button>
+      </div>
+    </div>
+  </section>
+</MainLayout>

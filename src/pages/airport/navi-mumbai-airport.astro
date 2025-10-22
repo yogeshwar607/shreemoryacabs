@@ -1,0 +1,54 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+
+const title = "Electric Cab Navi Mumbai Airport (NMIA) | Zero Emission Transfer 24/7";
+const description = "Book electric cab to Navi Mumbai International Airport. Premium EV taxi service, 24/7 availability. Pune-NMIA ₹4,800. Eco-friendly airport transfer with flight tracking.";
+---
+
+<MainLayout title={title} description={description}>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Airport Transfers", href: "/airport" },
+    { name: "Navi Mumbai Airport", href: "/airport/navi-mumbai-airport" }
+  ]} />
+
+  <div class="container px-4 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+      Electric Cab to Navi Mumbai Airport
+    </h1>
+    <p class="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      Premium electric vehicle transfer to Navi Mumbai International Airport (NMIA).
+      Eco-friendly, comfortable, 24/7 service.
+    </p>
+    
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-2xl font-bold mb-4">Popular Routes to Navi Mumbai Airport</h2>
+      <ul class="space-y-3 text-left max-w-2xl mx-auto mb-8">
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Pune to Navi Mumbai Airport</span>
+          <strong>₹4,800</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Thane to NMIA</span>
+          <strong>₹1,200</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Panvel to NMIA</span>
+          <strong>₹600</strong>
+        </li>
+        <li class="flex justify-between p-4 bg-muted/50 rounded">
+          <span>Mumbai to NMIA</span>
+          <strong>₹2,000</strong>
+        </li>
+      </ul>
+      
+      <a href="https://wa.me/919876543210?text=Navi%20Mumbai%20Airport%20Transfer" target="_blank">
+        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+          Book Navi Mumbai Airport Transfer
+        </Button>
+      </a>
+    </div>
+  </div>
+</MainLayout>

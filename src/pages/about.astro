@@ -1,0 +1,365 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateOrganizationSchema, generateBreadcrumbSchema } from "@/lib/seo";
+import { Leaf, Zap, Users, Award, Shield, Target } from "lucide-react";
+
+const organizationSchema = generateOrganizationSchema();
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "About Us", url: "/about" }
+]);
+---
+
+<MainLayout
+  title="About GreenEVCabs - Maharashtra's Premier Electric Cab Service | Eco-Friendly Transportation"
+  description="Learn about GreenEVCabs, Maharashtra's leading 100% electric cab service. Our mission: sustainable, comfortable, zero-emission travel across Pune, Mumbai & Maharashtra with premium EV fleet."
+  keywords={[
+    "about GreenEVCabs",
+    "electric cab company Maharashtra",
+    "EV taxi service Pune Mumbai",
+    "sustainable transportation India",
+    "zero emission cab service",
+    "electric vehicle fleet",
+    "eco-friendly cab company",
+    "green transportation Maharashtra"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" }
+  ]} />
+
+  <StructuredData data={[organizationSchema, breadcrumbSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero Section -->
+    <div class="text-center mb-16">
+      <Badge variant="secondary" className="mb-4">
+        100% Electric • Zero Emissions • Sustainable Future
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        About GreenEVCabs
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+        Maharashtra's first and leading 100% electric cab service, revolutionizing intercity and intracity
+        transportation with premium electric vehicles, zero emissions, and uncompromising comfort.
+      </p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
+      <Card>
+        <CardHeader>
+          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+            <Target className="h-6 w-6 text-primary" />
+          </div>
+          <CardTitle class="text-2xl">Our Mission</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground leading-relaxed">
+            To provide Maharashtra with accessible, affordable, and eco-friendly electric cab services that
+            make sustainable transportation the first choice for every traveler. We're committed to reducing
+            carbon emissions while offering premium comfort and reliability across Pune, Mumbai, and all major
+            destinations in Maharashtra.
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+            <Leaf className="h-6 w-6 text-primary" />
+          </div>
+          <CardTitle class="text-2xl">Our Vision</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground leading-relaxed">
+            To be India's most trusted electric vehicle transportation network, setting the standard for
+            sustainable mobility across the nation. We envision a future where every journey contributes to
+            a cleaner environment, and electric cabs are the preferred choice for conscious travelers
+            nationwide.
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Our Story -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Our Story</h2>
+      <div class="prose prose-lg max-w-none text-muted-foreground">
+        <p class="mb-4">
+          GreenEVCabs was born from a simple yet powerful idea: travel should never come at the cost of our environment.
+          Founded in 2024, we recognized the urgent need for sustainable transportation solutions in Maharashtra's rapidly
+          growing cities. With increasing air pollution, rising fuel costs, and growing environmental consciousness among
+          travelers, we saw an opportunity to revolutionize the cab service industry.
+        </p>
+        <p class="mb-4">
+          Starting with just a handful of electric vehicles in Pune, we set out to prove that eco-friendly transportation
+          doesn't mean compromising on comfort, reliability, or affordability. Our founding team comprised environmental
+          enthusiasts, technology experts, and hospitality professionals who shared a common vision: make electric mobility
+          accessible to everyone.
+        </p>
+        <p class="mb-4">
+          Today, GreenEVCabs operates a premium fleet of electric vehicles including the spacious Kia Carens EV and luxurious
+          BYD E-MAX 7, serving thousands of satisfied customers across Maharashtra. From daily commutes and airport transfers
+          to long-distance outstation trips and corporate travel, we've proven that zero-emission transportation is not just
+          possible - it's preferable.
+        </p>
+        <p>
+          Our journey has been marked by continuous innovation, customer-first service, and an unwavering commitment to
+          environmental sustainability. Every electric cab ride with GreenEVCabs is a step towards a cleaner, greener Maharashtra.
+        </p>
+      </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Why Choose GreenEVCabs?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Leaf className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>100% Electric Fleet</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Every single vehicle in our fleet is fully electric with zero tailpipe emissions. We're proud to operate
+              Maharashtra's first 100% electric cab service, contributing to cleaner air and a healthier environment
+              with every journey.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Zap className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>Premium Vehicles</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Our fleet features top-tier electric vehicles: Kia Carens EV with 400+ km range and BYD E-MAX 7 with
+              530+ km range. Enjoy spacious 7-seater comfort, advanced safety features, climate control, and premium
+              interiors on every trip.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Shield className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>Safety First</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              All vehicles equipped with advanced safety features including ADAS Level 2, 360° cameras, multiple airbags,
+              and electronic stability control. Our verified, trained drivers ensure your safety and comfort throughout
+              your journey.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Users className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>24/7 Service</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Round-the-clock availability for all your travel needs. From early morning airport transfers to late-night
+              pickups, corporate travel to family outstation trips - we're always ready to serve you with instant booking
+              confirmation.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Award className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>Professional Drivers</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Experienced, background-verified drivers specially trained in electric vehicle operation. Courteous,
+              professional service with excellent route knowledge across Maharashtra. Customer satisfaction is our
+              top priority.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <Target className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle>Competitive Pricing</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Transparent pricing with no hidden charges. Starting at just ₹18/km for Kia Carens EV and ₹22/km for
+              BYD E-MAX 7. Special rates for popular routes, corporate packages, and monthly rentals. Get premium
+              service at competitive prices.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Our Impact -->
+    <div class="mb-16 bg-muted/50 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Our Environmental Impact</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-2">50,000+</div>
+          <div class="text-lg text-muted-foreground">Zero-Emission Kilometers Driven</div>
+        </div>
+        <div>
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-2">15 Tons</div>
+          <div class="text-lg text-muted-foreground">CO₂ Emissions Prevented</div>
+        </div>
+        <div>
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-2">5,000+</div>
+          <div class="text-lg text-muted-foreground">Happy Eco-Conscious Travelers</div>
+        </div>
+      </div>
+      <p class="text-center text-muted-foreground mt-8 text-lg">
+        Every journey with GreenEVCabs contributes to a cleaner, greener Maharashtra. Together, we're building
+        a sustainable future, one electric ride at a time.
+      </p>
+    </div>
+
+    <!-- Service Areas -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Service Areas Across Maharashtra</h2>
+      <div class="prose prose-lg max-w-none text-muted-foreground">
+        <p class="mb-4">
+          GreenEVCabs proudly serves major cities and popular destinations across Maharashtra with our premium electric
+          vehicle fleet:
+        </p>
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h3 class="text-xl font-semibold text-foreground mb-3">Major Cities</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Pune - Hinjewadi, Wakad, Kothrud, Hadapsar, Viman Nagar</li>
+              <li>Mumbai - Andheri, Bandra, Powai, Thane, Navi Mumbai</li>
+              <li>Pune Airport & Mumbai Airport transfers (24/7)</li>
+              <li>All major IT parks and business hubs</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-foreground mb-3">Popular Destinations</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Shirdi - Spiritual journey in electric vehicles</li>
+              <li>Lonavala & Khandala - Hill station getaways</li>
+              <li>Mahabaleshwar & Panchgani - Weekend escapes</li>
+              <li>Nashik - Wine tours and temple visits</li>
+              <li>Aurangabad - Historical tours</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Can't find your destination? We offer customized routes to any location within Maharashtra. Contact our team
+          for special route requests and outstation packages.
+        </p>
+      </div>
+    </div>
+
+    <!-- Our Commitment -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Our Commitment to You</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold">✓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">Environmental Responsibility</h3>
+            <p class="text-muted-foreground">
+              Every trip is 100% zero-emission, contributing to cleaner air and reduced carbon footprint in Maharashtra.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold">✓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">Customer Satisfaction</h3>
+            <p class="text-muted-foreground">
+              Your comfort, safety, and satisfaction are our top priorities. We go the extra mile to ensure excellent service.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold">✓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">Transparent Pricing</h3>
+            <p class="text-muted-foreground">
+              No hidden charges, no surge pricing. What you see is what you pay. Clear, upfront pricing for all services.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold">✓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">Continuous Innovation</h3>
+            <p class="text-muted-foreground">
+              Investing in latest electric vehicle technology and service improvements to enhance your travel experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 md:p-12 max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Experience the Future of Sustainable Travel
+      </h2>
+      <p class="text-muted-foreground mb-8 text-lg">
+        Join thousands of eco-conscious travelers who've chosen GreenEVCabs for comfortable, reliable,
+        and environmentally responsible transportation across Maharashtra.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/fleet">
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8">
+            View Our Electric Fleet
+          </button>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20an%20electric%20cab" target="_blank" rel="noopener noreferrer">
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-green-500 text-white hover:bg-green-600 h-11 px-8">
+            Book Now on WhatsApp
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>
