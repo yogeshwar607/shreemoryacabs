@@ -13,7 +13,7 @@ export function generateLocalBusinessSchema() {
     name: BUSINESS_NAME,
     image: `${SITE_URL}/og-image.jpg`,
     url: SITE_URL,
-    telephone: '+919876543210',
+    telephone: '+917498264215',
     email: 'info@greenevcabs.com',
     priceRange: '$$',
     address: {
@@ -163,7 +163,7 @@ export function generateOrganizationSchema() {
       'Leading provider of electric cab services in Maharashtra, India. Offering sustainable, comfortable, and reliable transportation solutions.',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+919876543210',
+      telephone: '+917498264215',
       contactType: 'Customer Service',
       email: 'info@greenevcabs.com',
       availableLanguage: ['English', 'Hindi', 'Marathi'],

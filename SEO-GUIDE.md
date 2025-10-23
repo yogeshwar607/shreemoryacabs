@@ -66,7 +66,7 @@ All structured data is implemented using JSON-LD format in `<script type="applic
   "@type": "LocalBusiness",
   "name": "GreenEVCabs",
   "address": { "addressLocality": "Pune", "addressRegion": "Maharashtra" },
-  "telephone": "+919876543210",
+  "telephone": "+917498264215",
   "openingHours": "24/7",
   "aggregateRating": { "ratingValue": "4.8", "reviewCount": "156" }
 }

@@ -185,7 +185,7 @@ export default {
 ### .env.example
 ```
 PUBLIC_SITE_URL=https://greenevcabs.com
-PUBLIC_WHATSAPP_NUMBER=919876543210
+PUBLIC_WHATSAPP_NUMBER=917498264215
 PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
@@ -267,7 +267,7 @@ cp .env.example .env
 
 4. **Update WhatsApp number:**
    - Edit `src/lib/whatsapp.ts`
-   - Replace `919876543210` with your actual number
+   - Replace `917498264215` with your actual number
 
 5. **Start development server:**
 ```bash

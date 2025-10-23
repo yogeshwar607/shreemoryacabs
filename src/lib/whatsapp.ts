@@ -1,5 +1,5 @@
 export function generateWhatsAppLink(message: string): string {
-  const phoneNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '919876543210';
+  const phoneNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 }

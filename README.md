@@ -62,7 +62,7 @@ cp .env.example .env
 3. Update `.env` with your details:
 ```env
 PUBLIC_SITE_URL=https://greenevcabs.com
-PUBLIC_WHATSAPP_NUMBER=919876543210
+PUBLIC_WHATSAPP_NUMBER=917498264215
 PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
