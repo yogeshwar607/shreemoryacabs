@@ -9,6 +9,12 @@ export const GET: APIRoute = async () => {
     '',
     '/fleet',
     '/routes',
+    '/about',
+    '/faq',
+    '/airport',
+    '/airport/mumbai-airport',
+    '/airport/navi-mumbai-airport',
+    '/airport/pune-airport',
   ];
 
   const vehiclePages = vehicles.map((vehicle) => `/fleet/${vehicle.slug}`);
@@ -16,17 +22,28 @@ export const GET: APIRoute = async () => {
 
   const allPages = [...staticPages, ...vehiclePages, ...routePages];
 
+  // Helper function to determine priority and change frequency
+  const getPageMetadata = (page: string) => {
+    if (page === '') return { priority: '1.0', changefreq: 'daily' };
+    if (page === '/fleet' || page === '/routes') return { priority: '0.9', changefreq: 'daily' };
+    if (page === '/about' || page === '/faq') return { priority: '0.7', changefreq: 'monthly' };
+    if (page.startsWith('/airport')) return { priority: '0.9', changefreq: 'weekly' };
+    if (page.startsWith('/fleet/') || page.startsWith('/routes/')) return { priority: '0.8', changefreq: 'weekly' };
+    return { priority: '0.8', changefreq: 'weekly' };
+  };
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allPages
-  .map(
-    (page) => `  <url>
+  .map((page) => {
+    const { priority, changefreq } = getPageMetadata(page);
+    return `  <url>
     <loc>${BASE_URL}${page}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>${page === '' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
-  </url>`
-  )
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+  })
   .join('\n')}
 </urlset>`;
 
