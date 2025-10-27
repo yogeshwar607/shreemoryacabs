@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#greenGradient)"/>
+
+  <!-- Electric cab icon -->
+  <!-- Car body -->
+  <path d="M 25 45 L 30 35 L 40 35 L 42 30 L 58 30 L 60 35 L 70 35 L 75 45 L 75 60 L 72 65 L 28 65 L 25 60 Z"
+        fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- Windows -->
+  <path d="M 33 38 L 35 35 L 45 35 L 46 38 Z" fill="#10b981" opacity="0.5"/>
+  <path d="M 54 38 L 55 35 L 65 35 L 67 38 Z" fill="#10b981" opacity="0.5"/>
+
+  <!-- Wheels -->
+  <circle cx="35" cy="65" r="6" fill="#1f2937" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="65" cy="65" r="6" fill="#1f2937" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Lightning bolt (electric symbol) -->
+  <path d="M 52 42 L 48 50 L 51 50 L 49 58 L 55 48 L 52 48 Z"
+        fill="#fbbf24" stroke="#f59e0b" stroke-width="0.5"/>
+</svg>

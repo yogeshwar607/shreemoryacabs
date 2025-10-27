@@ -5,6 +5,14 @@ addEventListener('fetch', event => {
 })
 
 async function handleEvent(event) {
+  const url = new URL(event.request.url)
+
+  // Redirect HTTP to HTTPS
+  if (url.protocol === 'http:') {
+    url.protocol = 'https:'
+    return Response.redirect(url.toString(), 301)
+  }
+
   try {
     return await getAssetFromKV(event, {})
   } catch (e) {

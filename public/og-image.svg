@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Pattern overlay for texture -->
+  <rect width="1200" height="630" fill="#000000" opacity="0.1"/>
+
+  <!-- Main Content Container -->
+  <g id="content">
+    <!-- Logo/Icon Area -->
+    <circle cx="250" cy="315" r="100" fill="#ffffff" opacity="0.2"/>
+    <g transform="translate(200, 265)">
+      <!-- Cab icon -->
+      <path d="M 25 45 L 35 25 L 60 25 L 65 20 L 85 20 L 90 25 L 115 25 L 125 45 L 125 75 L 120 85 L 30 85 L 25 75 Z"
+            fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+
+      <!-- Windows -->
+      <path d="M 42 30 L 47 25 L 70 25 L 73 30 Z" fill="#10b981" opacity="0.6"/>
+      <path d="M 77 30 L 80 25 L 103 25 L 108 30 Z" fill="#10b981" opacity="0.6"/>
+
+      <!-- Wheels -->
+      <circle cx="50" cy="85" r="12" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="100" cy="85" r="12" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+
+      <!-- Lightning bolt -->
+      <path d="M 77 42 L 70 58 L 76 58 L 72 74 L 84 56 L 78 56 Z"
+            fill="#fbbf24" stroke="#f59e0b" stroke-width="1"/>
+    </g>
+
+    <!-- Text Content -->
+    <text x="420" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="bold" fill="#ffffff">
+      GreenEVCabs
+    </text>
+
+    <text x="420" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#ffffff" opacity="0.95">
+      Sustainable Electric Cab Services
+    </text>
+
+    <text x="420" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#ffffff" opacity="0.85">
+      Zero Emissions • Premium Comfort • 24/7 Service
+    </text>
+
+    <!-- Bottom accent line -->
+    <line x1="420" y1="440" x2="900" y2="440" stroke="#fbbf24" stroke-width="4" opacity="0.8"/>
+
+    <!-- Website URL -->
+    <text x="420" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">
+      greenevcabs.com
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="40" fill="#ffffff" opacity="0.1"/>
+  <circle cx="950" cy="500" r="60" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1100" cy="400" r="30" fill="#ffffff" opacity="0.12"/>
+</svg>
