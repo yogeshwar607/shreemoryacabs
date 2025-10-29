@@ -1,10 +1,39 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+import { Plane, MapPin, Clock, Check, Zap, Shield, Phone, MessageCircle, Star, Leaf } from "lucide-react";
 
-const title = "Electric Cab Navi Mumbai Airport (NMIA) | Zero Emission Transfer 24/7";
-const description = "Book electric cab to Navi Mumbai International Airport. Premium EV taxi service, 24/7 availability. Pune-NMIA ₹4,800. Eco-friendly airport transfer with flight tracking.";
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Airport Transfers", url: "/airport" },
+  { name: "Navi Mumbai Airport", url: "/airport/navi-mumbai-airport" }
+]);
+
+const airportServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Navi Mumbai Airport Electric Cab Service",
+  "serviceType": "Airport Transfer Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "url": "https://greenevcabs.com",
+    "telephone": "+91-7498264215"
+  },
+  "areaServed": {
+    "@type": "Airport",
+    "name": "Navi Mumbai International Airport",
+    "iataCode": "NMI"
+  }
+};
+
+const title = "Electric Cab Navi Mumbai Airport (NMI) | Zero Emission Transfer 24/7";
+const description = "Book electric cab to Navi Mumbai International Airport. Premium EV taxi service, 24/7 availability. Pune-NMI ₹2,999. Eco-friendly airport transfer with flight tracking.";
 ---
 
 <MainLayout title={title} description={description}>
@@ -14,41 +43,238 @@ const description = "Book electric cab to Navi Mumbai International Airport. Pre
     { name: "Navi Mumbai Airport", href: "/airport/navi-mumbai-airport" }
   ]} />
 
-  <div class="container px-4 py-12">
-    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">
-      Electric Cab to Navi Mumbai Airport
-    </h1>
-    <p class="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-      Premium electric vehicle transfer to Navi Mumbai International Airport (NMIA).
-      Eco-friendly, comfortable, 24/7 service.
-    </p>
-    
-    <div class="max-w-4xl mx-auto text-center mb-12">
-      <h2 class="text-2xl font-bold mb-4">Popular Routes to Navi Mumbai Airport</h2>
-      <ul class="space-y-3 text-left max-w-2xl mx-auto mb-8">
-        <li class="flex justify-between p-4 bg-muted/50 rounded">
-          <span>Pune to Navi Mumbai Airport</span>
-          <strong>₹4,800</strong>
-        </li>
-        <li class="flex justify-between p-4 bg-muted/50 rounded">
-          <span>Thane to NMIA</span>
-          <strong>₹1,200</strong>
-        </li>
-        <li class="flex justify-between p-4 bg-muted/50 rounded">
-          <span>Panvel to NMIA</span>
-          <strong>₹600</strong>
-        </li>
-        <li class="flex justify-between p-4 bg-muted/50 rounded">
-          <span>Mumbai to NMIA</span>
-          <strong>₹2,000</strong>
-        </li>
-      </ul>
-      
-      <a href="https://wa.me/917498264215?text=Navi%20Mumbai%20Airport%20Transfer" target="_blank">
-        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
-          Book Navi Mumbai Airport Transfer
-        </Button>
-      </a>
+  <StructuredData data={[breadcrumbSchema, airportServiceSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        India's Newest International Airport • Zero Emissions • 24/7 Service
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        Electric Cab to Navi Mumbai Airport
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+        Premium electric vehicle transfer to Navi Mumbai International Airport (NMI).
+        Experience eco-friendly, comfortable travel to India's newest world-class airport facility.
+      </p>
+
+      <!-- Trust Signals -->
+      <div class="flex flex-wrap justify-center gap-6 mb-8">
+        <div class="flex items-center gap-2">
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+          <span class="font-semibold">4.9/5 Rating</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Plane className="h-5 w-5 text-primary" />
+          <span class="font-semibold">New World-Class Airport</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Leaf className="h-5 w-5 text-green-600" />
+          <span class="font-semibold">100% Zero Emissions</span>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20Transfer" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book via WhatsApp
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Phone className="mr-2 h-5 w-5" />
+            Call: +91 74982 64215
+          </Button>
+        </a>
+      </div>
     </div>
+
+    <!-- Popular Routes Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+        Popular Routes to/from Navi Mumbai Airport
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <Card className="hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle className="flex justify-between items-center">
+              <span>Pune → Navi Mumbai Airport</span>
+              <Badge>₹2,999</Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4" />
+                <span>120 km</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                <Clock className="h-4 w-4" />
+                <span>2-2.5 hours</span>
+              </div>
+            </div>
+            <a href="/routes/pune-to-navi-mumbai-airport">
+              <Button className="w-full">View Details & Book</Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle className="flex justify-between items-center">
+              <span>Navi Mumbai Airport → Pune</span>
+              <Badge>₹2,999</Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4" />
+                <span>120 km</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                <Clock className="h-4 w-4" />
+                <span>2-2.5 hours</span>
+              </div>
+            </div>
+            <a href="/routes/navi-mumbai-airport-to-pune">
+              <Button className="w-full">View Details & Book</Button>
+            </a>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Why Choose Electric Cab for Navi Mumbai Airport?
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <Plane className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>New World-Class Airport</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Experience India's newest international airport with state-of-the-art facilities, modern infrastructure, and convenient access from Pune.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Zap className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>Zero Surge Pricing</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Fixed rates 24/7. No surge pricing during peak hours, holidays, or early morning flights. ₹2,999 anytime.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Leaf className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>100% Zero Emissions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Travel sustainably in our premium electric vehicles. Reduce your carbon footprint while enjoying superior comfort.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Shield className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>Flight Tracking</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Real-time flight tracking for pickups. Zero waiting charges for flight delays. Professional meet & greet service.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Clock className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>24/7 Availability</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Round-the-clock service for all flights. Early morning departures and late night arrivals - we're always ready.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Check className="h-10 w-10 text-primary mb-2" />
+            <CardTitle>All-Inclusive Pricing</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Tolls, parking, and driver charges included. No hidden fees. The price you see is the price you pay.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- About NMI Airport Section -->
+    <section class="mb-16">
+      <Card className="max-w-4xl mx-auto">
+        <CardHeader>
+          <CardTitle className="text-2xl">About Navi Mumbai International Airport (NMI)</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground mb-4">
+            Navi Mumbai International Airport is India's newest international airport, featuring world-class infrastructure and modern facilities.
+            Located strategically in Navi Mumbai, it offers better accessibility for travelers from Pune compared to Mumbai's Chhatrapati Shivaji
+            Maharaj International Airport.
+          </p>
+          <p class="text-muted-foreground">
+            With state-of-the-art terminals, advanced technology, and eco-friendly design, NMI represents the future of aviation in India.
+            The airport is designed to handle both domestic and international flights efficiently, providing a seamless travel experience
+            for passengers.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="text-center">
+      <Card className="max-w-2xl mx-auto bg-gradient-to-br from-primary/10 to-background">
+        <CardContent className="pt-8 pb-8">
+          <h2 class="text-3xl font-bold mb-4">
+            Ready to Book Your Navi Mumbai Airport Transfer?
+          </h2>
+          <p class="text-lg text-muted-foreground mb-6">
+            Experience eco-friendly, comfortable travel to India's newest international airport
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20Transfer" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp Booking
+              </Button>
+            </a>
+            <a href="tel:+917498264215">
+              <Button size="lg" variant="outline">
+                <Phone className="mr-2 h-5 w-5" />
+                Call Now
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
   </div>
 </MainLayout>

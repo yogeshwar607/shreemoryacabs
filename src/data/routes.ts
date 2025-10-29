@@ -34,7 +34,7 @@ export const routes: Route[] = [
       'Flexible departure times'
     ],
     pricing: {
-      kiaCarens: 4500,
+      kiaCarens: 2999,
       bydEmax7: 5200
     },
     popular: true
@@ -47,9 +47,9 @@ export const routes: Route[] = [
     to: 'Mumbai Airport (BOM)',
     distance: '148 km',
     duration: '2.5-3 hours',
-    description: 'Premium electric cab service from Pune to Mumbai Airport (BOM). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. Terminal 1 & Terminal 2 drop service with flight timing assistance. Book eco-friendly airport transfer starting ₹4,500.',
+    description: 'Premium electric cab service from Pune to Mumbai Airport (BOM). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. Terminal 1 & Terminal 2 drop service with flight timing assistance. Book eco-friendly airport transfer starting ₹2,999.',
     highlights: [
-      'Zero surge pricing - ₹4,500 fixed rate 24/7',
+      'Zero surge pricing - ₹2,999 fixed rate 24/7',
       'Terminal 1 & Terminal 2 drop service',
       'All tolls & parking included',
       'Early morning pickups (3 AM, 4 AM)',
@@ -57,7 +57,7 @@ export const routes: Route[] = [
       'Luggage capacity: 4-5 large suitcases'
     ],
     pricing: {
-      kiaCarens: 4500,
+      kiaCarens: 2999,
       bydEmax7: 5200
     },
     popular: true
@@ -70,7 +70,7 @@ export const routes: Route[] = [
     to: 'Pune',
     distance: '148 km',
     duration: '2.5-3 hours',
-    description: 'Reliable electric cab pickup from Mumbai Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7 for Terminal 1 & Terminal 2. Professional airport pickup service starting ₹4,500.',
+    description: 'Reliable electric cab pickup from Mumbai Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7 for Terminal 1 & Terminal 2. Professional airport pickup service starting ₹2,999.',
     highlights: [
       'Flight tracking - automatic delay adjustments',
       'Meet & greet with name board',
@@ -80,7 +80,7 @@ export const routes: Route[] = [
       'Late night pickups available'
     ],
     pricing: {
-      kiaCarens: 4500,
+      kiaCarens: 2999,
       bydEmax7: 5200
     },
     popular: true
@@ -103,7 +103,7 @@ export const routes: Route[] = [
       'Professional service'
     ],
     pricing: {
-      kiaCarens: 4500,
+      kiaCarens: 2999,
       bydEmax7: 5200
     },
     popular: true
@@ -126,7 +126,7 @@ export const routes: Route[] = [
       'Multiple stops allowed'
     ],
     pricing: {
-      kiaCarens: 4500,
+      kiaCarens: 2999,
       bydEmax7: 5200
     },
     popular: true
@@ -139,7 +139,7 @@ export const routes: Route[] = [
     to: 'Shirdi',
     distance: '185 km',
     duration: '4-4.5 hours',
-    description: 'Book electric cab for Pune to Shirdi pilgrimage trip. Experience spiritual journey in our eco-friendly electric vehicles with zero emissions, comfortable 7-seater capacity, and professional drivers familiar with temple routes. Perfect for family darshan trips with ample luggage space for prasad. Sustainable travel to Sai Baba temple with flexible timing, competitive pricing starting ₹5,500. Make your holy journey environmentally conscious.',
+    description: 'Book electric cab for Pune to Shirdi pilgrimage trip. Experience spiritual journey in our eco-friendly electric vehicles with zero emissions, comfortable 7-seater capacity, and professional drivers familiar with temple routes. Perfect for family darshan trips with ample luggage space for prasad. Sustainable travel to Sai Baba temple with flexible timing, competitive pricing starting ₹2,999. Make your holy journey environmentally conscious.',
     highlights: [
       'Direct route to Shirdi',
       'Comfortable for pilgrimage',
@@ -149,7 +149,7 @@ export const routes: Route[] = [
       'Clean and sanitized vehicles'
     ],
     pricing: {
-      kiaCarens: 5500,
+      kiaCarens: 2999,
       bydEmax7: 6400
     },
     popular: true
@@ -162,7 +162,7 @@ export const routes: Route[] = [
     to: 'Lonavala',
     distance: '64 km',
     duration: '1.5-2 hours',
-    description: 'Electric cab for Pune to Lonavala hill station getaway. Enjoy scenic Western Ghats drive in premium electric vehicles. Perfect for weekend trips, monsoon tourism, and family outings to Bhushi Dam, Khandala, and Tiger Point. Eco-friendly travel with photography stops, zero emissions, and comfortable seating. Book our electric cabs for sustainable hill station tourism starting ₹2,800.',
+    description: 'Electric cab for Pune to Lonavala hill station getaway. Enjoy scenic Western Ghats drive in premium electric vehicles. Perfect for weekend trips, monsoon tourism, and family outings to Bhushi Dam, Khandala, and Tiger Point. Eco-friendly travel with photography stops, zero emissions, and comfortable seating. Book our electric cabs for sustainable hill station tourism starting ₹2,999.',
     highlights: [
       'Scenic mountain drive',
       'Perfect for weekend getaways',
@@ -172,7 +172,7 @@ export const routes: Route[] = [
       'Local sightseeing options'
     ],
     pricing: {
-      kiaCarens: 2800,
+      kiaCarens: 2999,
       bydEmax7: 3200
     },
     popular: false
@@ -185,7 +185,7 @@ export const routes: Route[] = [
     to: 'Nashik',
     distance: '210 km',
     duration: '4-5 hours',
-    description: 'Premium electric cab service from Pune to Nashik, India\'s wine capital. Explore Sula Vineyards, Trimbakeshwar Temple, and scenic vineyards in zero-emission electric vehicles. Perfect for wine tours, temple visits, and weekend getaways. Comfortable 7-seater EVs with professional drivers, flexible itineraries, and sustainable tourism. Book eco-friendly Pune-Nashik cab service starting ₹6,200.',
+    description: 'Premium electric cab service from Pune to Nashik, India\'s wine capital. Explore Sula Vineyards, Trimbakeshwar Temple, and scenic vineyards in zero-emission electric vehicles. Perfect for wine tours, temple visits, and weekend getaways. Comfortable 7-seater EVs with professional drivers, flexible itineraries, and sustainable tourism. Book eco-friendly Pune-Nashik cab service starting ₹2,999.',
     highlights: [
       'Wine tour packages',
       'Temple visits',
@@ -195,7 +195,7 @@ export const routes: Route[] = [
       'Multiple stop options'
     ],
     pricing: {
-      kiaCarens: 6200,
+      kiaCarens: 2999,
       bydEmax7: 7200
     },
     popular: false
@@ -208,7 +208,7 @@ export const routes: Route[] = [
     to: 'Mahabaleshwar',
     distance: '120 km',
     duration: '3-3.5 hours',
-    description: 'Book electric cab for Pune to Mahabaleshwar hill station trip. Experience eco-friendly travel to strawberry farms, scenic viewpoints (Wilson Point, Arthur\'s Seat), and Venna Lake. Perfect for weekend getaways and family vacations. Our premium electric vehicles offer comfortable, zero-emission travel through Panchgani. Sustainable tourism with professional drivers, flexible stops, starting ₹4,200.',
+    description: 'Book electric cab for Pune to Mahabaleshwar hill station trip. Experience eco-friendly travel to strawberry farms, scenic viewpoints (Wilson Point, Arthur\'s Seat), and Venna Lake. Perfect for weekend getaways and family vacations. Our premium electric vehicles offer comfortable, zero-emission travel through Panchgani. Sustainable tourism with professional drivers, flexible stops, starting ₹2,999.',
     highlights: [
       'Hill station experience',
       'Strawberry farm visits',
@@ -218,8 +218,54 @@ export const routes: Route[] = [
       'Panchgani en route'
     ],
     pricing: {
-      kiaCarens: 4200,
+      kiaCarens: 2999,
       bydEmax7: 4900
+    },
+    popular: true
+  },
+  {
+    id: '10',
+    slug: 'pune-to-navi-mumbai-airport',
+    name: 'Pune to Navi Mumbai Airport',
+    from: 'Pune',
+    to: 'Navi Mumbai Airport (NMI)',
+    distance: '120 km',
+    duration: '2-2.5 hours',
+    description: 'Premium electric cab service from Pune to Navi Mumbai International Airport (NMI). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. New world-class airport with modern facilities. Book eco-friendly airport transfer starting ₹2,999.',
+    highlights: [
+      'Zero surge pricing - ₹2,999 fixed rate 24/7',
+      'New world-class airport facility',
+      'All tolls & parking included',
+      'Early morning pickups (3 AM, 4 AM)',
+      'Corporate GST invoice available',
+      'Luggage capacity: 4-5 large suitcases'
+    ],
+    pricing: {
+      kiaCarens: 2999,
+      bydEmax7: 5200
+    },
+    popular: true
+  },
+  {
+    id: '11',
+    slug: 'navi-mumbai-airport-to-pune',
+    name: 'Navi Mumbai Airport to Pune',
+    from: 'Navi Mumbai Airport (NMI)',
+    to: 'Pune',
+    distance: '120 km',
+    duration: '2-2.5 hours',
+    description: 'Reliable electric cab pickup from Navi Mumbai International Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7. Professional airport pickup service starting ₹2,999.',
+    highlights: [
+      'Flight tracking - automatic delay adjustments',
+      'Meet & greet with name board',
+      'Zero waiting charges for flight delays',
+      'New airport pickup service',
+      'Drop anywhere in Pune',
+      'Late night pickups available'
+    ],
+    pricing: {
+      kiaCarens: 2999,
+      bydEmax7: 5200
     },
     popular: true
   }
