@@ -41,6 +41,75 @@ export const routes: Route[] = [
   },
   {
     id: '2',
+    slug: 'pune-to-mumbai-airport',
+    name: 'Pune to Mumbai Airport',
+    from: 'Pune',
+    to: 'Mumbai Airport (BOM)',
+    distance: '148 km',
+    duration: '2.5-3 hours',
+    description: 'Premium electric cab service from Pune to Mumbai Airport (BOM). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. Terminal 1 & Terminal 2 drop service with flight timing assistance. Book eco-friendly airport transfer starting ₹4,500.',
+    highlights: [
+      'Zero surge pricing - ₹4,500 fixed rate 24/7',
+      'Terminal 1 & Terminal 2 drop service',
+      'All tolls & parking included',
+      'Early morning pickups (3 AM, 4 AM)',
+      'Corporate GST invoice available',
+      'Luggage capacity: 4-5 large suitcases'
+    ],
+    pricing: {
+      kiaCarens: 4500,
+      bydEmax7: 5200
+    },
+    popular: true
+  },
+  {
+    id: '3',
+    slug: 'mumbai-airport-to-pune',
+    name: 'Mumbai Airport to Pune',
+    from: 'Mumbai Airport (BOM)',
+    to: 'Pune',
+    distance: '148 km',
+    duration: '2.5-3 hours',
+    description: 'Reliable electric cab pickup from Mumbai Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7 for Terminal 1 & Terminal 2. Professional airport pickup service starting ₹4,500.',
+    highlights: [
+      'Flight tracking - automatic delay adjustments',
+      'Meet & greet with name board',
+      'Zero waiting charges for flight delays',
+      'Terminal 1 & 2 pickup service',
+      'Drop anywhere in Pune',
+      'Late night pickups available'
+    ],
+    pricing: {
+      kiaCarens: 4500,
+      bydEmax7: 5200
+    },
+    popular: true
+  },
+  {
+    id: '4',
+    slug: 'hinjewadi-to-mumbai-airport',
+    name: 'Hinjewadi to Mumbai Airport',
+    from: 'Hinjewadi',
+    to: 'Mumbai Airport (BOM)',
+    distance: '155 km',
+    duration: '3-3.5 hours',
+    description: 'Electric cab from Hinjewadi IT Parks (Phase 1, 2, 3) to Mumbai Airport. Corporate packages available with GST invoice. Perfect for IT professionals with zero surge pricing and 24/7 service. Pickup from all major IT parks - Wipro, TCS, Infosys, Cognizant.',
+    highlights: [
+      'Pickup from Phase 1, 2, 3 IT parks',
+      'Corporate GST invoice',
+      'Monthly packages for frequent travelers',
+      'Zero surge pricing',
+      'Early morning availability',
+      'Professional service'
+    ],
+    pricing: {
+      kiaCarens: 4500,
+      bydEmax7: 5200
+    },
+    popular: true
+  },
+  {
+    id: '5',
     slug: 'mumbai-pune',
     name: 'Mumbai to Pune',
     from: 'Mumbai',
@@ -63,7 +132,7 @@ export const routes: Route[] = [
     popular: true
   },
   {
-    id: '3',
+    id: '6',
     slug: 'pune-shirdi',
     name: 'Pune to Shirdi',
     from: 'Pune',
@@ -86,7 +155,7 @@ export const routes: Route[] = [
     popular: true
   },
   {
-    id: '4',
+    id: '7',
     slug: 'pune-lonavala',
     name: 'Pune to Lonavala',
     from: 'Pune',
@@ -109,7 +178,7 @@ export const routes: Route[] = [
     popular: false
   },
   {
-    id: '5',
+    id: '8',
     slug: 'pune-nashik',
     name: 'Pune to Nashik',
     from: 'Pune',
@@ -132,7 +201,7 @@ export const routes: Route[] = [
     popular: false
   },
   {
-    id: '6',
+    id: '9',
     slug: 'pune-mahabaleshwar',
     name: 'Pune to Mahabaleshwar',
     from: 'Pune',

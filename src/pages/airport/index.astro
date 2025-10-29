@@ -21,7 +21,15 @@ const airportServiceSchema = {
   "serviceType": "Airport Transfer Service",
   "provider": {
     "@type": "Organization",
-    "name": "GreenEVCabs"
+    "name": "GreenEVCabs",
+    "url": "https://greenevcabs.com",
+    "logo": "https://greenevcabs.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-7498264215",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Hindi", "Marathi"]
+    }
   },
   "areaServed": [
     {
@@ -50,7 +58,86 @@ const airportServiceSchema = {
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     "opens": "00:00",
     "closes": "23:59"
-  }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "287",
+    "bestRating": "5"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pune to Mumbai Airport Electric Cab",
+      "price": "4500",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-01-01"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pune to Navi Mumbai Airport Electric Cab",
+      "price": "4800",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-01-01"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How early should I book electric cab for airport transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend booking at least 24 hours in advance for airport transfers, especially for early morning flights or peak travel times. However, we also accept last-minute bookings subject to availability. Our 24/7 booking system via WhatsApp and phone ensures you can book anytime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you track flights for pickup from airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We track all flights in real-time. If your flight is delayed, our system automatically adjusts the pickup time and notifies your driver. There's no additional charge for waiting due to flight delays. This ensures your electric cab is ready exactly when you land."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I have an early morning flight at 3-4 AM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our electric cab service operates 24/7 with no blackout times. We specialize in early morning airport transfers. Whether your flight is at 3 AM, 4 AM, or any time, we guarantee on-time pickup in our premium electric vehicles. Pre-booking ensures guaranteed availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I identify the electric cab at the airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For airport pickups, our driver will be waiting at the designated pickup point with a name board displaying your name. You'll receive driver details, vehicle information, and contact number via WhatsApp/SMS before your arrival. Our electric cabs are distinctive Kia Carens EV or BYD E-MAX 7 models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there extra charge for luggage or multiple passengers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! Our pricing is all-inclusive. Our electric cabs are spacious 7-seaters with ample luggage capacity. There's no extra charge for luggage or additional passengers (up to 6-7 people). The quoted price covers the entire journey including tolls on major routes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book electric cab for both drop and pickup (round trip)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! We offer round trip packages with 10% discount for both airport drop and pickup bookings. This is perfect for business trips or vacations. You can pre-book both legs of your journey and enjoy discounted rates plus guaranteed availability."
+      }
+    }
+  ]
 };
 ---
 
@@ -75,7 +162,7 @@ const airportServiceSchema = {
     { name: "Airport Transfers", href: "/airport" }
   ]} />
 
-  <StructuredData data={[breadcrumbSchema, airportServiceSchema]} />
+  <StructuredData data={[breadcrumbSchema, airportServiceSchema, faqSchema]} />
 
   <div class="container px-4 py-12 md:py-16">
     <!-- Hero Section -->
@@ -84,11 +171,12 @@ const airportServiceSchema = {
         24/7 Airport Service • Flight Tracking • Zero Emissions
       </Badge>
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-        Electric Cab Airport Transfers
+        Electric Cab Airport Transfer Mumbai, Navi Mumbai & Pune | Zero Emission EV Taxi Service
       </h1>
       <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-        Premium electric vehicle airport transfer service for Mumbai Airport, Navi Mumbai Airport & Pune Airport.
-        Zero emissions, 24/7 availability, flight tracking, and professional meet & greet service.
+        Book premium electric cab for airport transfer to Mumbai Airport (BOM), Navi Mumbai Airport (NMIA) & Pune Airport (PNQ).
+        100% eco-friendly EV taxi service with zero emissions, 24/7 availability, real-time flight tracking, and professional meet & greet service.
+        Reliable electric vehicle airport pickup and drop with transparent pricing.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="https://wa.me/917498264215?text=Hi%2C%20I%20want%20to%20book%20an%20electric%20cab%20for%20airport%20transfer" target="_blank" rel="noopener noreferrer">
@@ -106,7 +194,7 @@ const airportServiceSchema = {
 
     <!-- Airports Served -->
     <div class="mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Airports We Serve</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Electric Cab Service to Major Airports in Maharashtra</h2>
       <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <a href="/airport/mumbai-airport">
           <Card className="hover:shadow-lg transition-shadow cursor-pointer">
@@ -193,7 +281,7 @@ const airportServiceSchema = {
 
     <!-- Why Choose Electric Cabs for Airport Transfer -->
     <div class="mb-16 bg-muted/50 rounded-lg p-8 md:p-12">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Why Choose Electric Cabs for Airport Transfer?</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Why Choose Zero Emission Electric Cab for Airport Transfer Mumbai & Pune?</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="text-center">
           <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -239,7 +327,7 @@ const airportServiceSchema = {
 
     <!-- Popular Airport Routes -->
     <div class="mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Popular Electric Cab Airport Routes</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Popular Electric Cab Airport Transfer Routes & Fares</h2>
       <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <Card>
           <CardHeader>
@@ -258,9 +346,14 @@ const airportServiceSchema = {
                 Most popular route! Electric cab service on Mumbai-Pune Expressway with zero emissions.
                 Perfect for business travelers and families.
               </p>
-              <a href="/airport/mumbai-airport">
-                <Button variant="outline" className="w-full">Book Mumbai Airport Transfer →</Button>
-              </a>
+              <div class="flex gap-2">
+                <a href="/routes/pune-to-mumbai-airport" class="flex-1">
+                  <Button variant="outline" className="w-full" size="sm">Pune → Mumbai →</Button>
+                </a>
+                <a href="/routes/mumbai-airport-to-pune" class="flex-1">
+                  <Button variant="outline" className="w-full" size="sm">Mumbai → Pune →</Button>
+                </a>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -338,7 +431,7 @@ const airportServiceSchema = {
 
     <!-- Services Included -->
     <div class="mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">What's Included in Our Airport Transfer Service</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Premium Features Included in Electric Cab Airport Transfer</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
         {[
           "Flight tracking & delay monitoring",
@@ -364,7 +457,7 @@ const airportServiceSchema = {
 
     <!-- Airport Transfer FAQ -->
     <div class="mb-16 max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Airport Transfer FAQ</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently Asked Questions - Electric Cab Airport Transfer</h2>
       <div class="space-y-4">
         {[
           {
