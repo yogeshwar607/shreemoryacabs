@@ -3,6 +3,7 @@ interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  ogImageAlt?: string;
   ogType?: string;
   keywords?: string[];
   author?: string;
@@ -16,6 +17,7 @@ const {
   title,
   description,
   ogImage = '/og-image.jpg',
+  ogImageAlt = 'GreenEVCabs - Sustainable Electric Cab Services',
   ogType = 'website',
   keywords = [],
   author = 'GreenEVCabs',
@@ -67,20 +69,25 @@ const robotsContent = [
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={fullOgImage} />
+<meta property="og:image:secure_url" content={fullOgImage} />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={ogImageAlt} />
 <meta property="og:site_name" content="GreenEVCabs" />
 <meta property="og:locale" content="en_US" />
 {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={canonicalURL} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={fullOgImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@greenevcabs" />
 <meta name="twitter:creator" content="@greenevcabs" />
+<meta name="twitter:url" content={canonicalURL} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={fullOgImage} />
+<meta name="twitter:image:alt" content={ogImageAlt} />
 
 <!-- Additional SEO Tags -->
 <meta name="format-detection" content="telephone=yes" />
@@ -98,3 +105,14 @@ const robotsContent = [
 <meta http-equiv="content-language" content="en" />
 <link rel="alternate" hreflang="en" href={canonicalURL} />
 <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+
+<!-- Additional Search Engine Tags -->
+<meta name="google" content="notranslate" />
+<meta name="application-name" content="GreenEVCabs" />
+<meta name="apple-mobile-web-app-title" content="GreenEVCabs" />
+<meta name="msapplication-tooltip" content="Book Electric Cabs - Sustainable Transport" />
+<meta name="msapplication-starturl" content="/" />
+
+<!-- Verification and Business -->
+<meta name="rating" content="general" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
