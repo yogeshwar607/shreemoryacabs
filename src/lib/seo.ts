@@ -18,8 +18,10 @@ export function generateLocalBusinessSchema() {
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Hinjewadi Phase 1', // TODO: Update with your actual street address
       addressLocality: 'Pune',
       addressRegion: 'Maharashtra',
+      postalCode: '411057', // TODO: Update with your actual postal code
       addressCountry: 'IN',
     },
     geo: {
@@ -170,8 +172,10 @@ export function generateOrganizationSchema() {
     },
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Hinjewadi Phase 1', // TODO: Update with your actual street address
       addressLocality: 'Pune',
       addressRegion: 'Maharashtra',
+      postalCode: '411057', // TODO: Update with your actual postal code
       addressCountry: 'IN',
     },
     sameAs: [
