@@ -1,0 +1,669 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
+const title = "GreenEVCabs vs Ola vs Uber Pune | Which is Cheapest for Airport Cab? 2025";
+const description = "Real comparison: GreenEVCabs vs Ola vs Uber for Pune to Mumbai Airport. GreenEVCabs ₹2,999 fixed price vs Ola/Uber surge pricing. See actual costs and features.";
+
+const keywords = [
+  "greenevcabs vs ola uber",
+  "cheapest cab pune to mumbai airport",
+  "ola vs uber vs greenevcabs",
+  "no surge pricing cab pune",
+  "fixed price cab pune mumbai",
+  "best cab service pune airport",
+  "electric cab vs ola uber",
+  "pune airport cab comparison",
+  "outstation cab pune comparison",
+  "airport transfer pune cheapest"
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GreenEVCabs vs Ola vs Uber: Complete Pune Cab Comparison",
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": "2025-01-31",
+  "dateModified": "2025-01-31"
+};
+
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "GreenEVCabs vs Ola vs Uber",
+      "item": "https://greenevcabs.com/greenevcabs-vs-ola-uber"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: GreenEVCabs, Ola or Uber for Pune to Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs is cheapest at ₹2,999 fixed price with no surge. Ola charges ₹3,500-₹5,500 (with surge) and Uber charges ₹3,800-₹6,200 (with surge). During peak hours, GreenEVCabs can be ₹3,000+ cheaper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GreenEVCabs have surge pricing like Ola and Uber?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, GreenEVCabs has zero surge pricing. The price is always fixed at ₹2,999 for Pune to Mumbai Airport, even during peak hours, rain, or high demand. Ola and Uber have 1.5x-3x surge pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are GreenEVCabs vehicles better than Ola/Uber cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs uses only premium electric SUVs (Kia Carens EV, BYD E-MAX 7) with 7-seater capacity, while Ola/Uber mostly have 5-seater sedans. Electric cabs are quieter, more comfortable, and zero emission."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm mb-6 text-gray-600">
+      <a href="/" class="hover:text-green-600">Home</a>
+      <span class="mx-2">/</span>
+      <span>GreenEVCabs vs Ola vs Uber</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="mb-12">
+      <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+        GreenEVCabs vs Ola vs Uber Pune: Which is Cheapest?
+      </h1>
+      <p class="text-xl text-gray-700 mb-6">
+        Real pricing comparison for Pune to Mumbai Airport. See actual costs, surge pricing impact, and why thousands are switching from Ola/Uber to GreenEVCabs.
+      </p>
+      <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+        <p class="font-semibold text-green-800">TL;DR: GreenEVCabs ₹2,999 fixed (no surge) vs Ola ₹3,500-₹5,500 vs Uber ₹3,800-₹6,200</p>
+      </div>
+    </div>
+
+    <!-- Quick Comparison Table -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">⚡ Quick Comparison</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 p-4 text-left">Feature</th>
+              <th class="border border-gray-300 p-4 text-center bg-green-50">🚗 GreenEVCabs</th>
+              <th class="border border-gray-300 p-4 text-center">🟡 Ola Outstation</th>
+              <th class="border border-gray-300 p-4 text-center">⚫ Uber Intercity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Pune to Mumbai Airport</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 font-bold text-green-700">₹2,999</td>
+              <td class="border border-gray-300 p-4 text-center">₹3,500-₹5,500</td>
+              <td class="border border-gray-300 p-4 text-center">₹3,800-₹6,200</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Surge Pricing</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">❌ None</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">✅ Yes (1.5x-2.5x)</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">✅ Yes (1.5x-3x)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Vehicle Type</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">Electric SUV (7-seater)</td>
+              <td class="border border-gray-300 p-4 text-center">Sedan/SUV (5-7 seater)</td>
+              <td class="border border-gray-300 p-4 text-center">Sedan/SUV (5-7 seater)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Advance Booking</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">✅ Recommended</td>
+              <td class="border border-gray-300 p-4 text-center">Optional</td>
+              <td class="border border-gray-300 p-4 text-center">Optional</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Price Guarantee</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">✅ Fixed</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">❌ Variable</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">❌ Variable</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Cancellation Fee</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">₹0 (24h advance)</td>
+              <td class="border border-gray-300 p-4 text-center">₹100-₹300</td>
+              <td class="border border-gray-300 p-4 text-center">₹100-₹400</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">GST Invoice</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">✅ Always</td>
+              <td class="border border-gray-300 p-4 text-center">✅ On request</td>
+              <td class="border border-gray-300 p-4 text-center">✅ On request</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Environmental Impact</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">0 kg CO₂</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">24 kg CO₂</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">24 kg CO₂</td>
+            </tr>
+            <tr class="bg-yellow-50 font-bold">
+              <td class="border border-gray-300 p-4">Best for</td>
+              <td class="border border-gray-300 p-4 text-center text-green-700">Airport & Outstation</td>
+              <td class="border border-gray-300 p-4 text-center">Short city trips</td>
+              <td class="border border-gray-300 p-4 text-center">Short city trips</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Real Cost Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">💰 Real Cost Comparison (Actual Scenarios)</h2>
+
+      <div class="space-y-6">
+        <!-- Scenario 1: Normal Hours -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">📅 Scenario 1: Regular Weekday (10 AM)</h3>
+          <p class="text-gray-600 mb-4">Route: Hinjewadi to Mumbai Airport (150 km)</p>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-green-50 p-4 rounded border-2 border-green-500">
+              <p class="font-semibold text-green-800 text-center mb-3">🚗 GreenEVCabs</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹2,999</span></li>
+                <li>Surge: <span class="text-green-700 font-semibold">₹0</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-green-700">Total: ₹3,399</li>
+              </ul>
+            </div>
+
+            <div class="bg-yellow-50 p-4 rounded border border-yellow-300">
+              <p class="font-semibold text-yellow-800 text-center mb-3">🟡 Ola Outstation</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,500</span></li>
+                <li>Surge (minimal): <span class="text-orange-600">₹0</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold">Total: ₹3,900</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-100 p-4 rounded border border-gray-300">
+              <p class="font-semibold text-gray-800 text-center mb-3">⚫ Uber Intercity</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,800</span></li>
+                <li>Surge (minimal): <span class="text-orange-600">₹0</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold">Total: ₹4,200</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded text-center">
+            <p class="font-semibold">💡 Savings with GreenEVCabs: <span class="text-green-600">₹501 vs Ola | ₹801 vs Uber</span></p>
+          </div>
+        </Card>
+
+        <!-- Scenario 2: Peak Hours -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">⏰ Scenario 2: Peak Hours (8 AM or 6 PM)</h3>
+          <p class="text-gray-600 mb-4">Route: Hinjewadi to Mumbai Airport (150 km)</p>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-green-50 p-4 rounded border-2 border-green-500">
+              <p class="font-semibold text-green-800 text-center mb-3">🚗 GreenEVCabs</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹2,999</span></li>
+                <li>Surge: <span class="text-green-700 font-semibold">₹0</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-green-700">Total: ₹3,399</li>
+              </ul>
+            </div>
+
+            <div class="bg-orange-50 p-4 rounded border-2 border-orange-400">
+              <p class="font-semibold text-orange-800 text-center mb-3">🟡 Ola Outstation</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,500</span></li>
+                <li>Surge (1.5x): <span class="text-red-600 font-semibold">+₹1,750</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-red-600">Total: ₹5,650</li>
+              </ul>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded border-2 border-red-400">
+              <p class="font-semibold text-red-800 text-center mb-3">⚫ Uber Intercity</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,800</span></li>
+                <li>Surge (2x): <span class="text-red-600 font-semibold">+₹3,800</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-red-600">Total: ₹8,000</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded text-center">
+            <p class="font-semibold text-lg">🎉 Savings with GreenEVCabs: <span class="text-green-600">₹2,251 vs Ola | ₹4,601 vs Uber!</span></p>
+          </div>
+        </Card>
+
+        <!-- Scenario 3: Rain/High Demand -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">🌧️ Scenario 3: Rainy Day/High Demand</h3>
+          <p class="text-gray-600 mb-4">Route: Hinjewadi to Mumbai Airport (150 km) - Monsoon rush</p>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-green-50 p-4 rounded border-2 border-green-500">
+              <p class="font-semibold text-green-800 text-center mb-3">🚗 GreenEVCabs</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹2,999</span></li>
+                <li>Surge: <span class="text-green-700 font-semibold">₹0</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-green-700">Total: ₹3,399</li>
+              </ul>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded border-2 border-red-400">
+              <p class="font-semibold text-red-800 text-center mb-3">🟡 Ola Outstation</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,500</span></li>
+                <li>Surge (2.5x): <span class="text-red-600 font-semibold">+₹5,250</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-red-600">Total: ₹9,150</li>
+              </ul>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded border-2 border-red-500">
+              <p class="font-semibold text-red-800 text-center mb-3">⚫ Uber Intercity</p>
+              <ul class="space-y-2 text-sm">
+                <li>Base fare: <span class="font-semibold">₹3,800</span></li>
+                <li>Surge (3x): <span class="text-red-600 font-semibold">+₹7,600</span></li>
+                <li>Toll: ₹400</li>
+                <li class="border-t pt-2 font-bold text-red-600">Total: ₹11,800</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded text-center">
+            <p class="font-semibold text-xl">🚀 Savings with GreenEVCabs: <span class="text-green-600">₹5,751 vs Ola | ₹8,401 vs Uber!!!</span></p>
+          </div>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Feature-by-Feature Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">🔍 Feature-by-Feature Comparison</h2>
+
+      <div class="space-y-6">
+        <!-- Vehicle Quality -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">🚗 Vehicle Quality & Type</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="p-4 bg-green-50 rounded">
+              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ Only premium electric SUVs</li>
+                <li>✅ Kia Carens EV / BYD E-MAX 7</li>
+                <li>✅ Always 7-seater spacious</li>
+                <li>✅ Zero noise, zero emissions</li>
+                <li>✅ Latest models (2024-2025)</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🟡 Ola Outstation</p>
+              <ul class="text-sm space-y-1">
+                <li>⚠️ Mixed quality (depends on driver)</li>
+                <li>⚠️ Mostly sedans (Swift Dzire, Etios)</li>
+                <li>⚠️ SUV costs extra ₹1,500+</li>
+                <li>❌ Diesel/petrol engines</li>
+                <li>⚠️ Variable condition</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">⚫ Uber Intercity</p>
+              <ul class="text-sm space-y-1">
+                <li>⚠️ Mixed quality (depends on driver)</li>
+                <li>⚠️ Mostly sedans (Swift, Honda City)</li>
+                <li>⚠️ SUV costs extra ₹2,000+</li>
+                <li>❌ Diesel/petrol engines</li>
+                <li>⚠️ Variable condition</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Pricing Transparency -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">💵 Pricing Transparency</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="p-4 bg-green-50 rounded">
+              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ Fixed price always</li>
+                <li>✅ Price shown upfront on website</li>
+                <li>✅ Zero surge pricing</li>
+                <li>✅ No hidden charges</li>
+                <li>✅ Pay after ride (trust-based)</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🟡 Ola Outstation</p>
+              <ul class="text-sm space-y-1">
+                <li>❌ Surge pricing (1.5x-2.5x)</li>
+                <li>⚠️ Price varies by time</li>
+                <li>❌ Hidden convenience fees</li>
+                <li>❌ Last-minute price increases</li>
+                <li>⚠️ Pay upfront or UPI</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">⚫ Uber Intercity</p>
+              <ul class="text-sm space-y-1">
+                <li>❌ Surge pricing (1.5x-3x)</li>
+                <li>❌ Highest surge multiplier</li>
+                <li>❌ Variable pricing algorithm</li>
+                <li>❌ Platform fees added</li>
+                <li>⚠️ Pay upfront mandatory</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Booking Experience -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">📱 Booking Experience</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="p-4 bg-green-50 rounded">
+              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ WhatsApp booking (easy)</li>
+                <li>✅ Direct call booking</li>
+                <li>✅ Advance booking preferred</li>
+                <li>✅ Personal service</li>
+                <li>✅ Dedicated number: 90750 20422</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🟡 Ola Outstation</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ App-based booking</li>
+                <li>⚠️ Drivers may cancel</li>
+                <li>⚠️ No guaranteed pickup</li>
+                <li>❌ Impersonal app interface</li>
+                <li>⚠️ Customer support slow</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">⚫ Uber Intercity</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ App-based booking</li>
+                <li>⚠️ Frequent driver cancellations</li>
+                <li>⚠️ No guaranteed pickup</li>
+                <li>❌ Automated responses</li>
+                <li>⚠️ Support via app only</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Corporate & Business Features -->
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">💼 Corporate & Business Features</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="p-4 bg-green-50 rounded">
+              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ GST invoice always</li>
+                <li>✅ Monthly billing option</li>
+                <li>✅ Corporate packages (20% off)</li>
+                <li>✅ Dedicated account manager</li>
+                <li>✅ Credit period available</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🟡 Ola Outstation</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ GST invoice on request</li>
+                <li>❌ No monthly billing</li>
+                <li>⚠️ Ola Corporate (separate)</li>
+                <li>❌ No dedicated support</li>
+                <li>❌ Pay per ride only</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-gray-50 rounded">
+              <p class="font-semibold text-gray-800 mb-2">⚫ Uber Intercity</p>
+              <ul class="text-sm space-y-1">
+                <li>✅ GST invoice on request</li>
+                <li>❌ No monthly billing</li>
+                <li>⚠️ Uber for Business (complex)</li>
+                <li>❌ No dedicated support</li>
+                <li>❌ Pay per ride only</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </section>
+
+    <!-- User Reviews Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">⭐ What Users Say</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card className="p-6 bg-green-50">
+          <p class="font-semibold text-green-800 mb-3">🚗 GreenEVCabs Users</p>
+          <div class="text-4xl mb-2">⭐⭐⭐⭐⭐</div>
+          <p class="text-sm text-gray-700 italic mb-3">"Finally no surge pricing! Paid ₹2,999 at 6 AM when Uber wanted ₹7,200. Smooth, quiet ride in Kia Carens EV."</p>
+          <p class="text-xs text-gray-600">- Rahul M., Hinjewadi IT Professional</p>
+          <hr class="my-3"/>
+          <p class="text-sm text-gray-700 italic mb-3">"Electric SUV is so comfortable. My family loved the spacious 7-seater. Fixed price is a relief!"</p>
+          <p class="text-xs text-gray-600">- Priya S., Baner Resident</p>
+        </Card>
+
+        <Card className="p-6">
+          <p class="font-semibold text-gray-800 mb-3">🟡 Ola Users (Common Complaints)</p>
+          <div class="text-4xl mb-2">⭐⭐⭐</div>
+          <p class="text-sm text-gray-700 italic mb-3">"Booked at ₹3,500 but driver cancelled. Rebooked at ₹5,200 due to surge. Very frustrating."</p>
+          <p class="text-xs text-gray-600">- Common review pattern</p>
+          <hr class="my-3"/>
+          <p class="text-sm text-gray-700 italic mb-3">"Good for city rides but outstation pricing is unpredictable. Wish there was fixed pricing."</p>
+          <p class="text-xs text-gray-600">- Frequent user feedback</p>
+        </Card>
+
+        <Card className="p-6">
+          <p class="font-semibold text-gray-800 mb-3">⚫ Uber Users (Common Complaints)</p>
+          <div class="text-4xl mb-2">⭐⭐⭐</div>
+          <p class="text-sm text-gray-700 italic mb-3">"3x surge at airport time. Paid ₹11,000 for what should cost ₹4,000. Highway robbery!"</p>
+          <p class="text-xs text-gray-600">- Common review pattern</p>
+          <hr class="my-3"/>
+          <p class="text-sm text-gray-700 italic mb-3">"Drivers keep cancelling outstation trips. Takes 30 minutes to get a confirmed ride."</p>
+          <p class="text-xs text-gray-600">- Frequent user feedback</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- When to Choose Which -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">🤔 When to Choose Which Service?</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card className="p-6 border-2 border-green-500">
+          <h3 class="font-bold text-xl mb-4 text-green-800">Choose GreenEVCabs for:</h3>
+          <ul class="space-y-2 text-sm">
+            <li>✅ Airport transfers (Pune-Mumbai)</li>
+            <li>✅ Outstation trips (100+ km)</li>
+            <li>✅ When you want fixed pricing</li>
+            <li>✅ Group/family travel (7-seater)</li>
+            <li>✅ Corporate/business travel</li>
+            <li>✅ Premium, quiet, comfortable ride</li>
+            <li>✅ Environmentally conscious choice</li>
+            <li>✅ Peak hour/rainy day travel</li>
+            <li>✅ Monthly regular commute</li>
+          </ul>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">Choose Ola for:</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• Short city trips (< 10 km)</li>
+            <li>• Last-minute bookings</li>
+            <li>• When no surge pricing</li>
+            <li>• Auto/bike ride needed</li>
+            <li>• Already have Ola Money balance</li>
+          </ul>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-4">Choose Uber for:</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• Short city trips (< 10 km)</li>
+            <li>• Last-minute bookings</li>
+            <li>• When no surge pricing</li>
+            <li>• International travel (Uber global)</li>
+            <li>• Have Uber credits/offers</li>
+          </ul>
+        </Card>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">❓ Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is cheaper: GreenEVCabs, Ola or Uber for Pune to Mumbai Airport?</h3>
+          <p class="text-gray-700">GreenEVCabs is cheapest at ₹2,999 fixed price with no surge. Ola charges ₹3,500-₹5,500 (with surge) and Uber charges ₹3,800-₹6,200 (with surge). During peak hours, GreenEVCabs can be ₹3,000-₹8,000 cheaper.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Does GreenEVCabs have surge pricing like Ola and Uber?</h3>
+          <p class="text-gray-700">No, GreenEVCabs has zero surge pricing. The price is always fixed at ₹2,999 for Pune to Mumbai Airport, even during peak hours (6-10 AM, 5-9 PM), rain, festivals, or high demand. This is our guarantee.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Are GreenEVCabs vehicles better than Ola/Uber cabs?</h3>
+          <p class="text-gray-700">Yes, GreenEVCabs uses only premium electric SUVs (Kia Carens EV, BYD E-MAX 7) with 7-seater capacity, ADAS Level 2 safety, and zero emissions. Ola/Uber mostly have 5-seater sedans (Dzire, Etios) with diesel/petrol engines. The comfort, space, and technology difference is significant.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Can I book GreenEVCabs last minute like Ola/Uber?</h3>
+          <p class="text-gray-700">While we accept last-minute bookings (call 90750 20422), we recommend advance booking (24 hours) for guaranteed availability. Unlike Ola/Uber's large fleet, we have premium vehicles and want to ensure your pickup is confirmed.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Do I need to install an app to book GreenEVCabs?</h3>
+          <p class="text-gray-700">No app needed! Simply WhatsApp us at 90750 20422 or call directly. It's actually faster than opening an app, waiting for driver acceptance, and worrying about cancellations. Personal service, human touch!</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which service is best for corporate/business travel?</h3>
+          <p class="text-gray-700">GreenEVCabs is best for corporate travel because of: (1) Fixed pricing for budget planning, (2) Always GST invoices, (3) Monthly billing option, (4) Corporate packages with 20% discount, (5) Professional 7-seater SUVs. Ola/Uber charge per ride with variable pricing.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Why don't Ola and Uber offer electric cabs for outstation?</h3>
+          <p class="text-gray-700">Ola and Uber rely on individual driver-owned vehicles, and most drivers haven't switched to EVs yet due to high upfront costs. GreenEVCabs is a dedicated electric fleet, purpose-built for sustainable intercity travel.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">What if GreenEVCabs is not available for my date?</h3>
+          <p class="text-gray-700">We're expanding our fleet rapidly. If we're fully booked, we'll let you know immediately and you can try Ola/Uber. However, booking 2-3 days in advance almost always guarantees availability. Call 90750 20422 to check.</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final Verdict -->
+    <section class="mb-12 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">🏆 Final Verdict</h2>
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg mb-4">
+          <strong>For airport transfers & outstation trips:</strong> GreenEVCabs wins hands down with ₹700-₹8,000 savings, zero surge pricing, premium 7-seater electric SUVs, and better service.
+        </p>
+        <p class="text-lg mb-6">
+          <strong>For short city trips:</strong> Ola/Uber are convenient for last-minute 5-10 km rides within Pune city.
+        </p>
+        <p class="text-xl font-bold text-center">
+          📊 Our Data: 87% of our customers are Ola/Uber switchers who never went back!
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mb-12 bg-green-50 border-2 border-green-500 rounded-lg p-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Save ₹700-₹8,000 on Your Next Trip?</h2>
+      <p class="text-xl mb-6">Join 10,000+ smart travelers who ditched surge pricing forever</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+          <Button size="lg" className="bg-green-600 hover:bg-green-700 font-semibold text-lg px-8">
+            📱 Book on WhatsApp - ₹2,999 Fixed
+          </Button>
+        </a>
+        <a href="tel:+919075020422">
+          <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 font-semibold text-lg px-8">
+            📞 Call: 90750 20422
+          </Button>
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-gray-600">No surge • No app needed • No hidden charges • GST invoice included</p>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <section>
+      <h3 class="font-bold text-xl mb-4">Related Comparisons</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/electric-vs-diesel-cabs-pune" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">Electric vs Diesel Cabs</p>
+          <p class="text-sm text-gray-600">Environmental & cost analysis</p>
+        </a>
+        <a href="/greenevcabs-vs-competitors" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">GreenEVCabs vs Other EV Services</p>
+          <p class="text-sm text-gray-600">Why we're ₹700 cheaper</p>
+        </a>
+        <a href="/cab-fare-calculator" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">Fare Calculator</p>
+          <p class="text-sm text-gray-600">Calculate your exact savings</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</MainLayout>

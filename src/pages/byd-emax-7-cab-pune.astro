@@ -1,0 +1,487 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { Check, Zap, Shield, Users, Leaf, Star, Phone, MessageCircle, Battery } from "lucide-react";
+---
+
+<MainLayout
+  title="BYD E-MAX 7 Cab Pune ₹2,999 | Premium 7 Seater Electric SUV | Book Now"
+  description="Book BYD E-MAX 7 cab in Pune at ₹2,999 for Mumbai Airport. Premium 7-seater electric SUV with 530 km range, ADAS safety, ultra-spacious interiors. Best rates for BYD E-MAX 7 cab rental. Available 24/7."
+  keywords={[
+    "byd emax 7 cab pune",
+    "byd e-max 7 electric cab",
+    "byd emax 7 rental pune",
+    "7 seater byd emax cab",
+    "byd emax 7 taxi pune",
+    "book byd emax 7",
+    "byd emax cab pune to mumbai",
+    "byd emax 7 electric suv cab"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "BYD E-MAX 7 Cab Pune", href: "/byd-emax-7-cab-pune" }
+  ]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        Premium Chinese Electric SUV • 530 km Range • ADAS Level 2
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        BYD E-MAX 7 Cab Pune - Premium 7 Seater Electric SUV at ₹2,999
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+        Book premium BYD E-MAX 7 cab in Pune for airport transfers, outstation trips, and local travel. World's largest EV manufacturer's flagship 7-seater electric SUV with 530 km range, ultra-spacious interiors, and cutting-edge safety features. Starting at just ₹22/km or ₹2,999 for Pune-Mumbai Airport.
+      </p>
+
+      <!-- Trust Signals -->
+      <div class="flex flex-wrap justify-center gap-6 mb-8">
+        <div class="flex items-center gap-2">
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+          <span class="font-semibold">4.9/5 Rating</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Battery className="h-5 w-5 text-green-600" />
+          <span class="font-semibold">530 km Range</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Users className="h-5 w-5 text-primary" />
+          <span class="font-semibold">7 Seater Premium</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20BYD%20E-MAX%207%20cab%0APickup%3A%20%0ADestination%3A%20%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book BYD E-MAX 7 Now
+          </Button>
+        </a>
+        <a href="tel:+919075020422">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 90750 20422
+          </Button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Vehicle Image Placeholder -->
+    <div class="mb-16 max-w-5xl mx-auto">
+      <div class="aspect-video bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-950 dark:to-orange-950 rounded-lg flex items-center justify-center text-6xl">
+        🚙
+      </div>
+      <p class="text-center text-sm text-muted-foreground mt-4">BYD E-MAX 7 - Premium 7-Seater Electric SUV</p>
+    </div>
+
+    <!-- Key Specifications -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">BYD E-MAX 7 - Technical Specifications</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Battery className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Battery Range</h3>
+            <p class="text-3xl font-bold text-primary mb-2">530 km</p>
+            <p class="text-sm text-muted-foreground">ARAI certified range on single charge</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Seating Capacity</h3>
+            <p class="text-3xl font-bold text-primary mb-2">6+1</p>
+            <p class="text-sm text-muted-foreground">Executive captain seats in middle row</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Power Output</h3>
+            <p class="text-3xl font-bold text-primary mb-2">230 HP</p>
+            <p class="text-sm text-muted-foreground">Superior instant torque delivery</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Safety Rating</h3>
+            <p class="text-3xl font-bold text-primary mb-2">5 Star</p>
+            <p class="text-sm text-muted-foreground">ADAS Level 2 equipped</p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-16 bg-muted/50 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose BYD E-MAX 7 Cab?</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-green-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Ultra-Spacious 7-Seater Layout</h3>
+            <p class="text-sm text-muted-foreground">
+              Premium captain seats in middle row with maximum legroom. Class-leading interior space for 6-7 passengers.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-blue-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">530 km Range - Longest in Class</h3>
+            <p class="text-sm text-muted-foreground">
+              ARAI-certified 530 km range. Real-world range of 480+ km - the longest range electric SUV available.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-purple-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">ADAS Level 2 Safety Suite</h3>
+            <p class="text-sm text-muted-foreground">
+              Advanced Driver Assistance with lane keep assist, adaptive cruise control, collision warning, blind spot detection.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-orange-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Premium BYD Blade Battery</h3>
+            <p class="text-sm text-muted-foreground">
+              World's safest battery technology by BYD. Passes nail penetration test. Zero fire risk with cobalt-free chemistry.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-teal-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Executive Interiors</h3>
+            <p class="text-sm text-muted-foreground">
+              Tri-zone climate control, ventilated/heated seats, wireless charging, premium leather upholstery, 12.8" rotating screen.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-red-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Massive Luggage Capacity</h3>
+            <p class="text-sm text-muted-foreground">
+              650 liters boot space accommodates 5 large suitcases. Perfect for family trips and airport transfers with luggage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">BYD E-MAX 7 Cab Pricing in Pune</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Local Trips</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹22/km</div>
+            <p class="text-sm text-muted-foreground mb-4">Within Pune city</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Minimum: ₹350</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Waiting: ₹100/hour</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-primary">
+          <CardHeader className="bg-primary/5">
+            <CardTitle>Airport Transfer</CardTitle>
+            <Badge className="mt-2">Most Popular</Badge>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹2,999</div>
+            <p class="text-sm text-muted-foreground mb-4">Pune to Mumbai Airport</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>All tolls included</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Flight tracking</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Full Day Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹4,200</div>
+            <p class="text-sm text-muted-foreground mb-4">8 hrs / 80 km</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Extra km: ₹22/km</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Extra hr: ₹200/hr</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Why BYD Section -->
+    <div class="mb-16 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Why BYD E-MAX 7?</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-muted-foreground mb-6 text-center">
+          BYD (Build Your Dreams) is the world's largest EV manufacturer, selling more electric vehicles than Tesla. The E-MAX 7 is BYD's flagship premium SUV for India.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="text-4xl mb-2">🌍</div>
+            <h3 class="font-bold mb-2">World Leader</h3>
+            <p class="text-sm text-muted-foreground">World's #1 EV manufacturer with 20+ years of battery expertise</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-2">🔋</div>
+            <h3 class="font-bold mb-2">Blade Battery</h3>
+            <p class="text-sm text-muted-foreground">Safest battery tech - passes nail penetration test, zero fire risk</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-2">💎</div>
+            <h3 class="font-bold mb-2">Premium Quality</h3>
+            <p class="text-sm text-muted-foreground">Luxury-grade interiors and build quality at affordable price</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="mb-16 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">BYD E-MAX 7 vs Kia Carens EV vs Diesel Innova</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-5xl mx-auto">
+          <thead>
+            <tr class="border-b-2">
+              <th class="text-left p-4">Feature</th>
+              <th class="text-center p-4">BYD E-MAX 7</th>
+              <th class="text-center p-4">Kia Carens EV</th>
+              <th class="text-center p-4">Diesel Innova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="p-4">Range</td>
+              <td class="text-center p-4 text-green-600 font-semibold">530 km ✓</td>
+              <td class="text-center p-4">452 km</td>
+              <td class="text-center p-4">~600 km</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Power</td>
+              <td class="text-center p-4 text-green-600 font-semibold">230 HP ✓</td>
+              <td class="text-center p-4">201 HP</td>
+              <td class="text-center p-4">171 HP</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Emissions</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Zero ✓</td>
+              <td class="text-center p-4 text-green-600">Zero ✓</td>
+              <td class="text-center p-4 text-red-600">35 kg CO₂/trip</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Noise Level</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Ultra Silent ✓</td>
+              <td class="text-center p-4 text-green-600">Silent ✓</td>
+              <td class="text-center p-4 text-red-600">Loud engine</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Safety (ADAS)</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Level 2 ✓</td>
+              <td class="text-center p-4 text-green-600">Level 2 ✓</td>
+              <td class="text-center p-4 text-red-600">Not available</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Interior Space</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Maximum ✓</td>
+              <td class="text-center p-4">Spacious</td>
+              <td class="text-center p-4">Spacious</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Pune-Mumbai Fare</td>
+              <td class="text-center p-4 text-green-600 font-semibold">₹2,999 ✓</td>
+              <td class="text-center p-4 text-green-600">₹2,999 ✓</td>
+              <td class="text-center p-4">₹3,500-4,000</td>
+            </tr>
+            <tr>
+              <td class="p-4">Surge Pricing</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Never ✓</td>
+              <td class="text-center p-4 text-green-600">Never ✓</td>
+              <td class="text-center p-4 text-red-600">2-3x peak hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">FAQs - BYD E-MAX 7 Cab</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How much does BYD E-MAX 7 cab cost in Pune?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              BYD E-MAX 7 cab costs ₹22/km for local Pune trips, ₹2,999 fixed for Pune to Mumbai Airport, and ₹4,200 for full-day package (8hrs/80km). Premium pricing for premium experience with no surge charges.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">What is the range of BYD E-MAX 7?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              BYD E-MAX 7 has ARAI-certified range of 530 km on single charge - the longest in its class. Real-world range is 480+ km, which easily covers Pune-Mumbai-Pune round trip twice (592 km) without charging. Perfect for long journeys.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How many people can sit in BYD E-MAX 7?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              BYD E-MAX 7 is a premium 7-seater (6+1 configuration) with executive captain seats in the middle row. Comfortably accommodates 6 adults or 7 people including children, with massive 650 liters luggage space for 5 large suitcases.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Is BYD E-MAX 7 safe? What safety features does it have?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Yes! BYD E-MAX 7 comes with ADAS Level 2 (Advanced Driver Assistance) including lane keep assist, adaptive cruise control, emergency braking, blind spot detection, 360-degree camera, 7 airbags, and 5-star safety rating. BYD's Blade Battery is the world's safest EV battery technology.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">What is BYD Blade Battery? Is it safe?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              BYD Blade Battery is revolutionary LFP (Lithium Iron Phosphate) battery technology that's cobalt-free and passes the nail penetration test - meaning zero fire risk even if damaged. It's the safest EV battery in the world, used by Tesla, Toyota, and other major manufacturers.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">BYD E-MAX 7 vs Kia Carens EV - which is better?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              BYD E-MAX 7 has longer range (530 km vs 452 km), more power (230 HP vs 201 HP), and larger interior space. Kia Carens EV is slightly more affordable (₹18/km vs ₹22/km). Both are excellent choices - E-MAX 7 is premium option, Carens EV is value option. Both cost same ₹2,999 for Pune-Mumbai Airport.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Can I book BYD E-MAX 7 for corporate/business trips?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Yes! BYD E-MAX 7's premium interiors and executive seating make it perfect for business travel. We offer corporate packages with 20% discount for regular bookings, monthly billing, GST invoices, and dedicated account manager. Ideal for client pickups and VIP airport transfers.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How do I book BYD E-MAX 7 cab in Pune?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Booking is easy! WhatsApp us at +91 90750 20422 or call directly. Just provide pickup location, destination, date & time. We recommend booking 24 hours in advance for guaranteed BYD E-MAX 7 availability. Instant confirmation in 5 minutes!
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 md:p-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Book Your BYD E-MAX 7 Cab in Pune
+      </h2>
+      <p class="text-muted-foreground mb-8 text-lg">
+        World's #1 EV Manufacturer • 530 km Range • Premium 7-Seater • ADAS Level 2 • From ₹22/km
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20BYD%20E-MAX%207%20cab%0APickup%3A%0ADestination%3A%0ADate%3A" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book on WhatsApp - Instant Confirmation
+          </Button>
+        </a>
+        <a href="tel:+919075020422">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call Now +91 90750 20422
+          </Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>

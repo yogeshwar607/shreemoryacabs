@@ -1,0 +1,966 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Check, X, Train, Bus, Car, Clock, IndianRupee, Users, Luggage, Wifi, Coffee, Shield, TrendingUp, ChevronRight, Star, AlertCircle, MessageCircle, Phone, Calendar } from "lucide-react";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+
+const pageTitle = "Pune to Mumbai: Train vs Bus vs Cab - Which is Actually Best? (2025 Complete Comparison)";
+const pageDescription = "Detailed comparison of train, bus, and cab options for Pune-Mumbai travel. Compare cost, time, comfort, convenience, and safety to choose the best transport method for your journey.";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": pageTitle,
+  "description": pageDescription,
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "image": "https://greenevcabs.com/og-image.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://greenevcabs.com/blog/pune-mumbai-train-vs-bus-vs-cab-comparison"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheapest: train, bus, or cab from Pune to Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Train is cheapest (₹145-280 per person). Bus is mid-range (₹300-800). Cab is most expensive (₹2,700-4,500) but becomes competitive with 4+ passengers. For 4 people, electric cab costs ₹675/person, which is comparable to premium bus fares but with door-to-door service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is fastest: train, bus, or cab for Pune-Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Express trains (Deccan Queen, Shivneri) are fastest at 3-3.5 hours station-to-station. Private EV cabs take 2.5-3 hours door-to-door (including last-mile travel). Buses take 3.5-5 hours. However, when you add station/terminal access time, cab is fastest overall for door-to-door journey."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is train or cab better for Pune to Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cab is significantly better for airport trips. Direct door-to-door (2.5 hours), handles luggage easily, no transfers needed, and arrives right at terminal. Train requires: Pune station → Mumbai station (3 hours) → local train/cab to airport (1+ hour) = 4-5 hours total with 2 transfers and luggage hassle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is most comfortable: train, bus or cab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Private cab > Train AC chair car > Luxury bus > Regular train > Regular bus. Private electric cab offers best comfort: climate-controlled, spacious, no crowds, reclining seats, personal space. Train AC chair car is comfortable but crowded. Luxury buses are decent but cramped. Regular options are least comfortable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I travel with heavy luggage on train vs bus vs cab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cab is best for luggage (dedicated boot, help with loading). Train AC has overhead racks but heavy bags are difficult to lift; general class is very challenging with luggage. Bus has limited under-seat/overhead space; large suitcases problematic. For airport trips or moving, cab is only practical option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is safer: train, bus, or cab for night travel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All are generally safe. Train is safest statistically (lowest accident rate). Private cab with professional driver is very safe and offers personal security. Buses are safe but higher accident risk on highways. Late night (post-midnight): trains run less frequently, so professional cab service is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do trains get delayed more than buses or cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average delays: Trains 15-45 minutes (frequent but predictable), Buses 30-60 minutes (traffic dependent), Cabs 15-30 minutes (most punctual with early morning travel). Trains rarely get canceled. Buses occasionally cancel. Professional cab services are most reliable for time-sensitive travel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which option is best for families with kids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Private cab is best for families: kids can sleep/play, food breaks possible, bathroom stops easy, no luggage carrying, direct travel. Train is second best (space to move, bathrooms) but crowded and requires station navigation. Bus is least suitable (cramped, limited bathroom access, no flexibility)."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={[
+    "Pune Mumbai train vs bus vs cab",
+    "best transport Pune Mumbai",
+    "cheapest way Pune Mumbai",
+    "fastest Pune Mumbai travel",
+    "Pune Mumbai comparison",
+    "train bus cab comparison",
+    "which is better train or cab",
+    "Pune Mumbai transport guide"
+  ]}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">Travel Guide</Badge>
+        <Badge variant="secondary">15 min read</Badge>
+        <Badge variant="secondary">Updated Jan 2025</Badge>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        Pune to Mumbai: Train vs Bus vs Cab - Which is Actually Best?
+      </h1>
+
+      <p class="text-xl text-muted-foreground mb-6">
+        Complete comparison of all three options based on cost, time, comfort, convenience, and safety. Choose the right transport for your specific journey needs.
+      </p>
+
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <span class="flex items-center gap-1">
+          <Calendar className="h-4 w-4" />
+          January 15, 2025
+        </span>
+        <span class="flex items-center gap-1">
+          <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+          Based on 1000+ journeys
+        </span>
+      </div>
+    </div>
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <TrendingUp className="h-6 w-6 text-green-600" />
+        Quick Recommendation
+      </h2>
+      <div class="space-y-3">
+        <p><strong>Choose Train if:</strong> Budget travel (₹145-280), don't mind crowds, station access is easy, have light luggage, flexible timing</p>
+        <p><strong>Choose Bus if:</strong> Moderate budget (₹300-800), want overnight travel, don't need speed, traveling solo with light bags</p>
+        <p><strong>Choose Cab if:</strong> Need door-to-door service, traveling with 3+ people, have luggage, value time/comfort, airport-bound, willing to pay premium</p>
+        <div class="bg-white p-3 rounded-lg mt-3">
+          <p class="text-sm font-semibold text-green-700">💡 Sweet Spot: 4 passengers in electric cab = ₹675/person = competitive with premium bus but infinitely more convenient!</p>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Table of Contents -->
+    <Card className="p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
+      <nav class="space-y-2">
+        <a href="#overview" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Quick Overview Table
+        </a>
+        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Cost Comparison
+        </a>
+        <a href="#time" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Time & Punctuality
+        </a>
+        <a href="#comfort" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Comfort Analysis
+        </a>
+        <a href="#convenience" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Convenience Factors
+        </a>
+        <a href="#scenarios" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Best for Different Scenarios
+        </a>
+        <a href="#decision" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Decision Helper
+        </a>
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          FAQs
+        </a>
+      </nav>
+    </Card>
+
+    <!-- Quick Overview Table -->
+    <section id="overview" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Quick Overview Comparison</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border p-3 text-left font-bold">Factor</th>
+              <th class="border p-3 text-center font-bold">
+                <Train className="h-6 w-6 mx-auto mb-1" />
+                Train
+              </th>
+              <th class="border p-3 text-center font-bold">
+                <Bus className="h-6 w-6 mx-auto mb-1" />
+                Bus
+              </th>
+              <th class="border p-3 text-center font-bold">
+                <Car className="h-6 w-6 mx-auto mb-1" />
+                Cab (EV)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border p-3 font-semibold">Cost (per person)</td>
+              <td class="border p-3 text-center text-green-700">₹145-280<br/><span class="text-xs">Cheapest</span></td>
+              <td class="border p-3 text-center">₹300-800<br/><span class="text-xs">Mid-range</span></td>
+              <td class="border p-3 text-center">₹675-2,700<br/><span class="text-xs">Most expensive</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Time (door-to-door)</td>
+              <td class="border p-3 text-center">4-5 hours<br/><span class="text-xs">+ transfers</span></td>
+              <td class="border p-3 text-center">4-5.5 hours<br/><span class="text-xs">+ terminal access</span></td>
+              <td class="border p-3 text-center text-green-700">2.5-3 hours<br/><span class="text-xs">Fastest</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Comfort</td>
+              <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">AC chair car</span></td>
+              <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">Luxury volvo</span></td>
+              <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Private space</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Luggage Capacity</td>
+              <td class="border p-3 text-center">⚠️ Limited<br/><span class="text-xs">Overhead only</span></td>
+              <td class="border p-3 text-center">⚠️ Limited<br/><span class="text-xs">Under-seat</span></td>
+              <td class="border p-3 text-center text-green-700">✅ Ample<br/><span class="text-xs">Dedicated boot</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Flexibility</td>
+              <td class="border p-3 text-center">❌ Fixed schedule</td>
+              <td class="border p-3 text-center">❌ Fixed schedule</td>
+              <td class="border p-3 text-center text-green-700">✅ Anytime<br/><span class="text-xs">24/7 service</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Safety</td>
+              <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Safest</span></td>
+              <td class="border p-3 text-center">⭐⭐⭐⭐<br/><span class="text-xs">Generally safe</span></td>
+              <td class="border p-3 text-center">⭐⭐⭐⭐⭐<br/><span class="text-xs">Professional driver</span></td>
+            </tr>
+            <tr>
+              <td class="border p-3 font-semibold">Best For</td>
+              <td class="border p-3 text-center text-xs">Budget travelers<br/>Light luggage<br/>Flexible time</td>
+              <td class="border p-3 text-center text-xs">Solo overnight<br/>Moderate budget<br/>No rush</td>
+              <td class="border p-3 text-center text-xs">Families<br/>Luggage<br/>Time-sensitive<br/>Groups</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Cost Comparison -->
+    <section id="cost" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Cost Comparison: Detailed Breakdown</h2>
+
+      <div class="space-y-6">
+        <!-- Train Costs -->
+        <Card className="p-6 border-2 border-blue-500">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2 text-blue-600">
+              <Train className="h-6 w-6" />
+              Train Costs
+            </h3>
+            <Badge className="bg-green-200 text-green-700">Cheapest Option</Badge>
+          </div>
+
+          <div class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2 text-sm">Ticket Prices:</p>
+                <ul class="text-sm space-y-1">
+                  <li>• <strong>General Class:</strong> ₹145 (cheapest)</li>
+                  <li>• <strong>Sleeper:</strong> ₹185</li>
+                  <li>• <strong>AC Chair Car:</strong> ₹280</li>
+                  <li>• <strong>2AC / 3AC:</strong> ₹650-900 (overnight)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 text-sm">Additional Costs:</p>
+                <ul class="text-sm space-y-1">
+                  <li>• Auto/cab to Pune station: ₹150-300</li>
+                  <li>• Local train/cab from Mumbai station: ₹100-500</li>
+                  <li>• Porter (if needed): ₹50-100</li>
+                  <li>• Food/water: ₹100-200</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 text-sm">Total Cost (door-to-door):</p>
+              <div class="space-y-1 text-sm">
+                <p>• <strong>Budget (General + local):</strong> ₹400-550</p>
+                <p>• <strong>Comfort (AC chair + cabs):</strong> ₹800-1,200</p>
+                <p>• <strong>Premium (2AC + airport cab):</strong> ₹1,500-2,000</p>
+              </div>
+            </div>
+
+            <div class="border-t pt-3">
+              <p class="text-sm"><strong>✓ Pros:</strong> Cheapest ticket price, frequent services</p>
+              <p class="text-sm"><strong>✗ Cons:</strong> Hidden costs (station access, last-mile), luggage fees possible</p>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Bus Costs -->
+        <Card className="p-6 border-2 border-orange-500">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2 text-orange-600">
+              <Bus className="h-6 w-6" />
+              Bus Costs
+            </h3>
+            <Badge className="bg-yellow-200 text-yellow-700">Mid-Range</Badge>
+          </div>
+
+          <div class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2 text-sm">Ticket Prices:</p>
+                <ul class="text-sm space-y-1">
+                  <li>• <strong>MSRTC Non-AC:</strong> ₹300-350</li>
+                  <li>• <strong>MSRTC Shivneri (AC):</strong> ₹450-550</li>
+                  <li>• <strong>Private Non-AC:</strong> ₹350-450</li>
+                  <li>• <strong>Private Volvo AC:</strong> ₹550-800</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 text-sm">Additional Costs:</p>
+                <ul class="text-sm space-y-1">
+                  <li>• Auto to Swargate/Wakdewadi: ₹100-200</li>
+                  <li>• Cab from Dadar/Mumbai: ₹200-600</li>
+                  <li>• Extra luggage charge: ₹50-100</li>
+                  <li>• Food (optional): ₹100-200</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-orange-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 text-sm">Total Cost (door-to-door):</p>
+              <div class="space-y-1 text-sm">
+                <p>• <strong>Budget (Non-AC + local):</strong> ₹600-800</p>
+                <p>• <strong>Comfort (Volvo + cabs):</strong> ₹900-1,400</p>
+                <p>• <strong>To Airport (Volvo + final leg):</strong> ₹1,200-1,600</p>
+              </div>
+            </div>
+
+            <div class="border-t pt-3">
+              <p class="text-sm"><strong>✓ Pros:</strong> Direct service to multiple points, overnight option available</p>
+              <p class="text-sm"><strong>✗ Cons:</strong> Less frequent than trains, traffic-dependent arrival</p>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Cab Costs -->
+        <Card className="p-6 border-2 border-green-500">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2 text-green-600">
+              <Car className="h-6 w-6" />
+              Private Cab Costs
+            </h3>
+            <Badge className="bg-blue-200 text-blue-700">Best Value for Groups</Badge>
+          </div>
+
+          <div class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2 text-sm">Service Options:</p>
+                <ul class="text-sm space-y-1">
+                  <li>• <strong>GreenEVCabs (Electric):</strong> ₹2,700-3,300</li>
+                  <li>• <strong>Ola/Uber Outstation:</strong> ₹3,800-10,500</li>
+                  <li>• <strong>Traditional Diesel:</strong> ₹4,200-4,700</li>
+                  <li>• <strong>Premium Services:</strong> ₹5,000-7,000</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 text-sm">What's Included:</p>
+                <ul class="text-sm space-y-1">
+                  <li>✓ Door-to-door service</li>
+                  <li>✓ All tolls included</li>
+                  <li>✓ Driver allowance</li>
+                  <li>✓ No hidden charges</li>
+                  <li>✓ Luggage handling</li>
+                  <li>✓ AC, music, comfort</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 text-sm">Cost Per Person (Split):</p>
+              <div class="overflow-x-auto">
+                <table class="w-full text-xs border-collapse mt-2">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="border p-2">Passengers</th>
+                      <th class="border p-2">Total Cost</th>
+                      <th class="border p-2">Per Person</th>
+                      <th class="border p-2">vs Train AC</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border p-2 text-center">1</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center text-red-600">+₹2,400</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2 text-center">2</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center">₹1,350</td>
+                      <td class="border p-2 text-center text-red-600">+₹1,000</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2 text-center">3</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center">₹900</td>
+                      <td class="border p-2 text-center">+₹620</td>
+                    </tr>
+                    <tr class="bg-green-100">
+                      <td class="border p-2 text-center font-bold">4</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center font-bold">₹675</td>
+                      <td class="border p-2 text-center text-green-700 font-bold">+₹395 (worth it!)</td>
+                    </tr>
+                    <tr class="bg-green-100">
+                      <td class="border p-2 text-center">5-6</td>
+                      <td class="border p-2 text-center">₹2,700</td>
+                      <td class="border p-2 text-center">₹450-540</td>
+                      <td class="border p-2 text-center text-green-700">Cheaper than bus!</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="border-t pt-3">
+              <p class="text-sm"><strong>✓ Pros:</strong> No additional costs, door-to-door, luggage included, time-saving</p>
+              <p class="text-sm"><strong>✗ Cons:</strong> Expensive for solo, surge pricing (Ola/Uber), advance booking needed</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <!-- Cost Winner Analysis -->
+      <Card className="p-6 mt-6 bg-gradient-to-r from-green-50 to-blue-50">
+        <h3 class="text-xl font-bold mb-4 text-center">Cost Winner by Passenger Count</h3>
+        <div class="grid md:grid-cols-3 gap-4 text-center">
+          <div class="bg-white p-4 rounded-lg">
+            <p class="font-bold text-lg mb-2">Solo Traveler</p>
+            <p class="text-3xl mb-2">🚂</p>
+            <p class="text-sm">Train wins<br/>(₹400-1,200 total)</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg">
+            <p class="font-bold text-lg mb-2">2-3 People</p>
+            <p class="text-3xl mb-2">🚂</p>
+            <p class="text-sm">Train still cheaper<br/>(₹800-3,600 total)</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-2 border-green-500">
+            <p class="font-bold text-lg mb-2">4+ People</p>
+            <p class="text-3xl mb-2">🚗</p>
+            <p class="text-sm">Cab competitive<br/>(₹675/person)</p>
+          </div>
+        </div>
+        <p class="text-center text-sm mt-4 text-gray-700">
+          <strong>Key Insight:</strong> With 4+ passengers, private cab cost per person becomes comparable to premium bus fares, but offers far superior convenience and comfort!
+        </p>
+      </Card>
+    </section>
+
+    <!-- Time & Punctuality -->
+    <section id="time" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Time & Punctuality Analysis</h2>
+
+      <Card className="p-6 mb-6">
+        <h3 class="text-xl font-bold mb-4">Door-to-Door Journey Time Breakdown</h3>
+
+        <div class="space-y-6">
+          <!-- Train Timeline -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <Train className="h-6 w-6 text-blue-600" />
+              <h4 class="font-bold text-lg">Train Journey Timeline</h4>
+            </div>
+
+            <div class="pl-8 space-y-2 text-sm">
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 1: Home to Pune Station</strong></p>
+                  <p class="text-gray-600">Auto/cab from Hinjewadi/Baner: 30-60 minutes (traffic dependent)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 2: Platform Finding & Waiting</strong></p>
+                  <p class="text-gray-600">Navigate station, find platform, board: 15-30 minutes</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 3: Train Journey</strong></p>
+                  <p class="text-gray-600">
+                    • Deccan Queen / Pragati Express: 3 hours 10 minutes<br/>
+                    • Intercity Express: 3.5 hours<br/>
+                    • Average including delays: 3.5-4 hours
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 4: Mumbai Station to Final Destination</strong></p>
+                  <p class="text-gray-600">
+                    • To South Mumbai: Local train 20-40 mins + walk<br/>
+                    • To Airport: Local + taxi = 60-90 minutes<br/>
+                    • To Suburbs: Cab/local = 45-90 minutes
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-3 rounded-lg mt-3">
+                <p class="font-bold">Total Door-to-Door: <span class="text-blue-700">4.5 - 6 hours</span></p>
+                <p class="text-xs text-gray-600 mt-1">Highly variable depending on destination and connections</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bus Timeline -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <Bus className="h-6 w-6 text-orange-600" />
+              <h4 class="font-bold text-lg">Bus Journey Timeline</h4>
+            </div>
+
+            <div class="pl-8 space-y-2 text-sm">
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 1: Home to Swargate/Wakdewadi</strong></p>
+                  <p class="text-gray-600">Auto from West Pune: 20-45 minutes</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 2: Terminal Wait & Boarding</strong></p>
+                  <p class="text-gray-600">Arrive 15-30 minutes early: 15-30 minutes</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 3: Bus Journey</strong></p>
+                  <p class="text-gray-600">
+                    • Non-peak: 3.5-4 hours<br/>
+                    • Peak traffic: 4.5-5.5 hours<br/>
+                    • Monsoon/accidents: 5-6+ hours
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 4: Dadar/Drop Point to Final Destination</strong></p>
+                  <p class="text-gray-600">
+                    • Local cab/taxi: 30-60 minutes<br/>
+                    • To Airport: Additional 60-90 minutes
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-orange-50 p-3 rounded-lg mt-3">
+                <p class="font-bold">Total Door-to-Door: <span class="text-orange-700">4.5 - 7 hours</span></p>
+                <p class="text-xs text-gray-600 mt-1">Most unpredictable due to traffic variability</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cab Timeline -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <Car className="h-6 w-6 text-green-600" />
+              <h4 class="font-bold text-lg">Private Cab Timeline</h4>
+            </div>
+
+            <div class="pl-8 space-y-2 text-sm">
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 1: Pickup from Your Door</strong></p>
+                  <p class="text-gray-600">Driver arrives at your location: 0 travel time for you!</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 2: Direct Journey</strong></p>
+                  <p class="text-gray-600">
+                    • Early morning (4-7 AM): 2 hours 15 minutes<br/>
+                    • Mid-day (10 AM-2 PM): 2.5-3 hours<br/>
+                    • Peak hours (7-10 AM, 5-8 PM): 3.5-4 hours
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2">
+                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <div class="flex-1">
+                  <p><strong>Step 3: Drop at Final Destination</strong></p>
+                  <p class="text-gray-600">Direct drop (airport terminal, hotel door, home): 0 additional time!</p>
+                </div>
+              </div>
+
+              <div class="bg-green-50 p-3 rounded-lg mt-3 border-2 border-green-500">
+                <p class="font-bold">Total Door-to-Door: <span class="text-green-700">2.5 - 3.5 hours</span></p>
+                <p class="text-xs text-gray-600 mt-1">Fastest option overall; predictable with smart timing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      <!-- Punctuality -->
+      <Card className="p-6">
+        <h3 class="text-xl font-bold mb-4">Punctuality & Reliability</h3>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border p-3 text-left">Factor</th>
+                <th class="border p-3 text-center">Train</th>
+                <th class="border p-3 text-center">Bus</th>
+                <th class="border p-3 text-center">Cab</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border p-3 font-semibold">Average Delay</td>
+                <td class="border p-3 text-center">15-45 min<br/><span class="text-xs text-gray-600">(common)</span></td>
+                <td class="border p-3 text-center">30-90 min<br/><span class="text-xs text-gray-600">(traffic)</span></td>
+                <td class="border p-3 text-center text-green-700">10-30 min<br/><span class="text-xs text-gray-600">(off-peak)</span></td>
+              </tr>
+              <tr>
+                <td class="border p-3 font-semibold">Cancellation Risk</td>
+                <td class="border p-3 text-center text-green-700">Rare<br/><span class="text-xs">(< 1%)</span></td>
+                <td class="border p-3 text-center">Occasional<br/><span class="text-xs">(2-3%)</span></td>
+                <td class="border p-3 text-center text-green-700">Very rare<br/><span class="text-xs">(< 1%)</span></td>
+              </tr>
+              <tr>
+                <td class="border p-3 font-semibold">Arrival Predictability</td>
+                <td class="border p-3 text-center">⭐⭐⭐⭐<br/><span class="text-xs">Mostly predictable</span></td>
+                <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">Traffic dependent</span></td>
+                <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Most predictable</span></td>
+              </tr>
+              <tr>
+                <td class="border p-3 font-semibold">Alternative if Missed</td>
+                <td class="border p-3 text-center">Next train<br/><span class="text-xs">(hourly)</span></td>
+                <td class="border p-3 text-center">Next bus<br/><span class="text-xs">(30-60 min)</span></td>
+                <td class="border p-3 text-center text-green-700">Rebook anytime<br/><span class="text-xs">(24/7)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-blue-50 p-4 rounded-lg mt-4">
+          <p class="text-sm">
+            <strong>Time Winner:</strong> Private cab is fastest door-to-door (2.5-3.5 hrs) with most predictable arrival. Train is predictable station-to-station but adds 1-2 hours for terminal access. Bus is slowest and least predictable due to traffic.
+          </p>
+        </div>
+      </Card>
+    </section>
+
+    <!-- CTA in the middle -->
+    <Card className="p-6 mb-12 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+      <div class="text-center">
+        <h3 class="text-2xl font-bold mb-3">Need to Reach Mumbai Fast?</h3>
+        <p class="text-gray-700 mb-4">
+          Skip the hassle of stations and terminals. Door-to-door electric cab service in 2.5-3 hours!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20Pune%20to%20Mumbai%20cab" target="_blank" rel="noopener">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
+              <MessageCircle className="h-5 w-5 mr-2" />
+              Book Now via WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+919075020422">
+            <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+              <Phone className="h-5 w-5 mr-2" />
+              Call: +91 90750 20422
+            </Button>
+          </a>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Comfort Analysis - Continue in next message -->
+    <section id="comfort" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Comfort Comparison</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Train Comfort -->
+        <Card className="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg flex items-center gap-2">
+              <Train className="h-5 w-5 text-blue-600" />
+              Train
+            </h3>
+            <div class="flex gap-0.5">
+              {[...Array(3)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+              ))}
+              <Star className="h-4 w-4 text-yellow-500" />
+              <Star className="h-4 w-4 text-yellow-500" />
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold mb-1">✅ Pros:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Spacious seating (AC chair car)</li>
+                <li>• Can walk around, stretch</li>
+                <li>• Clean bathrooms available</li>
+                <li>• Charging points at seats</li>
+                <li>• Food/tea vendors</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-1">❌ Cons:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Crowded (peak hours)</li>
+                <li>• Noisy passengers/vendors</li>
+                <li>• Luggage management hassle</li>
+                <li>• No privacy</li>
+                <li>• Station platforms uncomfortable</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Bus Comfort -->
+        <Card className="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg flex items-center gap-2">
+              <Bus className="h-5 w-5 text-orange-600" />
+              Bus
+            </h3>
+            <div class="flex gap-0.5">
+              {[...Array(3)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+              ))}
+              <Star className="h-4 w-4 text-yellow-500" />
+              <Star className="h-4 w-4 text-yellow-500" />
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold mb-1">✅ Pros:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Reclining seats (Volvo)</li>
+                <li>• Good AC</li>
+                <li>• Personal TV (premium buses)</li>
+                <li>• Blanket provided (overnight)</li>
+                <li>• Smoother than non-AC bus</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-1">❌ Cons:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Cramped seating</li>
+                <li>• Limited bathroom access</li>
+                <li>• Can't move around</li>
+                <li>• Motion sickness (some people)</li>
+                <li>• Stops for breaks (delays)</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Cab Comfort -->
+        <Card className="p-6 border-2 border-green-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg flex items-center gap-2">
+              <Car className="h-5 w-5 text-green-600" />
+              Private Cab
+            </h3>
+            <div class="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+              ))}
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold mb-1">✅ Pros:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Complete privacy</li>
+                <li>• Spacious, reclining seats</li>
+                <li>• Control AC/music</li>
+                <li>• Stop anytime (bathroom/food)</li>
+                <li>• Sleep comfortably</li>
+                <li>• Work on laptop</li>
+                <li>• Zero noise/crowds</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-1">❌ Cons:</p>
+              <ul class="ml-4 space-y-1">
+                <li>• Can't walk around</li>
+                <li>• Depends on driver skill</li>
+                <li>• (None significant really!)</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <Card className="p-4 bg-green-50 border-green-200 mt-6">
+        <p class="text-sm">
+          <strong>Comfort Winner: Private Cab</strong> offers unmatched personal space, privacy, and control. You can sleep, work, talk freely, and stop whenever needed. Train and bus offer decent comfort but lack privacy and flexibility.
+        </p>
+      </Card>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is cheapest: train, bus, or cab from Pune to Mumbai?</h3>
+          <p class="text-gray-700">Train is cheapest (₹145-280 per person). Bus is mid-range (₹300-800). Cab is most expensive (₹2,700-4,500) but becomes competitive with 4+ passengers. For 4 people, electric cab costs ₹675/person, which is comparable to premium bus fares but with door-to-door service.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is fastest: train, bus, or cab for Pune-Mumbai?</h3>
+          <p class="text-gray-700">Express trains (Deccan Queen, Shivneri) are fastest at 3-3.5 hours station-to-station. Private EV cabs take 2.5-3 hours door-to-door (including last-mile travel). Buses take 3.5-5 hours. However, when you add station/terminal access time, cab is fastest overall for door-to-door journey.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Is train or cab better for Pune to Mumbai Airport?</h3>
+          <p class="text-gray-700">Cab is significantly better for airport trips. Direct door-to-door (2.5 hours), handles luggage easily, no transfers needed, and arrives right at terminal. Train requires: Pune station → Mumbai station (3 hours) → local train/cab to airport (1+ hour) = 4-5 hours total with 2 transfers and luggage hassle.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is most comfortable: train, bus or cab?</h3>
+          <p class="text-gray-700">Private cab > Train AC chair car > Luxury bus > Regular train > Regular bus. Private electric cab offers best comfort: climate-controlled, spacious, no crowds, reclining seats, personal space. Train AC chair car is comfortable but crowded. Luxury buses are decent but cramped. Regular options are least comfortable.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Can I travel with heavy luggage on train vs bus vs cab?</h3>
+          <p class="text-gray-700">Cab is best for luggage (dedicated boot, help with loading). Train AC has overhead racks but heavy bags are difficult to lift; general class is very challenging with luggage. Bus has limited under-seat/overhead space; large suitcases problematic. For airport trips or moving, cab is only practical option.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is safer: train, bus, or cab for night travel?</h3>
+          <p class="text-gray-700">All are generally safe. Train is safest statistically (lowest accident rate). Private cab with professional driver is very safe and offers personal security. Buses are safe but higher accident risk on highways. Late night (post-midnight): trains run less frequently, so professional cab service is recommended.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Do trains get delayed more than buses or cabs?</h3>
+          <p class="text-gray-700">Average delays: Trains 15-45 minutes (frequent but predictable), Buses 30-60 minutes (traffic dependent), Cabs 15-30 minutes (most punctual with early morning travel). Trains rarely get canceled. Buses occasionally cancel. Professional cab services are most reliable for time-sensitive travel.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which option is best for families with kids?</h3>
+          <p class="text-gray-700">Private cab is best for families: kids can sleep/play, food breaks possible, bathroom stops easy, no luggage carrying, direct travel. Train is second best (space to move, bathrooms) but crowded and requires station navigation. Bus is least suitable (cramped, limited bathroom access, no flexibility).</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold mb-4">Choose What's Best for YOUR Journey</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Budget travel? Take the train. Need door-to-door convenience? Book a private electric cab!
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20Pune%20to%20Mumbai%20cab" target="_blank" rel="noopener">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
+                <MessageCircle className="h-5 w-5 mr-2" />
+                Book Electric Cab
+              </Button>
+            </a>
+            <a href="tel:+919075020422">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+                <Phone className="h-5 w-5 mr-2" />
+                Call: +91 90750 20422
+              </Button>
+            </a>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>2.5 Hour Journey</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>Door-to-Door Service</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>Zero Emissions</span>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </section>
+
+    <!-- Review Widget -->
+    <section class="mb-12">
+      <ReviewWidget variant="compact" />
+    </section>
+  </article>
+</MainLayout>

@@ -1,0 +1,397 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { Check, Zap, Shield, Users, Leaf, Star, Phone, MessageCircle, Battery } from "lucide-react";
+---
+
+<MainLayout
+  title="Kia Carens EV Cab Pune ₹2,999 | 7 Seater Electric SUV Rental | Book Now"
+  description="Book Kia Carens EV cab in Pune at ₹2,999 for Mumbai Airport. 7-seater electric SUV with 400+ km range, ADAS safety, spacious interiors. Best rates for Kia Carens electric cab rental. Available 24/7."
+  keywords={[
+    "kia carens ev cab pune",
+    "kia carens electric cab",
+    "kia carens ev rental pune",
+    "7 seater kia carens cab",
+    "kia carens ev taxi pune",
+    "book kia carens ev",
+    "kia carens cab pune to mumbai",
+    "kia carens electric suv cab"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Kia Carens EV Cab Pune", href: "/kia-carens-ev-cab-pune" }
+  ]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        India's Most Popular Electric SUV • 400+ km Range • ADAS Level 2
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        Kia Carens EV Cab Pune - 7 Seater Electric SUV at ₹2,999
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+        Book premium Kia Carens EV cab in Pune for airport transfers, outstation trips, and local travel. India's most advanced 7-seater electric SUV with 400+ km range, spacious interiors, and cutting-edge safety features. Starting at just ₹18/km or ₹2,999 for Pune-Mumbai Airport.
+      </p>
+
+      <!-- Trust Signals -->
+      <div class="flex flex-wrap justify-center gap-6 mb-8">
+        <div class="flex items-center gap-2">
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+          <span class="font-semibold">4.9/5 Rating</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Battery className="h-5 w-5 text-green-600" />
+          <span class="font-semibold">400+ km Range</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Users className="h-5 w-5 text-primary" />
+          <span class="font-semibold">7 Seater</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Hi%2C%20I%20want%20to%20book%20Kia%20Carens%20EV%20cab%0APickup%3A%20%0ADestination%3A%20%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book Kia Carens EV Now
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Vehicle Image Placeholder -->
+    <div class="mb-16 max-w-5xl mx-auto">
+      <div class="aspect-video bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg flex items-center justify-center text-6xl">
+        🚗
+      </div>
+      <p class="text-center text-sm text-muted-foreground mt-4">Kia Carens EV - Premium 7-Seater Electric SUV</p>
+    </div>
+
+    <!-- Key Specifications -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Kia Carens EV - Technical Specifications</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Battery className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Battery Range</h3>
+            <p class="text-3xl font-bold text-primary mb-2">452 km</p>
+            <p class="text-sm text-muted-foreground">ARAI certified range on single charge</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Seating Capacity</h3>
+            <p class="text-3xl font-bold text-primary mb-2">6+1</p>
+            <p class="text-sm text-muted-foreground">Captain seats in middle row</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Power Output</h3>
+            <p class="text-3xl font-bold text-primary mb-2">201 HP</p>
+            <p class="text-sm text-muted-foreground">Instant torque delivery</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 class="font-bold text-lg mb-2">Safety Rating</h3>
+            <p class="text-3xl font-bold text-primary mb-2">5 Star</p>
+            <p class="text-sm text-muted-foreground">ADAS Level 2 equipped</p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-16 bg-muted/50 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Kia Carens EV Cab?</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-green-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Spacious 7-Seater Layout</h3>
+            <p class="text-sm text-muted-foreground">
+              Comfortable seating for 6-7 passengers with captain seats in middle row. Perfect for families and groups.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-blue-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Panoramic Sunroof</h3>
+            <p class="text-sm text-muted-foreground">
+              Large panoramic sunroof creates airy, premium cabin experience. Enjoy scenic routes in style.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-purple-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">ADAS Level 2 Safety</h3>
+            <p class="text-sm text-muted-foreground">
+              Advanced Driver Assistance with lane keep assist, adaptive cruise control, emergency braking.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-orange-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">400+ km Real Range</h3>
+            <p class="text-sm text-muted-foreground">
+              ARAI-certified 452 km range. Real-world range of 400+ km easily covers Pune-Mumbai and back.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-teal-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Premium Interiors</h3>
+            <p class="text-sm text-muted-foreground">
+              Dual-zone climate control, ventilated seats, wireless charging, premium upholstery.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center flex-shrink-0">
+            <Check className="h-6 w-6 text-red-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Ample Luggage Space</h3>
+            <p class="text-sm text-muted-foreground">
+              607 liters boot space accommodates 4-5 large suitcases. Perfect for airport transfers with luggage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Kia Carens EV Cab Pricing in Pune</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Local Trips</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹18/km</div>
+            <p class="text-sm text-muted-foreground mb-4">Within Pune city</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Minimum: ₹300</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Waiting: ₹100/hour</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-primary">
+          <CardHeader className="bg-primary/5">
+            <CardTitle>Airport Transfer</CardTitle>
+            <Badge className="mt-2">Most Popular</Badge>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹2,999</div>
+            <p class="text-sm text-muted-foreground mb-4">Pune to Mumbai Airport</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>All tolls included</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Flight tracking</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Full Day Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="text-3xl font-bold text-primary mb-2">₹3,500</div>
+            <p class="text-sm text-muted-foreground mb-4">8 hrs / 80 km</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Extra km: ₹18/km</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Extra hr: ₹200/hr</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="mb-16 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Kia Carens EV vs Regular Diesel Cabs</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-4xl mx-auto">
+          <thead>
+            <tr class="border-b-2">
+              <th class="text-left p-4">Feature</th>
+              <th class="text-center p-4">Kia Carens EV</th>
+              <th class="text-center p-4">Diesel Innova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="p-4">Emissions</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Zero ✓</td>
+              <td class="text-center p-4 text-red-600">35 kg CO₂/trip</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Noise Level</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Silent ✓</td>
+              <td class="text-center p-4 text-red-600">Loud engine</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Range</td>
+              <td class="text-center p-4">452 km</td>
+              <td class="text-center p-4">~600 km</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Safety (ADAS)</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Level 2 ✓</td>
+              <td class="text-center p-4 text-red-600">Not available</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4">Pune-Mumbai Fare</td>
+              <td class="text-center p-4 text-green-600 font-semibold">₹2,999 ✓</td>
+              <td class="text-center p-4">₹3,500-4,000</td>
+            </tr>
+            <tr>
+              <td class="p-4">Surge Pricing</td>
+              <td class="text-center p-4 text-green-600 font-semibold">Never ✓</td>
+              <td class="text-center p-4 text-red-600">2-3x peak hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">FAQs - Kia Carens EV Cab</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How much does Kia Carens EV cab cost in Pune?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Kia Carens EV cab costs ₹18/km for local Pune trips, ₹2,999 fixed for Pune to Mumbai Airport, and ₹3,500 for full-day package (8hrs/80km). All inclusive pricing with no surge charges.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">What is the range of Kia Carens EV?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Kia Carens EV has ARAI-certified range of 452 km on single charge. Real-world range is 400+ km, which easily covers Pune-Mumbai-Pune round trip (296 km) without charging.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How many people can sit in Kia Carens EV?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Kia Carens EV is a 7-seater (6+1 configuration) with captain seats in the middle row. Comfortably accommodates 6 adults or 7 people including children, with ample luggage space for 4-5 large suitcases.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Does Kia Carens EV have safety features?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Yes! Kia Carens EV comes with ADAS Level 2 (Advanced Driver Assistance Systems) including lane keep assist, adaptive cruise control, emergency braking, 360-degree camera, 6 airbags, and 5-star safety rating.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 md:p-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Book Your Kia Carens EV Cab in Pune
+      </h2>
+      <p class="text-muted-foreground mb-8 text-lg">
+        India's most advanced 7-seater electric SUV • 400+ km range • ADAS Level 2 • From ₹18/km
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Hi%2C%20I%20want%20to%20book%20Kia%20Carens%20EV%20cab" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book on WhatsApp - Instant Confirmation
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call Now +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>

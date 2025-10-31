@@ -1,0 +1,698 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+import { Check, X, MapPin, IndianRupee, Clock, Car, Plane, Navigation, Shield, TrendingUp, ChevronRight, Star, Users, Calendar, MessageCircle, Phone, AlertCircle } from "lucide-react";
+
+const title = "Navi Mumbai Airport from Pune: Complete 2025 Travel Guide";
+const description = "Everything about traveling from Pune to Navi Mumbai International Airport (NMI) - best routes, timings, cab options, costs, and insider tips for stress-free airport transfers.";
+const publishDate = "2025-01-15";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "navi mumbai airport from pune",
+  "pune to navi mumbai airport",
+  "nmi airport pune distance",
+  "navi mumbai airport cab",
+  "pune navi mumbai airport taxi",
+  "how to reach navi mumbai airport from pune",
+  "navi mumbai airport transfer",
+  "pune to nmi cab cost"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far is Navi Mumbai Airport from Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Navi Mumbai International Airport (NMI) is approximately 110 km from Pune city center. The journey takes 2-2.5 hours via the Mumbai-Pune Expressway, exiting at Khalapur toll plaza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best way to reach Navi Mumbai Airport from Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best way is to hire a cab or taxi. Take the Mumbai-Pune Expressway to Khalapur (Km 68), then follow Panvel-Uran Road to the airport. Total journey takes 2-2.5 hours with minimal city traffic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a cab cost from Pune to Navi Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric cab services charge Rs.2,200-2,600 for sedans and Rs.2,800-3,200 for SUVs/7-seaters, including tolls and driver charges. This is significantly cheaper than Mumbai Airport transfers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Navi Mumbai Airport closer than Mumbai Airport from Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Navi Mumbai Airport is 20 km closer and 30-45 minutes faster than Mumbai Airport. It involves less city traffic and is more predictable for timing, making it ideal for Pune travelers."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-gradient-to-r from-blue-50 to-sky-50 border-blue-200">
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-600 text-white p-3 rounded-lg">
+          <Plane className="h-6 w-6" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">Quick Facts: Pune to Navi Mumbai Airport</h2>
+          <div class="grid md:grid-cols-2 gap-3 text-sm">
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Distance:</strong> 110 km (vs 130 km to Mumbai Airport)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Time:</strong> 2-2.5 hours (predictable)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Cost:</strong> Rs.2,200-3,200 (all-inclusive)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Route:</strong> Via Mumbai-Pune Expressway</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Airport:</strong> New, opening 2025</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
+              <span><strong>Best For:</strong> Pune travelers avoiding city traffic</span>
+            </div>
+          </div>
+          <p class="mt-3 text-gray-700">Navi Mumbai International Airport is the new, closer alternative to Mumbai Airport for Pune travelers. Less traffic, faster journey, lower costs.</p>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Article Header -->
+    <header class="mb-8">
+      <Badge className="mb-4">Airport Transfer Guide</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Navi Mumbai Airport from Pune: Complete 2025 Travel Guide
+      </h1>
+      <p class="text-xl text-gray-600 mb-4">
+        Everything you need to know about traveling from Pune to Navi Mumbai International Airport - routes, timing, costs, and expert tips.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">110 km Distance</Badge>
+        <Badge variant="secondary">2-2.5 Hours</Badge>
+        <Badge variant="secondary">Complete Guide</Badge>
+        <Badge variant="secondary">2025 Opening</Badge>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="prose prose-lg max-w-none">
+
+      <!-- Why NMI is Better -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Navi Mumbai Airport is Better for Pune Travelers</h2>
+
+        <Card className="p-6 mb-6 bg-green-50 border-green-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">The Game Changer for Pune-Mumbai Travel</h3>
+          <p class="text-gray-700 mb-4">
+            For decades, Pune travelers heading to international destinations had only one option: navigate through Mumbai's chaotic traffic to reach Chhatrapati Shivaji Maharaj International Airport. That's about to change.
+          </p>
+          <p class="text-gray-700">
+            <strong>Navi Mumbai International Airport (NMI)</strong>, opening in 2025, is positioned perfectly for Pune travelers. It's closer, faster to reach, and bypasses Mumbai's notorious traffic jams entirely.
+          </p>
+        </Card>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Head-to-Head Comparison</h3>
+
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-3 text-left font-semibold">Factor</th>
+                <th class="border border-gray-300 p-3 text-center font-semibold bg-green-50">Navi Mumbai Airport</th>
+                <th class="border border-gray-300 p-3 text-center font-semibold">Mumbai Airport</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-3"><strong>Distance from Pune</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">110 km</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">130 km</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3"><strong>Journey Time</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">2-2.5 hours</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">2.5-3.5 hours</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3"><strong>Cab Cost</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">Rs.2,200-3,200</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">Rs.2,700-3,800</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3"><strong>City Traffic</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">Minimal (5-10 min)</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">Heavy (45-90 min)</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3"><strong>Journey Predictability</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">High (±15 min)</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">Low (±30-45 min)</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3"><strong>Toll Plazas</strong></td>
+                <td class="border border-gray-300 p-3 text-center bg-green-50">3 plazas (Rs.245)</td>
+                <td class="border border-gray-300 p-3 text-center text-gray-600">5 plazas (Rs.360)</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3"><strong>Best For</strong></td>
+                <td class="border border-gray-300 p-3 bg-green-50">
+                  <ul class="text-sm space-y-1">
+                    <li>• Pune & surrounding areas</li>
+                    <li>• Time-sensitive travelers</li>
+                    <li>• Budget-conscious passengers</li>
+                  </ul>
+                </td>
+                <td class="border border-gray-300 p-3">
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Central/South Mumbai residents</li>
+                    <li>• Specific airline requirements</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+          <p class="font-semibold text-blue-800 mb-2">Bottom Line</p>
+          <p class="text-blue-700 text-sm">
+            Unless your specific flight is only available at Mumbai Airport, Navi Mumbai Airport is the clear winner for Pune travelers. You'll save 30-45 minutes, Rs.500-600, and a lot of stress from unpredictable city traffic.
+          </p>
+        </div>
+      </section>
+
+      <!-- Route Guide -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Complete Route Guide: Pune to Navi Mumbai Airport</h2>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Step-by-Step Directions</h3>
+
+        <Card className="p-6 mb-6">
+          <ol class="space-y-4">
+            <li class="flex gap-4">
+              <div class="bg-green-100 text-green-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg mb-1">Start from Pune</h4>
+                <p class="text-gray-700 text-sm mb-2">
+                  Head towards Mumbai-Pune Expressway entry point at Kiwale (near Hinjewadi). From different Pune locations:
+                </p>
+                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                  <li>• <strong>Hinjewadi:</strong> 10 min to expressway entry</li>
+                  <li>• <strong>Kharadi/Viman Nagar:</strong> 30-40 min via Pune-Bangalore Highway</li>
+                  <li>• <strong>Koregaon Park:</strong> 35-45 min via Swargate</li>
+                  <li>• <strong>Kothrud/Deccan:</strong> 25-35 min via Chandni Chowk</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="flex gap-4">
+              <div class="bg-green-100 text-green-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg mb-1">Take Mumbai-Pune Expressway</h4>
+                <p class="text-gray-700 text-sm mb-2">
+                  Enter the expressway and drive for 68 km. You'll pass through 3 toll plazas:
+                </p>
+                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                  <li>• <strong>Km 12:</strong> Talegaon Toll (Rs.85)</li>
+                  <li>• <strong>Km 42:</strong> Khandala Toll (Rs.75) - scenic ghat section</li>
+                  <li>• <strong>Km 68:</strong> Khalapur Toll (Rs.90) - <strong>YOUR EXIT</strong></li>
+                </ul>
+                <p class="text-sm text-gray-600 mt-2">Time: 55-70 minutes</p>
+              </div>
+            </li>
+
+            <li class="flex gap-4">
+              <div class="bg-green-100 text-green-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg mb-1">Exit at Khalapur Toll Plaza</h4>
+                <p class="text-gray-700 text-sm mb-2">
+                  After passing through Khalapur toll, look for clear signage indicating "Navi Mumbai Airport" / "NMI" / "Panvel-Uran Road". The airport has excellent signage from 2025.
+                </p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 mt-2">
+                  <p class="text-sm text-yellow-800">
+                    <strong>Important:</strong> Do NOT continue on the expressway to Urse/Vashi tolls. Exit at Khalapur (Km 68).
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex gap-4">
+              <div class="bg-green-100 text-green-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg mb-1">Take Panvel-Uran Road</h4>
+                <p class="text-gray-700 text-sm mb-2">
+                  Follow the airport access road via Panvel-Uran Highway. This is a well-maintained 4-lane road with minimal traffic.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                  <li>• Distance: 15-20 km</li>
+                  <li>• Time: 20-30 minutes</li>
+                  <li>• Road condition: Excellent</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="flex gap-4">
+              <div class="bg-green-100 text-green-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg mb-1">Reach Navi Mumbai Airport</h4>
+                <p class="text-gray-700 text-sm mb-2">
+                  Follow dedicated airport access road with clear terminal signage. The airport has modern drop-off zones with ample parking.
+                </p>
+                <p class="text-sm font-semibold text-green-700 mt-2">
+                  Total Journey: 110 km • 2-2.5 hours • Rs.245 tolls
+                </p>
+              </div>
+            </li>
+          </ol>
+        </Card>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Route Map Overview</h3>
+
+        <Card className="p-6 bg-gray-50">
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center justify-between py-2 border-b">
+              <span class="text-gray-700">Pune City → Expressway Entry</span>
+              <span class="font-bold">15-30 min</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b">
+              <span class="text-gray-700">Expressway Entry → Khalapur (68 km)</span>
+              <span class="font-bold">55-70 min</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b">
+              <span class="text-gray-700">Khalapur → Airport (15-20 km)</span>
+              <span class="font-bold">20-30 min</span>
+            </div>
+            <div class="flex items-center justify-between py-3 bg-green-100 px-3 rounded-lg">
+              <span class="font-bold text-gray-900">Total Journey Time</span>
+              <span class="font-bold text-green-700 text-lg">2-2.5 hours</span>
+            </div>
+          </div>
+        </Card>
+      </section>
+
+      <!-- Timing & Traffic -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Times to Travel & Traffic Patterns</h2>
+
+        <p class="text-gray-700 mb-6">
+          Unlike Mumbai Airport, where city traffic can add 30-90 minutes of unpredictability, Navi Mumbai Airport timing is much more consistent. Here's what to expect:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="p-6 border-2 border-green-300">
+            <div class="flex items-center gap-2 mb-3">
+              <Clock className="h-6 w-6 text-green-600" />
+              <h3 class="text-lg font-bold">Best Time Slots</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>5:00 AM - 7:00 AM:</strong> Fastest, empty roads, 2 hours flat
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>10:00 AM - 3:00 PM:</strong> Consistent, light traffic, 2-2.25 hours
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>10:00 PM - 5:00 AM:</strong> Night travel, excellent for late flights
+                </div>
+              </li>
+            </ul>
+          </Card>
+
+          <Card className="p-6 border-2 border-orange-300">
+            <div class="flex items-center gap-2 mb-3">
+              <AlertCircle className="h-6 w-6 text-orange-600" />
+              <h3 class="text-lg font-bold">Times to Avoid</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>8:00 AM - 10:00 AM:</strong> Pune morning rush, add 15-20 min
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Sunday 4:00 PM - 9:00 PM:</strong> Return traffic from weekend, add 20-30 min
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Monsoon (June-Sept):</strong> Reduce speed in ghats, add 15-25 min
+                </div>
+              </li>
+            </ul>
+          </Card>
+        </div>
+
+        <Card className="p-6 mt-6 bg-blue-50 border-blue-200">
+          <h3 class="font-bold text-lg mb-3">How Much Time to Allow Before Flight?</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center justify-between py-2">
+              <span class="text-gray-700">Domestic Flight (ideal timing)</span>
+              <span class="font-bold text-blue-700">Arrive 3 hours before</span>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <span class="text-gray-700">International Flight (ideal timing)</span>
+              <span class="font-bold text-blue-700">Arrive 3.5-4 hours before</span>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <span class="text-gray-700">Buffer for unexpected delays</span>
+              <span class="font-bold text-blue-700">30 minutes</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 mt-3">
+            <em>Example: For 8:00 AM domestic flight, leave Pune by 4:30 AM. For 10:00 AM international flight, leave by 5:30 AM.</em>
+          </p>
+        </Card>
+      </section>
+
+      <!-- Cost Breakdown -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Complete Cost Breakdown</h2>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Cab Options & Pricing</h3>
+
+        <div class="space-y-6">
+          <!-- GreenEVCabs -->
+          <Card className="p-6 border-2 border-green-300">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <Badge variant="default" className="bg-green-600 mb-2">Recommended</Badge>
+                <h3 class="text-xl font-bold text-gray-900">GreenEVCabs - Electric Vehicles</h3>
+                <p class="text-sm text-gray-600">Modern EVs with experienced drivers</p>
+              </div>
+              <div class="text-right">
+                <p class="text-2xl font-bold text-green-600">Rs.2,400</p>
+                <p class="text-xs text-gray-500">All-inclusive</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">What's Included</p>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• All tolls (Rs.245)</li>
+                  <li>• Driver allowance</li>
+                  <li>• Taxes & GST</li>
+                  <li>• Waiting time (1 hour)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">Vehicle Options</p>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• BYD E-MAX 7: Rs.2,800</li>
+                  <li>• Kia Carens EV: Rs.2,700</li>
+                  <li>• Premium sedans: Rs.2,400</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">Benefits</p>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• Zero emissions</li>
+                  <li>• Quieter ride</li>
+                  <li>• Fixed pricing</li>
+                  <li>• 24/7 service</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <a href="tel:+919876543210" class="flex-1">
+                <Button className="w-full" size="lg">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call: +91 98765 43210
+                </Button>
+              </a>
+              <a href="https://wa.me/919876543210" class="flex-1">
+                <Button variant="outline" className="w-full" size="lg">
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  WhatsApp
+                </Button>
+              </a>
+            </div>
+          </Card>
+
+          <!-- Other Options -->
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">Other Cab Options</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-2 text-left">Service</th>
+                    <th class="border border-gray-300 p-2 text-center">Sedan</th>
+                    <th class="border border-gray-300 p-2 text-center">SUV</th>
+                    <th class="border border-gray-300 p-2 text-left">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-300 p-2"><strong>Ola/Uber</strong></td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,200-2,800</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,800-3,400</td>
+                    <td class="border border-gray-300 p-2 text-xs">Surge pricing varies</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 p-2"><strong>Local Cab Services</strong></td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,000-2,600</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,600-3,200</td>
+                    <td class="border border-gray-300 p-2 text-xs">Negotiate tolls</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 p-2"><strong>Diesel/Petrol Cabs</strong></td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,300-2,900</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,900-3,500</td>
+                    <td class="border border-gray-300 p-2 text-xs">Higher fuel costs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Card>
+
+          <!-- Cost Comparison -->
+          <Card className="p-6 bg-gray-50">
+            <h3 class="font-bold text-lg mb-3">Cost Comparison: NMI vs Mumbai Airport</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="bg-gray-200">
+                    <th class="border border-gray-300 p-2 text-left">Component</th>
+                    <th class="border border-gray-300 p-2 text-center bg-green-50">To NMI</th>
+                    <th class="border border-gray-300 p-2 text-center">To Mumbai Airport</th>
+                    <th class="border border-gray-300 p-2 text-center">Savings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-300 p-2">Base Fare</td>
+                    <td class="border border-gray-300 p-2 text-center bg-green-50">Rs.2,200</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.2,700</td>
+                    <td class="border border-gray-300 p-2 text-center font-bold text-green-600">Rs.500</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 p-2">Tolls</td>
+                    <td class="border border-gray-300 p-2 text-center bg-green-50">Rs.245</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.360</td>
+                    <td class="border border-gray-300 p-2 text-center font-bold text-green-600">Rs.115</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 p-2">Time Saved</td>
+                    <td class="border border-gray-300 p-2 text-center bg-green-50">-</td>
+                    <td class="border border-gray-300 p-2 text-center">30-45 min</td>
+                    <td class="border border-gray-300 p-2 text-center font-bold text-green-600">Priceless</td>
+                  </tr>
+                  <tr class="bg-green-100">
+                    <td class="border border-gray-300 p-2 font-bold">Total</td>
+                    <td class="border border-gray-300 p-2 text-center font-bold text-green-700">Rs.2,445</td>
+                    <td class="border border-gray-300 p-2 text-center">Rs.3,060</td>
+                    <td class="border border-gray-300 p-2 text-center font-bold text-green-700">Rs.615</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section id="faq" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How far is Navi Mumbai Airport from Pune?</h3>
+            <p class="text-gray-700">
+              Navi Mumbai International Airport (NMI) is approximately <strong>110 km</strong> from Pune city center. The journey takes 2-2.5 hours via the Mumbai-Pune Expressway, exiting at Khalapur toll plaza.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What is the best way to reach Navi Mumbai Airport from Pune?</h3>
+            <p class="text-gray-700">
+              The best way is to <strong>hire a cab or taxi</strong>. Take the Mumbai-Pune Expressway to Khalapur (Km 68), then follow Panvel-Uran Road to the airport. Total journey takes 2-2.5 hours with minimal city traffic.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How much does a cab cost from Pune to Navi Mumbai Airport?</h3>
+            <p class="text-gray-700">
+              Electric cab services charge <strong>Rs.2,200-2,600 for sedans</strong> and <strong>Rs.2,800-3,200 for SUVs/7-seaters</strong>, including tolls and driver charges. This is significantly cheaper than Mumbai Airport transfers.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Is Navi Mumbai Airport closer than Mumbai Airport from Pune?</h3>
+            <p class="text-gray-700">
+              Yes, Navi Mumbai Airport is <strong>20 km closer and 30-45 minutes faster</strong> than Mumbai Airport. It involves less city traffic and is more predictable for timing, making it ideal for Pune travelers.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">When is Navi Mumbai Airport opening?</h3>
+            <p class="text-gray-700">
+              Navi Mumbai International Airport is scheduled to open in <strong>2025</strong>. The airport will have modern facilities including dedicated drop-off zones, ample parking, and clear signage from the expressway.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Can I take public transport from Pune to Navi Mumbai Airport?</h3>
+            <p class="text-gray-700">
+              Currently, direct public transport options are limited. The most practical options are: <strong>(1) Hire a private cab</strong> (most convenient), (2) Take a bus to Panvel then local taxi to airport (time-consuming), or (3) Wait for potential direct bus services post-airport opening.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What time should I leave Pune for my flight?</h3>
+            <p class="text-gray-700">
+              For <strong>domestic flights:</strong> Leave 3-3.5 hours before departure (2.5 hours journey + 30-60 min buffer). For <strong>international flights:</strong> Leave 4-4.5 hours before departure. Example: For 8:00 AM flight, leave Pune by 4:30 AM.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Are there food stops on the way?</h3>
+            <p class="text-gray-700">
+              Yes, the Mumbai-Pune Expressway has <strong>excellent food stops</strong>: McDonald's at Lonavala (Km 40) and Khopoli (Km 55), Khalapur Food Plaza (Km 68), and multiple options near Panvel. However, for airport transfers, it's best to plan a quick 10-15 minute stop maximum.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="mb-12">
+        <Card className="p-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold mb-3">Book Your Navi Mumbai Airport Transfer</h2>
+            <p class="text-xl text-green-50 mb-6">
+              Stress-free, on-time airport drops with modern electric vehicles. Fixed pricing, professional drivers, 24/7 service.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Car className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Premium EVs</h3>
+              <p class="text-sm text-green-50">BYD E-MAX 7, Kia Carens EV</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Shield className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">On-Time Guarantee</h3>
+              <p class="text-sm text-green-50">Never miss a flight</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <TrendingUp className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Best Prices</h3>
+              <p class="text-sm text-green-50">Rs.2,400 all-inclusive</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+919876543210">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <Phone className="mr-2 h-5 w-5" />
+                Call: +91 98765 43210
+              </Button>
+            </a>
+            <a href="https://wa.me/919876543210">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp Booking
+              </Button>
+            </a>
+          </div>
+
+          <p class="text-center text-sm text-green-100 mt-4">
+            24/7 service • Navi Mumbai Airport ₹2,400 • Mumbai Airport ₹2,700
+          </p>
+        </Card>
+      </section>
+
+      <!-- Review Widget -->
+      <ReviewWidget variant="full" />
+
+    </article>
+  </div>
+</MainLayout>

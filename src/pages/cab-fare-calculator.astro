@@ -1,0 +1,364 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react";
+---
+
+<MainLayout
+  title="EV Cab Fare Calculator Pune | Estimate Electric Cab Charges | GreenEVCabs"
+  description="Calculate electric cab fare from Pune to Mumbai, airport transfers, outstation trips. Instant price estimates for 7-seater EV SUV cabs. Compare Kia Carens & BYD E-MAX 7 rates. No surge pricing."
+  keywords={[
+    "ev cab fare calculator",
+    "electric cab price calculator pune",
+    "pune to mumbai cab fare calculator",
+    "cab fare calculator maharashtra",
+    "electric taxi fare estimator",
+    "7 seater cab fare calculator",
+    "pune airport cab fare",
+    "electric suv cab price calculator"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Cab Fare Calculator", href: "/cab-fare-calculator" }
+  ]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        <Calculator class="h-4 w-4 inline mr-2" />
+        Instant Fare Estimation • Zero Surge • Transparent Pricing
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        Electric Cab Fare Calculator
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+        Calculate your electric cab fare instantly for Pune, Mumbai, and Maharashtra routes. Get accurate price estimates for our 7-seater electric SUVs - Kia Carens EV & BYD E-MAX 7.
+      </p>
+    </div>
+
+    <!-- Calculator -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <Card className="border-2 border-primary">
+        <CardHeader className="bg-primary/5">
+          <CardTitle class="text-2xl flex items-center gap-2">
+            <Calculator className="h-6 w-6 text-primary" />
+            Calculate Your Cab Fare
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="pt-6">
+          <form id="fareCalculator" class="space-y-6">
+            <!-- Route Selection -->
+            <div>
+              <label for="routeType" class="block text-sm font-medium mb-2">Select Route Type</label>
+              <select
+                id="routeType"
+                class="w-full p-3 border rounded-md bg-background"
+              >
+                <option value="">-- Select Route --</option>
+                <optgroup label="Popular Airport Routes">
+                  <option value="pune-mumbai-airport" data-distance="148">Pune → Mumbai Airport (148 km)</option>
+                  <option value="mumbai-airport-pune" data-distance="148">Mumbai Airport → Pune (148 km)</option>
+                  <option value="hinjewadi-mumbai-airport" data-distance="145">Hinjewadi → Mumbai Airport (145 km)</option>
+                  <option value="wakad-mumbai-airport" data-distance="145">Wakad → Mumbai Airport (145 km)</option>
+                  <option value="baner-mumbai-airport" data-distance="150">Baner → Mumbai Airport (150 km)</option>
+                  <option value="kothrud-mumbai-airport" data-distance="148">Kothrud → Mumbai Airport (148 km)</option>
+                  <option value="hadapsar-mumbai-airport" data-distance="160">Hadapsar/Magarpatta → Mumbai Airport (160 km)</option>
+                  <option value="viman-nagar-mumbai-airport" data-distance="155">Viman Nagar → Mumbai Airport (155 km)</option>
+                </optgroup>
+                <optgroup label="Outstation Routes">
+                  <option value="pune-shirdi" data-distance="185">Pune → Shirdi (185 km)</option>
+                  <option value="pune-lonavala" data-distance="65">Pune → Lonavala (65 km)</option>
+                  <option value="pune-mahabaleshwar" data-distance="120">Pune → Mahabaleshwar (120 km)</option>
+                  <option value="pune-nashik" data-distance="210">Pune → Nashik (210 km)</option>
+                </optgroup>
+                <option value="custom">Custom Distance</option>
+              </select>
+            </div>
+
+            <!-- Custom Distance Input -->
+            <div id="customDistanceDiv" class="hidden">
+              <label for="customDistance" class="block text-sm font-medium mb-2">Enter Distance (km)</label>
+              <input
+                type="number"
+                id="customDistance"
+                class="w-full p-3 border rounded-md bg-background"
+                placeholder="Enter distance in kilometers"
+                min="1"
+              />
+            </div>
+
+            <!-- Vehicle Selection -->
+            <div>
+              <label class="block text-sm font-medium mb-3">Select Vehicle</label>
+              <div class="grid md:grid-cols-2 gap-4">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                  <input type="radio" name="vehicle" value="kia" class="mt-1" checked />
+                  <div class="flex-1">
+                    <div class="font-semibold">Kia Carens EV</div>
+                    <div class="text-sm text-muted-foreground">7-seater SUV • ₹18/km</div>
+                    <div class="text-sm text-muted-foreground">400+ km range</div>
+                  </div>
+                </label>
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                  <input type="radio" name="vehicle" value="byd" class="mt-1" />
+                  <div class="flex-1">
+                    <div class="font-semibold">BYD E-MAX 7</div>
+                    <div class="text-sm text-muted-foreground">Premium 7-seater • ₹22/km</div>
+                    <div class="text-sm text-muted-foreground">530+ km range</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Trip Type -->
+            <div>
+              <label class="block text-sm font-medium mb-3">Trip Type</label>
+              <div class="grid md:grid-cols-2 gap-4">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                  <input type="radio" name="tripType" value="oneway" class="mt-1" checked />
+                  <div class="flex-1">
+                    <div class="font-semibold">One-Way Trip</div>
+                    <div class="text-sm text-muted-foreground">Single journey</div>
+                  </div>
+                </label>
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                  <input type="radio" name="tripType" value="roundtrip" class="mt-1" />
+                  <div class="flex-1">
+                    <div class="font-semibold">Round Trip</div>
+                    <div class="text-sm text-muted-foreground">Save 10% on return journey</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button
+              type="submit"
+              class="w-full bg-primary text-primary-foreground hover:bg-primary/90 p-4 rounded-md font-semibold text-lg transition-colors"
+            >
+              Calculate Fare →
+            </button>
+          </form>
+
+          <!-- Results -->
+          <div id="fareResults" class="hidden mt-8 p-6 bg-green-50 dark:bg-green-950/20 rounded-lg border-2 border-green-600">
+            <h3 class="text-2xl font-bold mb-4 text-center">Your Fare Estimate</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-sm text-muted-foreground mb-1">Total Fare</div>
+                <div class="text-4xl font-bold text-primary" id="totalFare">₹0</div>
+                <div class="text-xs text-muted-foreground mt-1" id="tripTypeLabel">One-way</div>
+              </div>
+              <div class="text-center">
+                <div class="text-sm text-muted-foreground mb-1">Distance</div>
+                <div class="text-4xl font-bold text-primary" id="totalDistance">0 km</div>
+                <div class="text-xs text-muted-foreground mt-1" id="vehicleLabel">Kia Carens EV</div>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-white dark:bg-gray-900 rounded">
+              <div class="text-sm font-semibold mb-3">Fare Breakdown:</div>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Base fare (<span id="perKmRate">₹18</span>/km × <span id="distanceValue">0</span> km)</span>
+                  <span class="font-semibold" id="baseFare">₹0</span>
+                </div>
+                <div class="flex justify-between text-muted-foreground">
+                  <span>Tolls (included)</span>
+                  <span id="tollsIncluded">₹0</span>
+                </div>
+                <div class="flex justify-between text-green-600 hidden" id="discountRow">
+                  <span>Round-trip discount (10%)</span>
+                  <span id="discount">-₹0</span>
+                </div>
+                <div class="flex justify-between border-t pt-2 font-bold">
+                  <span>Total Amount</span>
+                  <span id="finalTotal">₹0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/917498264215?text=Hi%2C%20I%20calculated%20fare%20and%20want%20to%20book" class="flex-1 bg-green-600 text-white hover:bg-green-700 p-3 rounded-md font-semibold text-center transition-colors">
+                Book This Trip on WhatsApp →
+              </a>
+              <a href="tel:+917498264215" class="flex-1 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground p-3 rounded-md font-semibold text-center transition-colors">
+                Call +91 74982 64215
+              </a>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Popular Routes Pricing -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Popular Routes - Fixed Pricing</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {[
+          { route: "Pune → Mumbai Airport", distance: "148 km", kia: "₹2,999", byd: "₹5,200" },
+          { route: "Hinjewadi → Mumbai Airport", distance: "145 km", kia: "₹2,999", byd: "₹5,200" },
+          { route: "Wakad → Mumbai Airport", distance: "145 km", kia: "₹2,999", byd: "₹5,200" },
+          { route: "Pune → Shirdi", distance: "185 km", kia: "₹5,500", byd: "₹6,500" },
+          { route: "Pune → Lonavala", distance: "65 km", kia: "₹2,500", byd: "₹3,000" },
+          { route: "Pune → Mahabaleshwar", distance: "120 km", kia: "₹4,000", byd: "₹4,800" }
+        ].map(item => (
+          <Card>
+            <CardContent className="pt-6">
+              <h3 class="font-semibold mb-1">{item.route}</h3>
+              <p class="text-sm text-muted-foreground mb-4">{item.distance}</p>
+              <div class="space-y-2">
+                <div class="flex justify-between text-sm">
+                  <span>Kia Carens EV:</span>
+                  <span class="font-bold text-primary">{item.kia}</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>BYD E-MAX 7:</span>
+                  <span class="font-bold text-primary">{item.byd}</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Fare Calculator FAQs</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How accurate is this fare calculator?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Our calculator provides highly accurate estimates based on actual distance and current per-kilometer rates. Final fare may vary slightly for custom routes. For popular routes like Pune-Mumbai Airport, we offer fixed pricing at ₹2,999.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Are tolls included in the calculated fare?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Yes! All toll charges on expressways are included in the fare shown. There are no additional charges. The price you see is the final price you pay.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How much discount on round trips?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              We offer 10% discount on round-trip bookings when you book both legs together. For example, Pune-Mumbai Airport round trip costs ₹5,400 instead of ₹6,000 (saving ₹600).
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Does the price change based on time of day?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              No! We have zero surge pricing. ₹2,999 at 3 AM or 3 PM - the rate remains the same 24/7. No weekend charges, no holiday premiums, no peak hour surge.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fare Calculator Logic
+    document.getElementById('fareCalculator')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const routeType = document.getElementById('routeType') as HTMLSelectElement;
+      const customDistance = document.getElementById('customDistance') as HTMLInputElement;
+      const vehicle = document.querySelector('input[name="vehicle"]:checked') as HTMLInputElement;
+      const tripType = document.querySelector('input[name="tripType"]:checked') as HTMLInputElement;
+
+      let distance = 0;
+
+      if (routeType.value === 'custom') {
+        distance = parseFloat(customDistance.value);
+      } else if (routeType.selectedOptions[0]) {
+        distance = parseFloat(routeType.selectedOptions[0].dataset.distance || '0');
+      }
+
+      if (!distance || distance <= 0) {
+        alert('Please select a route or enter a valid distance');
+        return;
+      }
+
+      // Calculate fare
+      const ratePerKm = vehicle.value === 'kia' ? 18 : 22;
+      const baseFare = distance * ratePerKm;
+      let tollEstimate = 0;
+
+      // Estimate tolls for expressway routes
+      if (distance > 100) {
+        tollEstimate = 440; // Approximate expressway tolls
+      }
+
+      const subtotal = baseFare;
+      let discount = 0;
+
+      if (tripType.value === 'roundtrip') {
+        discount = subtotal * 0.1; // 10% discount on round trip
+      }
+
+      const finalFare = Math.round(subtotal - discount);
+
+      // Display results
+      const resultsDiv = document.getElementById('fareResults');
+      if (resultsDiv) {
+        resultsDiv.classList.remove('hidden');
+
+        document.getElementById('totalFare')!.textContent = `₹${finalFare.toLocaleString()}`;
+        document.getElementById('totalDistance')!.textContent = `${distance} km`;
+        document.getElementById('tripTypeLabel')!.textContent = tripType.value === 'roundtrip' ? 'Round-trip (10% discount applied)' : 'One-way';
+        document.getElementById('vehicleLabel')!.textContent = vehicle.value === 'kia' ? 'Kia Carens EV @ ₹18/km' : 'BYD E-MAX 7 @ ₹22/km';
+
+        document.getElementById('perKmRate')!.textContent = `₹${ratePerKm}`;
+        document.getElementById('distanceValue')!.textContent = distance.toString();
+        document.getElementById('baseFare')!.textContent = `₹${baseFare.toLocaleString()}`;
+        document.getElementById('tollsIncluded')!.textContent = tollEstimate > 0 ? `₹${tollEstimate} (included)` : 'Included in fare';
+        document.getElementById('finalTotal')!.textContent = `₹${finalFare.toLocaleString()}`;
+
+        const discountRow = document.getElementById('discountRow');
+        if (tripType.value === 'roundtrip') {
+          discountRow?.classList.remove('hidden');
+          document.getElementById('discount')!.textContent = `-₹${Math.round(discount).toLocaleString()}`;
+        } else {
+          discountRow?.classList.add('hidden');
+        }
+
+        // Scroll to results
+        resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+
+    // Show/hide custom distance input
+    document.getElementById('routeType')?.addEventListener('change', function(e) {
+      const customDiv = document.getElementById('customDistanceDiv');
+      if ((e.target as HTMLSelectElement).value === 'custom') {
+        customDiv?.classList.remove('hidden');
+      } else {
+        customDiv?.classList.add('hidden');
+      }
+    });
+  </script>
+</MainLayout>

@@ -1,0 +1,526 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+import { Check, MapPin, IndianRupee, Clock, Car, Mountain, Waves, Calendar, Users, ChevronRight, Star, MessageCircle, Phone, Leaf, TrendingUp } from "lucide-react";
+
+const title = "10 Best Weekend Getaways from Pune by Electric Cab (2025 Guide)";
+const description = "Perfect weekend escapes from Pune in premium electric cabs. Lonavala, Mahabaleshwar, Alibaug, and more - costs, distances, itineraries, and why EVs are ideal for hill station trips.";
+const publishDate = "2025-01-15";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "weekend getaways pune",
+  "pune weekend trips electric cab",
+  "lonavala cab pune",
+  "mahabaleshwar ev cab",
+  "weekend trips from pune",
+  "hill stations near pune",
+  "pune weekend travel",
+  "electric cab weekend packages"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+      <div class="flex items-start gap-4">
+        <div class="bg-purple-600 text-white p-3 rounded-lg">
+          <Mountain className="h-6 w-6" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">Top 3 Weekend Escapes from Pune</h2>
+          <div class="grid md:grid-cols-3 gap-3 text-sm">
+            <div>
+              <Badge variant="default" className="mb-1">Best Overall</Badge>
+              <p class="font-bold">Lonavala</p>
+              <p class="text-gray-600">67 km • 1.5 hours • Rs.1,800</p>
+            </div>
+            <div>
+              <Badge variant="default" className="mb-1 bg-green-600">Most Scenic</Badge>
+              <p class="font-bold">Mahabaleshwar</p>
+              <p class="text-gray-600">120 km • 3 hours • Rs.3,200</p>
+            </div>
+            <div>
+              <Badge variant="default" className="mb-1 bg-blue-600">Beach Escape</Badge>
+              <p class="font-bold">Alibaug</p>
+              <p class="text-gray-600">150 km • 3.5 hours • Rs.4,000</p>
+            </div>
+          </div>
+          <p class="mt-3 text-gray-700 text-sm">All distances perfect for EV range. Zero range anxiety, pure weekend bliss!</p>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Article Header -->
+    <header class="mb-8">
+      <Badge className="mb-4">Weekend Getaways</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        10 Best Weekend Getaways from Pune by Electric Cab
+      </h1>
+      <p class="text-xl text-gray-600 mb-4">
+        Escape the city in style and sustainability. Premium EVs, experienced drivers, and destinations that are perfect for eco-conscious travelers.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">10 Destinations</Badge>
+        <Badge variant="secondary">Complete Itineraries</Badge>
+        <Badge variant="secondary">All Costs Included</Badge>
+        <Badge variant="secondary">2025 Updated</Badge>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="prose prose-lg max-w-none">
+
+      <!-- Why EV for Weekend Trips -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Electric Cabs are Perfect for Weekend Getaways</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="p-6">
+            <Leaf className="h-8 w-8 mb-3 text-green-600" />
+            <h3 class="font-bold mb-2">Eco-Friendly Travel</h3>
+            <p class="text-sm text-gray-700">
+              Visit pristine hill stations without polluting them. Zero emissions mean cleaner air at your destination.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <Car className="h-8 w-8 mb-3 text-blue-600" />
+            <h3 class="font-bold mb-2">Silent & Smooth</h3>
+            <p class="text-sm text-gray-700">
+              Enjoy peaceful mountain drives. EVs' quiet operation enhances the nature experience.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <IndianRupee className="h-8 w-8 mb-3 text-purple-600" />
+            <h3 class="font-bold mb-2">Great Value</h3>
+            <p class="text-sm text-gray-700">
+              Lower operating costs mean better rates. Plus, you save on parking at many eco-friendly resorts.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <!-- Top 10 Destinations -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">10 Perfect Weekend Getaways from Pune</h2>
+
+        <div class="space-y-8">
+          <!-- #1: Lonavala -->
+          <Card className="p-6 border-2 border-green-300">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <Badge variant="default" className="bg-green-600 mb-2">Best Overall</Badge>
+                <h3 class="text-2xl font-bold text-gray-900">1. Lonavala & Khandala</h3>
+                <p class="text-gray-600">The Classic Hill Station Escape</p>
+              </div>
+              <div class="text-right">
+                <div class="flex items-center gap-1 mb-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p class="text-sm text-gray-600">9.5/10</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-4 text-sm">
+              <div>
+                <p class="font-semibold mb-1">Journey Details</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Distance: 67 km</li>
+                  <li>• Time: 1.5 hours</li>
+                  <li>• EV Cab Cost: Rs.1,800</li>
+                  <li>• Best Season: Jun-Oct (monsoon)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Top Attractions</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Tiger's Leap viewpoint</li>
+                  <li>• Bhushi Dam</li>
+                  <li>• Karla & Bhaja caves</li>
+                  <li>• Pawna Lake</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Perfect For</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Quick weekend breaks</li>
+                  <li>• Families with kids</li>
+                  <li>• First-time EV travelers</li>
+                  <li>• Budget-conscious trips</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-400 p-3">
+              <p class="text-sm text-green-800">
+                <strong>EV Advantage:</strong> 67 km is perfect for EVs - no charging needed! Enjoy the silent drive through scenic ghats. Charging available at Lonavala for extended stays.
+              </p>
+            </div>
+          </Card>
+
+          <!-- #2: Mahabaleshwar -->
+          <Card className="p-6 border-2 border-blue-300">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <Badge variant="default" className="bg-blue-600 mb-2">Most Scenic</Badge>
+                <h3 class="text-2xl font-bold text-gray-900">2. Mahabaleshwar</h3>
+                <p class="text-gray-600">The Strawberry Capital</p>
+              </div>
+              <div class="text-right">
+                <div class="flex items-center gap-1 mb-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p class="text-sm text-gray-600">9.2/10</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-4 text-sm">
+              <div>
+                <p class="font-semibold mb-1">Journey Details</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Distance: 120 km</li>
+                  <li>• Time: 3 hours</li>
+                  <li>• EV Cab Cost: Rs.3,200</li>
+                  <li>• Best Season: Oct-Jun</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Top Attractions</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Arthur's Seat viewpoint</li>
+                  <li>• Venna Lake boating</li>
+                  <li>• Pratapgad Fort</li>
+                  <li>• Strawberry farms</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Perfect For</p>
+                <ul class="text-gray-700 space-y-1">
+                  <li>• Romantic getaways</li>
+                  <li>• Nature photography</li>
+                  <li>• Long weekends</li>
+                  <li>• Couples & groups</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-3">
+              <p class="text-sm text-blue-800">
+                <strong>Weekend Itinerary:</strong> Saturday AM - Travel to Mahabaleshwar, check-in, lunch. PM - Arthur's Seat, Sunset Point. Sunday - Strawberry shopping, Venna Lake, return by evening.
+              </p>
+            </div>
+          </Card>
+
+          <!-- Quick Cards for #3-#10 -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- #3: Alibaug -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">3. Alibaug</h3>
+                <Badge variant="outline">Beach</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 150 km • <strong>Time:</strong> 3.5 hours</p>
+                <p><strong>Cost:</strong> Rs.4,000 (round trip)</p>
+                <p class="text-gray-600">Beaches, forts, water sports. Perfect beach escape from Pune.</p>
+              </div>
+            </Card>
+
+            <!-- #4: Lavasa -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">4. Lavasa</h3>
+                <Badge variant="outline">Lake City</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 65 km • <strong>Time:</strong> 1.5 hours</p>
+                <p><strong>Cost:</strong> Rs.1,750 (round trip)</p>
+                <p class="text-gray-600">Planned city around lake. Cafes, water sports, scenic drives.</p>
+              </div>
+            </Card>
+
+            <!-- #5: Panchgani -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">5. Panchgani</h3>
+                <Badge variant="outline">Hill Station</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 100 km • <strong>Time:</strong> 2.5 hours</p>
+                <p><strong>Cost:</strong> Rs.2,800 (round trip)</p>
+                <p class="text-gray-600">Table Land, strawberry farms, colonial charm. Less crowded than Mahabaleshwar.</p>
+              </div>
+            </Card>
+
+            <!-- #6: Matheran -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">6. Matheran</h3>
+                <Badge variant="outline">Car-Free Hill</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 120 km • <strong>Time:</strong> 3 hours</p>
+                <p><strong>Cost:</strong> Rs.3,200 (to base)</p>
+                <p class="text-gray-600">Asia's only car-free hill station. Take toy train from Neral.</p>
+              </div>
+            </Card>
+
+            <!-- #7: Kolad -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">7. Kolad</h3>
+                <Badge variant="outline">Adventure</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 110 km • <strong>Time:</strong> 2.5 hours</p>
+                <p><strong>Cost:</strong> Rs.3,000 (round trip)</p>
+                <p class="text-gray-600">White water rafting, riverside camps. Adventure seekers' paradise.</p>
+              </div>
+            </Card>
+
+            <!-- #8: Igatpuri -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">8. Igatpuri</h3>
+                <Badge variant="outline">Wellness</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 125 km • <strong>Time:</strong> 3 hours</p>
+                <p><strong>Cost:</strong> Rs.3,300 (round trip)</p>
+                <p class="text-gray-600">Vipassana center, lakes, waterfalls. Perfect for meditation retreats.</p>
+              </div>
+            </Card>
+
+            <!-- #9: Bhandardara -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">9. Bhandardara</h3>
+                <Badge variant="outline">Offbeat</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 165 km • <strong>Time:</strong> 4 hours</p>
+                <p><strong>Cost:</strong> Rs.4,400 (round trip)</p>
+                <p class="text-gray-600">Arthur Lake, Randha Falls, fireflies in season. Hidden gem.</p>
+              </div>
+            </Card>
+
+            <!-- #10: Raigad Fort -->
+            <Card className="p-5">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-xl">10. Raigad Fort</h3>
+                <Badge variant="outline">History</Badge>
+              </div>
+              <div class="space-y-2 text-sm">
+                <p><strong>Distance:</strong> 155 km • <strong>Time:</strong> 3.5 hours</p>
+                <p><strong>Cost:</strong> Rs.4,150 (round trip)</p>
+                <p class="text-gray-600">Shivaji's capital. Historical fort, ropeway, panoramic views.</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cost Breakdown -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Complete Cost Breakdown</h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-2 text-left">Destination</th>
+                <th class="border border-gray-300 p-2 text-center">Distance</th>
+                <th class="border border-gray-300 p-2 text-center">EV Cab<br/>(Round Trip)</th>
+                <th class="border border-gray-300 p-2 text-center">Own Car<br/>(Fuel + Toll)</th>
+                <th class="border border-gray-300 p-2 text-center">Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2">Lonavala</td>
+                <td class="border border-gray-300 p-2 text-center">134 km</td>
+                <td class="border border-gray-300 p-2 text-center font-bold">Rs.1,800</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.1,600</td>
+                <td class="border border-gray-300 p-2 text-center text-green-600">Stress-free</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-2">Mahabaleshwar</td>
+                <td class="border border-gray-300 p-2 text-center">240 km</td>
+                <td class="border border-gray-300 p-2 text-center font-bold">Rs.3,200</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.2,900</td>
+                <td class="border border-gray-300 p-2 text-center text-green-600">No driving fatigue</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Alibaug</td>
+                <td class="border border-gray-300 p-2 text-center">300 km</td>
+                <td class="border border-gray-300 p-2 text-center font-bold">Rs.4,000</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.3,600</td>
+                <td class="border border-gray-300 p-2 text-center text-green-600">No parking hassle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4">
+          <p class="font-semibold text-blue-800 mb-2">Hidden Value of EV Cabs</p>
+          <ul class="text-sm text-blue-700 space-y-1">
+            <li>• No driver fatigue - enjoy the journey, not just destination</li>
+            <li>• No parking costs at destination (Rs.200-500 saved)</li>
+            <li>• No vehicle wear & tear on hilly roads</li>
+            <li>• Can consume alcohol responsibly (designated driver)</li>
+            <li>• Split costs among friends (Rs.600-800 per person for 4 people)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Weekend Packages -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">GreenEVCabs Weekend Packages</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="p-6 border-2 border-green-300">
+            <Badge variant="default" className="bg-green-600 mb-3">Popular</Badge>
+            <h3 class="font-bold text-xl mb-3">One-Day Package</h3>
+            <p class="text-gray-700 mb-4 text-sm">Perfect for quick escapes. 8 hours, 250 km included.</p>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between">
+                <span>Lonavala</span>
+                <span class="font-bold">Rs.2,200</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Mahabaleshwar</span>
+                <span class="font-bold">Rs.3,800</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Lavasa</span>
+                <span class="font-bold">Rs.2,100</span>
+              </div>
+            </div>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Pickup & drop from your location</li>
+              <li>• All tolls & driver allowance included</li>
+              <li>• Extra km: Rs.14/km</li>
+              <li>• Extra hour: Rs.250/hour</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6 border-2 border-blue-300">
+            <Badge variant="default" className="bg-blue-600 mb-3">Best Value</Badge>
+            <h3 class="font-bold text-xl mb-3">Two-Day Package</h3>
+            <p class="text-gray-700 mb-4 text-sm">Full weekend experience. 16 hours, 400 km included.</p>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between">
+                <span>Mahabaleshwar</span>
+                <span class="font-bold">Rs.6,500</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Alibaug</span>
+                <span class="font-bold">Rs.7,200</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Bhandardara</span>
+                <span class="font-bold">Rs.7,800</span>
+              </div>
+            </div>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• 2-day vehicle at your disposal</li>
+              <li>• Driver accommodation arranged</li>
+              <li>• Flexible itinerary</li>
+              <li>• Extra km: Rs.13/km</li>
+            </ul>
+          </Card>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="mb-12">
+        <Card className="p-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold mb-3">Plan Your Eco-Friendly Weekend Getaway</h2>
+            <p class="text-xl text-green-50 mb-6">
+              Premium electric vehicles, experienced drivers, and nature-friendly travel. Book your escape today!
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Leaf className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Zero Emissions</h3>
+              <p class="text-sm text-green-50">Travel guilt-free</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Car className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Comfortable EVs</h3>
+              <p class="text-sm text-green-50">BYD E-MAX 7, Kia Carens EV</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Users className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Expert Drivers</h3>
+              <p class="text-sm text-green-50">Know all routes & attractions</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+919876543210">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <Phone className="mr-2 h-5 w-5" />
+                Call: +91 98765 43210
+              </Button>
+            </a>
+            <a href="https://wa.me/919876543210">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp for Packages
+              </Button>
+            </a>
+          </div>
+
+          <p class="text-center text-sm text-green-100 mt-4">
+            Weekend packages • Custom itineraries • Group discounts available
+          </p>
+        </Card>
+      </section>
+
+      <!-- Review Widget -->
+      <ReviewWidget variant="full" />
+
+    </article>
+  </div>
+</MainLayout>

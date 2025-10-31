@@ -1,0 +1,701 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { Building2, Check, Shield, FileText, Users, TrendingDown, Leaf, Phone, MessageCircle, Calendar, BarChart, Star } from "lucide-react";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Corporate Electric Cab Service Pune",
+  "serviceType": "B2B Electric Vehicle Transportation",
+  "provider": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "telephone": "+91-7498264215"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Pune"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "name": "Corporate Clients"
+  }
+};
+---
+
+<MainLayout
+  title="Corporate Electric Cab Service Pune | B2B EV Taxi for IT Companies | GST"
+  description="Corporate electric cab service for Pune IT companies. Monthly packages, GST invoices, employee transportation, airport transfers. Trusted by 50+ companies in Hinjewadi, Magarpatta, Kharadi. Zero surge, 24/7 service."
+  keywords={[
+    "corporate electric cab pune",
+    "corporate cab service pune",
+    "employee transportation pune",
+    "it company cab service pune",
+    "monthly cab package pune",
+    "corporate airport transfer pune",
+    "gst invoice cab service",
+    "hinjewadi corporate cab",
+    "magarpatta employee transport"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Corporate Electric Cab Service", href: "/corporate-electric-cab-pune" }
+  ]} />
+
+  <StructuredData data={[serviceSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        <Building2 class="h-4 w-4 inline mr-2" />
+        Trusted by 50+ Companies • GST Compliant • Zero Surge Pricing
+      </Badge>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        Corporate Electric Cab Service for Pune IT Companies
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+        Premium employee transportation & airport transfer solutions for corporates. 100% electric fleet, monthly billing, GST invoices, and dedicated account management. Help your company achieve sustainability goals while ensuring comfortable, reliable transportation.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a href="https://wa.me/917498264215?text=Hi%2C%20I'm%20interested%20in%20corporate%20electric%20cab%20packages%20for%20my%20company%0ACompany%20Name%3A%20%0ALocation%3A%20%0AMonthly%20Requirement%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Request Corporate Quote
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <Check className="h-5 w-5 text-green-600" />
+          <span>Monthly Billing</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Check className="h-5 w-5 text-green-600" />
+          <span>GST Invoices</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Check className="h-5 w-5 text-green-600" />
+          <span>Volume Discounts</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Check className="h-5 w-5 text-green-600" />
+          <span>Dedicated Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Corporate EV Cabs -->
+    <div class="mb-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Electric Cabs for Your Company?</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center flex-shrink-0">
+            <Leaf className="h-6 w-6 text-green-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Meet Sustainability Goals</h3>
+            <p class="text-sm text-muted-foreground">
+              Reduce company's carbon footprint by 100%. Perfect for ESG reporting and sustainability commitments. Zero emissions transportation.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center flex-shrink-0">
+            <TrendingDown className="h-6 w-6 text-blue-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Lower Costs</h3>
+            <p class="text-sm text-muted-foreground">
+              Save 20-30% vs traditional cabs. Zero surge pricing means predictable monthly expenses. Volume discounts for regular usage.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center flex-shrink-0">
+            <FileText className="h-6 w-6 text-purple-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Easy Expense Management</h3>
+            <p class="text-sm text-muted-foreground">
+              Monthly consolidated invoices with GST. Detailed trip reports. Easy reimbursement process for employees. Centralized billing.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center flex-shrink-0">
+            <Shield className="h-6 w-6 text-orange-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Premium Safety</h3>
+            <p class="text-sm text-muted-foreground">
+              ADAS Level 2 equipped vehicles. Verified, professional drivers. Real-time tracking. 24/7 support for employee safety.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center flex-shrink-0">
+            <Users className="h-6 w-6 text-teal-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Employee Satisfaction</h3>
+            <p class="text-sm text-muted-foreground">
+              Spacious 7-seater SUVs. Silent, comfortable rides. Modern amenities. Punctual service. Happy employees, better retention.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center flex-shrink-0">
+            <BarChart className="h-6 w-6 text-red-600" />
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Detailed Analytics</h3>
+            <p class="text-sm text-muted-foreground">
+              Monthly usage reports. Cost analysis. Trip history. Carbon savings metrics. Data for sustainability reporting.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Offered -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Corporate Electric Cab Services</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-primary" />
+              Employee Transportation
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground mb-4">
+              Daily commute solutions for employees from home to office and back. Perfect for IT parks in Hinjewadi, Magarpatta, Kharadi.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Fixed monthly packages per employee</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Shared rides for cost optimization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Flexible pickup/drop timings</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Weekend/holiday support available</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <Shield className="h-6 w-6 text-primary" />
+              Executive Airport Transfers
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground mb-4">
+              Premium airport transfer service for executives, clients, and business travelers. Pune ↔ Mumbai airports.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Priority booking for executives</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Flight tracking & delay adjustments</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Meet & greet with name board</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>24/7 availability including holidays</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <Users className="h-6 w-6 text-primary" />
+              Client Pickups & Meetings
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground mb-4">
+              Professional transportation for client visits, office meetings, and business events. Make great first impression.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Premium 7-seater electric SUVs</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Professional, courteous drivers</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>On-demand or scheduled bookings</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Waiting time management</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <Calendar className="h-6 w-6 text-primary" />
+              Event & Team Transportation
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground mb-4">
+              Group transportation for corporate events, team outings, conferences, and off-site meetings across Maharashtra.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Multiple vehicle coordination</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Event-specific packages</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Group booking discounts</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Dedicated event coordinator</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Pricing Packages -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Corporate Pricing Packages</h2>
+      <p class="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+        Flexible packages designed for different corporate needs. All packages include GST invoicing and monthly billing.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Starter Package</CardTitle>
+            <Badge variant="secondary" className="mt-2">Up to 20 trips/month</Badge>
+          </CardHeader>
+          <CardContent>
+            <div class="mb-6">
+              <div class="text-3xl font-bold text-primary mb-2">₹18/km</div>
+              <p class="text-sm text-muted-foreground">No minimum commitment</p>
+            </div>
+            <ul class="space-y-3 text-sm mb-6">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Standard 7-seater electric SUVs</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Monthly consolidated invoice</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Basic trip reports</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Email support</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/917498264215?text=Corporate%20Starter%20Package%20Inquiry" target="_blank">
+              <Button className="w-full" variant="outline">Get Started</Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-primary">
+          <CardHeader className="bg-primary/5">
+            <CardTitle>Growth Package</CardTitle>
+            <Badge className="mt-2">20-50 trips/month</Badge>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div class="mb-6">
+              <div class="text-3xl font-bold text-primary mb-2">₹16/km</div>
+              <p class="text-sm text-muted-foreground">Save 11% vs pay-as-you-go</p>
+            </div>
+            <ul class="space-y-3 text-sm mb-6">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Premium electric SUVs (Kia/BYD)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Dedicated account manager</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Detailed analytics & reports</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Priority booking</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Phone & WhatsApp support</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/917498264215?text=Corporate%20Growth%20Package%20Inquiry" target="_blank">
+              <Button className="w-full">Most Popular</Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Enterprise Package</CardTitle>
+            <Badge variant="secondary" className="mt-2">50+ trips/month</Badge>
+          </CardHeader>
+          <CardContent>
+            <div class="mb-6">
+              <div class="text-3xl font-bold text-primary mb-2">₹14/km</div>
+              <p class="text-sm text-muted-foreground">Save 22% vs pay-as-you-go</p>
+            </div>
+            <ul class="space-y-3 text-sm mb-6">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Dedicated fleet allocation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Senior account manager</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Custom reporting & analytics</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>SLA guarantees</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>24/7 dedicated support line</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/917498264215?text=Corporate%20Enterprise%20Package%20Inquiry" target="_blank">
+              <Button className="w-full" variant="outline">Contact Sales</Button>
+            </a>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-muted-foreground">
+          All packages include: GST invoices, zero surge pricing, professional drivers, real-time tracking
+        </p>
+      </div>
+    </div>
+
+    <!-- ROI Calculator -->
+    <div class="mb-16 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Calculate Your Monthly Savings</h2>
+      <p class="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+        See how much your company can save by switching to GreenEVCabs
+      </p>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold mb-4">Traditional Cab Services</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-900 rounded">
+                <span>40 trips × ₹3,500 (with surge)</span>
+                <span class="font-bold">₹1,40,000</span>
+              </div>
+              <div class="flex justify-between p-3 bg-red-50 dark:bg-red-950/20 rounded">
+                <span>Surge pricing (10 trips)</span>
+                <span class="font-bold text-red-600">+₹10,000</span>
+              </div>
+              <div class="flex justify-between p-3 bg-red-50 dark:bg-red-950/20 rounded">
+                <span>Driver cancellations (delays)</span>
+                <span class="font-bold text-red-600">+₹5,000</span>
+              </div>
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-900 rounded font-bold">
+                <span>Total Monthly Cost</span>
+                <span className="text-red-600">₹1,55,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">GreenEVCabs Corporate</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-900 rounded">
+                <span>40 trips × ₹2,999 (fixed)</span>
+                <span class="font-bold">₹1,19,960</span>
+              </div>
+              <div class="flex justify-between p-3 bg-green-50 dark:bg-green-950/20 rounded">
+                <span>Corporate discount (10%)</span>
+                <span class="font-bold text-green-600">-₹12,000</span>
+              </div>
+              <div class="flex justify-between p-3 bg-green-50 dark:bg-green-950/20 rounded">
+                <span>Zero surge pricing</span>
+                <span class="font-bold text-green-600">₹0</span>
+              </div>
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-900 rounded font-bold">
+                <span>Total Monthly Cost</span>
+                <span className="text-green-600">₹1,07,960</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 p-6 bg-green-600 text-white rounded-lg text-center">
+          <h3 class="text-2xl font-bold mb-2">You Save ₹47,040/month</h3>
+          <p class="text-green-100 mb-4">That's ₹5,64,480 saved per year + Zero carbon emissions!</p>
+          <a href="https://wa.me/917498264215?text=I%20want%20to%20discuss%20corporate%20package%20and%20savings" target="_blank">
+            <Button size="lg" variant="secondary" className="bg-white text-green-700 hover:bg-green-50">
+              Get Custom Quote for Your Company
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT Parks We Serve -->
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">IT Parks & Corporate Hubs We Serve</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Hinjewadi</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>• Rajiv Gandhi Infotech Park Phase 1, 2, 3</li>
+              <li>• TCS, Infosys, Wipro</li>
+              <li>• Cognizant, Tech Mahindra</li>
+              <li>• All IT companies</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Magarpatta City</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>• Magarpatta Cybercity</li>
+              <li>• World Trade Center</li>
+              <li>• Amdocs, Accenture</li>
+              <li>• Multiple IT companies</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Kharadi</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>• EON IT Park</li>
+              <li>• World Trade Center</li>
+              <li>• Tech parks</li>
+              <li>• Corporate offices</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Other Locations</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>• Baner IT offices</li>
+              <li>• Wakad tech parks</li>
+              <li>• Aundh corporate hubs</li>
+              <li>• All Pune areas</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mb-16 bg-muted/50 rounded-lg p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Trusted by Leading Companies</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-2 mb-4">
+              {[1,2,3,4,5].map(() => (
+                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+              ))}
+            </div>
+            <p class="text-sm text-muted-foreground mb-4">
+              "Switched our entire employee transportation to GreenEVCabs. Saving ₹50,000/month and meeting our sustainability goals. Highly recommended for corporate use."
+            </p>
+            <div class="font-semibold">HR Manager</div>
+            <div class="text-sm text-muted-foreground">IT Company, Hinjewadi</div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-2 mb-4">
+              {[1,2,3,4,5].map(() => (
+                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+              ))}
+            </div>
+            <p class="text-sm text-muted-foreground mb-4">
+              "Professional service for our executive airport transfers. No cancellations, always on time, and the electric SUVs make great impression on clients."
+            </p>
+            <div class="font-semibold">Operations Head</div>
+            <div class="text-sm text-muted-foreground">Consulting Firm, Magarpatta</div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-2 mb-4">
+              {[1,2,3,4,5].map(() => (
+                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+              ))}
+            </div>
+            <p class="text-sm text-muted-foreground mb-4">
+              "Monthly billing with GST makes expense management so easy. The detailed reports help us track transportation costs accurately. Great partnership."
+            </p>
+            <div class="font-semibold">Finance Manager</div>
+            <div class="text-sm text-muted-foreground">Startup, Kharadi</div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Corporate Package FAQs</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How does monthly billing work?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              We consolidate all trips for the month and send a single invoice with GST at month-end. Detailed trip-wise breakdown included. Payment terms: Net 15 days.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">What discounts are available for corporate clients?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              10-15% volume discounts based on monthly usage. 20-50 trips/month: 11% off. 50+ trips/month: 22% off. Additional discounts for annual contracts.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Can we get dedicated vehicles for our company?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Yes! Enterprise package (50+ trips/month) includes dedicated vehicle allocation. Vehicles reserved for your company during working hours. Custom branding options available.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">How do you ensure employee safety?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              All drivers are verified with background checks. Real-time trip tracking. Emergency support 24/7. ADAS Level 2 safety features in all vehicles. Trip sharing with admin.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 md:p-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Ready to Switch to Sustainable Corporate Transportation?
+      </h2>
+      <p class="text-muted-foreground mb-8 text-lg max-w-3xl mx-auto">
+        Join 50+ companies already saving costs and reducing carbon footprint. Get custom quote for your company today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Corporate%20Package%20Inquiry%0ACompany%20Name%3A%0AMonthly%20Trips%3A%0APrimary%20Route%3A" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Get Corporate Quote - WhatsApp
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call Corporate Sales: +91 74982 64215
+          </Button>
+        </a>
+      </div>
+      <p class="text-sm text-muted-foreground mt-6">
+        Response within 2 hours • Custom packages available • Free trial trip for decision makers
+      </p>
+    </div>
+  </div>
+</MainLayout>

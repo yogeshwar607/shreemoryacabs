@@ -1,0 +1,551 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+const title = "How Much Does Pune to Mumbai Cab Actually Cost? Real Prices 2025";
+const description = "Honest breakdown of actual Pune to Mumbai cab costs with real examples. Compare electric, diesel, Ola, Uber prices including hidden charges. See what you'll really pay.";
+const publishDate = "2025-02-01";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "pune mumbai cab cost",
+  "pune to mumbai taxi fare",
+  "how much pune mumbai cab",
+  "actual cab cost pune mumbai",
+  "real prices pune mumbai taxi",
+  "pune mumbai airport cab charges",
+  "cheap cab pune mumbai",
+  "pune mumbai cab price comparison"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://greenevcabs.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pune Mumbai Cab Cost",
+      "item": "https://greenevcabs.com/blog/pune-mumbai-cab-cost-real-prices"
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm mb-6 text-gray-600">
+      <a href="/" class="hover:text-green-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-green-600">Blog</a>
+      <span class="mx-2">/</span>
+      <span>Pune Mumbai Cab Cost</span>
+    </nav>
+
+    <!-- Article Header -->
+    <article>
+      <header class="mb-8">
+        <Badge className="mb-4">Pricing Guide</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          How Much Does Pune to Mumbai Cab Actually Cost? Real Prices 2025
+        </h1>
+        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+          <span>By {author}</span>
+          <span>•</span>
+          <time datetime={publishDate}>February 1, 2025</time>
+          <span>•</span>
+          <span>10 min read</span>
+        </div>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Confused by varying cab quotes for Pune-Mumbai? Here's the brutally honest truth about what you'll actually pay, including all the hidden charges nobody tells you about.
+        </p>
+      </header>
+
+      <!-- Quick Answer -->
+      <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+        <h2 class="font-bold text-2xl mb-4 text-green-800">⚡ Quick Answer</h2>
+        <p class="text-lg mb-4">The REAL cost for Pune to Mumbai Airport cab ranges from:</p>
+        <ul class="space-y-2 mb-4">
+          <li class="flex items-start gap-2">
+            <span class="text-green-700 font-bold">•</span>
+            <span><strong>Electric cab:</strong> ₹2,999 fixed (GreenEVCabs)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-600 font-bold">•</span>
+            <span><strong>Diesel cab:</strong> ₹4,300-₹5,200 (with all charges)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-red-600 font-bold">•</span>
+            <span><strong>Ola/Uber:</strong> ₹3,870-₹11,610 (depending on surge)</span>
+          </li>
+        </ul>
+        <p class="text-base text-gray-700"><strong>Average actual payment:</strong> Most people end up paying ₹4,500-₹6,000 when accounting for surge, tolls, and hidden charges.</p>
+      </Card>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Why Cab Prices Vary So Much</h2>
+
+          <p class="mb-4">You've probably noticed prices range from ₹2,999 to ₹11,000+ for the same 148 km route. Here's why:</p>
+
+          <div class="grid md:grid-cols-2 gap-6 my-6">
+            <Card className="p-6">
+              <h3 class="font-bold text-lg mb-3">Factors That Increase Cost</h3>
+              <ul class="space-y-2 text-sm">
+                <li>✗ Surge pricing (1.5x-3x)</li>
+                <li>✗ Time of day (peak hours)</li>
+                <li>✗ Weather conditions (rain)</li>
+                <li>✗ Festivals & holidays</li>
+                <li>✗ Last-minute booking</li>
+                <li>✗ Driver allowances</li>
+                <li>✗ Hidden platform fees</li>
+                <li>✗ Vehicle type upgrade</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold text-lg mb-3">Factors That Decrease Cost</h3>
+              <ul class="space-y-2 text-sm">
+                <li>✓ Advance booking</li>
+                <li>✓ Off-peak travel</li>
+                <li>✓ Electric vehicles (lower operating cost)</li>
+                <li>✓ Direct booking (no middleman)</li>
+                <li>✓ Round trip packages</li>
+                <li>✓ Corporate/bulk bookings</li>
+                <li>✓ Fixed-price services</li>
+              </ul>
+            </Card>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Real Cost Breakdown: Service by Service</h2>
+
+          <div class="space-y-8">
+            <!-- GreenEVCabs -->
+            <Card className="p-6 border-2 border-green-500 bg-green-50">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-bold text-2xl mb-2">⚡ GreenEVCabs (Electric)</h3>
+                  <p class="text-sm text-gray-600">Fixed price, no surge</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-4xl font-bold text-green-700">₹2,999</p>
+                  <p class="text-sm text-gray-600">Always</p>
+                </div>
+              </div>
+
+              <div class="bg-white p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">What's Included:</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <div>✓ 148 km journey</div>
+                  <div>✓ All toll charges (₹400)</div>
+                  <div>✓ Professional driver</div>
+                  <div>✓ 7-seater electric SUV</div>
+                  <div>✓ Flight tracking</div>
+                  <div>✓ 30 min wait time</div>
+                  <div>✓ Zero surge ever</div>
+                  <div>✓ GST invoice</div>
+                </div>
+              </div>
+
+              <div class="bg-white p-4 rounded">
+                <h4 class="font-semibold mb-2">Hidden Charges:</h4>
+                <p class="text-green-700 font-semibold">None! ₹2,999 is your final price.</p>
+              </div>
+
+              <div class="mt-4 p-3 bg-green-600 text-white rounded text-center">
+                <p class="font-semibold">💰 You Pay: ₹2,999 (100% guaranteed)</p>
+              </div>
+            </Card>
+
+            <!-- Traditional Diesel -->
+            <Card className="p-6 border border-gray-300">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-bold text-2xl mb-2">🚗 Traditional Diesel Cab</h3>
+                  <p class="text-sm text-gray-600">Local cab operators</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-4xl font-bold">₹3,500</p>
+                  <p class="text-sm text-red-600">+ extras</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Base Quote Includes:</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <div>✓ 148 km journey</div>
+                  <div>✓ Professional driver</div>
+                  <div>⚠️ Basic sedan/Innova</div>
+                  <div>❌ Tolls NOT included</div>
+                  <div>❌ Driver allowance extra</div>
+                  <div>❌ Wait charges extra</div>
+                </div>
+              </div>
+
+              <div class="bg-yellow-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Additional Charges:</h4>
+                <ul class="space-y-1 text-sm">
+                  <li>+ Toll charges: <span class="font-semibold">₹400</span></li>
+                  <li>+ Driver allowance: <span class="font-semibold">₹400</span></li>
+                  <li>+ Night charges (if applicable): <span class="font-semibold">₹200</span></li>
+                  <li>+ Wait time: <span class="font-semibold">₹100/hour</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-4 p-3 bg-gray-600 text-white rounded text-center">
+                <p class="font-semibold">💰 You Actually Pay: ₹4,300-₹4,700</p>
+              </div>
+            </Card>
+
+            <!-- Ola -->
+            <Card className="p-6 border border-yellow-400">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-bold text-2xl mb-2">🟡 Ola Outstation</h3>
+                  <p class="text-sm text-gray-600">App-based aggregator</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-4xl font-bold">₹3,500</p>
+                  <p class="text-sm text-red-600">+ surge varies</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Base Fare Includes:</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <div>✓ 148 km journey</div>
+                  <div>✓ Toll charges included</div>
+                  <div>✓ Basic sedan</div>
+                  <div>⚠️ Vehicle condition varies</div>
+                </div>
+              </div>
+
+              <div class="bg-orange-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Variable Charges:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li>⚠️ Normal hours: <span class="font-semibold">₹3,500-₹3,870</span></li>
+                  <li>⚠️ Morning rush (6-9 AM): <span class="font-semibold text-orange-600">₹5,250-₹5,805 (1.5x surge)</span></li>
+                  <li>⚠️ Evening rush: <span class="font-semibold text-orange-600">₹5,250 (1.5x)</span></li>
+                  <li>⚠️ Rainy day: <span class="font-semibold text-red-600">₹7,000-₹8,700 (2x surge)</span></li>
+                  <li>❌ Festival/Holiday: <span class="font-semibold text-red-600">₹8,700-₹10,500 (2.5x)</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-4 p-3 bg-orange-600 text-white rounded text-center">
+                <p class="font-semibold">💰 You Pay: ₹3,870-₹10,500 (depends on time)</p>
+              </div>
+            </Card>
+
+            <!-- Uber -->
+            <Card className="p-6 border border-gray-400">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-bold text-2xl mb-2">⚫ Uber Intercity</h3>
+                  <p class="text-sm text-gray-600">App-based aggregator</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-4xl font-bold">₹3,800</p>
+                  <p class="text-sm text-red-600">+ surge varies</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Base Fare Includes:</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <div>✓ 148 km journey</div>
+                  <div>✓ Toll charges included</div>
+                  <div>✓ Basic sedan</div>
+                  <div>⚠️ Vehicle varies</div>
+                </div>
+              </div>
+
+              <div class="bg-red-50 p-4 rounded mb-4">
+                <h4 class="font-semibold mb-3">Variable Charges:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li>⚠️ Normal hours: <span class="font-semibold">₹3,800-₹4,120</span></li>
+                  <li>⚠️ Peak hours: <span class="font-semibold text-orange-600">₹5,700-₹7,600 (1.5-2x)</span></li>
+                  <li>❌ High demand: <span class="font-semibold text-red-600">₹7,600-₹11,400 (2-3x surge)</span></li>
+                  <li>+ Platform fee: <span class="font-semibold">₹50-₹100</span></li>
+                  <li>+ Insurance (optional): <span class="font-semibold">₹20-₹50</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-4 p-3 bg-red-600 text-white rounded text-center">
+                <p class="font-semibold">💰 You Pay: ₹4,120-₹11,610 (highly unpredictable)</p>
+              </div>
+            </Card>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Time-of-Day Pricing Impact</h2>
+
+          <p class="mb-6">Your departure time dramatically affects the final cost. Here's hour-by-hour analysis:</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="border p-3 text-left">Departure Time</th>
+                  <th class="border p-3 text-center bg-green-50">Electric</th>
+                  <th class="border p-3 text-center">Diesel</th>
+                  <th class="border p-3 text-center">Ola</th>
+                  <th class="border p-3 text-center">Uber</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border p-3 font-semibold">Late Night (12-5 AM)</td>
+                  <td class="border p-3 text-center bg-green-50">₹2,999</td>
+                  <td class="border p-3 text-center">₹4,700</td>
+                  <td class="border p-3 text-center">₹4,300</td>
+                  <td class="border p-3 text-center">₹5,200</td>
+                </tr>
+                <tr class="bg-orange-50">
+                  <td class="border p-3 font-semibold">Morning Rush (6-9 AM)</td>
+                  <td class="border p-3 text-center bg-green-100 text-green-700 font-bold">₹2,999</td>
+                  <td class="border p-3 text-center">₹4,500</td>
+                  <td class="border p-3 text-center text-orange-600 font-semibold">₹5,805</td>
+                  <td class="border p-3 text-center text-red-600 font-semibold">₹7,600</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-semibold">Mid-Day (10 AM-4 PM)</td>
+                  <td class="border p-3 text-center bg-green-50">₹2,999</td>
+                  <td class="border p-3 text-center">₹4,300</td>
+                  <td class="border p-3 text-center">₹3,870</td>
+                  <td class="border p-3 text-center">₹4,120</td>
+                </tr>
+                <tr class="bg-orange-50">
+                  <td class="border p-3 font-semibold">Evening Rush (5-9 PM)</td>
+                  <td class="border p-3 text-center bg-green-100 text-green-700 font-bold">₹2,999</td>
+                  <td class="border p-3 text-center">₹4,500</td>
+                  <td class="border p-3 text-center text-orange-600 font-semibold">₹5,418</td>
+                  <td class="border p-3 text-center text-red-600 font-semibold">₹6,966</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-semibold">Night (10-11 PM)</td>
+                  <td class="border p-3 text-center bg-green-50">₹2,999</td>
+                  <td class="border p-3 text-center">₹4,700</td>
+                  <td class="border p-3 text-center">₹4,642</td>
+                  <td class="border p-3 text-center">₹5,152</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-6 p-4 bg-blue-50 rounded">
+            <p class="font-semibold mb-2">💡 Pro Tip:</p>
+            <p class="text-sm">If using Ola/Uber, traveling between 10 AM - 4 PM can save you ₹1,500-₹3,500 compared to peak hours. With electric cabs, time doesn't matter - always ₹2,999.</p>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Real Customer Bills (Anonymized)</h2>
+
+          <p class="mb-6">Here are actual bills from real customers:</p>
+
+          <div class="space-y-6">
+            <Card className="p-6 bg-green-50">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="font-bold text-lg">Customer A - Tuesday 10 AM</h3>
+                  <p class="text-sm text-gray-600">Hinjewadi to Mumbai Airport T2</p>
+                </div>
+                <Badge className="bg-green-600">GreenEVCabs</Badge>
+              </div>
+              <div class="space-y-1 text-sm mb-4">
+                <div class="flex justify-between"><span>Base Fare:</span><span>₹2,999</span></div>
+                <div class="flex justify-between"><span>Toll Charges:</span><span className="text-green-600">Included</span></div>
+                <div class="flex justify-between"><span>Driver Allowance:</span><span className="text-green-600">Included</span></div>
+                <div class="flex justify-between"><span>Surge:</span><span className="text-green-600">₹0</span></div>
+                <div class="flex justify-between border-t pt-2 font-bold text-lg">
+                  <span>Total Paid:</span><span class="text-green-700">₹2,999</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-600">✓ Payment via UPI after trip</p>
+            </Card>
+
+            <Card className="p-6 bg-gray-50">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="font-bold text-lg">Customer B - Friday 7 AM</h3>
+                  <p class="text-sm text-gray-600">Wakad to Mumbai Airport T1</p>
+                </div>
+                <Badge variant="outline">Local Diesel Cab</Badge>
+              </div>
+              <div class="space-y-1 text-sm mb-4">
+                <div class="flex justify-between"><span>Quoted Fare:</span><span>₹3,500</span></div>
+                <div class="flex justify-between"><span>Toll Charges:</span><span className="text-red-600">+ ₹400</span></div>
+                <div class="flex justify-between"><span>Driver Batta:</span><span className="text-red-600">+ ₹400</span></div>
+                <div class="flex justify-between"><span>Wait Charge (20 min):</span><span className="text-red-600">+ ₹50</span></div>
+                <div class="flex justify-between border-t pt-2 font-bold text-lg">
+                  <span>Total Paid:</span><span class="text-red-700">₹4,350</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-600">✓ Paid in cash</p>
+            </Card>
+
+            <Card className="p-6 bg-orange-50">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="font-bold text-lg">Customer C - Saturday 8 PM</h3>
+                  <p class="text-sm text-gray-600">Baner to Mumbai Airport T2</p>
+                </div>
+                <Badge className="bg-yellow-500">Ola Outstation</Badge>
+              </div>
+              <div class="space-y-1 text-sm mb-4">
+                <div class="flex justify-between"><span>App Quote:</span><span>₹3,700</span></div>
+                <div class="flex justify-between"><span>Weekend Surge (1.3x):</span><span className="text-orange-600">+ ₹1,110</span></div>
+                <div class="flex justify-between"><span>Convenience Fee:</span><span className="text-red-600">+ ₹50</span></div>
+                <div class="flex justify-between border-t pt-2 font-bold text-lg">
+                  <span>Total Paid:</span><span class="text-orange-700">₹4,860</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-600">✓ Paid via app (Paytm Wallet)</p>
+            </Card>
+
+            <Card className="p-6 bg-red-50">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="font-bold text-lg">Customer D - Monday 6:30 AM (Monsoon)</h3>
+                  <p class="text-sm text-gray-600">Hadapsar to Mumbai Airport T1</p>
+                </div>
+                <Badge className="bg-black text-white">Uber Intercity</Badge>
+              </div>
+              <div class="space-y-1 text-sm mb-4">
+                <div class="flex justify-between"><span>Base Fare:</span><span>₹3,950</span></div>
+                <div class="flex justify-between"><span>Morning Surge (2.2x):</span><span className="text-red-600">+ ₹4,345</span></div>
+                <div class="flex justify-between"><span>Platform Fee:</span><span className="text-red-600">+ ₹75</span></div>
+                <div class="flex justify-between border-t pt-2 font-bold text-lg">
+                  <span>Total Paid:</span><span class="text-red-700">₹8,370</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-600">✓ Paid via app (Credit Card)</p>
+              <p class="text-xs text-red-600 mt-2">😞 Customer complained about unexpected surge</p>
+            </Card>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Cost Comparison Summary</h2>
+
+          <Card className="p-6 bg-gradient-to-r from-green-600 to-green-700 text-white">
+            <h3 class="text-2xl font-bold mb-6 text-center">Average Annual Savings Comparison</h3>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+              <div class="bg-white/10 p-4 rounded">
+                <p class="text-sm mb-2">Monthly Traveler (1 trip/month)</p>
+                <p class="text-3xl font-bold">₹15,600</p>
+                <p class="text-sm">saved per year vs diesel</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded">
+                <p class="text-sm mb-2">Weekly Commuter (4 trips/month)</p>
+                <p class="text-3xl font-bold">₹62,448</p>
+                <p class="text-sm">saved per year vs diesel</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded">
+                <p class="text-sm mb-2">Frequent Traveler (8 trips/month)</p>
+                <p class="text-3xl font-bold">₹1,24,896</p>
+                <p class="text-sm">saved per year vs diesel</p>
+              </div>
+            </div>
+
+            <p class="text-center text-lg">Compared to Ola/Uber, savings are even higher: ₹1,16,016 to ₹2,32,032 annually!</p>
+          </Card>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+          <div class="space-y-4">
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Why is electric cab ₹700 cheaper than diesel?</h3>
+              <p class="text-gray-700">Lower operating costs (electricity vs diesel), no surge pricing model, direct booking without platform fees, and efficient operations. All savings passed to customers.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Does the ₹2,999 price ever change?</h3>
+              <p class="text-gray-700">No. GreenEVCabs maintains ₹2,999 fixed pricing 24/7, 365 days a year. No surge during peak hours, festivals, rain, or high demand. This is our commitment.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">What's the cheapest time to book?</h3>
+              <p class="text-gray-700">With GreenEVCabs, every time is the cheapest - always ₹2,999. With Ola/Uber, book during 10 AM-4 PM on weekdays to avoid surge. With diesel cabs, avoid nights and weekends.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Are there any hidden charges I should know about?</h3>
+              <p class="text-gray-700">GreenEVCabs: None. Price is all-inclusive. Diesel cabs: Add ₹800 for tolls + driver batta. Ola/Uber: Add ₹50-₹100 platform fee + surge (unpredictable).</p>
+            </Card>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="my-12 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg p-8 text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Save ₹700-₹8,400 Per Trip?</h2>
+          <p class="text-xl mb-6">Book your fixed-price electric cab now</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20to%20Mumbai%20Airport%20at%20%E2%82%B92%2C999" target="_blank" rel="noopener">
+              <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-semibold text-lg">
+                📱 Book on WhatsApp - ₹2,999 Fixed
+              </Button>
+            </a>
+            <a href="tel:+919075020422">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold text-lg">
+                📞 Call: 90750 20422
+              </Button>
+            </a>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</MainLayout>

@@ -1,0 +1,1269 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Check, X, Users, Car, Luggage, Calculator, TrendingUp, Shield, Zap, ChevronRight, Star, AlertCircle, MessageCircle, Phone, Calendar } from "lucide-react";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+
+const pageTitle = "5-Seater vs 7-Seater Electric Cab: Complete Guide to Choosing Right Vehicle (2025)";
+const pageDescription = "Confused between 5-seater and 7-seater electric cab for Pune-Mumbai? Complete guide comparing space, cost, comfort, and use cases to help you choose the perfect vehicle for your journey.";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": pageTitle,
+  "description": pageDescription,
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "image": "https://greenevcabs.com/og-image.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://greenevcabs.com/blog/5-seater-vs-7-seater-electric-cab-guide"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I book 5-seater or 7-seater cab for 4 passengers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For 4 passengers with normal luggage, a 5-seater is sufficient and costs less (₹18/km vs ₹22/km). However, if you have heavy luggage (3+ large suitcases), airport-bound, or want extra comfort, upgrade to 7-seater. The third row stays folded, giving massive boot space."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost difference between 5-seater and 7-seater EV cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "5-seater (Kia Carens EV): ₹18/km. 7-seater (BYD E-MAX 7): ₹22/km. For Pune-Mumbai Airport (150 km), difference is ₹600 per trip. 7-seater includes premium features like panoramic sunroof, ADAS, and more space, justifying the ₹4/km premium."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can 6-7 seater cab fit 7 adults comfortably?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BYD E-MAX 7: Yes, comfortably fits 7 adults with good legroom in all rows. Kia Carens EV: Fits 6 adults very comfortably (captain seats), or 7 adults adequately (bench config). For journeys over 2 hours with 7 people, BYD is more comfortable due to spacious third row."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for families - 5-seater or 7-seater?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Family of 4-5: 5-seater is perfect and economical. Family of 6: Either works; 7-seater gives extra space. Family of 7+: Must book 7-seater. Multi-generational travel (grandparents, parents, kids): 7-seater recommended for comfort. Weekend trips with lots of luggage: 7-seater (third row folded = huge boot)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does 7-seater cab have enough luggage space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With all 7 seats occupied: 180-235L boot (fits 2-3 medium suitcases). With third row folded (5 passengers): 580-650L (fits 5-6 large suitcases easily). 7-seaters are excellent for airport trips with families - just fold third row and you have more luggage space than any 5-seater."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are 7-seater EVs less efficient than 5-seaters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Slightly, but negligible. 7-seaters are heavier (100-150 kg more) which reduces efficiency by 3-5%. BYD E-MAX 7 actually has better range (530 km) than Kia Carens EV (452 km) due to larger 71.8 kWh battery. For Pune-Mumbai, both arrive with 60%+ battery remaining, so efficiency difference doesn't matter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fold the third row in 7-seater cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Both Kia Carens EV and BYD E-MAX 7 have foldable third rows. When folded, you get massive cargo space (580-650L) while still seating 5 passengers comfortably. Perfect for airport trips, shopping, or weekend getaways. Third row folds in seconds - very convenient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which cab is better for corporate group travel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For 3-4 professionals: 5-seater (more economical, adequate space, professional look). For 5-6 professionals: 7-seater with third row folded (extra comfort, laptop space). For airport drops with luggage: 7-seater (better boot space). For regular office commute: 5-seater (better cost per person)."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={[
+    "5 seater vs 7 seater cab",
+    "which cab to choose",
+    "electric cab size guide",
+    "family cab booking",
+    "Pune Mumbai cab passengers",
+    "luggage space comparison",
+    "EV cab seating capacity",
+    "7 seater vs 5 seater cost"
+  ]}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">Buying Guide</Badge>
+        <Badge variant="secondary">10 min read</Badge>
+        <Badge variant="secondary">Updated Jan 2025</Badge>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        5-Seater vs 7-Seater Electric Cab: Which Should You Choose?
+      </h1>
+
+      <p class="text-xl text-muted-foreground mb-6">
+        Complete guide comparing space, cost, comfort, luggage capacity, and use cases. Make the right choice for your Pune-Mumbai journey based on passengers, budget, and needs.
+      </p>
+
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <span class="flex items-center gap-1">
+          <Calendar className="h-4 w-4" />
+          January 15, 2025
+        </span>
+        <span class="flex items-center gap-1">
+          <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+          Based on 500+ bookings
+        </span>
+      </div>
+    </div>
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <Zap className="h-6 w-6 text-green-600" />
+        Quick Decision Guide
+      </h2>
+      <div class="space-y-4">
+        <div>
+          <p class="font-bold text-lg mb-2">Choose 5-Seater if:</p>
+          <ul class="space-y-1 ml-6">
+            <li>✓ 1-4 passengers traveling</li>
+            <li>✓ Budget-conscious (saves ₹600/trip)</li>
+            <li>✓ Normal luggage (2-3 bags)</li>
+            <li>✓ Regular commutes</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-lg mb-2">Choose 7-Seater if:</p>
+          <ul class="space-y-1 ml-6">
+            <li>✓ 5-7 passengers traveling</li>
+            <li>✓ Heavy luggage or airport trip</li>
+            <li>✓ Want premium features (ADAS, sunroof)</li>
+            <li>✓ Extra comfort desired</li>
+          </ul>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Table of Contents -->
+    <Card className="p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
+      <nav class="space-y-2">
+        <a href="#vehicles" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Our 5-Seater & 7-Seater Options
+        </a>
+        <a href="#comparison" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Side-by-Side Comparison
+        </a>
+        <a href="#passengers" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Passenger Capacity Analysis
+        </a>
+        <a href="#luggage" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Luggage Space Comparison
+        </a>
+        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Cost Analysis
+        </a>
+        <a href="#use-cases" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Best Use Cases
+        </a>
+        <a href="#decision-tree" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          Decision Tree Helper
+        </a>
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+          <ChevronRight className="h-4 w-4" />
+          FAQs
+        </a>
+      </nav>
+    </Card>
+
+    <!-- Vehicles Section -->
+    <section id="vehicles" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Our 5-Seater & 7-Seater Electric Vehicles</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- 5-Seater -->
+        <Card className="p-6 border-2 border-blue-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold text-blue-600">5-Seater Option</h3>
+            <Car className="h-8 w-8 text-blue-600" />
+          </div>
+
+          <div class="mb-4">
+            <p class="text-xl font-bold">Kia Carens EV (6-seater config)</p>
+            <p class="text-sm text-gray-600">Actually seats 6 with captain seats, or 7 with bench</p>
+          </div>
+
+          <div class="space-y-3 mb-4">
+            <div class="flex justify-between text-sm">
+              <span>Seating:</span>
+              <span class="font-semibold">6 passengers (captain) or 7 (bench)</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Price:</span>
+              <span class="font-semibold text-blue-600">₹18/km</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Range:</span>
+              <span class="font-semibold">452 km</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Boot Space:</span>
+              <span class="font-semibold">216 L (7-seat) / 485 L (folded)</span>
+            </div>
+          </div>
+
+          <div class="border-t pt-4">
+            <p class="font-semibold mb-2 text-sm">Key Features:</p>
+            <ul class="text-sm space-y-1">
+              <li>✓ 10.25" touchscreen</li>
+              <li>✓ Ventilated front seats</li>
+              <li>✓ Wireless charging</li>
+              <li>✓ Sunroof</li>
+              <li>✓ 6 airbags</li>
+            </ul>
+          </div>
+        </Card>
+
+        <!-- 7-Seater -->
+        <Card className="p-6 border-2 border-red-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold text-red-600">7-Seater Option</h3>
+            <Car className="h-8 w-8 text-red-600" />
+          </div>
+
+          <div class="mb-4">
+            <p class="text-xl font-bold">BYD E-MAX 7</p>
+            <p class="text-sm text-gray-600">Premium 7-seater with superior space</p>
+          </div>
+
+          <div class="space-y-3 mb-4">
+            <div class="flex justify-between text-sm">
+              <span>Seating:</span>
+              <span class="font-semibold">6-7 passengers</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Price:</span>
+              <span class="font-semibold text-red-600">₹22/km</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Range:</span>
+              <span class="font-semibold">530 km</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span>Boot Space:</span>
+              <span class="font-semibold">235 L (7-seat) / 650 L (folded)</span>
+            </div>
+          </div>
+
+          <div class="border-t pt-4">
+            <p class="font-semibold mb-2 text-sm">Key Features:</p>
+            <ul class="text-sm space-y-1">
+              <li>✓ 12.8" rotating touchscreen</li>
+              <li>✓ Panoramic sunroof</li>
+              <li>✓ ADAS Level 2</li>
+              <li>✓ Ventilated seats (front + rear)</li>
+              <li>✓ 360-degree camera</li>
+            </ul>
+          </div>
+        </Card>
+      </div>
+
+      <Card className="p-4 bg-blue-50 border-blue-200 mt-6">
+        <p class="text-sm">
+          <AlertCircle className="h-5 w-5 text-blue-600 inline mr-2" />
+          <strong>Note:</strong> Both vehicles are technically 6-7 seaters. The "5-seater" vs "7-seater" terminology refers to typical booking scenarios and pricing tiers, not actual seating capacity.
+        </p>
+      </Card>
+    </section>
+
+    <!-- Side-by-Side Comparison -->
+    <section id="comparison" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Complete Side-by-Side Comparison</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border p-3 text-left font-bold">Feature</th>
+              <th class="border p-3 text-center font-bold text-blue-700">5-Seater<br/>(Kia Carens)</th>
+              <th class="border p-3 text-center font-bold text-red-700">7-Seater<br/>(BYD E-MAX 7)</th>
+              <th class="border p-3 text-center font-bold">Winner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Pricing -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Pricing</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Per km rate</td>
+              <td class="border p-3 text-center font-semibold text-blue-600">₹18/km</td>
+              <td class="border p-3 text-center font-semibold text-red-600">₹22/km</td>
+              <td class="border p-3 text-center text-blue-600">Kia (cheaper)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Pune-Mumbai Airport (150 km)</td>
+              <td class="border p-3 text-center">₹2,700</td>
+              <td class="border p-3 text-center">₹3,300</td>
+              <td class="border p-3 text-center">₹600 difference</td>
+            </tr>
+
+            <!-- Seating -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Seating Capacity</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Maximum passengers</td>
+              <td class="border p-3 text-center">6-7</td>
+              <td class="border p-3 text-center">6-7</td>
+              <td class="border p-3 text-center">Tie</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Comfortable for 7 adults (2+ hrs)</td>
+              <td class="border p-3 text-center">⚠️ Adequate</td>
+              <td class="border p-3 text-center">✅ Very comfortable</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Best configuration</td>
+              <td class="border p-3 text-center text-sm">6 passengers (captain seats)</td>
+              <td class="border p-3 text-center text-sm">6-7 passengers</td>
+              <td class="border p-3 text-center">-</td>
+            </tr>
+
+            <!-- Space -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Interior Space</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Wheelbase</td>
+              <td class="border p-3 text-center">2,780 mm</td>
+              <td class="border p-3 text-center">2,830 mm</td>
+              <td class="border p-3 text-center text-red-600">BYD (+50 mm)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Second row legroom</td>
+              <td class="border p-3 text-center">1,000 mm (good)</td>
+              <td class="border p-3 text-center">1,050 mm (excellent)</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Third row comfort</td>
+              <td class="border p-3 text-center">Adequate (short trips)</td>
+              <td class="border p-3 text-center">Comfortable (long trips)</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+
+            <!-- Luggage -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Luggage Capacity</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Boot (all seats up)</td>
+              <td class="border p-3 text-center">216 L</td>
+              <td class="border p-3 text-center">235 L</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Boot (3rd row folded)</td>
+              <td class="border p-3 text-center">485 L</td>
+              <td class="border p-3 text-center">650 L</td>
+              <td class="border p-3 text-center text-red-600">BYD (+165 L)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Suitcases (all seats)</td>
+              <td class="border p-3 text-center">2-3 medium</td>
+              <td class="border p-3 text-center">3-4 medium</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Suitcases (3rd row folded)</td>
+              <td class="border p-3 text-center">4-5 large</td>
+              <td class="border p-3 text-center">6-7 large</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+
+            <!-- Features -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Premium Features</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Panoramic sunroof</td>
+              <td class="border p-3 text-center">Single pane</td>
+              <td class="border p-3 text-center">✅ Panoramic</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">ADAS (safety tech)</td>
+              <td class="border p-3 text-center">❌ No</td>
+              <td class="border p-3 text-center">✅ Level 2</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Ventilated seats</td>
+              <td class="border p-3 text-center">Front only</td>
+              <td class="border p-3 text-center">Front + Second row</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+
+            <!-- Performance -->
+            <tr>
+              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Performance & Range</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Battery capacity</td>
+              <td class="border p-3 text-center">70 kWh</td>
+              <td class="border p-3 text-center">71.8 kWh</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Real-world range</td>
+              <td class="border p-3 text-center">380-400 km</td>
+              <td class="border p-3 text-center">450-480 km</td>
+              <td class="border p-3 text-center text-red-600">BYD (+70 km)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">Power</td>
+              <td class="border p-3 text-center">218 HP</td>
+              <td class="border p-3 text-center">230 HP</td>
+              <td class="border p-3 text-center text-red-600">BYD</td>
+            </tr>
+
+            <!-- Value -->
+            <tr class="bg-gray-50">
+              <td class="border p-3 font-bold">Overall Value</td>
+              <td class="border p-3 text-center font-bold text-blue-600">Best for budget</td>
+              <td class="border p-3 text-center font-bold text-red-600">Best for premium</td>
+              <td class="border p-3 text-center text-sm">Depends on needs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Passenger Capacity Analysis -->
+    <section id="passengers" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Passenger Capacity: Detailed Analysis</h2>
+
+      <div class="space-y-6">
+        <!-- 1-2 Passengers -->
+        <Card className="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+              <Users className="h-6 w-6 text-gray-600" />
+              1-2 Passengers
+            </h3>
+            <Badge className="bg-blue-200 text-blue-700">Choose 5-Seater</Badge>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="font-semibold mb-2 text-sm">With 5-Seater (Kia):</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>✓ Plenty of personal space</li>
+                <li>✓ Can spread luggage on seats</li>
+                <li>✓ More economical (₹600 savings)</li>
+                <li>✓ Perfect for solo/couple travel</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2 text-sm">With 7-Seater (BYD):</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>• Overkill for just 1-2 people</li>
+                <li>• Wastes money on unused space</li>
+                <li>• Only choose if want premium features</li>
+                <li>• Good for VIP/luxury preference</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mt-4">
+            <p class="text-sm"><strong>Recommendation:</strong> 5-seater unless you specifically want premium features (panoramic sunroof, ADAS) or massive boot space.</p>
+          </div>
+        </Card>
+
+        <!-- 3-4 Passengers -->
+        <Card className="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+              <Users className="h-6 w-6 text-gray-600" />
+              3-4 Passengers
+            </h3>
+            <Badge className="bg-blue-200 text-blue-700">5-Seater Usually Best</Badge>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="font-semibold mb-2 text-sm">With 5-Seater (Kia):</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>✓ Everyone sits comfortably in rows 1-2</li>
+                <li>✓ Good legroom and headroom</li>
+                <li>✓ Third row stays empty (extra storage)</li>
+                <li>✓ Best value for money</li>
+                <li>✓ Adequate boot for 3-4 medium bags</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2 text-sm">Upgrade to 7-Seater if:</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>• Heavy luggage (4+ large suitcases)</li>
+                <li>• Airport trip with lots of shopping</li>
+                <li>• Want maximum comfort/space</li>
+                <li>• Corporate VIP travel</li>
+                <li>• Long journey (4+ hours)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-green-50 p-3 rounded-lg mt-4">
+            <p class="text-sm"><strong>Sweet Spot:</strong> 4 passengers is the perfect scenario for either vehicle. Choose based on budget (5-seater) vs comfort/luggage (7-seater).</p>
+          </div>
+        </Card>
+
+        <!-- 5-6 Passengers -->
+        <Card className="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+              <Users className="h-6 w-6 text-gray-600" />
+              5-6 Passengers
+            </h3>
+            <Badge className="bg-yellow-200 text-yellow-700">Either Works - Consider Luggage</Badge>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="font-semibold mb-2 text-sm">With 5-Seater (Kia):</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>✓ 6 passengers fit perfectly (captain seats)</li>
+                <li>✓ Comfortable for 2-3 hour journeys</li>
+                <li>✓ Third row: 2 adults or 3 kids</li>
+                <li>⚠️ Boot space limited with 6 people</li>
+                <li>✓ More economical option</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2 text-sm">With 7-Seater (BYD):</p>
+              <ul class="text-sm space-y-1 ml-4">
+                <li>✓ More spacious third row</li>
+                <li>✓ Better for longer journeys</li>
+                <li>✓ More boot space (235L vs 216L)</li>
+                <li>✓ Premium comfort for all passengers</li>
+                <li>• Costs ₹600 more</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-yellow-50 p-3 rounded-lg mt-4">
+            <p class="text-sm"><strong>Decision Factor:</strong> If traveling with luggage (airport/weekend trip), choose 7-seater for better boot space. For simple commute with minimal bags, 5-seater is fine.</p>
+          </div>
+        </Card>
+
+        <!-- 7 Passengers -->
+        <Card className="p-6 border-2 border-red-500">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+              <Users className="h-6 w-6 text-red-600" />
+              7 Passengers
+            </h3>
+            <Badge className="bg-red-200 text-red-700">7-Seater Recommended</Badge>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-gray-700">
+              While both vehicles technically seat 7, comfort level differs significantly:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2 text-sm">With 5-Seater (Kia):</p>
+                <ul class="text-sm space-y-1 ml-4">
+                  <li>⚠️ Third row is tighter</li>
+                  <li>✓ OK for short trips (under 2 hours)</li>
+                  <li>✓ Kids can sit comfortably</li>
+                  <li>✓ Adults fit but less comfortable</li>
+                  <li>⚠️ Very limited boot space (216L)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 text-sm">With 7-Seater (BYD):</p>
+                <ul class="text-sm space-y-1 ml-4">
+                  <li>✓ Third row is spacious</li>
+                  <li>✓ Comfortable for 3+ hour journeys</li>
+                  <li>✓ Adults sit without cramping</li>
+                  <li>✓ Better AC vents in third row</li>
+                  <li>✓ More boot space (235L)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-red-50 p-3 rounded-lg mt-4 border border-red-300">
+              <p class="text-sm"><strong>Strong Recommendation:</strong> For 7 passengers on Pune-Mumbai (2.5+ hour journey), BYD E-MAX 7 is significantly more comfortable. The ₹600 extra is worth it for passenger comfort, especially if any are elderly or tall.</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Luggage Space Comparison -->
+    <section id="luggage" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Luggage Space: Visual Guide</h2>
+
+      <Card className="p-6 mb-6">
+        <h3 class="text-xl font-bold mb-4">Boot Capacity Breakdown</h3>
+
+        <div class="space-y-6">
+          <!-- All Seats Up -->
+          <div>
+            <h4 class="font-semibold mb-3 flex items-center gap-2">
+              <Luggage className="h-5 w-5 text-gray-600" />
+              Configuration 1: All 7 Seats Occupied
+            </h4>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <Card className="p-4 bg-blue-50">
+                <p class="font-semibold text-blue-700 mb-2">5-Seater (Kia Carens)</p>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Boot Space:</strong> 216 liters</p>
+                  <p><strong>Can Fit:</strong></p>
+                  <ul class="ml-4 mt-1">
+                    <li>• 2 medium suitcases (23-inch)</li>
+                    <li>• 1 small cabin bag</li>
+                    <li>• 2-3 backpacks</li>
+                  </ul>
+                  <p class="text-xs text-gray-600 mt-2">⚠️ Tight for 7 people with standard luggage</p>
+                </div>
+              </Card>
+
+              <Card className="p-4 bg-red-50">
+                <p class="font-semibold text-red-700 mb-2">7-Seater (BYD E-MAX 7)</p>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Boot Space:</strong> 235 liters</p>
+                  <p><strong>Can Fit:</strong></p>
+                  <ul class="ml-4 mt-1">
+                    <li>• 3 medium suitcases (23-inch)</li>
+                    <li>• 1 cabin bag</li>
+                    <li>• 3-4 backpacks</li>
+                  </ul>
+                  <p class="text-xs text-green-700 mt-2">✓ More manageable for 7 people</p>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          <!-- Third Row Folded -->
+          <div>
+            <h4 class="font-semibold mb-3 flex items-center gap-2">
+              <Luggage className="h-5 w-5 text-gray-600" />
+              Configuration 2: Third Row Folded (5 Passengers)
+            </h4>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <Card className="p-4 bg-blue-50">
+                <p class="font-semibold text-blue-700 mb-2">5-Seater (Kia Carens)</p>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Boot Space:</strong> 485 liters</p>
+                  <p><strong>Can Fit:</strong></p>
+                  <ul class="ml-4 mt-1">
+                    <li>• 4-5 large suitcases (28-inch)</li>
+                    <li>• Multiple cabin bags</li>
+                    <li>• Shopping bags</li>
+                    <li>• Golf clubs or similar</li>
+                  </ul>
+                  <p class="text-xs text-green-700 mt-2">✓ Excellent space for 5 passengers</p>
+                </div>
+              </Card>
+
+              <Card className="p-4 bg-red-50">
+                <p class="font-semibold text-red-700 mb-2">7-Seater (BYD E-MAX 7)</p>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Boot Space:</strong> 650 liters</p>
+                  <p><strong>Can Fit:</strong></p>
+                  <ul class="ml-4 mt-1">
+                    <li>• 6-7 large suitcases (28-inch)</li>
+                    <li>• Multiple cabin bags</li>
+                    <li>• Heavy shopping</li>
+                    <li>• Sports equipment</li>
+                    <li>• Baby stroller + more</li>
+                  </ul>
+                  <p class="text-xs text-green-700 mt-2">✓✓ Exceptional cargo capacity</p>
+                </div>
+              </Card>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg mt-4">
+              <p class="text-sm">
+                <strong>💡 Pro Tip:</strong> If traveling with 4-5 passengers and heavy luggage (airport trips, shopping, weekend getaways), book 7-seater and fold third row. You'll have 650L of boot space - more than most SUVs!
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      <!-- Real Scenarios -->
+      <Card className="p-6">
+        <h3 class="text-xl font-bold mb-4">Real Luggage Scenarios</h3>
+
+        <div class="space-y-4">
+          <div class="border-b pb-4">
+            <p class="font-semibold mb-2">✈️ Family Airport Trip (5 people, 5 large suitcases + 3 cabin bags)</p>
+            <div class="grid md:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p><strong>5-Seater (Third row folded):</strong></p>
+                <p class="text-gray-700">✓ Fits comfortably with space to spare (485L)</p>
+              </div>
+              <div>
+                <p><strong>7-Seater (Third row folded):</strong></p>
+                <p class="text-gray-700">✓✓ Fits easily with lots of extra room (650L)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-b pb-4">
+            <p class="font-semibold mb-2">👨‍👩‍👧‍👦 Multi-Gen Family (7 people, 7 suitcases + bags)</p>
+            <div class="grid md:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p><strong>5-Seater (All seats):</strong></p>
+                <p class="text-red-700">❌ Won't fit - only 216L boot. Need roof carrier or second vehicle</p>
+              </div>
+              <div>
+                <p><strong>7-Seater (All seats):</strong></p>
+                <p class="text-yellow-700">⚠️ Tight but manageable (235L). Some bags may go on laps</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-600 mt-2"><strong>Solution:</strong> With 7 passengers + heavy luggage, consider 2 x 5-seater cabs instead of 1 x 7-seater. Total cost similar but more comfort.</p>
+          </div>
+
+          <div class="border-b pb-4">
+            <p class="font-semibold mb-2">👔 Corporate Group (4 professionals, laptop bags + 2 suitcases)</p>
+            <div class="grid md:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p><strong>5-Seater:</strong></p>
+                <p class="text-gray-700">✓ Perfect fit, professional look, economical</p>
+              </div>
+              <div>
+                <p><strong>7-Seater:</strong></p>
+                <p class="text-gray-700">✓ More premium, extra space for work material</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold mb-2">🛍️ Shopping Trip Mumbai (2 people, heavy shopping bags)</p>
+            <div class="grid md:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p><strong>5-Seater (Third row folded):</strong></p>
+                <p class="text-gray-700">✓ 485L is plenty for shopping bags, boxes, etc.</p>
+              </div>
+              <div>
+                <p><strong>7-Seater (Third row folded):</strong></p>
+                <p class="text-gray-700">✓✓ 650L = mini cargo van! Load everything</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </section>
+
+    <!-- Cost Analysis -->
+    <section id="cost" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Cost Analysis: Is ₹600 Extra Worth It?</h2>
+
+      <Card className="p-6 mb-6">
+        <h3 class="text-xl font-bold mb-4">Price Breakdown</h3>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border p-3 text-left">Trip Type</th>
+                <th class="border p-3 text-center">5-Seater (Kia)</th>
+                <th class="border p-3 text-center">7-Seater (BYD)</th>
+                <th class="border p-3 text-center">Difference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border p-3">Pune to Mumbai Airport (150 km)</td>
+                <td class="border p-3 text-center font-semibold text-blue-600">₹2,700</td>
+                <td class="border p-3 text-center font-semibold text-red-600">₹3,300</td>
+                <td class="border p-3 text-center">₹600</td>
+              </tr>
+              <tr>
+                <td class="border p-3">Hinjewadi to Airport (20 km)</td>
+                <td class="border p-3 text-center">₹360</td>
+                <td class="border p-3 text-center">₹440</td>
+                <td class="border p-3 text-center">₹80</td>
+              </tr>
+              <tr>
+                <td class="border p-3">Round Trip Pune-Mumbai (300 km)</td>
+                <td class="border p-3 text-center">₹5,400</td>
+                <td class="border p-3 text-center">₹6,600</td>
+                <td class="border p-3 text-center">₹1,200</td>
+              </tr>
+              <tr>
+                <td class="border p-3">Full Day (8 hrs, 80 km)</td>
+                <td class="border p-3 text-center">₹1,440</td>
+                <td class="border p-3 text-center">₹1,760</td>
+                <td class="border p-3 text-center">₹320</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border p-3 font-bold">Monthly (10 trips to airport)</td>
+                <td class="border p-3 text-center font-bold">₹27,000</td>
+                <td class="border p-3 text-center font-bold">₹33,000</td>
+                <td class="border p-3 text-center font-bold">₹6,000/month</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Card>
+
+      <Card className="p-6 mb-6 bg-yellow-50 border-2 border-yellow-400">
+        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+          <Calculator className="h-6 w-6 text-yellow-600" />
+          Value Analysis: What Does ₹600 Extra Buy You?
+        </h3>
+
+        <div class="space-y-3">
+          <p class="font-semibold">For ₹600 more per Pune-Mumbai trip, you get:</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>78 km extra range</strong> (530 vs 452 km)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>165L more boot space</strong> (with 3rd row folded)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>ADAS Level 2</strong> safety features</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Panoramic sunroof</strong></span>
+              </li>
+            </ul>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>12 HP more power</strong> (230 vs 218 HP)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>More spacious</strong> third row</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>360-degree camera</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Faster charging</strong> (30 vs 40 min)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-4 p-3 bg-white rounded-lg">
+          <p class="text-sm"><strong>Is it worth ₹600?</strong> Depends on your priorities:</p>
+          <ul class="text-sm mt-2 space-y-1 ml-4">
+            <li>• <strong>Budget travel (1-4 pax):</strong> Not worth it, save ₹600</li>
+            <li>• <strong>5-7 passengers:</strong> Yes, comfort difference is noticeable</li>
+            <li>• <strong>Heavy luggage:</strong> Yes, 165L extra boot space is valuable</li>
+            <li>• <strong>Premium features wanted:</strong> Yes, ADAS + sunroof alone justify it</li>
+            <li>• <strong>Corporate/VIP travel:</strong> Yes, image and comfort matter</li>
+          </ul>
+        </div>
+      </Card>
+
+      <Card className="p-6">
+        <h3 class="text-xl font-bold mb-4">Cost Per Person Analysis</h3>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border p-3 text-left">Passengers</th>
+                <th class="border p-3 text-center">5-Seater Cost/Person</th>
+                <th class="border p-3 text-center">7-Seater Cost/Person</th>
+                <th class="border p-3 text-center">Difference/Person</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border p-3">1 person</td>
+                <td class="border p-3 text-center">₹2,700</td>
+                <td class="border p-3 text-center">₹3,300</td>
+                <td class="border p-3 text-center text-red-600">₹600 more</td>
+              </tr>
+              <tr>
+                <td class="border p-3">2 people</td>
+                <td class="border p-3 text-center">₹1,350/person</td>
+                <td class="border p-3 text-center">₹1,650/person</td>
+                <td class="border p-3 text-center text-red-600">₹300 more</td>
+              </tr>
+              <tr>
+                <td class="border p-3">3 people</td>
+                <td class="border p-3 text-center">₹900/person</td>
+                <td class="border p-3 text-center">₹1,100/person</td>
+                <td class="border p-3 text-center">₹200 more</td>
+              </tr>
+              <tr>
+                <td class="border p-3">4 people</td>
+                <td class="border p-3 text-center">₹675/person</td>
+                <td class="border p-3 text-center">₹825/person</td>
+                <td class="border p-3 text-center">₹150 more</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="border p-3">5 people</td>
+                <td class="border p-3 text-center">₹540/person</td>
+                <td class="border p-3 text-center">₹660/person</td>
+                <td class="border p-3 text-center text-green-700">₹120 more (worth it!)</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="border p-3">6 people</td>
+                <td class="border p-3 text-center">₹450/person</td>
+                <td class="border p-3 text-center">₹550/person</td>
+                <td class="border p-3 text-center text-green-700">₹100 more (worth it!)</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="border p-3">7 people</td>
+                <td class="border p-3 text-center">₹386/person</td>
+                <td class="border p-3 text-center">₹471/person</td>
+                <td class="border p-3 text-center text-green-700">₹85 more (definitely worth it!)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-blue-50 p-3 rounded-lg mt-4">
+          <p class="text-sm"><strong>Key Insight:</strong> When split among 5+ passengers, the per-person cost difference becomes minimal (₹85-120). At this point, the extra comfort and space in 7-seater is absolutely worth the small per-person premium.</p>
+        </div>
+      </Card>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Best Use Cases for Each Vehicle</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- 5-Seater Use Cases -->
+        <Card className="p-6 border-2 border-blue-500">
+          <h3 class="text-2xl font-bold mb-4 text-blue-600">Perfect for 5-Seater</h3>
+
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Solo/Couple Travel
+              </p>
+              <p class="text-sm text-gray-700">Individual business trips, couple getaways, solo airport runs. No need to pay premium for unused space.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Small Families (3-4 People)
+              </p>
+              <p class="text-sm text-gray-700">Parents + 1-2 kids. Everyone sits comfortably in first two rows. Adequate boot for family luggage.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Budget-Conscious Groups
+              </p>
+              <p class="text-sm text-gray-700">Students, friends splitting costs. Save ₹600 per trip without compromising comfort or safety.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Regular Commuters
+              </p>
+              <p class="text-sm text-gray-700">Weekly/monthly travelers. Over 10 trips, save ₹6,000. Reliability and value matter more than luxury.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Corporate Standard Travel
+              </p>
+              <p class="text-sm text-gray-700">Mid-level professionals, vendor meets, team outings. Professional look, good comfort, economical.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Airport Drops (Light Luggage)
+              </p>
+              <p class="text-sm text-gray-700">1-4 passengers with 2-3 suitcases. Boot space is adequate. No need to upgrade.</p>
+            </div>
+          </div>
+        </Card>
+
+        <!-- 7-Seater Use Cases -->
+        <Card className="p-6 border-2 border-red-500">
+          <h3 class="text-2xl font-bold mb-4 text-red-600">Perfect for 7-Seater</h3>
+
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Large Families (5-7 People)
+              </p>
+              <p class="text-sm text-gray-700">Multi-generational travel, family reunions. Everyone travels together comfortably without cramming.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Heavy Luggage Situations
+              </p>
+              <p class="text-sm text-gray-700">Airport trips with 5+ large suitcases, weekend trips with lots of bags, shopping expeditions. Fold third row for 650L boot.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Premium/VIP Travel
+              </p>
+              <p class="text-sm text-gray-700">C-suite executives, luxury preference, special occasions. Panoramic sunroof, ADAS, superior comfort justify premium.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Long Journeys (4+ Hours)
+              </p>
+              <p class="text-sm text-gray-700">Extended outstation trips. Extra space, comfort features (ventilated rear seats, better AC) make long drives pleasant.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Special Events
+              </p>
+              <p class="text-sm text-gray-700">Weddings, parties, celebrations. Arrive in style, accommodate family/guests, make impression.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                Elderly Passengers
+              </p>
+              <p class="text-sm text-gray-700">Senior citizens appreciate extra space, easier entry/exit, softer ride quality, better comfort for 2-3 hour journeys.</p>
+            </div>
+
+            <div>
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <Check className="h-5 w-5 text-green-600" />
+                4-5 Pax Wanting Max Comfort
+              </p>
+              <p class="text-sm text-gray-700">Even with fewer passengers, ₹120/person extra buys massive space upgrade, luxury features, premium experience.</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Decision Tree -->
+    <section id="decision-tree" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Interactive Decision Helper</h2>
+
+      <Card className="p-6 bg-gradient-to-r from-blue-50 to-red-50">
+        <h3 class="text-xl font-bold mb-6 text-center">Follow This Simple Decision Tree</h3>
+
+        <div class="space-y-4">
+          <!-- Question 1 -->
+          <Card className="p-4 bg-white">
+            <p class="font-bold mb-3">1. How many passengers are traveling?</p>
+            <div class="space-y-2 ml-4 text-sm">
+              <p>• <strong>1-4 passengers:</strong> Go to Question 2</p>
+              <p>• <strong>5-6 passengers:</strong> Go to Question 3</p>
+              <p>• <strong>7 passengers:</strong> → <strong class="text-red-600">Choose 7-Seater (BYD E-MAX 7)</strong></p>
+            </div>
+          </Card>
+
+          <!-- Question 2 -->
+          <Card className="p-4 bg-white">
+            <p class="font-bold mb-3">2. (For 1-4 passengers) How much luggage?</p>
+            <div class="space-y-2 ml-4 text-sm">
+              <p>• <strong>Light (1-3 bags):</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
+              <p>• <strong>Heavy (4+ large bags):</strong> Go to Question 4</p>
+            </div>
+          </Card>
+
+          <!-- Question 3 -->
+          <Card className="p-4 bg-white">
+            <p class="font-bold mb-3">3. (For 5-6 passengers) Budget priority?</p>
+            <div class="space-y-2 ml-4 text-sm">
+              <p>• <strong>Save money (₹600):</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
+              <p>• <strong>Extra comfort worth it:</strong> → <strong class="text-red-600">Choose 7-Seater (BYD E-MAX 7)</strong></p>
+            </div>
+          </Card>
+
+          <!-- Question 4 -->
+          <Card className="p-4 bg-white">
+            <p class="font-bold mb-3">4. Want premium features (ADAS, panoramic sunroof)?</p>
+            <div class="space-y-2 ml-4 text-sm">
+              <p>• <strong>No, basic is fine:</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
+              <p>• <strong>Yes, premium preferred:</strong> → <strong class="text-red-600">Choose 7-Seater (BYD E-MAX 7)</strong></p>
+            </div>
+          </Card>
+
+          <!-- Question 5 -->
+          <Card className="p-4 bg-white">
+            <p class="font-bold mb-3">5. Still confused?</p>
+            <div class="space-y-2 ml-4 text-sm">
+              <p>• <strong>Default safe choice:</strong> → <strong class="text-blue-600">5-Seater (works for 80% of cases)</strong></p>
+              <p>• <strong>When in doubt with 5+ pax:</strong> → <strong class="text-red-600">7-Seater (better comfort)</strong></p>
+              <p>• <strong>Call us:</strong> <a href="tel:+919075020422" class="text-green-600 font-semibold">+91 90750 20422</a> - we'll help!</p>
+            </div>
+          </Card>
+        </div>
+      </Card>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Should I book 5-seater or 7-seater cab for 4 passengers?</h3>
+          <p class="text-gray-700">For 4 passengers with normal luggage, a 5-seater is sufficient and costs less (₹18/km vs ₹22/km). However, if you have heavy luggage (3+ large suitcases), airport-bound, or want extra comfort, upgrade to 7-seater. The third row stays folded, giving massive boot space.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">What is the cost difference between 5-seater and 7-seater EV cabs?</h3>
+          <p class="text-gray-700">5-seater (Kia Carens EV): ₹18/km. 7-seater (BYD E-MAX 7): ₹22/km. For Pune-Mumbai Airport (150 km), difference is ₹600 per trip. 7-seater includes premium features like panoramic sunroof, ADAS, and more space, justifying the ₹4/km premium.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Can 6-7 seater cab fit 7 adults comfortably?</h3>
+          <p class="text-gray-700">BYD E-MAX 7: Yes, comfortably fits 7 adults with good legroom in all rows. Kia Carens EV: Fits 6 adults very comfortably (captain seats), or 7 adults adequately (bench config). For journeys over 2 hours with 7 people, BYD is more comfortable due to spacious third row.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is better for families - 5-seater or 7-seater?</h3>
+          <p class="text-gray-700">Family of 4-5: 5-seater is perfect and economical. Family of 6: Either works; 7-seater gives extra space. Family of 7+: Must book 7-seater. Multi-generational travel (grandparents, parents, kids): 7-seater recommended for comfort. Weekend trips with lots of luggage: 7-seater (third row folded = huge boot).</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Does 7-seater cab have enough luggage space?</h3>
+          <p class="text-gray-700">With all 7 seats occupied: 180-235L boot (fits 2-3 medium suitcases). With third row folded (5 passengers): 580-650L (fits 5-6 large suitcases easily). 7-seaters are excellent for airport trips with families - just fold third row and you have more luggage space than any 5-seater.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Are 7-seater EVs less efficient than 5-seaters?</h3>
+          <p class="text-gray-700">Slightly, but negligible. 7-seaters are heavier (100-150 kg more) which reduces efficiency by 3-5%. BYD E-MAX 7 actually has better range (530 km) than Kia Carens EV (452 km) due to larger 71.8 kWh battery. For Pune-Mumbai, both arrive with 60%+ battery remaining, so efficiency difference doesn't matter.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Can I fold the third row in 7-seater cabs?</h3>
+          <p class="text-gray-700">Yes! Both Kia Carens EV and BYD E-MAX 7 have foldable third rows. When folded, you get massive cargo space (580-650L) while still seating 5 passengers comfortably. Perfect for airport trips, shopping, or weekend getaways. Third row folds in seconds - very convenient.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which cab is better for corporate group travel?</h3>
+          <p class="text-gray-700">For 3-4 professionals: 5-seater (more economical, adequate space, professional look). For 5-6 professionals: 7-seater with third row folded (extra comfort, laptop space). For airport drops with luggage: 7-seater (better boot space). For regular office commute: 5-seater (better cost per person).</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mb-12">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Book Your Perfect Electric Cab?</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Tell us your passenger count and luggage needs - we'll recommend the perfect vehicle!
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a href="https://wa.me/919075020422?text=Hi%2C%20I%20need%20help%20choosing%20between%205-seater%20and%207-seater" target="_blank" rel="noopener">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
+                <MessageCircle className="h-5 w-5 mr-2" />
+                Get Recommendation
+              </Button>
+            </a>
+            <a href="tel:+919075020422">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+                <Phone className="h-5 w-5 mr-2" />
+                Call: +91 90750 20422
+              </Button>
+            </a>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>Expert Guidance</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>Both Options Available</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>No Hidden Costs</span>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </section>
+
+    <!-- Review Widget -->
+    <section class="mb-12">
+      <ReviewWidget variant="compact" />
+    </section>
+  </article>
+</MainLayout>

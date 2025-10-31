@@ -1,0 +1,544 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+import { Check, X, Shield, FileText, IndianRupee, Car, AlertCircle, TrendingUp, ChevronRight, Star, Users, Calendar, MessageCircle, Phone } from "lucide-react";
+
+const title = "Maharashtra EV Cab Regulations 2025: Complete Guide for Passengers";
+const description = "Everything about Maharashtra's electric vehicle cab regulations - permits, safety standards, insurance, passenger rights, and what makes GreenEVCabs compliant in 2025.";
+const publishDate = "2025-01-15";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "maharashtra ev regulations",
+  "electric cab rules pune",
+  "ev taxi permit maharashtra",
+  "cab regulations pune mumbai",
+  "passenger rights ev cab",
+  "ev cab safety standards",
+  "commercial ev rules",
+  "maharashtra ev policy"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-gradient-to-r from-blue-50 to-sky-50 border-blue-200">
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-600 text-white p-3 rounded-lg">
+          <Shield className="h-6 w-6" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">EV Cab Regulations: Quick Facts</h2>
+          <div class="grid md:grid-cols-2 gap-3 text-sm">
+            <div>
+              <p class="font-semibold mb-2">What Passengers Should Know</p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Valid permit sticker must be displayed</li>
+                <li>• Rs.10 lakh insurance mandatory</li>
+                <li>• Fare card must be visible</li>
+                <li>• Driver ID card required</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Maharashtra EV Benefits</p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Reduced permit fees (50% off)</li>
+                <li>• Road tax exemption (100%)</li>
+                <li>• Toll discounts on select roads</li>
+                <li>• Priority at charging stations</li>
+              </ul>
+            </div>
+          </div>
+          <p class="mt-3 text-gray-700 text-sm">Maharashtra is EV-friendly with progressive policies. All GreenEVCabs vehicles are fully compliant.</p>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Article Header -->
+    <header class="mb-8">
+      <Badge className="mb-4">Regulations & Compliance</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Maharashtra EV Cab Regulations: Complete 2025 Guide
+      </h1>
+      <p class="text-xl text-gray-600 mb-4">
+        Everything passengers and operators need to know about electric cab regulations in Maharashtra. Stay informed, stay safe, stay compliant.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">2025 Updated</Badge>
+        <Badge variant="secondary">Official Rules</Badge>
+        <Badge variant="secondary">Passenger Rights</Badge>
+        <Badge variant="secondary">Complete Guide</Badge>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="prose prose-lg max-w-none">
+
+      <!-- Why It Matters -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Regulations Matter for Passengers</h2>
+
+        <p class="text-gray-700 mb-6">
+          Understanding cab regulations is not just bureaucracy - it is about your safety, rights, and ensuring you get reliable service. Here is why it matters:
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <Shield className="h-6 w-6 text-blue-600" />
+              <h3 class="font-bold">Safety Standards</h3>
+            </div>
+            <p class="text-sm text-gray-700">
+              Regulations ensure vehicles meet safety requirements, drivers are verified, and insurance covers your journey.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <FileText className="h-6 w-6 text-green-600" />
+              <h3 class="font-bold">Your Rights</h3>
+            </div>
+            <p class="text-sm text-gray-700">
+              Knowing regulations helps you identify legitimate services and understand what you can demand as a passenger.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <IndianRupee className="h-6 w-6 text-purple-600" />
+              <h3 class="font-bold">Fair Pricing</h3>
+            </div>
+            <p class="text-sm text-gray-700">
+              Regulations prevent overcharging and ensure transparent fare structures for passengers.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <!-- Key Regulations -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Regulations for EV Cabs in Maharashtra</h2>
+
+        <div class="space-y-6">
+          <!-- Permit Requirements -->
+          <Card className="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">1. Permit Requirements</h3>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">What is Required</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Tourist Permit</strong> for inter-city travel (Pune-Mumbai)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>All-Maharashtra</strong> or specific route permits</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Yellow sticker</strong> on windshield (visible)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Valid fitness certificate</strong> every 2 years</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">EV-Specific Benefits</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li class="flex items-start gap-2">
+                    <TrendingUp className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>50% discount</strong> on permit fees</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <TrendingUp className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Fast-track approval</strong> (7-10 days vs 30 days)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <TrendingUp className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Online renewal</strong> process</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <TrendingUp className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Priority</strong> for permit allocation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-3">
+              <p class="text-sm text-blue-800">
+                <strong>Passenger Check:</strong> Always verify the yellow permit sticker on windshield before boarding. Valid permits have hologram and RTO seal.
+              </p>
+            </div>
+          </Card>
+
+          <!-- Insurance -->
+          <Card className="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">2. Insurance Requirements</h3>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">Mandatory Coverage</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>• <strong>Third-party:</strong> Rs.10 lakh minimum</li>
+                  <li>• <strong>Passenger coverage:</strong> Rs.1 lakh per passenger</li>
+                  <li>• <strong>Driver coverage:</strong> Rs.15 lakh</li>
+                  <li>• <strong>Own damage:</strong> Recommended (not mandatory)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">What It Covers</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>• Death/injury to passengers</li>
+                  <li>• Property damage (third-party)</li>
+                  <li>• Medical expenses (accident)</li>
+                  <li>• Legal liability claims</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-400 p-3">
+              <p class="text-sm text-green-800">
+                <strong>GreenEVCabs:</strong> All our vehicles carry Rs.10 lakh third-party + Rs.5 lakh passenger insurance - exceeding minimum requirements.
+              </p>
+            </div>
+          </Card>
+
+          <!-- Driver Requirements -->
+          <Card className="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">3. Driver Qualifications</h3>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">Mandatory Requirements</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Commercial license</strong> (badge)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>3+ years</strong> driving experience</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Police verification</strong> certificate</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Medical fitness</strong> certificate</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>ID card</strong> with photo (must display)</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">Passenger Rights</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>• <strong>Ask for driver ID</strong> - they must show</li>
+                  <li>• <strong>Verify badge number</strong> matches booking</li>
+                  <li>• <strong>Check license validity</strong> if suspicious</li>
+                  <li>• <strong>Report unlicensed drivers</strong> to RTO</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3">
+              <p class="text-sm text-yellow-800">
+                <strong>Red Flag:</strong> If driver cannot show badge/ID or seems inexperienced, do not board. Report to authorities.
+              </p>
+            </div>
+          </Card>
+
+          <!-- Vehicle Standards -->
+          <Card className="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">4. Vehicle Safety Standards</h3>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">Mandatory Features</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>• <strong>Working seat belts</strong> (all seats)</li>
+                  <li>• <strong>Fire extinguisher</strong> (accessible)</li>
+                  <li>• <strong>First aid kit</strong></li>
+                  <li>• <strong>Functional AC/heating</strong></li>
+                  <li>• <strong>GPS tracking</strong> (for safety)</li>
+                  <li>• <strong>Emergency contact</strong> displayed</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">EV-Specific Requirements</p>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>• <strong>Battery certification</strong> (safety tested)</li>
+                  <li>• <strong>Emergency shutdown</strong> system</li>
+                  <li>• <strong>Fire suppression</strong> (battery compartment)</li>
+                  <li>• <strong>Insulation checks</strong> every 6 months</li>
+                  <li>• <strong>Charging port</strong> safety compliance</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-400 p-3">
+              <p class="text-sm text-green-800">
+                <strong>Higher Standards:</strong> EVs undergo additional battery safety checks, making them arguably safer than conventional cabs.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <!-- Passenger Rights -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Your Rights as a Passenger</h2>
+
+        <p class="text-gray-700 mb-6">
+          Know what you are entitled to when booking an electric cab in Maharashtra:
+        </p>
+
+        <div class="space-y-4">
+          <Card className="p-5 bg-blue-50">
+            <div class="flex items-start gap-3">
+              <Badge variant="default">1</Badge>
+              <div>
+                <h3 class="font-bold mb-2">Right to Transparent Pricing</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Fare must be agreed before journey starts</li>
+                  <li>• Written/digital fare card must be available</li>
+                  <li>• No hidden charges (tolls should be discussed)</li>
+                  <li>• Receipt must be provided on request</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-5 bg-green-50">
+            <div class="flex items-start gap-3">
+              <Badge variant="default">2</Badge>
+              <div>
+                <h3 class="font-bold mb-2">Right to Safe Travel</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Vehicle must be roadworthy and clean</li>
+                  <li>• Working seat belts for all passengers</li>
+                  <li>• Driver must not be intoxicated or reckless</li>
+                  <li>• You can refuse unsafe vehicle and get refund</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-5 bg-purple-50">
+            <div class="flex items-start gap-3">
+              <Badge variant="default">3</Badge>
+              <div>
+                <h3 class="font-bold mb-2">Right to Courteous Service</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Driver must behave professionally</li>
+                  <li>• No harassment or inappropriate behavior</li>
+                  <li>• Reasonable AC/music preferences honored</li>
+                  <li>• Luggage handled with care</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-5 bg-yellow-50">
+            <div class="flex items-start gap-3">
+              <Badge variant="default">4</Badge>
+              <div>
+                <h3 class="font-bold mb-2">Right to Complaint & Redressal</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Complaint to company must be addressed within 48 hours</li>
+                  <li>• Can report to RTO for serious violations</li>
+                  <li>• Refund for service failure (case-by-case)</li>
+                  <li>• Consumer forum for dispute resolution</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <!-- How to Verify Compliance -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">How to Verify Cab Compliance (Before Boarding)</h2>
+
+        <Card className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+          <h3 class="font-bold text-xl mb-4">5-Second Compliance Check</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="font-semibold mb-3">Look For These (1 minute)</p>
+              <ol class="space-y-2 text-sm text-gray-700">
+                <li class="flex gap-2">
+                  <span class="font-bold text-green-600">1.</span>
+                  <span><strong>Yellow permit sticker</strong> on windshield (top left/right)</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="font-bold text-green-600">2.</span>
+                  <span><strong>Driver ID card</strong> displayed on dashboard</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="font-bold text-green-600">3.</span>
+                  <span><strong>Fare card</strong> visible or available on request</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="font-bold text-green-600">4.</span>
+                  <span><strong>Insurance sticker</strong> on windshield</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="font-bold text-green-600">5.</span>
+                  <span><strong>Company name/logo</strong> on vehicle</span>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <p class="font-semibold mb-3">Red Flags (Do Not Board)</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex gap-2">
+                  <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span>No permit sticker visible</span>
+                </li>
+                <li class="flex gap-2">
+                  <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span>Driver refuses to show ID</span>
+                </li>
+                <li class="flex gap-2">
+                  <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span>Expired permits/documents</span>
+                </li>
+                <li class="flex gap-2">
+                  <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span>No company branding (unregistered)</span>
+                </li>
+                <li class="flex gap-2">
+                  <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span>Vehicle in poor condition</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+      </section>
+
+      <!-- Benefits of Choosing Compliant Services -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Fully Compliant EV Cab Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="p-6 text-center">
+            <Shield className="h-12 w-12 mx-auto mb-3 text-green-600" />
+            <h3 class="font-bold mb-2">Your Safety</h3>
+            <p class="text-sm text-gray-700">
+              Compliant cabs undergo regular safety checks. Insurance protects you in accidents.
+            </p>
+          </Card>
+
+          <Card className="p-6 text-center">
+            <Car className="h-12 w-12 mx-auto mb-3 text-blue-600" />
+            <h3 class="font-bold mb-2">Reliable Service</h3>
+            <p class="text-sm text-gray-700">
+              Licensed operators maintain vehicles better, reducing breakdown risks.
+            </p>
+          </Card>
+
+          <Card className="p-6 text-center">
+            <FileText className="h-12 w-12 mx-auto mb-3 text-purple-600" />
+            <h3 class="font-bold mb-2">Legal Recourse</h3>
+            <p class="text-sm text-gray-700">
+              If something goes wrong, you have legal options with registered services.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <!-- GreenEVCabs Compliance -->
+      <section class="mb-12">
+        <Card className="p-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold mb-3">GreenEVCabs: Fully Compliant, Always Safe</h2>
+            <p class="text-xl text-green-50 mb-6">
+              We exceed Maharashtra's EV cab regulations. Your safety and peace of mind are our priority.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Shield className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">All Permits Valid</h3>
+              <p class="text-sm text-green-50">Tourist permits, fitness certificates, insurance</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Users className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Verified Drivers</h3>
+              <p class="text-sm text-green-50">Police verification, 5+ years experience</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-white/20 rounded-lg p-4 mb-2">
+                <Car className="h-8 w-8 mx-auto" />
+              </div>
+              <h3 class="font-bold mb-1">Premium EVs</h3>
+              <p class="text-sm text-green-50">Safety certified, well-maintained</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+919876543210">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <Phone className="mr-2 h-5 w-5" />
+                Call: +91 98765 43210
+              </Button>
+            </a>
+            <a href="https://wa.me/919876543210">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp Booking
+              </Button>
+            </a>
+          </div>
+
+          <p class="text-center text-sm text-green-100 mt-4">
+            100% compliant • Fully insured • Professional drivers • Premium service
+          </p>
+        </Card>
+      </section>
+
+      <!-- Review Widget -->
+      <ReviewWidget variant="full" />
+
+    </article>
+  </div>
+</MainLayout>

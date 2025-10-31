@@ -1,0 +1,1564 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+import { Check, X, Shield, Phone, MessageCircle, MapPin, Users, AlertCircle, ChevronRight, Star, Camera, FileText, Lock, Navigation, Zap, Car, ThumbsUp, Bell, Eye, Heart, UserCheck, Activity } from "lucide-react";
+
+const title = "Safety Guide for Electric Cab Travel: Pune to Mumbai Airport 2025";
+const description = "Complete safety guide for electric cab travel from Pune to Mumbai Airport. Learn about driver verification, vehicle safety features, tracking, emergency protocols, and passenger rights in 2025.";
+const keywords = [
+  "electric cab safety pune mumbai",
+  "safe cab travel pune",
+  "ev cab safety features",
+  "verified drivers pune cabs",
+  "cab safety guide mumbai airport",
+  "electric vehicle safety",
+  "passenger safety pune mumbai",
+  "women safety electric cab",
+  "night travel safety pune",
+  "cab tracking pune mumbai",
+  "emergency protocol cab travel",
+  "safe airport transfer pune",
+  "trusted cab service pune"
+];
+
+const publishDate = "2025-01-30";
+const author = "GreenEVCabs Team";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.hello-22d.workers.dev/logo.png"
+    }
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are electric cabs safe for long-distance travel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, electric cabs are extremely safe for long-distance travel. Modern EVs like Kia Carens and BYD eMAX 7 have advanced safety features including 6+ airbags, ABS, ESC, and crash-tested 5-star ratings. Electric vehicles have lower center of gravity making them more stable, and battery management systems prevent fire risks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you verify drivers for safety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All drivers undergo comprehensive verification: police background check, driving license verification (minimum 5 years), vehicle registration check, personal references, training certification, and medical fitness certificate. Drivers are re-verified every 6 months and ratings are monitored continuously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe for women to travel alone in electric cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely yes. We have special women safety features: live GPS tracking shared with family, 24/7 support helpline, verified drivers with clean records, trip sharing via WhatsApp, SOS button in tracking app, and option to request women-preferred drivers. Over 40% of our solo travelers are women."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens in case of emergency during the trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We have comprehensive emergency protocols: 24/7 emergency helpline, live GPS monitoring, nearest hospital database, roadside assistance tie-ups, insurance coverage for passengers, and direct police coordination. All vehicles have first-aid kits, emergency tools, and backup communication devices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share my trip details with family?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you'll receive a live tracking link via WhatsApp before your trip starts. Share this link with family members who can monitor your journey in real-time, see driver details, and get arrival ETAs. The link remains active throughout the trip and for 1 hour after completion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are electric vehicles safe in terms of battery fire risk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern electric vehicles are statistically safer than petrol/diesel vehicles regarding fire risk. EV batteries have multiple safety layers: thermal management systems, fire-resistant casing, automatic cutoff systems, and crash-protection design. Our fleet uses only certified OEM vehicles with proven safety records and zero fire incidents in 2,000+ trips."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Hero Section -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">Safety Guide</Badge>
+        <Badge variant="secondary">Electric Cabs</Badge>
+        <Badge variant="secondary">2025 Updated</Badge>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+        {title}
+      </h1>
+
+      <p class="text-xl text-muted-foreground mb-6">
+        Your safety is our top priority. Complete guide to safe electric cab travel from Pune to Mumbai
+        Airport covering driver verification, vehicle safety, tracking, emergency protocols, and passenger rights.
+      </p>
+
+      <div class="flex flex-wrap gap-4 text-sm text-muted-foreground">
+        <span class="flex items-center gap-1">
+          <Shield className="h-4 w-4" />
+          Safety First
+        </span>
+        <span class="flex items-center gap-1">
+          <UserCheck className="h-4 w-4" />
+          Verified Drivers
+        </span>
+        <span class="flex items-center gap-1">
+          <Navigation className="h-4 w-4" />
+          Live Tracking
+        </span>
+        <span class="flex items-center gap-1">
+          <Phone className="h-4 w-4" />
+          24/7 Support
+        </span>
+      </div>
+    </header>
+
+    <!-- Safety Statistics -->
+    <Card className="mb-8 border-blue-200 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <CardContent className="pt-6">
+        <h2 class="text-2xl font-bold mb-6 text-center">Our Safety Track Record</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">2,000+</div>
+            <div class="text-sm text-muted-foreground">Safe Trips Completed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-green-600 mb-2">Zero</div>
+            <div class="text-sm text-muted-foreground">Major Incidents</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">4.9/5</div>
+            <div class="text-sm text-muted-foreground">Safety Rating</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-orange-600 mb-2">100%</div>
+            <div class="text-sm text-muted-foreground">Driver Verification</div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+
+    <!-- Driver Safety & Verification -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <UserCheck className="h-8 w-8 text-blue-600" />
+        Driver Safety & Verification
+      </h2>
+
+      <p class="text-lg text-muted-foreground mb-6">
+        Every driver goes through rigorous verification before joining our fleet. Here's our comprehensive screening process:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-blue-600" />
+              Document Verification
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Driving License Check</p>
+                  <p class="text-xs text-muted-foreground">Minimum 5 years valid commercial license, verified with RTO database</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Police Verification</p>
+                  <p class="text-xs text-muted-foreground">Criminal background check, address verification, character certificate</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Identity Proof</p>
+                  <p class="text-xs text-muted-foreground">Aadhaar, PAN card verification with photograph</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Address Verification</p>
+                  <p class="text-xs text-muted-foreground">Local police verification of permanent and current address</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Activity className="h-5 w-5 text-blue-600" />
+              Skills & Training
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Driving Test</p>
+                  <p class="text-xs text-muted-foreground">Practical driving assessment on Pune-Mumbai route, expressway experience</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Safety Training</p>
+                  <p class="text-xs text-muted-foreground">Emergency protocols, first aid, defensive driving techniques</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Customer Service Training</p>
+                  <p class="text-xs text-muted-foreground">Professional behavior, communication, passenger comfort</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Medical Fitness</p>
+                  <p class="text-xs text-muted-foreground">Annual health checkup, eyesight test, fitness certificate</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="border-green-200 bg-green-50">
+        <CardContent className="pt-6">
+          <h3 class="font-bold mb-4 flex items-center gap-2">
+            <Shield className="h-5 w-5 text-green-600" />
+            Ongoing Safety Monitoring
+          </h3>
+          <div class="grid md:grid-cols-2 gap-3">
+            <div class="flex items-start gap-2 text-sm">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Re-verification:</strong> Every 6 months all documents re-checked</span>
+            </div>
+            <div class="flex items-start gap-2 text-sm">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Rating System:</strong> Drivers below 4.5 stars undergo retraining</span>
+            </div>
+            <div class="flex items-start gap-2 text-sm">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>GPS Monitoring:</strong> Real-time driving behavior tracking</span>
+            </div>
+            <div class="flex items-start gap-2 text-sm">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Random Audits:</strong> Mystery passenger quality checks</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Vehicle Safety Features -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Car className="h-8 w-8 text-blue-600" />
+        Electric Vehicle Safety Features
+      </h2>
+
+      <p class="text-lg text-muted-foreground mb-6">
+        Modern electric vehicles are among the safest on the road. Here's why:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Kia Carens EV Safety Features</CardTitle>
+            <CardDescription>6-seater premium safety</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-3">
+              <div class="bg-blue-50 p-3 rounded-lg">
+                <p class="font-semibold text-sm mb-2">⭐ 5-Star Safety Rating</p>
+                <p class="text-xs text-muted-foreground">Global NCAP crash test certified</p>
+              </div>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>6 Airbags:</strong> Driver, passenger, side, curtain protection</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>ABS with EBD:</strong> Anti-lock braking, electronic brake distribution</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>ESC:</strong> Electronic Stability Control prevents skidding</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Hill Assist:</strong> Prevents rollback on slopes</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>TPMS:</strong> Tire Pressure Monitoring System</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>ISOFIX:</strong> Child seat anchors for family safety</span>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">BYD eMAX 7 Safety Features</CardTitle>
+            <CardDescription>7-seater premium safety</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-3">
+              <div class="bg-purple-50 p-3 rounded-lg">
+                <p class="font-semibold text-sm mb-2">⭐ 5-Star Safety Rating</p>
+                <p class="text-xs text-muted-foreground">European NCAP certified</p>
+              </div>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>7 Airbags:</strong> Maximum occupant protection</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Advanced ABS:</strong> With brake assist and EBD</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>ESP:</strong> Electronic Stability Program</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Collision Warning:</strong> Forward collision prevention</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Lane Assist:</strong> Lane departure warning system</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Blind Spot:</strong> Monitor for safer lane changes</span>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="border-orange-200 bg-orange-50 mb-6">
+        <CardContent className="pt-6">
+          <h3 class="font-bold mb-4 flex items-center gap-2">
+            <Zap className="h-5 w-5 text-orange-600" />
+            Battery Safety - Addressing Common Concerns
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold text-sm mb-2">Are EV batteries safe?</p>
+              <p class="text-sm text-muted-foreground mb-2">
+                Modern EV batteries are statistically safer than petrol/diesel vehicles. Here's why:
+              </p>
+              <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex items-start gap-2 text-sm">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Multiple Protection Layers:</strong> Fire-resistant casing, thermal barriers</span>
+                </div>
+                <div class="flex items-start gap-2 text-sm">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Battery Management System:</strong> 24/7 monitoring prevents overheating</span>
+                </div>
+                <div class="flex items-start gap-2 text-sm">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Crash Protection:</strong> Battery placed in reinforced floor compartment</span>
+                </div>
+                <div class="flex items-start gap-2 text-sm">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Auto Cutoff:</strong> Electrical systems disconnect in collision</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-semibold text-sm mb-2">Our Safety Record:</p>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-center gap-2">
+                  <Star className="h-4 w-4 text-yellow-500" />
+                  <span>Zero fire incidents in 2,000+ trips</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <Star className="h-4 w-4 text-yellow-500" />
+                  <span>Zero battery-related breakdowns</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <Star className="h-4 w-4 text-yellow-500" />
+                  <span>Regular safety audits by certified technicians</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Why EVs are Safer Than Diesel/Petrol Vehicles</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-green-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <ThumbsUp className="h-5 w-5 text-green-600" />
+                Lower Fire Risk
+              </p>
+              <p class="text-xs text-muted-foreground">
+                No flammable fuel tank. EVs catch fire 11x less than petrol vehicles (statistics from insurance data)
+              </p>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <ThumbsUp className="h-5 w-5 text-green-600" />
+                Better Stability
+              </p>
+              <p class="text-xs text-muted-foreground">
+                Battery in floor = low center of gravity. Reduced rollover risk by 35%
+              </p>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2 flex items-center gap-2">
+                <ThumbsUp className="h-5 w-5 text-green-600" />
+                Instant Response
+              </p>
+              <p class="text-xs text-muted-foreground">
+                Electric braking responds 0.3 seconds faster than mechanical brakes
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Live Tracking & Monitoring -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Navigation className="h-8 w-8 text-blue-600" />
+        Live GPS Tracking & Trip Monitoring
+      </h2>
+
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>How Live Tracking Keeps You Safe</CardTitle>
+          <CardDescription>Share your journey with family in real-time</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-6">
+            <div class="bg-blue-50 p-5 rounded-lg">
+              <h3 class="font-bold mb-3 flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-blue-600" />
+                What You Get Before Your Trip
+              </h3>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Live Tracking Link:</strong> Sent via WhatsApp 1 hour before pickup</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Driver Details:</strong> Name, photo, phone number, vehicle details</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Trip Details:</strong> Route, estimated time, distance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span><strong>Share Option:</strong> Forward link to unlimited family members</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-3">Real-Time Tracking Features</h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <p class="font-semibold text-sm mb-2 flex items-center gap-2">
+                    <Eye className="h-4 w-4 text-blue-600" />
+                    Live Location Updates
+                  </p>
+                  <p class="text-xs text-muted-foreground">
+                    GPS updates every 10 seconds. See exact location on Google Maps
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <p class="font-semibold text-sm mb-2 flex items-center gap-2">
+                    <Activity className="h-4 w-4 text-blue-600" />
+                    Speed Monitoring
+                  </p>
+                  <p class="text-xs text-muted-foreground">
+                    Current speed displayed. Alert if exceeding safe limits
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <p class="font-semibold text-sm mb-2 flex items-center gap-2">
+                    <Navigation className="h-4 w-4 text-blue-600" />
+                    Route Verification
+                  </p>
+                  <p class="text-xs text-muted-foreground">
+                    Planned route vs actual route comparison. Alerts for deviations
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <p class="font-semibold text-sm mb-2 flex items-center gap-2">
+                    <Bell className="h-4 w-4 text-blue-600" />
+                    ETA Updates
+                  </p>
+                  <p class="text-xs text-muted-foreground">
+                    Arrival time updates based on traffic. Milestone notifications
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="border-purple-200 bg-purple-50">
+        <CardContent className="pt-6">
+          <h3 class="font-bold mb-4 flex items-center gap-2">
+            <Heart className="h-5 w-5 text-purple-600" />
+            Family Peace of Mind Features
+          </h3>
+          <div class="grid md:grid-cols-2 gap-3 text-sm">
+            <div class="flex items-start gap-2">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Trip Start Alert:</strong> Family gets notification when trip begins</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Milestone Alerts:</strong> Notifications at key points (expressway entry, tolls, etc.)</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Destination Arrival:</strong> Alert when you safely reach airport</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <Check className="h-4 w-4 text-green-600 mt-0.5" />
+              <span><strong>Extended Stops:</strong> Alert if vehicle stops for more than 15 minutes</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Women Safety -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Shield className="h-8 w-8 text-pink-600" />
+        Women Safety Features
+      </h2>
+
+      <p class="text-lg text-muted-foreground mb-6">
+        Over 40% of our solo travelers are women. We've implemented special safety measures:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card className="border-pink-200">
+          <CardHeader>
+            <CardTitle className="text-lg">Before & During Booking</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Driver Preference</p>
+                  <p class="text-xs text-muted-foreground">Option to request specific drivers with excellent women-traveler ratings</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Profile Sharing</p>
+                  <p class="text-xs text-muted-foreground">Comprehensive driver profile (photo, ratings, experience) sent before trip</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Direct Communication</p>
+                  <p class="text-xs text-muted-foreground">Driver's number provided. Can call/message before accepting ride</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-pink-200">
+          <CardHeader>
+            <CardTitle className="text-lg">During Journey</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Live Tracking</p>
+                  <p class="text-xs text-muted-foreground">Share location with family. Multiple people can track simultaneously</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">SOS Button</p>
+                  <p class="text-xs text-muted-foreground">One-touch emergency alert. Instantly connects to support + alerts family</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">24/7 Support Helpline</p>
+                  <p class="text-xs text-muted-foreground">Dedicated women's helpline. Female support staff available</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="bg-gradient-to-r from-pink-50 to-purple-50 border-2 border-pink-300">
+        <CardContent className="pt-6">
+          <h3 class="font-bold text-lg mb-4">Testimonials from Women Travelers</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg">
+              <div class="flex items-center gap-1 mb-2">
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              </div>
+              <p class="text-sm mb-3 italic">
+                "Traveled alone for the first time at 5 AM. Driver was professional, kept conversation minimal as I preferred, and I could share my location with my family throughout. Felt completely safe."
+              </p>
+              <p class="text-xs font-semibold">Sneha P., IT Professional</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <div class="flex items-center gap-1 mb-2">
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+              </div>
+              <p class="text-sm mb-3 italic">
+                "As a mother, I was worried about my daughter's first solo trip to airport. The live tracking and driver verification gave me complete peace of mind. She arrived safely and I could see everything."
+              </p>
+              <p class="text-xs font-semibold">Meera K., Mother</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Emergency Protocols -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <AlertCircle className="h-8 w-8 text-red-600" />
+        Emergency Protocols & Support
+      </h2>
+
+      <Card className="mb-6 border-red-200">
+        <CardHeader>
+          <CardTitle>24/7 Emergency Response System</CardTitle>
+          <CardDescription>Multiple layers of emergency support</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold mb-3 text-red-600">Emergency Contact Numbers</h3>
+              <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-red-50 p-4 rounded-lg border-2 border-red-200 text-center">
+                  <Phone className="h-8 w-8 text-red-600 mx-auto mb-2" />
+                  <p class="font-bold text-lg">+91-XXXX-XXXXXX</p>
+                  <p class="text-xs text-muted-foreground">24/7 Emergency Hotline</p>
+                </div>
+                <div class="bg-orange-50 p-4 rounded-lg border-2 border-orange-200 text-center">
+                  <MessageCircle className="h-8 w-8 text-orange-600 mx-auto mb-2" />
+                  <p class="font-bold text-lg">WhatsApp SOS</p>
+                  <p class="text-xs text-muted-foreground">Send "SOS" for instant help</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg border-2 border-blue-200 text-center">
+                  <Shield className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                  <p class="font-bold text-lg">In-App Button</p>
+                  <p class="text-xs text-muted-foreground">One-touch emergency alert</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-3">What Happens When You Call Emergency?</h3>
+              <div class="space-y-3">
+                <div class="flex gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-sm">
+                    1
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-sm">Immediate Response (0-30 seconds)</p>
+                    <ul class="text-xs text-muted-foreground mt-1 space-y-1">
+                      <li>• Emergency team connects instantly</li>
+                      <li>• Your live location pulled up</li>
+                      <li>• Driver alerted simultaneously</li>
+                      <li>• Family members notified</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold text-sm">
+                    2
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-sm">Assessment & Action (30 seconds - 2 minutes)</p>
+                    <ul class="text-xs text-muted-foreground mt-1 space-y-1">
+                      <li>• Team assesses situation severity</li>
+                      <li>• Nearest help resources identified</li>
+                      <li>• Backup vehicle dispatched if needed</li>
+                      <li>• Medical/police contacted if required</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">
+                    3
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-sm">Resolution & Follow-up</p>
+                    <ul class="text-xs text-muted-foreground mt-1 space-y-1">
+                      <li>• Continuous monitoring until resolved</li>
+                      <li>• Alternative arrangements if needed</li>
+                      <li>• Incident report and investigation</li>
+                      <li>• Refund/compensation processed</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Medical Emergencies</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>First Aid Kit:</strong> All vehicles equipped with comprehensive first aid</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Hospital Database:</strong> Nearest hospital locations along entire route</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Driver Training:</strong> Basic first aid and CPR certified</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Ambulance Coordination:</strong> Direct tie-ups with emergency services</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Vehicle Breakdown</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Roadside Assistance:</strong> Network of mechanics along Pune-Mumbai route</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Backup Vehicle:</strong> Replacement vehicle dispatched within 30 minutes</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>No Extra Cost:</strong> Breakdown assistance covered in fare</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Flight Protection:</strong> Will arrange alternative if you miss flight due to our fault</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- COVID & Health Safety -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Heart className="h-8 w-8 text-red-600" />
+        Health & Hygiene Safety
+      </h2>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Enhanced Sanitization Protocols</CardTitle>
+          <CardDescription>Your health is our priority</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-semibold mb-3">Before Every Trip</h3>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Complete interior sanitization with approved disinfectants</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>High-touch surfaces wiped (handles, seats, controls)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Fresh air filters checked and cleaned</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Sanitizer and masks available for passengers</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-semibold mb-3">Driver Health Protocols</h3>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Drivers wear masks throughout journey</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Daily temperature screening mandatory</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Vaccinated and boosted (proof available)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Not allowed to drive if showing any symptoms</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Insurance & Legal Protection -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Lock className="h-8 w-8 text-blue-600" />
+        Insurance & Legal Protection
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Passenger Insurance Coverage</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+              <p class="font-bold text-2xl text-blue-600 mb-1">₹10 Lakh</p>
+              <p class="text-sm text-muted-foreground">Coverage per passenger</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Accident Coverage:</strong> Medical expenses up to ₹10 lakh per passenger</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Third-Party:</strong> Full comprehensive insurance on all vehicles</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Automatic:</strong> No need to opt-in, all passengers covered automatically</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Claim Assistance:</strong> Our team helps with insurance claim process</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Legal Compliance</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Commercial License:</strong> All vehicles have valid tourist permit</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>RTO Certified:</strong> Vehicles registered for commercial passenger transport</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>GST Compliant:</strong> Proper invoicing and tax compliance</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Driver Documents:</strong> All drivers carry verified identity and license</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span><strong>Permits:</strong> Valid permits for interstate travel (Maharashtra-Mumbai)</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Passenger Rights & Responsibilities -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Users className="h-8 w-8 text-blue-600" />
+        Your Rights & Responsibilities as a Passenger
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-green-200">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center gap-2">
+              <ThumbsUp className="h-5 w-5 text-green-600" />
+              Your Rights
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Safe & Professional Service</p>
+                  <p class="text-xs text-muted-foreground">Right to verified driver, safe vehicle, professional behavior</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Transparent Pricing</p>
+                  <p class="text-xs text-muted-foreground">Right to know exact fare upfront, no hidden charges</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Trip Information</p>
+                  <p class="text-xs text-muted-foreground">Right to driver details, live tracking, route information</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Refuse Unsafe Ride</p>
+                  <p class="text-xs text-muted-foreground">Right to cancel if driver/vehicle doesn't match details</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">File Complaints</p>
+                  <p class="text-xs text-muted-foreground">Right to report any safety concerns or unprofessional behavior</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-green-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Refund for Issues</p>
+                  <p class="text-xs text-muted-foreground">Right to full/partial refund if service standards not met</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-blue-200">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center gap-2">
+              <Heart className="h-5 w-5 text-blue-600" />
+              Your Responsibilities
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Respectful Behavior</p>
+                  <p class="text-xs text-muted-foreground">Treat driver with respect, no harassment or abusive language</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Timely Arrival</p>
+                  <p class="text-xs text-muted-foreground">Be ready at pickup time, inform if running late</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Vehicle Care</p>
+                  <p class="text-xs text-muted-foreground">No smoking, eating restricted, keep vehicle clean</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Safety Compliance</p>
+                  <p class="text-xs text-muted-foreground">Wear seatbelt, follow safety instructions</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Accurate Information</p>
+                  <p class="text-xs text-muted-foreground">Provide correct pickup location, contact details</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <ChevronRight className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <p class="font-semibold text-sm">Payment as Agreed</p>
+                  <p class="text-xs text-muted-foreground">Pay agreed amount, no bargaining after trip</p>
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Safety Tips for Passengers -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Safety Tips for Passengers</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Before Boarding</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Verify driver photo matches person</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Confirm vehicle number plate</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Share trip details with family</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Keep phone charged (>50%)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Note booking ID for reference</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">During Journey</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Wear seatbelt always</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Monitor route on GPS</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Stay alert, don't sleep deeply</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Keep valuables with you</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Speak up if uncomfortable</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">At Destination</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Check for belongings before exiting</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Verify luggage count</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Take payment receipt/invoice</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Rate your driver honestly</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-4 w-4 text-green-600 mt-0.5" />
+                <span>Report any issues immediately</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 text-center">What Customers Say About Safety</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <Card className="border-blue-200">
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-1 mb-3">
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            </div>
+            <p class="text-sm mb-4 italic">
+              "The live tracking feature was amazing! My wife could see exactly where I was
+              throughout the journey. Driver was professional and vehicle felt very safe."
+            </p>
+            <p class="text-xs font-semibold">Amit S.</p>
+            <p class="text-xs text-muted-foreground">Business Traveler</p>
+          </CardContent>
+        </Card>
+
+        <Card className="border-blue-200">
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-1 mb-3">
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            </div>
+            <p class="text-sm mb-4 italic">
+              "As a solo female traveler, safety is my top priority. The driver verification,
+              tracking, and emergency support made me feel completely secure. Highly recommend!"
+            </p>
+            <p class="text-xs font-semibold">Priya M.</p>
+            <p class="text-xs text-muted-foreground">Solo Traveler</p>
+          </CardContent>
+        </Card>
+
+        <Card className="border-blue-200">
+          <CardContent className="pt-6">
+            <div class="flex items-center gap-1 mb-3">
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            </div>
+            <p class="text-sm mb-4 italic">
+              "Booked for my elderly parents. The professionalism and care shown by the driver
+              was exceptional. They reached safely and I could track the entire journey."
+            </p>
+            <p class="text-xs font-semibold">Rahul K.</p>
+            <p class="text-xs text-muted-foreground">Family Booking</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <ReviewWidget variant="compact" />
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Safety FAQs</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Are electric cabs safe for long-distance travel?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              Yes, electric cabs are extremely safe for long-distance travel. Modern EVs like Kia Carens
+              and BYD eMAX 7 have advanced safety features including 6+ airbags, ABS, ESC, and crash-tested
+              5-star ratings. Electric vehicles have a lower center of gravity making them more stable, and
+              battery management systems prevent fire risks.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">How do you verify drivers for safety?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-3">
+              All drivers undergo comprehensive verification:
+            </p>
+            <ul class="space-y-1 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Police background check and criminal record verification</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Driving license verification (minimum 5 years commercial experience)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Vehicle registration and insurance verification</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Personal references and address verification</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Safety training and medical fitness certification</span>
+              </li>
+            </ul>
+            <p class="text-sm text-muted-foreground mt-3">
+              Drivers are re-verified every 6 months and continuously monitored through ratings and GPS behavior tracking.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Is it safe for women to travel alone in electric cabs?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-3">
+              Absolutely yes. We have special women safety features:
+            </p>
+            <ul class="space-y-1 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Live GPS tracking that can be shared with family members</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>24/7 support helpline with female staff available</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Verified drivers with clean background records</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Trip sharing via WhatsApp with real-time location</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>SOS button in tracking app for emergencies</span>
+              </li>
+            </ul>
+            <p class="text-sm text-muted-foreground mt-3">
+              Over 40% of our solo travelers are women, and we maintain a perfect safety record.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">What happens in case of emergency during the trip?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-3">
+              We have comprehensive emergency protocols:
+            </p>
+            <ul class="space-y-1 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>24/7 emergency helpline with instant response</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Live GPS monitoring of all trips in real-time</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Database of nearest hospitals along entire route</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Roadside assistance and backup vehicle tie-ups</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Passenger insurance coverage up to ₹10 lakh</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Direct coordination with police and medical services</span>
+              </li>
+            </ul>
+            <p class="text-sm text-muted-foreground mt-3">
+              All vehicles are equipped with first-aid kits, emergency tools, and backup communication devices.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Can I share my trip details with family?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              Yes, you'll receive a live tracking link via WhatsApp before your trip starts. You can share
+              this link with unlimited family members who can monitor your journey in real-time, see driver
+              details, get arrival ETAs, and receive alerts at key milestones. The link remains active
+              throughout the trip and for 1 hour after completion.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Are electric vehicles safe in terms of battery fire risk?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-3">
+              Modern electric vehicles are statistically safer than petrol/diesel vehicles regarding fire risk:
+            </p>
+            <ul class="space-y-1 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Multiple safety layers: thermal management systems, fire-resistant casing</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Automatic cutoff systems that disconnect power during accidents</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Crash-protection design with reinforced battery compartment</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>No flammable fuel tank unlike petrol/diesel vehicles</span>
+              </li>
+            </ul>
+            <p class="text-sm text-muted-foreground mt-3">
+              Our fleet uses only certified OEM vehicles (Kia, BYD) with proven safety records.
+              We've completed 2,000+ trips with zero fire incidents.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">What passenger insurance coverage do you provide?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              All passengers are automatically covered under our comprehensive insurance policy with coverage
+              up to ₹10 lakh per passenger for accident-related medical expenses. This includes full
+              third-party liability insurance on all vehicles. No opt-in required - coverage is automatic
+              from booking to safe arrival. Our team assists with insurance claims if needed.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Do you conduct background checks on all drivers?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-muted-foreground">
+              Yes, 100% of our drivers undergo police background checks, criminal record verification, and
+              local address verification before joining our fleet. We maintain copies of all verification
+              documents including police clearance certificates, character certificates, and employment
+              references. Background checks are repeated every 6 months to ensure continued compliance.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <Card className="border-blue-300 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50">
+      <CardContent className="pt-8 pb-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Travel with Complete Safety & Peace of Mind</h2>
+        <p class="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+          Book your safe, verified, and tracked electric cab journey from Pune to Mumbai Airport.
+          Your safety is our guarantee.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-6">
+          <a href="tel:+919876543210">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Phone className="h-5 w-5 mr-2" />
+              Call: +91-98765 43210
+            </Button>
+          </a>
+
+          <a href="https://wa.me/919876543210" target="_blank">
+            <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+              <MessageCircle className="h-5 w-5 mr-2" />
+              WhatsApp Us
+            </Button>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+          <span class="flex items-center gap-2">
+            <Shield className="h-4 w-4 text-blue-600" />
+            <span>100% Verified Drivers</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <Navigation className="h-4 w-4 text-blue-600" />
+            <span>Live GPS Tracking</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <Lock className="h-4 w-4 text-blue-600" />
+            <span>₹10L Insurance Coverage</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-blue-600" />
+            <span>24/7 Emergency Support</span>
+          </span>
+        </div>
+      </CardContent>
+    </Card>
+
+    <!-- Related Articles -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Related Articles</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="/blog/how-to-book-electric-cab-pune-mumbai-airport" class="block group">
+          <Card className="h-full hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                How to Book Electric Cab: Complete Guide
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Step-by-step booking process, payment options, and what to expect.
+              </p>
+            </CardContent>
+          </Card>
+        </a>
+
+        <a href="/blog/pune-to-mumbai-airport-guide" class="block group">
+          <Card className="h-full hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                Complete Pune to Mumbai Airport Guide
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Routes, timing, costs, and everything you need to know.
+              </p>
+            </CardContent>
+          </Card>
+        </a>
+
+        <a href="/blog/maharashtra-ev-regulations-cab-guide-2025" class="block group">
+          <Card className="h-full hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                Maharashtra EV Cab Regulations 2025
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Complete guide to regulations, compliance, and passenger rights.
+              </p>
+            </CardContent>
+          </Card>
+        </a>
+      </div>
+    </section>
+  </article>
+</MainLayout>

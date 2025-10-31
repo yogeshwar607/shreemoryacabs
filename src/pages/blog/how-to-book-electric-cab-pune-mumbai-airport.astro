@@ -1,0 +1,565 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+const title = "How to Book Electric Cab from Pune to Mumbai Airport (2025 Complete Guide)";
+const description = "Complete step-by-step guide to booking electric cab from Pune to Mumbai Airport. Learn booking methods, best timing, pricing, what to expect, and pro tips. Save time and money with our expert guide.";
+const publishDate = "2025-01-31";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "how to book electric cab pune mumbai airport",
+  "booking electric cab pune",
+  "electric cab booking guide",
+  "pune mumbai airport cab booking",
+  "book ev cab pune",
+  "electric taxi booking pune",
+  "step by step cab booking",
+  "online cab booking pune mumbai"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://greenevcabs.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Book Electric Cab",
+      "item": "https://greenevcabs.com/blog/how-to-book-electric-cab-pune-mumbai-airport"
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm mb-6 text-gray-600">
+      <a href="/" class="hover:text-green-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-green-600">Blog</a>
+      <span class="mx-2">/</span>
+      <span>How to Book Electric Cab</span>
+    </nav>
+
+    <!-- Article Header -->
+    <article>
+      <header class="mb-8">
+        <Badge className="mb-4">Travel Guide</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          How to Book Electric Cab from Pune to Mumbai Airport (2025 Complete Guide)
+        </h1>
+        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+          <span>By {author}</span>
+          <span>•</span>
+          <time datetime={publishDate}>January 31, 2025</time>
+          <span>•</span>
+          <span>12 min read</span>
+        </div>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Planning a trip from Pune to Mumbai Airport? This complete guide covers everything you need to know about booking electric cabs - from choosing the right service to getting the best price and ensuring a smooth journey.
+        </p>
+      </header>
+
+      <!-- Table of Contents -->
+      <Card className="p-6 mb-8 bg-gray-50">
+        <h2 class="font-bold text-lg mb-4">📋 Table of Contents</h2>
+        <nav class="space-y-2">
+          <a href="#why-electric" class="block hover:text-green-600">1. Why Choose Electric Cab?</a>
+          <a href="#booking-methods" class="block hover:text-green-600">2. 5 Ways to Book</a>
+          <a href="#step-by-step" class="block hover:text-green-600">3. Step-by-Step Booking Process</a>
+          <a href="#pricing" class="block hover:text-green-600">4. Understanding Pricing</a>
+          <a href="#what-to-expect" class="block hover:text-green-600">5. What to Expect on Journey Day</a>
+          <a href="#pro-tips" class="block hover:text-green-600">6. Pro Tips to Save Money</a>
+          <a href="#common-mistakes" class="block hover:text-green-600">7. Common Booking Mistakes to Avoid</a>
+          <a href="#faq" class="block hover:text-green-600">8. Frequently Asked Questions</a>
+        </nav>
+      </Card>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section id="why-electric" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">1. Why Choose Electric Cab for Pune-Mumbai Airport?</h2>
+
+          <p class="mb-4">
+            Before we dive into the booking process, let's understand why electric cabs are becoming the preferred choice for the Pune-Mumbai Airport route:
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-4 my-6">
+            <Card className="p-4">
+              <h3 class="font-semibold text-lg mb-2">💰 Cost Savings</h3>
+              <p class="text-sm text-gray-700">Electric cabs charge ₹2,999 fixed vs ₹3,700-₹5,500 for diesel cabs with surge pricing. Save ₹700-₹2,500 per trip!</p>
+            </Card>
+            <Card className="p-4">
+              <h3 class="font-semibold text-lg mb-2">🌱 Zero Emissions</h3>
+              <p class="text-sm text-gray-700">Reduce your carbon footprint by 35 kg CO₂ per trip. Travel guilt-free while protecting the environment.</p>
+            </Card>
+            <Card className="p-4">
+              <h3 class="font-semibold text-lg mb-2">🤫 Silent & Comfortable</h3>
+              <p class="text-sm text-gray-700">No engine noise means you can rest, work, or take calls during the 2.5-hour journey. Arrive fresh at the airport.</p>
+            </Card>
+            <Card className="p-4">
+              <h3 class="font-semibold text-lg mb-2">📈 No Surge Pricing</h3>
+              <p class="text-sm text-gray-700">Price remains ₹2,999 regardless of time, weather, or demand. No surprise charges during peak hours or festivals.</p>
+            </Card>
+          </div>
+        </section>
+
+        <section id="booking-methods" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">2. 5 Ways to Book Electric Cab</h2>
+
+          <p class="mb-6">There are multiple ways to book your electric cab from Pune to Mumbai Airport. Choose the method that's most convenient for you:</p>
+
+          <div class="space-y-6">
+            <Card className="p-6 border-l-4 border-green-500">
+              <h3 class="font-bold text-xl mb-3">Method 1: WhatsApp (Recommended ⭐)</h3>
+              <p class="mb-4"><strong>Why it's best:</strong> Fastest, personal service, instant confirmation, chat history for reference</p>
+              <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold mb-2">How to book:</p>
+                <ol class="list-decimal list-inside space-y-2">
+                  <li>Save +91 90750 20422 in your phone</li>
+                  <li>Open WhatsApp and send: "Hi, I want to book electric cab to Mumbai Airport"</li>
+                  <li>Share: Pickup location, Date & Time, Number of passengers</li>
+                  <li>Receive instant quote and confirmation</li>
+                </ol>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">⏱️ Response time: Under 2 minutes (24/7 available)</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold text-xl mb-3">Method 2: Phone Call</h3>
+              <p class="mb-4"><strong>Best for:</strong> Urgent bookings, complex requirements, elderly travelers</p>
+              <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold mb-2">How to book:</p>
+                <ol class="list-decimal list-inside space-y-2">
+                  <li>Call +91 90750 20422</li>
+                  <li>Speak to customer service team</li>
+                  <li>Provide booking details</li>
+                  <li>Get instant confirmation via SMS</li>
+                </ol>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">⏱️ Call hours: 24/7 availability</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold text-xl mb-3">Method 3: Website Form</h3>
+              <p class="mb-4"><strong>Best for:</strong> Advance planning, detailed requirements, multiple bookings</p>
+              <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold mb-2">How to book:</p>
+                <ol class="list-decimal list-inside space-y-2">
+                  <li>Visit greenevcabs.com</li>
+                  <li>Fill booking form with all details</li>
+                  <li>Submit and wait for confirmation call/WhatsApp</li>
+                  <li>Receive booking confirmation with driver details</li>
+                </ol>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">⏱️ Response time: Within 10 minutes</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold text-xl mb-3">Method 4: Email (Corporate Bookings)</h3>
+              <p class="mb-4"><strong>Best for:</strong> Corporate accounts, bulk bookings, monthly contracts</p>
+              <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold mb-2">How to book:</p>
+                <ol class="list-decimal list-inside space-y-2">
+                  <li>Email: contact@greenevcabs.com</li>
+                  <li>Include: Company name, trip details, billing requirements</li>
+                  <li>Receive quotation and terms</li>
+                  <li>Confirm via email with GST details</li>
+                </ol>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">⏱️ Response time: Within 1 hour (business hours)</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold text-xl mb-3">Method 5: Walk-in (Not Recommended)</h3>
+              <p class="mb-4"><strong>Note:</strong> We don't have physical offices. Always book in advance via phone/WhatsApp.</p>
+            </Card>
+          </div>
+        </section>
+
+        <section id="step-by-step" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">3. Step-by-Step Booking Process (WhatsApp Method)</h2>
+
+          <p class="mb-6">Let's walk through the complete booking process using WhatsApp - the most popular method:</p>
+
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Check Your Travel Details</h3>
+                <p class="text-gray-700 mb-2">Before booking, gather this information:</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li><strong>Exact pickup location:</strong> Full address in Pune (e.g., "ABC Apartments, Baner Road, Pune")</li>
+                  <li><strong>Date & time:</strong> When you want to be picked up</li>
+                  <li><strong>Flight details:</strong> Flight number, departure time, terminal (1 or 2)</li>
+                  <li><strong>Passengers:</strong> How many people (max 7 for our SUVs)</li>
+                  <li><strong>Luggage:</strong> Number of large suitcases</li>
+                  <li><strong>Special requirements:</strong> Child seat, wheelchair accessibility, etc.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Calculate Recommended Pickup Time</h3>
+                <p class="text-gray-700 mb-2">Use this formula for stress-free travel:</p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                  <p class="font-semibold mb-2">Pickup Time = Flight Time - 5.5 hours</p>
+                  <p class="text-sm">Breakdown: 2.5 hrs travel + 3 hrs airport check-in</p>
+                </div>
+                <p class="mt-4 text-sm text-gray-600"><strong>Example:</strong> Flight at 10:00 AM → Pickup at 4:30 AM</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Send WhatsApp Message</h3>
+                <p class="text-gray-700 mb-2">Copy and customize this template:</p>
+                <div class="bg-gray-100 p-4 rounded font-mono text-sm">
+                  Hi, I want to book electric cab to Mumbai Airport<br/><br/>
+                  📍 Pickup: [Your full address]<br/>
+                  📅 Date: [DD/MM/YYYY]<br/>
+                  ⏰ Time: [HH:MM AM/PM]<br/>
+                  ✈️ Flight: [Flight number] at [time]<br/>
+                  👥 Passengers: [Number]<br/>
+                  🧳 Luggage: [Number of large bags]
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Receive Quote & Confirm</h3>
+                <p class="text-gray-700 mb-2">You'll receive:</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Fixed price (₹2,999 for most Pune areas)</li>
+                  <li>Vehicle details (Kia Carens EV or BYD E-MAX 7)</li>
+                  <li>Payment options</li>
+                </ul>
+                <p class="mt-2 text-gray-700">Reply "Confirm" to proceed</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Receive Booking Confirmation</h3>
+                <p class="text-gray-700 mb-2">Within 5 minutes, you'll get:</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Booking reference number</li>
+                  <li>Driver name (assigned 24 hours before)</li>
+                  <li>Vehicle details and number plate</li>
+                  <li>24/7 support number</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">6</div>
+              <div>
+                <h3 class="font-bold text-lg mb-2">Get Driver Details (Day Before)</h3>
+                <p class="text-gray-700">You'll receive driver's contact 24 hours before pickup for coordination.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">4. Understanding Pricing</h2>
+
+          <p class="mb-6">Transparent pricing with no hidden costs:</p>
+
+          <Card className="p-6 bg-green-50 mb-6">
+            <h3 class="font-bold text-2xl mb-4 text-green-800">Standard Pricing</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Kia Carens EV (6-7 seater)</p>
+                <p class="text-3xl font-bold text-green-700">₹2,999</p>
+                <p class="text-sm text-gray-600">All-inclusive, zero surge</p>
+              </div>
+              <div>
+                <p class="font-semibold mb-2">BYD E-MAX 7 (7 seater premium)</p>
+                <p class="text-3xl font-bold text-green-700">₹5,200</p>
+                <p class="text-sm text-gray-600">Luxury option</p>
+              </div>
+            </div>
+          </Card>
+
+          <div class="mb-6">
+            <h3 class="font-bold text-xl mb-4">What's Included in ₹2,999?</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>148 km journey</strong> from Pune to Mumbai Airport</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>All toll charges</strong> on Mumbai-Pune Expressway</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>Professional driver</strong> with 5+ years experience</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>Flight tracking</strong> - driver monitors your flight status</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>Wait time</strong> up to 30 minutes without extra charge</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">✓</span>
+                <span><strong>GST invoice</strong> for expense reimbursement</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+            <p class="font-semibold mb-2">⚠️ Additional Charges Apply For:</p>
+            <ul class="list-disc list-inside space-y-1 text-sm">
+              <li>Wait time beyond 30 minutes: ₹100/hour</li>
+              <li>Extra stops on the way: ₹200 per stop</li>
+              <li>Cancellation within 6 hours: 50% of fare</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="what-to-expect" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">5. What to Expect on Journey Day</h2>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold text-xl mb-3">Before Pickup</h3>
+              <Card className="p-4">
+                <ul class="space-y-2">
+                  <li>• Driver calls 30 minutes before to confirm location</li>
+                  <li>• Vehicle arrives 5-10 minutes early</li>
+                  <li>• Driver waits at your exact pickup spot</li>
+                </ul>
+              </Card>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-xl mb-3">During Journey</h3>
+              <Card className="p-4">
+                <ul class="space-y-2">
+                  <li>• Driver helps with luggage loading</li>
+                  <li>• Climate control set to your preference</li>
+                  <li>• Take Mumbai-Pune Expressway (fastest route)</li>
+                  <li>• Smooth, silent ride in electric SUV</li>
+                  <li>• Optional stops for restroom/refreshments</li>
+                  <li>• Total journey time: 2.5-3 hours</li>
+                </ul>
+              </Card>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-xl mb-3">At Airport Drop</h3>
+              <Card className="p-4">
+                <ul class="space-y-2">
+                  <li>• Driver navigates to correct terminal (1 or 2)</li>
+                  <li>• Stops at departure drop-off point</li>
+                  <li>• Helps unload luggage</li>
+                  <li>• Payment via cash/UPI/card</li>
+                  <li>• GST invoice sent via WhatsApp immediately</li>
+                </ul>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="pro-tips" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">6. Pro Tips to Save Money & Time</h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card className="p-6">
+              <div class="text-4xl mb-3">💡</div>
+              <h3 class="font-bold text-lg mb-2">Book 2-3 Days in Advance</h3>
+              <p class="text-sm text-gray-700">Guaranteed availability and no last-minute stress. Same price whether you book 1 day or 30 days ahead.</p>
+            </Card>
+
+            <Card className="p-6">
+              <div class="text-4xl mb-3">🔄</div>
+              <h3 class="font-bold text-lg mb-2">Book Round Trip & Save 10%</h3>
+              <p class="text-sm text-gray-700">Going and returning? Book both trips together for ₹8,100 total (save ₹900). Perfect for business trips.</p>
+            </Card>
+
+            <Card className="p-6">
+              <div class="text-4xl mb-3">👥</div>
+              <h3 class="font-bold text-lg mb-2">Travel in Groups</h3>
+              <p class="text-sm text-gray-700">Split ₹2,999 among 4-7 people = ₹428-₹750 per person. Cheaper than train tickets with door-to-door service!</p>
+            </Card>
+
+            <Card className="p-6">
+              <div class="text-4xl mb-3">⏰</div>
+              <h3 class="font-bold text-lg mb-2">Off-Peak Travel</h3>
+              <p class="text-sm text-gray-700">While our pricing is fixed, traveling during 10 AM - 4 PM means less expressway traffic and faster journey.</p>
+            </Card>
+
+            <Card className="p-6">
+              <div class="text-4xl mb-3">💼</div>
+              <h3 class="font-bold text-lg mb-2">Corporate Packages</h3>
+              <p class="text-sm text-gray-700">Frequent traveler? Ask about monthly packages with 20% discount. Perfect for employees with regular airport commutes.</p>
+            </Card>
+
+            <Card className="p-6">
+              <div class="text-4xl mb-3">📱</div>
+              <h3 class="font-bold text-lg mb-2">Share Flight Details</h3>
+              <p class="text-sm text-gray-700">Driver can track your flight and adjust pickup if there's a delay. No extra charge for flight delays up to 2 hours.</p>
+            </Card>
+          </div>
+        </section>
+
+        <section id="common-mistakes" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">7. Common Booking Mistakes to Avoid</h2>
+
+          <div class="space-y-4">
+            <Card className="p-6 border-l-4 border-red-500">
+              <h3 class="font-bold text-lg mb-2">❌ Booking Too Late</h3>
+              <p class="text-gray-700 mb-2"><strong>Mistake:</strong> Booking 1-2 hours before pickup</p>
+              <p class="text-green-700"><strong>Solution:</strong> Book at least 24 hours ahead for guaranteed availability</p>
+            </Card>
+
+            <Card className="p-6 border-l-4 border-red-500">
+              <h3 class="font-bold text-lg mb-2">❌ Wrong Timing Calculation</h3>
+              <p class="text-gray-700 mb-2"><strong>Mistake:</strong> Booking pickup only 4 hours before flight</p>
+              <p class="text-green-700"><strong>Solution:</strong> Allow minimum 5.5 hours (2.5 hrs travel + 3 hrs at airport)</p>
+            </Card>
+
+            <Card className="p-6 border-l-4 border-red-500">
+              <h3 class="font-bold text-lg mb-2">❌ Vague Pickup Location</h3>
+              <p class="text-gray-700 mb-2"><strong>Mistake:</strong> "Baner" or "Hinjewadi" without exact address</p>
+              <p class="text-green-700"><strong>Solution:</strong> Share complete address with landmark and Google Maps link</p>
+            </Card>
+
+            <Card className="p-6 border-l-4 border-red-500">
+              <h3 class="font-bold text-lg mb-2">❌ Not Sharing Flight Details</h3>
+              <p class="text-gray-700 mb-2"><strong>Mistake:</strong> Only mentioning "morning flight"</p>
+              <p class="text-green-700"><strong>Solution:</strong> Share flight number, terminal, and departure time</p>
+            </Card>
+
+            <Card className="p-6 border-l-4 border-red-500">
+              <h3 class="font-bold text-lg mb-2">❌ Assuming Space for Excess Luggage</h3>
+              <p class="text-gray-700 mb-2"><strong>Mistake:</strong> Not mentioning 5+ large suitcases</p>
+              <p class="text-green-700"><strong>Solution:</strong> Inform about luggage during booking - we can arrange larger vehicle if needed</p>
+            </Card>
+          </div>
+        </section>
+
+        <section id="faq" class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">8. Frequently Asked Questions</h2>
+
+          <div class="space-y-4">
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Can I book electric cab for same-day travel?</h3>
+              <p class="text-gray-700">Yes, subject to availability. Call +91 90750 20422 immediately for last-minute bookings. However, we recommend booking 24 hours in advance for guaranteed availability.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">What if my flight gets delayed or preponed?</h3>
+              <p class="text-gray-700">Share your flight number during booking. Our driver tracks flight status and adjusts timing automatically. No extra charge for delays up to 2 hours. For major changes, contact us via WhatsApp.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Can I modify or cancel my booking?</h3>
+              <p class="text-gray-700">Yes! Free modification up to 24 hours before pickup. Free cancellation up to 6 hours before pickup. Cancellations within 6 hours incur 50% charge.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Do you provide pickup from all areas of Pune?</h3>
+              <p class="text-gray-700">Yes, we pick up from anywhere in Pune - Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Kharadi, Magarpatta, etc. Price is ₹2,999 from most areas. Far locations may have slight surcharge.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">Is advance payment required?</h3>
+              <p class="text-gray-700">No! We operate on trust. Payment is accepted after completion of journey. You can pay via cash, UPI, card, or Google Pay.</p>
+            </Card>
+
+            <Card className="p-6">
+              <h3 class="font-bold mb-2">What if the electric cab runs out of charge?</h3>
+              <p class="text-gray-700">Our vehicles have 400+ km range, while Pune-Mumbai is only 148 km. All vehicles are fully charged before every trip. We've never had a range issue in 1000+ trips.</p>
+            </Card>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="my-12 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg p-8 text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
+          <p class="text-xl mb-6">Get ₹2,999 fixed price with zero surge. Available 24/7.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+              <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-semibold text-lg">
+                📱 Book on WhatsApp Now
+              </Button>
+            </a>
+            <a href="tel:+919075020422">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold text-lg">
+                📞 Call: 90750 20422
+              </Button>
+            </a>
+          </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-8">
+          <h2 class="text-3xl font-bold mb-6">Conclusion</h2>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Booking an electric cab from Pune to Mumbai Airport is simple, affordable, and eco-friendly. With fixed ₹2,999 pricing, premium 7-seater SUVs, and 24/7 availability, GreenEVCabs offers the best value for airport transfers. Follow this guide to ensure a smooth booking experience and stress-free journey to the airport.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-700 mt-4">
+            Book now and join 10,000+ satisfied customers who chose electric over diesel. Save money, reduce emissions, and travel in comfort!
+          </p>
+        </section>
+      </div>
+    </article>
+  </div>
+</MainLayout>

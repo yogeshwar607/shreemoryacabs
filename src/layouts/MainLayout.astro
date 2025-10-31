@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header.astro";
 import Footer from "@/components/layout/Footer.astro";
 import { WhatsAppButton } from "@/components/react/WhatsAppButton";
 import SEOHead from "@/components/seo/SEOHead.astro";
+import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
 import "@/styles/globals.css";
 
 interface Props {
@@ -56,6 +57,9 @@ const {
       noindex={noindex}
       nofollow={nofollow}
     />
+
+    <!-- Google Analytics 4 -->
+    <GoogleAnalytics />
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

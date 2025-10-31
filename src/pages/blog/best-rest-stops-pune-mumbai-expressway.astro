@@ -1,0 +1,813 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import ReviewWidget from "@/components/ReviewWidget.astro";
+import { Check, X, MapPin, IndianRupee, Clock, Coffee, Utensils, Car, Zap, Shield, TrendingUp, ChevronRight, Star, Users, Calendar, MessageCircle, Phone, Fuel } from "lucide-react";
+
+const title = "10 Best Rest Stops on Pune-Mumbai Expressway You Must Know (2025 Guide)";
+const description = "Complete guide to the best rest stops, food joints, and facilities on Mumbai-Pune Expressway. From McDonald's to local dhabas, EV charging to clean restrooms - everything travelers need to know.";
+const publishDate = "2025-01-15";
+const author = "GreenEVCabs Team";
+
+const keywords = [
+  "pune mumbai expressway rest stops",
+  "best food stops expressway",
+  "lonavala food stops",
+  "mumbai pune expressway restaurants",
+  "expressway dhaba",
+  "where to stop pune mumbai expressway",
+  "clean restrooms expressway",
+  "ev charging expressway"
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "datePublished": publishDate,
+  "dateModified": publishDate
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best food stop on Pune-Mumbai Expressway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "McDonald's at Lonavala (Km 40) is consistently rated the best with cleanest restrooms, fast service, EV charging, and good food. Khalapur Food Plaza (Km 68) offers the most variety with 10+ restaurants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find clean restrooms on the expressway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "McDonald's locations at Lonavala (Km 40) and Khopoli (Km 55) have the cleanest restrooms. Khalapur Food Plaza also maintains good facilities. Most charge Rs.5-10 for usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there EV charging stations at rest stops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, EV charging is available at Talegaon (Km 12), Lonavala McDonald's (Km 40), Khopoli McDonald's (Km 55), and Khalapur Food Plaza (Km 68). Most are CCS2 type with 25-60 kW power."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should I plan for a rest stop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan 15-20 minutes for a quick coffee/restroom break, 30-40 minutes for a full meal. Fast food joints like McDonald's are quicker than sit-down restaurants."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+    <!-- Quick Answer Box -->
+    <Card className="p-6 mb-8 bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200">
+      <div class="flex items-start gap-4">
+        <div class="bg-amber-600 text-white p-3 rounded-lg">
+          <Coffee className="h-6 w-6" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">Top 3 Must-Stop Locations</h2>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center gap-2">
+              <Badge variant="default" className="bg-green-600">1</Badge>
+              <span><strong>McDonald's Lonavala (Km 40):</strong> Best overall - clean, fast, reliable</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Badge variant="default" className="bg-green-600">2</Badge>
+              <span><strong>Khalapur Food Plaza (Km 68):</strong> Most variety - 10+ restaurants</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Badge variant="default" className="bg-green-600">3</Badge>
+              <span><strong>McDonald's Khopoli (Km 55):</strong> Mid-journey break point</span>
+            </div>
+          </div>
+          <p class="mt-3 text-gray-700 text-sm">All three have clean restrooms, ample parking, and EV charging facilities.</p>
+        </div>
+      </div>
+    </Card>
+
+    <!-- Article Header -->
+    <header class="mb-8">
+      <Badge className="mb-4">Travel Guide</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        10 Best Rest Stops on Pune-Mumbai Expressway You Must Know
+      </h1>
+      <p class="text-xl text-gray-600 mb-4">
+        From premium chains to local gems, here are the best places to stop, eat, and recharge on India's most traveled expressway.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="secondary">10 Locations</Badge>
+        <Badge variant="secondary">Food & Facilities</Badge>
+        <Badge variant="secondary">EV Charging</Badge>
+        <Badge variant="secondary">2025 Updated</Badge>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="prose prose-lg max-w-none">
+
+      <!-- Stop #1: McDonald's Lonavala -->
+      <section class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <Badge variant="default" className="text-2xl px-4 py-2 bg-green-600">1</Badge>
+          <h2 class="text-3xl font-bold text-gray-900 m-0">McDonald's Lonavala (Km 40)</h2>
+        </div>
+
+        <Card className="p-6 border-2 border-green-300">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <Badge variant="default" className="bg-green-600">Best Overall</Badge>
+                <div class="flex items-center gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">Pune to Mumbai direction • Perfect breakfast/coffee stop</p>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-green-600">9.5/10</p>
+              <p class="text-xs text-gray-500">User Rating</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Why It's #1</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Cleanest restrooms on entire route</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Fast service (5-10 min)</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>AC seating, WiFi, kids play area</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Safe, well-lit parking</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Menu Highlights</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Burgers: Rs.50-200</li>
+                <li>• McCafe Coffee: Rs.80-150</li>
+                <li>• Breakfast: Rs.100-180</li>
+                <li>• Meals: Rs.150-350</li>
+                <li>• Desserts: Rs.40-100</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Facilities</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• EV Charging: ✓ (30 kW)</li>
+                <li>• Restrooms: Excellent</li>
+                <li>• Parking: Large, secure</li>
+                <li>• Open: 24/7</li>
+                <li>• Typical stop: 15-20 min</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-green-50 border-l-4 border-green-400 p-3">
+            <p class="text-sm text-green-800">
+              <strong>Pro Tip:</strong> Perfect timing for breakfast if you leave Pune at 6-7 AM. Order McCafe coffee for road ahead. Stop here before the ghat descent.
+            </p>
+          </div>
+        </Card>
+      </section>
+
+      <!-- Stop #2: Khalapur Food Plaza -->
+      <section class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <Badge variant="default" className="text-2xl px-4 py-2 bg-blue-600">2</Badge>
+          <h2 class="text-3xl font-bold text-gray-900 m-0">Khalapur Food Plaza (Km 68)</h2>
+        </div>
+
+        <Card className="p-6 border-2 border-blue-300">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <Badge variant="default" className="bg-blue-600">Most Variety</Badge>
+                <div class="flex items-center gap-1">
+                  {[1, 2, 3, 4].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                  <Star className="h-4 w-4 text-gray-300" />
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">After Khalapur toll • 10+ restaurant options</p>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-blue-600">8.5/10</p>
+              <p class="text-xs text-gray-500">User Rating</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Why Choose This</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>10+ food outlets under one roof</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>Indian, Chinese, fast food choices</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>Fuel station adjacent</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>Good for group travel (varied tastes)</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Food Options</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Thali: Rs.120-180</li>
+                <li>• Biryani: Rs.150-250</li>
+                <li>• Snacks: Rs.50-100</li>
+                <li>• Tea/Coffee: Rs.20-80</li>
+                <li>• Full meals: Rs.150-300</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Facilities</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• EV Charging: ✓ (2 ports)</li>
+                <li>• Restrooms: Good (Rs.5-10)</li>
+                <li>• Parking: Very large</li>
+                <li>• ATM: Available</li>
+                <li>• Typical stop: 25-35 min</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 border-l-4 border-blue-400 p-3">
+            <p class="text-sm text-blue-800">
+              <strong>Best For:</strong> Lunch stop, groups with different food preferences, or if you want authentic Indian food instead of fast food.
+            </p>
+          </div>
+        </Card>
+      </section>
+
+      <!-- Stop #3: McDonald's Khopoli -->
+      <section class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <Badge variant="default" className="text-2xl px-4 py-2 bg-purple-600">3</Badge>
+          <h2 class="text-3xl font-bold text-gray-900 m-0">McDonald's Khopoli (Km 55)</h2>
+        </div>
+
+        <Card className="p-6 border-2 border-purple-300">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <Badge variant="default" className="bg-purple-600">Mid-Journey Break</Badge>
+                <div class="flex items-center gap-1">
+                  {[1, 2, 3, 4].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                  <Star className="h-4 w-4 text-gray-300" />
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">Khopoli exit • Mid-point between Pune & Mumbai</p>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">8.0/10</p>
+              <p class="text-xs text-gray-500">User Rating</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Highlights</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>Perfect halfway point</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>Consistent McDonald's quality</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>Good for families with kids</span>
+                </li>
+                <li class="flex items-start gap-1">
+                  <Check className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>After scenic ghat descent</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Menu & Prices</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Burgers: Rs.50-200</li>
+                <li>• Coffee: Rs.80-150</li>
+                <li>• Fries/Sides: Rs.40-100</li>
+                <li>• Meals: Rs.180-350</li>
+                <li>• Ice cream: Rs.25-80</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-700 mb-2">Facilities</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• EV Charging: ✓ (30 kW)</li>
+                <li>• Restrooms: Very clean</li>
+                <li>• Parking: Medium size</li>
+                <li>• Open: 24/7</li>
+                <li>• Typical stop: 15-20 min</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+      </section>
+
+      <!-- Remaining stops in compact format -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">More Great Stops (4-10)</h2>
+
+        <div class="space-y-6">
+          <!-- Stop #4 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">4</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Cafe Coffee Day Lonavala (Km 42)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Quick coffee break, work on laptop</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Prices</p>
+                    <p class="text-gray-600">Coffee Rs.100-180, Snacks Rs.80-150</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">8.0/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Good coffee, WiFi, AC seating. Restrooms decent. No EV charging.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #5 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">5</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Talegaon Fuel Station & Dhaba (Km 12)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Early stop, fuel fill-up, EV charging</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Prices</p>
+                    <p class="text-gray-600">Meals Rs.80-150, Tea Rs.10-20</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">7.5/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Basic but clean. EV charging available. Good for quick tea/breakfast. Authentic roadside food.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #6 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">6</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Lonavala Food Zone (Km 40-45)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Multiple options in short stretch</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Options</p>
+                    <p class="text-gray-600">5+ restaurants, dhabas, bakeries</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">7.5/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Cluster of food options including McDonald's, CCD, local restaurants. Something for everyone.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #7 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">7</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Khandala Viewpoint (Km 44)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Scenic photos, fresh air, stretching legs</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Facilities</p>
+                    <p class="text-gray-600">Tea stalls, corn vendors, basic restrooms</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">7.0/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Beautiful ghat views especially in monsoon. 5-10 min photo stop. Not ideal for meals.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #8 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">8</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Panvel Food Court (Km 82)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Last stop before Mumbai, fuel top-up</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Prices</p>
+                    <p class="text-gray-600">Meals Rs.100-200, Quick bites Rs.50-100</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">7.5/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Good facilities near Urse toll. EV charging available. Last chance before Mumbai traffic.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #9 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">9</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Local Dhabas (Various Locations)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Authentic Indian food, budget meals</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Prices</p>
+                    <p class="text-gray-600">Meals Rs.60-120, Tea Rs.10-20</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">6.5/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Multiple dhabas along route. Quality varies. Good for adventurous eaters wanting authentic flavors.</p>
+              </div>
+            </div>
+          </Card>
+
+          <!-- Stop #10 -->
+          <Card className="p-5">
+            <div class="flex items-start gap-4">
+              <Badge variant="outline" className="text-xl px-3 py-1 flex-shrink-0">10</Badge>
+              <div class="flex-1">
+                <h3 class="font-bold text-xl mb-2">Karjat Rest Area (Off Expressway)</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p class="font-semibold mb-1">Best For</p>
+                    <p class="text-gray-600">Peaceful break, nature lovers</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Note</p>
+                    <p class="text-gray-600">5 km off expressway via Khopoli exit</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-1">Rating</p>
+                    <div class="flex items-center gap-1">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <Star className="h-4 w-4 text-gray-300" />
+                      <span className="text-gray-600 ml-1">7.0/10</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Scenic town with multiple restaurants. Worth detour if you have extra time (adds 20-30 min).</p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <!-- Quick Comparison Table -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Quick Comparison: Top 5 Stops</h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-2 text-left">Stop</th>
+                <th class="border border-gray-300 p-2 text-center">Km</th>
+                <th class="border border-gray-300 p-2 text-center">Rating</th>
+                <th class="border border-gray-300 p-2 text-center">Restrooms</th>
+                <th class="border border-gray-300 p-2 text-center">EV Charge</th>
+                <th class="border border-gray-300 p-2 text-center">Price Range</th>
+                <th class="border border-gray-300 p-2 text-left">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-green-50">
+                <td class="border border-gray-300 p-2 font-semibold">McDonald's Lonavala</td>
+                <td class="border border-gray-300 p-2 text-center">40</td>
+                <td class="border border-gray-300 p-2 text-center">9.5/10</td>
+                <td class="border border-gray-300 p-2 text-center">⭐⭐⭐⭐⭐</td>
+                <td class="border border-gray-300 p-2 text-center">✓</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.100-250</td>
+                <td class="border border-gray-300 p-2">Overall best</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2 font-semibold">Khalapur Food Plaza</td>
+                <td class="border border-gray-300 p-2 text-center">68</td>
+                <td class="border border-gray-300 p-2 text-center">8.5/10</td>
+                <td class="border border-gray-300 p-2 text-center">⭐⭐⭐⭐</td>
+                <td class="border border-gray-300 p-2 text-center">✓</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.120-250</td>
+                <td class="border border-gray-300 p-2">Most variety</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-2 font-semibold">McDonald's Khopoli</td>
+                <td class="border border-gray-300 p-2 text-center">55</td>
+                <td class="border border-gray-300 p-2 text-center">8.0/10</td>
+                <td class="border border-gray-300 p-2 text-center">⭐⭐⭐⭐⭐</td>
+                <td class="border border-gray-300 p-2 text-center">✓</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.100-250</td>
+                <td class="border border-gray-300 p-2">Mid-point break</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2 font-semibold">CCD Lonavala</td>
+                <td class="border border-gray-300 p-2 text-center">42</td>
+                <td class="border border-gray-300 p-2 text-center">8.0/10</td>
+                <td class="border border-gray-300 p-2 text-center">⭐⭐⭐⭐</td>
+                <td class="border border-gray-300 p-2 text-center">✗</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.100-180</td>
+                <td class="border border-gray-300 p-2">Coffee lovers</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-2 font-semibold">Talegaon Dhaba</td>
+                <td class="border border-gray-300 p-2 text-center">12</td>
+                <td class="border border-gray-300 p-2 text-center">7.5/10</td>
+                <td class="border border-gray-300 p-2 text-center">⭐⭐⭐</td>
+                <td class="border border-gray-300 p-2 text-center">✓</td>
+                <td class="border border-gray-300 p-2 text-center">Rs.80-150</td>
+                <td class="border border-gray-300 p-2">Budget, early stop</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Pro Tips -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Pro Tips for Rest Stops</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="p-6">
+            <h3 class="font-bold mb-3 flex items-center gap-2">
+              <Clock className="h-5 w-5 text-blue-600" />
+              Timing Your Stops
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Morning (6-8 AM):</strong> Stop at Lonavala for breakfast</li>
+              <li>• <strong>Mid-morning (9-11 AM):</strong> Quick coffee at CCD or McDonald's</li>
+              <li>• <strong>Lunch (12-2 PM):</strong> Khalapur Food Plaza for variety</li>
+              <li>• <strong>Evening (5-7 PM):</strong> Quick snack, avoid meal stops</li>
+              <li>• <strong>Night (after 10 PM):</strong> Only McDonald's locations open 24/7</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="font-bold mb-3 flex items-center gap-2">
+              <Shield className="h-5 w-5 text-green-600" />
+              Safety & Hygiene
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Prefer chain restaurants for consistent quality</li>
+              <li>• Carry hand sanitizer (not all restrooms have soap)</li>
+              <li>• Keep small change for paid restrooms (Rs.5-10)</li>
+              <li>• Park in well-lit areas, lock car doors</li>
+              <li>• Check food freshness at dhabas (look for crowds)</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="font-bold mb-3 flex items-center gap-2">
+              <Zap className="h-5 w-5 text-orange-600" />
+              EV Charging Strategy
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Book charging slot via app (Tata Power, ChargeZone)</li>
+              <li>• Charge during meal (30-40 min = 20-30% charge)</li>
+              <li>• Most popular: Lonavala McDonald's (often busy)</li>
+              <li>• Backup: Talegaon, Khopoli, Khalapur have chargers</li>
+              <li>• Charging cost: Rs.15-22 per kWh</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="font-bold mb-3 flex items-center gap-2">
+              <Utensils className="h-5 w-5 text-red-600" />
+              Food Safety Tips
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Avoid raw salads at roadside dhabas</li>
+              <li>• Stick to freshly cooked hot food</li>
+              <li>• Sealed packaged snacks are safer</li>
+              <li>• Carry water bottles (restroom water not potable)</li>
+              <li>• If unsure, choose McDonald's/branded chains</li>
+            </ul>
+          </Card>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section id="faq" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What is the best food stop on Pune-Mumbai Expressway?</h3>
+            <p class="text-gray-700">
+              <strong>McDonald's at Lonavala (Km 40)</strong> is consistently rated the best with cleanest restrooms, fast service, EV charging, and good food. Khalapur Food Plaza (Km 68) offers the most variety with 10+ restaurants.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Where can I find clean restrooms on the expressway?</h3>
+            <p class="text-gray-700">
+              McDonald's locations at <strong>Lonavala (Km 40) and Khopoli (Km 55)</strong> have the cleanest restrooms. Khalapur Food Plaza also maintains good facilities. Most charge Rs.5-10 for usage.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Are there EV charging stations at rest stops?</h3>
+            <p class="text-gray-700">
+              Yes, <strong>EV charging is available</strong> at Talegaon (Km 12), Lonavala McDonald's (Km 40), Khopoli McDonald's (Km 55), and Khalapur Food Plaza (Km 68). Most are CCS2 type with 25-60 kW power.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How long should I plan for a rest stop?</h3>
+            <p class="text-gray-700">
+              Plan <strong>15-20 minutes for a quick coffee/restroom break</strong>, 30-40 minutes for a full meal. Fast food joints like McDonald's are quicker than sit-down restaurants. If EV charging, plan 40-60 minutes minimum.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Which stop is best for families with children?</h3>
+            <p class="text-gray-700">
+              <strong>McDonald's Lonavala</strong> is best for families - kids play area, familiar menu, clean facilities, and fast service. Khalapur Food Plaza also good with variety for different ages.
+            </p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Are food stops open at night?</h3>
+            <p class="text-gray-700">
+              <strong>McDonald's locations at Lonavala and Khopoli are open 24/7</strong>. Most other restaurants close by 10-11 PM. For night travel, stick to McDonald's or carry snacks.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="mb-12">
+        <Card className="p-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold mb-3">Travel the Expressway in Comfort</h2>
+            <p class="text-xl text-green-50 mb-6">
+              Let us handle the driving while you enjoy the journey. Our drivers know all the best stops.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+919876543210">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <Phone className="mr-2 h-5 w-5" />
+                Call: +91 98765 43210
+              </Button>
+            </a>
+            <a href="https://wa.me/919876543210">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp Booking
+              </Button>
+            </a>
+          </div>
+
+          <p class="text-center text-sm text-green-100 mt-4">
+            Professional drivers • Premium EVs • Fixed pricing • 24/7 service
+          </p>
+        </Card>
+      </section>
+
+      <!-- Review Widget -->
+      <ReviewWidget variant="full" />
+
+    </article>
+  </div>
+</MainLayout>

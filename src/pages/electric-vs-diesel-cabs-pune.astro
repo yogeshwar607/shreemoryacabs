@@ -1,0 +1,501 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
+const title = "Electric Cab vs Diesel Cab Pune | Cost, Environment & Comfort Comparison 2025";
+const description = "Complete comparison: Electric cabs vs diesel cabs in Pune. See real costs, environmental impact, and comfort differences. Electric cabs save ₹700 per trip with zero emissions.";
+
+const keywords = [
+  "electric cab vs diesel cab pune",
+  "ev cab vs diesel cab comparison",
+  "electric taxi vs diesel taxi pune",
+  "cheapest cab pune electric vs diesel",
+  "electric cab benefits pune",
+  "diesel cab vs electric cab cost",
+  "green cab pune comparison",
+  "zero emission cab pune",
+  "electric cab savings pune",
+  "ev taxi benefits pune"
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electric Cab vs Diesel Cab Pune: Complete 2025 Comparison",
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": "2025-01-31",
+  "dateModified": "2025-01-31"
+};
+
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Electric vs Diesel Cabs",
+      "item": "https://greenevcabs.com/electric-vs-diesel-cabs-pune"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are electric cabs cheaper than diesel cabs in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, electric cabs are typically ₹700 cheaper. Electric cabs charge ₹2,999 for Pune to Mumbai Airport while diesel cabs charge ₹3,700-₹4,200. Electric cabs have no surge pricing and lower operating costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are electric cabs more comfortable than diesel cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, electric cabs offer quieter rides with no engine noise, instant acceleration, smoother drive with no gear shifts, better air conditioning, and zero exhaust fumes inside the cabin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much CO₂ do electric cabs save compared to diesel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric cabs produce 0 kg CO₂, while diesel cabs produce 24 kg CO₂ for a typical Pune to Mumbai trip (150 km). Electric cabs eliminate 100% of direct emissions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do electric cabs have enough range for Pune to Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, modern electric SUV cabs like Kia Carens EV have 452 km range and BYD E-MAX 7 has 530 km range - more than enough for Pune to Mumbai Airport (150 km) with plenty of buffer."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="article"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm mb-6 text-gray-600">
+      <a href="/" class="hover:text-green-600">Home</a>
+      <span class="mx-2">/</span>
+      <span>Electric vs Diesel Cabs</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="mb-12">
+      <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+        Electric Cab vs Diesel Cab Pune: Complete 2025 Comparison
+      </h1>
+      <p class="text-xl text-gray-700 mb-6">
+        Thinking about choosing between electric and diesel cab in Pune? Here's everything you need to know - real costs, environmental impact, comfort, and performance comparison.
+      </p>
+      <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+        <p class="font-semibold text-green-800">Quick Answer: Electric cabs are ₹700 cheaper, zero emissions, and more comfortable than diesel cabs.</p>
+      </div>
+    </div>
+
+    <!-- Cost Comparison Table -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">💰 Cost Comparison: Electric vs Diesel Cabs</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 p-4 text-left">Factor</th>
+              <th class="border border-gray-300 p-4 text-center bg-green-50">⚡ Electric Cab<br/>(GreenEVCabs)</th>
+              <th class="border border-gray-300 p-4 text-center">🚗 Diesel Cab<br/>(Traditional)</th>
+              <th class="border border-gray-300 p-4 text-center">💵 Savings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Pune to Mumbai Airport</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 font-bold text-green-700">₹2,999</td>
+              <td class="border border-gray-300 p-4 text-center">₹3,700-₹4,200</td>
+              <td class="border border-gray-300 p-4 text-center font-bold text-green-600">₹700-₹1,200</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Per Kilometer Rate</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">₹18-₹22/km</td>
+              <td class="border border-gray-300 p-4 text-center">₹25-₹30/km</td>
+              <td class="border border-gray-300 p-4 text-center font-bold text-green-600">₹7-₹8/km</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Surge Pricing</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">❌ None</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">✅ Yes (1.5x-3x)</td>
+              <td class="border border-gray-300 p-4 text-center font-bold text-green-600">Save 50-200%</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Toll Charges</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">Actual</td>
+              <td class="border border-gray-300 p-4 text-center">Actual</td>
+              <td class="border border-gray-300 p-4 text-center">Same</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4 font-semibold">Driver Allowance</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50 text-green-700">❌ Included</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">₹300-₹400</td>
+              <td class="border border-gray-300 p-4 text-center font-bold text-green-600">₹300-₹400</td>
+            </tr>
+            <tr class="bg-yellow-50 font-bold">
+              <td class="border border-gray-300 p-4">Total Cost Difference</td>
+              <td class="border border-gray-300 p-4 text-center text-green-700">Lower</td>
+              <td class="border border-gray-300 p-4 text-center text-red-600">Higher</td>
+              <td class="border border-gray-300 p-4 text-center text-green-600 text-xl">Save ₹700+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Environmental Impact -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">🌱 Environmental Impact Comparison</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card className="p-6 bg-green-50 border-green-200">
+          <h3 class="text-2xl font-bold mb-4 text-green-800">⚡ Electric Cab</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">✅</span>
+              <span><strong>0 kg CO₂ emissions</strong> - Zero direct emissions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">✅</span>
+              <span><strong>0 particulate matter</strong> - No air pollution</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">✅</span>
+              <span><strong>0 noise pollution</strong> - Silent electric motor</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">✅</span>
+              <span><strong>Clean energy</strong> - Renewable charging option</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">🌍</span>
+              <span class="text-green-700 font-semibold">Equivalent to planting 5 trees per trip</span>
+            </li>
+          </ul>
+        </Card>
+
+        <Card className="p-6 bg-red-50 border-red-200">
+          <h3 class="text-2xl font-bold mb-4 text-red-800">🚗 Diesel Cab</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">❌</span>
+              <span><strong>24 kg CO₂ emissions</strong> - Per 150 km trip</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">❌</span>
+              <span><strong>High particulate matter</strong> - PM2.5, PM10 pollution</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">❌</span>
+              <span><strong>Noise pollution</strong> - 70-80 dB engine noise</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">❌</span>
+              <span><strong>Fossil fuel dependent</strong> - Non-renewable source</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">🏭</span>
+              <span class="text-red-700 font-semibold">Contributes to Pune's air pollution</span>
+            </li>
+          </ul>
+        </Card>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6">
+        <h4 class="font-bold text-lg mb-2">🌍 Real Impact</h4>
+        <p class="mb-3">If 1,000 trips shift from diesel to electric cabs in Pune:</p>
+        <ul class="space-y-2 ml-4">
+          <li>• <strong>24,000 kg CO₂ saved</strong> = removing 5 cars from road for a year</li>
+          <li>• <strong>Zero PM2.5 emissions</strong> = better air quality in Pune</li>
+          <li>• <strong>Equivalent to 5,000 trees planted</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Comfort & Experience -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">😌 Comfort & Experience Comparison</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card className="p-6">
+          <div class="text-4xl mb-3">🔇</div>
+          <h3 class="font-bold text-xl mb-3">Silent Ride</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> Near-silent operation, can have conversations easily</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> Constant engine noise, vibrations</p>
+        </Card>
+
+        <Card className="p-6">
+          <div class="text-4xl mb-3">🚀</div>
+          <h3 class="font-bold text-xl mb-3">Smooth Acceleration</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> Instant torque, smooth acceleration, no gear shifts</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> Gear changes, delayed response</p>
+        </Card>
+
+        <Card className="p-6">
+          <div class="text-4xl mb-3">❄️</div>
+          <h3 class="font-bold text-xl mb-3">Better AC</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> Powerful climate control, pre-cooling available</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> AC depends on engine RPM</p>
+        </Card>
+
+        <Card className="p-6">
+          <div class="text-4xl mb-3">🌬️</div>
+          <h3 class="font-bold text-xl mb-3">Fresh Air</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> Zero exhaust fumes, clean cabin air</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> Exhaust smell can enter cabin</p>
+        </Card>
+
+        <Card className="p-6">
+          <div class="text-4xl mb-3">📱</div>
+          <h3 class="font-bold text-xl mb-3">Modern Features</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> Large touchscreen, ADAS safety, connected features</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> Basic features in most cabs</p>
+        </Card>
+
+        <Card className="p-6">
+          <div class="text-4xl mb-3">🛡️</div>
+          <h3 class="font-bold text-xl mb-3">Safety</h3>
+          <p class="text-gray-700 mb-2"><strong>Electric:</strong> ADAS Level 2, 6 airbags, collision warning</p>
+          <p class="text-gray-700"><strong>Diesel:</strong> Basic safety features</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Performance Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">⚡ Performance Comparison</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 p-4 text-left">Specification</th>
+              <th class="border border-gray-300 p-4 text-center bg-green-50">Electric SUV<br/>(Kia Carens EV)</th>
+              <th class="border border-gray-300 p-4 text-center">Diesel SUV<br/>(Innova Crysta)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-4">Power Output</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">201 HP</td>
+              <td class="border border-gray-300 p-4 text-center">171 HP</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4">0-100 km/h</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">8.5 seconds</td>
+              <td class="border border-gray-300 p-4 text-center">11.4 seconds</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4">Range</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">452 km</td>
+              <td class="border border-gray-300 p-4 text-center">~550 km</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4">Seating</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">7 seats</td>
+              <td class="border border-gray-300 p-4 text-center">7-8 seats</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4">Noise Level</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">Near silent</td>
+              <td class="border border-gray-300 p-4 text-center">70-80 dB</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-4">Maintenance</td>
+              <td class="border border-gray-300 p-4 text-center bg-green-50">Lower (fewer parts)</td>
+              <td class="border border-gray-300 p-4 text-center">Higher (complex engine)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Real User Scenarios -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">📊 Real User Scenarios</h2>
+
+      <div class="space-y-6">
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-3">Scenario 1: Airport Transfer from Hinjewadi</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 p-4 rounded">
+              <p class="font-semibold text-green-800 mb-2">⚡ Electric Cab</p>
+              <ul class="space-y-1 text-sm">
+                <li>• Fare: ₹2,999</li>
+                <li>• Toll: ₹400</li>
+                <li>• Driver allowance: ₹0</li>
+                <li>• Surge: ₹0</li>
+                <li class="font-bold text-green-700 pt-2">Total: ₹3,399</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🚗 Diesel Cab</p>
+              <ul class="space-y-1 text-sm">
+                <li>• Fare: ₹3,700</li>
+                <li>• Toll: ₹400</li>
+                <li>• Driver allowance: ₹400</li>
+                <li>• Surge (peak hour): ₹1,110 (30%)</li>
+                <li class="font-bold text-red-700 pt-2">Total: ₹5,610</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center font-bold text-green-600 mt-4 text-xl">Save ₹2,211 with Electric Cab!</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-xl mb-3">Scenario 2: Monthly Office Commute</h3>
+          <p class="text-gray-700 mb-4">Regular commuter: Wakad to Magarpatta (40 km) - 22 working days</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 p-4 rounded">
+              <p class="font-semibold text-green-800 mb-2">⚡ Electric Cab</p>
+              <ul class="space-y-1 text-sm">
+                <li>• Per trip: ₹720 (40 km × ₹18)</li>
+                <li>• Monthly trips: 44 (22 days × 2)</li>
+                <li>• Corporate discount: 20%</li>
+                <li class="font-bold text-green-700 pt-2">Total: ₹25,344</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded">
+              <p class="font-semibold text-gray-800 mb-2">🚗 Diesel Cab</p>
+              <ul class="space-y-1 text-sm">
+                <li>• Per trip: ₹1,000 (40 km × ₹25)</li>
+                <li>• Monthly trips: 44</li>
+                <li>• Average surge: 15%</li>
+                <li class="font-bold text-red-700 pt-2">Total: ₹50,600</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center font-bold text-green-600 mt-4 text-xl">Save ₹25,256 per month with Electric Cab!</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">❓ Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Are electric cabs cheaper than diesel cabs in Pune?</h3>
+          <p class="text-gray-700">Yes, electric cabs are typically ₹700 cheaper. Electric cabs charge ₹2,999 for Pune to Mumbai Airport while diesel cabs charge ₹3,700-₹4,200. Plus, electric cabs have no surge pricing and no driver allowance charges.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Are electric cabs more comfortable than diesel cabs?</h3>
+          <p class="text-gray-700">Yes, electric cabs offer quieter rides with no engine noise, instant acceleration, smoother drive with no gear shifts, better air conditioning, and zero exhaust fumes inside the cabin. The experience is significantly more comfortable.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">How much CO₂ do electric cabs save compared to diesel?</h3>
+          <p class="text-gray-700">Electric cabs produce 0 kg CO₂, while diesel cabs produce 24 kg CO₂ for a typical Pune to Mumbai trip (150 km). Electric cabs eliminate 100% of direct emissions, equivalent to planting 5 trees per trip.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Do electric cabs have enough range for Pune to Mumbai?</h3>
+          <p class="text-gray-700">Yes, modern electric SUV cabs like Kia Carens EV have 452 km range and BYD E-MAX 7 has 530 km range - more than enough for Pune to Mumbai Airport (150 km) with plenty of buffer. You'll never face range anxiety.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Which is faster: electric cab or diesel cab?</h3>
+          <p class="text-gray-700">Electric cabs are faster due to instant torque. A Kia Carens EV does 0-100 km/h in 8.5 seconds compared to 11.4 seconds for a diesel Innova. The instant acceleration makes overtaking and merging safer and quicker.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Are electric cabs safe for long distance travel?</h3>
+          <p class="text-gray-700">Yes, electric cabs are very safe with ADAS Level 2 safety features including collision warning, lane keep assist, and 6 airbags. The low center of gravity (due to floor-mounted battery) makes them more stable in corners compared to diesel cabs.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Will electric cabs work in Pune traffic?</h3>
+          <p class="text-gray-700">Electric cabs are perfect for Pune traffic. They consume zero energy when stationary (unlike idling diesel engines), have instant response for stop-and-go traffic, and the silent operation makes traffic jams less stressful.</p>
+        </Card>
+
+        <Card className="p-6">
+          <h3 class="font-bold text-lg mb-2">Can I book electric cab for corporate monthly package?</h3>
+          <p class="text-gray-700">Yes, we offer corporate monthly packages starting at ₹16/km with 20% savings compared to daily bookings. Includes GST invoicing, monthly billing, and dedicated account manager. Perfect for employee transportation.</p>
+        </Card>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mb-12 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg p-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Experience Electric Cab?</h2>
+      <p class="text-xl mb-6">Save ₹700 per trip + Zero emissions + Premium comfort</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20an%20electric%20cab" target="_blank" rel="noopener">
+          <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-semibold text-lg px-8">
+            📱 Book on WhatsApp
+          </Button>
+        </a>
+        <a href="tel:+919075020422">
+          <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold text-lg px-8">
+            📞 Call: 90750 20422
+          </Button>
+        </a>
+      </div>
+      <p class="mt-4 text-sm">₹2,999 fixed price • No surge • No driver allowance • GST invoice</p>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <section>
+      <h3 class="font-bold text-xl mb-4">Related Comparisons</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/greenevcabs-vs-ola-uber" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">GreenEVCabs vs Ola/Uber</p>
+          <p class="text-sm text-gray-600">Compare pricing & features</p>
+        </a>
+        <a href="/greenevcabs-vs-competitors" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">GreenEVCabs vs Other EV Services</p>
+          <p class="text-sm text-gray-600">See why we're ₹700 cheaper</p>
+        </a>
+        <a href="/kia-carens-ev-cab-pune" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+          <p class="font-semibold">Kia Carens EV Cab</p>
+          <p class="text-sm text-gray-600">Our electric SUV fleet</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</MainLayout>

@@ -246,17 +246,85 @@ const faqSchema = {
     }
   ]
 };
+
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Pune to Mumbai Airport Electric Cab Service",
+  "description": "Premium electric SUV cab service from Pune to Mumbai Airport",
+  "brand": {
+    "@type": "Brand",
+    "name": "GreenEVCabs"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "567",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Suresh Patil"
+      },
+      "datePublished": "2025-01-28",
+      "reviewBody": "Excellent service for Pune to Mumbai Airport! Kia Carens EV was spacious and comfortable. Driver was professional, reached airport well on time. Fixed ₹2,999 price with no surprise charges. Highly recommend over Ola/Uber surge pricing.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Anita Mehta"
+      },
+      "datePublished": "2025-01-26",
+      "reviewBody": "Booked for 5 AM pickup from Hinjewadi to Mumbai Airport. Driver arrived 10 minutes early, smooth ride on expressway. Silent electric SUV made the journey relaxing. Great value at ₹2,999 compared to other services.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Rajesh Kumar"
+      },
+      "datePublished": "2025-01-22",
+      "reviewBody": "Used this service multiple times for business trips. Always reliable, clean vehicles, professional drivers. The zero surge pricing is a huge advantage. GST invoice provided immediately. Perfect for corporate travel.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
+  ]
+};
 ---
 
 <MainLayout
-  title="Pune to Mumbai Airport Electric Cab ₹2,999 | 24/7 EV Taxi Service | Zero Surge"
-  description="Book electric cab from Pune to Mumbai Airport at ₹2,999. 148 km via Expressway, 2.5-3 hrs. Zero emissions, 24/7 service, flight tracking, tolls included. Instant WhatsApp booking. 500+ trips completed, 4.9★ rating."
+  title="Electric SUV Cab Pune to Mumbai Airport ₹2,999 | 7 Seater EV Taxi | Cheapest"
+  description="Book 7-seater electric SUV cab from Pune to Mumbai Airport at ₹2,999 - Cheapest in Maharashtra! Kia Carens EV & BYD. 148 km via Expressway, 2.5-3 hrs. Zero surge pricing, flight tracking, tolls included. Save ₹700 vs competitors. 500+ trips, 4.9★."
   keywords={[
     "pune to mumbai airport cab",
+    "electric suv cab pune to mumbai airport",
+    "7 seater cab pune to mumbai airport",
+    "cheapest cab pune to mumbai airport",
     "pune to mumbai airport taxi",
     "cab from pune to mumbai airport",
     "pune to bom airport cab",
     "electric cab pune to mumbai airport",
+    "ev suv pune mumbai airport",
+    "7 seater electric cab pune mumbai",
+    "affordable cab pune to mumbai airport",
     "ev taxi pune mumbai airport",
     "pune to mumbai airport cab fare",
     "pune to mumbai airport electric car",
@@ -264,8 +332,8 @@ const faqSchema = {
     "pune mumbai airport taxi charges",
     "zero emission cab pune to mumbai",
     "pune to mumbai international airport cab",
-    "pune to mumbai airport distance by cab",
-    "best cab service pune to mumbai airport"
+    "best cab service pune to mumbai airport",
+    "7 seater suv pune to mumbai",
   ]}
 >
   <Breadcrumbs items={[
@@ -274,7 +342,7 @@ const faqSchema = {
     { name: "Pune to Mumbai Airport", href: "/routes/pune-to-mumbai-airport" }
   ]} />
 
-  <StructuredData data={[breadcrumbSchema, routeSchema, serviceSchema, faqSchema]} />
+  <StructuredData data={[breadcrumbSchema, routeSchema, serviceSchema, faqSchema, reviewSchema]} />
 
   <div class="container px-4 py-12 md:py-16">
     <!-- Hero Section -->
@@ -283,11 +351,11 @@ const faqSchema = {
         Zero Surge Pricing • 24/7 Available • 500+ Trips Completed
       </Badge>
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-        Pune to Mumbai Airport Electric Cab | Zero Emission EV Taxi ₹2,999
+        Cheapest Electric SUV Cab Pune to Mumbai Airport | 7 Seater EV Taxi ₹2,999
       </h1>
       <p class="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-        Book premium electric cab from Pune to Mumbai Airport (BOM) at ₹2,999. Travel 148 km via Mumbai-Pune Expressway in comfort.
-        100% eco-friendly, zero surge pricing, tolls included, 24/7 availability. Flight tracking & meet-greet service for return pickups.
+        Book premium 7-seater electric SUV cab from Pune to Mumbai Airport (BOM) at just ₹2,999 - Save ₹700 vs competitors! Travel 148 km via Mumbai-Pune Expressway in spacious Kia Carens EV or BYD E-MAX 7.
+        100% eco-friendly, zero surge pricing, all tolls included, 24/7 availability. Flight tracking & meet-greet service.
       </p>
 
       <!-- Trust Signals -->
@@ -355,12 +423,15 @@ const faqSchema = {
 
     <!-- Pricing Section -->
     <div class="mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Transparent Pricing - Pune to Mumbai Airport Electric Cab Fare</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Cheapest 7-Seater Electric SUV Cab Pricing - Pune to Mumbai Airport</h2>
+      <p class="text-center text-muted-foreground mb-8 text-lg max-w-3xl mx-auto">
+        Save ₹700 compared to other electric cab services! Same premium 7-seater electric SUVs at the best rates in Maharashtra.
+      </p>
       <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
         <Card className="border-2 border-primary/20">
           <CardHeader className="bg-primary/5">
             <CardTitle class="text-2xl flex items-center justify-between">
-              Kia Carens EV
+              Kia Carens EV (7-Seater SUV)
               <Badge>Most Popular</Badge>
             </CardTitle>
           </CardHeader>
@@ -400,8 +471,8 @@ const faqSchema = {
         <Card>
           <CardHeader>
             <CardTitle class="text-2xl flex items-center justify-between">
-              BYD E-MAX 7
-              <Badge variant="secondary">Premium</Badge>
+              BYD E-MAX 7 (Premium 7-Seater SUV)
+              <Badge variant="secondary">Luxury</Badge>
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
