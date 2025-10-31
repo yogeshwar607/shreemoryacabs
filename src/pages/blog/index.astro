@@ -1,0 +1,297 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+
+const title = "GreenEVCabs Blog | Electric Cab Guides, Tips & Travel Stories";
+const description = "Expert guides on electric cab travel in Pune and Mumbai. Get tips on bookings, route planning, EV technology, cost comparisons, and sustainable transportation in Maharashtra.";
+
+const keywords = [
+  "electric cab blog pune",
+  "ev cab travel guides",
+  "pune mumbai cab tips",
+  "electric vehicle travel",
+  "green transportation blog",
+  "ev cab booking tips",
+  "sustainable travel pune",
+  "electric taxi guides"
+];
+
+// Define blog posts with metadata
+const blogPosts = [
+  {
+    title: "How to Book Electric Cab from Pune to Mumbai Airport (2025 Complete Guide)",
+    slug: "how-to-book-electric-cab-pune-mumbai-airport",
+    description: "Complete step-by-step guide to booking electric cab from Pune to Mumbai Airport. Learn booking methods, best timing, pricing, what to expect, and pro tips.",
+    date: "2025-01-31",
+    category: "Travel Guide",
+    readTime: "8 min read"
+  },
+  {
+    title: "Electric vs Diesel Cab Cost Comparison 2025: Real Numbers Revealed",
+    slug: "electric-vs-diesel-cab-cost-comparison-2025",
+    description: "Detailed cost comparison between electric and diesel cabs in 2025. Real pricing data, fuel costs, maintenance, and long-term savings analysis.",
+    date: "2025-01-31",
+    category: "Cost Analysis",
+    readTime: "6 min read"
+  },
+  {
+    title: "Pune to Mumbai Airport Cab Cost: Real Prices You'll Actually Pay (2025)",
+    slug: "pune-mumbai-cab-cost-real-prices",
+    description: "Honest breakdown of actual cab costs from Pune to Mumbai Airport. No hidden fees, real pricing, toll charges, and money-saving tips for 2025.",
+    date: "2025-01-31",
+    category: "Pricing",
+    readTime: "7 min read"
+  },
+  {
+    title: "Best Time to Travel from Pune to Mumbai Airport: Traffic & Timing Guide",
+    slug: "best-time-travel-pune-mumbai-airport-traffic",
+    description: "Complete traffic analysis and timing guide for Pune-Mumbai airport travel. Learn peak hours, best departure times, and how to avoid delays.",
+    date: "2025-01-31",
+    category: "Travel Planning",
+    readTime: "10 min read"
+  },
+  {
+    title: "EV Range Explained: Will Your Electric Cab Make It to Mumbai Airport?",
+    slug: "ev-range-explained-will-cab-make-it",
+    description: "Understanding electric vehicle range for Pune-Mumbai trips. Real-world EV performance, charging needs, and range anxiety solutions explained.",
+    date: "2025-01-31",
+    category: "EV Technology",
+    readTime: "9 min read"
+  },
+  {
+    title: "Kia Carens EV vs BYD eMAX 7: Which Electric Cab is Right for You?",
+    slug: "kia-carens-ev-vs-byd-emax-7-comparison",
+    description: "Detailed comparison of Kia Carens EV and BYD eMAX 7 for long-distance cab travel. Features, comfort, range, and pricing analysis.",
+    date: "2025-01-31",
+    category: "Vehicle Comparison",
+    readTime: "12 min read"
+  },
+  {
+    title: "5-Seater vs 7-Seater Electric Cab: Complete Selection Guide 2025",
+    slug: "5-seater-vs-7-seater-electric-cab-guide",
+    description: "Choosing between 5-seater and 7-seater electric cab? Compare pricing, comfort, luggage space, and find the perfect fit for your trip.",
+    date: "2025-01-31",
+    category: "Vehicle Guide",
+    readTime: "8 min read"
+  },
+  {
+    title: "Pune to Mumbai: Train vs Bus vs Cab - Complete Comparison 2025",
+    slug: "pune-mumbai-train-vs-bus-vs-cab-comparison",
+    description: "Comprehensive comparison of train, bus, and cab travel from Pune to Mumbai. Cost, comfort, convenience, and time analysis for airport trips.",
+    date: "2025-01-31",
+    category: "Travel Comparison",
+    readTime: "11 min read"
+  },
+  {
+    title: "Navi Mumbai Airport to Pune: Complete Travel Guide 2025",
+    slug: "navi-mumbai-airport-pune-complete-guide",
+    description: "Everything you need to know about traveling from Navi Mumbai Airport to Pune. Routes, timing, costs, and booking tips.",
+    date: "2025-01-31",
+    category: "Route Guide",
+    readTime: "9 min read"
+  },
+  {
+    title: "Mumbai Airport Terminal Guide for Pune Travelers (2025 Update)",
+    slug: "mumbai-airport-terminal-guide-pune-travelers",
+    description: "Complete guide to Mumbai Airport terminals for Pune travelers. Terminal layout, facilities, pick-up points, and navigation tips.",
+    date: "2025-01-31",
+    category: "Airport Guide",
+    readTime: "7 min read"
+  },
+  {
+    title: "Best Rest Stops on Pune-Mumbai Expressway: 2025 Complete Guide",
+    slug: "best-rest-stops-pune-mumbai-expressway",
+    description: "Guide to rest stops and facilities on Pune-Mumbai Expressway. Food courts, washrooms, charging stations, and emergency services.",
+    date: "2025-01-31",
+    category: "Travel Tips",
+    readTime: "8 min read"
+  },
+  {
+    title: "EV Charging Infrastructure: Pune-Mumbai Corridor 2025 Status",
+    slug: "ev-charging-pune-mumbai-corridor-2025",
+    description: "Complete overview of EV charging infrastructure on Pune-Mumbai route. Charging station locations, speeds, and future developments.",
+    date: "2025-01-31",
+    category: "Infrastructure",
+    readTime: "9 min read"
+  },
+  {
+    title: "Carbon Footprint of Cab Travel: Pune-Mumbai Route Analysis",
+    slug: "carbon-footprint-cab-travel-pune-mumbai",
+    description: "Environmental impact analysis of cab travel between Pune and Mumbai. Compare electric vs diesel carbon emissions and eco-friendly options.",
+    date: "2025-01-31",
+    category: "Sustainability",
+    readTime: "7 min read"
+  },
+  {
+    title: "Maharashtra EV Regulations for Cabs: 2025 Complete Guide",
+    slug: "maharashtra-ev-regulations-cab-guide-2025",
+    description: "Understanding Maharashtra's EV regulations for commercial cabs. Licensing, subsidies, incentives, and compliance requirements for 2025.",
+    date: "2025-01-31",
+    category: "Regulations",
+    readTime: "6 min read"
+  },
+  {
+    title: "Weekend Getaways from Pune by Electric Cab (2025 Edition)",
+    slug: "weekend-getaways-pune-ev-cab-2025",
+    description: "Best weekend destinations from Pune accessible by electric cab. Range-friendly routes, charging options, and travel itineraries.",
+    date: "2025-01-31",
+    category: "Travel Ideas",
+    readTime: "10 min read"
+  },
+  {
+    title: "Safety Guide: Electric Cab Travel from Pune to Mumbai Airport",
+    slug: "safety-guide-electric-cab-pune-mumbai-airport",
+    description: "Complete safety guide for electric cab travel between Pune and Mumbai Airport. Driver verification, emergency procedures, and travel tips.",
+    date: "2025-01-31",
+    category: "Safety",
+    readTime: "11 min read"
+  }
+];
+
+// Sort by date (newest first)
+const sortedPosts = blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+// Get unique categories
+const categories = [...new Set(blogPosts.map(post => post.category))];
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "GreenEVCabs Blog",
+  "description": description,
+  "url": "https://greenevcabs.com/blog",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://greenevcabs.com/blog"
+    }
+  ]
+};
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  ogType="website"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(blogSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="container mx-auto px-4 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm mb-6 text-gray-600">
+      <a href="/" class="hover:text-green-600">Home</a>
+      <span class="mx-2">/</span>
+      <span>Blog</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        GreenEVCabs Blog
+      </h1>
+      <p class="text-xl text-gray-600">
+        Expert guides, tips, and insights on electric cab travel in Pune and Mumbai.
+        Learn everything about booking, routes, pricing, and sustainable transportation.
+      </p>
+    </div>
+
+    <!-- Categories Filter -->
+    <div class="mb-8">
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Browse by Category:</h2>
+      <div class="flex flex-wrap gap-2">
+        <Badge variant="outline" className="cursor-pointer hover:bg-green-100">
+          All Posts
+        </Badge>
+        {categories.map(category => (
+          <Badge variant="outline" className="cursor-pointer hover:bg-green-100">
+            {category}
+          </Badge>
+        ))}
+      </div>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      {sortedPosts.map(post => (
+        <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <a href={`/blog/${post.slug}`} class="block">
+            <div class="p-6">
+              <Badge className="mb-3">{post.category}</Badge>
+              <h2 class="text-xl font-bold mb-3 leading-tight hover:text-green-600 transition-colors">
+                {post.title}
+              </h2>
+              <p class="text-gray-600 mb-4 line-clamp-3">
+                {post.description}
+              </p>
+              <div class="flex items-center justify-between text-sm text-gray-500">
+                <time datetime={post.date}>
+                  {new Date(post.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+                <span>{post.readTime}</span>
+              </div>
+            </div>
+          </a>
+        </Card>
+      ))}
+    </div>
+
+    <!-- CTA Section -->
+    <Card className="bg-gradient-to-r from-green-50 to-blue-50 p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
+      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+        Experience comfortable, eco-friendly travel from Pune to Mumbai Airport.
+        Book your ride with GreenEVCabs today and enjoy a sustainable journey.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button size="lg" className="bg-green-600 hover:bg-green-700">
+          <a href="tel:+919834005007" class="flex items-center gap-2">
+            📞 Call: +91 98340 05007
+          </a>
+        </Button>
+        <Button size="lg" variant="outline">
+          <a href="/routes" class="flex items-center gap-2">
+            View Routes & Pricing
+          </a>
+        </Button>
+      </div>
+    </Card>
+
+    <!-- Newsletter Section (Optional) -->
+    <div class="mt-12 text-center max-w-2xl mx-auto">
+      <h3 class="text-xl font-bold mb-3">Stay Updated</h3>
+      <p class="text-gray-600 mb-4">
+        Get the latest guides, tips, and travel stories delivered to your inbox.
+      </p>
+      <!-- Add newsletter form here if you have one -->
+    </div>
+  </div>
+</MainLayout>
