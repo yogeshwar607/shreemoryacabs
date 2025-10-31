@@ -14,7 +14,7 @@ export function generateLocalBusinessSchema() {
     image: `${SITE_URL}/og-image.jpg`,
     url: SITE_URL,
     telephone: '+917498264215',
-    email: 'info@greenevcabs.com',
+    email: 'greenevcabs@gmail.com',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -167,7 +167,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+917498264215',
       contactType: 'Customer Service',
-      email: 'info@greenevcabs.com',
+      email: 'greenevcabs@gmail.com',
       availableLanguage: ['English', 'Hindi', 'Marathi'],
     },
     address: {

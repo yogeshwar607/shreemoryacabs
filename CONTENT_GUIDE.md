@@ -120,7 +120,7 @@ Add new route to appropriate airport section:
 ```json
 "contact": {
   "phone": "+91 74982 64215",      // ← Update phone
-  "email": "info@greenevcabs.com", // ← Update email
+  "email": "greenevcabs@gmail.com", // ← Update email
   "whatsapp": "917498264215"       // ← Update WhatsApp number
 }
 ```
