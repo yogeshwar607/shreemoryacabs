@@ -53,8 +53,13 @@ const vehicleSchemas = vehicles.map((vehicle) => generateVehicleSchema(vehicle))
           <Card className="overflow-hidden">
             <div class="grid md:grid-cols-2 gap-6">
               <!-- Image -->
-              <div class="aspect-video md:aspect-auto bg-muted flex items-center justify-center" role="img" aria-label={`${vehicle.name} - ${vehicle.tagline}`}>
-                <span class="text-6xl" aria-hidden="true">🚗</span>
+              <div class="aspect-video md:aspect-auto bg-muted overflow-hidden">
+                <img
+                  src={vehicle.image}
+                  alt={`${vehicle.name} - ${vehicle.tagline}`}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
 
               <!-- Content -->
