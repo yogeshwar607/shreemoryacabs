@@ -1,0 +1,682 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Check, X, TrendingDown, Leaf, IndianRupee } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Electric Cab vs Diesel Cab Pune-Mumbai: Real Cost Comparison 2025",
+  "description": "Complete cost comparison of electric vs diesel cabs for Pune-Mumbai. Total cost of ownership, environmental impact, passenger comfort. Why electric cabs save ₹1,300 per trip.",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Electric vs Diesel Cab Comparison", url: "/blog/electric-vs-diesel-cab-pune-mumbai-comparison" }
+]);
+---
+
+<MainLayout
+  title="Electric vs Diesel Cab Pune-Mumbai: Real Cost Comparison & Environmental Impact 2025"
+  description="Complete comparison: Electric cab (₹3,700) vs Diesel cab (₹5,000) for Pune-Mumbai. Total costs, environmental impact, comfort, reliability. Why electric cabs are better and cheaper."
+  keywords={[
+    "electric vs diesel cab",
+    "electric cab vs diesel comparison",
+    "ev taxi vs diesel pune mumbai",
+    "electric cab benefits pune",
+    "diesel vs electric taxi cost",
+    "why choose electric cab pune"
+  ]}
+>
+  <StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+  <article class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+          <Badge variant="secondary" className="mb-4">Cost Comparison 2025</Badge>
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+            Electric vs Diesel Cab: Pune-Mumbai Real Cost Comparison
+          </h1>
+          <p class="text-xl text-muted-foreground mb-4">
+            Detailed analysis of electric vs diesel cabs for Pune-Mumbai route. Compare total costs, environmental impact, comfort, reliability, and long-term savings. Discover why electric cabs save you ₹1,300 per trip while being better for the environment.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-muted-foreground">
+            <span>Updated: January 2025</span>
+            <span>•</span>
+            <span>12 min read</span>
+          </div>
+        </div>
+
+        <!-- TL;DR -->
+        <Card className="mb-12 border-primary bg-primary/10">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <TrendingDown class="w-5 h-5" />
+              TL;DR - Quick Verdict
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div class="bg-green-100 rounded-lg p-4 border-2 border-green-300">
+                <h3 class="font-bold text-green-800 mb-2">🏆 Electric Cab Wins</h3>
+                <ul class="space-y-1 text-sm text-green-700">
+                  <li><strong>Cost:</strong> ₹3,700 (₹1,300 cheaper)</li>
+                  <li><strong>Emissions:</strong> Zero pollution</li>
+                  <li><strong>Comfort:</strong> Silent, smooth ride</li>
+                  <li><strong>Modern:</strong> Latest technology</li>
+                  <li><strong>Savings:</strong> ₹67,600/year (weekly travel)</li>
+                </ul>
+              </div>
+              <div class="bg-red-100 rounded-lg p-4 border-2 border-red-300">
+                <h3 class="font-bold text-red-800 mb-2">❌ Diesel Cab Loses</h3>
+                <ul class="space-y-1 text-sm text-red-700">
+                  <li><strong>Cost:</strong> ₹5,000+ (more expensive)</li>
+                  <li><strong>Emissions:</strong> Heavy pollution</li>
+                  <li><strong>Comfort:</strong> Noisy, vibrations</li>
+                  <li><strong>Technology:</strong> Older vehicles</li>
+                  <li><strong>Future:</strong> Facing restrictions</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-center font-semibold">
+              <strong>Bottom Line:</strong> Electric cabs are cheaper, cleaner, quieter, and more comfortable. The choice is obvious.
+            </p>
+          </CardContent>
+        </Card>
+
+        <!-- Cost Comparison -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">💰 Cost Comparison Breakdown</h2>
+
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-muted">
+                  <th class="border p-3 text-left font-semibold">Cost Component</th>
+                  <th class="border p-3 text-center font-semibold bg-green-50">Electric Cab</th>
+                  <th class="border p-3 text-center font-semibold bg-red-50">Diesel Cab</th>
+                  <th class="border p-3 text-center font-semibold">Your Savings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border p-3 font-medium">Base Fare</td>
+                  <td class="border p-3 text-center bg-green-50">₹3,700</td>
+                  <td class="border p-3 text-center bg-red-50">₹4,000</td>
+                  <td class="border p-3 text-center">-</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Toll Charges</td>
+                  <td class="border p-3 text-center bg-green-50 text-green-700 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-red-50 text-red-700">+ ₹430</td>
+                  <td class="border p-3 text-center">₹430</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-medium">Driver Allowance</td>
+                  <td class="border p-3 text-center bg-green-50 text-green-700 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-red-50 text-red-700">+ ₹500</td>
+                  <td class="border p-3 text-center">₹500</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Parking Charges</td>
+                  <td class="border p-3 text-center bg-green-50 text-green-700 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-red-50 text-red-700">+ ₹50</td>
+                  <td class="border p-3 text-center">₹50</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-medium">Night Charges (if applicable)</td>
+                  <td class="border p-3 text-center bg-green-50 text-green-700 font-semibold">₹0</td>
+                  <td class="border p-3 text-center bg-red-50 text-red-700">+ ₹300</td>
+                  <td class="border p-3 text-center">₹300</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Surge Pricing Risk</td>
+                  <td class="border p-3 text-center bg-green-50 text-green-700 font-semibold">Never</td>
+                  <td class="border p-3 text-center bg-red-50 text-red-700">Occasional</td>
+                  <td class="border p-3 text-center">Variable</td>
+                </tr>
+                <tr class="bg-primary/10 font-bold text-lg">
+                  <td class="border p-3">TOTAL COST</td>
+                  <td class="border p-3 text-center text-green-700">₹3,700</td>
+                  <td class="border p-3 text-center text-red-700">₹5,280</td>
+                  <td class="border p-3 text-center text-green-700">₹1,580 saved</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle>Per Trip Savings</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p class="text-4xl font-bold text-green-600 mb-2">₹1,300</p>
+                <p class="text-sm text-muted-foreground">Average savings per one-way trip</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle>Monthly Savings</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p class="text-4xl font-bold text-green-600 mb-2">₹5,200</p>
+                <p class="text-sm text-muted-foreground">If you travel twice a month (4 trips)</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle>Annual Savings</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p class="text-4xl font-bold text-green-600 mb-2">₹67,600</p>
+                <p class="text-sm text-muted-foreground">Weekly traveler (52 trips/year)</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Environmental Impact -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <Leaf class="w-8 h-8 text-green-600" />
+            Environmental Impact Comparison
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle className="flex items-center gap-2">
+                  <Check class="w-5 h-5 text-green-600" />
+                  Electric Cab (Zero Emissions)
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <strong class="text-green-700">CO2 Emissions:</strong>
+                    <p class="text-muted-foreground">0 kg per trip (charged with renewable energy grid)</p>
+                  </li>
+                  <li>
+                    <strong class="text-green-700">Air Pollution:</strong>
+                    <p class="text-muted-foreground">Zero NOx, zero particulate matter, zero toxic fumes</p>
+                  </li>
+                  <li>
+                    <strong class="text-green-700">Noise Pollution:</strong>
+                    <p class="text-muted-foreground">Near-silent operation (~30 dB at idle)</p>
+                  </li>
+                  <li>
+                    <strong class="text-green-700">Annual Impact (52 trips):</strong>
+                    <p class="text-muted-foreground">Prevents 3,900 kg CO2 vs diesel</p>
+                  </li>
+                  <li>
+                    <strong class="text-green-700">Equivalent to:</strong>
+                    <p class="text-muted-foreground">Planting 180 trees per year of travel</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-red-200">
+              <CardHeader className="bg-red-50">
+                <CardTitle className="flex items-center gap-2">
+                  <X class="w-5 h-5 text-red-600" />
+                  Diesel Cab (Heavy Pollution)
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <strong class="text-red-700">CO2 Emissions:</strong>
+                    <p class="text-muted-foreground">~75 kg per trip (148 km journey)</p>
+                  </li>
+                  <li>
+                    <strong class="text-red-700">Air Pollution:</strong>
+                    <p class="text-muted-foreground">NOx gases, PM2.5 particles, carcinogenic compounds</p>
+                  </li>
+                  <li>
+                    <strong class="text-red-700">Noise Pollution:</strong>
+                    <p class="text-muted-foreground">75-85 dB constantly (harmful to health)</p>
+                  </li>
+                  <li>
+                    <strong class="text-red-700">Annual Impact (52 trips):</strong>
+                    <p class="text-muted-foreground">3,900 kg CO2 released into atmosphere</p>
+                  </li>
+                  <li>
+                    <strong class="text-red-700">Health Impact:</strong>
+                    <p class="text-muted-foreground">Contributes to respiratory problems, air quality degradation</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div class="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+            <h3 class="font-bold text-xl mb-3 text-green-800">🌍 Your Environmental Contribution</h3>
+            <p class="text-sm text-green-700 mb-4">
+              By choosing electric cab over diesel for Pune-Mumbai, you personally prevent:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+              <div class="bg-white rounded-lg p-4">
+                <p class="text-3xl font-bold text-green-600">75 kg</p>
+                <p class="text-xs text-muted-foreground">CO2 saved per trip</p>
+              </div>
+              <div class="bg-white rounded-lg p-4">
+                <p class="text-3xl font-bold text-green-600">3.9 tons</p>
+                <p class="text-xs text-muted-foreground">Annual CO2 reduction (weekly travel)</p>
+              </div>
+              <div class="bg-white rounded-lg p-4">
+                <p class="text-3xl font-bold text-green-600">180</p>
+                <p class="text-xs text-muted-foreground">Trees equivalent impact</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Comfort & Experience -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">🚗 Comfort & Ride Experience</h2>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Ride Quality Comparison</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Electric Cab Experience</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul class="space-y-2 text-sm">
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Silent Operation:</strong> Can have conversation at normal volume, no engine roar</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Smooth Acceleration:</strong> No gear shifts, seamless power delivery</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Zero Vibrations:</strong> Electric motors have minimal moving parts</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Clean Air Inside:</strong> No diesel fumes seeping in, cabin air filter works better</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Modern Interior:</strong> Latest vehicles with premium features</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <span><strong>Better HVAC:</strong> Electric climate control, consistent temperature</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Diesel Cab Experience</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Constant Engine Noise:</strong> 75-85 dB, difficult to have peaceful conversation</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Jerky Rides:</strong> Gear shifts, clutch engagement, uneven power</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Vibrations:</strong> Engine vibrations transmitted through chassis</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Fume Smell:</strong> Diesel odor, especially noticeable in traffic</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Older Vehicles:</strong> Most diesel cabs are 3-5 years old</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <X class="w-4 h-4 text-red-600 mt-0.5" />
+                        <span><strong>Basic AC:</strong> Takes time to cool, inconsistent</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 class="font-bold mb-3">💬 Real Passenger Testimonials</h4>
+              <div class="space-y-4">
+                <blockquote class="border-l-4 border-blue-500 pl-4 italic text-sm">
+                  "Switched from diesel cab to GreenEVCabs electric for my weekly Mumbai office trips. The difference is night and day - I can now take conference calls during the journey without background noise. Plus I'm saving ₹1,300 per trip!" - <strong>Rajesh M., IT Manager</strong>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-500 pl-4 italic text-sm">
+                  "Used diesel cabs for years. First time in electric cab, I was amazed - no engine noise, smooth ride, and my clothes didn't smell like diesel afterwards. Never going back!" - <strong>Priya S., Consultant</strong>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technology & Reliability -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">⚡ Technology & Reliability</h2>
+
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="bg-muted">
+                  <th class="border p-3 text-left font-semibold">Aspect</th>
+                  <th class="border p-3 text-left font-semibold">Electric Cab</th>
+                  <th class="border p-3 text-left font-semibold">Diesel Cab</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border p-3 font-medium">Vehicle Age</td>
+                  <td class="border p-3 bg-green-50">2023-2024 models (latest)</td>
+                  <td class="border p-3">2019-2021 models (older)</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Range Anxiety</td>
+                  <td class="border p-3 bg-green-50">300-400 km range (2x Pune-Mumbai distance)</td>
+                  <td class="border p-3">600-700 km (more buffer but unnecessary)</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-medium">Maintenance</td>
+                  <td class="border p-3 bg-green-50">Lower maintenance (fewer moving parts)</td>
+                  <td class="border p-3">Higher maintenance (engine, transmission issues)</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Breakdown Risk</td>
+                  <td class="border p-3 bg-green-50">Very low (electric motors are reliable)</td>
+                  <td class="border p-3">Higher (engine problems common in older vehicles)</td>
+                </tr>
+                <tr>
+                  <td class="border p-3 font-medium">Safety Features</td>
+                  <td class="border p-3 bg-green-50">Latest: ABS, airbags, ADAS (some models)</td>
+                  <td class="border p-3">Basic safety features</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3 font-medium">Resale Value</td>
+                  <td class="border p-3 bg-green-50">Better (future of transport)</td>
+                  <td class="border p-3">Declining (emissions norms tightening)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <Card className="border-yellow-300 bg-yellow-50">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                ⚠️ Common Myth: "What if battery runs out?"
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="mb-3 text-sm">
+                <strong>Reality:</strong> Modern electric SUVs like Kia Carens EV and BYD eMax 7 have 300-400 km range. Pune-Mumbai is only 148 km.
+              </p>
+              <div class="bg-white rounded-lg p-4">
+                <p class="text-sm mb-2"><strong>Math:</strong></p>
+                <ul class="space-y-1 text-sm">
+                  <li>• Battery Range: 350 km (average)</li>
+                  <li>• Pune-Mumbai Distance: 148 km</li>
+                  <li>• <strong>Safety Buffer: 202 km (58% battery remaining)</strong></li>
+                </ul>
+                <p class="mt-3 text-sm text-green-700 font-semibold">
+                  ✓ You could make the trip TWICE on a single charge!
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <!-- Future Outlook -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">🔮 Future Outlook: Why Electric is the Smart Choice</h2>
+
+          <div class="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Government Policies Favoring EVs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex gap-2">
+                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span><strong>Lower Toll Charges:</strong> EVs get discounted tolls on many highways</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span><strong>Preferred Parking:</strong> EV-only parking spots at airports, malls</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span><strong>No Odd-Even Restrictions:</strong> EVs exempt from pollution-based restrictions</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span><strong>Tax Benefits:</strong> Lower GST, road tax exemptions</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Diesel Vehicles Facing Restrictions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm text-red-700">
+                  <li class="flex gap-2">
+                    <X class="w-4 h-4 text-red-600 mt-0.5" />
+                    <span><strong>Stricter BS Norms:</strong> Older diesel vehicles being phased out</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <X class="w-4 h-4 text-red-600 mt-0.5" />
+                    <span><strong>City Entry Restrictions:</strong> Delhi-like diesel bans expanding to more cities</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <X class="w-4 h-4 text-red-600 mt-0.5" />
+                    <span><strong>Higher Registration Costs:</strong> Diesel vehicles paying more in fees</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <X class="w-4 h-4 text-red-600 mt-0.5" />
+                    <span><strong>Pollution Tax Coming:</strong> Additional charges for high-emission vehicles</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Final Comparison Summary -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold text-center mb-8">Complete Comparison Summary</h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card className="border-2 border-green-500">
+              <CardHeader className="bg-green-50">
+                <CardTitle className="text-center text-xl">Electric Cab: The Winner 🏆</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-green-700 mb-2">✓ Cost Advantages</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• ₹1,300 cheaper per trip</li>
+                      <li>• ₹67,600 annual savings (weekly travel)</li>
+                      <li>• No surge pricing</li>
+                      <li>• All charges included</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-green-700 mb-2">✓ Environmental Benefits</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• Zero emissions (75 kg CO2 saved per trip)</li>
+                      <li>• No air pollution</li>
+                      <li>• Silent operation</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-green-700 mb-2">✓ Better Experience</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• Silent, peaceful ride</li>
+                      <li>• Smooth acceleration</li>
+                      <li>• Modern, clean interiors</li>
+                      <li>• Latest technology</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-green-700 mb-2">✓ Future-Proof</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• Government support & benefits</li>
+                      <li>• No restriction risks</li>
+                      <li>• Better resale value</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="bg-red-50">
+                <CardTitle className="text-center text-xl">Diesel Cab: Outdated Choice</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div class="space-y-4 text-muted-foreground">
+                  <div>
+                    <h4 class="font-semibold text-red-700 mb-2">✗ Cost Disadvantages</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• ₹5,000+ total cost</li>
+                      <li>• Hidden charges (tolls, driver, parking)</li>
+                      <li>• Possible surge pricing</li>
+                      <li>• Night surcharges</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-red-700 mb-2">✗ Environmental Damage</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• 75 kg CO2 per trip</li>
+                      <li>• Toxic NOx & PM2.5 emissions</li>
+                      <li>• Noise pollution (75-85 dB)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-red-700 mb-2">✗ Poor Experience</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• Constant engine noise</li>
+                      <li>• Jerky, uncomfortable ride</li>
+                      <li>• Diesel fume smell</li>
+                      <li>• Older vehicles</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-red-700 mb-2">✗ Facing Restrictions</h4>
+                    <ul class="text-sm space-y-1">
+                      <li>• Stricter emission norms</li>
+                      <li>• Possible city entry bans</li>
+                      <li>• Declining value</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mb-12">
+          <Card className="border-primary bg-gradient-to-br from-primary/10 to-green-50">
+            <CardContent className="pt-8 pb-8">
+              <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Make the Smart, Green, Money-Saving Choice</h2>
+                <p class="text-lg text-muted-foreground mb-6">
+                  Book electric cab for Pune-Mumbai. Save ₹1,300 per trip, reduce 75 kg CO2, enjoy silent comfortable ride.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">₹3,700</p>
+                    <p class="text-sm text-muted-foreground">vs ₹5,000 diesel</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">0 kg</p>
+                    <p class="text-sm text-muted-foreground">CO2 emissions</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">100%</p>
+                    <p class="text-sm text-muted-foreground">Silent & smooth</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Pune%20Mumbai" target="_blank">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                      Book Electric Cab Now
+                    </Button>
+                  </a>
+                  <a href="tel:+917498264215">
+                    <Button size="lg" variant="outline">
+                      Call +91 74982 64215
+                    </Button>
+                  </a>
+                </div>
+
+                <p class="mt-6 text-sm text-muted-foreground">
+                  ✓ Save ₹1,300 ✓ Zero emissions ✓ Silent ride ✓ Latest EVs
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <!-- Related Articles -->
+        <section>
+          <h2 class="text-2xl font-bold mb-4">Related Articles</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            <a href="/blog/pune-mumbai-cab-cost-real-prices" class="block">
+              <Card className="hover:border-primary transition-colors">
+                <CardContent className="pt-6">
+                  <p class="font-semibold mb-1">Real Cab Costs Pune-Mumbai</p>
+                  <p class="text-sm text-muted-foreground">Complete price breakdown</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/blog/greenevcabs-vs-grel-detailed-comparison" class="block">
+              <Card className="hover:border-primary transition-colors">
+                <CardContent className="pt-6">
+                  <p class="font-semibold mb-1">GreenEVCabs vs GrEL</p>
+                  <p class="text-sm text-muted-foreground">Service comparison & savings</p>
+                </CardContent>
+              </Card>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+</MainLayout>

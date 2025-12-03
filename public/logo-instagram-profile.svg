@@ -1,0 +1,44 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle (Green) -->
+  <circle cx="250" cy="250" r="240" fill="#10B981"/>
+
+  <!-- Inner Circle (White) -->
+  <circle cx="250" cy="250" r="200" fill="#FFFFFF"/>
+
+  <!-- Simplified Car Icon (Centered) -->
+  <g transform="translate(175, 180)">
+    <!-- Car Body -->
+    <path d="M 20 40 L 25 25 L 50 25 L 55 20 L 95 20 L 100 25 L 125 25 L 130 40 L 145 40 L 145 65 L 135 70 L 15 70 L 5 65 L 5 40 Z"
+          fill="#047857"/>
+
+    <!-- Windows -->
+    <rect x="55" y="28" width="35" height="15" fill="#DBEAFE" opacity="0.6" rx="2"/>
+    <rect x="95" y="28" width="25" height="15" fill="#DBEAFE" opacity="0.6" rx="2"/>
+
+    <!-- Wheels -->
+    <circle cx="40" cy="72" r="15" fill="#1F2937"/>
+    <circle cx="40" cy="72" r="7" fill="#6B7280"/>
+    <circle cx="110" cy="72" r="15" fill="#1F2937"/>
+    <circle cx="110" cy="72" r="7" fill="#6B7280"/>
+
+    <!-- Large Lightning Bolt (Electric Symbol) -->
+    <path d="M 80 40 L 70 60 L 77 60 L 65 80 L 85 58 L 78 58 Z"
+          fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Circular Text Path for "GREEN EV CABS" -->
+  <defs>
+    <path id="circlePath" d="M 250,90 A 160,160 0 1,1 249,90" fill="none"/>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#047857">
+    <textPath href="#circlePath" startOffset="15%">
+      GREEN EV CABS
+    </textPath>
+  </text>
+
+  <!-- Leaf Accent (Bottom) -->
+  <g transform="translate(230, 350)">
+    <path d="M 20 30 Q 15 15, 20 5 Q 25 0, 30 5 Q 35 15, 30 30 Q 25 25, 20 30 Z"
+          fill="#34D399"/>
+  </g>
+</svg>

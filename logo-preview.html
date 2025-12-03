@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEVCabs Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #047857;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .logo-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo-card h2 {
+            color: #047857;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .logo-preview {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+        .logo-preview.dark {
+            background: #1f2937;
+        }
+        .logo-preview img {
+            max-width: 100%;
+            height: auto;
+        }
+        .specs {
+            text-align: left;
+            background: #f0fdf4;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .specs h3 {
+            color: #047857;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .specs ul {
+            list-style: none;
+            font-size: 0.85em;
+            color: #374151;
+        }
+        .specs li {
+            padding: 4px 0;
+            border-bottom: 1px solid #d1fae5;
+        }
+        .specs li:last-child {
+            border-bottom: none;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #047857;
+        }
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .color-box {
+            text-align: center;
+        }
+        .color-swatch {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .color-name {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #374151;
+        }
+        .color-code {
+            font-size: 0.75em;
+            color: #6b7280;
+            font-family: monospace;
+        }
+        .section-title {
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0 20px 0;
+            text-align: center;
+        }
+        .mockup-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .mockup {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .mockup h3 {
+            color: #047857;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        .mockup-preview {
+            background: #f9fafb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .mockup-preview img {
+            width: 100%;
+            height: auto;
+        }
+        .size-label {
+            font-size: 0.75em;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 GreenEVCabs Logo Preview</h1>
+        <p class="subtitle">Your Professional Electric Cab Service Brand Identity</p>
+
+        <div class="grid">
+            <!-- Logo 1: Full Logo with Tagline -->
+            <div class="logo-card">
+                <h2>📱 Main Logo (Square)</h2>
+                <div class="logo-preview">
+                    <img src="/logo-social.svg" alt="GreenEVCabs Main Logo" style="max-width: 280px;">
+                </div>
+                <div class="specs">
+                    <h3>Best For:</h3>
+                    <ul>
+                        <li>✓ Instagram Posts (1080x1080)</li>
+                        <li>✓ Facebook Posts</li>
+                        <li>✓ LinkedIn Posts</li>
+                        <li>✓ Website Graphics</li>
+                    </ul>
+                </div>
+                <div class="specs">
+                    <h3>Specifications:</h3>
+                    <ul>
+                        <li>Size: 400x400px</li>
+                        <li>Format: SVG (scalable)</li>
+                        <li>Includes: Car, Leaf, Text, Tagline</li>
+                    </ul>
+                </div>
+                <a href="/logo-social.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <!-- Logo 2: Instagram Profile -->
+            <div class="logo-card">
+                <h2>👤 Profile Picture</h2>
+                <div class="logo-preview">
+                    <img src="/logo-instagram-profile.svg" alt="GreenEVCabs Profile Logo" style="max-width: 280px;">
+                </div>
+                <div class="specs">
+                    <h3>Best For:</h3>
+                    <ul>
+                        <li>✓ Instagram Profile (500x500)</li>
+                        <li>✓ Facebook Profile</li>
+                        <li>✓ Twitter/X Profile</li>
+                        <li>✓ WhatsApp Business DP</li>
+                    </ul>
+                </div>
+                <div class="specs">
+                    <h3>Specifications:</h3>
+                    <ul>
+                        <li>Size: 500x500px</li>
+                        <li>Format: SVG (scalable)</li>
+                        <li>Shape: Circular</li>
+                        <li>Optimized for small display</li>
+                    </ul>
+                </div>
+                <a href="/logo-instagram-profile.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <!-- Dark Background Preview -->
+            <div class="logo-card">
+                <h2>🌙 On Dark Background</h2>
+                <div class="logo-preview dark">
+                    <img src="/logo-instagram-profile.svg" alt="Logo on Dark" style="max-width: 280px;">
+                </div>
+                <div class="specs">
+                    <h3>Use Cases:</h3>
+                    <ul>
+                        <li>✓ Dark mode social posts</li>
+                        <li>✓ Video overlays</li>
+                        <li>✓ Night mode content</li>
+                        <li>✓ Premium presentations</li>
+                    </ul>
+                </div>
+                <div class="specs">
+                    <h3>Note:</h3>
+                    <ul>
+                        <li>Logo maintains visibility</li>
+                        <li>Green pops on dark backgrounds</li>
+                        <li>Professional appearance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Colors -->
+        <div class="section-title">
+            <h2>🎨 Brand Color Palette</h2>
+        </div>
+        <div class="logo-card">
+            <div class="color-palette">
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #10B981;"></div>
+                    <div class="color-name">Primary Green</div>
+                    <div class="color-code">#10B981</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #047857;"></div>
+                    <div class="color-name">Dark Green</div>
+                    <div class="color-code">#047857</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #ECFDF5;"></div>
+                    <div class="color-name">Light Green</div>
+                    <div class="color-code">#ECFDF5</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #FBBF24;"></div>
+                    <div class="color-name">Gold/Yellow</div>
+                    <div class="color-code">#FBBF24</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #e5e7eb;"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-code">#FFFFFF</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #1F2937;"></div>
+                    <div class="color-name">Dark Gray</div>
+                    <div class="color-code">#1F2937</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Mockups -->
+        <div class="section-title">
+            <h2>📱 Social Media Size Guide</h2>
+        </div>
+        <div class="mockup-section">
+            <div class="mockup">
+                <h3>Instagram Profile</h3>
+                <div class="mockup-preview" style="width: 110px; height: 110px; margin: 0 auto; border-radius: 50%; overflow: hidden;">
+                    <img src="/logo-instagram-profile.svg" alt="Instagram Profile">
+                </div>
+                <p class="size-label">500x500px<br>Displays at 110x110px</p>
+            </div>
+            <div class="mockup">
+                <h3>Instagram Post</h3>
+                <div class="mockup-preview" style="width: 200px; height: 200px; margin: 0 auto;">
+                    <img src="/logo-social.svg" alt="Instagram Post">
+                </div>
+                <p class="size-label">1080x1080px<br>Square format</p>
+            </div>
+            <div class="mockup">
+                <h3>Facebook Profile</h3>
+                <div class="mockup-preview" style="width: 110px; height: 110px; margin: 0 auto; border-radius: 50%; overflow: hidden;">
+                    <img src="/logo-instagram-profile.svg" alt="Facebook Profile">
+                </div>
+                <p class="size-label">500x500px<br>170x170px desktop</p>
+            </div>
+            <div class="mockup">
+                <h3>Twitter/X Profile</h3>
+                <div class="mockup-preview" style="width: 110px; height: 110px; margin: 0 auto; border-radius: 50%; overflow: hidden;">
+                    <img src="/logo-instagram-profile.svg" alt="Twitter Profile">
+                </div>
+                <p class="size-label">400x400px<br>Circular display</p>
+            </div>
+        </div>
+
+        <!-- Quick Start Guide -->
+        <div class="section-title">
+            <h2>🚀 Quick Start Guide</h2>
+        </div>
+        <div class="logo-card">
+            <h2>How to Use Your Logos</h2>
+            <div style="text-align: left; padding: 20px;">
+                <h3 style="color: #047857; margin-bottom: 15px;">Step 1: Convert SVG to PNG</h3>
+                <p style="margin-bottom: 20px; color: #374151;">
+                    Visit <a href="https://cloudconvert.com/svg-to-png" target="_blank" style="color: #10b981;">cloudconvert.com/svg-to-png</a><br>
+                    Upload the SVG file and convert to PNG for social media.
+                </p>
+
+                <h3 style="color: #047857; margin-bottom: 15px;">Step 2: Export Sizes</h3>
+                <ul style="color: #374151; margin-bottom: 20px; list-style: none; padding-left: 0;">
+                    <li>✓ Instagram Profile: 500x500px</li>
+                    <li>✓ Instagram Post: 1080x1080px</li>
+                    <li>✓ Facebook Cover: 820x312px</li>
+                    <li>✓ Twitter Header: 1500x500px</li>
+                </ul>
+
+                <h3 style="color: #047857; margin-bottom: 15px;">Step 3: Upload to Social Media</h3>
+                <p style="margin-bottom: 20px; color: #374151;">
+                    Use the PNG files for profile pictures and posts.<br>
+                    Keep SVG files for future edits and scaling.
+                </p>
+
+                <h3 style="color: #047857; margin-bottom: 15px;">Need Professional Version?</h3>
+                <p style="color: #374151;">
+                    Check <strong>LOGO_DESIGN_GUIDE.md</strong> for:<br>
+                    • AI logo generator recommendations<br>
+                    • Canva templates and tutorials<br>
+                    • Designer hiring options on Fiverr<br>
+                    • Complete brand guidelines
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 50px; padding: 30px; background: white; border-radius: 12px;">
+            <h3 style="color: #047857; margin-bottom: 10px;">🌿 GreenEVCabs</h3>
+            <p style="color: #6b7280;">Premium • Electric • Affordable</p>
+            <p style="color: #6b7280; margin-top: 10px; font-size: 0.9em;">
+                📱 +91 74982 64215 | 🌐 greenevcabs.com
+            </p>
+        </div>
+    </div>
+</body>
+</html>

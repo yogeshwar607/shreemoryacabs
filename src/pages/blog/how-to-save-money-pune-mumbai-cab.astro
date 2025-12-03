@@ -1,0 +1,262 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Check, TrendingDown, Calendar, Users, Clock } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Save ₹500 on Pune-Mumbai Cab: 7 Insider Money-Saving Tips",
+  "datePublished": "2025-01-15",
+  "author": { "@type": "Organization", "name": "GreenEVCabs" }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "How to Save ₹500 on Pune-Mumbai Cab", url: "/blog/how-to-save-money-pune-mumbai-cab" }
+]);
+---
+
+<MainLayout
+  title="How to Save ₹500 on Pune-Mumbai Cab: 7 Insider Money-Saving Tips 2025"
+  description="7 proven ways to save ₹500-1,300 on Pune-Mumbai cab bookings. Choose electric over diesel, avoid surge pricing, book direct, share rides. Practical money-saving tips."
+  keywords={["save money pune mumbai cab", "cheap cab pune mumbai", "pune mumbai taxi tips", "reduce cab cost pune"]}
+>
+  <StructuredData schema={articleSchema} />
+  <StructuredData schema={breadcrumbSchema} />
+
+  <article class="w-full py-12">
+    <div class="container px-4 max-w-4xl mx-auto">
+      <Badge className="mb-4">Money-Saving Guide</Badge>
+      <h1 class="text-4xl font-bold mb-4">How to Save ₹500 on Pune-Mumbai Cab: 7 Insider Tips</h1>
+      <p class="text-xl text-muted-foreground mb-8">
+        Stop overpaying for Pune-Mumbai cabs! These 7 proven tips can save you ₹500-1,300 per trip. Regular travelers save ₹26,000-67,600 annually with these strategies.
+      </p>
+
+      <!-- Tip 1: Choose Electric -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">1</span>
+          Choose Electric Cab Over Diesel
+        </h2>
+        <Card className="border-green-200">
+          <CardHeader className="bg-green-50">
+            <CardTitle>Instant Savings: ₹1,300 per trip</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div><strong>Diesel Cab:</strong> ₹5,000 (₹4,000 + ₹430 tolls + ₹500 driver + ₹70 parking)</div>
+              <div class="text-green-700"><strong>Electric Cab:</strong> ₹3,700 all-inclusive</div>
+            </div>
+            <p class="text-sm mb-4"><strong>Annual Savings (weekly travel):</strong> ₹67,600</p>
+            <a href="/blog/electric-vs-diesel-cab-pune-mumbai-comparison"><Button size="sm" className="bg-green-600">See Full Comparison</Button></a>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 2: Book Direct -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">2</span>
+          Book Direct (Skip App Middlemen)
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">App-based services charge 15-25% commission, passed to you via higher prices + platform fees.</p>
+            <div class="bg-muted/50 rounded p-4 mb-4">
+              <p class="font-semibold mb-2">App-based: ₹4,200-4,500</p>
+              <p class="text-sm">Direct booking (WhatsApp/Call): ₹3,700</p>
+              <p class="text-green-700 font-bold mt-2">Save: ₹500-800</p>
+            </div>
+            <a href="/electric-cab-booking-pune"><Button size="sm">Book Direct on WhatsApp</Button></a>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 3: Avoid Surge -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">3</span>
+          Choose Zero-Surge Services
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">Peak hours (6-9 AM, 5-9 PM), rain, festivals trigger 1.5-3x surge on app-based services.</p>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <span>Monday 7 AM (peak):</span><span class="text-red-700 font-bold">₹3,500 → ₹7,000 (2x surge)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <span>GreenEVCabs anytime:</span><span class="text-green-700 font-bold">₹3,700 (zero surge)</span>
+              </div>
+            </div>
+            <p class="text-green-700 font-semibold">Save ₹3,300 on surge-prone bookings</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 4: All-Inclusive Pricing -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">4</span>
+          Insist on All-Inclusive Pricing
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">Before booking, confirm price includes ALL charges:</p>
+            <ul class="space-y-2 mb-4">
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-1" /><span>Tolls (₹430)</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-1" /><span>Driver allowance (₹500)</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-1" /><span>Parking (₹50-100)</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-1" /><span>Night charges (₹300)</span></li>
+            </ul>
+            <p class="text-sm"><strong>Ask:</strong> "Is ₹X my final payment? Any extra charges at all?" Get written confirmation (WhatsApp counts).</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 5: Book Advance -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">5</span>
+          <Calendar class="w-6 h-6" /> Book in Advance
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">Last-minute bookings (within 2 hours) often carry premium charges or force you to accept higher-priced options.</p>
+            <div class="bg-blue-50 p-4 rounded">
+              <p class="font-semibold mb-2">Best Practice:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Regular trips: Book 12-24 hours ahead</li>
+                <li>• Early morning (3-5 AM): Book 6+ hours ahead</li>
+                <li>• Peak travel days (Monday morning, Friday evening): Book 24+ hours ahead</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 6: Share Rides -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">6</span>
+          <Users class="w-6 h-6" /> Share Ride with Colleagues
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">7-seater electric SUVs accommodate 6-7 people comfortably. Split costs with colleagues traveling same route.</p>
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+              <div class="bg-muted/50 rounded p-4">
+                <p class="text-2xl font-bold">₹3,700</p>
+                <p class="text-sm text-muted-foreground">Total (7-seater SUV)</p>
+              </div>
+              <div class="bg-muted/50 rounded p-4">
+                <p class="text-2xl font-bold">÷ 4</p>
+                <p class="text-sm text-muted-foreground">People sharing</p>
+              </div>
+              <div class="bg-green-50 rounded p-4">
+                <p class="text-2xl font-bold text-green-700">₹925</p>
+                <p class="text-sm text-green-700">Per person!</p>
+              </div>
+            </div>
+            <p class="mt-4 text-sm"><strong>Tip:</strong> Create WhatsApp group for office colleagues. Coordinate weekly Mumbai trips. Everyone saves 75%!</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Tip 7: Avoid Hidden Cancellation Charges -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">7</span>
+          Choose Free Cancellation Policy
+        </h2>
+        <Card>
+          <CardContent className="pt-6">
+            <p class="mb-4">Plans change. Services charging 50% advance + cancellation fees cost you even when you don't travel.</p>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-red-50 p-4 rounded">
+                <p class="font-semibold text-red-700 mb-2">❌ Typical Service</p>
+                <ul class="text-sm space-y-1">
+                  <li>• 50% advance: ₹2,100 paid</li>
+                  <li>• Flight delayed, need to cancel</li>
+                  <li>• Cancellation charge: ₹800</li>
+                  <li>• <strong>Loss: ₹800</strong></li>
+                </ul>
+              </div>
+              <div class="bg-green-50 p-4 rounded">
+                <p class="font-semibold text-green-700 mb-2">✓ GreenEVCabs</p>
+                <ul class="text-sm space-y-1">
+                  <li>• Zero advance payment</li>
+                  <li>• Free cancellation (2+ hrs before)</li>
+                  <li>• Flight delay = auto-adjust time</li>
+                  <li>• <strong>Loss: ₹0</strong></li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Total Savings -->
+      <section class="mb-12">
+        <Card className="border-primary bg-primary/10">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <TrendingDown class="w-6 h-6" />
+              Your Total Potential Savings
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center p-3 bg-background rounded">
+                <span>Tip #1: Electric vs Diesel</span>
+                <span class="font-bold text-green-600">₹1,300</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-background rounded">
+                <span>Tip #2: Direct booking (vs app)</span>
+                <span class="font-bold text-green-600">₹500</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-background rounded">
+                <span>Tip #3: Avoid surge (peak hours)</span>
+                <span class="font-bold text-green-600">₹3,300</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-background rounded">
+                <span>Tip #4: Verify all-inclusive</span>
+                <span class="font-bold text-green-600">₹980</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-background rounded">
+                <span>Tip #6: Share with 3 colleagues</span>
+                <span class="font-bold text-green-600">₹2,775</span>
+              </div>
+              <div class="border-t-2 pt-3 flex justify-between items-center font-bold text-lg">
+                <span>Maximum Savings Per Trip:</span>
+                <span class="text-3xl text-green-600">₹8,855</span>
+              </div>
+              <p class="text-sm text-center text-muted-foreground">Combine all 7 tips for maximum savings!</p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- CTA -->
+      <Card className="border-primary bg-gradient-to-br from-primary/10 to-green-50">
+        <CardContent className="pt-8 pb-8 text-center">
+          <h2 class="text-3xl font-bold mb-4">Start Saving Today!</h2>
+          <p class="text-lg mb-6">Book GreenEVCabs: All 7 tips built-in. Zero effort, maximum savings.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+            <a href="https://wa.me/917498264215?text=Book%20Smart%20Save%20Money" target="_blank">
+              <Button size="lg" className="bg-green-600">Book & Save ₹1,300</Button>
+            </a>
+          </div>
+          <p class="text-sm text-muted-foreground">✓ ₹3,700 all-inclusive ✓ Zero surge ✓ Direct booking ✓ Free cancellation</p>
+        </CardContent>
+      </Card>
+
+    </div>
+  </article>
+</MainLayout>

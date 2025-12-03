@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, MessageSquare, Phone, Calendar, MapPin, Clock, Shield, CreditCard } from "lucide-react";
 import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
 
 const howToSchema = {
   "@context": "https://schema.org",
@@ -65,6 +66,11 @@ const faqSchema = {
     }
   ]
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Book Electric Cab Pune", url: "/electric-cab-booking-pune" }
+]);
 ---
 
 <MainLayout
@@ -80,7 +86,7 @@ const faqSchema = {
     "electric cab reservation pune"
   ]}
 >
-  <StructuredData data={[howToSchema, faqSchema]} />
+  <StructuredData data={[howToSchema, faqSchema, breadcrumbSchema]} />
 
   <!-- Hero Section -->
   <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
