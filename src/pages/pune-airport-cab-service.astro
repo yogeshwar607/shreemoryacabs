@@ -1,0 +1,921 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, MapPin, Zap, IndianRupee, Clock, Plane, Shield, Users, Navigation } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Pune Airport Cab Service - Electric Taxi",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "GreenEVCabs",
+    "description": "Pune Airport pickup and drop service with luxury electric SUVs, professional drivers, and fixed pricing",
+    "telephone": "+917498264215"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Pune, Maharashtra, India"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pune Airport to City Center",
+      "price": "500",
+      "priceCurrency": "INR",
+      "description": "Pune Airport to Shivajinagar, Deccan areas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pune Airport to Hinjewadi",
+      "price": "800",
+      "priceCurrency": "INR",
+      "description": "Pune Airport to Hinjewadi IT Park"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pune Airport to Mumbai",
+      "price": "3700",
+      "priceCurrency": "INR",
+      "description": "Pune Airport to Mumbai - all-inclusive"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Flight Tracking",
+      "value": "Real-time tracking included"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vehicle Type",
+      "value": "Luxury 7-seater Electric SUV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Availability",
+      "value": "24/7 Service"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Pune Airport cab cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pune Airport cab costs vary by destination: Shivajinagar/Deccan (₹500), Kothrud/Baner (₹600-700), Hinjewadi (₹800), Viman Nagar (₹400), Hadapsar (₹500). All prices are all-inclusive with luxury 7-seater electric SUVs. Zero surge pricing, 24/7 availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Pune Airport cab pickup point?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pune Airport cab pickup is at Arrivals exit, just outside the terminal building. Our driver will meet you with a name board right after you exit the baggage claim area. GPS location shared on WhatsApp. Easy to find, well-marked taxi pickup zone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you track flights for Pune Airport pickup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we track all Pune Airport flights in real-time. If your flight is delayed or early, our driver adjusts pickup time automatically. No extra charges for delays. 20 minutes free waiting time after you land."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Pune Airport from city center?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pune Airport is 10 km from city center (Shivajinagar). Travel time: 20-30 minutes depending on traffic. Distance to major areas: Hinjewadi (35 km, 45 min), Baner (15 km, 25 min), Kothrud (12 km, 20 min), Viman Nagar (5 km, 15 min), Hadapsar (12 km, 20 min)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is electric cab available at Pune Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs offers luxury electric cab service at Pune Airport with Kia Carens EV and BYD eMax 7 (7-seater SUVs). We're Pune's premier electric airport transfer service with zero emissions, silent rides, and professional drivers. Book via WhatsApp: +91 74982 64215."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide 24/7 Pune Airport cab service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs operates 24/7 at Pune Airport. We handle red-eye arrivals (midnight-5 AM), early morning flights (5-8 AM), and late-night departures. Book anytime via WhatsApp. Our drivers are experienced with night travel and airport procedures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to book Pune Airport cab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Book Pune Airport cab via WhatsApp (+91 74982 64215) or call directly. Share: flight number, arrival time, drop address. Get instant confirmation with driver details sent 30 minutes before landing. No advance payment required. Pay after comfortable ride."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cheapest way to get from Pune Airport to city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shared airport shuttle (₹150-200) is cheapest but inconvenient with fixed routes and multiple stops. Private electric cab with GreenEVCabs (₹400-800 depending on area) offers best value: door-to-door service, no waiting, luggage space, comfortable ride, only slightly more expensive than shuttle."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Pune Airport Cab Service", url: "/pune-airport-cab-service" }
+]);
+---
+
+<MainLayout
+  title="Pune Airport Cab Service | Electric Taxi Pickup & Drop | Zero Surge - GreenEVCabs"
+  description="Pune Airport cab service with luxury electric SUVs. Fixed pricing from ₹400-800 to all Pune areas. Flight tracking, 24/7 availability, professional drivers. Book instant pickup/drop."
+  keywords={[
+    "pune airport cab service",
+    "pune airport taxi",
+    "pune airport to city cab",
+    "lohegaon airport taxi",
+    "pune airport pickup",
+    "pune airport drop service",
+    "electric cab pune airport",
+    "pune airport transfer"
+  ]}
+>
+  <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <Badge variant="secondary" className="mb-4">✈️ Pune Airport Transfer</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Pune Airport Cab Service<br/>Electric Taxi Pickup & Drop
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-4">
+          24/7 Service | Flight Tracking | Luxury 7-Seater SUVs
+        </p>
+        <p class="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Premium electric cab service from Pune Airport (Lohegaon) to anywhere in Pune. Fixed pricing, zero surge, professional drivers. Book instant pickup or schedule in advance.
+        </p>
+
+        <!-- Quick Pricing Grid -->
+        <div class="grid md:grid-cols-4 gap-4 mb-8 max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow p-4">
+            <p class="text-sm text-muted-foreground mb-1">City Center</p>
+            <p class="text-2xl font-bold text-primary">₹500</p>
+            <p class="text-xs text-muted-foreground">Shivajinagar, Deccan</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <p class="text-sm text-muted-foreground mb-1">Viman Nagar</p>
+            <p class="text-2xl font-bold text-primary">₹400</p>
+            <p class="text-xs text-muted-foreground">5 km, 15 min</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <p class="text-sm text-muted-foreground mb-1">Baner/Kothrud</p>
+            <p class="text-2xl font-bold text-primary">₹600</p>
+            <p class="text-xs text-muted-foreground">12-15 km</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <p class="text-sm text-muted-foreground mb-1">Hinjewadi</p>
+            <p class="text-2xl font-bold text-primary">₹800</p>
+            <p class="text-xs text-muted-foreground">35 km, 45 min</p>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Book%20Pune%20Airport%20Cab" target="_blank">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-8">
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+
+        <p class="text-sm text-muted-foreground mt-4">
+          ✓ Zero surge pricing ✓ No advance payment ✓ Free cancellation (2+ hrs)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Area-wise Pricing -->
+  <section class="w-full py-12 md:py-16 bg-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Pune Airport to All Areas - Fixed Pricing</h2>
+        <p class="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Transparent all-inclusive pricing with no hidden charges. Same rate 24/7, no surge pricing during peak hours or bad weather.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- West Pune -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <MapPin class="w-5 h-5 text-primary" />
+                West Pune Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Hinjewadi (IT Park)</p>
+                    <p class="text-sm text-muted-foreground">35 km • 45 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹800</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Wakad</p>
+                    <p class="text-sm text-muted-foreground">25 km • 35 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹700</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Baner (Sus Road)</p>
+                    <p class="text-sm text-muted-foreground">15 km • 25 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹600</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Aundh</p>
+                    <p class="text-sm text-muted-foreground">13 km • 22 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹550</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Kothrud</p>
+                    <p class="text-sm text-muted-foreground">12 km • 20 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹600</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="font-medium">Pimple Saudagar</p>
+                    <p class="text-sm text-muted-foreground">20 km • 30 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹650</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- Central & East Pune -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <MapPin class="w-5 h-5 text-primary" />
+                Central & East Pune
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Shivajinagar (City Center)</p>
+                    <p class="text-sm text-muted-foreground">10 km • 20 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹500</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Deccan / FC Road</p>
+                    <p class="text-sm text-muted-foreground">11 km • 22 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹500</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Koregaon Park</p>
+                    <p class="text-sm text-muted-foreground">8 km • 18 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹450</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Viman Nagar</p>
+                    <p class="text-sm text-muted-foreground">5 km • 15 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹400</p>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <div>
+                    <p class="font-medium">Kharadi (IT Park)</p>
+                    <p class="text-sm text-muted-foreground">8 km • 18 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹450</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="font-medium">Hadapsar (Magarpatta)</p>
+                    <p class="text-sm text-muted-foreground">12 km • 20 min</p>
+                  </div>
+                  <p class="text-xl font-bold text-primary">₹500</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="mt-8 bg-blue-50 border-blue-200">
+          <CardContent className="pt-6">
+            <h3 class="font-semibold mb-3 flex items-center gap-2">
+              <IndianRupee class="w-5 h-5 text-primary" />
+              What's Included in Every Fare
+            </h3>
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>Base fare + airport parking</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>Flight tracking (if booking for arrival)</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>20 min free waiting time</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>Luxury 7-seater electric SUV</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>Professional verified driver</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                <span>GST & all taxes</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose GreenEVCabs for Pune Airport?</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card>
+            <CardHeader>
+              <Plane class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Flight Tracking</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Real-time flight monitoring for airport pickup. Driver adjusts for delays automatically. No stress, no extra charges.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <Zap class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>100% Electric Fleet</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Kia Carens EV & BYD eMax 7. Silent, smooth rides. Zero emissions. Modern, well-maintained vehicles under 2 years old.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <IndianRupee class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Zero Surge Pricing</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Same fixed rate 24/7. No surge during peak hours, rain, festivals. What you see is what you pay.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <Users class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Spacious 7-Seaters</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Perfect for families or groups. Ample luggage space. Comfortable seating for long journeys. Premium interiors.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pickup & Drop Guide -->
+  <section class="w-full py-12 md:py-16 bg-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Pune Airport Pickup & Drop Process</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Airport Pickup -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-xl">
+                <Plane class="w-6 h-6 text-primary" />
+                Airport Pickup (Arriving at Pune)
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ol class="space-y-4">
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                  <div>
+                    <p class="font-medium">Book in Advance</p>
+                    <p class="text-sm text-muted-foreground">Share flight number, arrival time, drop address via WhatsApp</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                  <div>
+                    <p class="font-medium">Flight Tracking Active</p>
+                    <p class="text-sm text-muted-foreground">We monitor your flight. Driver adjusts for delays/early arrivals</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                  <div>
+                    <p class="font-medium">Driver Details Sent</p>
+                    <p class="text-sm text-muted-foreground">30 min before landing: driver name, phone, vehicle number, photo</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
+                  <div>
+                    <p class="font-medium">Meet at Arrivals</p>
+                    <p class="text-sm text-muted-foreground">Driver waits outside arrivals with name board. GPS location shared</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">5</span>
+                  <div>
+                    <p class="font-medium">Comfortable Ride</p>
+                    <p class="text-sm text-muted-foreground">Smooth journey to your destination. Pay after trip completes</p>
+                  </div>
+                </li>
+              </ol>
+            </CardContent>
+          </Card>
+
+          <!-- Airport Drop -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-xl">
+                <Navigation class="w-6 h-6 text-primary" />
+                Airport Drop (Departing from Pune)
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ol class="space-y-4">
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                  <div>
+                    <p class="font-medium">Book Your Drop</p>
+                    <p class="text-sm text-muted-foreground">Share pickup address, flight time, airline. We calculate pickup time</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                  <div>
+                    <p class="font-medium">Timely Pickup</p>
+                    <p class="text-sm text-muted-foreground">We arrive 10 min before scheduled time. Account for traffic & check-in</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                  <div>
+                    <p class="font-medium">Fastest Route</p>
+                    <p class="text-sm text-muted-foreground">Driver uses optimal route based on real-time traffic conditions</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
+                  <div>
+                    <p class="font-medium">Terminal Drop-Off</p>
+                    <p class="text-sm text-muted-foreground">Drop at departure entry. Driver helps with luggage</p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">5</span>
+                  <div>
+                    <p class="font-medium">On-Time Arrival</p>
+                    <p class="text-sm text-muted-foreground">Reach 2+ hours before departure for stress-free check-in</p>
+                  </div>
+                </li>
+              </ol>
+            </CardContent>
+          </Card>
+        </div>
+
+        <!-- Pune Airport Location Info -->
+        <Card className="bg-muted/50">
+          <CardHeader>
+            <CardTitle>Pune Airport (Lohegaon) - Location & Details</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-3">Airport Information</h4>
+                <ul class="space-y-2 text-sm">
+                  <li><strong>Official Name:</strong> Pune International Airport (PNQ)</li>
+                  <li><strong>Also Known As:</strong> Lohegaon Airport</li>
+                  <li><strong>Location:</strong> Lohegaon, 10 km northeast of city center</li>
+                  <li><strong>Terminal:</strong> Single integrated terminal (domestic + international)</li>
+                  <li><strong>Airlines:</strong> Air India, IndiGo, SpiceJet, Vistara, Go First</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-3">Cab Pickup Location</h4>
+                <ul class="space-y-2 text-sm">
+                  <li><strong>Pickup Point:</strong> Outside Arrivals exit, ground level</li>
+                  <li><strong>Taxi Stand:</strong> Clearly marked, just after exit</li>
+                  <li><strong>Waiting Area:</strong> Covered waiting zone available</li>
+                  <li><strong>Driver Meeting:</strong> Name board at arrivals exit</li>
+                  <li><strong>Contact Support:</strong> +91 74982 64215 if can't locate driver</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes from Pune Airport -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Popular Routes from Pune Airport</h2>
+        <p class="text-center text-muted-foreground mb-12">Most booked destinations from Pune Airport with our service</p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/mumbai-airport-to-pune-electric-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardHeader>
+                <CardTitle className="text-lg">Pune Airport to Mumbai</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">150 km • 2.5-3 hours via Expressway</p>
+                <p class="text-2xl font-bold text-primary mb-2">₹3,700</p>
+                <p class="text-xs text-muted-foreground">All-inclusive, zero surge, 24/7</p>
+                <Button variant="outline" size="sm" className="mt-3 w-full">View Details</Button>
+              </CardContent>
+            </Card>
+          </a>
+
+          <a href="/hinjewadi-to-mumbai-airport-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardHeader>
+                <CardTitle className="text-lg">Pune Airport to Hinjewadi</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">35 km • 45 min to IT Park</p>
+                <p class="text-2xl font-bold text-primary mb-2">₹800</p>
+                <p class="text-xs text-muted-foreground">Early morning pickups available</p>
+                <Button variant="outline" size="sm" className="mt-3 w-full">View Details</Button>
+              </CardContent>
+            </Card>
+          </a>
+
+          <a href="/viman-nagar-to-mumbai-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardHeader>
+                <CardTitle className="text-lg">Pune Airport to Viman Nagar</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">5 km • 15 min (closest area)</p>
+                <p class="text-2xl font-bold text-primary mb-2">₹400</p>
+                <p class="text-xs text-muted-foreground">Fastest pickup, ideal for residents</p>
+                <Button variant="outline" size="sm" className="mt-3 w-full">View Details</Button>
+              </CardContent>
+            </Card>
+          </a>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Pune Airport to Koregaon Park</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">8 km • 18 min to hotels/cafes</p>
+              <p class="text-2xl font-bold text-primary mb-2">₹450</p>
+              <p class="text-xs text-muted-foreground">Tourist area, luggage-friendly</p>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Pune Airport to Hadapsar</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">12 km • 20 min to Magarpatta</p>
+              <p class="text-2xl font-bold text-primary mb-2">₹500</p>
+              <p class="text-xs text-muted-foreground">IT park, residential complex drops</p>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Pune Airport to Shivajinagar</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">10 km • 20 min city center</p>
+              <p class="text-2xl font-bold text-primary mb-2">₹500</p>
+              <p class="text-xs text-muted-foreground">Shopping, hotels, central location</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <p class="text-center text-sm text-muted-foreground mt-8">
+          Don't see your destination? We serve ALL Pune areas. <a href="https://wa.me/917498264215?text=Pune%20Airport%20to%20[Your%20Destination]" target="_blank" class="text-primary hover:underline">Message us for instant quote →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Electric Cab for Airport -->
+  <section class="w-full py-12 md:py-16 bg-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose Electric Cab for Airport Transfer?</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Zap class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Silent, Stress-Free Ride</h3>
+                <p class="text-sm text-muted-foreground">
+                  No engine noise. Perfect for early morning airport runs when you want to relax or catch up on sleep after/before flight.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <IndianRupee class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Lower Cost, Better Value</h3>
+                <p class="text-sm text-muted-foreground">
+                  Electric vehicles cost less to operate. We pass savings to you. ₹400-800 vs ₹600-1,200 for diesel cabs to same locations.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Shield class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Modern, Well-Maintained</h3>
+                <p class="text-sm text-muted-foreground">
+                  All vehicles under 2 years old. Latest Kia Carens EV & BYD eMax 7. Clean interiors, working AC, phone charging ports.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Users class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Spacious for Luggage</h3>
+                <p class="text-sm text-muted-foreground">
+                  7-seater SUVs with large boot space. Fits 4-5 large suitcases + cabin bags easily. Ideal for family trips or business travel with samples.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Clock class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">No Range Anxiety</h3>
+                <p class="text-sm text-muted-foreground">
+                  400+ km range. Even longest Pune routes (Hinjewadi 70 km round-trip) use only 17% battery. Fully charged before every airport pickup.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Check class="w-6 h-6 text-green-600" />
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Eco-Friendly Travel</h3>
+                <p class="text-sm text-muted-foreground">
+                  Zero emissions. Start your trip or end your journey sustainably. Corporate travelers can count it toward CSR/ESG goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How much does Pune Airport cab cost?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Pune Airport cab costs vary by destination: Shivajinagar/Deccan (₹500), Kothrud/Baner (₹600-700), Hinjewadi (₹800), Viman Nagar (₹400), Hadapsar (₹500). All prices are all-inclusive with luxury 7-seater electric SUVs. Zero surge pricing, 24/7 availability.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Where is Pune Airport cab pickup point?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Pune Airport cab pickup is at Arrivals exit, just outside the terminal building. Our driver will meet you with a name board right after you exit the baggage claim area. GPS location shared on WhatsApp. Easy to find, well-marked taxi pickup zone.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Do you track flights for Pune Airport pickup?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes, we track all Pune Airport flights in real-time. If your flight is delayed or early, our driver adjusts pickup time automatically. No extra charges for delays. 20 minutes free waiting time after you land.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How far is Pune Airport from city center?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Pune Airport is 10 km from city center (Shivajinagar). Travel time: 20-30 minutes depending on traffic. Distance to major areas: Hinjewadi (35 km, 45 min), Baner (15 km, 25 min), Kothrud (12 km, 20 min), Viman Nagar (5 km, 15 min), Hadapsar (12 km, 20 min).
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Is electric cab available at Pune Airport?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes, GreenEVCabs offers luxury electric cab service at Pune Airport with Kia Carens EV and BYD eMax 7 (7-seater SUVs). We're Pune's premier electric airport transfer service with zero emissions, silent rides, and professional drivers. Book via WhatsApp: +91 74982 64215.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Do you provide 24/7 Pune Airport cab service?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes, GreenEVCabs operates 24/7 at Pune Airport. We handle red-eye arrivals (midnight-5 AM), early morning flights (5-8 AM), and late-night departures. Book anytime via WhatsApp. Our drivers are experienced with night travel and airport procedures.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How to book Pune Airport cab?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Book Pune Airport cab via WhatsApp (+91 74982 64215) or call directly. Share: flight number, arrival time, drop address. Get instant confirmation with driver details sent 30 minutes before landing. No advance payment required. Pay after comfortable ride.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">What is the cheapest way to get from Pune Airport to city?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Shared airport shuttle (₹150-200) is cheapest but inconvenient with fixed routes and multiple stops. Private electric cab with GreenEVCabs (₹400-800 depending on area) offers best value: door-to-door service, no waiting, luggage space, comfortable ride, only slightly more expensive than shuttle.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-muted-foreground mb-4">Need more information?</p>
+          <a href="https://wa.me/917498264215?text=I%20have%20a%20question%20about%20Pune%20Airport%20cab" target="_blank">
+            <Button variant="outline">Ask on WhatsApp</Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Book Your Pune Airport Cab Now</h2>
+        <p class="text-xl text-muted-foreground mb-8">
+          Fixed pricing. Zero surge. Luxury electric SUVs. Professional drivers. Available 24/7.
+        </p>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+          <p class="text-lg mb-2">Starting from</p>
+          <div class="text-5xl font-bold text-green-600 mb-2">₹400</div>
+          <p class="text-muted-foreground mb-6">All-Inclusive | No Hidden Charges | Zero Surge</p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/917498264215?text=Book%20Pune%20Airport%20Cab" target="_blank">
+              <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-12">
+                Book on WhatsApp
+              </Button>
+            </a>
+            <a href="tel:+917498264215">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-12">
+                Call +91 74982 64215
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 text-sm">
+          <div class="flex items-center justify-center gap-2">
+            <Check class="w-5 h-5 text-green-600" />
+            <span>Flight tracking included</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <Check class="w-5 h-5 text-green-600" />
+            <span>No advance payment</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <Check class="w-5 h-5 text-green-600" />
+            <span>Free cancellation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>
