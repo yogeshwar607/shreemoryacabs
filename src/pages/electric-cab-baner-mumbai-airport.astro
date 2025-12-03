@@ -1,0 +1,78 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, MapPin, Clock, IndianRupee } from "lucide-react";
+---
+
+<MainLayout
+  title="Electric Cab Baner to Mumbai Airport ₹3,700 | Premium Service | GreenEVCabs"
+  description="Electric cab from Baner to Mumbai Airport at ₹3,700. Pickup from Baner, Aundh, Pashan. Professional drivers, 7-seater luxury SUVs. Book 24/7."
+  keywords={[
+    "baner to mumbai airport cab",
+    "electric cab baner",
+    "baner airport taxi",
+    "aundh mumbai airport cab",
+    "ev cab baner pashan"
+  ]}
+>
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">Baner • Aundh • Pashan Coverage</Badge>
+        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          Electric Cab Baner to Mumbai Airport
+        </h1>
+        <p class="text-xl text-muted-foreground mb-6">
+          Premium electric cab from Baner, Aundh, Pashan to Mumbai Airport at just ₹3,700. Zero surge pricing, professional drivers, 24/7 availability.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+          <div class="flex items-center gap-2"><IndianRupee class="w-5 h-5 text-primary" /><span class="font-semibold">₹3,700</span></div>
+          <div class="flex items-center gap-2"><MapPin class="w-5 h-5 text-primary" /><span class="font-semibold">148 km</span></div>
+          <div class="flex items-center gap-2"><Clock class="w-5 h-5 text-primary" /><span class="font-semibold">2.5-3 hrs</span></div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Book%20Baner%20to%20Mumbai%20Airport" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">Book on WhatsApp</Button>
+          </a>
+          <a href="tel:+917498264215"><Button size="lg" variant="outline">Call Now</Button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full py-12">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Areas We Cover in Baner Region</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card><CardHeader><CardTitle>Baner</CardTitle></CardHeader>
+            <CardContent><ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Baner Gaon</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Baner Road</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Kumar Pacific</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Amanora Park</span></li>
+            </ul></CardContent>
+          </Card>
+          <Card><CardHeader><CardTitle>Aundh</CardTitle></CardHeader>
+            <CardContent><ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Aundh IT Park</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Parihar Chowk</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Sanewadi</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>All Aundh areas</span></li>
+            </ul></CardContent>
+          </Card>
+          <Card><CardHeader><CardTitle>Pashan</CardTitle></CardHeader>
+            <CardContent><ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Pashan Circle</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Sus Road</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Sutarwadi</span></li>
+              <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Pashan societies</span></li>
+            </ul></CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

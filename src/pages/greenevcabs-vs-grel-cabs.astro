@@ -1,0 +1,455 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, X } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+
+// Comparison schema for SEO
+const comparisonSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is GreenEVCabs cheaper than GrEL Cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs is ₹500 cheaper than GrEL for Pune-Mumbai routes. GreenEVCabs charges ₹3,700 while GrEL charges ₹4,200 for the same route with comparable service quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better: GrEL or GreenEVCabs for airport transfers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both offer quality electric cab services, but GreenEVCabs provides better value at ₹3,700 with transparent pricing, professional drivers, and the same luxury 7-seater electric SUVs. GrEL does not display pricing upfront."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GreenEVCabs have surge pricing like other cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, GreenEVCabs has zero surge pricing. The rate of ₹3,700 for Pune-Mumbai is fixed 24/7, unlike traditional cab services that charge 2-3x during peak hours."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title="GreenEVCabs vs GrEL Cabs: Complete Comparison 2025 | Which is Better?"
+  description="Detailed comparison: GreenEVCabs vs GrEL Cabs for Pune-Mumbai. Compare prices (₹3,700 vs ₹4,200), service quality, vehicles, and customer reviews. Save ₹500 with GreenEVCabs."
+  keywords={[
+    "greenevcabs vs grel",
+    "grel vs greenevcabs comparison",
+    "grel alternative pune",
+    "cheaper than grel cabs",
+    "best electric cab pune comparison",
+    "grel cabs review",
+    "electric cab service comparison pune"
+  ]}
+>
+  <StructuredData data={[comparisonSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-16 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge variant="secondary" className="mb-4">
+          Honest Comparison • Updated December 2025
+        </Badge>
+        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          GreenEVCabs vs GrEL Cabs: Complete Comparison
+        </h1>
+        <p class="text-xl text-muted-foreground mb-6">
+          Comparing Pune-Mumbai's top electric cab services: pricing, service quality, vehicles, and customer experience
+        </p>
+        <p class="text-lg font-semibold text-primary">
+          Bottom Line: Save ₹500 with GreenEVCabs (₹3,700 vs ₹4,200)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Comparison Table -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Quick Comparison Overview</h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-lg">
+            <thead>
+              <tr class="bg-primary text-primary-foreground">
+                <th class="p-4 text-left">Feature</th>
+                <th class="p-4 text-center">GreenEVCabs</th>
+                <th class="p-4 text-center">GrEL Cabs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="p-4 font-semibold">Pune-Mumbai Price</td>
+                <td class="p-4 text-center text-green-600 font-bold">₹3,700</td>
+                <td class="p-4 text-center text-muted-foreground">₹4,200</td>
+              </tr>
+              <tr class="border-b bg-muted/20">
+                <td class="p-4 font-semibold">Price Transparency</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+                <td class="p-4 text-center"><X class="w-5 h-5 text-red-500 mx-auto" /></td>
+              </tr>
+              <tr class="border-b">
+                <td class="p-4 font-semibold">Vehicle Type</td>
+                <td class="p-4 text-center text-sm">Kia Carens EV / BYD eMax 7</td>
+                <td class="p-4 text-center text-sm">Electric SUVs</td>
+              </tr>
+              <tr class="border-b bg-muted/20">
+                <td class="p-4 font-semibold">Seating Capacity</td>
+                <td class="p-4 text-center">7 Seater</td>
+                <td class="p-4 text-center">7 Seater</td>
+              </tr>
+              <tr class="border-b">
+                <td class="p-4 font-semibold">Zero Surge Pricing</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+              </tr>
+              <tr class="border-b bg-muted/20">
+                <td class="p-4 font-semibold">Zero Cancellations</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+              </tr>
+              <tr class="border-b">
+                <td class="p-4 font-semibold">Flight Tracking</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+                <td class="p-4 text-center text-muted-foreground text-sm">Unknown</td>
+              </tr>
+              <tr class="border-b bg-muted/20">
+                <td class="p-4 font-semibold">All Tolls Included</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+              </tr>
+              <tr class="border-b">
+                <td class="p-4 font-semibold">Mobile App</td>
+                <td class="p-4 text-center text-sm">WhatsApp Booking</td>
+                <td class="p-4 text-center"><Check class="w-5 h-5 text-green-600 mx-auto" /></td>
+              </tr>
+              <tr class="border-b bg-green-50">
+                <td class="p-4 font-bold">Your Savings</td>
+                <td class="p-4 text-center text-green-600 font-bold text-lg">Save ₹500!</td>
+                <td class="p-4 text-center text-muted-foreground">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Comparison -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Detailed Feature Comparison</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- GreenEVCabs Card -->
+          <Card className="border-2 border-primary">
+            <CardHeader className="bg-primary text-primary-foreground">
+              <CardTitle className="text-2xl">GreenEVCabs</CardTitle>
+              <CardDescription className="text-primary-foreground/80">
+                Best Value | Price Leader
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div class="mb-6">
+                <div class="text-4xl font-bold text-primary mb-2">₹3,700</div>
+                <p class="text-sm text-muted-foreground">Pune to Mumbai Airport</p>
+              </div>
+
+              <h3 class="font-semibold text-lg mb-3">Pros:</h3>
+              <ul class="space-y-2 mb-4">
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">₹500 cheaper than competitors</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">100% price transparency - no hidden charges</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Professional, experienced drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Premium 7-seater electric SUVs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Complimentary flight tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Zero surge pricing 24/7</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Serves both Mumbai & Navi Mumbai airports</span>
+                </li>
+              </ul>
+
+              <h3 class="font-semibold text-lg mb-3">Cons:</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">No dedicated mobile app (WhatsApp booking)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Newer brand compared to GrEL</span>
+                </li>
+              </ul>
+
+              <div class="mt-6">
+                <a href="/routes/pune-to-mumbai-airport">
+                  <Button className="w-full">Book at ₹3,700 →</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- GrEL Card -->
+          <Card>
+            <CardHeader className="bg-muted">
+              <CardTitle className="text-2xl">GrEL Cabs</CardTitle>
+              <CardDescription>
+                Established Brand | Premium Positioning
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div class="mb-6">
+                <div class="text-4xl font-bold text-muted-foreground mb-2">₹4,200</div>
+                <p class="text-sm text-muted-foreground">Pune to Mumbai (estimated)</p>
+              </div>
+
+              <h3 class="font-semibold text-lg mb-3">Pros:</h3>
+              <ul class="space-y-2 mb-4">
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Established brand with 10,000+ reviews</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Dedicated mobile app</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Zero cancellation policy</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Zero surge pricing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">100% electric fleet</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Strong local Pune presence</span>
+                </li>
+              </ul>
+
+              <h3 class="font-semibold text-lg mb-3">Cons:</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm font-semibold">₹500 more expensive (₹4,200 vs ₹3,700)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">No upfront pricing on website</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Late entrant to Pune-Mumbai route</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <X class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">12% higher cost for same service</span>
+                </li>
+              </ul>
+
+              <div class="mt-6">
+                <Button variant="outline" className="w-full" disabled>
+                  ₹500 More Expensive
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Savings Calculator -->
+  <section class="w-full py-12 md:py-16 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">How Much You Save with GreenEVCabs</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-center">1 Trip</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div class="text-3xl font-bold text-green-600 mb-2">₹500</div>
+              <p class="text-sm text-muted-foreground">Saved per trip</p>
+              <p class="text-xs text-muted-foreground mt-2">₹3,700 vs ₹4,200</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-center">Monthly</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div class="text-3xl font-bold text-green-600 mb-2">₹2,000</div>
+              <p class="text-sm text-muted-foreground">4 trips per month</p>
+              <p class="text-xs text-muted-foreground mt-2">Perfect for commuters</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-center">Annual</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div class="text-3xl font-bold text-green-600 mb-2">₹24,000</div>
+              <p class="text-sm text-muted-foreground">48 trips per year</p>
+              <p class="text-xs text-muted-foreground mt-2">Significant savings!</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 text-center bg-white rounded-lg p-6">
+          <p class="text-lg mb-4">
+            <strong>Bottom Line:</strong> GreenEVCabs offers the same premium 7-seater electric SUV experience at ₹500 less per trip. That's a 12% savings while getting 100% price transparency.
+          </p>
+          <a href="/routes/pune-to-mumbai-airport">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              Book Now & Save ₹500 →
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Is GreenEVCabs cheaper than GrEL Cabs?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes, GreenEVCabs is ₹500 cheaper than GrEL for Pune-Mumbai routes. GreenEVCabs charges a transparent ₹3,700 while GrEL charges ₹4,200 for the same route with comparable service quality and the same 7-seater electric SUVs.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Which is better: GrEL or GreenEVCabs for airport transfers?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Both offer quality electric cab services with zero surge pricing and zero cancellations. However, GreenEVCabs provides better value at ₹3,700 with complete price transparency, professional drivers, flight tracking, and serves both Mumbai and Navi Mumbai airports. GrEL does not display pricing upfront on their website.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Does GreenEVCabs have the same vehicles as GrEL?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                GreenEVCabs operates premium 7-seater electric SUVs (Kia Carens EV and BYD eMax 7) similar to GrEL's electric fleet. Both services use 100% electric vehicles with ample seating and luggage capacity, climate control, and modern features.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Why is GreenEVCabs cheaper if it's the same quality?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                GreenEVCabs focuses on value-based pricing and direct customer relationships through WhatsApp rather than maintaining a separate app infrastructure. We pass these cost savings to customers while maintaining the same premium vehicle quality and professional driver standards. Our ₹3,700 rate includes all tolls, parking, and services with zero hidden charges.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Can I book GreenEVCabs as easily as GrEL's app?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes! While GrEL has a dedicated app, GreenEVCabs offers instant booking via WhatsApp (+91 74982 64215), which most customers find even more convenient. Simply send your pickup location, destination, and travel time - you'll get instant confirmation with driver details. No app download or registration required.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Which service has better customer reviews?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                GrEL has 10,000+ reviews with a 4.9/5 rating as an established brand. GreenEVCabs is building its review base but focuses on delivering the same quality service at better prices. We encourage you to try both and compare - we're confident you'll choose value without compromising quality.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-16 bg-primary/10">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Save ₹500 on Your Next Pune-Mumbai Trip?</h2>
+        <p class="text-xl text-muted-foreground mb-6">
+          Book GreenEVCabs at ₹3,700 - Same premium electric SUV, better price
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/routes/pune-to-mumbai-airport">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              Book Now at ₹3,700
+            </Button>
+          </a>
+          <a href="/fleet">
+            <Button size="lg" variant="outline">
+              View Our Fleet
+            </Button>
+          </a>
+        </div>
+        <p class="mt-4 text-sm text-muted-foreground">
+          ✓ Zero surge pricing ✓ All tolls included ✓ Professional drivers ✓ 24/7 service
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

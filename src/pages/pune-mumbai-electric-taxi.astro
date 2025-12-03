@@ -1,0 +1,579 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, MapPin, Zap, Shield, Clock, IndianRupee, Users, Leaf } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Electric Taxi Service Pune to Mumbai",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "GreenEVCabs",
+    "description": "Premium electric taxi service from Pune to Mumbai with professional drivers and luxury 7-seater SUVs at ₹3,700"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Pune, Maharashtra, India"
+    },
+    {
+      "@type": "City",
+      "name": "Mumbai, Maharashtra, India"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "3700",
+    "priceCurrency": "INR"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the cost of electric taxi from Pune to Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric taxi from Pune to Mumbai costs ₹3,700 with GreenEVCabs. This includes all tolls, parking, driver charges, and GST. Zero hidden fees or surge pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is the best electric taxi service for Pune-Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs is the best electric taxi service for Pune-Mumbai with ₹3,700 fixed pricing, professional drivers, luxury 7-seater SUVs (Kia Carens EV & BYD E-MAX 7), and zero surge pricing. Save ₹500 compared to competitors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does electric taxi take from Pune to Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric taxi from Pune to Mumbai takes approximately 2.5 to 3 hours covering 148 km via Mumbai-Pune Expressway, depending on traffic conditions and pickup location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are electric taxis cheaper than diesel cabs for Pune-Mumbai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, electric taxis are significantly cheaper. GreenEVCabs charges ₹3,700 while diesel cabs cost ₹5,000+. You save ₹1,300 per trip by choosing electric taxi service."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title="Pune Mumbai Electric Taxi ₹3,700 | Best EV Taxi Service | Save ₹500-1,300 - GreenEVCabs"
+  description="Premium electric taxi Pune to Mumbai at ₹3,700. Professional drivers, luxury 7-seater SUVs (Kia Carens EV & BYD eMax 7). Save ₹500 vs other EVs, ₹1,300 vs diesel. Zero surge pricing. Book 24/7."
+  keywords={[
+    "pune mumbai electric taxi",
+    "electric taxi pune to mumbai",
+    "ev taxi pune mumbai",
+    "pune to mumbai electric cab",
+    "mumbai pune electric taxi service",
+    "best electric taxi pune mumbai",
+    "cheap electric taxi pune to mumbai"
+  ]}
+>
+  <StructuredData data={[serviceSchema, faqSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <Badge variant="secondary" className="mb-4">
+          Best Electric Taxi Service Pune ↔ Mumbai
+        </Badge>
+        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+          Pune Mumbai Electric Taxi Service
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Premium electric taxi from Pune to Mumbai at just ₹3,700. Professional drivers, luxury 7-seater SUVs, zero surge pricing. Save ₹500 vs other EVs, ₹1,300 vs diesel cabs.
+        </p>
+
+        <div class="grid md:grid-cols-4 gap-4 mb-8 max-w-3xl mx-auto">
+          <div class="flex flex-col items-center gap-2 bg-background/60 rounded-lg p-4">
+            <IndianRupee class="w-6 h-6 text-primary" />
+            <span class="text-2xl font-bold text-primary">₹3,700</span>
+            <span class="text-xs text-muted-foreground">Fixed Price</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 bg-background/60 rounded-lg p-4">
+            <MapPin class="w-6 h-6 text-primary" />
+            <span class="text-2xl font-bold">148 km</span>
+            <span class="text-xs text-muted-foreground">Distance</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 bg-background/60 rounded-lg p-4">
+            <Clock class="w-6 h-6 text-primary" />
+            <span class="text-2xl font-bold">2.5-3 hrs</span>
+            <span class="text-xs text-muted-foreground">Duration</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 bg-background/60 rounded-lg p-4">
+            <Users class="w-6 h-6 text-primary" />
+            <span class="text-2xl font-bold">7 Seats</span>
+            <span class="text-xs text-muted-foreground">Capacity</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Book%20Electric%20Taxi%20Pune%20Mumbai" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Comparison Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">Cheapest Electric Taxi Pune to Mumbai</h2>
+        <p class="text-center text-muted-foreground mb-8">Save up to ₹1,300 per trip with GreenEVCabs electric taxi service</p>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <!-- GreenEVCabs -->
+          <Card className="border-2 border-primary shadow-lg relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <Badge className="bg-primary">Best Value</Badge>
+            </div>
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-2xl">GreenEVCabs</CardTitle>
+              <div class="text-4xl font-bold text-primary mt-2">₹3,700</div>
+              <p class="text-sm text-muted-foreground mt-1">All-inclusive</p>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Luxury 7-seater SUVs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Professional drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">Zero surge pricing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">All tolls included</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">100% electric, zero emissions</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">GST invoice available</span>
+                </li>
+              </ul>
+              <div class="mt-6 text-center">
+                <a href="https://wa.me/917498264215?text=Book%20Electric%20Taxi%20Pune%20Mumbai" target="_blank">
+                  <Button className="w-full bg-green-600 hover:bg-green-700">Book Now</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- Other EV Services -->
+          <Card>
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-2xl">Other EV Services</CardTitle>
+              <div class="text-4xl font-bold mt-2">₹4,200</div>
+              <p class="text-sm text-red-600 mt-1">₹500 more expensive</p>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm text-muted-foreground">Electric vehicles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm text-muted-foreground">Basic service</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">Higher pricing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">Limited availability</span>
+                </li>
+              </ul>
+              <div class="mt-6 p-3 bg-red-50 rounded-lg text-center">
+                <p class="text-sm font-semibold text-red-600">Save ₹500</p>
+                <p class="text-xs text-muted-foreground">with GreenEVCabs</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- Diesel Cabs -->
+          <Card>
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-2xl">Diesel Cabs</CardTitle>
+              <div class="text-4xl font-bold mt-2">₹5,000+</div>
+              <p class="text-sm text-red-600 mt-1">₹1,300 more expensive</p>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">Polluting vehicles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">Surge pricing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">High fuel costs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0">✗</span>
+                  <span class="text-sm text-muted-foreground">Noise & emissions</span>
+                </li>
+              </ul>
+              <div class="mt-6 p-3 bg-red-50 rounded-lg text-center">
+                <p class="text-sm font-semibold text-red-600">Save ₹1,300</p>
+                <p class="text-xs text-muted-foreground">with GreenEVCabs</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="text-center bg-primary/10 rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-2">Annual Savings Calculator</h3>
+          <p class="text-muted-foreground mb-4">Travel once a week? See how much you save with electric taxi</p>
+          <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div class="bg-background rounded-lg p-4">
+              <p class="text-sm text-muted-foreground">vs Other EV Services</p>
+              <p class="text-3xl font-bold text-primary">₹26,000/year</p>
+              <p class="text-xs text-muted-foreground mt-1">52 trips × ₹500 savings</p>
+            </div>
+            <div class="bg-background rounded-lg p-4">
+              <p class="text-sm text-muted-foreground">vs Diesel Cabs</p>
+              <p class="text-3xl font-bold text-primary">₹67,600/year</p>
+              <p class="text-xs text-muted-foreground mt-1">52 trips × ₹1,300 savings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Electric Taxi -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose Electric Taxi for Pune-Mumbai?</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card>
+            <CardHeader>
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Leaf class="w-6 h-6 text-primary" />
+              </div>
+              <CardTitle>Eco-Friendly</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                100% electric vehicles with zero emissions. Reduce your carbon footprint while traveling in comfort.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <IndianRupee class="w-6 h-6 text-primary" />
+              </div>
+              <CardTitle>Best Pricing</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                ₹3,700 fixed rate. Save ₹500-1,300 per trip vs competitors. No hidden charges or surge pricing ever.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Zap class="w-6 h-6 text-primary" />
+              </div>
+              <CardTitle>Premium SUVs</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Luxury 7-seater electric SUVs: Kia Carens EV & BYD E-MAX 7. Spacious, comfortable, silent ride.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Shield class="w-6 h-6 text-primary" />
+              </div>
+              <CardTitle>Professional Drivers</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Experienced, verified drivers with excellent knowledge of Pune-Mumbai route. Safe and reliable.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Areas -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Electric Taxi Pickup Locations</h2>
+        <p class="text-center text-muted-foreground mb-8">We pick up from all major areas in Pune for Mumbai trips</p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>West Pune</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-hinjewadi-mumbai-airport" class="hover:text-primary">Hinjewadi (All Phases)</a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-wakad-mumbai-airport" class="hover:text-primary">Wakad</a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-baner-mumbai-airport" class="hover:text-primary">Baner & Aundh</a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-kothrud-mumbai-airport" class="hover:text-primary">Kothrud</a>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>East Pune</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-viman-nagar-mumbai-airport" class="hover:text-primary">Viman Nagar</a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <a href="/electric-cab-hadapsar-mumbai-airport" class="hover:text-primary">Hadapsar & Magarpatta</a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kalyani Nagar, Koregaon Park</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Mundhwa, Kharadi</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Central & South Pune</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Shivaji Nagar, Deccan</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pune Railway Station</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Swargate, Katraj</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All Pune areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mumbai Drop Locations -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Mumbai Drop Locations</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <MapPin class="w-8 h-8 text-primary mx-auto mb-2" />
+              <h3 class="font-semibold">Mumbai Airport</h3>
+              <p class="text-sm text-muted-foreground">Terminal 1 & 2</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <MapPin class="w-8 h-8 text-primary mx-auto mb-2" />
+              <h3 class="font-semibold">South Mumbai</h3>
+              <p class="text-sm text-muted-foreground">CST, Churchgate, Colaba</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <MapPin class="w-8 h-8 text-primary mx-auto mb-2" />
+              <h3 class="font-semibold">Western Suburbs</h3>
+              <p class="text-sm text-muted-foreground">Andheri, Bandra, Juhu</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <MapPin class="w-8 h-8 text-primary mx-auto mb-2" />
+              <h3 class="font-semibold">Central Mumbai</h3>
+              <p class="text-sm text-muted-foreground">BKC, Kurla, Powai</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-6 text-center">
+          <p class="text-muted-foreground">All Mumbai locations at the same ₹3,700 rate. <a href="/routes" class="text-primary hover:underline">View all routes →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">What is the cost of electric taxi from Pune to Mumbai?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Electric taxi from Pune to Mumbai costs ₹3,700 with GreenEVCabs. This includes all tolls, parking, driver charges, and GST. Zero hidden fees or surge pricing.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Which vehicles do you use for electric taxi service?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                We use premium 7-seater electric SUVs: Kia Carens EV and BYD E-MAX 7. Both are luxury vehicles with spacious interiors, perfect for family or group travel.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How long does the electric taxi journey take?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                The electric taxi journey from Pune to Mumbai takes approximately 2.5 to 3 hours covering 148 km via Mumbai-Pune Expressway, depending on your pickup location and traffic conditions.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Are electric taxis available 24/7?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Yes, our electric taxi service is available 24/7 including early morning 3 AM pickups for Mumbai flights and late night returns from Mumbai. Book anytime on WhatsApp.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How much do I save with electric taxi vs diesel cab?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                You save ₹1,300 per trip with our electric taxi (₹3,700) compared to diesel cabs (₹5,000+). If you travel once a week, that's ₹67,600 annual savings plus environmental benefits.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-16 bg-primary/10">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Book Your Electric Taxi Pune to Mumbai</h2>
+        <p class="text-xl text-muted-foreground mb-6">
+          ₹3,700 Fixed Rate • Professional Drivers • Luxury 7-Seater SUVs • Available 24/7
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Book%20Electric%20Taxi%20Pune%20Mumbai" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-muted-foreground">
+          ✓ Zero surge pricing ✓ All tolls included ✓ GST invoice available ✓ Save ₹500-1,300 per trip
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

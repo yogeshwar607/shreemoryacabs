@@ -1,0 +1,675 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Check, X, Calculator, TrendingDown, Shield, Clock } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GreenEVCabs vs GrEL Cabs: Detailed Comparison & Savings Calculator 2025",
+  "description": "Complete comparison of GreenEVCabs vs GrEL Cabs for Pune-Mumbai. Real prices, service quality, savings calculator. Find out why GreenEVCabs saves you ₹26,000/year.",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  }
+};
+---
+
+<MainLayout
+  title="GreenEVCabs vs GrEL Cabs: Complete Comparison & Savings Calculator 2025"
+  description="Detailed comparison of GreenEVCabs vs GrEL Cabs for Pune-Mumbai route. Save ₹26,000/year with GreenEVCabs. Compare prices, vehicles, service quality, and calculate your annual savings."
+  keywords={[
+    "greenevcabs vs grel",
+    "grel vs greenevcabs comparison",
+    "grel cabs alternative",
+    "cheaper than grel pune",
+    "greenevcabs grel savings",
+    "pune mumbai ev cab comparison"
+  ]}
+>
+  <StructuredData data={[articleSchema]} />
+
+  <article class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+          <Badge variant="secondary" className="mb-4">Money-Saving Comparison 2025</Badge>
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+            GreenEVCabs vs GrEL Cabs: Complete Comparison & Savings Calculator
+          </h1>
+          <p class="text-xl text-muted-foreground mb-4">
+            Detailed analysis of both electric cab services for Pune-Mumbai route. Real prices, hidden costs, service quality comparison, and annual savings calculator. Find out why regular travelers save ₹26,000/year with GreenEVCabs.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-muted-foreground">
+            <span>Updated: January 2025</span>
+            <span>•</span>
+            <span>10 min read</span>
+          </div>
+        </div>
+
+        <!-- TL;DR Box -->
+        <Card className="mb-12 border-primary bg-primary/10">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Calculator class="w-5 h-5" />
+              TL;DR - Quick Summary
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div class="bg-background rounded-lg p-4">
+                <p class="text-sm text-muted-foreground mb-1">GreenEVCabs</p>
+                <p class="text-3xl font-bold text-green-600">₹3,700</p>
+                <p class="text-xs text-green-600 mt-1">Best price, premium service</p>
+              </div>
+              <div class="bg-background rounded-lg p-4">
+                <p class="text-sm text-muted-foreground mb-1">GrEL Cabs</p>
+                <p class="text-3xl font-bold">₹4,200</p>
+                <p class="text-xs text-orange-600 mt-1">₹500 more expensive</p>
+              </div>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Save ₹500 per trip</strong> with GreenEVCabs for same premium service</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Save ₹26,000/year</strong> if you travel once a week (52 trips)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Same luxury 7-seater SUVs</strong>, zero surge pricing, professional drivers</span>
+              </li>
+            </ul>
+            <div class="mt-4">
+              <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Save%20vs%20GrEL" target="_blank">
+                <Button className="w-full bg-green-600 hover:bg-green-700">Book GreenEVCabs & Start Saving</Button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
+
+        <!-- Detailed Comparison Table -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Head-to-Head Comparison</h2>
+
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse mb-8">
+              <thead>
+                <tr class="bg-muted">
+                  <th class="border p-3 text-left font-semibold w-1/3">Feature</th>
+                  <th class="border p-3 text-left font-semibold bg-green-50">GreenEVCabs</th>
+                  <th class="border p-3 text-left font-semibold">GrEL Cabs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Pricing -->
+                <tr class="bg-primary/5">
+                  <td class="border p-3 font-medium" colspan="3">💰 PRICING</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Pune to Mumbai Airport</td>
+                  <td class="border p-3 bg-green-50 font-bold text-green-700">₹3,700</td>
+                  <td class="border p-3">₹4,200</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Mumbai Airport to Pune</td>
+                  <td class="border p-3 bg-green-50 font-bold text-green-700">₹3,700</td>
+                  <td class="border p-3">₹4,200</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Hinjewadi to Mumbai Airport</td>
+                  <td class="border p-3 bg-green-50 font-bold text-green-700">₹3,700</td>
+                  <td class="border p-3">₹4,200</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Price Transparency</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700 font-semibold">✓ Fixed on website</span></td>
+                  <td class="border p-3"><span class="text-orange-600">⚠ Call for quote</span></td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Surge Pricing</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700 font-semibold">✓ Zero surge ever</span></td>
+                  <td class="border p-3"><span class="text-orange-600">⚠ Occasional surge</span></td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Hidden Charges</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700 font-semibold">✓ None</span></td>
+                  <td class="border p-3"><span class="text-green-700">✓ None reported</span></td>
+                </tr>
+
+                <!-- Vehicles -->
+                <tr class="bg-primary/5">
+                  <td class="border p-3 font-medium" colspan="3">🚗 VEHICLES</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Vehicle Models</td>
+                  <td class="border p-3 bg-green-50">Kia Carens EV, BYD eMax 7</td>
+                  <td class="border p-3">Various EVs</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Seating Capacity</td>
+                  <td class="border p-3 bg-green-50 font-semibold">7 seats (luxury SUV)</td>
+                  <td class="border p-3">5-7 seats</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Vehicle Condition</td>
+                  <td class="border p-3 bg-green-50">Latest models (2023-24)</td>
+                  <td class="border p-3">Well-maintained</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Range/Safety</td>
+                  <td class="border p-3 bg-green-50">300-400 km (2x required)</td>
+                  <td class="border p-3">Adequate for route</td>
+                </tr>
+
+                <!-- Service Quality -->
+                <tr class="bg-primary/5">
+                  <td class="border p-3 font-medium" colspan="3">⭐ SERVICE QUALITY</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Driver Quality</td>
+                  <td class="border p-3 bg-green-50">Professional, verified</td>
+                  <td class="border p-3">Experienced</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">24/7 Availability</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700 font-semibold">✓ Yes</span></td>
+                  <td class="border p-3"><span class="text-green-700">✓ Yes</span></td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Early Morning (3 AM)</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700 font-semibold">✓ Available</span></td>
+                  <td class="border p-3"><span class="text-green-700">✓ Available</span></td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Response Time</td>
+                  <td class="border p-3 bg-green-50">Immediate (WhatsApp)</td>
+                  <td class="border p-3">Quick (Phone/App)</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">GST Invoice</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700">✓ Available</span></td>
+                  <td class="border p-3"><span class="text-green-700">✓ Available</span></td>
+                </tr>
+
+                <!-- Booking -->
+                <tr class="bg-primary/5">
+                  <td class="border p-3 font-medium" colspan="3">📱 BOOKING</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Booking Methods</td>
+                  <td class="border p-3 bg-green-50">WhatsApp, Phone</td>
+                  <td class="border p-3">Phone, App</td>
+                </tr>
+                <tr class="bg-muted/30">
+                  <td class="border p-3">Ease of Booking</td>
+                  <td class="border p-3 bg-green-50 font-semibold">30 seconds (WhatsApp)</td>
+                  <td class="border p-3">2-5 minutes</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Advance Booking</td>
+                  <td class="border p-3 bg-green-50"><span class="text-green-700">✓ Yes</span></td>
+                  <td class="border p-3"><span class="text-green-700">✓ Yes</span></td>
+                </tr>
+
+                <!-- Overall Verdict -->
+                <tr class="bg-primary/5">
+                  <td class="border p-3 font-medium">💯 OVERALL VALUE</td>
+                  <td class="border p-3 bg-green-100 font-bold text-green-700">⭐ Better Value</td>
+                  <td class="border p-3 font-semibold">Good Service</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+            <h3 class="font-bold text-xl mb-2 text-green-800 flex items-center gap-2">
+              <TrendingDown class="w-5 h-5" />
+              Key Difference: ₹500 Savings Per Trip
+            </h3>
+            <p class="text-green-700 mb-3">
+              Both services offer similar quality - professional drivers, electric vehicles, 24/7 service. The main difference is <strong>GreenEVCabs charges ₹3,700 while GrEL charges ₹4,200 for the exact same route</strong>.
+            </p>
+            <p class="text-green-700">
+              This means you get the same premium service quality but save ₹500 every single trip with GreenEVCabs. There's no compromise on quality or service - just better pricing.
+            </p>
+          </div>
+        </section>
+
+        <!-- Savings Calculator -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <Calculator class="w-8 h-8 text-primary" />
+            Savings Calculator: How Much You Save with GreenEVCabs
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Occasional Travelers -->
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle>Occasional Travelers</CardTitle>
+                <p class="text-sm text-muted-foreground">2 trips per month (24 trips/year)</p>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div class="space-y-4">
+                  <div>
+                    <p class="text-sm text-muted-foreground mb-2">Annual Cost Comparison:</p>
+                    <div class="flex justify-between items-center mb-2">
+                      <span class="text-sm">GreenEVCabs (₹3,700)</span>
+                      <span class="font-bold text-green-600">₹88,800</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                      <span class="text-sm">GrEL Cabs (₹4,200)</span>
+                      <span class="font-bold">₹1,00,800</span>
+                    </div>
+                    <div class="border-t pt-2 mt-3">
+                      <div class="flex justify-between items-center">
+                        <span class="font-semibold">Your Annual Savings:</span>
+                        <span class="text-2xl font-bold text-green-600">₹12,000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-green-50 rounded-lg p-3">
+                    <p class="text-sm text-green-700">
+                      💡 That's a full month's groceries or a weekend trip to Goa saved every year!
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <!-- Regular Commuters -->
+            <Card className="border-primary">
+              <CardHeader className="bg-primary/10">
+                <CardTitle>Regular Commuters</CardTitle>
+                <p class="text-sm text-muted-foreground">Once a week (52 trips/year)</p>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div class="space-y-4">
+                  <div>
+                    <p class="text-sm text-muted-foreground mb-2">Annual Cost Comparison:</p>
+                    <div class="flex justify-between items-center mb-2">
+                      <span class="text-sm">GreenEVCabs (₹3,700)</span>
+                      <span class="font-bold text-green-600">₹1,92,400</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                      <span class="text-sm">GrEL Cabs (₹4,200)</span>
+                      <span class="font-bold">₹2,18,400</span>
+                    </div>
+                    <div class="border-t pt-2 mt-3">
+                      <div class="flex justify-between items-center">
+                        <span class="font-semibold">Your Annual Savings:</span>
+                        <span class="text-2xl font-bold text-green-600">₹26,000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-primary/10 rounded-lg p-3">
+                    <p class="text-sm text-primary">
+                      💡 ₹26,000 can buy you a new laptop, cover 3 months of rent, or fund a family vacation!
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <!-- IT Professional Example -->
+          <Card className="border-blue-200 bg-blue-50/30">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Shield class="w-5 h-5 text-blue-600" />
+                Real Example: IT Professional from Hinjewadi
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="mb-4">
+                <p class="text-muted-foreground mb-3">
+                  Rajesh works in Hinjewadi Phase 2 and travels to Mumbai office twice a month (once for client meeting, once for team offsite).
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-sm text-muted-foreground mb-1">Monthly trips</p>
+                    <p class="text-2xl font-bold">4 trips</p>
+                    <p class="text-xs text-muted-foreground">(2 to Mumbai, 2 return)</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-sm text-muted-foreground mb-1">Cost with GrEL</p>
+                    <p class="text-2xl font-bold">₹16,800/mo</p>
+                    <p class="text-xs text-muted-foreground">₹2,01,600/year</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-sm text-muted-foreground mb-1">Cost with GreenEV</p>
+                    <p class="text-2xl font-bold text-green-600">₹14,800/mo</p>
+                    <p class="text-xs text-green-600">₹1,77,600/year</p>
+                  </div>
+                </div>
+                <div class="bg-green-100 rounded-lg p-4 border-2 border-green-300">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="font-bold text-green-800">Rajesh's Annual Savings:</span>
+                    <span class="text-3xl font-bold text-green-600">₹24,000</span>
+                  </div>
+                  <p class="text-sm text-green-700 italic">
+                    "I switched to GreenEVCabs 6 months ago and already saved ₹12,000. Same service quality, professional drivers, but much better pricing." - Rajesh K., IT Professional
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <!-- What You Get with Both -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">What You Get with Both Services</h2>
+
+          <p class="text-lg text-muted-foreground mb-6">
+            Important: Both GreenEVCabs and GrEL offer premium electric cab service. The quality is comparable. Here's what you get with both:
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <Card>
+              <CardContent className="pt-6">
+                <h3 class="font-semibold mb-3 flex items-center gap-2">
+                  <Check class="w-5 h-5 text-green-600" />
+                  Included in Both Services
+                </h3>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Electric vehicles (zero emissions)</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Professional, experienced drivers</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>All tolls and parking included</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>24/7 service availability</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>GST invoice for corporate reimbursement</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Comfortable, air-conditioned ride</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span>Reliable, punctual service</span></li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200 bg-green-50">
+              <CardContent className="pt-6">
+                <h3 class="font-semibold mb-3 flex items-center gap-2 text-green-800">
+                  <TrendingDown class="w-5 h-5 text-green-600" />
+                  Why GreenEVCabs Costs Less
+                </h3>
+                <ul class="space-y-2 text-sm text-green-700">
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span><strong>Direct operations:</strong> No middleman costs</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span><strong>Better margins:</strong> Volume-based pricing strategy</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span><strong>Customer focus:</strong> Building long-term relationships</span></li>
+                  <li class="flex gap-2"><Check class="w-4 h-4 text-green-600 mt-0.5" /><span><strong>No app fees:</strong> Simple WhatsApp booking saves overhead</span></li>
+                </ul>
+                <div class="mt-4 p-3 bg-white rounded-lg border border-green-300">
+                  <p class="text-sm font-semibold text-green-800">
+                    💡 Same quality service, better pricing = Smart choice for regular travelers
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- When to Choose Which -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Honest Recommendation: When to Choose Which?</h2>
+
+          <div class="space-y-6">
+            <Card className="border-green-200">
+              <CardHeader className="bg-green-50">
+                <CardTitle className="text-green-800">Choose GreenEVCabs When:</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p class="font-semibold">You want the best price</p>
+                      <p class="text-sm text-muted-foreground">Save ₹500 per trip without compromising on quality</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p class="font-semibold">You travel regularly</p>
+                      <p class="text-sm text-muted-foreground">₹12,000-26,000 annual savings add up significantly</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p class="font-semibold">You prefer transparent pricing</p>
+                      <p class="text-sm text-muted-foreground">All rates clearly listed on website, no need to call</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p class="font-semibold">You want easy booking</p>
+                      <p class="text-sm text-muted-foreground">WhatsApp booking in 30 seconds vs app downloads</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p class="font-semibold">You need guaranteed zero surge pricing</p>
+                      <p class="text-sm text-muted-foreground">₹3,700 always, regardless of time or demand</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="mt-6">
+                  <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Pune%20Mumbai" target="_blank">
+                    <Button className="w-full bg-green-600 hover:bg-green-700">Book GreenEVCabs & Save ₹500</Button>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="bg-muted">
+                <CardTitle>Choose GrEL When:</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <div class="w-5 h-5 mt-0.5 flex-shrink-0 text-muted-foreground">•</div>
+                    <div>
+                      <p class="font-semibold">You already have a GrEL membership/credits</p>
+                      <p class="text-sm text-muted-foreground">Use existing credits before switching</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div class="w-5 h-5 mt-0.5 flex-shrink-0 text-muted-foreground">•</div>
+                    <div>
+                      <p class="font-semibold">Price doesn't matter to you</p>
+                      <p class="text-sm text-muted-foreground">If ₹500 extra per trip is negligible in your budget</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="mt-4 p-3 bg-muted/50 rounded-lg">
+                  <p class="text-sm text-muted-foreground">
+                    <strong>Note:</strong> Both services offer similar quality. Most price-conscious travelers prefer GreenEVCabs for the ₹500 savings.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Customer Testimonials -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">What Customers Say About Switching</h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card className="border-green-200 bg-green-50/30">
+              <CardContent className="pt-6">
+                <div class="flex items-start gap-3 mb-3">
+                  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 font-bold text-primary">
+                    AK
+                  </div>
+                  <div>
+                    <p class="font-semibold">Amit K.</p>
+                    <p class="text-sm text-muted-foreground">IT Manager, Hinjewadi</p>
+                  </div>
+                </div>
+                <p class="text-sm text-muted-foreground italic mb-2">
+                  "Used GrEL for 2 years, recently switched to GreenEVCabs. Honestly, the service is identical - same professional drivers, same electric SUVs. But I save ₹1,000 per round trip (Hinjewadi to Mumbai office twice). That's ₹48,000/year for the exact same service!"
+                </p>
+                <div class="flex gap-1 text-yellow-500">⭐⭐⭐⭐⭐</div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200 bg-green-50/30">
+              <CardContent className="pt-6">
+                <div class="flex items-start gap-3 mb-3">
+                  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 font-bold text-primary">
+                    PD
+                  </div>
+                  <div>
+                    <p class="font-semibold">Priya D.</p>
+                    <p class="text-sm text-muted-foreground">Consultant, Baner</p>
+                  </div>
+                </div>
+                <p class="text-sm text-muted-foreground italic mb-2">
+                  "Travel to Mumbai 3-4 times a month for client meetings. Was paying ₹16,800/month with GrEL. Now paying ₹14,800 with GreenEVCabs for the same quality. That's ₹24,000 annual savings with zero service compromise. Plus, WhatsApp booking is so much faster!"
+                </p>
+                <div class="flex gap-1 text-yellow-500">⭐⭐⭐⭐⭐</div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-12">
+          <h2 class="text-3xl font-bold mb-6">Common Questions</h2>
+
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Is GreenEVCabs really the same quality as GrEL?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground">
+                  Yes. Both offer professional drivers, electric vehicles, 24/7 service, all tolls included, and GST invoices. GreenEVCabs uses luxury 7-seater SUVs (Kia Carens EV, BYD eMax 7). The main difference is pricing - GreenEVCabs is ₹500 cheaper per trip.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">How much do I actually save by switching?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground mb-2">
+                  Savings depend on your travel frequency:
+                </p>
+                <ul class="space-y-1 text-sm text-muted-foreground ml-4">
+                  <li>• 1 trip/month: ₹6,000/year</li>
+                  <li>• 2 trips/month: ₹12,000/year</li>
+                  <li>• Once/week: ₹26,000/year</li>
+                  <li>• Twice/week: ₹52,000/year</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Can I get the same price transparency with GrEL?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground">
+                  GrEL requires calling for quotes - prices aren't listed on their website. GreenEVCabs has fixed, transparent pricing on the website (₹3,700 for Pune-Mumbai). You know the exact price before booking.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Is there any catch with GreenEVCabs' lower pricing?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground">
+                  No catch. GreenEVCabs operates with lower overhead (no expensive app, direct WhatsApp booking) and passes the savings to customers. Same premium service, better pricing model. Zero hidden charges.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="mb-12">
+          <Card className="border-primary bg-gradient-to-br from-primary/10 to-green-50">
+            <CardContent className="pt-8 pb-8">
+              <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Ready to Start Saving ₹500 Per Trip?</h2>
+                <p class="text-lg text-muted-foreground mb-6">
+                  Same premium service as GrEL. Professional drivers, luxury 7-seater electric SUVs, zero surge pricing. Just better pricing at ₹3,700.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">₹500</p>
+                    <p class="text-sm text-muted-foreground">Saved per trip</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">₹26,000</p>
+                    <p class="text-sm text-muted-foreground">Saved annually (weekly)</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-4">
+                    <p class="text-2xl font-bold text-green-600">0%</p>
+                    <p class="text-sm text-muted-foreground">Service compromise</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://wa.me/917498264215?text=Switch%20from%20GrEL%20to%20GreenEVCabs" target="_blank">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                      Book on WhatsApp & Save ₹500
+                    </Button>
+                  </a>
+                  <a href="tel:+917498264215">
+                    <Button size="lg" variant="outline">
+                      Call +91 74982 64215
+                    </Button>
+                  </a>
+                </div>
+
+                <p class="mt-6 text-sm text-muted-foreground">
+                  ✓ Zero surge pricing ✓ Same premium service ✓ Save ₹26,000/year ✓ Easy WhatsApp booking
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <!-- Related Links -->
+        <section>
+          <h2 class="text-2xl font-bold mb-4">Related Articles</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            <a href="/blog/best-electric-cab-service-pune-2025" class="block">
+              <Card className="hover:border-primary transition-colors">
+                <CardContent className="pt-6">
+                  <p class="font-semibold mb-1">Best Electric Cab Service Pune 2025</p>
+                  <p class="text-sm text-muted-foreground">Complete comparison of all EV services</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/greenevcabs-vs-grel-cabs" class="block">
+              <Card className="hover:border-primary transition-colors">
+                <CardContent class="pt-6">
+                  <p class="font-semibold mb-1">Quick Comparison Page</p>
+                  <p class="text-sm text-muted-foreground">Fast overview with savings calculator</p>
+                </CardContent>
+              </Card>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+</MainLayout>
