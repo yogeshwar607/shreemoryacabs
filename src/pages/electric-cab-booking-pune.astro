@@ -1,0 +1,575 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, MessageSquare, Phone, Calendar, MapPin, Clock, Shield, CreditCard } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Book Electric Cab in Pune",
+  "description": "Simple 4-step process to book electric cab from Pune to Mumbai at ₹3,700",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Choose Booking Method",
+      "text": "Click WhatsApp button or call +91 74982 64215"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Share Trip Details",
+      "text": "Provide pickup location, date, time, and destination"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Get Confirmation",
+      "text": "Receive instant confirmation with driver details and vehicle number"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enjoy Your Ride",
+      "text": "Driver arrives on time, comfortable journey, pay after trip"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book electric cab in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Book electric cab in Pune by messaging us on WhatsApp at +91 74982 64215 or calling directly. Share your pickup location, date, time, and destination. Get instant confirmation with driver details. No advance payment required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What details do I need to provide for booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need to provide: (1) Pickup location in Pune, (2) Drop location (Mumbai/Mumbai Airport/Navi Mumbai Airport), (3) Date and time of travel, (4) Number of passengers. That's it! We'll handle everything else."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to pay advance for booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No advance payment required. Pay after your comfortable ride. We accept UPI, cash, and card payments. GST invoice provided on request."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title="Book Electric Cab Pune to Mumbai | Easy Online Booking ₹3,700 - GreenEVCabs"
+  description="Book electric cab Pune to Mumbai in 30 seconds. WhatsApp booking, instant confirmation, no advance payment. Professional drivers, luxury SUVs at ₹3,700. Available 24/7."
+  keywords={[
+    "book electric cab pune",
+    "electric cab booking pune mumbai",
+    "how to book electric cab pune",
+    "online electric cab booking pune",
+    "electric taxi booking pune to mumbai",
+    "book ev cab pune airport",
+    "electric cab reservation pune"
+  ]}
+>
+  <StructuredData data={[howToSchema, faqSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge variant="secondary" className="mb-4">
+          Book in 30 Seconds | Zero Hassle
+        </Badge>
+        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+          Book Electric Cab Pune to Mumbai
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8">
+          Easiest way to book electric cab from Pune. WhatsApp or call, get instant confirmation, pay after ride. ₹3,700 fixed rate. No advance payment, no app download required.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Pune%20Mumbai" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8">
+              <MessageSquare class="w-5 h-5 mr-2" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="text-lg px-8">
+              <Phone class="w-5 h-5 mr-2" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <div class="flex items-center gap-2">
+            <Check class="w-4 h-4 text-green-600" />
+            <span>No Advance Payment</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Check class="w-4 h-4 text-green-600" />
+            <span>Instant Confirmation</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Check class="w-4 h-4 text-green-600" />
+            <span>24/7 Available</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Check class="w-4 h-4 text-green-600" />
+            <span>No App Download</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Book Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">How to Book Electric Cab in 4 Simple Steps</h2>
+        <p class="text-center text-muted-foreground mb-12">Booking takes less than 30 seconds. No registration, no app download, no hassle.</p>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="relative">
+            <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">1</div>
+            <CardHeader>
+              <MessageSquare class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Choose Booking Method</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground mb-4">Pick your preferred way to book:</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span><strong>WhatsApp (Recommended):</strong> Click button, message sent automatically</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span><strong>Phone Call:</strong> Speak directly with our team</span>
+                </li>
+              </ul>
+              <div class="mt-4 flex gap-2">
+                <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab" target="_blank">
+                  <Button size="sm" className="bg-green-600">WhatsApp Now</Button>
+                </a>
+                <a href="tel:+917498264215">
+                  <Button size="sm" variant="outline">Call Now</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="relative">
+            <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">2</div>
+            <CardHeader>
+              <MapPin class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Share Trip Details</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground mb-4">Provide these simple details:</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2">
+                  <Calendar class="w-4 h-4 text-primary mt-0.5" />
+                  <span>Pickup location (e.g., "Hinjewadi Phase 2")</span>
+                </li>
+                <li class="flex gap-2">
+                  <Clock class="w-4 h-4 text-primary mt-0.5" />
+                  <span>Date and time (e.g., "Tomorrow 6 AM")</span>
+                </li>
+                <li class="flex gap-2">
+                  <MapPin class="w-4 h-4 text-primary mt-0.5" />
+                  <span>Destination (e.g., "Mumbai Airport T2")</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-primary mt-0.5" />
+                  <span>Number of passengers (optional)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="relative">
+            <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">3</div>
+            <CardHeader>
+              <Shield class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Get Instant Confirmation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground mb-4">Within minutes, you receive:</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Booking confirmation message</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Driver name and photo</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Vehicle details and number</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Fixed price: ₹3,700</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Driver contact number</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="relative">
+            <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">4</div>
+            <CardHeader>
+              <CreditCard class="w-10 h-10 text-primary mb-2" />
+              <CardTitle>Enjoy Your Ride</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground mb-4">Experience hassle-free travel:</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Driver arrives 5 minutes before scheduled time</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Comfortable ride in luxury electric SUV</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Professional driver with excellent route knowledge</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Pay after trip (UPI/Cash/Card)</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>GST invoice on request</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Methods Comparison -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Our Booking is Better</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="border-2 border-primary">
+            <CardHeader className="text-center">
+              <Badge className="mb-2 bg-green-600">Easiest</Badge>
+              <CardTitle>GreenEVCabs Booking</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm">
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>No app download</strong> - WhatsApp or call directly</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>No registration</strong> - Book instantly</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>No advance payment</strong> - Pay after ride</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Instant confirmation</strong> - Within 2 minutes</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Human support</strong> - Real person helps you</span>
+                </li>
+                <li class="flex gap-2">
+                  <Check class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Fixed price</strong> - ₹3,700, no surprises</span>
+                </li>
+              </ul>
+              <div class="mt-4">
+                <a href="https://wa.me/917498264215?text=Book%20Now" target="_blank">
+                  <Button className="w-full bg-green-600">Book Now</Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle>App-Based Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm text-muted-foreground">
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Download 100MB+ app first</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Create account, verify OTP</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Link payment method upfront</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Wait for driver acceptance</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-red-500 flex-shrink-0 mt-0.5">✗</span>
+                  <span>Automated responses only</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-red-500 flex-shrink-0 mt-0.5">✗</span>
+                  <span>Surge pricing (₹4,500-8,000)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle>Traditional Cab Operators</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm text-muted-foreground">
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Call, wait on hold</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>No instant confirmation</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>Advance payment often required</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-orange-600 flex-shrink-0 mt-0.5">⚠</span>
+                  <span>"Will call you back" responses</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-red-500 flex-shrink-0 mt-0.5">✗</span>
+                  <span>Hidden charges (tolls, batta)</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-red-500 flex-shrink-0 mt-0.5">✗</span>
+                  <span>Diesel vehicles (₹5,000+)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Need to Know -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Everything You Need to Know About Booking</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Booking Information</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <dl class="space-y-3 text-sm">
+                <div>
+                  <dt class="font-semibold mb-1">When to book?</dt>
+                  <dd class="text-muted-foreground">Book anytime - even for immediate pickups. We're available 24/7. For early morning flights (3-5 AM), we recommend booking at least 6 hours in advance.</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Cancellation policy?</dt>
+                  <dd class="text-muted-foreground">Free cancellation up to 2 hours before scheduled pickup. No cancellation charges.</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Can I modify booking?</dt>
+                  <dd class="text-muted-foreground">Yes! Message us on WhatsApp to change time, pickup location, or any other details.</dd>
+                </div>
+              </dl>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Payment & Pricing</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <dl class="space-y-3 text-sm">
+                <div>
+                  <dt class="font-semibold mb-1">When to pay?</dt>
+                  <dd class="text-muted-foreground">Pay after your comfortable ride. No advance payment required.</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Payment methods?</dt>
+                  <dd class="text-muted-foreground">UPI (PhonePe, Google Pay, Paytm), Cash, Credit/Debit Card</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Any hidden charges?</dt>
+                  <dd class="text-muted-foreground">No hidden charges! ₹3,700 includes everything - tolls, parking, driver allowance, GST. What you see is what you pay.</dd>
+                </div>
+              </dl>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Service Details</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <dl class="space-y-3 text-sm">
+                <div>
+                  <dt class="font-semibold mb-1">Vehicle type?</dt>
+                  <dd class="text-muted-foreground">Luxury 7-seater electric SUVs: Kia Carens EV (₹3,700) or BYD eMax 7 (₹4,200)</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Luggage capacity?</dt>
+                  <dd class="text-muted-foreground">Spacious boot accommodates 4-5 large suitcases + cabin bags comfortably</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Group bookings?</dt>
+                  <dd class="text-muted-foreground">Perfect for families or groups up to 6-7 people with luggage</dd>
+                </div>
+              </dl>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Airport Pickups</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <dl class="space-y-3 text-sm">
+                <div>
+                  <dt class="font-semibold mb-1">Flight delay coverage?</dt>
+                  <dd class="text-muted-foreground">Yes! We track your flight in real-time. Driver adjusts pickup time automatically. No extra charges for flight delays.</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Where will driver wait?</dt>
+                  <dd class="text-muted-foreground">At airport arrivals gate with name board. You'll receive driver photo and contact before landing.</dd>
+                </div>
+                <div>
+                  <dt class="font-semibold mb-1">Free waiting time?</dt>
+                  <dd class="text-muted-foreground">30 minutes free waiting from flight landing time. Covers baggage claim and customs comfortably.</dd>
+                </div>
+              </dl>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Booking FAQs</h2>
+
+        <div class="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How quickly can I get a cab?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                For immediate bookings (within 1-2 hours), availability depends on driver location. For advance bookings (3+ hours), 100% confirmed. We recommend booking at least 3-4 hours in advance for guaranteed availability, especially for early morning airport runs.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">What if my flight lands early/late?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                We track your flight in real-time. If your flight is delayed, driver automatically adjusts pickup time - no need to inform us. If early landing, driver will be notified and will try to reach earlier. No extra charges for flight delays.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Can I book for someone else?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes! When booking, just mention passenger name and contact number. Driver will have their name on the board and will call them directly. Perfect for booking cabs for family members or guests.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Do you provide GST invoice?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Yes, GST invoice provided on request for corporate reimbursement. Mention "need invoice" while booking or ask driver after ride. Invoice sent via email or WhatsApp within 24 hours.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
+        <p class="text-xl text-muted-foreground mb-8">
+          Takes 30 seconds. No app, no advance payment, no hassle. Book now for ₹3,700 fixed rate.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20from%20Pune%20to%20Mumbai" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8">
+              <MessageSquare class="w-5 h-5 mr-2" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="text-lg px-8">
+              <Phone class="w-5 h-5 mr-2" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+
+        <p class="text-sm text-muted-foreground">
+          ✓ No app download ✓ No advance payment ✓ Instant confirmation ✓ 24/7 available
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>
