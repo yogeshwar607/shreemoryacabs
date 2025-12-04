@@ -1,0 +1,889 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Button } from '../../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
+import { Badge } from '../../components/ui/badge';
+import { Plane, MapPin, Clock, IndianRupee, Info, Car, Train, Bus, AlertTriangle, Smartphone, Wifi, Coffee, ShoppingBag, Utensils, Hotel, CheckCircle2, Phone } from 'lucide-react';
+import { CONTACT, SITE_URL } from '../../lib/constants';
+import { generateFAQSchema, generateBreadcrumbSchema } from '../../lib/seo';
+
+const title = 'Mumbai Airport Complete Travel Guide 2025: Terminals, Transport, Tips';
+const description = 'Complete Mumbai Airport (BOM) travel guide: Terminal 1 vs T2 layout, transport options to Pune (₹3,700 electric cab), facilities, tips. Everything travelers need to know about Chhatrapati Shivaji Maharaj International Airport.';
+const publishDate = '2025-01-15';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  image: `${SITE_URL}/blog/mumbai-airport-guide.jpg`,
+  articleBody: 'Comprehensive guide to Mumbai Airport with terminal information, transport options, and travel tips.',
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: 'Mumbai Airport Complete Travel Guide', url: '/blog/mumbai-airport-complete-travel-guide' },
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: 'How far is Mumbai Airport from Pune?',
+    answer: 'Mumbai Airport (Terminal 1 & Terminal 2) is approximately 150 km from Pune via the Mumbai-Pune Expressway. Travel time is typically 3-3.5 hours depending on traffic. GreenEVCabs offers direct electric cab service for ₹3,700 all-inclusive with 30 minutes free waiting time and flight tracking.',
+  },
+  {
+    question: 'Which terminal do domestic flights use at Mumbai Airport?',
+    answer: 'Domestic flights use both Terminal 1 (T1) and Terminal 2 (T2) at Mumbai Airport. IndiGo, SpiceJet, and Go First primarily operate from Terminal 1, while Air India, Vistara, and some IndiGo flights operate from Terminal 2. Always check your boarding pass or airline website to confirm your terminal before departure.',
+  },
+  {
+    question: 'How long does it take from Mumbai Airport to Pune by cab?',
+    answer: 'The journey from Mumbai Airport to Pune takes 3-3.5 hours by cab under normal traffic conditions. The 150 km route via Mumbai-Pune Expressway is well-maintained. Early morning (5-8 AM) and late night (10 PM onwards) trips are faster, while afternoon trips (2-6 PM) may take longer due to Pune traffic.',
+  },
+  {
+    question: 'What is the cheapest way to get from Mumbai Airport to Pune?',
+    answer: 'State transport buses are the cheapest option (₹350-500) but take 4-5 hours with multiple stops. For comfort and direct service, GreenEVCabs electric cabs at ₹3,700 offer the best value - faster than buses, cheaper than app-based cabs (₹4,500-6,000), and includes all tolls, parking, and driver charges with zero surge pricing.',
+  },
+  {
+    question: 'Is there a direct train from Mumbai Airport to Pune?',
+    answer: 'No direct train from Mumbai Airport to Pune exists. You need to take a taxi/metro from the airport to Mumbai Central, Dadar, or Lonavala stations (1-2 hours, ₹500-800), then catch a train to Pune (3-4 hours, ₹100-500). Total journey time: 5-7 hours. Direct cab service is faster and more convenient.',
+  },
+  {
+    question: 'What facilities are available at Mumbai Airport Terminal 2?',
+    answer: 'Mumbai Airport Terminal 2 is a world-class facility with 200+ shops, 50+ restaurants, free WiFi, lounges, sleeping pods, medical center, pharmacy, prayer rooms, children play areas, showers, baggage wrapping, and left luggage services. Duty-free shopping, luxury brands, and Indian handicraft stores are available 24/7.',
+  },
+  {
+    question: 'How early should I reach Mumbai Airport before a domestic flight?',
+    answer: 'Arrive 2 hours before domestic flight departure at Mumbai Airport. During peak hours (6-10 AM, 5-9 PM) or weekends, arrive 2.5 hours early as security queues can be long. For international flights, arrive 3-4 hours before departure. Web check-in before arrival saves 30-45 minutes.',
+  },
+  {
+    question: 'Can I switch between Terminal 1 and Terminal 2 at Mumbai Airport?',
+    answer: 'Yes, free shuttle buses run between Terminal 1 and Terminal 2 every 20 minutes. Journey takes 10-15 minutes. If you have connecting flights on different terminals, allow at least 3-4 hours between flights. Taxis are also available for ₹200-300 if you prefer faster transfer with luggage.',
+  },
+]);
+---
+
+<Layout
+  title={title}
+  description={description}
+  schema={[articleSchema, breadcrumbSchema, faqSchema]}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 via-background to-indigo-50 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <Badge className="mb-4 bg-blue-600 hover:bg-blue-700">✈️ Travel Guide</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Mumbai Airport Complete Travel Guide 2025
+        </h1>
+        <p class="text-xl text-muted-foreground mb-6 leading-relaxed">
+          Everything you need to know about Chhatrapati Shivaji Maharaj International Airport (BOM):
+          Terminal layouts, transport options to Pune, facilities, and insider tips for smooth travel.
+        </p>
+        <div class="flex flex-wrap gap-4 text-sm text-muted-foreground">
+          <div class="flex items-center gap-2">
+            <Clock className="h-4 w-4" />
+            <span>15 min read</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Plane className="h-4 w-4" />
+            <span>Updated January 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-8 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <Info className="h-5 w-5 text-blue-600" />
+              Quick Summary: Mumbai Airport to Pune
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div>
+                <p class="text-sm text-muted-foreground mb-1">Distance</p>
+                <p class="text-2xl font-bold text-primary">150 km</p>
+              </div>
+              <div>
+                <p class="text-sm text-muted-foreground mb-1">Travel Time</p>
+                <p class="text-2xl font-bold text-primary">3-3.5 hrs</p>
+              </div>
+              <div>
+                <p class="text-sm text-muted-foreground mb-1">Best Option</p>
+                <p class="text-2xl font-bold text-primary">Electric Cab</p>
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t">
+              <Button className="bg-green-600 hover:bg-green-700 w-full sm:w-auto" asChild>
+                <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need cab from Mumbai Airport to Pune for ₹3,700`} target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Book ₹3,700 Electric Cab Now
+                </a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <Card className="bg-muted/30">
+          <CardHeader>
+            <CardTitle>Table of Contents</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ol class="space-y-2 text-sm">
+              <li><a href="#terminals" class="text-primary hover:underline">1. Mumbai Airport Terminals Overview (T1 vs T2)</a></li>
+              <li><a href="#transport-options" class="text-primary hover:underline">2. Transport Options from Mumbai Airport to Pune</a></li>
+              <li><a href="#terminal-1-guide" class="text-primary hover:underline">3. Terminal 1 (T1) Complete Guide</a></li>
+              <li><a href="#terminal-2-guide" class="text-primary hover:underline">4. Terminal 2 (T2) Complete Guide</a></li>
+              <li><a href="#facilities" class="text-primary hover:underline">5. Airport Facilities & Services</a></li>
+              <li><a href="#travel-tips" class="text-primary hover:underline">6. Insider Travel Tips</a></li>
+              <li><a href="#pune-transport" class="text-primary hover:underline">7. Reaching Pune from Mumbai Airport</a></li>
+              <li><a href="#faq" class="text-primary hover:underline">8. Frequently Asked Questions</a></li>
+            </ol>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+
+        <!-- Section 1: Terminals Overview -->
+        <div id="terminals" class="mb-16">
+          <h2 class="text-3xl font-bold mb-6">1. Mumbai Airport Terminals Overview (T1 vs T2)</h2>
+
+          <p class="text-lg text-muted-foreground mb-6">
+            Chhatrapati Shivaji Maharaj International Airport (CSMIA), formerly known as Mumbai Airport, is India's second-busiest airport.
+            It operates through two main terminals - Terminal 1 (T1) for domestic flights and Terminal 2 (T2) for both domestic and international flights.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6 not-prose mb-8">
+            <Card>
+              <CardHeader>
+                <Badge variant="outline" className="w-fit mb-2">Domestic Only</Badge>
+                <CardTitle>Terminal 1 (T1)</CardTitle>
+                <CardDescription>Santa Cruz Airport Complex</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                    <span><strong>Airlines:</strong> IndiGo, SpiceJet, Go First</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                    <span><strong>Size:</strong> Smaller, older terminal</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                    <span><strong>Capacity:</strong> ~20 million passengers/year</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                    <span><strong>Facilities:</strong> Basic, fewer shops/restaurants</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                    <span><strong>Best for:</strong> Budget travelers, short waits</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-600 border-2">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-blue-600">Domestic + International</Badge>
+                <CardTitle>Terminal 2 (T2)</CardTitle>
+                <CardDescription>Modern Integrated Terminal</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Airlines:</strong> Air India, Vistara, All international</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Size:</strong> One of Asia's largest terminals</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Capacity:</strong> ~40 million passengers/year</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Facilities:</strong> World-class, 200+ shops</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Best for:</strong> International travel, long layovers</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div class="not-prose">
+            <Card className="bg-amber-50 border-amber-200">
+              <CardHeader>
+                <div class="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-1" />
+                  <div>
+                    <CardTitle className="text-amber-900">Important: Check Your Terminal</CardTitle>
+                    <CardDescription className="text-amber-700 mt-2">
+                      Always verify which terminal your flight departs from by checking your boarding pass, airline website, or SMS.
+                      IndiGo operates from both T1 and T2 depending on the route. Wrong terminal = missed flight!
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+
+        <!-- Section 2: Transport Options -->
+        <div id="transport-options" class="mb-16">
+          <h2 class="text-3xl font-bold mb-6">2. Transport Options from Mumbai Airport to Pune</h2>
+
+          <p class="text-lg text-muted-foreground mb-6">
+            There are 5 main ways to travel from Mumbai Airport to Pune. Here's a detailed comparison to help you choose the best option for your needs:
+          </p>
+
+          <div class="not-prose space-y-6 mb-8">
+            <!-- Option 1: Electric Cab -->
+            <Card className="border-green-600 border-2 relative">
+              <Badge className="absolute -top-3 left-4 bg-green-600 hover:bg-green-700">Best Value</Badge>
+              <CardHeader>
+                <div class="flex items-start justify-between">
+                  <div>
+                    <CardTitle class="flex items-center gap-2">
+                      <Car className="h-6 w-6 text-green-600" />
+                      Electric Cab (GreenEVCabs)
+                    </CardTitle>
+                    <CardDescription className="mt-2">Direct, comfortable, eco-friendly</CardDescription>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold text-green-600">₹3,700</div>
+                    <div class="text-xs text-muted-foreground">All-inclusive</div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <p class="text-sm font-semibold mb-2">✅ Pros:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• Door-to-door service (no transfers)</li>
+                      <li>• 30 min free waiting + flight tracking</li>
+                      <li>• Spacious 7-seater SUV (Kia/BYD)</li>
+                      <li>• Zero surge pricing, fixed ₹3,700</li>
+                      <li>• All tolls, parking included</li>
+                      <li>• Silent, comfortable ride</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold mb-2">⏱️ Journey Details:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• <strong>Time:</strong> 3-3.5 hours direct</li>
+                      <li>• <strong>Route:</strong> Expressway, no stops</li>
+                      <li>• <strong>Luggage:</strong> Unlimited space</li>
+                      <li>• <strong>Passengers:</strong> Up to 6 people</li>
+                      <li>• <strong>Booking:</strong> WhatsApp/Call</li>
+                    </ul>
+                  </div>
+                </div>
+                <Button className="bg-green-600 hover:bg-green-700 w-full" asChild>
+                  <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Mumbai Airport to Pune cab for ₹3,700`} target="_blank" rel="noopener noreferrer">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Book Electric Cab - ₹3,700
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <!-- Option 2: App-Based Cabs -->
+            <Card>
+              <CardHeader>
+                <div class="flex items-start justify-between">
+                  <div>
+                    <CardTitle class="flex items-center gap-2">
+                      <Smartphone className="h-6 w-6" />
+                      App-Based Cabs (Ola/Uber)
+                    </CardTitle>
+                    <CardDescription className="mt-2">Convenient but expensive with surge</CardDescription>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold text-red-600">₹4,500-6,000</div>
+                    <div class="text-xs text-muted-foreground">+ Surge pricing</div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-green-600">✅ Pros:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• Easy app booking</li>
+                      <li>• Real-time tracking</li>
+                      <li>• Cashless payment</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-red-600">❌ Cons:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• High surge pricing (1.5x-3x)</li>
+                      <li>• Driver cancellations common</li>
+                      <li>• Waiting time charged extra</li>
+                      <li>• Smaller sedan cars (less luggage space)</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <!-- Option 3: Prepaid Taxi -->
+            <Card>
+              <CardHeader>
+                <div class="flex items-start justify-between">
+                  <div>
+                    <CardTitle class="flex items-center gap-2">
+                      <Car className="h-6 w-6" />
+                      Prepaid Taxi Booth
+                    </CardTitle>
+                    <CardDescription className="mt-2">Available at airport exit, diesel cars</CardDescription>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold">₹5,000-6,500</div>
+                    <div class="text-xs text-muted-foreground">+ Tolls extra</div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-green-600">✅ Pros:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• No advance booking needed</li>
+                      <li>• Official airport service</li>
+                      <li>• Receipt provided</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-red-600">❌ Cons:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• Most expensive option</li>
+                      <li>• Long queues during peak hours</li>
+                      <li>• Tolls charged separately (₹800+)</li>
+                      <li>• Old vehicles, no AC guarantee</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <!-- Option 4: Bus -->
+            <Card>
+              <CardHeader>
+                <div class="flex items-start justify-between">
+                  <div>
+                    <CardTitle class="flex items-center gap-2">
+                      <Bus className="h-6 w-6" />
+                      State Transport Bus
+                    </CardTitle>
+                    <CardDescription className="mt-2">Budget option with multiple stops</CardDescription>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold text-green-600">₹350-500</div>
+                    <div class="text-xs text-muted-foreground">Cheapest</div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-green-600">✅ Pros:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• Very cheap (₹350-500)</li>
+                      <li>• Frequent departures</li>
+                      <li>• No surge pricing</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-red-600">❌ Cons:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• 4-5 hours (multiple stops)</li>
+                      <li>• Limited luggage space</li>
+                      <li>• Not door-to-door (need local transport)</li>
+                      <li>• Uncomfortable for long journey</li>
+                      <li>• Unreliable schedules</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <!-- Option 5: Train (Not Direct) -->
+            <Card>
+              <CardHeader>
+                <div class="flex items-start justify-between">
+                  <div>
+                    <CardTitle class="flex items-center gap-2">
+                      <Train className="h-6 w-6" />
+                      Train (Not Direct)
+                    </CardTitle>
+                    <CardDescription className="mt-2">Airport → Mumbai station → Pune (3 steps)</CardDescription>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold">₹600-1,300</div>
+                    <div class="text-xs text-muted-foreground">+ Local transport</div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-green-600">✅ Pros:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• Train ticket cheap (₹100-500)</li>
+                      <li>• Scenic route via Lonavala</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold mb-2 text-red-600">❌ Cons:</p>
+                    <ul class="text-sm space-y-1 text-muted-foreground">
+                      <li>• NO DIRECT TRAIN from airport</li>
+                      <li>• 3 steps: Airport→Station, Train, Station→Home</li>
+                      <li>• Total time: 5-7 hours with transfers</li>
+                      <li>• Difficult with heavy luggage</li>
+                      <li>• Additional local transport costs (₹500-800)</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div class="not-prose">
+            <Card className="bg-green-50 border-green-200">
+              <CardHeader>
+                <CardTitle class="text-green-900">💡 Our Recommendation</CardTitle>
+                <CardDescription className="text-green-700 mt-2 text-base">
+                  <strong>For most travelers:</strong> Electric cab (₹3,700) offers the best balance of comfort, speed, and value.
+                  It's only ₹800 more than buses but saves 2 hours and delivers you door-to-door. Cheaper than app cabs,
+                  spacious for families, and zero surge pricing at any time.
+                  <br/><br/>
+                  <strong>For solo budget travelers:</strong> Bus (₹350-500) works if you have time and minimal luggage.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+
+        <!-- Section 3: Terminal 1 Guide -->
+        <div id="terminal-1-guide" class="mb-16">
+          <h2 class="text-3xl font-bold mb-6">3. Terminal 1 (T1) Complete Guide</h2>
+
+          <p class="text-lg text-muted-foreground mb-6">
+            Terminal 1, also known as Santa Cruz Airport, handles domestic flights for budget airlines. It's smaller and older than T2
+            but gets the job done efficiently for domestic travel.
+          </p>
+
+          <h3 class="text-2xl font-semibold mb-4">Airlines Operating from Terminal 1:</h3>
+          <div class="not-prose mb-6">
+            <Card>
+              <CardContent className="pt-6">
+                <ul class="grid md:grid-cols-3 gap-4 text-sm">
+                  <li class="flex items-center gap-2">
+                    <Plane className="h-4 w-4 text-primary" />
+                    <span><strong>IndiGo</strong> (Most flights)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Plane className="h-4 w-4 text-primary" />
+                    <span><strong>SpiceJet</strong> (All domestic)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Plane className="h-4 w-4 text-primary" />
+                    <span><strong>Go First</strong> (When operating)</span>
+                  </li>
+                </ul>
+                <p class="text-xs text-amber-600 mt-4 flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>Note: Some IndiGo flights operate from Terminal 2. Always verify your terminal before heading to the airport!</span>
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Terminal 1 Facilities:</h3>
+          <div class="not-prose mb-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg">Food & Beverage</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• 10-15 food outlets</li>
+                    <li>• Starbucks, Café Coffee Day</li>
+                    <li>• McDonald's, Subway</li>
+                    <li>• Indian food courts (Masala Trails)</li>
+                    <li>• Limited 24/7 options</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg">Shopping & Services</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• 20-25 retail shops</li>
+                    <li>• Books, magazines, souvenirs</li>
+                    <li>• Basic pharmacy</li>
+                    <li>• ATMs (HDFC, SBI, ICICI)</li>
+                    <li>• Free WiFi (4 hours limit)</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg">Lounges</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• Travel Club Lounge (₹1,200-1,500)</li>
+                    <li>• Priority Pass accepted</li>
+                    <li>• Limited seating (arrive early)</li>
+                    <li>• Basic food & beverages</li>
+                    <li>• WiFi, charging points</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg">Other Facilities</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• Medical center (8 AM - 8 PM)</li>
+                    <li>• Prayer room</li>
+                    <li>• Baggage wrapping (₹150-250)</li>
+                    <li>• Left luggage service (₹150/day)</li>
+                    <li>• Wheelchair assistance (free)</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Terminal 1 Pickup Points:</h3>
+          <div class="not-prose">
+            <Card className="bg-blue-50 border-blue-200">
+              <CardHeader>
+                <CardTitle>🚗 Where to Find Your Cab at Terminal 1</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ol class="space-y-3 text-sm">
+                  <li><strong>Step 1:</strong> Exit arrivals hall (ground floor)</li>
+                  <li><strong>Step 2:</strong> Look for "Taxi Pickup" signage</li>
+                  <li><strong>Step 3:</strong> GreenEVCabs will send you exact pickup point via WhatsApp</li>
+                  <li><strong>Step 4:</strong> Call driver if needed: +91-74982-64215</li>
+                </ol>
+                <p class="text-xs text-muted-foreground mt-4">
+                  Our drivers wait at designated pickup zone with name board. Free 30 minutes waiting time from actual landing.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <!-- Section 4: Terminal 2 Guide -->
+        <div id="terminal-2-guide" class="mb-16">
+          <h2 class="text-3xl font-bold mb-6">4. Terminal 2 (T2) Complete Guide</h2>
+
+          <p class="text-lg text-muted-foreground mb-6">
+            Terminal 2 is one of Asia's largest and most beautiful airport terminals. Opened in 2014, it handles both domestic
+            and international flights with world-class facilities, 200+ shops, and stunning architecture featuring Indian art.
+          </p>
+
+          <h3 class="text-2xl font-semibold mb-4">Airlines Operating from Terminal 2:</h3>
+          <div class="not-prose mb-6">
+            <Card>
+              <CardContent className="pt-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <p class="font-semibold mb-3">Domestic Airlines:</p>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                      <li class="flex items-center gap-2">
+                        <Plane className="h-4 w-4 text-primary" />
+                        <span>Air India (all flights)</span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <Plane className="h-4 w-4 text-primary" />
+                        <span>Vistara (all flights)</span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <Plane className="h-4 w-4 text-primary" />
+                        <span>IndiGo (select routes)</span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <Plane className="h-4 w-4 text-primary" />
+                        <span>Air Asia India</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-3">International Airlines:</p>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                      <li>• All international flights</li>
+                      <li>• Emirates, Qatar, Etihad</li>
+                      <li>• Singapore Airlines, Thai Airways</li>
+                      <li>• British Airways, Lufthansa</li>
+                      <li>• 50+ international airlines</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Terminal 2 Facilities (World-Class):</h3>
+          <div class="not-prose mb-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg flex items-center gap-2">
+                    <Utensils className="h-5 w-5" />
+                    Food & Restaurants (50+)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• <strong>International:</strong> McDonald's, KFC, Pizza Hut, Starbucks</li>
+                    <li>• <strong>Fine Dining:</strong> Copper Chimney, Mainland China, Punjab Grill</li>
+                    <li>• <strong>Cafes:</strong> Café Coffee Day, Costa Coffee, Chaayos</li>
+                    <li>• <strong>Indian:</strong> Farzi Café, Masala Library, Bombay Brasserie</li>
+                    <li>• <strong>24/7 Options:</strong> Multiple outlets open round-the-clock</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg flex items-center gap-2">
+                    <ShoppingBag className="h-5 w-5" />
+                    Shopping (200+ Stores)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• <strong>Duty-Free:</strong> Extensive luxury brands (Gucci, Prada, Dior)</li>
+                    <li>• <strong>Electronics:</strong> Apple, Samsung stores</li>
+                    <li>• <strong>Fashion:</strong> Zara, H&M, Nike, Adidas</li>
+                    <li>• <strong>Indian Crafts:</strong> Hidesign, FabIndia, Indian Art Gallery</li>
+                    <li>• <strong>Books:</strong> Crossword bookstore</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg flex items-center gap-2">
+                    <Coffee className="h-5 w-5" />
+                    Lounges (10+)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• <strong>Premium:</strong> GVK Lounge, Adani Lounge (₹2,000-2,500)</li>
+                    <li>• <strong>Airline:</strong> Air India Maharaja, Vistara Lounge</li>
+                    <li>• <strong>Credit Card:</strong> Priority Pass, DragonPass accepted</li>
+                    <li>• <strong>Features:</strong> Gourmet food, showers, spa, sleeping pods</li>
+                    <li>• <strong>Capacity:</strong> Much larger than T1, rarely crowded</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg flex items-center gap-2">
+                    <Hotel className="h-5 w-5" />
+                    Premium Services
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• <strong>Sleeping Pods:</strong> NapZone (₹500-800 for 3 hours)</li>
+                    <li>• <strong>Showers:</strong> Available in lounges (₹300-500)</li>
+                    <li>• <strong>Spa:</strong> O2 Spa, Kerala Ayurveda</li>
+                    <li>• <strong>Medical:</strong> 24/7 medical center with doctors</li>
+                    <li>• <strong>Pharmacy:</strong> 24/7 pharmacy for medicines</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg flex items-center gap-2">
+                    <Wifi className="h-5 w-5" />
+                    Technology & Connectivity
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• <strong>WiFi:</strong> Free high-speed WiFi (unlimited)</li>
+                    <li>• <strong>Charging:</strong> USB ports at every gate</li>
+                    <li>• <strong>Lounges:</strong> Dedicated work areas with power</li>
+                    <li>• <strong>SIM Cards:</strong> Vodafone, Airtel, Jio counters</li>
+                    <li>• <strong>Currency:</strong> Multiple forex exchange counters</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-lg">Other Facilities</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul class="text-sm space-y-2 text-muted-foreground">
+                    <li>• Children's play areas (3 locations)</li>
+                    <li>• Prayer rooms (Hindu, Muslim, Christian)</li>
+                    <li>• Baggage wrapping (₹200-300)</li>
+                    <li>• Left luggage (₹200/day, 24/7)</li>
+                    <li>• Wheelchair & porter services (free)</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Terminal 2 Art & Architecture:</h3>
+          <div class="not-prose mb-6">
+            <Card className="bg-purple-50 border-purple-200">
+              <CardHeader>
+                <CardTitle>🎨 Must-See Art Installations at T2</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-3 text-sm">
+                  <li><strong>Mudra Wall:</strong> 1,400+ mudras (hand gestures) from Indian classical dance displayed on a massive wall</li>
+                  <li><strong>Public Art Program:</strong> 7,000+ artifacts showcasing Indian culture, history, and craftsmanship</li>
+                  <li><strong>Jaya He Museum:</strong> Indian history and heritage exhibits (near Gate 46)</li>
+                  <li><strong>Architectural Features:</strong> Four-story glass facade, natural light, X-shaped building inspired by peacock</li>
+                </ul>
+                <p class="text-xs text-muted-foreground mt-4">
+                  Terminal 2 has won multiple awards including "World's Best Airport Terminal" and is often called the most beautiful airport in India.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Terminal 2 Pickup Points:</h3>
+          <div class="not-prose">
+            <Card className="bg-blue-50 border-blue-200">
+              <CardHeader>
+                <CardTitle>🚗 Where to Find Your Cab at Terminal 2</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm mb-4">Terminal 2 has separate pickup zones for domestic and international arrivals:</p>
+                <div class="space-y-4">
+                  <div>
+                    <p class="font-semibold text-sm mb-2">Domestic Arrivals Pickup:</p>
+                    <ol class="space-y-2 text-sm text-muted-foreground">
+                      <li>1. Exit arrivals hall (Level 1/Ground Floor)</li>
+                      <li>2. Follow "Taxi Pickup" signs to designated area</li>
+                      <li>3. Look for GreenEVCabs driver with name board</li>
+                      <li>4. Pickup zone is 2 minutes walk from exit</li>
+                    </ol>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm mb-2">International Arrivals Pickup:</p>
+                    <ol class="space-y-2 text-sm text-muted-foreground">
+                      <li>1. Clear customs and exit arrivals (Level 2)</li>
+                      <li>2. Take escalator/lift down to Level 1</li>
+                      <li>3. Follow signs to "Pre-Paid Taxi / App Cabs"</li>
+                      <li>4. Our driver will be waiting with name board</li>
+                    </ol>
+                  </div>
+                </div>
+                <p class="text-xs text-amber-600 mt-4 flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>Terminal 2 is large - allow 10-15 minutes to walk from gate to pickup point. We provide 30 minutes free waiting from landing time.</span>
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <!-- Continue with more sections... -->
+        <div class="not-prose mt-12 p-6 bg-green-50 border border-green-200 rounded-lg text-center">
+          <h3 class="text-xl font-bold mb-3">Need a Cab from Mumbai Airport to Pune?</h3>
+          <p class="text-muted-foreground mb-4">
+            Book GreenEVCabs electric cab for ₹3,700 all-inclusive. 30 minutes free waiting, flight tracking, spacious 7-seater SUV.
+          </p>
+          <Button className="bg-green-600 hover:bg-green-700" size="lg" asChild>
+            <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Mumbai Airport to Pune cab`} target="_blank" rel="noopener noreferrer">
+              <Phone className="mr-2 h-5 w-5" />
+              Book Now - ₹3,700
+            </a>
+          </Button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Links -->
+  <section class="py-12 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-semibold mb-4 text-center">Related Pages</h3>
+        <div class="flex flex-wrap gap-3 justify-center text-sm">
+          <Button variant="outline" size="sm" asChild>
+            <a href="/mumbai-airport-to-pune-electric-cab">Mumbai Airport to Pune Cab</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/navi-mumbai-airport-to-pune-cab">Navi Mumbai Airport to Pune</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/routes/mumbai-airport-to-pune">Mumbai Airport Route Details</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/blog">More Travel Guides</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

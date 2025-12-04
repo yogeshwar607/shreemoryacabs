@@ -1,0 +1,853 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { MapPin, Clock, IndianRupee, Leaf, CheckCircle2, Phone, Navigation, Fuel, Users, Coffee, Camera, AlertTriangle, Calendar } from 'lucide-react';
+import { CONTACT, SITE_URL } from '../lib/constants';
+import { generateFAQSchema, generateBreadcrumbSchema } from '../lib/seo';
+
+const title = 'Pune to Shirdi Electric Cab ₹4,500 | Premium Sai Baba Temple Taxi Service';
+const description = 'Book Pune to Shirdi electric cab at ₹4,500 all-inclusive. 240 km comfortable AC cab with Sai Baba darshan packages, experienced drivers who know temple routes. Zero surge pricing, 24/7 availability, spacious 7-seater for family trips.';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Electric Cab Service Pune to Shirdi',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'GreenEVCabs',
+    description: 'Premium electric cab service from Pune to Shirdi with temple darshan packages, experienced drivers, and comfortable 7-seater SUVs',
+    telephone: CONTACT.phone,
+  },
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Pune',
+    },
+    {
+      '@type': 'City',
+      name: 'Shirdi',
+    },
+  ],
+  offers: {
+    '@type': 'Offer',
+    price: '4500',
+    priceCurrency: 'INR',
+    description: 'All-inclusive one-way fare from Pune to Shirdi with tolls, parking, driver allowance. Same-day return packages available.',
+    availability: 'https://schema.org/InStock',
+  },
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Pune to Shirdi Electric Cab', url: '/pune-to-shirdi-electric-cab' },
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: 'How much does Pune to Shirdi cab cost?',
+    answer: 'GreenEVCabs charges ₹4,500 for one-way Pune to Shirdi cab service (240 km). This all-inclusive price covers tolls, driver charges, parking, and GST with zero surge pricing. Round-trip same-day packages start at ₹8,000. Multi-day packages with hotel pickup/drop available at ₹9,500 for 2 days.',
+  },
+  {
+    question: 'How long does it take from Pune to Shirdi by cab?',
+    answer: 'The journey from Pune to Shirdi takes 4.5-5.5 hours by cab covering 240 km via NH160. Route goes through Pune → Narayangaon → Sangamner → Shirdi. Early morning departures (4-6 AM) are faster with less traffic. Our drivers know temple darshan timings and plan stops accordingly.',
+  },
+  {
+    question: 'Is electric cab good for Pune to Shirdi trip?',
+    answer: 'Yes, electric cabs are excellent for Pune to Shirdi trips. Our Kia Carens EV and BYD eMax 7 have 350+ km range, easily covering the 240 km journey with buffer. Silent, smooth ride perfect for family temple trips. You save ₹800-1,000 vs diesel cabs while contributing to eco-friendly pilgrimage.',
+  },
+  {
+    question: 'What is included in Pune to Shirdi cab package?',
+    answer: 'Our ₹4,500 package includes: One-way transport in spacious 7-seater electric SUV, all tolls (₹350+), parking charges at Shirdi temple, driver allowance, GST, and fuel costs. Driver will wait 2-3 hours for darshan (free), or full-day waiting available. Optional: Guide service, hotel booking assistance.',
+  },
+  {
+    question: 'What is the best time to visit Shirdi from Pune?',
+    answer: 'Best time to visit Shirdi: Early morning departure (4-6 AM) to reach by 9-10 AM for morning darshan with shorter queues. Thursday and weekends are very crowded - avoid if possible. Winter months (October-February) offer pleasant weather. Book cab 2-3 days advance during festivals and weekends.',
+  },
+  {
+    question: 'Do you provide round-trip packages for Shirdi darshan?',
+    answer: 'Yes, we offer three package options: (1) Same-day round-trip ₹8,000 with 2-3 hours darshan time, (2) Overnight package ₹9,500 with next-day return, (3) Two-day package ₹10,500 with hotel drop/pickup and multiple darshan visits. All packages include unlimited stops at Shani Shingnapur and other temples en route.',
+  },
+  {
+    question: 'Can we visit Shani Shingnapur on the way to Shirdi?',
+    answer: 'Yes, Shani Shingnapur is 80 km from Shirdi and can be covered on the same trip. We recommend: Pune → Shirdi (darshan) → Shani Shingnapur → Return to Pune. This full-day package costs ₹9,500 covering 400+ km. Both temples can be visited comfortably in one day with our spacious electric SUVs.',
+  },
+  {
+    question: 'What size vehicle do you provide for Shirdi trips?',
+    answer: 'We provide spacious 7-seater electric SUVs (Kia Carens EV or BYD eMax 7) for Shirdi trips. Perfect for families up to 6 people with luggage space for bags, prasad, and shopping. AC, comfortable seats, smooth ride ideal for elderly passengers. Larger groups: We can arrange multiple vehicles with coordinated departure.',
+  },
+]);
+---
+
+<Layout
+  title={title}
+  description={description}
+  schema={[serviceSchema, breadcrumbSchema, faqSchema]}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-orange-50 via-background to-amber-50 py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge className="mb-4 bg-orange-600 hover:bg-orange-700">🙏 Sai Baba Temple Taxi Service</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Pune to Shirdi Electric Cab Service
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
+          Premium electric cab for Sai Baba darshan from Pune. <span class="font-bold text-primary">₹4,500</span> one-way,
+          240 km comfortable journey in spacious 7-seater. Experienced drivers who know temple routes, timings, and local guidance.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8" asChild>
+            <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Pune to Shirdi cab for Sai Baba darshan. Pickup date and location?`} target="_blank" rel="noopener noreferrer">
+              <Phone className="mr-2 h-5 w-5" />
+              Book Shirdi Darshan Cab
+            </a>
+          </Button>
+          <Button size="lg" variant="outline" className="text-lg px-8" asChild>
+            <a href="#packages">View Packages</a>
+          </Button>
+        </div>
+        <p class="text-sm text-muted-foreground mt-6">
+          ✓ Zero Surge Pricing ✓ Temple Parking Included ✓ Experienced Drivers ✓ Family-Friendly 7-Seaters
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Trip Details -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-6">
+          <Card>
+            <CardHeader className="pb-3">
+              <MapPin className="h-8 w-8 text-orange-600 mb-2" />
+              <CardTitle className="text-2xl">240 km</CardTitle>
+              <CardDescription>Total Distance</CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <Clock className="h-8 w-8 text-orange-600 mb-2" />
+              <CardTitle className="text-2xl">4.5-5.5 hrs</CardTitle>
+              <CardDescription>Travel Time</CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <IndianRupee className="h-8 w-8 text-orange-600 mb-2" />
+              <CardTitle className="text-2xl">₹4,500</CardTitle>
+              <CardDescription>One-Way Fare</CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <Leaf className="h-8 w-8 text-green-600 mb-2" />
+              <CardTitle className="text-2xl">100% EV</CardTitle>
+              <CardDescription>Eco-Friendly</CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Information -->
+  <section class="py-16 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Pune to Shirdi Route Details</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation className="h-5 w-5 text-primary" />
+                Route & Journey
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <div class="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center shrink-0 text-sm font-bold text-orange-700">1</div>
+                  <div>
+                    <p class="font-semibold">Pune (Pickup)</p>
+                    <p class="text-sm text-muted-foreground">Your home/hotel in Pune</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center shrink-0 text-sm font-bold text-orange-700">2</div>
+                  <div>
+                    <p class="font-semibold">Narayangaon (60 km)</p>
+                    <p class="text-sm text-muted-foreground">1.5 hrs • Highway stop, breakfast</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center shrink-0 text-sm font-bold text-orange-700">3</div>
+                  <div>
+                    <p class="font-semibold">Sangamner (120 km)</p>
+                    <p class="text-sm text-muted-foreground">2.5 hrs • Midway rest stop</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center shrink-0 text-sm font-bold text-orange-700">4</div>
+                  <div>
+                    <p class="font-semibold">Shirdi (240 km)</p>
+                    <p class="text-sm text-muted-foreground">4.5-5.5 hrs • Sai Baba Temple</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Coffee className="h-5 w-5 text-primary" />
+                Recommended Stops
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p class="font-semibold">Narayangaon (Breakfast Stop)</p>
+                    <p class="text-muted-foreground">Highway dhaba - Veg thali, poha, chai (₹100-200)</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p class="font-semibold">Sangamner (Washroom Break)</p>
+                    <p class="text-muted-foreground">Clean fuel station with cafe (15 min stop)</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p class="font-semibold">Shirdi Entry (Photo Stop)</p>
+                    <p class="text-muted-foreground">Sai Baba statue before temple area</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p class="font-semibold">Optional: Shani Shingnapur</p>
+                    <p class="text-muted-foreground">80 km from Shirdi, 1.5 hrs extra</p>
+                  </div>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="bg-blue-50 border-blue-200">
+          <CardHeader>
+            <CardTitle class="flex items-center gap-2">
+              <AlertTriangle className="h-5 w-5 text-blue-600" />
+              Route Tips from Our Experienced Drivers
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600">•</span>
+                <span><strong>Best Departure Time:</strong> 4-6 AM from Pune to reach Shirdi by 9-10 AM for morning darshan (shorter queues)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600">•</span>
+                <span><strong>Avoid Peak Days:</strong> Thursdays, Ram Navami, Guru Purnima - temple is extremely crowded (3-4 hour wait)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600">•</span>
+                <span><strong>Road Condition:</strong> Good 4-lane highway till Sangamner, then 2-lane state highway. Drive is smooth and scenic</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600">•</span>
+                <span><strong>Charging (EV):</strong> Our electric cabs have 350+ km range, no charging needed for 240 km one-way trip</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Darshan Packages -->
+  <section id="packages" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Shirdi Darshan Packages</h2>
+        <p class="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          Choose from one-way, same-day return, or multi-day packages based on your darshan plans
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Package 1: One-Way -->
+          <Card>
+            <CardHeader>
+              <Badge variant="outline" className="w-fit mb-2">One-Way</Badge>
+              <CardTitle>Pune to Shirdi</CardTitle>
+              <div class="mt-4">
+                <span class="text-4xl font-bold text-primary">₹4,500</span>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm mb-6">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>240 km door-to-door service</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>2-3 hours free waiting for darshan</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Temple parking included</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>All tolls & driver charges</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Spacious 7-seater electric SUV</span>
+                </li>
+              </ul>
+              <Button className="w-full" variant="outline" asChild>
+                <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need one-way Pune to Shirdi cab for ₹4,500`} target="_blank" rel="noopener noreferrer">
+                  Book One-Way
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <!-- Package 2: Same-Day Return -->
+          <Card className="border-orange-600 border-2 relative">
+            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 hover:bg-orange-700">Most Popular</Badge>
+            <CardHeader>
+              <Badge variant="outline" className="w-fit mb-2 border-orange-600 text-orange-700">Same-Day Return</Badge>
+              <CardTitle>Full-Day Darshan</CardTitle>
+              <div class="mt-4">
+                <span class="text-4xl font-bold text-primary">₹8,000</span>
+                <Badge className="ml-2 bg-green-100 text-green-800 hover:bg-green-100">Save ₹1,000</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm mb-6">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
+                  <span>480 km round-trip (Pune-Shirdi-Pune)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
+                  <span>Early morning pickup (4-5 AM)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
+                  <span>4-5 hours darshan time</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
+                  <span>Return by evening (7-8 PM)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
+                  <span>Optional Shani Shingnapur visit</span>
+                </li>
+              </ul>
+              <Button className="w-full bg-orange-600 hover:bg-orange-700" asChild>
+                <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need same-day Pune-Shirdi-Pune package for ₹8,000`} target="_blank" rel="noopener noreferrer">
+                  Book Same-Day Trip
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <!-- Package 3: Two-Day -->
+          <Card>
+            <CardHeader>
+              <Badge variant="outline" className="w-fit mb-2">Multi-Day</Badge>
+              <CardTitle>Overnight Package</CardTitle>
+              <div class="mt-4">
+                <span class="text-4xl font-bold text-primary">₹9,500</span>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 text-sm mb-6">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Day 1: Pune to Shirdi drop at hotel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Evening darshan + local sightseeing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Day 2: Morning darshan pickup</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Shani Shingnapur visit included</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <span>Return to Pune</span>
+                </li>
+              </ul>
+              <Button className="w-full" variant="outline" asChild>
+                <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need 2-day Shirdi package for ₹9,500`} target="_blank" rel="noopener noreferrer">
+                  Book 2-Day Package
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-sm text-muted-foreground">
+            All packages include: Tolls, parking, driver allowance, GST, and fuel. Driver accommodation (₹500/night) for multi-day trips.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Electric Cab -->
+  <section class="py-16 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose GreenEVCabs for Shirdi Yatra?</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex gap-4">
+            <div class="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <Users className="h-6 w-6 text-orange-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Experienced Drivers</h3>
+              <p class="text-sm text-muted-foreground">
+                Our drivers have 5+ years experience on Pune-Shirdi route. They know temple timings, parking spots, local shops for prasad,
+                and can guide you about darshan process, making your pilgrimage hassle-free.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <Leaf className="h-6 w-6 text-green-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Eco-Friendly Pilgrimage</h3>
+              <p class="text-sm text-muted-foreground">
+                Electric cabs produce zero emissions, making your Sai Baba darshan eco-friendly. A Pune-Shirdi trip in EV saves 60 kg CO₂
+                vs diesel. Silent, smooth ride perfect for peaceful journey to holy place.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <Users className="h-6 w-6 text-blue-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Family-Friendly Vehicles</h3>
+              <p class="text-sm text-muted-foreground">
+                Spacious 7-seater SUVs (Kia Carens, BYD eMax) with ample luggage space for bags, prasad, shopping. Comfortable for elderly
+                passengers with easy entry/exit. AC, smooth suspension ideal for long journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <IndianRupee className="h-6 w-6 text-purple-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Transparent Pricing</h3>
+              <p class="text-sm text-muted-foreground">
+                Fixed ₹4,500 one-way with everything included - tolls, parking, driver charges. No hidden costs, no surge pricing during
+                festivals or weekends. What you see is what you pay.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <Clock className="h-6 w-6 text-amber-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Flexible Scheduling</h3>
+              <p class="text-sm text-muted-foreground">
+                Early morning pickups (4 AM) available to reach temple by 9 AM for shorter queues. Driver waits at temple parking while you
+                do darshan. Adjust return time based on your schedule - no rush.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+              <CheckCircle2 className="h-6 w-6 text-red-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">24/7 Availability</h3>
+              <p class="text-sm text-muted-foreground">
+                Book anytime for next-day or future trips. WhatsApp/call booking with instant confirmation. Last-minute bookings accepted
+                based on availability. Emergency darshan trips accommodated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shirdi Temple Information -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Shirdi Sai Baba Temple Guide</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Calendar className="h-5 w-5 text-primary" />
+                Temple Timings & Darshan
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <p class="font-semibold mb-1">Temple Opening Hours:</p>
+                  <p class="text-muted-foreground">Open 24/7, but darshan has specific timings</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Morning Darshan:</p>
+                  <p class="text-muted-foreground">4:00 AM - 11:30 PM (Kakad Aarti at 4:30 AM)</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Afternoon:</p>
+                  <p class="text-muted-foreground">12:00 PM - 12:40 PM (Noon Aarti)</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Evening Darshan:</p>
+                  <p class="text-muted-foreground">5:00 PM - 10:30 PM (Dhoop Aarti at 6:45 PM)</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Best Time to Visit:</p>
+                  <p class="text-muted-foreground">Early morning (6-9 AM) or evening after 8 PM for shorter queues</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Camera className="h-5 w-5 text-primary" />
+                Important Temple Rules
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong>Mobile Phones:</strong> Not allowed inside sanctum. Use locker facilities (₹10-20)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong>Dress Code:</strong> Modest clothing required. No shorts, sleeveless tops</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong>Queue:</strong> Free darshan queue takes 1-3 hours. VIP darshan ₹500 (30 min wait)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong>Prasad:</strong> Buy from authorized temple shops only (₹50-500)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong>Donations:</strong> Donation boxes available, no compulsion</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Other Places to Visit in Shirdi</CardTitle>
+            <CardDescription>Complete your pilgrimage with these nearby attractions</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold text-sm mb-2">Religious Sites:</p>
+                <ul class="space-y-1 text-sm text-muted-foreground">
+                  <li>• Dwarkamai Masjid (5 min walk from temple)</li>
+                  <li>• Chavadi (Where Sai Baba slept alternate nights)</li>
+                  <li>• Gurusthan (Where Sai Baba was first seen)</li>
+                  <li>• Lendi Baug (Sai Baba's garden, 10 min walk)</li>
+                  <li>• Khandoba Temple (15 min walk)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-2">Extended Trip Options:</p>
+                <ul class="space-y-1 text-sm text-muted-foreground">
+                  <li>• Shani Shingnapur (80 km, 1.5 hrs)</li>
+                  <li>• Nashik temples (90 km, 2 hrs)</li>
+                  <li>• Trimbakeshwar Jyotirlinga (110 km)</li>
+                  <li>• Ajanta-Ellora Caves (200 km, day trip)</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Comparison -->
+  <section class="py-16 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Price Comparison: Pune to Shirdi</h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead class="bg-muted">
+              <tr>
+                <th class="text-left py-3 px-4 border">Transport Option</th>
+                <th class="text-center py-3 px-4 border">Cost</th>
+                <th class="text-center py-3 px-4 border">Time</th>
+                <th class="text-center py-3 px-4 border">Comfort</th>
+                <th class="text-center py-3 px-4 border">Convenience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-green-50">
+                <td class="py-3 px-4 border font-semibold text-green-700">GreenEVCabs Electric</td>
+                <td class="text-center py-3 px-4 border font-bold text-green-700">₹4,500</td>
+                <td class="text-center py-3 px-4 border">4.5-5.5 hrs</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐⭐⭐</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border">App-Based Cabs (Ola/Uber)</td>
+                <td class="text-center py-3 px-4 border text-red-600">₹5,500-7,000</td>
+                <td class="text-center py-3 px-4 border">5-6 hrs</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐⭐</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border">Traditional Diesel Cab</td>
+                <td class="text-center py-3 px-4 border text-red-600">₹5,000-6,000</td>
+                <td class="text-center py-3 px-4 border">5-6 hrs</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐</td>
+                <td class="text-center py-3 px-4 border">⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border">State Transport Bus</td>
+                <td class="text-center py-3 px-4 border text-green-600">₹400-600</td>
+                <td class="text-center py-3 px-4 border">6-7 hrs</td>
+                <td class="text-center py-3 px-4 border">⭐⭐</td>
+                <td class="text-center py-3 px-4 border">⭐⭐</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border">Train (Not Direct)</td>
+                <td class="text-center py-3 px-4 border">₹800-1,500</td>
+                <td class="text-center py-3 px-4 border">7-9 hrs</td>
+                <td class="text-center py-3 px-4 border">⭐⭐</td>
+                <td class="text-center py-3 px-4 border">⭐</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+          <p class="text-sm font-semibold text-green-900 mb-2">💡 Best Value Analysis:</p>
+          <p class="text-sm text-green-700">
+            GreenEVCabs offers the best balance of comfort, speed, and price. While buses are cheaper, they take 2 hours longer and lack
+            comfort for a spiritual journey. App cabs cost ₹1,000-2,500 more with surge pricing. Our fixed ₹4,500 includes everything,
+            making it the most predictable and comfortable option for families.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">How much does Pune to Shirdi cab cost?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                GreenEVCabs charges ₹4,500 for one-way Pune to Shirdi cab service (240 km). This all-inclusive price covers tolls, driver charges,
+                parking, and GST with zero surge pricing. Round-trip same-day packages start at ₹8,000. Multi-day packages with hotel pickup/drop
+                available at ₹9,500 for 2 days.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">How long does it take from Pune to Shirdi by cab?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                The journey from Pune to Shirdi takes 4.5-5.5 hours by cab covering 240 km via NH160. Route goes through Pune → Narayangaon →
+                Sangamner → Shirdi. Early morning departures (4-6 AM) are faster with less traffic. Our drivers know temple darshan timings and
+                plan stops accordingly.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Is electric cab good for Pune to Shirdi trip?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Yes, electric cabs are excellent for Pune to Shirdi trips. Our Kia Carens EV and BYD eMax 7 have 350+ km range, easily covering the
+                240 km journey with buffer. Silent, smooth ride perfect for family temple trips. You save ₹800-1,000 vs diesel cabs while contributing
+                to eco-friendly pilgrimage.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">What is included in Pune to Shirdi cab package?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Our ₹4,500 package includes: One-way transport in spacious 7-seater electric SUV, all tolls (₹350+), parking charges at Shirdi temple,
+                driver allowance, GST, and fuel costs. Driver will wait 2-3 hours for darshan (free), or full-day waiting available. Optional: Guide
+                service, hotel booking assistance.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">What is the best time to visit Shirdi from Pune?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Best time to visit Shirdi: Early morning departure (4-6 AM) to reach by 9-10 AM for morning darshan with shorter queues. Thursday and
+                weekends are very crowded - avoid if possible. Winter months (October-February) offer pleasant weather. Book cab 2-3 days advance during
+                festivals and weekends.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Do you provide round-trip packages for Shirdi darshan?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Yes, we offer three package options: (1) Same-day round-trip ₹8,000 with 2-3 hours darshan time, (2) Overnight package ₹9,500 with
+                next-day return, (3) Two-day package ₹10,500 with hotel drop/pickup and multiple darshan visits. All packages include unlimited stops
+                at Shani Shingnapur and other temples en route.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Can we visit Shani Shingnapur on the way to Shirdi?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Yes, Shani Shingnapur is 80 km from Shirdi and can be covered on the same trip. We recommend: Pune → Shirdi (darshan) → Shani Shingnapur
+                → Return to Pune. This full-day package costs ₹9,500 covering 400+ km. Both temples can be visited comfortably in one day with our
+                spacious electric SUVs.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">What size vehicle do you provide for Shirdi trips?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                We provide spacious 7-seater electric SUVs (Kia Carens EV or BYD eMax 7) for Shirdi trips. Perfect for families up to 6 people with
+                luggage space for bags, prasad, and shopping. AC, comfortable seats, smooth ride ideal for elderly passengers. Larger groups: We can
+                arrange multiple vehicles with coordinated departure.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-orange-600 to-amber-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for Your Shirdi Darshan?</h2>
+        <p class="text-lg mb-8 text-orange-50">
+          Book comfortable electric cab for peaceful pilgrimage to Sai Baba temple. Fixed ₹4,500, experienced drivers, spacious 7-seater.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" className="bg-white text-orange-700 hover:bg-orange-50 text-lg px-8" asChild>
+            <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Pune to Shirdi cab booking for Sai Baba darshan`} target="_blank" rel="noopener noreferrer">
+              <Phone className="mr-2 h-5 w-5" />
+              Book Shirdi Cab - ₹4,500
+            </a>
+          </Button>
+          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8" asChild>
+            <a href={`tel:${CONTACT.phone}`}>
+              Call {CONTACT.phone}
+            </a>
+          </Button>
+        </div>
+        <p class="text-sm text-orange-100 mt-6">
+          24/7 booking • Same-day trips available • Family-friendly vehicles • Experienced drivers
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Links -->
+  <section class="py-12 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-semibold mb-4 text-center">Popular Outstation Routes</h3>
+        <div class="flex flex-wrap gap-3 justify-center text-sm">
+          <Button variant="outline" size="sm" asChild>
+            <a href="/mumbai-airport-to-pune-electric-cab">Mumbai Airport to Pune</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/routes/pune-to-mumbai-airport">Pune to Mumbai Airport</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/corporate-electric-cab-pune">Corporate Cab Service</a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="/">View All Routes</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
