@@ -1,0 +1,777 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Briefcase, Users, ShoppingBag } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service Wakad", url: "/electric-cab-service-wakad" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from Wakad to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,700 all-inclusive for electric cab from Wakad to Mumbai Airport. This includes pickup from any Wakad location (Seasons Mall, Blue Ridge, Datta Mandir area), tolls (₹430), driver allowance (₹500), and parking (₹70). No hidden charges, no surge pricing - same rate 24/7."
+  },
+  {
+    question: "Do you provide pickup from Wakad IT companies and residential areas?",
+    answer: "Yes, we provide electric cab pickup from all Wakad areas including Seasons Mall vicinity, Blue Ridge society, Megapolis residential complex, Datta Mandir area, Wakad Bridge area, and all IT companies like Infosys, Wipro, Capgemini, and TCS Sahyadri Park. Available 24/7 for corporate and residential pickups."
+  },
+  {
+    question: "What is the distance from Wakad to Mumbai Airport?",
+    answer: "Wakad to Mumbai Airport (CSMIA) is approximately 150 km via Mumbai-Pune Expressway. Journey takes 2.5-3 hours depending on traffic. Our electric cabs have 400+ km range, making this trip easy without any charging stops."
+  },
+  {
+    question: "Do you offer corporate packages for Wakad IT companies?",
+    answer: "Yes, we offer dedicated corporate electric cab packages for Wakad IT companies including monthly billing, GST invoices, priority booking, dedicated account manager, and special rates for regular airport transfers. Perfect for Infosys, Wipro, Capgemini, and other IT firms in Wakad."
+  },
+  {
+    question: "Can I book electric cab from Wakad for early morning flights?",
+    answer: "Absolutely! We specialize in early morning pickups from Wakad (3-4 AM) for 6-8 AM Mumbai flights. Our drivers are punctual, professional, and experienced with early morning airport runs. Silent electric vehicles won't disturb your neighbors during pickup."
+  },
+  {
+    question: "Do you serve Wakad to other destinations besides Mumbai Airport?",
+    answer: "Yes, we provide electric cab service from Wakad to Pune Airport (₹900), Navi Mumbai Airport (₹4,000), Mumbai city (₹4,500), Lonavala (₹2,200), Shirdi (₹5,200), and all Maharashtra destinations. 24/7 availability for outstation trips."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service Wakad ₹3,700 | Mumbai Airport | Corporate EV Taxi - GreenEVCabs"
+  description="Premium electric cab service from Wakad to Mumbai Airport at ₹3,700. Pickup from Seasons Mall, Blue Ridge, IT parks. Professional drivers, luxury 7-seater EVs, zero surge. Corporate packages available 24/7."
+  keywords={[
+    "electric cab wakad",
+    "ev taxi wakad",
+    "wakad to mumbai airport cab",
+    "wakad airport taxi",
+    "electric cab wakad pune",
+    "wakad electric taxi service",
+    "seasons mall wakad cab",
+    "blue ridge wakad taxi",
+    "wakad it park cab",
+    "infosys wakad taxi",
+    "wipro wakad cab service",
+    "capgemini wakad cab",
+    "wakad corporate cab",
+    "wakad mumbai airport electric cab",
+    "ev cab wakad to airport"
+  ]}
+>
+  <StructuredData data={[faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service Wakad", url: "/electric-cab-service-wakad" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <Building2 class="w-4 h-4 mr-2" />
+          Wakad IT Hub • Seasons Mall • Blue Ridge • 24/7
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service Wakad | Premium EV Taxi ₹3,700
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from Wakad to Mumbai Airport, Pune Airport, and all destinations. Serving Seasons Mall area, Blue Ridge, Megapolis, and all Wakad IT companies. Professional drivers, luxury 7-seater electric SUVs, transparent pricing. Perfect for IT professionals and families.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,700</p>
+                  <p class="text-sm text-muted-foreground">To Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">2.5 hrs</p>
+                  <p class="text-sm text-muted-foreground">Journey Time</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Users class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">7-Seater</p>
+                  <p class="text-sm text-muted-foreground">Spacious SUVs</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Wakad" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Areas Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Complete Wakad Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <ShoppingBag class="h-5 w-5 text-primary" />
+                Commercial Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Seasons Mall & surrounding offices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Wakad Bridge commercial complex</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Datta Mandir area businesses</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Wakad main road establishments</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Residential Societies
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Blue Ridge township</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Megapolis residential complex</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pristine Prolife society</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All Wakad residential areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Briefcase class="h-5 w-5 text-primary" />
+                IT Companies & Offices
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Infosys Wakad campus</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Wipro office buildings</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Capgemini & other IT firms</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>TCS Sahyadri Park (nearby)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes from Wakad -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Popular Electric Cab Routes from Wakad
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/routes/wakad-to-mumbai-airport">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle>Wakad to Mumbai Airport</CardTitle>
+                <CardDescription>150 km • 2.5-3 hours • Most Popular</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                    <p class="text-2xl font-bold text-primary">₹3,700</p>
+                    <p class="text-xs text-muted-foreground">All-inclusive</p>
+                  </div>
+                  <Button variant="outline">Book Now →</Button>
+                </div>
+                <div class="mt-4 space-y-1 text-xs text-muted-foreground">
+                  <p>✓ Terminal 1 or Terminal 2 drop</p>
+                  <p>✓ Flight tracking included</p>
+                  <p>✓ Perfect for business travelers</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Wakad to Pune Airport</CardTitle>
+              <CardDescription>18 km • 30-40 minutes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹900</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <Button variant="outline">Book Now →</Button>
+              </div>
+              <div class="mt-4 space-y-1 text-xs text-muted-foreground">
+                <p>✓ Quick local airport transfer</p>
+                <p>✓ On-time guarantee</p>
+                <p>✓ Spacious for luggage</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Wakad to Navi Mumbai Airport</CardTitle>
+              <CardDescription>135 km • 2.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,000</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <Button variant="outline">Book Now →</Button>
+              </div>
+              <div class="mt-4 space-y-1 text-xs text-muted-foreground">
+                <p>✓ New airport connectivity</p>
+                <p>✓ Scenic expressway route</p>
+                <p>✓ Meet & greet service</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Wakad to Lonavala</CardTitle>
+              <CardDescription>60 km • 1.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹2,200</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <Button variant="outline">Book Now →</Button>
+              </div>
+              <div class="mt-4 space-y-1 text-xs text-muted-foreground">
+                <p>✓ Perfect for weekend getaways</p>
+                <p>✓ Family-friendly 7-seater</p>
+                <p>✓ Eco-friendly hill station travel</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why Wakad Residents Choose GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Premium Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - Luxury 7-seater with 400+ km range</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - Premium SUV with 530+ km range</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent, smooth electric performance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Zero emissions - eco-friendly travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Advanced safety features (ADAS, 360° camera)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Shield class="h-5 w-5 text-primary" />
+                Professional Service
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Experienced drivers (5+ years on major routes)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>99.8% on-time performance record</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Background-verified professional drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>24/7 customer support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Courteous, well-trained chauffeurs</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <IndianRupee class="h-5 w-5 text-primary" />
+                Transparent Pricing
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>₹3,700 fixed rate to Mumbai Airport - no surprises</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Zero surge pricing - same rate 24/7</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All tolls, parking, driver charges included</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>No hidden charges or last-minute fees</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>₹500 cheaper than other electric cab services</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Briefcase class="h-5 w-5 text-primary" />
+                Corporate Packages
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>GST invoices for expense claims</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Monthly billing for IT companies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Priority booking for corporate clients</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated account manager</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Volume discounts for regular travelers</span>
+                </li>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Wakad Service Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
+          Electric Cab Service for Wakad - Pune's Growing IT & Residential Hub
+        </h2>
+
+        <p>
+          Wakad has emerged as one of Pune's most vibrant neighborhoods, combining a thriving IT sector with modern residential complexes and excellent connectivity. Located strategically between Hinjewadi IT Park and central Pune, <strong>Wakad is home to thousands of IT professionals, families, and businesses</strong> who frequently travel to Mumbai Airport, Pune Airport, and other destinations. <strong>GreenEVCabs</strong> provides premium electric cab service specifically designed for Wakad's unique transportation needs.
+        </p>
+
+        <h3>Complete Wakad Coverage - Every Area Served</h3>
+        <p>
+          We provide electric cab pickup from every corner of Wakad:
+        </p>
+
+        <p>
+          <strong>Seasons Mall Area:</strong> The commercial heart of Wakad, Seasons Mall area is a bustling hub with offices, restaurants, and retail establishments. We serve all businesses and offices in this prime location, perfect for corporate airport transfers and business travel.
+        </p>
+
+        <p>
+          <strong>Blue Ridge Township:</strong> One of Wakad's premium residential complexes, Blue Ridge is home to hundreds of families and IT professionals. We provide door-to-door electric cab service from all Blue Ridge towers, with special attention to early morning airport pickups and family trips.
+        </p>
+
+        <p>
+          <strong>Megapolis:</strong> This expansive residential and commercial complex houses thousands of residents. Our drivers know all Megapolis gates and entry points, ensuring smooth pickups even during peak hours.
+        </p>
+
+        <p>
+          <strong>IT Company Campuses:</strong> Wakad hosts major IT companies including Infosys, Wipro, and Capgemini. We provide corporate cab service directly from office gates, with special corporate packages for regular business travelers.
+        </p>
+
+        <p>
+          <strong>Datta Mandir Area & Wakad Bridge:</strong> These central Wakad locations are easily accessible, and our drivers are familiar with all approach roads, parking areas, and pickup points.
+        </p>
+
+        <h3>Why Wakad Residents Choose Electric Cabs</h3>
+        <p>
+          Wakad's eco-conscious residents and environmentally aware IT professionals increasingly prefer electric cab service for several compelling reasons:
+        </p>
+
+        <ul>
+          <li><strong>Silent Comfort:</strong> Electric vehicles produce zero engine noise - perfect for early morning airport pickups from residential complexes like Blue Ridge where you don't want to disturb neighbors, or for working during the Mumbai Airport journey.</li>
+          <li><strong>Cost Savings:</strong> At ₹3,700 for Wakad to Mumbai Airport, our electric cabs are ₹500 cheaper than other electric services and ₹1,300 cheaper than diesel cabs with surge pricing.</li>
+          <li><strong>Environmental Impact:</strong> Each Wakad-Mumbai trip saves 15-20 kg CO₂ emissions, helping IT companies meet sustainability goals and allowing eco-conscious residents to reduce their carbon footprint.</li>
+          <li><strong>Premium Experience:</strong> Luxury 7-seater electric SUVs with advanced features, spacious interiors, climate control, and smooth performance on the expressway.</li>
+        </ul>
+
+        <h3>Wakad to Mumbai Airport - Most Popular Route</h3>
+        <p>
+          The <strong>150 km journey from Wakad to Mumbai Airport</strong> is our most requested route from this area. IT professionals and families in Wakad frequently travel to Mumbai for business, international flights, or connecting flights.
+        </p>
+
+        <p>
+          <strong>Journey Details:</strong>
+        </p>
+        <ul>
+          <li>Distance: 150 km via Mumbai-Pune Expressway</li>
+          <li>Duration: 2.5-3 hours (depending on traffic)</li>
+          <li>Route: Wakad → Baner → Expressway Toll → Mumbai Airport</li>
+          <li>Price: ₹3,700 all-inclusive (tolls + parking + driver allowance)</li>
+        </ul>
+
+        <p>
+          <strong>Early Morning Flights:</strong> Many Wakad residents need to catch 6-8 AM flights from Mumbai. This requires leaving Wakad by 3-3:30 AM. Our electric cab service excels at these early morning pickups:
+        </p>
+        <ul>
+          <li>Silent electric vehicles won't wake your neighbors in Blue Ridge or Megapolis</li>
+          <li>Drivers arrive 5-10 minutes early and wait quietly</li>
+          <li>Comfortable 7-seater SUVs allow you to sleep during the journey</li>
+          <li>99.8% on-time record - we understand you can't miss flights</li>
+          <li>24/7 booking available - reserve your cab even at midnight</li>
+        </ul>
+
+        <h3>Corporate Electric Cab Service for Wakad IT Companies</h3>
+        <p>
+          Wakad's IT corridor hosts companies like Infosys, Wipro, and Capgemini where employees frequently travel for:
+        </p>
+        <ul>
+          <li>Client meetings in Mumbai</li>
+          <li>Business trips requiring Mumbai Airport access</li>
+          <li>Corporate training and conferences</li>
+          <li>Team offsites and recreational trips</li>
+        </ul>
+
+        <p>
+          <strong>GreenEVCabs Corporate Packages for Wakad IT Companies:</strong>
+        </p>
+        <ul>
+          <li><strong>Monthly Billing:</strong> Consolidated monthly invoices with detailed trip reports, perfect for finance departments and expense tracking.</li>
+          <li><strong>GST Invoices:</strong> Proper GST invoices for all trips, making employee expense claims and reimbursements seamless.</li>
+          <li><strong>Priority Booking:</strong> Corporate clients get priority booking during peak hours and guaranteed vehicle availability.</li>
+          <li><strong>Dedicated Account Manager:</strong> Single point of contact for all corporate bookings, special requests, and last-minute changes.</li>
+          <li><strong>Volume Discounts:</strong> Special rates for companies with 20+ trips per month.</li>
+          <li><strong>Sustainability Reports:</strong> Quarterly CO₂ savings reports showing environmental impact of choosing electric cabs.</li>
+        </ul>
+
+        <h3>Wakad to Pune Airport - Quick Local Transfer</h3>
+        <p>
+          For domestic flights or shorter trips, <strong>Pune Airport is just 18 km from Wakad</strong> - a quick 30-40 minute journey. Our electric cab service provides:
+        </p>
+        <ul>
+          <li>Affordable ₹900 all-inclusive rate</li>
+          <li>Spacious vehicles for luggage (7-seater capacity)</li>
+          <li>Professional drivers familiar with Pune Airport pickup/drop protocols</li>
+          <li>Available 24/7 for early morning or late night flights</li>
+        </ul>
+
+        <h3>Weekend Getaways from Wakad in Electric Cabs</h3>
+        <p>
+          Wakad families love weekend escapes to nearby hill stations and destinations. Our electric cabs are perfect for:
+        </p>
+
+        <p>
+          <strong>Lonavala/Khandala (60-65 km, ₹2,200):</strong> Popular weekend destination with Wakad residents. Our electric SUVs handle ghats smoothly with instant torque and regenerative braking. Spacious 7-seater perfect for families.
+        </p>
+
+        <p>
+          <strong>Mahabaleshwar (120 km, ₹3,500):</strong> Hill station getaway in luxury electric vehicle. Sufficient range for round trip, silent comfortable journey.
+        </p>
+
+        <p>
+          <strong>Shirdi (180 km, ₹5,200):</strong> Pilgrimage trips in eco-friendly electric cabs. Comfortable for elderly passengers, spacious for families.
+        </p>
+
+        <h3>How Wakad Residents Book GreenEVCabs</h3>
+        <p>
+          Booking is instant and convenient:
+        </p>
+
+        <ol>
+          <li><strong>WhatsApp Booking (Recommended):</strong> Message +91 74982 64215 with your Wakad pickup location (Blue Ridge Tower 3, Seasons Mall, Infosys Gate 2, etc.), destination, date, and time. Get instant confirmation with driver details.</li>
+          <li><strong>Call Booking:</strong> Call the same number 24/7 for immediate booking or queries.</li>
+          <li><strong>Advance Booking:</strong> Book up to 30 days ahead for business trips. Recommended 24 hours advance for early morning pickups to guarantee availability.</li>
+        </ol>
+
+        <p>
+          After booking you receive:
+        </p>
+        <ul>
+          <li>Booking confirmation via WhatsApp/SMS</li>
+          <li>Driver details 30 minutes before pickup (name, photo, phone, vehicle number)</li>
+          <li>Real-time tracking (optional)</li>
+          <li>GST invoice via email (for corporate bookings)</li>
+        </ul>
+
+        <h3>Why Electric is Better for Wakad-Mumbai Route</h3>
+        <p>
+          The 150 km Wakad-Mumbai expressway route is ideal for electric vehicles:
+        </p>
+
+        <ul>
+          <li><strong>Ample Range:</strong> Our Kia Carens EV (400+ km) and BYD eMax 7 (530+ km) complete the trip with 60-70% battery remaining. Zero range anxiety.</li>
+          <li><strong>Expressway Efficiency:</strong> Electric vehicles are most efficient on highways. Smooth Mumbai-Pune Expressway is perfect for electric performance.</li>
+          <li><strong>Cost Effective:</strong> Electricity costs 80% less than diesel per kilometer. Savings passed to customers through competitive ₹3,700 pricing.</li>
+          <li><strong>Comfort:</strong> No gear changes, no engine vibrations, no diesel smell - just smooth, quiet travel perfect for sleeping or working during the journey.</li>
+        </ul>
+
+        <h3>Wakad Local Transportation & Connectivity</h3>
+        <p>
+          Beyond airport transfers, we serve Wakad residents for:
+        </p>
+
+        <ul>
+          <li>Wakad to Central Pune (Shivajinagar, FC Road, Camp): ₹600-800</li>
+          <li>Wakad to Hinjewadi IT Park: ₹400-500</li>
+          <li>Wakad to Baner: ₹300-400</li>
+          <li>Wakad to Aundh: ₹350-450</li>
+          <li>Wakad to Kothrud: ₹500-600</li>
+        </ul>
+
+        <h3>Frequently Asked Questions - Wakad Service</h3>
+
+        <h4>Do you provide service from Wakad residential societies late at night?</h4>
+        <p>
+          Yes, we serve all Wakad residential areas 24/7 including late night and early morning. Our drivers are familiar with Blue Ridge, Megapolis, and all society gates. For early morning pickups (2-4 AM), our silent electric vehicles ensure neighbors aren't disturbed.
+        </p>
+
+        <h4>Can I book electric cab for my family visiting Wakad?</h4>
+        <p>
+          Absolutely! You can book for family members even if you're not traveling. Just provide their contact and flight details. We'll coordinate Mumbai Airport pickup and safe drop to your Wakad residence with professional, courteous drivers.
+        </p>
+
+        <h4>Do you offer round trip packages from Wakad?</h4>
+        <p>
+          Yes! Book Wakad to Mumbai Airport and return trip together for 10% discount on return leg. Round trip: ₹7,030 instead of ₹7,400. Perfect for weekend Mumbai trips or short business visits.
+        </p>
+
+        <h4>What if I need to stop at Seasons Mall before airport?</h4>
+        <p>
+          We accommodate brief stops (5-10 minutes) en route without extra charges. Perfect for picking up items from Seasons Mall or Datta Mandir area before your Mumbai Airport trip. Just mention when booking.
+        </p>
+
+        <h4>Is there parking available for pickup at Wakad IT companies?</h4>
+        <p>
+          Yes, our drivers coordinate with security at Infosys, Wipro, and other IT companies for visitor parking during pickup. We ensure smooth, professional pickup from your office gate.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes & Services Section -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Related Routes & Services</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Popular Routes from Wakad</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/routes/wakad-to-mumbai-airport" class="text-primary hover:underline">Wakad to Mumbai Airport</a></li>
+                <li><a href="/mumbai-airport-to-pune-electric-cab" class="text-primary hover:underline">Mumbai Airport to Pune</a></li>
+                <li><a href="/pune-airport-cab-service" class="text-primary hover:underline">Pune Airport Cab Service</a></li>
+                <li><a href="/navi-mumbai-airport-to-pune-cab" class="text-primary hover:underline">Navi Mumbai Airport to Pune</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Other Pune Locations</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/electric-cab-service-hinjewadi" class="text-primary hover:underline">Electric Cab Service Hinjewadi</a></li>
+                <li><a href="/electric-cab-service-baner" class="text-primary hover:underline">Electric Cab Service Baner</a></li>
+                <li><a href="/electric-cab-kothrud-mumbai-airport" class="text-primary hover:underline">Kothrud to Mumbai Airport</a></li>
+                <li><a href="/electric-cab-hadapsar-mumbai-airport" class="text-primary hover:underline">Hadapsar to Mumbai Airport</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Our Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/corporate-electric-cab-pune" class="text-primary hover:underline">Corporate Cab Packages</a></li>
+                <li><a href="/fleet" class="text-primary hover:underline">Our Electric Fleet</a></li>
+                <li><a href="/pune-to-shirdi-electric-cab" class="text-primary hover:underline">Pune to Shirdi Electric Cab</a></li>
+                <li><a href="/ev-cabs-pune" class="text-primary hover:underline">EV Cabs Pune</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Book Your Electric Cab from Wakad Today
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join hundreds of Wakad residents and IT professionals who've switched to GreenEVCabs for reliable, eco-friendly, and affordable transportation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Wakad%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ No advance payment • ✓ Free cancellation up to 2 hours • ✓ 24/7 availability
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

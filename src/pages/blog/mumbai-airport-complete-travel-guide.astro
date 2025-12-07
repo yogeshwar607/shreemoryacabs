@@ -1,11 +1,13 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { Button } from '../../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
-import { Badge } from '../../components/ui/badge';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Plane, MapPin, Clock, IndianRupee, Info, Car, Train, Bus, AlertTriangle, Smartphone, Wifi, Coffee, ShoppingBag, Utensils, Hotel, CheckCircle2, Phone } from 'lucide-react';
-import { CONTACT, SITE_URL } from '../../lib/constants';
-import { generateFAQSchema, generateBreadcrumbSchema } from '../../lib/seo';
+import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
+
+const SITE_URL = 'https://greenevcabs.com';
+const CONTACT = { phone: '917498264215' };
 
 const title = 'Mumbai Airport Complete Travel Guide 2025: Terminals, Transport, Tips';
 const description = 'Complete Mumbai Airport (BOM) travel guide: Terminal 1 vs T2 layout, transport options to Pune (₹3,700 electric cab), facilities, tips. Everything travelers need to know about Chhatrapati Shivaji Maharaj International Airport.';
@@ -76,7 +78,7 @@ const faqSchema = generateFAQSchema([
 ]);
 ---
 
-<Layout
+<MainLayout
   title={title}
   description={description}
   schema={[articleSchema, breadcrumbSchema, faqSchema]}
@@ -886,4 +888,4 @@ const faqSchema = generateFAQSchema([
       </div>
     </div>
   </section>
-</Layout>
+</MainLayout>

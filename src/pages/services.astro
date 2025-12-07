@@ -1,0 +1,423 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { MapPin, Plane, Building2, Car, Route, Zap, Users, Calendar, Phone } from "lucide-react";
+import { generateBreadcrumbSchema, generateServiceSchema } from "@/lib/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Services Pune | Airport, Corporate, Outstation - GreenEVCabs"
+  description="Complete range of electric cab services in Pune: Airport transfers, corporate packages, outstation trips, hourly rentals. 7-seater luxury EVs, transparent pricing, 24/7 availability across all Pune locations."
+  keywords={[
+    "electric cab services pune",
+    "ev taxi services",
+    "airport cab pune",
+    "corporate cab pune",
+    "outstation electric cab",
+    "hourly cab rental pune",
+    "mumbai airport taxi",
+    "pune airport cab service"
+  ]}
+>
+  <StructuredData data={serviceSchema} />
+
+  <Breadcrumbs items={[
+    { name: "Services", url: "/services" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge variant="secondary" className="mb-4">
+          <Zap class="w-4 h-4 mr-2" />
+          100% Electric • Zero Emissions
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Services in Pune
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric taxi services for every need. Airport transfers, corporate travel, outstation trips,
+          and hourly rentals. Transparent pricing, luxury 7-seater SUVs, professional drivers across all Pune locations.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Phone class="mr-2 h-5 w-5" />
+              Book Now - WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Airport Services -->
+  <section class="w-full py-16 bg-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-3 mb-8">
+          <Plane class="h-8 w-8 text-primary" />
+          <h2 class="text-3xl font-bold">Airport Transfer Services</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Mumbai Airport</CardTitle>
+              <CardDescription>Pune to Mumbai Airport & Return</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-primary mb-4">₹3,700</p>
+              <ul class="space-y-2 text-sm mb-4">
+                <li>✓ 150 km • 2.5-3 hours</li>
+                <li>✓ Terminal 1 & Terminal 2</li>
+                <li>✓ Flight tracking included</li>
+                <li>✓ 30 min free waiting</li>
+              </ul>
+              <Button asChild className="w-full">
+                <a href="/mumbai-airport-to-pune-electric-cab">View Details</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Navi Mumbai Airport</CardTitle>
+              <CardDescription>Pune to Navi Mumbai Airport</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-primary mb-4">₹3,900</p>
+              <ul class="space-y-2 text-sm mb-4">
+                <li>✓ 120 km • 2-2.5 hours</li>
+                <li>✓ Brand new terminal</li>
+                <li>✓ Real-time flight status</li>
+                <li>✓ Meet & greet service</li>
+              </ul>
+              <Button asChild className="w-full">
+                <a href="/navi-mumbai-airport-to-pune-cab">View Details</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Pune Airport</CardTitle>
+              <CardDescription>Local Airport Transfers</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-primary mb-4">₹700-900</p>
+              <ul class="space-y-2 text-sm mb-4">
+                <li>✓ All Pune locations</li>
+                <li>✓ 24/7 availability</li>
+                <li>✓ Quick pickup service</li>
+                <li>✓ Terminal assistance</li>
+              </ul>
+              <Button asChild className="w-full">
+                <a href="/pune-airport-cab-service">View Details</a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location-Based Services -->
+  <section class="w-full py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-3 mb-8">
+          <MapPin class="h-8 w-8 text-primary" />
+          <h2 class="text-3xl font-bold">Location-Based Services</h2>
+        </div>
+
+        <p class="text-muted-foreground mb-8 max-w-3xl">
+          Electric cab service available from all major Pune locations. Professional drivers familiar with every area,
+          IT park, residential society, and landmark across Pune and PCMC.
+        </p>
+
+        <div class="grid md:grid-cols-4 gap-4">
+          <Card className="hover:shadow-md transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-semibold mb-2">Hinjewadi IT Park</h3>
+              <p class="text-sm text-muted-foreground mb-3">Phase 1, 2, 3 • All IT companies</p>
+              <Button asChild size="sm" variant="outline" className="w-full">
+                <a href="/electric-cab-service-hinjewadi">View Service</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-md transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-semibold mb-2">Wakad</h3>
+              <p class="text-sm text-muted-foreground mb-3">Seasons Mall • Blue Ridge • Megapolis</p>
+              <Button asChild size="sm" variant="outline" className="w-full">
+                <a href="/electric-cab-service-wakad">View Service</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-md transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-semibold mb-2">Baner</h3>
+              <p class="text-sm text-muted-foreground mb-3">Baner Road • Pashan • West Baner</p>
+              <Button asChild size="sm" variant="outline" className="w-full">
+                <a href="/electric-cab-service-baner">View Service</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-md transition-shadow">
+            <CardContent className="pt-6">
+              <h3 class="font-semibold mb-2">All Pune Locations</h3>
+              <p class="text-sm text-muted-foreground mb-3">Kothrud • Viman Nagar • Hadapsar & more</p>
+              <Button asChild size="sm" variant="outline" className="w-full">
+                <a href="/locations">View All</a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Services -->
+  <section class="w-full py-16 bg-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-3 mb-8">
+          <Building2 class="h-8 w-8 text-primary" />
+          <h2 class="text-3xl font-bold">Corporate Services</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Corporate Cab Packages</CardTitle>
+              <CardDescription>Tailored solutions for businesses</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Monthly Billing:</strong> Consolidated invoices with GST</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Priority Booking:</strong> Dedicated vehicles for regular routes</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Account Manager:</strong> Single point of contact</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Volume Discounts:</strong> 10-20% off for regular bookings</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Employee Transport:</strong> Daily office commute solutions</span>
+                </li>
+              </ul>
+              <Button asChild className="w-full">
+                <a href="/corporate-electric-cab-pune">Learn More</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Executive Travel</CardTitle>
+              <CardDescription>Premium service for business travelers</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Professional Chauffeurs:</strong> Business etiquette trained</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Premium Vehicles:</strong> Latest EVs with WiFi & charging</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Silent Workspace:</strong> Take calls, work on laptop</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Airport Assistance:</strong> Meet & greet, luggage help</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary">✓</span>
+                  <span><strong>Flexible Scheduling:</strong> 24/7 availability</span>
+                </li>
+              </ul>
+              <Button asChild variant="outline" className="w-full">
+                <a href="https://wa.me/917498264215?text=Hi%2C%20I%27m%20interested%20in%20corporate%20packages">Contact Sales</a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outstation Services -->
+  <section class="w-full py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-3 mb-8">
+          <Route class="h-8 w-8 text-primary" />
+          <h2 class="text-3xl font-bold">Outstation Services</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Shirdi Darshan</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-2xl font-bold text-primary mb-2">₹5,000</p>
+              <p class="text-sm text-muted-foreground mb-4">240 km • One way</p>
+              <ul class="text-sm space-y-1 mb-4">
+                <li>• Sai Baba temple packages</li>
+                <li>• Shani Shingnapur visit option</li>
+                <li>• Round trip available</li>
+              </ul>
+              <Button asChild variant="outline" size="sm" className="w-full">
+                <a href="/pune-to-shirdi-electric-cab">Book Now</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Lonavala</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-2xl font-bold text-primary mb-2">₹1,800</p>
+              <p class="text-sm text-muted-foreground mb-4">65 km • One way</p>
+              <ul class="text-sm space-y-1 mb-4">
+                <li>• Weekend getaways</li>
+                <li>• Hill station comfort</li>
+                <li>• Same-day return ₹3,000</li>
+              </ul>
+              <Button asChild variant="outline" size="sm" className="w-full">
+                <a href="/routes/pune-lonavala">Book Now</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Custom Trips</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-2xl font-bold text-primary mb-2">Custom</p>
+              <p class="text-sm text-muted-foreground mb-4">Anywhere in Maharashtra</p>
+              <ul class="text-sm space-y-1 mb-4">
+                <li>• Nashik, Alibaug, Goa</li>
+                <li>• Multi-day packages</li>
+                <li>• Customized itineraries</li>
+              </ul>
+              <Button asChild variant="outline" size="sm" className="w-full">
+                <a href="https://wa.me/917498264215?text=Hi%2C%20I%20need%20custom%20outstation%20trip">Get Quote</a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Services -->
+  <section class="w-full py-16 bg-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Special Services</h2>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <Calendar class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 class="font-semibold mb-2">Hourly Rentals</h3>
+              <p class="text-sm text-muted-foreground mb-3">4/8/12 hour packages for local use</p>
+              <p class="text-lg font-bold text-primary">From ₹800/hr</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <Users class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 class="font-semibold mb-2">Group Travel</h3>
+              <p class="text-sm text-muted-foreground mb-3">Multiple vehicles for large groups</p>
+              <p class="text-lg font-bold text-primary">Best Rates</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <Plane class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 class="font-semibold mb-2">Early Morning</h3>
+              <p class="text-sm text-muted-foreground mb-3">3-5 AM pickups for early flights</p>
+              <p class="text-lg font-bold text-primary">No Extra Cost</p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <Car class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 class="font-semibold mb-2">Round Trips</h3>
+              <p class="text-sm text-muted-foreground mb-3">Same-day or multi-day returns</p>
+              <p class="text-lg font-bold text-primary">Save 10%</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-16 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
+        <p class="text-lg mb-8 opacity-90">
+          Choose from our range of services. Transparent pricing, zero surge, professional drivers, luxury EVs.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab">
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
+              <Phone class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ No advance payment • ✓ Free cancellation • ✓ 24/7 availability
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

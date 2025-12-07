@@ -16,6 +16,30 @@ export const GET: APIRoute = async () => {
     '/airport/navi-mumbai-airport',
     '/airport/pune-airport',
     '/blog',
+    '/cab-fare-calculator',
+    '/electric-vs-diesel-cabs-pune',
+    '/greenevcabs-vs-ola-uber',
+    '/greenevcabs-vs-competitors',
+    '/greenevcabs-vs-grel-cabs',
+    '/corporate-electric-cab-pune',
+    '/ev-cabs-pune',
+    '/ev-taxi-pune',
+    '/electric-cab-pune',
+    '/pune-mumbai-electric-taxi',
+    '/mumbai-pune-electric-cab',
+    '/electric-cab-booking-pune',
+    '/kia-carens-ev-cab-pune',
+    '/byd-emax-7-cab-pune',
+    '/mumbai-airport-to-pune-electric-cab',
+    '/pune-airport-cab-service',
+    '/navi-mumbai-airport-to-pune-cab',
+    '/pune-to-shirdi-electric-cab',
+    '/electric-cab-hinjewadi-mumbai-airport',
+    '/electric-cab-wakad-mumbai-airport',
+    '/electric-cab-baner-mumbai-airport',
+    '/electric-cab-kothrud-mumbai-airport',
+    '/electric-cab-viman-nagar-mumbai-airport',
+    '/electric-cab-hadapsar-mumbai-airport',
   ];
 
   const vehiclePages = vehicles.map((vehicle) => `/fleet/${vehicle.slug}`);
@@ -38,7 +62,13 @@ export const GET: APIRoute = async () => {
     'carbon-footprint-cab-travel-pune-mumbai',
     'maharashtra-ev-regulations-cab-guide-2025',
     'weekend-getaways-pune-ev-cab-2025',
-    'safety-guide-electric-cab-pune-mumbai-airport'
+    'safety-guide-electric-cab-pune-mumbai-airport',
+    'best-electric-cab-service-pune-2025',
+    'greenevcabs-vs-grel-detailed-comparison',
+    'how-to-save-money-pune-mumbai-cab',
+    'electric-vs-diesel-cab-pune-mumbai-comparison',
+    '5-things-check-before-booking-electric-cab-pune-mumbai',
+    'mumbai-airport-complete-travel-guide'
   ];
   const blogPages = blogPosts.map((slug) => `/blog/${slug}`);
 

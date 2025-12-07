@@ -1,11 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { MapPin, Clock, IndianRupee, Leaf, CheckCircle2, Phone, Navigation, Fuel, Users, Coffee, Camera, AlertTriangle, Calendar } from 'lucide-react';
-import { CONTACT, SITE_URL } from '../lib/constants';
-import { generateFAQSchema, generateBreadcrumbSchema } from '../lib/seo';
+import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
+
+const CONTACT = { phone: '+917498264215' };
 
 const title = 'Pune to Shirdi Electric Cab ₹4,500 | Premium Sai Baba Temple Taxi Service';
 const description = 'Book Pune to Shirdi electric cab at ₹4,500 all-inclusive. 240 km comfortable AC cab with Sai Baba darshan packages, experienced drivers who know temple routes. Zero surge pricing, 24/7 availability, spacious 7-seater for family trips.';
@@ -80,7 +81,7 @@ const faqSchema = generateFAQSchema([
 ]);
 ---
 
-<Layout
+<MainLayout
   title={title}
   description={description}
   schema={[serviceSchema, breadcrumbSchema, faqSchema]}
@@ -850,4 +851,4 @@ const faqSchema = generateFAQSchema([
       </div>
     </div>
   </section>
-</Layout>
+</MainLayout>

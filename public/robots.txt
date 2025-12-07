@@ -1,6 +1,38 @@
+# robots.txt for GreenEVCabs - Electric Cab Service Pune
+# https://greenevcabs.com
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
+# Sitemap locations
 Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://greenevcabs.com/sitemap-index.xml
 
+# Crawl-delay to prevent server overload
 Crawl-delay: 1
+
+# Allow important pages explicitly (helps search engines prioritize)
+Allow: /routes/
+Allow: /fleet/
+Allow: /blog/
+Allow: /electric-cab-service-hinjewadi
+Allow: /electric-cab-service-wakad
+Allow: /electric-cab-service-baner
+Allow: /mumbai-airport-to-pune-electric-cab
+Allow: /navi-mumbai-airport-to-pune-cab
+Allow: /pune-airport-cab-service
+Allow: /pune-to-shirdi-electric-cab
+
+# Special rules for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
