@@ -1,0 +1,369 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+import { MapPin, Clock, Check, Phone, MessageCircle, IndianRupee, Building2, Navigation, Star } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Routes", url: "/routes" },
+  { name: "Ravet to Mumbai Airport", url: "/routes/ravet-to-mumbai-airport" }
+]);
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Ravet to Mumbai Airport Electric Cab Service",
+  "serviceType": "Airport Transfer Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "telephone": "+91-7498264215"
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Ravet, Pune"
+    },
+    {
+      "@type": "Airport",
+      "name": "Mumbai Airport",
+      "iataCode": "BOM"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "3700",
+    "priceCurrency": "INR"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a cab from Ravet to Mumbai Airport cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fixed fare from Ravet to Mumbai Airport is ₹3,700 with GreenEVCabs. This includes highway tolls and airport parking charges, with zero surge pricing 24/7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Ravet from Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ravet is approximately 175 km from Mumbai Airport. The journey takes 3.5-4 hours via the highway route."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What time should I book my cab from Ravet for an early morning flight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a 6:00 AM flight, book your pickup from Ravet at 12:00 AM (midnight). For 9:00 AM flights, pickup at 3:00 AM allows sufficient time for travel and check-in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are highway tolls included in the Ravet to Mumbai Airport fare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, highway tolls are fully included in the ₹3,700 fixed fare. There are no hidden charges or additional toll fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a cab from Ravet to Mumbai Airport for the same day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, same-day bookings are accepted subject to availability. Contact us via WhatsApp or phone for instant confirmation."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title="Ravet to Mumbai Airport Cab ₹3,700 | Electric Taxi BOM Airport Transfer"
+  description="Book electric cab from Ravet to Mumbai Airport at ₹3,700. Fixed fare, zero surge, 24/7 service. 175 km, 3.5-4 hours. Same-day booking available."
+  keywords={[
+    "ravet to mumbai airport cab",
+    "ravet mumbai airport taxi",
+    "ravet to bom airport cab",
+    "ravet to airport taxi service",
+    "electric cab ravet mumbai",
+    "ravet airport transfer",
+    "ravet mumbai airport fare"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Routes", href: "/routes" },
+    { name: "Ravet to Mumbai Airport", href: "/routes/ravet-to-mumbai-airport" }
+  ]} />
+
+  <StructuredData data={[breadcrumbSchema, serviceSchema, faqSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        Fixed Fare • Zero Surge • 24/7 Available
+      </Badge>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        Ravet to Mumbai Airport ₹3,700
+      </h1>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+        Reliable electric cab service from Ravet to Mumbai Airport. Fixed pricing with zero surge, 24/7 availability, and professional drivers for a comfortable journey.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Mumbai%20Airport%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book on WhatsApp
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Route Info -->
+    <div class="mb-16 bg-primary/5 rounded-lg p-8">
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <Navigation className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Distance</h3>
+          <p class="text-2xl font-bold text-primary">175 km</p>
+          <p class="text-sm text-muted-foreground">Via Highway</p>
+        </div>
+        <div>
+          <Clock className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Journey Time</h3>
+          <p class="text-2xl font-bold text-primary">3.5-4 hrs</p>
+          <p class="text-sm text-muted-foreground">From Ravet to BOM</p>
+        </div>
+        <div>
+          <IndianRupee className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Fixed Fare</h3>
+          <p class="text-2xl font-bold text-primary">₹3,700</p>
+          <p class="text-sm text-muted-foreground">Tolls Included</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fare Breakdown -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Pricing Breakdown</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardHeader>
+          <CardTitle>What's Included in ₹3,700</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Base Fare (175 km)</span>
+              <span class="font-semibold">₹2,800</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Highway Toll</span>
+              <span class="font-semibold">₹600</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Airport Parking & Entry</span>
+              <span class="font-semibold">₹300</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-primary/10 rounded border-2 border-primary">
+              <span class="font-bold">Total Fixed Fare</span>
+              <span class="font-bold text-primary text-lg">₹3,700</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Service Highlights -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Our Ravet to Mumbai Airport Service</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Reliability & Safety</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Professional Drivers:</strong> Experienced, trained, courteous</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Well-Maintained Vehicles:</strong> Regular servicing and inspections</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>GPS Tracking:</strong> Real-time location updates</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Insurance Coverage:</strong> Comprehensive protection</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Best Value Features</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Zero Surge Pricing:</strong> Same ₹3,700 anytime</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>24/7 Booking:</strong> Early morning and late night service</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>All Tolls Included:</strong> No hidden charges</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Quick Booking:</strong> Instant confirmation via WhatsApp</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Timing Guide -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Recommended Pickup Times from Ravet</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardContent className="pt-6">
+          <div class="space-y-4">
+            {[
+              { flight: "6:00 AM Flight", pickup: "12:00 AM (Midnight)", note: "4 hours travel + 2 hours buffer" },
+              { flight: "9:00 AM Flight", pickup: "3:00 AM", note: "3.5 hours travel + 2.5 hours check-in" },
+              { flight: "12:00 PM Flight", pickup: "6:00 AM", note: "Allow comfortable morning travel" },
+              { flight: "3:00 PM Flight", pickup: "9:00 AM", note: "Avoid afternoon traffic" },
+              { flight: "6:00 PM Flight", pickup: "12:00 PM", note: "Perfect midday pickup" },
+              { flight: "9:00 PM Flight", pickup: "3:00 PM", note: "Before evening rush" }
+            ].map((timing) => (
+              <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+                <div>
+                  <p class="font-semibold">{timing.flight}</p>
+                  <p class="text-xs text-muted-foreground">{timing.note}</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm text-muted-foreground">Pickup Time</p>
+                  <p class="font-bold text-primary">{timing.pickup}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Route Details -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Route Details: Ravet to Mumbai Airport</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardContent className="pt-6">
+          <div class="space-y-4">
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Pickup Areas in Ravet</p>
+              <p class="text-muted-foreground">We pickup from all locations in Ravet including residential areas, business centers, and transit points.</p>
+            </div>
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Highway Route</p>
+              <p class="text-muted-foreground">Primary route via Pune-Nashik Highway and Western Express Highway, with option for expressway routes to reduce travel time.</p>
+            </div>
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Toll Gates</p>
+              <p class="text-muted-foreground">Standard toll charges at Katraj and other highway sections are included in the fixed fare.</p>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Airport Drop-off</p>
+              <p class="text-muted-foreground">Direct drop at your airline terminal with parking and entry fee assistance included.</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+
+      <div class="space-y-4 max-w-3xl mx-auto">
+        {[
+          {
+            question: "Is the fare ₹3,700 fixed for all times?",
+            answer: "Yes, we offer zero surge pricing. The fare remains ₹3,700 whether you book at 3 AM or 3 PM. No hidden charges for early morning or peak hours."
+          },
+          {
+            question: "What if my flight gets delayed?",
+            answer: "You can modify your booking up to 2 hours before pickup. Additional charges apply if you need to extend the service beyond 1 hour waiting time."
+          },
+          {
+            question: "Can I book a round trip from Ravet?",
+            answer: "Yes, we offer round-trip packages. Contact us for special pricing on return journeys from Mumbai Airport to Ravet."
+          },
+          {
+            question: "Do you provide WiFi in the cab?",
+            answer: "We're working on WiFi availability. Currently, we ensure comfortable seating and professional service for your 3.5-4 hour journey."
+          },
+          {
+            question: "What documents do I need to provide for booking?",
+            answer: "Just your mobile number and pickup address. You can book directly through WhatsApp without any registration."
+          }
+        ].map((faq) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-bold mb-4">Book Your Ravet to Mumbai Airport Cab Now</h3>
+      <p class="text-muted-foreground mb-6">Fixed ₹3,700 • Zero surge • 24/7 available • Same-day booking accepted</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Mumbai%20Airport%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">Book Now</Button>
+        </a>
+        <a href="/routes">
+          <Button size="lg" variant="outline">View All Routes</Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>

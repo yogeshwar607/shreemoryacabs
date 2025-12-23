@@ -1,0 +1,844 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Home, Navigation } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service Ravet", url: "/electric-cab-service-ravet" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from Ravet to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,700 all-inclusive for electric cab from Ravet to Mumbai Airport. This includes pickup from any Ravet location (Blue Ridge, Megapolis, Moshi-Ravet Road), tolls (₹430), driver allowance (₹500), and parking (₹70). No hidden charges, no surge pricing."
+  },
+  {
+    question: "Do you provide pickup from Blue Ridge and Megapolis in Ravet?",
+    answer: "Yes, we provide electric cab pickup from all Ravet areas including Blue Ridge, Megapolis, Moshi-Ravet Road, and all residential complexes. We're familiar with all society gates and provide seamless pickup service 24/7."
+  },
+  {
+    question: "What is the best time to leave Ravet for early morning Mumbai flight?",
+    answer: "For early morning flights (6-8 AM), leave Ravet by 3-3:30 AM to reach Mumbai Airport by 6-6:30 AM. For 9-11 AM flights, leave by 5:30-6 AM. The 150 km journey takes 2.5-3 hours via Mumbai-Pune Expressway."
+  },
+  {
+    question: "Is Ravet close to Hinjewadi and Wakad for airport cabs?",
+    answer: "Yes, Ravet is strategically located between Hinjewadi (5 km) and Wakad (3 km), making it an ideal connector locality. We serve all three areas and offer the same competitive ₹3,700 rate for Mumbai Airport transfers."
+  },
+  {
+    question: "Are electric cabs reliable for Ravet to Mumbai Airport distance?",
+    answer: "Absolutely! Our Kia Carens EV has 400+ km range and BYD eMax 7 has 530+ km range - more than sufficient for the 150 km Ravet to Mumbai Airport trip. We maintain 99.8% on-time completion rate with zero range anxiety."
+  },
+  {
+    question: "Do you provide airport pickup service back to Ravet?",
+    answer: "Yes, we provide electric cab service from Mumbai Airport to Ravet at the same ₹3,700 rate. We offer flight tracking, meet & greet service, and 30 minutes free waiting time at the airport for delayed flights."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service Ravet ₹3,700 | Mumbai Airport | Blue Ridge | 24/7"
+  description="Premium electric cab service from Ravet to Mumbai Airport at ₹3,700 all-inclusive. Pickup from Blue Ridge, Megapolis, all Ravet areas. Professional drivers, luxury 7-seater EVs, zero surge pricing. Book 24/7."
+  keywords={[
+    "electric cab ravet",
+    "ev taxi ravet",
+    "ravet to mumbai airport cab",
+    "ravet airport taxi",
+    "blue ridge ravet to mumbai airport",
+    "megapolis ravet cab service",
+    "ravet electric cab service",
+    "ravet to pune airport cab",
+    "electric taxi ravet",
+    "ravet mumbai airport electric cab",
+    "moshi ravet road cab",
+    "ravet it park taxi",
+    "ravet 24/7 cab service",
+    "affordable electric cab ravet",
+    "ravet to navi mumbai airport"
+  ]}
+>
+  <StructuredData data={[breadcrumbSchema, faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service Ravet", url: "/electric-cab-service-ravet" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          Ravet • Blue Ridge • Megapolis • 24/7 Service
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service Ravet | Best Rates ₹3,700
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from Ravet (Blue Ridge, Megapolis, Moshi-Ravet Road) to Mumbai Airport, Pune Airport, and all destinations. Professional drivers, luxury 7-seater electric SUVs, transparent pricing. Perfect for residents and IT professionals.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,700</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">24/7</p>
+                  <p class="text-sm text-muted-foreground">Available</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Star class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">4.9★</p>
+                  <p class="text-sm text-muted-foreground">Customer Rating</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Ravet" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Complete Ravet Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Residential Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Blue Ridge Ravet</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Megapolis Ravet</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Moshi-Ravet Road</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Ravet Village</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All residential complexes</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Business & IT Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Ravet IT Park extension</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Commercial complexes</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Business centers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Office parks near Ravet</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Strategic Location
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>5 km from Hinjewadi</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>3 km from Wakad</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Quick expressway access</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Connector hub location</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why Ravet Residents Choose GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <MapPin class="h-5 w-5 text-primary" />
+                Perfect Connector Location
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Ravet's strategic position between Hinjewadi and Wakad makes it ideal for airport transfers. Quick access to Mumbai-Pune Expressway via Wakad route.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Fastest route to expressway from Ravet</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Avoid city traffic completely</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>150 km smooth highway drive</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Residential Community Focus
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                We specialize in serving Ravet's major residential communities like Blue Ridge and Megapolis with family-friendly service.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Spacious 7-seater SUVs for families</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Ample luggage space for vacations</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Child-friendly safe rides</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Premium Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - 400+ km range, 7-seater</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - 530+ km range, luxury SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent, smooth electric performance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Zero emissions - eco-friendly travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premium comfort for long journeys</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Shield class="h-5 w-5 text-primary" />
+                Reliable & Transparent
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Fixed ₹3,700 rate - no surge pricing ever</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>99.8% on-time performance record</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Background-verified professional drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>24/7 customer support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Free cancellation up to 2 hours</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes from Ravet -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Popular Electric Cab Routes from Ravet
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Ravet to Mumbai Airport</CardTitle>
+              <CardDescription>150 km • 2.5-3 hours • Most Popular</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹3,700</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Pickup from Blue Ridge, Megapolis</p>
+                <p>✓ Drop at Terminal 1 or Terminal 2</p>
+                <p>✓ Perfect for early morning flights</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Ravet to Pune Airport</CardTitle>
+              <CardDescription>28 km • 45-55 minutes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹1,200</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Pune%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Quick local airport transfer</p>
+                <p>✓ Professional drivers</p>
+                <p>✓ Convenient for domestic flights</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Ravet to Navi Mumbai Airport</CardTitle>
+              <CardDescription>135 km • 2.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,200</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Navi%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ New airport connectivity</p>
+                <p>✓ Scenic route via expressway</p>
+                <p>✓ Flight tracking included</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Ravet to Mumbai City</CardTitle>
+              <CardDescription>145 km • 3-3.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,500</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Ravet%20to%20Mumbai%20City" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Drop anywhere in Mumbai</p>
+                <p>✓ Andheri, Bandra, Thane, Powai</p>
+                <p>✓ Business trips & meetings</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Ravet Service -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
+          Premium Electric Cab Service for Ravet Residents
+        </h2>
+
+        <p>
+          Ravet, strategically positioned between Pune's IT giants Hinjewadi and Wakad, has emerged as one of West Pune's most desirable residential localities. Home to premium residential complexes like <strong>Blue Ridge</strong> and <strong>Megapolis</strong>, Ravet serves thousands of IT professionals, families, and business travelers who frequently need reliable airport transportation. <strong>GreenEVCabs</strong> specializes in providing premium electric cab service tailored specifically for Ravet's unique connectivity needs.
+        </p>
+
+        <h3>Why Ravet Residents Choose Electric Cabs for Airport Transfers</h3>
+        <p>
+          Ravet residents traveling to <strong>Mumbai Airport for business trips</strong>, family vacations, or international travel face unique challenges. The locality's position requires navigating through either Hinjewadi or Wakad to reach the Mumbai-Pune Expressway. Traditional cab services often charge inconsistent rates, have surge pricing during peak hours, and provide unpredictable service quality. GreenEVCabs solves these problems with:
+        </p>
+
+        <ul>
+          <li><strong>Strategic Route Planning:</strong> We know the fastest route from Ravet - via Wakad to the expressway, avoiding Hinjewadi traffic. Fixed ₹3,700 rate regardless of traffic or time.</li>
+          <li><strong>Luxury Electric SUVs:</strong> Spacious 7-seater Kia Carens EV and BYD eMax 7 perfect for families with luggage. Silent, smooth rides ideal for early morning airport runs when you want to sleep.</li>
+          <li><strong>Residential Community Expertise:</strong> Our drivers know all major Ravet complexes - Blue Ridge gates, Megapolis towers, Moshi-Ravet Road societies. Seamless pickup without navigation confusion.</li>
+          <li><strong>Transparent Pricing:</strong> Same ₹3,700 rate whether you're booking from Blue Ridge, Megapolis, or any Ravet location. No location-based surge within Ravet.</li>
+        </ul>
+
+        <h3>Ravet's Strategic Location Advantage</h3>
+        <p>
+          Ravet's position as a connector locality between Hinjewadi and Wakad offers unique advantages for airport transfers:
+        </p>
+
+        <p>
+          <strong>Proximity to IT Hubs:</strong> Just 5 km from Hinjewadi and 3 km from Wakad, Ravet serves as the residential hub for thousands of IT professionals working in these areas. Many residents commute daily to Hinjewadi IT parks and need convenient airport cabs for business travel.
+        </p>
+
+        <p>
+          <strong>Quick Expressway Access:</strong> Unlike central Pune areas that require navigating through city traffic, Ravet offers quick access to Mumbai-Pune Expressway via Wakad route. This means your 150 km journey to Mumbai Airport is almost entirely on smooth highway - faster, safer, and more predictable.
+        </p>
+
+        <p>
+          <strong>Avoiding Traffic Bottlenecks:</strong> By routing through Wakad instead of going back through Hinjewadi or into Pune city, we save 15-20 minutes during peak hours. This is crucial for early morning flights when every minute counts.
+        </p>
+
+        <h3>Perfect for Blue Ridge & Megapolis Residents</h3>
+        <p>
+          Ravet's two landmark residential complexes - Blue Ridge and Megapolis - house thousands of families, IT professionals, and business executives who are our primary customers.
+        </p>
+
+        <p>
+          <strong>Blue Ridge Ravet:</strong> One of West Pune's largest integrated townships with multiple towers, swimming pools, clubhouses, and schools. Blue Ridge residents frequently travel for work, vacations, and family visits. We provide:
+        </p>
+        <ul>
+          <li>Pickup from any Blue Ridge gate or tower</li>
+          <li>Drivers familiar with Blue Ridge's internal roads and security protocols</li>
+          <li>Early morning pickups (3 AM onwards) for Mumbai flights</li>
+          <li>Family-friendly 7-seater SUVs with ample luggage space</li>
+          <li>Monthly packages for frequent travelers</li>
+        </ul>
+
+        <p>
+          <strong>Megapolis Ravet:</strong> Premium integrated township with residential towers, mall, and commercial spaces. Megapolis residents appreciate our:
+        </p>
+        <ul>
+          <li>Seamless pickup coordination from specific towers</li>
+          <li>Professional drivers who understand township traffic rules</li>
+          <li>Premium electric vehicles matching the township's lifestyle standards</li>
+          <li>GST invoices for business travelers claiming expenses</li>
+        </ul>
+
+        <h3>IT Professionals & Corporate Travelers from Ravet</h3>
+        <p>
+          Many Ravet residents work in nearby Hinjewadi IT parks (TCS, Infosys, Wipro, Cognizant) and require frequent <strong>Mumbai Airport transfers for business trips</strong>, client meetings, and training programs. We offer:
+        </p>
+
+        <ul>
+          <li><strong>Early Morning Reliability:</strong> Catch that 6 AM flight from Mumbai? We pick up from Ravet as early as 3 AM. Our drivers arrive 5-10 minutes early, ensuring you never miss a flight.</li>
+          <li><strong>Corporate Packages:</strong> Monthly packages for regular travelers with volume discounts, priority booking, and consolidated GST invoices for easy expense claims.</li>
+          <li><strong>Last-Minute Bookings:</strong> Emergency client meeting in Mumbai? We accommodate same-day bookings subject to vehicle availability.</li>
+          <li><strong>Work-Friendly Environment:</strong> Silent electric vehicles allow you to take conference calls or work on your laptop during the 2.5-hour journey.</li>
+        </ul>
+
+        <h3>Perfect for Early Morning Mumbai Flights</h3>
+        <p>
+          Many travelers from Ravet need to catch <strong>early morning flights from Mumbai Airport</strong> (6 AM - 8 AM departures) for business trips or to connect to international flights. This requires leaving Ravet by 3-3:30 AM to reach the airport by 6-6:30 AM with sufficient buffer time.
+        </p>
+
+        <p>
+          GreenEVCabs specializes in these early morning pickups from Ravet:
+        </p>
+        <ul>
+          <li>24/7 availability - book anytime for any departure time</li>
+          <li>Drivers arrive 5-10 minutes early, never late</li>
+          <li>Silent electric vehicles won't disturb sleeping neighbors during 3 AM pickup from Blue Ridge or Megapolis</li>
+          <li>Smooth, comfortable ride allowing you to sleep during the journey</li>
+          <li>99.8% on-time record - we understand missing flights is not an option</li>
+          <li>Real-time GPS tracking shared with family for safety</li>
+        </ul>
+
+        <h3>Route & Timing from Ravet to Mumbai Airport</h3>
+        <p>
+          The 150 km journey from Ravet to Mumbai Airport follows this optimal route:
+        </p>
+
+        <p>
+          <strong>Best Route:</strong> Ravet → Wakad → Mumbai-Pune Expressway Entry → Expressway (130 km) → Mumbai Airport Exit → Terminal 1/2
+        </p>
+
+        <p>
+          <strong>Duration by Time of Day:</strong>
+        </p>
+        <ul>
+          <li>Early Morning (3 AM - 6 AM): 2.5 hours - fastest, no traffic</li>
+          <li>Morning (7 AM - 10 AM): 3 hours - moderate Ravet-Wakad traffic</li>
+          <li>Afternoon (11 AM - 5 PM): 2.5-3 hours - smooth journey</li>
+          <li>Evening (6 PM - 10 PM): 3-3.5 hours - possible expressway traffic near Mumbai</li>
+          <li>Night (11 PM - 2 AM): 2.5 hours - very smooth</li>
+        </ul>
+
+        <p>
+          <strong>Recommended Departure Times from Ravet:</strong>
+        </p>
+        <ul>
+          <li>For 6 AM - 8 AM flights: Leave by 3 AM - 3:30 AM</li>
+          <li>For 9 AM - 11 AM flights: Leave by 5:30 AM - 6 AM</li>
+          <li>For 12 PM - 3 PM flights: Leave by 8:30 AM - 9 AM</li>
+          <li>For evening/night flights: Leave 4 hours before flight time</li>
+        </ul>
+
+        <h3>Why Electric Vehicles Are Perfect for Ravet-Mumbai Route</h3>
+        <p>
+          The 150 km Ravet to Mumbai Airport route is ideal for electric vehicles, and here's why:
+        </p>
+
+        <ul>
+          <li><strong>Sufficient Range:</strong> Our Kia Carens EV (400+ km range) and BYD eMax 7 (530+ km range) can complete the round trip from Ravet to Mumbai Airport and back without charging. Zero range anxiety.</li>
+          <li><strong>Expressway Advantage:</strong> Electric vehicles excel on highways with regenerative braking on downhill sections (especially coming back from Mumbai) and instant torque for safe overtaking.</li>
+          <li><strong>Cost Savings:</strong> ₹3,700 for electric cab vs ₹5,000+ for diesel cabs with surge pricing. Save ₹1,300+ per trip, which adds up for frequent travelers.</li>
+          <li><strong>Silent Comfort:</strong> No engine noise means peaceful journeys - perfect for early morning rides when you want to sleep, or for taking work calls without background noise.</li>
+          <li><strong>Environmental Responsibility:</strong> Each Ravet-Mumbai trip saves 15-20 kg CO₂ emissions compared to diesel vehicles. Great for environmentally conscious families and companies with ESG goals.</li>
+          <li><strong>Smooth Ride Quality:</strong> Electric vehicles provide superior ride comfort with instant acceleration, no gear shifts, and minimal vibrations - perfect for the 2.5-3 hour journey.</li>
+        </ul>
+
+        <h3>Pricing & What's Included</h3>
+        <p>
+          Our transparent, all-inclusive pricing for Ravet electric cab service:
+        </p>
+
+        <p>
+          <strong>Ravet to Mumbai Airport: ₹3,700 (Kia Carens EV) | ₹4,200 (BYD eMax 7)</strong>
+        </p>
+
+        <p>
+          <strong>What's Included in ₹3,700:</strong>
+        </p>
+        <ul>
+          <li>Base cab fare for 150 km journey</li>
+          <li>Mumbai-Pune Expressway toll: ₹430</li>
+          <li>Mumbai local tolls: ₹70</li>
+          <li>Driver allowance (food/stay): ₹500</li>
+          <li>Mumbai Airport parking: ₹70</li>
+          <li>30 minutes free waiting time at pickup location</li>
+          <li>Flight tracking for return pickups from airport</li>
+          <li>GST invoice (for corporate bookings)</li>
+        </ul>
+
+        <p>
+          <strong>Additional Services:</strong>
+        </p>
+        <ul>
+          <li>Waiting time beyond 30 minutes: ₹100/hour</li>
+          <li>Night charges (11 PM - 5 AM): None (same rate 24/7)</li>
+          <li>Round trip discount: 10% off on return journey when booked together</li>
+          <li>Monthly package (4+ trips): Custom pricing with dedicated vehicle</li>
+        </ul>
+
+        <h3>How to Book Electric Cab from Ravet</h3>
+        <p>
+          Booking your Ravet to Mumbai Airport electric cab is simple and instant:
+        </p>
+        <ol>
+          <li><strong>WhatsApp Booking:</strong> Message us at <strong>+91 74982 64215</strong> with:
+            <ul>
+              <li>Pickup location (e.g., "Blue Ridge Tower A" or "Megapolis Smart Homes")</li>
+              <li>Drop location (Mumbai Airport Terminal 1/2 or specific Mumbai address)</li>
+              <li>Date and pickup time</li>
+              <li>Number of passengers and luggage</li>
+              <li>Preferred vehicle (Kia Carens EV or BYD eMax 7)</li>
+            </ul>
+            You'll receive instant confirmation with booking details.
+          </li>
+          <li><strong>Call Booking:</strong> Call <strong>+91 74982 64215</strong> for immediate booking. Our team is available 24/7 to assist with bookings, queries, and special requests.</li>
+          <li><strong>Advance Booking:</strong> We recommend booking at least 24 hours in advance for early morning flights (3 AM - 6 AM pickups) to guarantee vehicle availability. You can book up to 30 days in advance for planned trips.</li>
+          <li><strong>Last Minute:</strong> Same-day bookings accepted subject to vehicle availability. We maintain buffer vehicles for emergencies.</li>
+        </ol>
+
+        <p>
+          <strong>After Booking, You'll Receive:</strong>
+        </p>
+        <ul>
+          <li>Booking confirmation via WhatsApp/SMS</li>
+          <li>Driver details (name, photo, phone number) 30 minutes before pickup</li>
+          <li>Vehicle details (model, color, registration number)</li>
+          <li>Real-time tracking link (optional, for family safety)</li>
+          <li>GST invoice via email after trip completion (for corporate bookings)</li>
+        </ul>
+
+        <h3>Airport Pickup Service: Mumbai Airport to Ravet</h3>
+        <p>
+          We also provide electric cab service from Mumbai Airport back to Ravet at the same ₹3,700 rate. Perfect for return journeys after business trips or vacations.
+        </p>
+
+        <p>
+          <strong>Airport Pickup Features:</strong>
+        </p>
+        <ul>
+          <li><strong>Flight Tracking:</strong> Share your flight number and we automatically track delays. No extra charges for flight delays up to 60 minutes.</li>
+          <li><strong>Meet & Greet:</strong> Driver waits at arrivals with name board for easy identification, especially useful for late-night arrivals.</li>
+          <li><strong>Free Waiting Time:</strong> 30 minutes free waiting from flight landing time. Additional waiting at ₹100/hour if you're delayed at immigration or baggage claim.</li>
+          <li><strong>Luggage Assistance:</strong> Drivers help load heavy luggage into our spacious 7-seater electric SUVs.</li>
+          <li><strong>Safe Late Night Travel:</strong> Background-verified professional drivers ensure safe late-night travel back to Blue Ridge or Megapolis.</li>
+        </ul>
+
+        <h3>Frequently Asked Questions - Ravet Service</h3>
+
+        <h4>Can I book for pickup from inside Blue Ridge or Megapolis?</h4>
+        <p>
+          Yes, we pick up from any location within Ravet including specific gates, towers, or buildings inside Blue Ridge and Megapolis. Just provide the exact pickup point (e.g., "Blue Ridge, Tower B, Main Gate") during booking.
+        </p>
+
+        <h4>What if there's traffic on Wakad-Hinjewadi route?</h4>
+        <p>
+          We plan routes dynamically based on real-time traffic. If Wakad route has unusual traffic, we use alternative routes via Hinjewadi. Our drivers have 5+ years experience and know all Ravet exit routes. We always factor in buffer time for early morning flights.
+        </p>
+
+        <h4>Do you provide round trip service?</h4>
+        <p>
+          Yes! Book both Ravet to Mumbai Airport and return journey together and get <strong>10% discount on return trip</strong>. Total cost: ₹7,030 instead of ₹7,400 for round trip.
+        </p>
+
+        <h4>Can I book for my family/parents visiting Ravet?</h4>
+        <p>
+          Absolutely! You can book electric cab for your family members even if you're not traveling. Just provide their contact number and flight details. We'll coordinate pickup at Mumbai Airport and ensure safe drop to your Ravet residence.
+        </p>
+
+        <h4>What if I need to make a stop on the way?</h4>
+        <p>
+          Brief stops (10-15 minutes) for breakfast or rest stops are complimentary on the Ravet-Mumbai route. For longer stops, waiting charges of ₹100/hour apply. Inform us during booking if you plan stops.
+        </p>
+
+        <h4>Do you provide monthly packages for regular travelers?</h4>
+        <p>
+          Yes! For Ravet residents making 4+ Mumbai Airport trips per month, we offer:
+          <ul>
+            <li>Dedicated vehicle and driver (same driver for familiarity)</li>
+            <li>Priority booking (guaranteed availability)</li>
+            <li>Volume discounts (10-15% off per trip)</li>
+            <li>Consolidated monthly GST invoice</li>
+            <li>Flexible payment terms (monthly billing)</li>
+          </ul>
+          Contact us at +91 74982 64215 for custom monthly package pricing.
+        </p>
+
+        <h4>Are your electric cabs safe for early morning 3 AM pickups?</h4>
+        <p>
+          Yes, absolutely safe. All our drivers are background-verified, police verified, and have 5+ years of experience. We share real-time GPS tracking with your family. Our electric vehicles are well-maintained with all safety features. We have 99.8% safety record with zero incidents.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes & Services Section -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Related Routes & Services</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Nearby Localities</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/electric-cab-service-hinjewadi" class="text-primary hover:underline">Electric Cab Service Hinjewadi</a></li>
+                <li><a href="/electric-cab-service-wakad" class="text-primary hover:underline">Electric Cab Service Wakad</a></li>
+                <li><a href="/electric-cab-service-pimple-nilakh" class="text-primary hover:underline">Electric Cab Service Pimple Nilakh</a></li>
+                <li><a href="/electric-cab-service-pcmc" class="text-primary hover:underline">Electric Cab Service PCMC</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Airport Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/mumbai-airport-to-pune-electric-cab" class="text-primary hover:underline">Mumbai Airport to Pune</a></li>
+                <li><a href="/pune-airport-cab-service" class="text-primary hover:underline">Pune Airport Cab Service</a></li>
+                <li><a href="/navi-mumbai-airport-to-pune-cab" class="text-primary hover:underline">Navi Mumbai Airport to Pune</a></li>
+                <li><a href="/airport/mumbai-airport" class="text-primary hover:underline">Mumbai Airport Guide</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Our Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/corporate-electric-cab-pune" class="text-primary hover:underline">Corporate Cab Packages</a></li>
+                <li><a href="/fleet" class="text-primary hover:underline">Our Electric Fleet</a></li>
+                <li><a href="/ev-cabs-pune" class="text-primary hover:underline">EV Cabs Pune</a></li>
+                <li><a href="/locations" class="text-primary hover:underline">All Locations</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Ready to Book Your Electric Cab from Ravet?
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join hundreds of Ravet residents who've switched to GreenEVCabs for reliable, eco-friendly, and affordable airport transfers.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Ravet%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ Instant booking • ✓ No advance payment • ✓ Free cancellation up to 2 hours
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

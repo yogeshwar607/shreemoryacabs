@@ -39,8 +39,64 @@ const locations = [
     features: ["Premium societies", "Persistent Systems", "Corporate service"]
   },
   {
+    name: "Ravet",
+    slug: "electric-cab-service-ravet",
+    areas: ["Blue Ridge", "Megapolis", "Moshi-Ravet Road"],
+    price: "₹3,700",
+    destination: "Mumbai Airport",
+    features: ["Connector hub", "Residential focus", "Family friendly"]
+  },
+  {
+    name: "PCMC (Pimpri-Chinchwad)",
+    slug: "electric-cab-service-pcmc",
+    areas: ["Pimpri", "Chinchwad", "Akurdi", "Nigdi", "Bhosari"],
+    price: "₹3,600",
+    destination: "Mumbai Airport",
+    features: ["Industrial belt", "All PCMC coverage", "Corporate packages"]
+  },
+  {
+    name: "Nigdi",
+    slug: "electric-cab-service-nigdi",
+    areas: ["Nigdi Gaon", "Akurdi", "Pradhikaran"],
+    price: "₹3,600",
+    destination: "Mumbai Airport",
+    features: ["PCMC hub", "Quick expressway", "Industrial area"]
+  },
+  {
+    name: "Pimple Saudagar",
+    slug: "electric-cab-service-pimple-saudagar",
+    areas: ["Pimple Saudagar Chowk", "Residential areas", "IT zones"],
+    price: "₹3,700",
+    destination: "Mumbai Airport",
+    features: ["Central location", "Residential hub", "IT professionals"]
+  },
+  {
+    name: "Pimple Nilakh",
+    slug: "electric-cab-service-pimple-nilakh",
+    areas: ["IT corridor", "Premium societies", "Business centers"],
+    price: "₹3,700",
+    destination: "Mumbai Airport",
+    features: ["IT parks", "Premium service", "Corporate focus"]
+  },
+  {
+    name: "Aundh",
+    slug: "electric-cab-service-aundh",
+    areas: ["Cerebrum IT Park", "Bhumkar Chowk", "Sus Road"],
+    price: "₹3,700",
+    destination: "Mumbai Airport",
+    features: ["Premium area", "IT hub", "Corporate packages"]
+  },
+  {
+    name: "Balewadi",
+    slug: "electric-cab-service-balewadi",
+    areas: ["Sports Complex", "Residential areas", "Near Baner"],
+    price: "₹3,700",
+    destination: "Mumbai Airport",
+    features: ["Sports landmark", "Family service", "Event pickups"]
+  },
+  {
     name: "Kothrud",
-    slug: "electric-cab-kothrud-mumbai-airport",
+    slug: "electric-cab-service-kothrud",
     areas: ["Karve Road", "Paud Road", "Law College Road"],
     price: "₹3,500",
     destination: "Mumbai Airport",
@@ -48,7 +104,7 @@ const locations = [
   },
   {
     name: "Viman Nagar",
-    slug: "electric-cab-viman-nagar-mumbai-airport",
+    slug: "electric-cab-service-viman-nagar",
     areas: ["EON IT Park", "Phoenix Marketcity", "Kalyani Nagar"],
     price: "₹3,800",
     destination: "Mumbai Airport",
@@ -56,7 +112,7 @@ const locations = [
   },
   {
     name: "Hadapsar",
-    slug: "electric-cab-hadapsar-mumbai-airport",
+    slug: "electric-cab-service-hadapsar",
     areas: ["Magarpatta", "Amanora Mall", "MIDC"],
     price: "₹3,900",
     destination: "Mumbai Airport",
@@ -190,23 +246,27 @@ const locations = [
             <ul class="space-y-2 text-sm">
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Hinjewadi (Phase 1, 2, 3)</span>
+                <span><a href="/electric-cab-service-hinjewadi" class="hover:underline">Hinjewadi (Phase 1, 2, 3)</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Wakad & Pimple Saudagar</span>
+                <span><a href="/electric-cab-service-wakad" class="hover:underline">Wakad</a> & <a href="/electric-cab-service-pimple-saudagar" class="hover:underline">Pimple Saudagar</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Baner & Pashan</span>
+                <span><a href="/electric-cab-service-baner" class="hover:underline">Baner</a> & <a href="/electric-cab-service-balewadi" class="hover:underline">Balewadi</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Aundh & Baner</span>
+                <span><a href="/electric-cab-service-aundh" class="hover:underline">Aundh</a> & <a href="/electric-cab-service-pimple-nilakh" class="hover:underline">Pimple Nilakh</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Kothrud</span>
+                <span><a href="/electric-cab-service-ravet" class="hover:underline">Ravet</a></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                <span><a href="/electric-cab-service-kothrud" class="hover:underline">Kothrud</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
@@ -292,19 +352,15 @@ const locations = [
             <ul class="space-y-2 text-sm">
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Pimpri-Chinchwad</span>
+                <span><a href="/electric-cab-service-pcmc" class="hover:underline">Pimpri-Chinchwad (PCMC)</a></span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Akurdi</span>
+                <span><a href="/electric-cab-service-nigdi" class="hover:underline">Nigdi</a> & Akurdi</span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Nigdi</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
-                <span>Bhosari</span>
+                <span>Bhosari MIDC</span>
               </li>
               <li class="flex items-start gap-2">
                 <CheckCircle2 class="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
@@ -347,12 +403,25 @@ const locations = [
             <CardContent className="pt-6">
               <div class="flex items-start justify-between mb-4">
                 <div>
-                  <h3 class="font-semibold">Hinjewadi / Wakad / Baner</h3>
+                  <h3 class="font-semibold">Hinjewadi / Wakad / Baner / Ravet</h3>
                   <p class="text-sm text-muted-foreground">West Pune IT Hubs</p>
                 </div>
                 <p class="text-2xl font-bold text-primary">₹3,700</p>
               </div>
               <p class="text-xs text-muted-foreground">150-155 km • 2.5-3 hours • All-inclusive</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-semibold">Aundh / Pimple Saudagar / Pimple Nilakh</h3>
+                  <p class="text-sm text-muted-foreground">Central West Pune</p>
+                </div>
+                <p class="text-2xl font-bold text-primary">₹3,700</p>
+              </div>
+              <p class="text-xs text-muted-foreground">152-155 km • 2.5-3 hours • All-inclusive</p>
             </CardContent>
           </Card>
 
@@ -399,12 +468,25 @@ const locations = [
             <CardContent className="pt-6">
               <div class="flex items-start justify-between mb-4">
                 <div>
-                  <h3 class="font-semibold">Pimpri-Chinchwad</h3>
-                  <p class="text-sm text-muted-foreground">PCMC Area</p>
+                  <h3 class="font-semibold">PCMC / Nigdi / Bhosari</h3>
+                  <p class="text-sm text-muted-foreground">Pimpri-Chinchwad Area</p>
                 </div>
                 <p class="text-2xl font-bold text-primary">₹3,600</p>
               </div>
               <p class="text-xs text-muted-foreground">148 km • 2.5-3 hours • All-inclusive</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="font-semibold">Balewadi</h3>
+                  <p class="text-sm text-muted-foreground">Sports Complex Area</p>
+                </div>
+                <p class="text-2xl font-bold text-primary">₹3,700</p>
+              </div>
+              <p class="text-xs text-muted-foreground">153 km • 2.5-3 hours • All-inclusive</p>
             </CardContent>
           </Card>
 

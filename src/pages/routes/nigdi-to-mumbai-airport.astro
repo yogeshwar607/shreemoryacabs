@@ -1,0 +1,414 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+import { MapPin, Clock, Check, Phone, MessageCircle, IndianRupee, Building2, Navigation, Star } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Routes", url: "/routes" },
+  { name: "Nigdi to Mumbai Airport", url: "/routes/nigdi-to-mumbai-airport" }
+]);
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Nigdi to Mumbai Airport Electric Cab Service",
+  "serviceType": "Airport Transfer Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "telephone": "+91-7498264215"
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Nigdi, Pune"
+    },
+    {
+      "@type": "Airport",
+      "name": "Mumbai Airport",
+      "iataCode": "BOM"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "3600",
+    "priceCurrency": "INR"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a cab from Nigdi to Mumbai Airport cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fixed cab fare from Nigdi to Mumbai Airport is ₹3,600 with zero surge pricing. All highway tolls and airport charges are included in this price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Nigdi from Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nigdi is approximately 160 km from Mumbai Airport with a travel time of 3-3.5 hours via the highway."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Nigdi to Mumbai Airport cab fare include tolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the ₹3,600 fixed fare includes all highway tolls, parking charges, and airport entry fee. No hidden charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a same-day cab from Nigdi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, same-day bookings are available. Contact us via WhatsApp or call for instant confirmation based on availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the ₹3,600 fare valid for early morning flights?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the fare is fixed 24/7 with zero surge pricing. Early morning, afternoon, or evening flights - the price remains ₹3,600."
+      }
+    }
+  ]
+};
+---
+
+<MainLayout
+  title="Nigdi to Mumbai Airport Cab ₹3,600 | Electric Taxi BOM Airport Service"
+  description="Book electric cab from Nigdi to Mumbai Airport at ₹3,600. Fixed fare, zero surge, 24/7 service. 160 km, 3-3.5 hours. Professional drivers, same-day booking available."
+  keywords={[
+    "nigdi to mumbai airport cab",
+    "nigdi mumbai airport taxi",
+    "nigdi to bom airport",
+    "nigdi airport transfer",
+    "nigdi industrial area to mumbai airport",
+    "electric cab nigdi mumbai",
+    "nigdi mumbai airport fare"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Routes", href: "/routes" },
+    { name: "Nigdi to Mumbai Airport", href: "/routes/nigdi-to-mumbai-airport" }
+  ]} />
+
+  <StructuredData data={[breadcrumbSchema, serviceSchema, faqSchema]} />
+
+  <div class="container px-4 py-12 md:py-16">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" className="mb-4">
+        Shortest Route from PCMC • Zero Surge • 24/7 Service
+      </Badge>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        Nigdi to Mumbai Airport ₹3,600
+      </h1>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+        Convenient electric cab service from Nigdi to Mumbai Airport. One of the shortest routes from PCMC area with fixed pricing, zero surge, and 24/7 availability.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Mumbai%20Airport%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book on WhatsApp
+          </Button>
+        </a>
+        <a href="tel:+917498264215">
+          <Button size="lg" variant="outline">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Route Info -->
+    <div class="mb-16 bg-primary/5 rounded-lg p-8">
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <Navigation className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Distance</h3>
+          <p class="text-2xl font-bold text-primary">160 km</p>
+          <p class="text-sm text-muted-foreground">One of Shortest Routes</p>
+        </div>
+        <div>
+          <Clock className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Journey Time</h3>
+          <p class="text-2xl font-bold text-primary">3-3.5 hrs</p>
+          <p class="text-sm text-muted-foreground">From Nigdi to BOM</p>
+        </div>
+        <div>
+          <IndianRupee className="h-10 w-10 text-primary mx-auto mb-3" />
+          <h3 class="font-semibold mb-1">Fixed Fare</h3>
+          <p class="text-2xl font-bold text-primary">₹3,600</p>
+          <p class="text-sm text-muted-foreground">Completely Inclusive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fare Breakdown -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">What's Included in ₹3,600</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardHeader>
+          <CardTitle>Complete Pricing Breakdown</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Base Fare (160 km)</span>
+              <span class="font-semibold">₹2,700</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Highway Toll</span>
+              <span class="font-semibold">₹550</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+              <span>Airport Parking & Entry Fee</span>
+              <span class="font-semibold">₹350</span>
+            </div>
+            <div class="flex justify-between items-center p-4 bg-primary/10 rounded border-2 border-primary">
+              <span class="font-bold">Total Fixed Fare</span>
+              <span class="font-bold text-primary text-lg">₹3,600</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Service Areas -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Pickup from Nigdi & Industrial Areas</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {[
+          {
+            area: "Nigdi MIDC",
+            locations: ["Industrial Area", "Manufacturing Units", "Warehouses", "Business Parks"],
+            price: "₹3,600"
+          },
+          {
+            area: "Nigdi Residential",
+            locations: ["Nigdi Main Road", "Residential Societies", "Bus Stand Area", "Market Zone"],
+            price: "₹3,600"
+          },
+          {
+            area: "Akurdi & Adjacent",
+            locations: ["Akurdi Industrial", "Akurdi Station", "Residential Areas", "Commercial Zones"],
+            price: "₹3,600"
+          }
+        ].map((area) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 className="h-5 w-5 text-primary" />
+                {area.area}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="font-semibold text-2xl text-primary mb-3">{area.price}</p>
+              <ul class="space-y-1 text-sm">
+                {area.locations.map((location) => (
+                  <li class="flex items-start gap-2">
+                    <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>{location}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+
+    <!-- Service Highlights -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Our Nigdi to Mumbai Airport Service</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Quality & Safety</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Experienced Drivers:</strong> Highway experts with years of experience</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Clean Vehicles:</strong> Well-maintained and regularly serviced</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>GPS Enabled:</strong> Real-time tracking for safety</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Insurance Covered:</strong> Comprehensive protection</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Affordability & Convenience</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Zero Surge Pricing:</strong> ₹3,600 at any time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>All Charges Included:</strong> Tolls & parking covered</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>Quick Booking:</strong> WhatsApp confirmation in minutes</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span><strong>24/7 Availability:</strong> Anytime booking and service</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Timing Guide -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Recommended Pickup Times from Nigdi</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardContent className="pt-6">
+          <div class="space-y-4">
+            {[
+              { flight: "5:30 AM Flight", pickup: "11:00 PM (Prev Day)", note: "3.5 hours travel + buffer" },
+              { flight: "6:00 AM Flight", pickup: "12:00 AM (Midnight)", note: "3 hours travel + 3 hours check-in" },
+              { flight: "9:00 AM Flight", pickup: "3:00 AM", note: "Early morning optimal timing" },
+              { flight: "1:00 PM Flight", pickup: "7:00 AM", note: "Comfortable morning start" },
+              { flight: "4:00 PM Flight", pickup: "12:00 PM", note: "Midday convenient departure" },
+              { flight: "7:00 PM Flight", pickup: "2:00 PM", note: "Afternoon pickup option" }
+            ].map((timing) => (
+              <div class="flex justify-between items-center p-4 bg-muted/50 rounded">
+                <div>
+                  <p class="font-semibold">{timing.flight}</p>
+                  <p class="text-xs text-muted-foreground">{timing.note}</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm text-muted-foreground">Pickup Time</p>
+                  <p class="font-bold text-primary">{timing.pickup}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Route Information -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Nigdi to Mumbai Airport Route Details</h2>
+
+      <Card class="max-w-3xl mx-auto">
+        <CardContent className="pt-6">
+          <div class="space-y-4">
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Pickup Coverage</p>
+              <p class="text-muted-foreground">Serving all of Nigdi including industrial areas, residential zones, and commercial districts. Flexible pickup from homes, offices, or any location.</p>
+            </div>
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Route Advantage</p>
+              <p class="text-muted-foreground">Nigdi's central PCMC location provides one of the shortest routes to Mumbai Airport (160 km), ensuring faster and more economical travel.</p>
+            </div>
+            <div class="border-b pb-4">
+              <p class="font-semibold mb-2">Toll Structure</p>
+              <p class="text-muted-foreground">Standard toll charges at highway sections are included in the ₹3,600 fixed fare. No surprises at toll gates.</p>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Terminal Services</p>
+              <p class="text-muted-foreground">Drop directly at your airline terminal with parking assistance and entry fee included in the total fare.</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+
+      <div class="space-y-4 max-w-3xl mx-auto">
+        {[
+          {
+            question: "Is ₹3,600 the final price without extra charges?",
+            answer: "Yes, ₹3,600 is completely final with zero surge pricing. All tolls, parking, and entry fees are included. No hidden charges ever."
+          },
+          {
+            question: "Why is Nigdi to Mumbai cheaper than other Pune routes?",
+            answer: "Nigdi's location in PCMC provides one of the shortest routes to Mumbai Airport at just 160 km, which is why the fare is competitive at ₹3,600."
+          },
+          {
+            question: "Do I need to pay toll separately at toll gates?",
+            answer: "No, all tolls are included in the ₹3,600 fixed fare. You don't need to pay anything separately at toll gates."
+          },
+          {
+            question: "Can industrial workers book for regular airport pickups?",
+            answer: "Yes, we serve Nigdi MIDC and industrial areas regularly. Bulk or weekly bookings can be arranged with special rates."
+          },
+          {
+            question: "What if my flight gets delayed?",
+            answer: "You can modify your booking free of charge up to 2 hours before pickup time. Beyond that, contact us for options."
+          }
+        ].map((faq) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-primary/5 rounded-lg p-8 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-bold mb-4">Book Your Nigdi to Mumbai Airport Cab</h3>
+      <p class="text-muted-foreground mb-6">Fixed ₹3,600 • Shortest route • Zero surge • 24/7 available</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Mumbai%20Airport%0ADate%20%26%20Time%3A%20" target="_blank">
+          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">Book Now</Button>
+        </a>
+        <a href="/routes">
+          <Button size="lg" variant="outline">View All Routes</Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>

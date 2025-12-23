@@ -1,0 +1,882 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Home, Navigation, ShoppingBag } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service Hadapsar", url: "/electric-cab-service-hadapsar" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from Hadapsar to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,900 all-inclusive for electric cab from Hadapsar to Mumbai Airport. This includes pickup from any Hadapsar location (Magarpatta City, Amanora, Mundhwa, Seasons Mall area), tolls (₹430), driver allowance (₹500), and parking (₹70). No hidden charges, no surge pricing."
+  },
+  {
+    question: "Do you provide pickup from Magarpatta City and Amanora Township?",
+    answer: "Yes, we provide comprehensive coverage across Magarpatta City (all phases and towers), Amanora Park Town, Seasons Mall area, Mundhwa, Hadapsar village, and all IT parks. Our drivers know all gates and internal roads of these townships. Same ₹3,900 rate for all Hadapsar pickups."
+  },
+  {
+    question: "What is the best time to leave Hadapsar for early morning Mumbai flight?",
+    answer: "For early morning flights (6-8 AM), leave Hadapsar by 3-3:30 AM to reach Mumbai Airport by 6-6:30 AM. For 9-11 AM flights, leave by 5:30-6 AM. The 160 km journey takes 2.5-3 hours via Mumbai-Pune Expressway."
+  },
+  {
+    question: "Do you offer corporate packages for Hadapsar IT companies?",
+    answer: "Yes, we offer dedicated corporate packages for Hadapsar IT parks including Magarpatta Cybercity, EON IT Park, and World Trade Center. Monthly packages include GST invoices, priority booking, and volume discounts for regular Mumbai Airport business trips."
+  },
+  {
+    question: "Is Hadapsar far from the expressway?",
+    answer: "Hadapsar is in East Pune, about 18-20 km from Mumbai-Pune Expressway entry. While slightly farther than West Pune areas, our optimized route via Katraj-Warje gets you on the expressway efficiently. The distance is reflected in our ₹3,900 pricing (vs ₹3,500-3,700 for West Pune)."
+  },
+  {
+    question: "Are electric cabs reliable for Hadapsar to Mumbai Airport distance?",
+    answer: "Absolutely! Our Kia Carens EV has 400+ km range and BYD eMax 7 has 530+ km range - more than sufficient for the 160 km Hadapsar to Mumbai Airport trip. We maintain 99.8% on-time completion rate with zero range anxiety."
+  },
+  {
+    question: "Do you provide airport pickup service back to Hadapsar?",
+    answer: "Yes, we provide electric cab service from Mumbai Airport to Hadapsar/Magarpatta/Amanora at the same ₹3,900 rate. We offer flight tracking, meet & greet service, and 30 minutes free waiting time for safe return to your township."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service Hadapsar ₹3,900 | Magarpatta | Amanora | Mumbai Airport"
+  description="Premium electric cab service from Hadapsar to Mumbai Airport at ₹3,900. Coverage: Magarpatta City, Amanora, Mundhwa, Seasons Mall. IT professional & family friendly. Corporate packages available. Luxury 7-seater EVs. Book 24/7."
+  keywords={[
+    "electric cab hadapsar",
+    "ev taxi hadapsar",
+    "hadapsar to mumbai airport cab",
+    "magarpatta to mumbai airport",
+    "amanora airport taxi",
+    "hadapsar electric cab service",
+    "mundhwa mumbai airport cab",
+    "seasons mall airport taxi",
+    "hadapsar it park cab",
+    "magarpatta city cab service",
+    "amanora township taxi",
+    "eon it park hadapsar cab",
+    "wtc hadapsar airport transfer",
+    "hadapsar corporate cab",
+    "electric taxi hadapsar"
+  ]}
+>
+  <StructuredData data={[breadcrumbSchema, faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service Hadapsar", url: "/electric-cab-service-hadapsar" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          Hadapsar • Magarpatta • Amanora • Mundhwa
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service Hadapsar | IT Hub's Best ₹3,900
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from Hadapsar covering Magarpatta City, Amanora Park Town, Mundhwa, Seasons Mall area, and all IT parks. Mumbai Airport, Pune Airport, and all destinations. Perfect for IT professionals, families, and corporate travelers. Luxury 7-seater EVs with transparent pricing.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,900</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">24/7</p>
+                  <p class="text-sm text-muted-foreground">Available</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Star class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">4.9★</p>
+                  <p class="text-sm text-muted-foreground">Customer Rating</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Hadapsar" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Complete Hadapsar Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Magarpatta City
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All Magarpatta phases</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Magarpatta Cybercity</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>EON IT Park</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All residential towers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Commercial areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Amanora & Surrounds
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Amanora Park Town</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Amanora Mall</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Seasons Mall area</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Hadapsar village</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All residential complexes</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                IT Parks & Business
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>World Trade Center</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Mundhwa IT parks</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Business centers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Corporate offices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All Hadapsar IT areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
+          <h3 class="font-semibold text-lg mb-3">Major IT Companies We Serve:</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <ul class="space-y-1">
+              <li>• Capgemini Magarpatta</li>
+              <li>• Accenture Hadapsar</li>
+              <li>• Wipro Hadapsar</li>
+            </ul>
+            <ul class="space-y-1">
+              <li>• Synechron EON</li>
+              <li>• Cybage Hadapsar</li>
+              <li>• Persistent Magarpatta</li>
+            </ul>
+            <ul class="space-y-1">
+              <li>• IBM Magarpatta</li>
+              <li>• Cognizant WTC</li>
+              <li>• All IT parks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why Hadapsar IT Professionals Choose GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                IT Professional Focus
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Hadapsar is Pune's largest IT employment hub with 50,000+ professionals working in Magarpatta, EON, WTC, and surrounding IT parks. We specialize in corporate airport transfers.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Early morning pickups for client meetings</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>GST invoices for expense claims</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent EVs perfect for work calls</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Township Expertise
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Magarpatta City and Amanora Park Town are Pune's premier integrated townships. We understand their internal layouts, security protocols, and resident needs perfectly.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Know all gates and tower locations</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Seamless coordination with security</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Family-friendly spacious 7-seaters</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Premium Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - 400+ km range, 7-seater</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - 530+ km range, luxury SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent operation, smooth ride</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Eco-friendly for ESG conscious companies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premium comfort for 3-hour journey</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Shield class="h-5 w-5 text-primary" />
+                Corporate Packages
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Monthly packages for regular travelers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Priority booking for business trips</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Consolidated GST invoices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated account manager</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Volume discounts available</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes from Hadapsar -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Popular Electric Cab Routes from Hadapsar
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Hadapsar to Mumbai Airport</CardTitle>
+              <CardDescription>160 km • 2.5-3 hours • Most Popular</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹3,900</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Hadapsar%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Pickup from Magarpatta, Amanora</p>
+                <p>✓ Drop at Terminal 1 or Terminal 2</p>
+                <p>✓ Corporate GST invoices</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Hadapsar to Pune Airport</CardTitle>
+              <CardDescription>12 km • 25-30 minutes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹700</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Hadapsar%20to%20Pune%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Closest major locality to airport</p>
+                <p>✓ Quick 25-minute transfer</p>
+                <p>✓ Perfect for domestic flights</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Hadapsar to Navi Mumbai Airport</CardTitle>
+              <CardDescription>145 km • 2.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,400</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Hadapsar%20to%20Navi%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ New airport connectivity</p>
+                <p>✓ Expressway route</p>
+                <p>✓ Flight tracking included</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Hadapsar to Mumbai City</CardTitle>
+              <CardDescription>155 km • 3-3.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,700</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Hadapsar%20to%20Mumbai%20City" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Drop anywhere in Mumbai</p>
+                <p>✓ Andheri, Bandra, Thane, Powai</p>
+                <p>✓ Business meetings & client visits</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Hadapsar Service -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
+          Premium Electric Cab Service for Hadapsar - Pune's IT Powerhouse
+        </h2>
+
+        <p>
+          Hadapsar, located in East Pune, has transformed from a quiet suburban area into Pune's largest IT and residential hub over the past two decades. Home to landmark integrated townships like <strong>Magarpatta City</strong> and <strong>Amanora Park Town</strong>, along with major IT parks including EON IT Park, World Trade Center, and Magarpatta Cybercity, Hadapsar houses over 50,000 IT professionals and 100,000+ residents. <strong>GreenEVCabs</strong> provides premium electric cab service specifically designed for Hadapsar's IT professionals, corporate travelers, and township residents who need reliable Mumbai Airport transfers.
+        </p>
+
+        <h3>Why Hadapsar IT Professionals Choose Electric Cabs for Mumbai Trips</h3>
+        <p>
+          IT professionals working in Hadapsar's numerous tech parks frequently travel to <strong>Mumbai for client meetings</strong>, onsite visits, training programs, and business conferences. The 160 km journey to Mumbai Airport from Hadapsar requires reliable, comfortable, and professional transportation. GreenEVCabs addresses unique needs of Hadapsar's IT community:
+        </p>
+
+        <ul>
+          <li><strong>Corporate-Ready Service:</strong> GST invoices for expense reimbursement, professional drivers, punctual pickups for early morning flights. Fixed ₹3,900 rate makes budgeting easy for finance teams.</li>
+          <li><strong>Work-Friendly Environment:</strong> Silent electric vehicles allow you to take client calls or work on presentations during the 2.5-hour journey. No engine noise, smooth ride, perfect for productivity.</li>
+          <li><strong>Township Pickup Expertise:</strong> Our drivers know Magarpatta City's all phases, gates, and towers. Same for Amanora Park Town. Seamless coordination with township security for smooth pickups.</li>
+          <li><strong>Monthly Corporate Packages:</strong> For regular travelers making 4+ trips per month, we offer dedicated vehicles, priority booking, volume discounts, and consolidated monthly GST invoices.</li>
+        </ul>
+
+        <h3>Magarpatta City - India's First Integrated Township</h3>
+        <p>
+          <strong>Magarpatta City</strong> is more than a residential area - it's a self-contained ecosystem with residential towers, IT parks (Cybercity), retail spaces, schools, and recreation facilities. Housing 10,000+ residents and employing 30,000+ professionals, Magarpatta is GreenEVCabs' largest customer base in Hadapsar.
+        </p>
+
+        <p>
+          <strong>Residential Magarpatta:</strong> Families living in Magarpatta's residential towers frequently travel for vacations, family visits, and holidays. We provide:
+        </p>
+        <ul>
+          <li>Pickup from any Magarpatta phase, tower, or gate</li>
+          <li>Spacious 7-seater EVs for families with luggage</li>
+          <li>Child-friendly safe rides for family trips</li>
+          <li>Round-trip packages with 10% discount on return journey</li>
+          <li>Familiar drivers who know Magarpatta's internal roads</li>
+        </ul>
+
+        <p>
+          <strong>Magarpatta Cybercity & EON IT Park:</strong> Major IT companies like Capgemini, Accenture, Wipro, IBM, and Synechron have offices here. We serve hundreds of IT professionals from these companies with:
+        </p>
+        <ul>
+          <li>Early morning pickups (3 AM onwards) for Mumbai client meetings</li>
+          <li>Last-minute booking accommodation for urgent travel</li>
+          <li>GST invoices matching company expense policies</li>
+          <li>Silent EVs allowing conference calls during journey</li>
+          <li>Corporate monthly packages with dedicated account manager</li>
+        </ul>
+
+        <h3>Amanora Park Town - Premium Living & Shopping Destination</h3>
+        <p>
+          <strong>Amanora Park Town</strong>, Pune's luxury integrated township with premium residential towers and Amanora Town Centre (one of Pune's largest malls), represents the aspirational lifestyle of Hadapsar residents.
+        </p>
+
+        <p>
+          <strong>Why Amanora Residents Choose GreenEVCabs:</strong>
+        </p>
+        <ul>
+          <li>Premium service matching Amanora's lifestyle standards - luxury electric SUVs, professional drivers, impeccable service</li>
+          <li>Pickup from any Amanora tower with driver coordination via security</li>
+          <li>Perfect for shopping return trips - ample luggage space in 7-seater EVs</li>
+          <li>Mumbai Airport transfers for international vacations with family</li>
+          <li>Safe, verified drivers for late-night/early morning airport pickups</li>
+        </ul>
+
+        <h3>Hadapsar's IT Park Ecosystem</h3>
+        <p>
+          Beyond Magarpatta, Hadapsar hosts numerous IT parks and corporate offices making it Pune's largest IT employment zone.
+        </p>
+
+        <p>
+          <strong>World Trade Center (WTC) Hadapsar:</strong> Home to Cognizant, Tech Mahindra, and other MNCs. WTC professionals frequently need Mumbai Airport access for:
+        </p>
+        <ul>
+          <li>Client visits to Mumbai corporate offices</li>
+          <li>International travel for projects and training</li>
+          <li>Domestic business travel across India</li>
+        </ul>
+
+        <p>
+          <strong>Mundhwa IT Parks:</strong> Several smaller IT parks in Mundhwa area house startups and mid-size companies. We provide same ₹3,900 rate for all Mundhwa pickups.
+        </p>
+
+        <p>
+          <strong>Corporate Benefits:</strong>
+        </p>
+        <ul>
+          <li>Monthly packages with 10-15% discount for 4+ trips</li>
+          <li>Dedicated vehicle and driver for familiarity</li>
+          <li>Priority booking with guaranteed availability</li>
+          <li>HR/Admin single point of contact for employee bookings</li>
+          <li>Consolidated monthly invoice with individual trip details</li>
+          <li>Monthly billing terms (net 30 days) for established corporates</li>
+        </ul>
+
+        <h3>Route & Distance Consideration from Hadapsar</h3>
+        <p>
+          Hadapsar, being in East Pune, is farther from the Mumbai-Pune Expressway compared to West Pune areas. This affects route planning and pricing:
+        </p>
+
+        <p>
+          <strong>Optimal Route from Hadapsar:</strong> Hadapsar → Katraj → Warje → Baner → Mumbai-Pune Expressway Entry → Expressway (140 km) → Mumbai Airport
+        </p>
+
+        <p>
+          <strong>Total Distance:</strong> 160 km (vs 145-150 km from West Pune areas)
+        </p>
+
+        <p>
+          <strong>Why ₹3,900 pricing?</strong> The additional 10-15 km from Hadapsar to reach expressway, plus navigation through Katraj area, is reflected in our ₹3,900 pricing (compared to ₹3,500-3,700 for West Pune). This is transparent, fair pricing based on actual distance.
+        </p>
+
+        <p>
+          <strong>Timing Breakdown:</strong>
+        </p>
+        <ul>
+          <li>Hadapsar to Expressway entry: 30-40 minutes (18-20 km)</li>
+          <li>Expressway journey: 1.5-2 hours (140 km smooth highway)</li>
+          <li>Expressway exit to Mumbai Airport: 15-20 minutes</li>
+          <li>Total: 2.5-3 hours depending on time of day</li>
+        </ul>
+
+        <h3>Perfect for Early Morning Mumbai Flights</h3>
+        <p>
+          Many IT professionals and families from Hadapsar catch <strong>early morning Mumbai flights</strong> (6-8 AM). This requires 3-3:30 AM departure from Magarpatta or Amanora.
+        </p>
+
+        <p>
+          <strong>Our Early Morning Specialization:</strong>
+        </p>
+        <ul>
+          <li>24/7 booking availability via WhatsApp and phone</li>
+          <li>Drivers arrive 5-10 minutes before scheduled pickup time</li>
+          <li>Silent electric vehicles won't disturb township residents during early morning pickup</li>
+          <li>Smooth, comfortable ride allowing you to sleep during journey</li>
+          <li>99.8% on-time record - critical for not missing flights</li>
+          <li>Real-time GPS tracking shared with family for safety</li>
+          <li>Climate-controlled comfort for cold winter mornings</li>
+        </ul>
+
+        <h3>Closest to Pune Airport - Quick Local Access</h3>
+        <p>
+          One major advantage of living in Hadapsar is proximity to <strong>Pune Airport (Lohegaon)</strong> - just 12 km away, making it the closest major residential area to the airport.
+        </p>
+
+        <p>
+          <strong>Hadapsar to Pune Airport: ₹700 (just 25-30 minutes)</strong>
+        </p>
+
+        <p>
+          Perfect for:
+        </p>
+        <ul>
+          <li>Domestic business trips within India</li>
+          <li>Quick weekend getaways to Goa, Bangalore, Delhi</li>
+          <li>Short-notice travel (can leave 90 minutes before flight)</li>
+          <li>Cost-effective compared to Mumbai Airport for domestic routes</li>
+        </ul>
+
+        <h3>Why Electric Vehicles Are Perfect for Hadapsar-Mumbai Route</h3>
+        <p>
+          The 160 km Hadapsar to Mumbai Airport route is ideal for electric vehicles:
+        </p>
+
+        <ul>
+          <li><strong>Sufficient Range:</strong> Our Kia Carens EV (400+ km) and BYD eMax 7 (530+ km) easily handle 160 km with 200+ km buffer remaining. Zero range anxiety.</li>
+          <li><strong>Cost Advantage:</strong> ₹3,900 electric vs ₹5,500+ diesel cabs. Save ₹1,600 per trip - significant for monthly travelers.</li>
+          <li><strong>Professional Image:</strong> IT professionals appreciate arriving at client meetings in modern, premium electric SUVs - projects progressive, environmentally conscious image.</li>
+          <li><strong>Silent Conference Calls:</strong> No engine noise means you can take client calls, participate in meetings, or have confidential conversations during journey without background noise.</li>
+          <li><strong>Reduced Carbon Footprint:</strong> Tech companies with ESG goals appreciate employee travel in zero-emission vehicles. Each trip saves 20 kg CO₂ emissions.</li>
+        </ul>
+
+        <h3>Pricing & What's Included</h3>
+        <p>
+          Our transparent, all-inclusive pricing for Hadapsar electric cab service:
+        </p>
+
+        <p>
+          <strong>Hadapsar to Mumbai Airport: ₹3,900 (Kia Carens EV) | ₹4,400 (BYD eMax 7)</strong>
+        </p>
+
+        <p>
+          <strong>What's Included in ₹3,900:</strong>
+        </p>
+        <ul>
+          <li>Base cab fare for 160 km journey</li>
+          <li>Mumbai-Pune Expressway toll: ₹430</li>
+          <li>Mumbai local tolls: ₹70</li>
+          <li>Driver allowance (food/stay): ₹500</li>
+          <li>Mumbai Airport parking: ₹70</li>
+          <li>30 minutes free waiting time at pickup</li>
+          <li>Flight tracking for airport pickups</li>
+          <li>GST invoice (18% GST included in rate)</li>
+        </ul>
+
+        <p>
+          <strong>Corporate Monthly Packages:</strong>
+        </p>
+        <ul>
+          <li>4-8 trips/month: 10% discount (₹3,510 per trip)</li>
+          <li>9+ trips/month: 15% discount (₹3,315 per trip)</li>
+          <li>Dedicated vehicle and driver included</li>
+          <li>Priority booking guarantee</li>
+          <li>Consolidated monthly GST invoice</li>
+          <li>Net 30 days payment terms</li>
+        </ul>
+
+        <h3>How to Book Electric Cab from Hadapsar</h3>
+        <p>
+          Booking process optimized for busy IT professionals:
+        </p>
+        <ol>
+          <li><strong>WhatsApp Booking (Fastest):</strong> Message <strong>+91 74982 64215</strong> with:
+            <ul>
+              <li>Pickup: "Magarpatta Phase 1, Tower A" or "Amanora Gateway Tower"</li>
+              <li>Drop: Mumbai Airport Terminal 1/2</li>
+              <li>Date & time</li>
+              <li>Passengers & luggage count</li>
+            </ul>
+            Get instant confirmation with booking ID.
+          </li>
+          <li><strong>Phone Booking:</strong> Call <strong>+91 74982 64215</strong> - 24/7 availability.</li>
+          <li><strong>Corporate Booking:</strong> HR/Admin can set up monthly account with single point of contact.</li>
+        </ol>
+
+        <h3>Airport Pickup: Mumbai to Hadapsar</h3>
+        <p>
+          Return journey from Mumbai Airport to Magarpatta/Amanora at same ₹3,900 rate.
+        </p>
+
+        <p>
+          <strong>Features:</strong>
+        </p>
+        <ul>
+          <li><strong>Flight Tracking:</strong> Share flight number - we track delays automatically</li>
+          <li><strong>Meet & Greet:</strong> Driver waits with name board at arrivals</li>
+          <li><strong>Free Waiting:</strong> 30 min from landing time, then ₹100/hour</li>
+          <li><strong>Late Night Safety:</strong> Safe ride back to township for midnight arrivals</li>
+          <li><strong>Luggage Assistance:</strong> Help loading bags into spacious EV</li>
+        </ul>
+
+        <h3>Frequently Asked Questions - Hadapsar Service</h3>
+
+        <h4>Can you pick up from inside Magarpatta or Amanora towers?</h4>
+        <p>
+          Yes, we pick up from specific towers and gates. Our drivers coordinate with township security. Just provide tower name and gate during booking.
+        </p>
+
+        <h4>Do you offer corporate packages for IT companies?</h4>
+        <p>
+          Yes! We serve 20+ IT companies in Hadapsar with monthly packages. Contact us at +91 74982 64215 for corporate partnership discussion. Benefits include volume discounts, priority booking, monthly billing, and dedicated account manager.
+        </p>
+
+        <h4>Is Hadapsar route more expensive than West Pune?</h4>
+        <p>
+          Yes, by ₹200-400. Hadapsar is 160 km vs 145-150 km from West Pune areas to Mumbai Airport. Our ₹3,900 rate reflects actual distance - transparent pricing with no hidden charges.
+        </p>
+
+        <h4>Can I work during the journey?</h4>
+        <p>
+          Absolutely! Silent electric vehicles are perfect for taking calls or working on laptop. Many IT professionals use journey time productively. We provide charging points for phones/laptops.
+        </p>
+
+        <h4>Do you provide GST invoices?</h4>
+        <p>
+          Yes, GST invoices provided for all rides within 24 hours via email. Perfect for expense reimbursement. For corporate accounts, consolidated monthly invoice with individual trip details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes & Services Section -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Related Routes & Services</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Nearby Localities</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/electric-cab-service-viman-nagar" class="text-primary hover:underline">Electric Cab Service Viman Nagar</a></li>
+                <li><a href="/electric-cab-service-kharadi" class="text-primary hover:underline">Electric Cab Service Kharadi</a></li>
+                <li><a href="/electric-cab-service-koregaon-park" class="text-primary hover:underline">Electric Cab Service Koregaon Park</a></li>
+                <li><a href="/electric-cab-service-camp" class="text-primary hover:underline">Electric Cab Service Camp</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Airport Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/mumbai-airport-to-pune-electric-cab" class="text-primary hover:underline">Mumbai Airport to Pune</a></li>
+                <li><a href="/pune-airport-cab-service" class="text-primary hover:underline">Pune Airport Cab Service</a></li>
+                <li><a href="/navi-mumbai-airport-to-pune-cab" class="text-primary hover:underline">Navi Mumbai Airport to Pune</a></li>
+                <li><a href="/airport/mumbai-airport" class="text-primary hover:underline">Mumbai Airport Guide</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Our Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/corporate-electric-cab-pune" class="text-primary hover:underline">Corporate Cab Packages</a></li>
+                <li><a href="/fleet" class="text-primary hover:underline">Our Electric Fleet</a></li>
+                <li><a href="/ev-cabs-pune" class="text-primary hover:underline">EV Cabs Pune</a></li>
+                <li><a href="/locations" class="text-primary hover:underline">All Locations</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Ready to Book from Hadapsar?
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join thousands of Magarpatta and Amanora residents and IT professionals who trust GreenEVCabs for Mumbai Airport transfers.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Hadapsar%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ Corporate packages • ✓ GST invoices • ✓ IT professional focus • ✓ Township expertise
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

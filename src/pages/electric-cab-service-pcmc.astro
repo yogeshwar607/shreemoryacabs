@@ -1,0 +1,576 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Factory, Navigation } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service PCMC", url: "/electric-cab-service-pcmc" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from PCMC to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,600 all-inclusive for electric cab from PCMC (Pimpri-Chinchwad) to Mumbai Airport. This covers pickup from any PCMC area - Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari, tolls (₹430), driver allowance (₹500), and parking (₹70). Fixed rate, no surge pricing."
+  },
+  {
+    question: "Do you cover all PCMC areas - Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari?",
+    answer: "Yes, we provide comprehensive coverage across entire PCMC - Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari, and all industrial areas. Our drivers know all PCMC localities, MIDC areas, and residential complexes. Same ₹3,600 rate for all PCMC pickups."
+  },
+  {
+    question: "What is the best time to leave PCMC for early morning Mumbai flight?",
+    answer: "For early morning flights (6-8 AM), leave PCMC by 3-3:30 AM to reach Mumbai Airport by 6-6:30 AM. For 9-11 AM flights, leave by 5:30-6 AM. The 148 km journey takes 2.5-3 hours via Mumbai-Pune Expressway."
+  },
+  {
+    question: "Do you offer corporate packages for PCMC industrial and IT companies?",
+    answer: "Yes, we offer dedicated corporate packages for PCMC's industrial belt and IT companies. Monthly packages include GST invoices, priority booking, monthly billing, and special rates for regular Mumbai Airport transfers. Perfect for Tata Technologies, Thermax, Forbes Marshall, and other PCMC corporates."
+  },
+  {
+    question: "How do I reach the expressway from PCMC?",
+    answer: "From PCMC, we take the fastest route via Wakad to Mumbai-Pune Expressway entry. This avoids Pune city traffic completely. The route is: PCMC → Wakad → Expressway Entry → Mumbai Airport. Smooth 148 km highway journey."
+  },
+  {
+    question: "Are electric cabs reliable for PCMC to Mumbai Airport distance?",
+    answer: "Absolutely! Our Kia Carens EV has 400+ km range and BYD eMax 7 has 530+ km range - more than sufficient for the 148 km PCMC to Mumbai Airport trip with plenty of buffer. We maintain 99.8% on-time completion rate."
+  },
+  {
+    question: "Do you provide airport pickup back to PCMC?",
+    answer: "Yes, we provide electric cab service from Mumbai Airport to PCMC at the same ₹3,600 rate. We offer flight tracking, meet & greet service, and 30 minutes free waiting time. Safe drop to any PCMC location."
+  },
+  {
+    question: "What makes PCMC electric cabs better than Pune city cabs?",
+    answer: "PCMC location advantage: (1) Closer to expressway via Wakad route saves 10-15 minutes, (2) No Pune city traffic navigation, (3) Industrial belt timing flexibility for early/late pickups, (4) ₹100 cheaper than similar Pune locations (₹3,600 vs ₹3,700)."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service PCMC ₹3,600 | Pimpri Chinchwad | Mumbai Airport"
+  description="Premium electric cab service from PCMC (Pimpri-Chinchwad) to Mumbai Airport at ₹3,600. Coverage: Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari. Corporate packages for industrial & IT companies. Book 24/7."
+  keywords={[
+    "electric cab pcmc",
+    "pimpri chinchwad to mumbai airport cab",
+    "pcmc mumbai airport taxi",
+    "electric cab service pcmc",
+    "pimpri to mumbai airport cab",
+    "chinchwad to mumbai airport electric cab",
+    "pcmc airport drop service",
+    "pimpri chinchwad electric taxi",
+    "akurdi to mumbai airport cab",
+    "nigdi to mumbai airport",
+    "bhosari airport cab",
+    "pcmc corporate cab service",
+    "pimpri chinchwad it park taxi",
+    "pcmc midc cab service",
+    "electric cab pimpri chinchwad"
+  ]}
+>
+  <StructuredData data={[breadcrumbSchema, faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service PCMC", url: "/electric-cab-service-pcmc" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          PCMC • Pimpri • Chinchwad • Akurdi • Nigdi • Bhosari
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service PCMC | Twin City's Best ₹3,600
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from PCMC (Pimpri-Chinchwad) covering all areas - Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari, and industrial belt. Mumbai Airport, Pune Airport, and all destinations. Professional drivers, luxury 7-seater EVs, corporate packages.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,600</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">24/7</p>
+                  <p class="text-sm text-muted-foreground">Available</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <MapPin class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">100%</p>
+                  <p class="text-sm text-muted-foreground">PCMC Coverage</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20PCMC" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete PCMC Coverage -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Complete PCMC Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <MapPin class="h-5 w-5 text-primary" />
+                Pimpri
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pimpri Station Area</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Old Pimpri</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pimpri MIDC</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Residential areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Chinchwad
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Chinchwad Station</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Chinchwad Gaon</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Industrial areas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Thermax Chowk</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Factory class="h-5 w-5 text-primary" />
+                Akurdi & Nigdi
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Akurdi Station Area</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Nigdi residential</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pradhikaran</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All societies</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Bhosari & Others
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Bhosari MIDC</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Chakan Road</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Industrial estates</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All PCMC areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
+          <h3 class="font-semibold text-lg mb-3">Major Corporate & Industrial Landmarks We Serve:</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <ul class="space-y-1">
+              <li>• Tata Technologies PCMC</li>
+              <li>• Thermax Ltd Chinchwad</li>
+              <li>• Forbes Marshall</li>
+            </ul>
+            <ul class="space-y-1">
+              <li>• Kinetic Engineering</li>
+              <li>• Atlas Copco</li>
+              <li>• Sandvik Asia</li>
+            </ul>
+            <ul class="space-y-1">
+              <li>• All MIDC units</li>
+              <li>• IT Parks PCMC</li>
+              <li>• Business centers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose for PCMC -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why PCMC Chooses GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Factory class="h-5 w-5 text-primary" />
+                Industrial Belt Specialist
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                PCMC is India's industrial powerhouse with 3,000+ manufacturing units. We specialize in serving industrial employees and executives needing reliable airport transfers.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Familiar with all MIDC areas and factory gates</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Flexible timing for shift workers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Corporate invoicing for expense claims</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Strategic Location Advantage
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                PCMC's proximity to Wakad and Mumbai-Pune Highway gives you fastest expressway access, avoiding Pune city traffic completely.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>10-15 minutes faster than Pune city routes</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Direct highway access via Wakad</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>₹100 cheaper than similar distance Pune areas</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Corporate Partnership Focus
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Monthly packages for PCMC companies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated vehicles for regular travelers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>GST invoices with monthly billing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Priority booking for corporate clients</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Account manager for HR departments</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Premium Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - 400+ km range, 7-seater</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - 530+ km range, luxury SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent comfort perfect for work calls</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Eco-friendly for corporate ESG goals</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          PCMC Electric Cab Pricing
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <Card className="border-primary border-2">
+            <CardHeader>
+              <Badge className="w-fit mb-2">Most Popular</Badge>
+              <CardTitle>PCMC to Mumbai Airport</CardTitle>
+              <CardDescription>148 km • 2.5-3 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="mb-6">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-4xl font-bold text-primary">₹3,600</span>
+                  <span class="text-sm text-muted-foreground">Kia Carens EV</span>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-2xl font-bold text-primary">₹4,100</span>
+                  <span class="text-sm text-muted-foreground">BYD eMax 7 (Luxury)</span>
+                </div>
+              </div>
+              <div class="space-y-2 mb-6">
+                <h4 class="font-semibold text-sm">What's Included:</h4>
+                <ul class="space-y-1 text-sm text-muted-foreground">
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Pickup from any PCMC location</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>All tolls (₹430)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Driver allowance (₹500)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Airport parking (₹70)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>30 min free waiting</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Flight tracking included</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://wa.me/917498264215?text=Book%20PCMC%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  <MessageCircle class="mr-2 h-4 w-4" />
+                  Book Now on WhatsApp
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
+          <div class="space-y-4">
+            <Card>
+              <CardContent className="pt-6">
+                <div class="flex justify-between items-center mb-2">
+                  <div>
+                    <p class="font-semibold">PCMC to Pune Airport</p>
+                    <p class="text-sm text-muted-foreground">32 km • 50 min</p>
+                  </div>
+                  <p class="text-2xl font-bold text-primary">₹1,200</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <div class="flex justify-between items-center mb-2">
+                  <div>
+                    <p class="font-semibold">PCMC to Navi Mumbai Airport</p>
+                    <p class="text-sm text-muted-foreground">138 km • 2.5 hrs</p>
+                  </div>
+                  <p class="text-2xl font-bold text-primary">₹4,100</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <div class="flex justify-between items-center mb-2">
+                  <div>
+                    <p class="font-semibold">PCMC to Mumbai City</p>
+                    <p class="text-sm text-muted-foreground">143 km • 3 hrs</p>
+                  </div>
+                  <p class="text-2xl font-bold text-primary">₹4,400</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div class="p-4 bg-green-50 border border-green-200 rounded-lg">
+              <p class="text-sm font-semibold text-green-900 mb-2">Corporate Monthly Packages:</p>
+              <p class="text-sm text-green-800">Save 10-15% with monthly plans for 4+ trips. Contact for custom pricing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Book Electric Cab from PCMC
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Serving all PCMC areas - Pimpri, Chinchwad, Akurdi, Nigdi, Bhosari. Professional service for industrial & IT professionals.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20from%20PCMC%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ All PCMC coverage • ✓ Corporate packages • ✓ ₹100 cheaper than Pune
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

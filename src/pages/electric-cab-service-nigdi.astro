@@ -1,0 +1,836 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Home, Navigation } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service Nigdi", url: "/electric-cab-service-nigdi" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from Nigdi to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,600 all-inclusive for electric cab from Nigdi to Mumbai Airport. This covers pickup from any Nigdi location (Nigdi Gaon, Akurdi, Pradhikaran areas), tolls (₹430), driver allowance (₹500), and parking (₹70). Fixed transparent pricing, no surge charges."
+  },
+  {
+    question: "Do you provide pickup from Nigdi Pradhikaran area?",
+    answer: "Yes, we provide comprehensive coverage across all Nigdi areas including Nigdi Gaon, Pradhikaran, Akurdi border, residential societies, and commercial areas. Our drivers are familiar with all Nigdi localities and society locations."
+  },
+  {
+    question: "What is the best route from Nigdi to Mumbai Airport?",
+    answer: "The fastest route from Nigdi is via Wakad to Mumbai-Pune Expressway entry, avoiding Pune city traffic completely. This gives direct highway access and saves 10-15 minutes compared to city routes. Total journey: 148 km, 2.5-3 hours."
+  },
+  {
+    question: "How close is Nigdi to expressway access?",
+    answer: "Nigdi is strategically located with quick access to Mumbai-Pune Expressway via Wakad route (just 10 minutes). This proximity makes Nigdi ideal for airport transfers with faster travel times and lower costs compared to central Pune locations."
+  },
+  {
+    question: "Are electric cabs reliable for Nigdi to Mumbai Airport journey?",
+    answer: "Absolutely! Our Kia Carens EV has 400+ km range and BYD eMax 7 has 530+ km range - more than sufficient for the 148 km Nigdi to Mumbai Airport journey. We maintain 99.8% on-time completion rate with zero range anxiety."
+  },
+  {
+    question: "Do you offer return service from Mumbai Airport to Nigdi?",
+    answer: "Yes, we provide electric cab service from Mumbai Airport back to Nigdi at the same ₹3,600 rate. We offer flight tracking, meet & greet at arrivals, and 30 minutes free waiting time for delayed flights. Safe drop to any Nigdi location."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service Nigdi ₹3,600 | Mumbai Airport | 24/7 PCMC Hub"
+  description="Premium electric cab service from Nigdi to Mumbai Airport at ₹3,600. Coverage: Nigdi Gaon, Akurdi, Pradhikaran, all PCMC areas. Quick expressway access, professional drivers, luxury EVs. Book 24/7."
+  keywords={[
+    "electric cab nigdi",
+    "nigdi to mumbai airport cab",
+    "nigdi airport taxi service",
+    "nigdi electric taxi",
+    "pradhikaran to mumbai airport",
+    "nigdi gaon cab service",
+    "akurdi nigdi airport cab",
+    "nigdi pcmc electric cab",
+    "nigdi to pune airport",
+    "electric cab service nigdi",
+    "nigdi mumbai airport transfer",
+    "nigdi 24/7 cab service",
+    "affordable electric cab nigdi",
+    "nigdi to navi mumbai airport",
+    "nigdi expressway cab service"
+  ]}
+>
+  <StructuredData data={[breadcrumbSchema, faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service Nigdi", url: "/electric-cab-service-nigdi" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          Nigdi • Pradhikaran • Akurdi • PCMC Connectivity Hub
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service Nigdi | PCMC Hub ₹3,600
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from Nigdi covering Nigdi Gaon, Akurdi, Pradhikaran, and all PCMC connectivity areas. Mumbai Airport, Pune Airport, and all destinations. Quick expressway access, professional drivers, luxury 7-seater electric SUVs, transparent pricing.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,600</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">24/7</p>
+                  <p class="text-sm text-muted-foreground">Available</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Star class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">4.9★</p>
+                  <p class="text-sm text-muted-foreground">Customer Rating</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Nigdi" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Complete Nigdi Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Residential Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Nigdi Gaon</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Pradhikaran residential</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Akurdi border area</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>All housing societies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Residential complexes</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Commercial Areas
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Nigdi commercial areas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Business centers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Industrial areas nearby</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Office complexes</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Strategic Location
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Quick expressway access</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>10 min to Wakad route</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>PCMC connectivity hub</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Highway proximity</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why Nigdi Residents Choose GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                PCMC Connectivity Hub Advantage
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Nigdi's strategic position as PCMC's connectivity hub provides quick expressway access via Wakad route, making it ideal for airport transfers with minimal city traffic.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>10 minutes to expressway via Wakad</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Avoid Pune city traffic completely</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>148 km smooth highway journey</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Local Area Expertise
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                We specialize in Nigdi, Pradhikaran, and Akurdi areas with drivers who know every locality, society, and shortcut for seamless pickups.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Familiar with all Nigdi localities</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Know Pradhikaran society locations</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>No navigation confusion delays</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Premium Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - 400+ km range, 7-seater</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - 530+ km range, luxury SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent, smooth electric performance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Zero emissions - eco-friendly travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premium comfort for long journeys</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Shield class="h-5 w-5 text-primary" />
+                Reliable & Transparent
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Fixed ₹3,600 rate - no surge pricing ever</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>99.8% on-time performance record</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Background-verified professional drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>24/7 customer support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Free cancellation up to 2 hours</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes from Nigdi -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Popular Electric Cab Routes from Nigdi
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Nigdi to Mumbai Airport</CardTitle>
+              <CardDescription>148 km • 2.5-3 hours • Most Popular</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹3,600</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Pickup from any Nigdi location</p>
+                <p>✓ Drop at Terminal 1 or Terminal 2</p>
+                <p>✓ Quick expressway access via Wakad</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Nigdi to Pune Airport</CardTitle>
+              <CardDescription>30 km • 50 minutes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹1,200</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Pune%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Quick local airport transfer</p>
+                <p>✓ Professional drivers</p>
+                <p>✓ Convenient for domestic flights</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Nigdi to Navi Mumbai Airport</CardTitle>
+              <CardDescription>138 km • 2.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,100</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Navi%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ New airport connectivity</p>
+                <p>✓ Scenic route via expressway</p>
+                <p>✓ Flight tracking included</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Nigdi to Mumbai City</CardTitle>
+              <CardDescription>143 km • 3 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,400</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Nigdi%20to%20Mumbai%20City" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Drop anywhere in Mumbai</p>
+                <p>✓ Andheri, Bandra, Thane, Powai</p>
+                <p>✓ Business trips & meetings</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Nigdi Service -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
+          Premium Electric Cab Service for Nigdi - PCMC's Connectivity Hub
+        </h2>
+
+        <p>
+          Nigdi, strategically positioned as PCMC's primary connectivity hub, serves as a vital link between Pimpri-Chinchwad's industrial areas and Pune's IT corridor. Home to thousands of residents in Nigdi Gaon, Pradhikaran, and surrounding areas, this locality requires reliable airport transportation for both business and leisure travel. <strong>GreenEVCabs</strong> specializes in providing premium electric cab service specifically tailored for Nigdi's unique geographic and connectivity advantages.
+        </p>
+
+        <h3>Why Nigdi's Location is Perfect for Airport Transfers</h3>
+        <p>
+          Nigdi residents traveling to <strong>Mumbai Airport</strong> enjoy significant advantages over other Pune locations. The locality's strategic position offers quick access to the Mumbai-Pune Expressway while avoiding congested Pune city routes. Traditional cab services often charge variable rates and navigate through traffic-heavy areas. GreenEVCabs solves these challenges with:
+        </p>
+
+        <ul>
+          <li><strong>Expressway Proximity:</strong> Nigdi to expressway via Wakad route takes just 10 minutes, giving you direct highway access. This translates to faster travel times and predictable journeys - crucial for catching flights.</li>
+          <li><strong>Fixed ₹3,600 Pricing:</strong> Same rate for all Nigdi pickups whether you're in Nigdi Gaon, Pradhikaran, or Akurdi border area. No location-based surge, no time-based pricing variations.</li>
+          <li><strong>Luxury Electric Fleet:</strong> Spacious 7-seater Kia Carens EV and BYD eMax 7 perfect for families or business travelers with luggage. Silent, smooth rides ideal for early morning departures.</li>
+          <li><strong>Local Expertise:</strong> Our drivers know Nigdi's layout intimately - all residential areas, society locations, commercial zones, and fastest routes to the expressway.</li>
+        </ul>
+
+        <h3>Nigdi as PCMC's Connectivity Hub</h3>
+        <p>
+          Nigdi's role as a connectivity hub makes it uniquely positioned for efficient airport transfers:
+        </p>
+
+        <p>
+          <strong>Gateway Between PCMC and Pune:</strong> Nigdi connects PCMC's industrial belt (Pimpri, Chinchwad, Bhosari) with Pune's western suburbs (Wakad, Hinjewadi). This central position means minimal detours and direct routes to the expressway.
+        </p>
+
+        <p>
+          <strong>Multiple Route Options:</strong> From Nigdi, we can access the Mumbai-Pune Expressway via Wakad (fastest for most times), or via Hinjewadi if required. This flexibility ensures we always take the best route based on real-time traffic conditions.
+        </p>
+
+        <p>
+          <strong>Avoiding Traffic Bottlenecks:</strong> Unlike central Pune pickups that require navigating through Aundh, Shivajinagar, or Kothrud traffic, Nigdi pickups go directly to Wakad and onto the expressway. This saves 15-20 minutes during peak hours.
+        </p>
+
+        <h3>Comprehensive Coverage: Nigdi Gaon, Pradhikaran & Akurdi</h3>
+        <p>
+          We provide complete coverage across all Nigdi areas with drivers who understand local geography:
+        </p>
+
+        <p>
+          <strong>Nigdi Gaon:</strong> The original Nigdi village area with established residential communities. We pick up from all lanes, housing societies, and commercial areas in Nigdi Gaon. Our drivers navigate the narrow lanes efficiently without delays.
+        </p>
+
+        <p>
+          <strong>Pradhikaran Area:</strong> PCMC's planned residential sector with numerous housing societies and apartment complexes. We serve:
+        </p>
+        <ul>
+          <li>All Pradhikaran residential societies and towers</li>
+          <li>Pradhikaran commercial areas and business centers</li>
+          <li>Specific gate pickups from large complexes</li>
+          <li>Early morning pickups (3 AM onwards) from any Pradhikaran location</li>
+        </ul>
+
+        <p>
+          <strong>Akurdi Border Area:</strong> The area connecting Nigdi with Akurdi, featuring mix of residential and commercial properties. We provide seamless service to residents living on the Nigdi-Akurdi border, knowing all local landmarks.
+        </p>
+
+        <h3>Perfect for Early Morning Mumbai Flights</h3>
+        <p>
+          Many Nigdi residents and PCMC professionals need to catch <strong>early morning flights from Mumbai Airport</strong> (6 AM - 8 AM departures) for business trips or international connections. This requires leaving Nigdi by 3-3:30 AM to reach the airport by 6-6:30 AM with buffer time.
+        </p>
+
+        <p>
+          GreenEVCabs specializes in early morning airport transfers from Nigdi:
+        </p>
+        <ul>
+          <li>24/7 availability - book for any departure time including 3 AM pickups</li>
+          <li>Drivers arrive 5-10 minutes early, never late - we understand missing flights is not an option</li>
+          <li>Silent electric vehicles perfect for early morning - won't disturb neighbors during pickup</li>
+          <li>Smooth, comfortable ride allowing you to rest or sleep during the journey</li>
+          <li>99.8% on-time record - our track record speaks for reliability</li>
+          <li>Real-time GPS tracking for family peace of mind</li>
+        </ul>
+
+        <h3>Route & Timing from Nigdi to Mumbai Airport</h3>
+        <p>
+          The 148 km journey from Nigdi to Mumbai Airport follows this optimal route:
+        </p>
+
+        <p>
+          <strong>Best Route:</strong> Nigdi → Wakad (10 min) → Mumbai-Pune Expressway Entry → Expressway (128 km) → Mumbai Airport Exit → Terminal 1/2
+        </p>
+
+        <p>
+          <strong>Duration by Time of Day:</strong>
+        </p>
+        <ul>
+          <li>Early Morning (3 AM - 6 AM): 2.5 hours - fastest, zero traffic</li>
+          <li>Morning (7 AM - 10 AM): 3 hours - moderate Nigdi-Wakad traffic</li>
+          <li>Afternoon (11 AM - 5 PM): 2.5-3 hours - smooth journey</li>
+          <li>Evening (6 PM - 10 PM): 3-3.5 hours - possible expressway traffic near Mumbai</li>
+          <li>Night (11 PM - 2 AM): 2.5 hours - very smooth</li>
+        </ul>
+
+        <p>
+          <strong>Recommended Departure Times from Nigdi:</strong>
+        </p>
+        <ul>
+          <li>For 6 AM - 8 AM flights: Leave by 3 AM - 3:30 AM</li>
+          <li>For 9 AM - 11 AM flights: Leave by 5:30 AM - 6 AM</li>
+          <li>For 12 PM - 3 PM flights: Leave by 8:30 AM - 9 AM</li>
+          <li>For evening/night flights: Leave 4 hours before flight time</li>
+        </ul>
+
+        <h3>Corporate & Industrial Professionals from PCMC via Nigdi</h3>
+        <p>
+          Nigdi's position as PCMC's connectivity hub makes it a residential choice for professionals working in nearby industrial areas (Pimpri, Chinchwad, Bhosari) and IT parks (Hinjewadi, Wakad). We cater specifically to these professionals:
+        </p>
+
+        <ul>
+          <li><strong>Business Travel Packages:</strong> For PCMC industrial professionals making regular Mumbai trips, we offer monthly packages with volume discounts, priority booking, and consolidated GST invoices.</li>
+          <li><strong>Last-Minute Bookings:</strong> Emergency client meeting in Mumbai? We accommodate same-day bookings subject to vehicle availability.</li>
+          <li><strong>Work-Friendly Environment:</strong> Silent electric vehicles allow conference calls or laptop work during the 2.5-hour journey without engine noise interference.</li>
+          <li><strong>Flexible Timing:</strong> Early morning, late night, or anytime - we understand corporate travel doesn't follow 9-5 schedules.</li>
+        </ul>
+
+        <h3>Why Electric Vehicles Excel on Nigdi-Mumbai Route</h3>
+        <p>
+          The 148 km Nigdi to Mumbai Airport route is ideally suited for electric vehicles:
+        </p>
+
+        <ul>
+          <li><strong>Ample Range:</strong> Our Kia Carens EV (400+ km range) and BYD eMax 7 (530+ km range) can complete round trips from Nigdi to Mumbai Airport without charging. Zero range anxiety for passengers.</li>
+          <li><strong>Expressway Performance:</strong> Electric vehicles shine on highways with instant torque for safe overtaking, smooth acceleration, and regenerative braking on downhill sections.</li>
+          <li><strong>Cost Advantage:</strong> ₹3,600 for electric cab vs ₹4,500+ for diesel cabs with surge pricing. Save ₹900+ per trip while enjoying superior comfort.</li>
+          <li><strong>Silent Comfort:</strong> No engine noise means you can work, take calls, or sleep during the journey - perfect for business travelers and early morning rides.</li>
+          <li><strong>Environmental Leadership:</strong> Each trip saves 15-20 kg CO₂ emissions. Ideal for environmentally conscious travelers and companies with ESG commitments.</li>
+          <li><strong>Superior Comfort:</strong> No gear shifts, minimal vibrations, instant acceleration - electric vehicles provide unmatched ride comfort for 2.5-3 hour journeys.</li>
+        </ul>
+
+        <h3>Comprehensive Pricing & What's Included</h3>
+        <p>
+          Our transparent, all-inclusive pricing for Nigdi electric cab service:
+        </p>
+
+        <p>
+          <strong>Nigdi to Mumbai Airport: ₹3,600 (Kia Carens EV) | ₹4,100 (BYD eMax 7)</strong>
+        </p>
+
+        <p>
+          <strong>What's Included in ₹3,600:</strong>
+        </p>
+        <ul>
+          <li>Base cab fare for 148 km journey</li>
+          <li>Mumbai-Pune Expressway toll: ₹430</li>
+          <li>Mumbai local tolls: ₹70</li>
+          <li>Driver allowance (food/stay): ₹500</li>
+          <li>Mumbai Airport parking: ₹70</li>
+          <li>30 minutes free waiting time at pickup location</li>
+          <li>Flight tracking for return pickups from airport</li>
+          <li>GST invoice (for corporate bookings)</li>
+        </ul>
+
+        <p>
+          <strong>Additional Services:</strong>
+        </p>
+        <ul>
+          <li>Waiting time beyond 30 minutes: ₹100/hour</li>
+          <li>Night charges (11 PM - 5 AM): None (same rate 24/7)</li>
+          <li>Round trip discount: 10% off on return journey when booked together</li>
+          <li>Monthly package (4+ trips): Custom pricing with dedicated vehicle</li>
+        </ul>
+
+        <h3>How to Book Electric Cab from Nigdi</h3>
+        <p>
+          Booking your Nigdi to Mumbai Airport electric cab is simple and instant:
+        </p>
+        <ol>
+          <li><strong>WhatsApp Booking:</strong> Message us at <strong>+91 74982 64215</strong> with:
+            <ul>
+              <li>Pickup location (e.g., "Nigdi Gaon" or "Pradhikaran Sector 27")</li>
+              <li>Drop location (Mumbai Airport Terminal 1/2 or specific Mumbai address)</li>
+              <li>Date and pickup time</li>
+              <li>Number of passengers and luggage</li>
+              <li>Preferred vehicle (Kia Carens EV or BYD eMax 7)</li>
+            </ul>
+            You'll receive instant confirmation with booking details.
+          </li>
+          <li><strong>Call Booking:</strong> Call <strong>+91 74982 64215</strong> for immediate booking. Our team is available 24/7 for bookings, queries, and special requests.</li>
+          <li><strong>Advance Booking:</strong> We recommend booking at least 24 hours in advance for early morning flights (3 AM - 6 AM pickups) to guarantee vehicle availability. You can book up to 30 days ahead.</li>
+          <li><strong>Last Minute:</strong> Same-day bookings accepted subject to vehicle availability. We maintain buffer vehicles for emergencies.</li>
+        </ol>
+
+        <p>
+          <strong>After Booking, You'll Receive:</strong>
+        </p>
+        <ul>
+          <li>Booking confirmation via WhatsApp/SMS</li>
+          <li>Driver details (name, photo, phone number) 30 minutes before pickup</li>
+          <li>Vehicle details (model, color, registration number)</li>
+          <li>Real-time tracking link (optional, for family safety)</li>
+          <li>GST invoice via email after trip completion (for corporate bookings)</li>
+        </ul>
+
+        <h3>Airport Pickup Service: Mumbai Airport to Nigdi</h3>
+        <p>
+          We also provide electric cab service from Mumbai Airport back to Nigdi at the same ₹3,600 rate. Perfect for return journeys after business trips or vacations.
+        </p>
+
+        <p>
+          <strong>Airport Pickup Features:</strong>
+        </p>
+        <ul>
+          <li><strong>Flight Tracking:</strong> Share your flight number and we automatically track delays. No extra charges for flight delays up to 60 minutes.</li>
+          <li><strong>Meet & Greet:</strong> Driver waits at arrivals with name board for easy identification, especially useful for late-night arrivals.</li>
+          <li><strong>Free Waiting Time:</strong> 30 minutes free waiting from flight landing time. Additional waiting at ₹100/hour if delayed at immigration or baggage claim.</li>
+          <li><strong>Luggage Assistance:</strong> Drivers help load heavy luggage into our spacious 7-seater electric SUVs.</li>
+          <li><strong>Safe Late Night Travel:</strong> Background-verified professional drivers ensure safe late-night travel back to Nigdi, Pradhikaran, or any PCMC location.</li>
+        </ul>
+
+        <h3>Frequently Asked Questions - Nigdi Service</h3>
+
+        <h4>Do you cover all areas of Nigdi including Pradhikaran?</h4>
+        <p>
+          Yes, we provide comprehensive coverage across entire Nigdi including Nigdi Gaon, Pradhikaran (all sectors), Akurdi border area, and all residential societies. Just provide your specific location (building/society name) during booking. Same ₹3,600 rate for all Nigdi pickups.
+        </p>
+
+        <h4>What if there's traffic between Nigdi and Wakad?</h4>
+        <p>
+          We plan routes dynamically based on real-time traffic. If Wakad route has unusual traffic, we use alternative routes. Our drivers have 5+ years experience and know all possible routes from Nigdi to the expressway. We always factor in buffer time for flight pickups.
+        </p>
+
+        <h4>Can I book for early morning 3 AM pickup from Pradhikaran?</h4>
+        <p>
+          Absolutely! We specialize in early morning airport pickups from all Nigdi areas including Pradhikaran. Book at least 24 hours in advance for 3 AM - 6 AM pickups to guarantee availability. Our silent electric vehicles won't disturb neighbors during early morning pickups.
+        </p>
+
+        <h4>Do you offer corporate packages for PCMC professionals living in Nigdi?</h4>
+        <p>
+          Yes! For PCMC professionals making regular Mumbai Airport trips (4+ per month), we offer:
+          <ul>
+            <li>Dedicated vehicle and driver (same driver for familiarity)</li>
+            <li>Priority booking (guaranteed availability)</li>
+            <li>Volume discounts (10-15% off per trip)</li>
+            <li>Consolidated monthly GST invoice for expense claims</li>
+            <li>Flexible payment terms (monthly billing)</li>
+          </ul>
+          Contact us at +91 74982 64215 for custom monthly package pricing.
+        </p>
+
+        <h4>How is ₹3,600 from Nigdi cheaper than other services?</h4>
+        <p>
+          Nigdi's proximity to expressway means shorter city navigation (10 min vs 30+ min from central Pune), reducing overall trip complexity. Additionally, electric vehicles have lower operating costs than diesel. We pass these savings to customers: ₹3,600 all-inclusive vs ₹4,500+ typical diesel cab rates with surge.
+        </p>
+
+        <h4>What makes your service better than regular app cabs?</h4>
+        <p>
+          Unlike app cabs: (1) We specialize in long-distance airport transfers, not short city rides, (2) Fixed ₹3,600 rate with zero surge pricing vs variable surge rates, (3) Spacious 7-seater EVs with ample luggage space vs compact sedans, (4) Professional drivers familiar with Nigdi localities vs random assignments, (5) 99.8% on-time record vs frequent cancellations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes & Services Section -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Related Routes & Services</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Nearby Localities</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/electric-cab-service-pcmc" class="text-primary hover:underline">Electric Cab Service PCMC</a></li>
+                <li><a href="/electric-cab-service-wakad" class="text-primary hover:underline">Electric Cab Service Wakad</a></li>
+                <li><a href="/electric-cab-service-pimple-saudagar" class="text-primary hover:underline">Electric Cab Service Pimple Saudagar</a></li>
+                <li><a href="/electric-cab-service-hinjewadi" class="text-primary hover:underline">Electric Cab Service Hinjewadi</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Airport Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/mumbai-airport-to-pune-electric-cab" class="text-primary hover:underline">Mumbai Airport to Pune</a></li>
+                <li><a href="/pune-airport-cab-service" class="text-primary hover:underline">Pune Airport Cab Service</a></li>
+                <li><a href="/navi-mumbai-airport-to-pune-cab" class="text-primary hover:underline">Navi Mumbai Airport to Pune</a></li>
+                <li><a href="/airport/mumbai-airport" class="text-primary hover:underline">Mumbai Airport Guide</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Our Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/corporate-electric-cab-pune" class="text-primary hover:underline">Corporate Cab Packages</a></li>
+                <li><a href="/fleet" class="text-primary hover:underline">Our Electric Fleet</a></li>
+                <li><a href="/ev-cabs-pune" class="text-primary hover:underline">EV Cabs Pune</a></li>
+                <li><a href="/locations" class="text-primary hover:underline">All Locations</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Ready to Book Your Electric Cab from Nigdi?
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join hundreds of Nigdi and PCMC residents who've switched to GreenEVCabs for reliable, eco-friendly, and affordable airport transfers.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20Nigdi%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ Quick expressway access • ✓ PCMC connectivity hub • ✓ Free cancellation up to 2 hours
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>

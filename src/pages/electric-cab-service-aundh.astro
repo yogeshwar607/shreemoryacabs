@@ -1,0 +1,850 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema } from "@/lib/seo";
+import { MapPin, Clock, IndianRupee, Check, Star, Zap, Shield, Phone, MessageCircle, Building2, Home, Navigation } from "lucide-react";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Electric Cab Service Aundh", url: "/electric-cab-service-aundh" }
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: "How much does electric cab from Aundh to Mumbai Airport cost?",
+    answer: "GreenEVCabs charges ₹3,700 all-inclusive for electric cab from Aundh to Mumbai Airport. This premium service covers pickup from any Aundh location (Bhumkar Chowk, Cerebrum IT Park, Sus Road, all premium societies), tolls (₹430), driver allowance (₹500), and parking (₹70). Fixed transparent pricing."
+  },
+  {
+    question: "Do you serve Cerebrum IT Park and all Aundh premium societies?",
+    answer: "Yes, we provide premium coverage across all Aundh areas including Cerebrum IT Park, Bhumkar Chowk, Sus Road corridor, IT companies, and all premium residential societies. Our drivers are familiar with all society gates, IT campus locations, and Aundh's premium localities."
+  },
+  {
+    question: "What makes Aundh ideal for premium airport cab service?",
+    answer: "Aundh is Pune's premier residential and corporate hub with direct Sus Road access to Mumbai-Pune Expressway. Premium societies, Cerebrum IT Park, upscale lifestyle standards demand premium cab service. We match these standards with luxury electric SUVs, corporate-grade reliability, and professional drivers."
+  },
+  {
+    question: "Do you offer corporate packages for Cerebrum IT Park companies?",
+    answer: "Yes! We specialize in serving Cerebrum IT Park and Aundh's corporate corridor with premium corporate packages: monthly billing, consolidated GST invoices, priority booking, 10-15% volume discounts for 4+ trips/month, dedicated account manager, and flexible payment terms. Perfect for IT companies and MNCs."
+  },
+  {
+    question: "Can I book for early morning flights from premium Aundh societies?",
+    answer: "Absolutely! We specialize in early morning pickups (3 AM onwards) from all Aundh premium societies. Silent electric vehicles won't disturb neighbors during 3 AM pickup. 99.8% punctuality record - crucial for business travelers and premium residents who value reliability."
+  },
+  {
+    question: "How is your premium service different from regular cabs?",
+    answer: "Premium differences matching Aundh standards: (1) Luxury Kia Carens EV & BYD eMax 7 vs basic sedans, (2) 99.8% punctuality vs frequent cancellations, (3) Corporate-grade professional drivers vs casual service, (4) Silent electric cabins for work/calls vs noisy engines, (5) Fixed ₹3,700 with zero surge vs variable pricing, (6) Premium society/IT park familiarity vs navigation delays."
+  },
+  {
+    question: "Do you provide return premium service from Mumbai Airport to Aundh?",
+    answer: "Yes, premium electric cab service from Mumbai Airport to Aundh at same ₹3,700 rate. Flight tracking, professional meet & greet with name board, 30 minutes free waiting, late-night safe returns to Aundh societies/Cerebrum IT Park. Premium service throughout matching Aundh's lifestyle standards."
+  }
+]);
+
+const serviceSchema = generateServiceSchema();
+---
+
+<MainLayout
+  title="Electric Cab Service Aundh ₹3,700 | Cerebrum IT Park | Premium 24/7"
+  description="Premium electric cab service from Aundh to Mumbai Airport at ₹3,700. Cerebrum IT Park, Bhumkar Chowk, Sus Road, premium societies. Corporate packages, luxury EVs, professional service. Book 24/7."
+  keywords={[
+    "electric cab aundh",
+    "aundh to mumbai airport cab",
+    "cerebrum it park cab service",
+    "aundh airport taxi premium",
+    "bhumkar chowk to mumbai airport",
+    "aundh electric taxi",
+    "aundh sus road cab",
+    "premium electric cab aundh",
+    "aundh to pune airport",
+    "aundh corporate cab service",
+    "aundh residential cab",
+    "cerebrum it park mumbai airport",
+    "aundh 24/7 premium cab",
+    "luxury electric cab aundh",
+    "aundh it corridor taxi"
+  ]}
+>
+  <StructuredData data={[breadcrumbSchema, faqSchema, serviceSchema]} />
+
+  <Breadcrumbs items={[
+    { name: "Electric Cab Service Aundh", url: "/electric-cab-service-aundh" }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          Aundh • Cerebrum IT Park • Bhumkar Chowk • Premium Service
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Aundh | Premium Cerebrum IT Park ₹3,700
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          Premium electric cab service from Aundh - Pune's premier residential and corporate hub. Coverage: Cerebrum IT Park, Bhumkar Chowk, Sus Road corridor, all premium societies. Mumbai Airport, Pune Airport, corporate travel. Luxury 7-seater electric SUVs, professional drivers, corporate packages.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹3,700</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Building2 class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">Premium</p>
+                  <p class="text-sm text-muted-foreground">Corporate Service</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Star class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">4.9★</p>
+                  <p class="text-sm text-muted-foreground">Premium Rating</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20a%20premium%20electric%20cab%20from%20Aundh" target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Premium Aundh Coverage - All Areas Served
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Cerebrum IT Park & Corporate
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Cerebrum IT Park (all towers)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>IT companies & tech offices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>MNC offices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Business centers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Corporate campuses</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Home class="h-5 w-5 text-primary" />
+                Premium Residential
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Bhumkar Chowk societies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Sus Road premium societies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Luxury gated communities</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premium apartment towers</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Premium Location
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Direct Sus Road expressway access</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premier Pune locality</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Corporate corridor hub</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Traffic-free highway route</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why Aundh's Premium Community Chooses GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Building2 class="h-5 w-5 text-primary" />
+                Cerebrum IT Park Specialist
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Aundh's Cerebrum IT Park houses top MNCs and IT companies. We provide premium corporate service matching professional standards with reliability IT professionals demand.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>99.8% punctuality for business travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Corporate packages with GST invoices</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated account management</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Navigation class="h-5 w-5 text-primary" />
+                Premium Sus Road Access
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground mb-3">
+                Aundh's direct Sus Road access to Mumbai-Pune Expressway provides the fastest, most scenic route to Mumbai Airport - premium journey start to finish.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Direct expressway via Sus Road (15 min)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Scenic route through Baner hills</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Zero city traffic navigation</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Zap class="h-5 w-5 text-primary" />
+                Luxury Electric Fleet
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Kia Carens EV - 400+ km range, premium 7-seater</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>BYD eMax 7 - 530+ km range, luxury SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent cabins perfect for work calls</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Premium comfort matching Aundh standards</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Eco-friendly for ESG-conscious companies</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Shield class="h-5 w-5 text-primary" />
+                Premium Reliability
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Fixed ₹3,700 premium rate - zero surge</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>99.8% on-time record for business travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Professionally trained verified drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>24/7 premium customer support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Flexible premium cancellation policy</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Premium Electric Cab Routes from Aundh
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="hover:shadow-lg transition-shadow border-primary border-2">
+            <CardHeader>
+              <Badge className="w-fit mb-2">Most Popular</Badge>
+              <CardTitle>Aundh to Mumbai Airport</CardTitle>
+              <CardDescription>150 km • 2.5-3 hours • Premium Service</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹3,700</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Aundh%20to%20Mumbai%20Airport%20Premium" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Pickup from Cerebrum IT Park / any society</p>
+                <p>✓ Premium Sus Road scenic route</p>
+                <p>✓ Perfect for business & family travel</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Aundh to Pune Airport</CardTitle>
+              <CardDescription>24 km • 35-40 minutes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹1,000</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Aundh%20to%20Pune%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Quick premium local transfer</p>
+                <p>✓ Corporate invoicing available</p>
+                <p>✓ Convenient for domestic flights</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Aundh to Navi Mumbai Airport</CardTitle>
+              <CardDescription>135 km • 2.5 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,200</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Aundh%20to%20Navi%20Mumbai%20Airport" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Premium new airport service</p>
+                <p>✓ Scenic expressway route</p>
+                <p>✓ Flight tracking included</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Aundh to Mumbai City (Corporate)</CardTitle>
+              <CardDescription>145 km • 3 hours</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-sm text-muted-foreground">Kia Carens EV</p>
+                  <p class="text-2xl font-bold text-primary">₹4,500</p>
+                  <p class="text-xs text-muted-foreground">All-inclusive</p>
+                </div>
+                <a href="https://wa.me/917498264215?text=Book%20Aundh%20to%20Mumbai%20City" target="_blank" rel="noopener">
+                  <Button variant="outline">Book Now →</Button>
+                </a>
+              </div>
+              <div class="space-y-1 text-xs text-muted-foreground">
+                <p>✓ Drop anywhere in Mumbai</p>
+                <p>✓ Perfect for client meetings</p>
+                <p>✓ Premium business travel</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Service - Content optimized for readability -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
+          Premium Electric Cab Service for Aundh - Pune's Premier Locality
+        </h2>
+
+        <p>
+          Aundh stands as Pune's most prestigious residential and corporate locality, home to premium gated societies, luxury apartments, and the renowned <strong>Cerebrum IT Park</strong> - one of Pune's largest IT campuses. This premier locality demands airport transportation services that match its upscale standards and professional requirements. <strong>GreenEVCabs</strong> delivers premium electric cab service specifically designed for Aundh's sophisticated community - combining luxury electric vehicles, corporate-grade reliability, and professional service excellence.
+        </p>
+
+        <h3>Why Aundh's Premium Community Chooses Electric Cabs</h3>
+        <p>
+          Aundh residents and Cerebrum IT Park professionals traveling to <strong>Mumbai Airport for business</strong>, international trips, family vacations, and corporate travel expect premium service standards. Traditional cab services fail to meet these expectations with inconsistent quality, surge pricing, and unreliable service. GreenEVCabs delivers premium experience throughout:
+        </p>
+
+        <ul>
+          <li><strong>Luxury Electric Fleet:</strong> Premium Kia Carens EV and BYD eMax 7 luxury SUVs matching Aundh's upscale lifestyle standards. Silent cabins, plush interiors, spacious 7-seater configuration - comfort befitting premium residents.</li>
+          <li><strong>Corporate-Grade Reliability:</strong> 99.8% on-time record essential for business travelers from Cerebrum IT Park. Drivers arrive 5-10 minutes early - punctuality is guaranteed, not hoped for.</li>
+          <li><strong>Professional Service Excellence:</strong> Background-verified professional drivers, well-maintained vehicles, courteous communication, and attention to detail matching premium expectations.</li>
+          <li><strong>Fixed Premium Pricing:</strong> ₹3,700 all-inclusive - no surge during peak hours, no location-based pricing within Aundh, no hidden charges. Transparent premium pricing.</li>
+        </ul>
+
+        <h3>Aundh's Premier Location & Sus Road Advantage</h3>
+        <p>
+          Aundh's premium position in Northwest Pune provides exceptional advantages for airport transfers:
+        </p>
+
+        <p>
+          <strong>Direct Sus Road Expressway Access:</strong> Aundh's crowning advantage is direct access to Mumbai-Pune Expressway via Sus Road - arguably Pune's most scenic and traffic-free route. From Bhumkar Chowk to expressway entry takes just 15 minutes through beautiful Baner hills. This premium route means your journey starts peacefully, not in traffic.
+        </p>
+
+        <p>
+          <strong>Pune's Premier Locality:</strong> Aundh is consistently ranked as Pune's top residential locality for quality of life, connectivity, and lifestyle amenities. This premium positioning extends to service expectations - residents demand and deserve the best.
+        </p>
+
+        <p>
+          <strong>Zero City Traffic Navigation:</strong> Unlike central Pune pickups requiring navigation through congested Shivajinagar, Kothrud, or JM Road, Aundh offers direct westward Sus Road route. Your premium journey starts immediately, not after battling city traffic.
+        </p>
+
+        <h3>Serving Cerebrum IT Park - Aundh's Corporate Hub</h3>
+        <p>
+          Cerebrum IT Park is Aundh's landmark - housing top MNCs, IT companies, and corporate offices. We specialize in serving this professional community:
+        </p>
+
+        <p>
+          <strong>Premium Corporate Service:</strong> IT professionals from Cerebrum make frequent Mumbai business trips for client meetings, conferences, and corporate travel. We provide:
+        </p>
+        <ul>
+          <li>Dedicated corporate packages with 10-15% volume discounts</li>
+          <li>Priority booking guarantee for business travel</li>
+          <li>Consolidated monthly GST invoices for expense claims</li>
+          <li>Flexible monthly billing terms (15-30 day credit)</li>
+          <li>Dedicated account manager for HR departments</li>
+          <li>Same-day emergency booking for last-minute trips</li>
+        </ul>
+
+        <p>
+          <strong>Campus Pickup Excellence:</strong> Our drivers know Cerebrum IT Park intimately - all towers (A, B, C, D), designated pickup points, security procedures, and campus navigation. Professional pickups matching corporate standards.
+        </p>
+
+        <h3>Premium Residential Societies of Aundh</h3>
+        <p>
+          Aundh features some of Pune's most prestigious residential societies and luxury apartments. We provide white-glove service for premium residents:
+        </p>
+
+        <p>
+          <strong>Bhumkar Chowk & Sus Road Societies:</strong> Premium gated communities around Bhumkar Chowk and along Sus Road corridor. We serve:
+        </p>
+        <ul>
+          <li>All luxury society gates and tower entrances</li>
+          <li>Professional coordination with society security</li>
+          <li>Silent electric vehicles appropriate for premium areas</li>
+          <li>Early morning 3 AM+ pickups without disturbing neighbors</li>
+          <li>Luggage assistance from apartment to vehicle</li>
+          <li>Family-friendly service for vacation travel</li>
+        </ul>
+
+        <h3>Perfect for Business Travel from Cerebrum IT Park</h3>
+        <p>
+          Cerebrum IT Park professionals make frequent <strong>Mumbai Airport business trips</strong>. Our premium service is designed for corporate travelers:
+        </p>
+
+        <ul>
+          <li><strong>6 AM Flight Reliability:</strong> Critical client meeting in Mumbai at 9 AM? Leave Cerebrum at 3 AM, reach Mumbai Airport by 6 AM. Our 99.8% punctuality ensures you never miss business commitments.</li>
+          <li><strong>Work-Friendly Journey:</strong> Silent electric cabins perfect for conference calls, email catch-up, presentation prep. Stable ride quality allows laptop work throughout 2.5-hour journey.</li>
+          <li><strong>Professional Image:</strong> Premium electric SUVs, well-dressed drivers, courteous service - representing your professional image from pickup to airport.</li>
+          <li><strong>Expense-Optimized:</strong> GST invoices immediately post-trip, detailed trip information for expense reports, corporate card reconciliation support.</li>
+        </ul>
+
+        <h3>Premium Family Service for Aundh Residents</h3>
+        <p>
+          Aundh's family-oriented premium societies require family-friendly airport service:
+        </p>
+
+        <ul>
+          <li><strong>Spacious Luxury SUVs:</strong> 7-seater Kia Carens EV and BYD eMax 7 comfortably fit families of 6-7 with vacation luggage. No cramping in small sedans.</li>
+          <li><strong>Child-Friendly Service:</strong> Safe smooth electric ride, experienced drivers comfortable with families, child safety priority throughout journey.</li>
+          <li><strong>Vacation-Ready:</strong> Ample luggage space for family vacation bags, organized loading ensuring nothing forgotten, stress-free travel start.</li>
+          <li><strong>Silent Comfort:</strong> Electric vehicles mean kids can sleep during early morning vacation flights - parents appreciate the peace.</li>
+        </ul>
+
+        <h3>Route & Timing: Aundh to Mumbai Airport</h3>
+        <p>
+          The 150 km premium journey from Aundh to Mumbai Airport follows the scenic Sus Road route:
+        </p>
+
+        <p>
+          <strong>Premium Route:</strong> Aundh/Bhumkar Chowk → Sus Road (15 min, scenic Baner hills) → Mumbai-Pune Expressway Entry → Expressway (125 km) → Mumbai Airport → Terminal 1/2
+        </p>
+
+        <p>
+          <strong>Journey Duration by Time:</strong>
+        </p>
+        <ul>
+          <li>Early Morning (3 AM - 6 AM): 2.5 hours - fastest, zero traffic, perfect for business flights</li>
+          <li>Morning (7 AM - 10 AM): 3 hours - moderate Sus Road traffic</li>
+          <li>Afternoon (11 AM - 5 PM): 2.5-3 hours - smooth journey</li>
+          <li>Evening (6 PM - 10 PM): 3-3.5 hours - possible Sus Road and expressway traffic</li>
+          <li>Night (11 PM - 2 AM): 2.5 hours - very smooth</li>
+        </ul>
+
+        <p>
+          <strong>Recommended Departure Times from Aundh:</strong>
+        </p>
+        <ul>
+          <li>For 6 AM - 8 AM business flights: Depart 3 AM - 3:30 AM</li>
+          <li>For 9 AM - 11 AM flights: Depart 5:30 AM - 6 AM</li>
+          <li>For 12 PM - 3 PM flights: Depart 8:30 AM - 9 AM</li>
+          <li>For evening flights: Depart 4 hours before scheduled departure</li>
+        </ul>
+
+        <h3>Why Premium Electric Vehicles for Aundh</h3>
+        <p>
+          Aundh's upscale community appreciates premium electric vehicle advantages:
+        </p>
+
+        <ul>
+          <li><strong>Luxury Matching Standards:</strong> Premium Kia Carens EV and BYD eMax 7 match Aundh's upscale lifestyle - not budget vehicles but luxury electric SUVs.</li>
+          <li><strong>Silent Premium Cabins:</strong> Zero engine noise for conference calls, work focus, or peaceful family travel. Premium acoustic comfort throughout.</li>
+          <li><strong>Superior Comfort:</strong> No gear shifts, minimal vibrations, instant smooth acceleration - luxury ride quality for 2.5-3 hour journeys.</li>
+          <li><strong>Environmental Leadership:</strong> Aundh residents value sustainability. Electric vehicles save 15-20 kg CO₂ per trip - environmental responsibility matching community values.</li>
+          <li><strong>Cost Efficiency:</strong> ₹3,700 premium electric vs ₹5,500+ diesel premium cabs. Superior service at better value.</li>
+        </ul>
+
+        <h3>Premium Pricing & Corporate Packages</h3>
+        <p>
+          Transparent premium pricing for Aundh's discerning community:
+        </p>
+
+        <p>
+          <strong>Standard Premium: ₹3,700 (Kia Carens EV) | ₹4,200 (BYD eMax 7 Luxury)</strong>
+        </p>
+
+        <p>
+          <strong>Included in ₹3,700:</strong>
+        </p>
+        <ul>
+          <li>Premium electric vehicle for 150 km journey</li>
+          <li>Mumbai-Pune Expressway toll: ₹430</li>
+          <li>Mumbai local tolls: ₹70</li>
+          <li>Professional driver allowance: ₹500</li>
+          <li>Airport parking: ₹70</li>
+          <li>30 minutes complimentary waiting</li>
+          <li>Flight tracking (airport pickups)</li>
+          <li>GST invoice for corporate expense claims</li>
+        </ul>
+
+        <p>
+          <strong>Cerebrum IT Park Corporate Packages:</strong>
+        </p>
+        <ul>
+          <li>4-9 trips/month: 10% discount (₹3,330 per trip)</li>
+          <li>10+ trips/month: 15% discount (₹3,145 per trip)</li>
+          <li>Dedicated vehicle for regular executive travelers</li>
+          <li>Priority booking with guaranteed availability</li>
+          <li>Single monthly consolidated invoice</li>
+          <li>Flexible payment terms (15-30 day credit)</li>
+          <li>Dedicated corporate account manager</li>
+          <li>Emergency same-day booking privilege</li>
+        </ul>
+
+        <h3>How to Book Premium Service from Aundh</h3>
+        <p>
+          Professional booking process for premium clients:
+        </p>
+
+        <ol>
+          <li><strong>WhatsApp Booking (Recommended):</strong> Message <strong>+91 74982 64215</strong> with:
+            <ul>
+              <li>Pickup: Cerebrum IT Park tower / Society name & gate</li>
+              <li>Drop: Mumbai Airport Terminal or specific address</li>
+              <li>Date & time</li>
+              <li>Passengers & luggage</li>
+              <li>Vehicle preference (Kia Carens EV / BYD eMax 7)</li>
+              <li>GST details (if corporate booking)</li>
+            </ul>
+            Instant professional confirmation.
+          </li>
+          <li><strong>Call Booking:</strong> <strong>+91 74982 64215</strong> - 24/7 premium support</li>
+          <li><strong>Advance Booking:</strong> Book 24+ hours ahead for early business flights. Up to 30 days advance booking.</li>
+          <li><strong>Corporate Account:</strong> Contact for monthly corporate account setup with Cerebrum IT Park companies.</li>
+        </ol>
+
+        <p>
+          <strong>Premium Post-Booking Service:</strong>
+        </p>
+        <ul>
+          <li>Instant professional confirmation</li>
+          <li>Driver details 30 minutes before pickup (name, photo, credentials)</li>
+          <li>Premium vehicle details (model, registration, color)</li>
+          <li>Optional GPS tracking for family peace of mind</li>
+          <li>GST invoice emailed post-trip (corporate bookings)</li>
+        </ul>
+
+        <h3>Premium Airport Pickup: Mumbai to Aundh</h3>
+        <p>
+          Return premium service from Mumbai Airport to Aundh at same ₹3,700 rate:
+        </p>
+
+        <ul>
+          <li><strong>Flight Tracking:</strong> Automatic delay tracking - no charges for delays up to 60 minutes</li>
+          <li><strong>Professional Meet & Greet:</strong> Driver with name board at arrivals - premium corporate pickup</li>
+          <li><strong>Late Night Safe Returns:</strong> After late business meetings or night flights - background-verified drivers</li>
+          <li><strong>Luggage Handling:</strong> Professional assistance with corporate luggage and equipment</li>
+          <li><strong>Direct Society Drop:</strong> Drop to specific Cerebrum IT Park tower or residential society gate</li>
+        </ul>
+
+        <h3>Frequently Asked Questions - Aundh Premium Service</h3>
+
+        <h4>Do you serve all Cerebrum IT Park towers?</h4>
+        <p>
+          Yes, we serve all Cerebrum IT Park towers (A, B, C, D) with drivers familiar with campus layout, security procedures, and designated pickup points. Professional corporate-grade pickup matching workplace standards. Just provide your tower/company details during booking.
+        </p>
+
+        <h4>Can I get monthly corporate invoicing for Cerebrum IT Park?</h4>
+        <p>
+          Absolutely! Corporate packages include: consolidated monthly invoice, volume discounts (10-15% for 4+ trips), priority booking, dedicated account manager, flexible payment terms (15-30 day credit). Perfect for Cerebrum IT Park companies and HR departments. Contact +91 74982 64215 for corporate account setup.
+        </p>
+
+        <h4>Is your service truly premium or just marketing?</h4>
+        <p>
+          Genuinely premium: (1) Luxury Kia Carens EV & BYD eMax 7 (not basic cars), (2) 99.8% punctuality record (documented, not claimed), (3) Professional drivers (background-verified, trained), (4) Silent electric cabins for work/calls, (5) Corporate-grade billing/invoicing, (6) Dedicated account management for regular clients. Premium service matching Aundh's standards, not budget service at premium price.
+        </p>
+
+        <h4>Can I work during the journey to Mumbai Airport?</h4>
+        <p>
+          Yes! Silent electric cabins (zero engine noise) perfect for conference calls - clients won't hear background noise. Stable smooth ride allows laptop work throughout 2.5-hour journey. Many Cerebrum executives prepare presentations, catch up on emails, or take early morning calls during travel. Professional drivers understand business travelers need quiet.
+        </p>
+
+        <h4>Do you pick up from premium Aundh societies at 3 AM?</h4>
+        <p>
+          Yes, we specialize in early morning premium pickups (3 AM onwards) from all Aundh societies. Silent electric vehicles won't disturb neighbors during 3 AM pickup - important in premium residential areas. 99.8% punctuality - drivers arrive 5-10 minutes early for business flights. Book 24+ hours ahead for early morning guaranteed availability.
+        </p>
+
+        <h4>How do electric vehicles benefit our company's ESG goals?</h4>
+        <p>
+          Each electric cab trip saves 15-20 kg CO₂ vs diesel. For Cerebrum companies with 50+ employee airport trips annually, that's 750-1000 kg CO₂ saved. We provide detailed emission savings reports for your sustainability/ESG reporting. Perfect for IT companies with environmental commitments and corporate social responsibility goals.
+        </p>
+
+        <h4>What makes your service worth ₹3,700 vs cheaper options?</h4>
+        <p>
+          Premium value: (1) Luxury electric SUVs vs basic sedans, (2) 99.8% reliability vs frequent cancellations, (3) Professional corporate service vs casual drivers, (4) Silent work-friendly cabins vs noisy engines, (5) Fixed pricing vs surge that can reach ₹5,500+, (6) Corporate billing/invoicing vs payment hassles, (7) Dedicated support vs app-only service. Premium service matching Aundh's standards - reliability and professionalism you can't put a price on for business travel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Related Routes & Premium Services</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Nearby Premium Localities</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/electric-cab-service-pimple-nilakh" class="text-primary hover:underline">Electric Cab Service Pimple Nilakh</a></li>
+                <li><a href="/electric-cab-service-balewadi" class="text-primary hover:underline">Electric Cab Service Balewadi</a></li>
+                <li><a href="/electric-cab-service-baner" class="text-primary hover:underline">Electric Cab Service Baner</a></li>
+                <li><a href="/electric-cab-service-wakad" class="text-primary hover:underline">Electric Cab Service Wakad</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Airport Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/mumbai-airport-to-pune-electric-cab" class="text-primary hover:underline">Mumbai Airport to Pune</a></li>
+                <li><a href="/pune-airport-cab-service" class="text-primary hover:underline">Pune Airport Cab Service</a></li>
+                <li><a href="/navi-mumbai-airport-to-pune-cab" class="text-primary hover:underline">Navi Mumbai Airport to Pune</a></li>
+                <li><a href="/airport/mumbai-airport" class="text-primary hover:underline">Mumbai Airport Guide</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Premium Services</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li><a href="/corporate-electric-cab-pune" class="text-primary hover:underline">Corporate Cab Packages</a></li>
+                <li><a href="/fleet" class="text-primary hover:underline">Our Premium Electric Fleet</a></li>
+                <li><a href="/ev-cabs-pune" class="text-primary hover:underline">EV Cabs Pune</a></li>
+                <li><a href="/locations" class="text-primary hover:underline">All Locations</a></li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Book Premium Electric Cab from Aundh
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join Aundh's premium community and Cerebrum IT Park professionals who trust GreenEVCabs for reliable, luxury airport transfers.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20a%20premium%20electric%20cab%20from%20Aundh%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book Premium Service Now
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ Cerebrum IT Park specialist • ✓ Premium luxury EVs • ✓ 99.8% punctuality
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>
