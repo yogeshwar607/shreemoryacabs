@@ -1,0 +1,655 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Plane, MapPin, Clock, IndianRupee, Home, Car, Calendar, CheckCircle2, Phone, MessageCircle, Building2, Route, Zap, Shield } from 'lucide-react';
+import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
+import { generateWhatsAppLink } from '@/lib/whatsapp';
+
+const SITE_URL = 'https://greenevcabs.com';
+const CONTACT = { phone: '917498264215' };
+
+const title = 'Blue Ridge Ravet to Mumbai Airport Cab: ₹3,700 | Complete 2025 Guide';
+const description = 'Complete guide for Blue Ridge & Megapolis Ravet residents: Mumbai Airport cab booking, best routes, timing tips, pickup locations, and ₹3,700 all-inclusive pricing. Professional EV cab service 24/7.';
+const publishDate = '2025-01-15';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive guide for Blue Ridge and Megapolis Ravet residents traveling to Mumbai Airport. Includes route details, timing recommendations, pickup locations, and booking information.',
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: 'Blue Ridge Ravet to Mumbai Airport Cab Guide', url: '/blog/blue-ridge-ravet-mumbai-airport-cab-guide' },
+]);
+
+const faqSchema = generateFAQSchema([
+  {
+    question: 'How much does a cab cost from Blue Ridge Ravet to Mumbai Airport?',
+    answer: 'GreenEVCabs charges ₹3,700 all-inclusive for electric cab service from Blue Ridge Ravet to Mumbai Airport. This fixed price includes base fare, Mumbai-Pune Expressway tolls (₹430), Mumbai local tolls (₹70), driver allowance (₹500), airport parking (₹70), and 30 minutes free waiting time. No surge pricing, no hidden charges - total transparency.',
+  },
+  {
+    question: 'How long does it take from Blue Ridge Ravet to Mumbai Airport?',
+    answer: 'The journey from Blue Ridge Ravet to Mumbai Airport takes 3.5-4 hours under normal traffic conditions, covering 175 km. Early morning trips (4-6 AM) are fastest at 3-3.5 hours. Peak afternoon traffic (2-5 PM) may extend to 4-4.5 hours. Our drivers use Waze for real-time traffic updates and optimal routing.',
+  },
+  {
+    question: 'What is the best route from Ravet to Mumbai Airport?',
+    answer: 'The best route is: Blue Ridge Gate → Ravet Main Road → Mumbai-Pune Expressway → Mumbai Airport Road. Total distance: 175 km. Alternatively during heavy expressway traffic: Ravet → Old Mumbai-Pune Highway → Airport Road (slower but available). Our drivers choose the optimal route based on real-time traffic conditions.',
+  },
+  {
+    question: 'Can you pick up from inside Blue Ridge society?',
+    answer: 'Yes, we pick up from anywhere inside Blue Ridge society - Main Gate, Tower entrances, or any specific pickup point you mention. Same for Megapolis, Megapolis Splendour, and other Ravet societies. Just specify your exact location (tower/wing/gate) when booking, and our driver will reach your doorstep.',
+  },
+  {
+    question: 'What time should I leave Blue Ridge Ravet for morning flights?',
+    answer: 'For 7-9 AM flights: Leave by 3-3:30 AM (very light traffic, 3-3.5 hour journey). For 9-11 AM flights: Leave by 5-5:30 AM (moderate traffic, 3.5-4 hours). For 11 AM-1 PM flights: Leave by 6:30-7 AM (building traffic, 4 hours). Always add 30-45 minutes buffer for check-in and security at Mumbai Airport.',
+  },
+  {
+    question: 'Do you offer corporate packages for Ravet IT professionals?',
+    answer: 'Yes, we offer monthly corporate packages for Ravet IT professionals with offices in Hinjewadi, Wakad, and nearby areas. Benefits include: Priority booking, dedicated account manager, monthly billing with GST invoices, flexible cancellation, and discounted rates for frequent travelers. Contact +91-7498264215 for corporate package details.',
+  },
+  {
+    question: 'Are electric cabs reliable for long distance travel to Mumbai Airport?',
+    answer: 'Absolutely! Our Kia Carens EV has 450+ km range on full charge - more than double the 175 km Blue Ridge to Mumbai Airport distance. We charge vehicles before every trip and monitor battery levels throughout. EVs are quieter, smoother, and more comfortable than diesel cabs, with lower vibration and zero emissions.',
+  },
+  {
+    question: 'Can I book a cab from Mumbai Airport back to Blue Ridge Ravet?',
+    answer: 'Yes, we offer airport pickup service from Mumbai Airport to Blue Ridge Ravet at the same ₹3,700 rate. We provide flight tracking - just share your flight details, and our driver will monitor delays/early arrivals. 30 minutes free waiting time after actual landing. Meet & greet at arrivals with name board available on request.',
+  },
+]);
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={[
+    'blue ridge ravet to mumbai airport',
+    'megapolis ravet mumbai airport cab',
+    'ravet to mumbai airport taxi',
+    'blue ridge ravet electric cab',
+    'ravet airport drop cab',
+    'ravet to bom airport',
+    'electric cab ravet',
+    'ravet mumbai airport ev taxi',
+  ]}
+  schema={[articleSchema, breadcrumbSchema, faqSchema]}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-green-50 via-background to-emerald-50 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <Badge className="mb-4 bg-emerald-600 hover:bg-emerald-700">🏡 Hyperlocal Guide</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Blue Ridge Ravet to Mumbai Airport: Complete Cab Guide 2025
+        </h1>
+        <p class="text-xl text-muted-foreground mb-6 leading-relaxed">
+          Your definitive guide to booking cabs from Blue Ridge, Megapolis, and Ravet societies to Mumbai Airport.
+          Best routes, timing recommendations, pickup locations, and all-inclusive ₹3,700 pricing.
+        </p>
+        <div class="flex flex-wrap gap-4 text-sm text-muted-foreground mb-8">
+          <div class="flex items-center gap-2">
+            <MapPin className="h-4 w-4" />
+            <span>175 km • 3.5-4 hours</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <IndianRupee className="h-4 w-4" />
+            <span>₹3,700 Fixed Rate</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Home className="h-4 w-4" />
+            <span>Blue Ridge & Megapolis</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href={generateWhatsAppLink("I need a cab from Blue Ridge Ravet to Mumbai Airport")}>
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href={`tel:${CONTACT.phone}`}>
+            <Button size="lg" variant="outline">
+              <Phone className="mr-2 h-5 w-5" />
+              Call +91-74982-64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Pricing Section -->
+  <section class="py-12 bg-gradient-to-b from-background to-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold mb-4">Transparent All-Inclusive Pricing</h2>
+          <p class="text-lg text-muted-foreground">No hidden charges • No surge pricing • Same rate 24/7</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card className="border-2 border-primary">
+            <CardHeader>
+              <div class="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-2xl">Kia Carens EV (5-Seater)</CardTitle>
+                  <CardDescription>Spacious, Comfortable, Zero Emissions</CardDescription>
+                </div>
+                <Badge className="text-2xl px-4 py-2 bg-primary">₹3,700</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Base fare + all tolls included</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Driver allowance covered</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Airport parking paid</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>30 min free waiting time</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Pickup from any Blue Ridge/Megapolis tower</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-2xl">BYD eMax 7 (7-Seater)</CardTitle>
+                  <CardDescription>Family-Sized, Premium Electric SUV</CardDescription>
+                </div>
+                <Badge className="text-2xl px-4 py-2">₹4,200</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Everything in 5-seater package</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Extra luggage space</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Perfect for families</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Premium interiors</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                  <span>Advanced safety features</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route & Timing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10">Best Route from Blue Ridge Ravet to Mumbai Airport</h2>
+
+        <Card className="mb-8 border-2">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Route className="h-6 w-6 text-primary" />
+              Primary Route (Fastest - Recommended)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>
+                  <p class="font-semibold">Blue Ridge Main Gate / Megapolis Gate</p>
+                  <p class="text-sm text-muted-foreground">Pickup from your tower entrance or society gate</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>
+                  <p class="font-semibold">Ravet Main Road → Wakad</p>
+                  <p class="text-sm text-muted-foreground">5 km • 10 minutes • Connect to expressway via Wakad</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>
+                  <p class="font-semibold">Mumbai-Pune Expressway Entry at Kiwale</p>
+                  <p class="text-sm text-muted-foreground">Toll: ₹430 (included in your fare)</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>
+                  <p class="font-semibold">Express Highway to Kalyan/Panvel</p>
+                  <p class="text-sm text-muted-foreground">110 km • 1.5-2 hours • Smooth 6-lane highway</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                <div>
+                  <p class="font-semibold">Vashi-Panvel Highway → Airport Road</p>
+                  <p class="text-sm text-muted-foreground">50 km • 1-1.5 hours • Mumbai local tolls: ₹70</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                <div>
+                  <p class="font-semibold">Mumbai Airport - Terminal 1 or Terminal 2</p>
+                  <p class="text-sm text-muted-foreground">Your driver will drop you at your specific terminal</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 p-4 bg-muted rounded-lg">
+              <p class="text-sm"><strong>Total Distance:</strong> 175 km</p>
+              <p class="text-sm"><strong>Total Time:</strong> 3.5-4 hours (varies by traffic)</p>
+              <p class="text-sm"><strong>Tolls:</strong> ₹500 (₹430 expressway + ₹70 Mumbai local)</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Clock className="h-6 w-6 text-orange-600" />
+              Recommended Departure Times by Flight Slot
+            </CardTitle>
+            <CardDescription>Based on Blue Ridge/Megapolis Ravet location + traffic patterns</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">🌅 Early Morning Flights (5-7 AM)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 1-1:30 AM</p>
+                  <p class="text-sm">Minimal traffic, fastest journey (3-3.5 hours). Book previous evening for smooth 24/7 service.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">☀️ Morning Flights (7-10 AM)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 3-3:30 AM</p>
+                  <p class="text-sm">Very light traffic, 3-3.5 hour journey. Most popular slot for business travelers.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">🌤️ Late Morning Flights (10 AM-12 PM)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 5:30-6 AM</p>
+                  <p class="text-sm">Building traffic, allow 4 hours. Mumbai traffic starts picking up after 7 AM.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">🌞 Afternoon Flights (12-3 PM)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 7:30-8 AM</p>
+                  <p class="text-sm">Moderate to heavy traffic, allow 4-4.5 hours for safety buffer.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">🌅 Evening Flights (3-7 PM)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 10 AM-12 PM</p>
+                  <p class="text-sm">Peak Mumbai traffic afternoon, allow 4-4.5 hours journey time.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                  <p class="font-semibold mb-2">🌙 Night Flights (7 PM onwards)</p>
+                  <p class="text-sm text-muted-foreground mb-2"><strong>Leave Ravet:</strong> 3-4 hours before flight</p>
+                  <p class="text-sm">Evening traffic clears after 9 PM, journey improves to 3.5-4 hours.</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pickup Locations Section -->
+  <section class="py-16 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10">Exact Pickup Locations in Ravet Societies</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Building2 className="h-5 w-5 text-primary" />
+                Blue Ridge Society
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Main Gate (Ravet Main Road side)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Individual tower lobbies (A, B, C, D wings)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Clubhouse parking area</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Specific tower number + flat no.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Building2 className="h-5 w-5 text-primary" />
+                Megapolis & Megapolis Splendour
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Megapolis Main Entrance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Megapolis Splendour Gate</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Any specific building/wing entrance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Clubhouse or amenity block</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Building2 className="h-5 w-5 text-primary" />
+                Other Ravet Societies
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Codename Starwish, Cosmic, Future City</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Vascon Forest County</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Kumar Purab, Kumar Prospera</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                  <span>Any society on Ravet-Moshi Road</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 p-6 bg-primary/5 rounded-lg border-2 border-primary/20">
+          <p class="text-sm"><strong>💡 Pro Tip:</strong> When booking, mention your exact tower/wing number and any specific landmark (e.g., "Blue Ridge Tower C, near swimming pool"). Our driver will WhatsApp you when 5 minutes away and meet you at your exact location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Electric Cabs Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Why Electric Cabs for Blue Ridge Ravet to Mumbai Airport?</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <Zap className="h-12 w-12 text-emerald-600 mb-4" />
+              <CardTitle>Quieter & Smoother Ride</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                EVs have zero engine noise and vibration. Perfect for sleeping during early morning airport runs or taking work calls. Smooth acceleration means less motion sickness on long drives.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <IndianRupee className="h-12 w-12 text-emerald-600 mb-4" />
+              <CardTitle>Better Value Than Diesel</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Our ₹3,700 fixed rate is ₹800-1,300 cheaper than app-based diesel cabs (₹4,500-5,000) with surge pricing. Same comfort, lower cost, zero emissions - a win-win for you and the environment.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <Shield className="h-12 w-12 text-emerald-600 mb-4" />
+              <CardTitle>450+ km Range</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">
+                Kia Carens EV offers 450+ km range - more than double the 175 km Ravet-Mumbai distance. We charge before trips. Zero range anxiety, fully reliable for long distance airport runs.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Packages Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-background">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <Badge className="mb-4 bg-blue-600 hover:bg-blue-700">💼 For IT Professionals</Badge>
+          <h2 class="text-3xl font-bold mb-4">Corporate Packages for Ravet-Hinjewadi IT Professionals</h2>
+          <p class="text-lg text-muted-foreground">Monthly packages • GST invoices • Priority booking</p>
+        </div>
+
+        <Card className="border-2">
+          <CardContent className="pt-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-semibold text-lg mb-4">Perfect For:</h3>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                    <span>Frequent business travelers from Hinjewadi/Wakad IT parks</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                    <span>Companies with offices in Ravet-Hinjewadi corridor</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                    <span>Blue Ridge/Megapolis residents with regular Mumbai travel</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5" />
+                    <span>IT professionals requiring 24/7 reliable airport service</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-4">Package Benefits:</h3>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                    <span><strong>Discounted rates:</strong> Save ₹300-500 per trip</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                    <span><strong>Priority booking:</strong> Guaranteed availability</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                    <span><strong>Monthly billing:</strong> GST invoices for expense claims</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                    <span><strong>Dedicated manager:</strong> Single point of contact</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                    <span><strong>Flexible cancellation:</strong> Business-friendly terms</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 text-center">
+              <a href={`tel:${CONTACT.phone}`}>
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call for Corporate Packages
+                </Button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          {faqSchema.mainEntity.map((faq: any) => (
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">{faq.name}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground">{faq.acceptedAnswer.text}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Links Section -->
+  <section class="py-16 bg-muted/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Related Guides & Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Electric Cab Service Ravet</CardTitle>
+              <CardDescription>Complete service page for Ravet area</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <a href="/electric-cab-service-ravet" class="text-primary hover:underline">View Ravet Services →</a>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Ravet to Mumbai Airport Route</CardTitle>
+              <CardDescription>Detailed route information and pricing</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <a href="/routes/ravet-to-mumbai-airport" class="text-primary hover:underline">View Route Details →</a>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">Mumbai Airport Guide</CardTitle>
+              <CardDescription>Complete Mumbai Airport travel guide</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <a href="/blog/mumbai-airport-complete-travel-guide" class="text-primary hover:underline">Read Full Guide →</a>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/5">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Book Your Blue Ridge Ravet to Mumbai Airport Cab?</h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          ₹3,700 all-inclusive • 24/7 service • Professional drivers • Doorstep pickup from Blue Ridge/Megapolis
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href={generateWhatsAppLink("I need a cab from Blue Ridge Ravet to Mumbai Airport. Please share details.")}>
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href={`tel:${CONTACT.phone}`}>
+            <Button size="lg" variant="outline">
+              <Phone className="mr-2 h-5 w-5" />
+              Call +91-74982-64215
+            </Button>
+          </a>
+        </div>
+        <p class="text-sm text-muted-foreground mt-6">
+          Available 24/7 • Instant confirmation • Advance booking recommended
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>
