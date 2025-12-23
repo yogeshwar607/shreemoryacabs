@@ -1,0 +1,837 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Mountain, Trees, MapPin, Route, Calendar, IndianRupee, Users, CheckCircle2, Zap, Heart, Camera, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Pune Weekend Getaway to Lonavala & Mahabaleshwar: Electric Cab Guide 2025';
+const description = 'Complete guide for eco-friendly weekend trips from Pune to Lonavala and Mahabaleshwar in electric cabs. Round-trip packages, EV range details, family-friendly features, and cost comparison with diesel cabs.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE_URL}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Pune Weekend Getaway Lonavala Mahabaleshwar EV Cab',
+      item: `${SITE_URL}/blog/pune-weekend-getaway-lonavala-mahabaleshwar-ev-cab-2025`,
+    },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive guide for weekend getaway trips from Pune to Lonavala and Mahabaleshwar using electric cabs.',
+};
+
+const faqs = [
+  {
+    question: 'Can electric cabs handle the hills of Lonavala and Mahabaleshwar?',
+    answer: 'Yes, absolutely! Our BYD eMax 7 and Kia Carens EVs are designed for hill driving with powerful electric motors delivering instant torque. EVs actually perform better on hills than diesel cars due to regenerative braking on descents. We regularly serve Lonavala (500+ trips) and Mahabaleshwar (200+ trips) with zero range anxiety.',
+  },
+  {
+    question: 'What is the range of your electric cabs? Will we be stranded on the way?',
+    answer: 'BYD eMax 7 has 530 km certified range, Kia Carens has 450 km range. Lonavala is only 130 km round-trip, Mahabaleshwar is 250 km round-trip - both well within single-charge capability. We start every trip with 100% charge. Additionally, both destinations have EV charging infrastructure if needed for multi-day trips.',
+  },
+  {
+    question: 'How much does a weekend cab cost from Pune to Lonavala?',
+    answer: 'Lonavala round-trip (same-day return): ₹2,200 for Kia Carens EV, ₹2,500 for BYD eMax 7. Includes 130 km round-trip, driver allowance, 6-hour rental. Extension at ₹300/hour. Multi-day packages available at ₹4,500/day (includes 250 km/day).',
+  },
+  {
+    question: 'How much does a Mahabaleshwar weekend trip cost?',
+    answer: 'Mahabaleshwar round-trip (overnight stay): ₹6,500 for 2-day package (Kia Carens) or ₹7,500 (BYD eMax 7). Includes 500 km total, driver accommodation, full weekend. Day-trip (same-day return): ₹4,200-4,800 with 10-hour rental.',
+  },
+  {
+    question: 'Is an electric cab more expensive than a diesel cab for weekend trips?',
+    answer: 'No! For Lonavala, EVs cost ₹2,200-2,500 vs diesel cabs at ₹2,800-3,200. For Mahabaleshwar, EVs cost ₹6,500-7,500 vs diesel at ₹8,500-9,500. You save ₹500-2,000 plus enjoy quieter, smoother ride with zero emissions. EVs are cheaper due to lower operating costs (electricity vs diesel).',
+  },
+  {
+    question: 'Can we do sightseeing at Lonavala? Is local travel included?',
+    answer: 'Yes! Our packages include local sightseeing. For Lonavala 6-hour package, you can cover: Tiger Point, Bhushi Dam, Karla Caves, Rajmachi Point, Lion\'s Point. Driver will take you to all spots. For extended sightseeing, hourly extensions available at ₹300/hour.',
+  },
+  {
+    question: 'Do you offer overnight packages for Mahabaleshwar? Where does the driver stay?',
+    answer: 'Yes, we offer 2-day/1-night packages for Mahabaleshwar. Driver accommodation is our responsibility - we arrange budget hotel near your resort/hotel (not charged to you). You can use the cab for local sightseeing on both days. Return to Pune on Day 2 evening.',
+  },
+  {
+    question: 'How do I book a weekend trip to Lonavala or Mahabaleshwar?',
+    answer: 'Book via WhatsApp at +91 74982 64215 or call. Provide: Travel date, destination (Lonavala/Mahabaleshwar), number of passengers, pickup location in Pune, whether same-day or overnight. We\'ll confirm availability and pricing. Advance booking recommended for weekends/holidays.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Pune Weekend Getaway Lonavala Mahabaleshwar EV Cab</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Weekend Getaway</Badge>
+        <Badge variant="secondary">Electric Cabs</Badge>
+        <Badge variant="outline">Hill Stations</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <time datetime={publishDate}>Published: January 15, 2025</time>
+        <span>•</span>
+        <span>11 min read</span>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        After a hectic week of work in Pune's IT hubs, there's nothing quite like escaping to the cool, misty hills of <strong>Lonavala</strong> or the scenic strawberry farms of <strong>Mahabaleshwar</strong>. These weekend getaways have been Pune residents' favorites for decades - but now, you can make these trips even more enjoyable, eco-friendly, and affordable with <strong>electric cabs</strong>.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Gone are the days when electric vehicles were considered risky for long-distance or hilly terrain. Modern EVs like the <strong>BYD eMax 7 (530 km range)</strong> and <strong>Kia Carens EV (450 km range)</strong> are perfectly suited for weekend trips, offering smooth rides, zero emissions, whisper-quiet cabins, and - surprisingly - <strong>lower costs than diesel cabs</strong>.
+      </p>
+      <p class="text-lg leading-relaxed">
+        This comprehensive guide covers everything you need to know about planning a weekend getaway from Pune to Lonavala or Mahabaleshwar in an electric cab: round-trip packages, EV range sufficiency for hill stations, cost comparison, family-friendly features, charging infrastructure at destinations, and booking tips.
+      </p>
+    </section>
+
+    <!-- Destination Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Lonavala vs Mahabaleshwar: Which One for Your Weekend?</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-blue-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-blue-700">
+              <Mountain className="h-6 w-6" />
+              Lonavala
+            </CardTitle>
+            <CardDescription>Quick weekend escape - ideal for day trips</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="p-3 bg-blue-50 rounded mb-4">
+              <p class="font-semibold mb-1">Distance from Pune: 65 km (one way)</p>
+              <p class="text-sm text-muted-foreground">Travel time: 1.5-2 hours | Best for: Same-day trips or overnight</p>
+            </div>
+            <h4 class="font-semibold mb-2">Key Attractions:</h4>
+            <ul class="space-y-1 text-sm mb-4">
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Tiger Point</strong> - Sunset views & valley panorama</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Bhushi Dam</strong> - Monsoon cascades (June-Sept)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Karla & Bhaja Caves</strong> - Ancient Buddhist rock-cut caves</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Lion's Point</strong> - Iconic viewpoint</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Rajmachi Fort</strong> - Trekking base</span>
+              </li>
+            </ul>
+            <div class="border-t pt-3">
+              <h4 class="font-semibold mb-2 text-blue-700">Best For:</h4>
+              <ul class="space-y-1 text-xs text-muted-foreground">
+                <li>✓ Quick 1-day trip (6-8 hours total)</li>
+                <li>✓ Monsoon visits (waterfalls & greenery)</li>
+                <li>✓ Budget-friendly weekend</li>
+                <li>✓ Couples & small groups</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-green-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-green-700">
+              <Trees className="h-6 w-6" />
+              Mahabaleshwar
+            </CardTitle>
+            <CardDescription>Scenic hill station - perfect for 2-3 day trips</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="p-3 bg-green-50 rounded mb-4">
+              <p class="font-semibold mb-1">Distance from Pune: 120 km (one way)</p>
+              <p class="text-sm text-muted-foreground">Travel time: 3-3.5 hours | Best for: Overnight/2-3 day trips</p>
+            </div>
+            <h4 class="font-semibold mb-2">Key Attractions:</h4>
+            <ul class="space-y-1 text-sm mb-4">
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Arthur's Seat</strong> - Queen of all points</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Venna Lake</strong> - Boating & lakeside walks</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Mapro Garden</strong> - Strawberry products & chocolate factory</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Pratapgad Fort</strong> - Historical significance</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Wilson Point</strong> - Sunrise viewpoint (highest in Mahabaleshwar)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Camera className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Lingmala Waterfall</strong> - Monsoon special</span>
+              </li>
+            </ul>
+            <div class="border-t pt-3">
+              <h4 class="font-semibold mb-2 text-green-700">Best For:</h4>
+              <ul class="space-y-1 text-xs text-muted-foreground">
+                <li>✓ Full weekend getaway (2-3 days)</li>
+                <li>✓ Family vacations with kids</li>
+                <li>✓ Strawberry season (Dec-May)</li>
+                <li>✓ Relaxing, unhurried exploration</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- EV Range & Hill Performance -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Zap className="h-8 w-8 text-emerald-600" />
+        Can Electric Cabs Handle Hills? Range & Performance Explained
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          The #1 question about EV weekend trips: <strong>"Will the battery last? What if we get stranded on the hills?"</strong> Here's the truth: Modern electric cabs are <strong>more than capable</strong> for Lonavala and Mahabaleshwar trips.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card className="border-l-4 border-l-emerald-500">
+          <CardHeader>
+            <CardTitle>BYD eMax 7 - Premium EV</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="font-semibold mb-1">Certified Range: 530 km (single charge)</p>
+              <p class="text-sm text-muted-foreground">Real-world range: 450-480 km (with AC, hills)</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-2">Lonavala Trip (130 km round-trip):</h4>
+              <div class="flex items-center gap-2 mb-1">
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-600 h-3 rounded-full" style="width: 25%"></div>
+                </div>
+                <span class="text-xs font-semibold">25%</span>
+              </div>
+              <p class="text-xs text-muted-foreground">Uses only 25% battery - 75% remaining after return</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-2">Mahabaleshwar Trip (250 km round-trip):</h4>
+              <div class="flex items-center gap-2 mb-1">
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-600 h-3 rounded-full" style="width: 50%"></div>
+                </div>
+                <span class="text-xs font-semibold">50%</span>
+              </div>
+              <p class="text-xs text-muted-foreground">Uses 50% battery - comfortable margin with 50% left</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="border-l-4 border-l-blue-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV - Value EV</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="font-semibold mb-1">Certified Range: 450 km (single charge)</p>
+              <p class="text-sm text-muted-foreground">Real-world range: 380-400 km (with AC, hills)</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-2">Lonavala Trip (130 km round-trip):</h4>
+              <div class="flex items-center gap-2 mb-1">
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-blue-600 h-3 rounded-full" style="width: 30%"></div>
+                </div>
+                <span class="text-xs font-semibold">30%</span>
+              </div>
+              <p class="text-xs text-muted-foreground">Uses 30% battery - 70% remaining after return</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-2">Mahabaleshwar Trip (250 km round-trip):</h4>
+              <div class="flex items-center gap-2 mb-1">
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-blue-600 h-3 rounded-full" style="width: 60%"></div>
+                </div>
+                <span class="text-xs font-semibold">60%</span>
+              </div>
+              <p class="text-xs text-muted-foreground">Uses 60% battery - still 40% margin remaining</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="bg-gradient-to-r from-emerald-50 to-green-50">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Mountain className="h-6 w-6 text-emerald-600" />
+            Why EVs Actually Excel on Hills
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h4 class="font-semibold mb-2">Instant Torque</h4>
+              <p class="text-muted-foreground">Electric motors deliver 100% torque from 0 RPM - no gear shifting, no lag while climbing hills. BYD eMax 7 climbs effortlessly.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Regenerative Braking</h4>
+              <p class="text-muted-foreground">When descending from Lonavala/Mahabaleshwar, EVs recover energy through regen braking - you actually gain 5-8% battery back on downhill!</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Silent & Smooth</h4>
+              <p class="text-muted-foreground">No diesel engine noise or vibrations. Enjoy conversations, music, and hill views in whisper-quiet comfort.</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Package Pricing -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee className="h-8 w-8 text-emerald-600" />
+        Weekend Package Pricing: Lonavala & Mahabaleshwar
+      </h2>
+
+      <div class="space-y-8">
+        <!-- Lonavala Packages -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <Mountain className="h-6 w-6 text-blue-600" />
+            Lonavala Packages
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card className="border-2 border-blue-500">
+              <CardHeader>
+                <CardTitle>Same-Day Lonavala Trip</CardTitle>
+                <CardDescription>6-hour rental | 130 km round-trip</CardDescription>
+              </CardHeader>
+              <CardContent class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="p-3 bg-blue-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
+                    <p class="text-2xl font-bold text-blue-600">₹2,200</p>
+                  </div>
+                  <div class="p-3 bg-emerald-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
+                    <p class="text-2xl font-bold text-emerald-600">₹2,500</p>
+                  </div>
+                </div>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Pickup from anywhere in Pune (Hinjewadi, Wakad, Baner, Koregaon Park, etc.)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>6 hours rental (9 AM - 3 PM typical)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Local sightseeing: Tiger Point, Bhushi Dam, Lion's Point, Karla Caves</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Driver allowance included (no extra charges)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Hourly extension: ₹300/hour beyond 6 hours</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Overnight Lonavala Package</CardTitle>
+                <CardDescription>2 days/1 night | 250 km included</CardDescription>
+              </CardHeader>
+              <CardContent class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="p-3 bg-blue-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
+                    <p class="text-2xl font-bold text-blue-600">₹4,500</p>
+                  </div>
+                  <div class="p-3 bg-emerald-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
+                    <p class="text-2xl font-bold text-emerald-600">₹5,200</p>
+                  </div>
+                </div>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Full weekend: Saturday morning to Sunday evening</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>250 km included (enough for extended sightseeing)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Driver accommodation arranged (at our cost)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Cab available for local use both days</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>Extra km: ₹15/km beyond 250 km</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <!-- Mahabaleshwar Packages -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <Trees className="h-6 w-6 text-green-600" />
+            Mahabaleshwar Packages
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card className="border-2 border-green-500">
+              <CardHeader>
+                <CardTitle>Same-Day Mahabaleshwar Trip</CardTitle>
+                <CardDescription>10-hour rental | 250 km round-trip</CardDescription>
+              </CardHeader>
+              <CardContent class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="p-3 bg-green-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
+                    <p class="text-2xl font-bold text-green-600">₹4,200</p>
+                  </div>
+                  <div class="p-3 bg-emerald-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
+                    <p class="text-2xl font-bold text-emerald-600">₹4,800</p>
+                  </div>
+                </div>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Early start: 7 AM pickup from Pune</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>10 hours rental (return by 5-6 PM)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Cover 3-4 major points: Arthur's Seat, Venna Lake, Mapro Garden, one viewpoint</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Driver allowance included</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Hourly extension: ₹350/hour</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Weekend Mahabaleshwar Package</CardTitle>
+                <CardDescription>2 days/1 night | 500 km included</CardDescription>
+              </CardHeader>
+              <CardContent class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="p-3 bg-green-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
+                    <p class="text-2xl font-bold text-green-600">₹6,500</p>
+                  </div>
+                  <div class="p-3 bg-emerald-50 rounded text-center">
+                    <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
+                    <p class="text-2xl font-bold text-emerald-600">₹7,500</p>
+                  </div>
+                </div>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Saturday morning to Sunday evening (2 full days)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>500 km included - cover all major attractions leisurely</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Driver accommodation + meals (our cost, not charged)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Flexible itinerary - visit Panchgani, Pratapgad Fort, waterfalls</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Ideal for families with kids - unhurried exploration</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cost Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Cost Comparison: Electric Cabs vs Diesel Cabs</h2>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-emerald-50">
+              <th class="border border-gray-300 p-3 text-left font-semibold">Trip Type</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-blue-50">Electric Cab (EV)</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-orange-50">Diesel Cab</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-green-50">You Save</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Lonavala Same-Day</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹2,200 - ₹2,500</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹2,800 - ₹3,200</td>
+              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹600 - ₹700</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Lonavala Overnight</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹4,500 - ₹5,200</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹5,500 - ₹6,500</td>
+              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹1,000 - ₹1,300</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Mahabaleshwar Same-Day</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹4,200 - ₹4,800</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹5,200 - ₹6,000</td>
+              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹1,000 - ₹1,200</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Mahabaleshwar Weekend</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹6,500 - ₹7,500</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹8,500 - ₹9,500</td>
+              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹2,000 - ₹2,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <Card className="bg-gradient-to-r from-green-50 to-emerald-50">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Heart className="h-6 w-6 text-emerald-600" />
+            Why EVs Cost Less
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h4 class="font-semibold mb-2">Lower Operating Costs</h4>
+              <p class="text-muted-foreground">Electricity costs ₹1.50-2/km vs diesel at ₹5-6/km. Savings passed to customers.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">No Maintenance Overhead</h4>
+              <p class="text-muted-foreground">EVs have fewer moving parts, lower maintenance. No oil changes, transmission repairs.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Better Customer Value</h4>
+              <p class="text-muted-foreground">Plus you get: Zero emissions, quieter ride, smoother acceleration - at lower price!</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Family Features -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Users className="h-8 w-8 text-purple-600" />
+        Family-Friendly Features: Perfect for Weekend Trips
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Heart className="h-5 w-5 text-pink-600" />
+              BYD eMax 7: Ideal for Families
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>6 Captain Seats:</strong> Middle row has individual captain seats with armrests - kids love them!
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Spacious Boot:</strong> Fits 3 large suitcases + picnic basket + kids' toys/stroller
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Climate Control:</strong> 3-zone AC - kids in back can have different temp than front
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Panoramic Sunroof:</strong> Kids can enjoy hill views from inside (BYD model specific)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Silent Cabin:</strong> No diesel noise - kids can sleep peacefully on return journey
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Users className="h-5 w-5 text-blue-600" />
+              Perfect for Group Trips
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>6-Seater Capacity:</strong> Perfect for 2 families (3 adults + 3 kids) or 6 friends
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Split Costs:</strong> ₹400-1,250 per person for full weekend (when sharing among 6)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Flexible Stops:</strong> Shared cab means flexibility - stop for tea, photos, snacks
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>More Fun:</strong> Weekend trips are always better with friends/family in one vehicle
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">How to Book Your Weekend Getaway</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">1</span>
+            </div>
+            <CardTitle className="text-lg">Choose Destination & Package</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2">
+            <p>Decide: Lonavala or Mahabaleshwar?</p>
+            <p>Decide: Same-day or overnight/weekend?</p>
+            <p>Decide: Kia Carens (value) or BYD eMax 7 (luxury)?</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">2</span>
+            </div>
+            <CardTitle className="text-lg">Contact Us</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2">
+            <p><strong>WhatsApp:</strong> +91 74982 64215</p>
+            <p><strong>Phone:</strong> +91 74982 64215</p>
+            <p>Provide: Travel date, destination, number of passengers, pickup location in Pune</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">3</span>
+            </div>
+            <CardTitle className="text-lg">Confirmation & Enjoy</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2">
+            <p>Receive booking confirmation</p>
+            <p>Driver details shared 1 day before trip</p>
+            <p>Relax and enjoy your eco-friendly weekend getaway!</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I want to book a weekend trip to [Lonavala/Mahabaleshwar]`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size="lg" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book Weekend Trip
+          </Button>
+        </a>
+        <a href={`tel:+${WHATSAPP_NUMBER}`}>
+          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle className="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="bg-gradient-to-r from-green-600 to-emerald-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Plan Your Eco-Friendly Weekend Getaway Today</h3>
+          <p class="mb-6 text-green-50">
+            Escape the city, enjoy the hills, breathe fresh air - all while reducing your carbon footprint. Our electric cabs make weekend trips to Lonavala and Mahabaleshwar more comfortable, affordable, and environmentally responsible.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I want to book a weekend getaway trip`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Book Weekend Package
+              </Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-green-600 hover:bg-green-50">
+                <Phone className="mr-2 h-5 w-5" />
+                Call for Custom Packages
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+  </article>
+</MainLayout>

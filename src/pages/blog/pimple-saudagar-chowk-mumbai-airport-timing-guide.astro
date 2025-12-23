@@ -1,0 +1,856 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Clock, MapPin, Route, Calendar, IndianRupee, Users, CheckCircle2, Zap, TrendingUp, AlertCircle, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Pimple Saudagar Chowk to Mumbai Airport: Complete Timing & Route Guide 2025';
+const description = 'Detailed timing guide for Pimple Saudagar residents traveling to Mumbai Airport. Traffic analysis, best departure times, route options, and exact pickup locations from PS Chowk area.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE_URL}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Pimple Saudagar Chowk to Mumbai Airport Timing Guide',
+      item: `${SITE_URL}/blog/pimple-saudagar-chowk-mumbai-airport-timing-guide`,
+    },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive timing and route guide for residents of Pimple Saudagar Chowk traveling to Mumbai Airport.',
+};
+
+const faqs = [
+  {
+    question: 'What time should I leave Pimple Saudagar Chowk for a 9 AM flight to Mumbai Airport?',
+    answer: 'For a 9 AM flight from Mumbai Airport, leave Pimple Saudagar Chowk by 4:30 AM. This gives you 4.5 hours: 3.5 hours for travel (normal early morning traffic), 30 minutes buffer for any delays, and you\'ll reach by 7:30 AM for comfortable check-in 1.5 hours before departure.',
+  },
+  {
+    question: 'How much does an electric cab cost from Pimple Saudagar Chowk to Mumbai Airport?',
+    answer: 'GreenEVCabs charges ₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (6-seater luxury) from Pimple Saudagar to Mumbai Airport. This is all-inclusive with zero hidden charges - no toll extra, no driver allowance, no parking fees.',
+  },
+  {
+    question: 'Which route is faster from Pimple Saudagar to Mumbai Airport - via Wakad or Hinjewadi?',
+    answer: 'The Wakad-Talegaon-Mumbai Expressway route is faster (165 km, 3-3.5 hours). The Hinjewadi-Lonavala route is longer (175 km, 3.5-4 hours) but may be better during Wakad peak hours (8-11 AM, 5-9 PM). For early morning/late night travel, always choose Wakad route.',
+  },
+  {
+    question: 'Is traffic heavy at Pimple Saudagar Chowk during morning hours?',
+    answer: 'Yes, Pimple Saudagar Chowk experiences heavy traffic from 8 AM to 11 AM on weekdays due to IT employees commuting. The chowk, D-Mart junction, and Pimple Gurav Road get congested. For airport trips, leave before 7 AM or book early morning pickups (4-6 AM) to avoid this rush completely.',
+  },
+  {
+    question: 'Can I get picked up from residential societies near Pimple Saudagar Chowk?',
+    answer: 'Yes, we pick up from all residential areas near PS Chowk including Dreams Platina, Nyati Elan, Vastushodh Urbangram, Ganga Legend, and Century Plaza. Provide your exact society name, tower/wing, and gate when booking for smooth pickup.',
+  },
+  {
+    question: 'What is the best time to travel from Pimple Saudagar to Mumbai Airport on weekends?',
+    answer: 'Weekends have 30-40% less traffic. You can leave 30 minutes later than weekday timings. For a 9 AM weekend flight, leaving at 5:00 AM (instead of 4:30 AM) is sufficient. However, holiday weekends (long weekends, Diwali, New Year) may have heavier traffic - add 30 minutes buffer.',
+  },
+  {
+    question: 'Do you provide early morning cab service from Pimple Saudagar at 3 AM or 4 AM?',
+    answer: 'Yes, GreenEVCabs operates 24/7 with reliable early morning service from Pimple Saudagar. Book at least 4-6 hours in advance for 3-5 AM pickups. Our drivers are punctual and will arrive 5-10 minutes before scheduled time. We recommend advance booking for peace of mind.',
+  },
+  {
+    question: 'How do I book a cab from Pimple Saudagar Chowk to Mumbai Airport?',
+    answer: 'Book instantly via WhatsApp at +91 74982 64215 or call the same number. Provide: pickup date & time, exact pickup location (society/landmark), number of passengers, and flight time. You\'ll receive instant confirmation with driver details shared 30 minutes before pickup.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Pimple Saudagar Chowk to Mumbai Airport Timing Guide</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Travel Guide</Badge>
+        <Badge variant="secondary">Pimple Saudagar</Badge>
+        <Badge variant="outline">Timing Tips</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <time datetime={publishDate}>Published: January 15, 2025</time>
+        <span>•</span>
+        <span>8 min read</span>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        If you're a resident of <strong>Pimple Saudagar Chowk</strong> area in Pune and need to catch a flight from Mumbai Airport, timing is everything. The Pimple Saudagar Chowk area is one of Pune's busiest junctions, especially during office hours, and understanding traffic patterns can make the difference between a stress-free journey and a last-minute airport dash.
+      </p>
+      <p class="text-lg leading-relaxed">
+        This comprehensive guide is specifically designed for residents of Pimple Saudagar, Pimple Gurav, and surrounding areas (Dreams Platina, Nyati Elan, Vastushodh Urbangram, Ganga Legend, Century Plaza, and nearby societies). We'll cover exact timing recommendations for different flight slots, route comparisons, traffic pattern analysis, and booking tips for <a href="/electric-cab-service-pimple-saudagar" class="text-emerald-600 hover:underline">electric cab service from Pimple Saudagar</a>.
+      </p>
+    </section>
+
+    <!-- Quick Timing Reference -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Clock className="h-8 w-8 text-emerald-600" />
+        Quick Timing Reference: PS Chowk to Mumbai Airport
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Zap className="h-6 w-6 text-emerald-600" />
+              Early Morning Flights (6-9 AM)
+            </CardTitle>
+            <CardDescription>Most popular flight time slot</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="font-semibold mb-1">Recommended Departure: 4:00-4:30 AM</p>
+              <p class="text-sm text-muted-foreground">Travel time: 3-3.5 hours (minimal traffic)</p>
+              <p class="text-sm text-muted-foreground">Arrival at airport: 7:00-7:30 AM</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Traffic:</strong> Very light - best time to travel</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Route:</strong> Wakad-Talegaon-Expressway (fastest)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Buffer:</strong> 30-40 minutes included</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Clock className="h-6 w-6 text-blue-600" />
+              Mid-Morning Flights (9 AM-12 PM)
+            </CardTitle>
+            <CardDescription>Moderate traffic conditions</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="font-semibold mb-1">Recommended Departure: 4:30-5:30 AM</p>
+              <p class="text-sm text-muted-foreground">Travel time: 3.5-4 hours</p>
+              <p class="text-sm text-muted-foreground">Arrival at airport: 8:00-9:00 AM</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Traffic:</strong> Light to moderate</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Caution:</strong> Avoid 8-11 AM departure (peak traffic)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Buffer:</strong> 45-60 minutes recommended</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Calendar className="h-6 w-6 text-purple-600" />
+              Afternoon Flights (12-5 PM)
+            </CardTitle>
+            <CardDescription>Plan around office hour traffic</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-purple-50 rounded">
+              <p class="font-semibold mb-1">Recommended Departure: 8:00-9:00 AM</p>
+              <p class="text-sm text-muted-foreground">Travel time: 3.5-4 hours</p>
+              <p class="text-sm text-muted-foreground">Arrival at airport: 11:30 AM-12:30 PM</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Traffic:</strong> Moderate to heavy at PS Chowk (8-11 AM)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Alternative:</strong> Leave at 6-7 AM to avoid congestion</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Buffer:</strong> 60 minutes for weekday travel</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <TrendingUp className="h-6 w-6 text-orange-600" />
+              Evening/Night Flights (5 PM onwards)
+            </CardTitle>
+            <CardDescription>Evening traffic considerations</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-orange-50 rounded">
+              <p class="font-semibold mb-1">Recommended Departure: Based on flight time minus 6-7 hours</p>
+              <p class="text-sm text-muted-foreground">Travel time: 3.5-4.5 hours</p>
+              <p class="text-sm text-muted-foreground">Add buffer for evening rush (5-9 PM)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Traffic:</strong> Heavy at PS Chowk 5-9 PM (evening office rush)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Strategy:</strong> Either leave before 4 PM or after 9 PM</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Night Flights:</strong> 11 PM+ flights allow stress-free 7-8 PM departure</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Traffic Pattern Analysis -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Pimple Saudagar Chowk Traffic Patterns: What You Must Know</h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          Pimple Saudagar Chowk is a major traffic junction connecting Pimple Saudagar, Pimple Gurav, PCMC, and Wakad. Understanding traffic patterns is crucial for airport timing.
+        </p>
+      </div>
+
+      <Card className="mb-6 border-l-4 border-l-red-500">
+        <CardHeader>
+          <CardTitle className="text-red-700">Peak Traffic Hours (AVOID for Airport Trips)</CardTitle>
+        </CardHeader>
+        <CardContent class="space-y-4">
+          <div>
+            <h4 class="font-semibold mb-2">Morning Peak: 8:00 AM - 11:00 AM (Weekdays)</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>Heavy congestion at PS Chowk, D-Mart junction, and Pimple Gurav Road</li>
+              <li>IT employees commuting to Hinjewadi, Baner, Aundh offices</li>
+              <li>School traffic adds to congestion (8-9 AM)</li>
+              <li>Can add 30-45 minutes to your journey within Pimple Saudagar area alone</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Evening Peak: 5:00 PM - 9:00 PM (Weekdays)</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>Return traffic from Hinjewadi, Baner IT parks</li>
+              <li>Market area congestion (D-Mart, local markets)</li>
+              <li>Pimpri Chinchwad traffic merges at PS Chowk</li>
+              <li>Can delay exit from Pimple Saudagar by 20-30 minutes</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="border-l-4 border-l-green-500">
+        <CardHeader>
+          <CardTitle className="text-green-700">Best Travel Times (RECOMMENDED)</CardTitle>
+        </CardHeader>
+        <CardContent class="space-y-4">
+          <div>
+            <h4 class="font-semibold mb-2">Early Morning: 3:00 AM - 7:00 AM</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>Minimal to zero traffic at PS Chowk</li>
+              <li>Clear roads through Wakad, Talegaon route</li>
+              <li>Best time for airport transfers</li>
+              <li>Predictable travel time: 3-3.5 hours</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Late Night: 9:00 PM - 2:00 AM</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>Post-dinner traffic clears out</li>
+              <li>Excellent for late-night/red-eye flights</li>
+              <li>Smooth expressway driving</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Weekends: All Day (with exceptions)</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+              <li>30-40% less traffic on Saturdays and Sundays</li>
+              <li>Exception: Long weekends, festival weekends (Diwali, Ganpati, New Year)</li>
+              <li>Market areas may be busy 10 AM - 8 PM on weekends</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Route Comparison -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Route className="h-8 w-8 text-emerald-600" />
+        Route Options: Pimple Saudagar to Mumbai Airport
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Route className="h-6 w-6 text-emerald-600" />
+              Route 1: Via Wakad (RECOMMENDED)
+            </CardTitle>
+            <CardDescription>Faster for most time slots</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="p-3 bg-emerald-50 rounded mb-4">
+              <p class="font-semibold mb-1">Distance: 165 km</p>
+              <p class="text-sm text-muted-foreground">Time: 3-3.5 hours (normal traffic)</p>
+            </div>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">Route Details:</h4>
+              <ol class="list-decimal list-inside space-y-1 text-sm">
+                <li>Start from Pimple Saudagar Chowk</li>
+                <li>Head towards Wakad via Pimple Gurav Road (3 km)</li>
+                <li>Continue on Mumbai-Pune Highway via Wakad (5 km to highway)</li>
+                <li>Take Talegaon exit and join Mumbai-Pune Expressway</li>
+                <li>Continue on Expressway to Panvel</li>
+                <li>Exit towards Mumbai Airport (Terminal 1 or 2)</li>
+              </ol>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2 text-emerald-700">Why This Route?</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Shortest distance from Pimple Saudagar</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Direct access to Expressway via Wakad</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Best for early morning and night travel</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Predictable timing with minimal bottlenecks</span>
+                </li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Route className="h-6 w-6 text-blue-600" />
+              Route 2: Via Hinjewadi-Lonavala
+            </CardTitle>
+            <CardDescription>Alternative during Wakad peak hours</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="p-3 bg-blue-50 rounded mb-4">
+              <p class="font-semibold mb-1">Distance: 175 km</p>
+              <p class="text-sm text-muted-foreground">Time: 3.5-4 hours (normal traffic)</p>
+            </div>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">Route Details:</h4>
+              <ol class="list-decimal list-inside space-y-1 text-sm">
+                <li>Start from Pimple Saudagar Chowk</li>
+                <li>Head towards Hinjewadi via Aundh-Baner Road (12 km)</li>
+                <li>Continue through Hinjewadi Phase 1, 2, 3</li>
+                <li>Join Mumbai-Pune Expressway at Lonavala</li>
+                <li>Continue to Panvel and Mumbai Airport</li>
+              </ol>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2 text-blue-700">When to Use This Route?</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>When Wakad route has heavy traffic (8-11 AM, 5-9 PM)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>During festivals/events near Wakad</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>Road work or accidents on Wakad route</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span>Generally 10-15 minutes longer than Wakad route</span>
+                </li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-emerald-50 to-green-50">
+        <CardHeader>
+          <CardTitle>Our Recommendation</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p class="text-sm leading-relaxed">
+            For 90% of airport trips from Pimple Saudagar, the <strong>Wakad route is optimal</strong>. Our experienced drivers will assess real-time traffic conditions and choose the best route for your specific departure time. For early morning flights (most common), Wakad route is always faster and more reliable.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Exact Pickup Locations -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <MapPin className="h-8 w-8 text-emerald-600" />
+        Exact Pickup Locations in Pimple Saudagar Area
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          We provide doorstep pickup from all residential societies and landmarks in the Pimple Saudagar Chowk area. Here are the most common pickup points:
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Major Residential Societies</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Dreams Platina</strong> - Gate 1 or Gate 2 pickup
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Nyati Elan</strong> - Main gate or West Wing gate
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Vastushodh Urbangram</strong> - North or South entrance
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Ganga Legend</strong> - Society main gate
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Century Plaza</strong> - Tower entrance or parking
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pimple Saudagar Park</strong> - Near main park gate
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Key Landmarks & Areas</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pimple Saudagar Chowk</strong> - Main chowk near D-Mart
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>D-Mart Pimple Saudagar</strong> - Near D-Mart parking
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pimple Gurav Road</strong> - Any point along the road
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Sambhaji Chowk</strong> - Near PCMC junction
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pimple Saudagar Petrol Pump</strong> - Near HP/Indian Oil pump
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-blue-50">
+        <CardContent class="pt-6">
+          <p class="text-sm leading-relaxed">
+            <strong>Booking Tip:</strong> When booking your cab, provide your exact society name, tower/wing number, and preferred gate. For early morning pickups (3-6 AM), also share your mobile number so our driver can reach you directly upon arrival without disturbing neighbors.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Pricing -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee className="h-8 w-8 text-emerald-600" />
+        Transparent Pricing: Pimple Saudagar to Mumbai Airport
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV (6-Seater)</CardTitle>
+            <CardDescription>Perfect for families and small groups</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive pricing</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>Up to 6 passengers</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>3 large suitcases + 3 cabin bags</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>Zero emissions, quiet ride</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>All tolls included</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>BYD eMax 7 (6-Seater Luxury)</CardTitle>
+            <CardDescription>Premium experience for discerning travelers</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury pricing</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Premium captain seats (middle row)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Extra legroom and comfort</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Advanced climate control</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>All tolls included</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-green-50 to-emerald-50">
+        <CardHeader>
+          <CardTitle>What's Included in the Price?</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="flex items-start gap-2">
+              <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p class="font-semibold text-sm">All Tolls</p>
+                <p class="text-xs text-muted-foreground">₹665 expressway + local tolls covered</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p class="font-semibold text-sm">No Hidden Charges</p>
+                <p class="text-xs text-muted-foreground">No driver allowance, no extra fees</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p class="font-semibold text-sm">Professional Driver</p>
+                <p class="text-xs text-muted-foreground">Experienced, courteous, punctual</p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">How to Book Your Airport Cab from Pimple Saudagar</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">1</span>
+            </div>
+            <CardTitle className="text-lg">Contact Us</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2">
+            <p><strong>WhatsApp:</strong> +91 74982 64215 (instant response)</p>
+            <p><strong>Phone:</strong> +91 74982 64215</p>
+            <p>Available 24/7 for bookings</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">2</span>
+            </div>
+            <CardTitle className="text-lg">Provide Details</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-1">
+            <ul class="list-disc list-inside">
+              <li>Pickup date & time</li>
+              <li>Exact pickup location (society name, tower, gate)</li>
+              <li>Flight time</li>
+              <li>Number of passengers</li>
+              <li>Luggage count</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <span class="text-2xl font-bold text-emerald-600">3</span>
+            </div>
+            <CardTitle className="text-lg">Get Confirmation</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2">
+            <p>Receive instant booking confirmation</p>
+            <p>Driver details shared 30 minutes before pickup</p>
+            <p>Track your cab in real-time</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need a cab from Pimple Saudagar to Mumbai Airport`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size="lg" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book via WhatsApp
+          </Button>
+        </a>
+        <a href={`tel:+${WHATSAPP_NUMBER}`}>
+          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Phone className="mr-2 h-5 w-5" />
+            Call +91 74982 64215
+          </Button>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle className="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Related Guides & Services</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Service Pages</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/electric-cab-service-pimple-saudagar" class="text-emerald-600 hover:underline text-sm">
+                  → Electric Cab Service in Pimple Saudagar
+                </a>
+              </li>
+              <li>
+                <a href="/routes/pimple-saudagar-to-mumbai-airport" class="text-emerald-600 hover:underline text-sm">
+                  → Pimple Saudagar to Mumbai Airport Route
+                </a>
+              </li>
+              <li>
+                <a href="/airport/mumbai-airport" class="text-emerald-600 hover:underline text-sm">
+                  → Mumbai Airport Cab Service
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Related Guides</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/blog/pcmc-industrial-area-mumbai-airport-cab-guide" class="text-emerald-600 hover:underline text-sm">
+                  → PCMC Industrial Area to Mumbai Airport Guide
+                </a>
+              </li>
+              <li>
+                <a href="/blog/early-morning-cab-nigdi-mumbai-airport-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Early Morning Cab from Nigdi to Mumbai Airport
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Ready to Book Your Airport Cab?</h3>
+          <p class="mb-6 text-emerald-50">
+            Skip the timing guesswork. Our drivers know Pimple Saudagar traffic patterns inside out and will ensure you reach Mumbai Airport on time, every time.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need a cab from Pimple Saudagar to Mumbai Airport on [DATE] at [TIME] for [FLIGHT TIME]`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Book Now via WhatsApp
+              </Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-emerald-600 hover:bg-emerald-50">
+                <Phone className="mr-2 h-5 w-5" />
+                Call for Instant Booking
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+  </article>
+</MainLayout>

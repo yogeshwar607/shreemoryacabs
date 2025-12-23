@@ -1,0 +1,824 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Building2, Route, MapPin, Clock, TrendingUp, CheckCircle2, AlertCircle, IndianRupee, Users, Briefcase, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Hinjewadi Phase 1, 2, 3 to Mumbai Airport: Which Route is Fastest? Complete Comparison 2025';
+const description = 'Detailed route comparison for IT professionals from Hinjewadi Phase 1, Phase 2, and Phase 3 to Mumbai Airport. Distance analysis, timing differences, IT park-specific pickup points, and corporate packages.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE_URL}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Hinjewadi Phase 1 2 3 Mumbai Airport Route Comparison',
+      item: `${SITE_URL}/blog/hinjewadi-phase-1-2-3-mumbai-airport-route-comparison`,
+    },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive route comparison for Hinjewadi Phase 1, 2, and 3 IT professionals traveling to Mumbai Airport.',
+};
+
+const faqs = [
+  {
+    question: 'Which Hinjewadi phase is closest to Mumbai Airport?',
+    answer: 'Hinjewadi Phase 1 is closest to Mumbai Airport at 165 km (3-3.5 hours). Phase 2 is 170 km (3.5-4 hours), and Phase 3 is furthest at 175 km (3.5-4 hours). The difference is 10-15 minutes in travel time between Phase 1 and Phase 3.',
+  },
+  {
+    question: 'Does the route differ for Phase 1, Phase 2, and Phase 3 pickups?',
+    answer: 'All three phases use the same primary route: Mumbai-Pune Old Highway → Expressway entry at Lonavala → Panvel → Mumbai Airport. However, the initial distance from your IT park to the highway varies: Phase 1 is 3-5 km to highway, Phase 2 is 5-8 km, Phase 3 is 8-12 km.',
+  },
+  {
+    question: 'How much does a cab cost from Hinjewadi to Mumbai Airport?',
+    answer: 'Pricing is the same for all three phases: ₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (luxury 6-seater). All-inclusive with tolls, taxes, and no hidden charges. No price difference despite slight distance variations.',
+  },
+  {
+    question: 'Can I get picked up directly from my IT park office in Hinjewadi?',
+    answer: 'Yes! We pick up from all major IT parks: TCS (Phase 1, 2, 3), Infosys Phase 2, Wipro, Cognizant, Tech Mahindra, Persistent, Synechron, and more. Provide your company name, building/tower, and gate number when booking.',
+  },
+  {
+    question: 'What time should I leave Hinjewadi Phase 3 for a 9 AM flight?',
+    answer: 'For a 9 AM flight from Phase 3, leave by 4:30-4:45 AM. Travel time is 3.5-4 hours (early morning traffic), plus you\'ll reach by 8:00-8:30 AM for comfortable check-in 30-60 minutes before departure.',
+  },
+  {
+    question: 'Do you offer corporate packages for Hinjewadi IT companies?',
+    answer: 'Yes! We have special corporate packages for IT companies with monthly travel volumes. Benefits include: Priority booking, consolidated invoicing, dedicated account manager, 10-15% discounts, and employee self-booking portal. Perfect for companies with regular business travel.',
+  },
+  {
+    question: 'Which is faster during peak hours: Phase 1 or Phase 3?',
+    answer: 'During peak hours (8-11 AM, 5-9 PM), Phase 1 is faster by 15-20 minutes due to shorter distance to Mumbai-Pune Highway. However, for early morning (4-7 AM) or late night (9 PM-2 AM) travel, all phases have nearly identical travel times as internal Hinjewadi roads are clear.',
+  },
+  {
+    question: 'Can I book a cab for midnight or early morning departure from Hinjewadi?',
+    answer: 'Absolutely! We operate 24/7 from all Hinjewadi phases. For early morning flights (6-9 AM departures), we offer 2-5 AM pickups. Book at least 6-8 hours in advance. Many IT professionals prefer late-night pickups (11 PM - 2 AM) to avoid traffic and reach the airport stress-free.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Hinjewadi Phase 1 2 3 Mumbai Airport Route Comparison</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Hinjewadi</Badge>
+        <Badge variant="secondary">Route Comparison</Badge>
+        <Badge variant="outline">IT Professionals</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <time datetime={publishDate}>Published: January 15, 2025</time>
+        <span>•</span>
+        <span>12 min read</span>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        <strong>Hinjewadi</strong> is Pune's IT hub, home to over 200,000 IT professionals working across three distinct phases spread over 2,800 acres. Whether you work at TCS in Phase 1, Infosys in Phase 2, or one of the many startups in Phase 3, business travel to Mumbai, Bangalore, Delhi, and other cities is a regular part of professional life.
+      </p>
+      <p class="text-lg leading-relaxed">
+        But here's a question that confuses many Hinjewadi residents and IT professionals: <strong>"Does my phase location affect my travel time to Mumbai Airport? Is there a significant difference in distance and timing between Phase 1, Phase 2, and Phase 3?"</strong>
+      </p>
+      <p class="text-lg leading-relaxed">
+        This comprehensive guide answers these questions with precise route analysis, distance breakdowns, timing comparisons, and phase-specific recommendations. Whether you're at <strong>Rajiv Gandhi Infotech Park (Phase 1)</strong>, <strong>DLF Cybercity (Phase 2)</strong>, or <strong>newer IT parks in Phase 3</strong>, we'll help you understand the optimal route and timing for your Mumbai Airport journey. Explore our specialized <a href="/electric-cab-service-hinjewadi" class="text-emerald-600 hover:underline">electric cab service in Hinjewadi</a>.
+      </p>
+    </section>
+
+    <!-- Quick Comparison Table -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Quick Comparison: Phase 1 vs Phase 2 vs Phase 3</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-emerald-50">
+              <th class="border border-gray-300 p-3 text-left font-semibold">Factor</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-blue-50">Phase 1</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-purple-50">Phase 2</th>
+              <th class="border border-gray-300 p-3 text-center font-semibold bg-orange-50">Phase 3</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Distance to Airport</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">165 km</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">170 km</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">175 km</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Travel Time (Early Morning)</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">3-3.5 hours</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">3.5-4 hours</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">3.5-4 hours</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Travel Time (Peak Hours)</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">3.5-4 hours</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">4-4.5 hours</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">4-4.5 hours</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Distance to Old Highway</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">3-5 km</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">5-8 km</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">8-12 km</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Major IT Parks</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">TCS, Wipro, Tech Mahindra</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">Infosys, Cognizant, Synechron</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">Startups, emerging IT parks</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Cab Pricing</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹3,700 - ₹4,200</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">₹3,700 - ₹4,200</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹3,700 - ₹4,200</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-semibold">Best For</td>
+              <td class="border border-gray-300 p-3 text-center bg-blue-50">Quickest access</td>
+              <td class="border border-gray-300 p-3 text-center bg-purple-50">Balanced location</td>
+              <td class="border border-gray-300 p-3 text-center bg-orange-50">Newer developments</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <Card className="mt-6 bg-blue-50">
+        <CardContent class="pt-6">
+          <p class="text-sm leading-relaxed">
+            <strong>Key Takeaway:</strong> The difference in travel time between Phase 1 and Phase 3 is only <strong>10-15 minutes during normal traffic</strong> and <strong>15-25 minutes during peak hours</strong>. All three phases use the same primary route via Lonavala-Expressway. The main variation is the initial distance within Hinjewadi to reach the Mumbai-Pune Old Highway.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Phase 1 Details -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 className="h-8 w-8 text-blue-600" />
+        Hinjewadi Phase 1: Rajiv Gandhi Infotech Park
+      </h2>
+
+      <Card className="border-2 border-blue-500 mb-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-blue-700">
+            <Route className="h-6 w-6" />
+            Phase 1 to Mumbai Airport: Optimal Route
+          </CardTitle>
+          <CardDescription>Closest phase to the highway - fastest airport access</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="p-3 bg-blue-50 rounded mb-4">
+                <p class="font-semibold mb-1">Total Distance: 165 km</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 3-3.5 hours (early morning/night)</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 3.5-4 hours (daytime/peak hours)</p>
+              </div>
+              <h4 class="font-semibold mb-2">Route Breakdown:</h4>
+              <ol class="list-decimal list-inside space-y-2 text-sm">
+                <li>Start from IT park (TCS, Wipro, Tech Mahindra, etc.)</li>
+                <li>Exit Phase 1 towards Mumbai-Pune Old Highway (3-5 km, 10 min)</li>
+                <li>Join Old Highway and head towards Lonavala (22 km, 30 min)</li>
+                <li>Enter Mumbai-Pune Expressway at Lonavala junction</li>
+                <li>Drive 95 km on Expressway (1.5-2 hours smooth ride)</li>
+                <li>Exit at Panvel, continue towards Mumbai (45 km, 50 min)</li>
+                <li>Reach Mumbai Airport (Terminal 1 or 2)</li>
+              </ol>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-3">Major IT Parks in Phase 1</h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>TCS Yantra Park</strong> - Hinjewadi-Wakad Road
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Wipro Limited</strong> - Survey No. 210
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Tech Mahindra</strong> - Hinjewadi Phase 1
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Persistent Systems</strong> - Bhageerath, Senapati Bapat Road
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Zensar Technologies</strong> - Kharadi-Hinjewadi Road
+                  </div>
+                </li>
+              </ul>
+
+              <h4 class="font-semibold mb-3 mt-6">Advantages of Phase 1</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Shortest distance within Hinjewadi to highway (3-5 km)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Fastest exit from Hinjewadi during peak hours</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Well-established with clear routes and signage</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Phase 2 Details -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 className="h-8 w-8 text-purple-600" />
+        Hinjewadi Phase 2: DLF Cybercity & IT Corridor
+      </h2>
+
+      <Card className="border-2 border-purple-500 mb-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-purple-700">
+            <Route className="h-6 w-6" />
+            Phase 2 to Mumbai Airport: Optimal Route
+          </CardTitle>
+          <CardDescription>Balanced location with excellent IT infrastructure</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="p-3 bg-purple-50 rounded mb-4">
+                <p class="font-semibold mb-1">Total Distance: 170 km</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 3.5-4 hours (early morning/night)</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 4-4.5 hours (daytime/peak hours)</p>
+              </div>
+              <h4 class="font-semibold mb-2">Route Breakdown:</h4>
+              <ol class="list-decimal list-inside space-y-2 text-sm">
+                <li>Start from IT park (Infosys, Cognizant, Synechron, etc.)</li>
+                <li>Navigate through Phase 2 to Old Highway (5-8 km, 15-20 min)</li>
+                <li>Join Old Highway towards Lonavala (20 km, 25-30 min)</li>
+                <li>Enter Expressway at Lonavala</li>
+                <li>Drive 95 km on Expressway (1.5-2 hours)</li>
+                <li>Exit at Panvel towards Mumbai (45 km, 50 min)</li>
+                <li>Reach Mumbai Airport</li>
+              </ol>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-3">Major IT Parks in Phase 2</h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Infosys Phase 2</strong> - Rajiv Gandhi Infotech Park
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Cognizant Technology Solutions</strong> - Phase 2 SEZ
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Synechron</strong> - Blue Ridge Complex
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>John Deere</strong> - Hinjewadi Phase 2
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Capgemini</strong> - DLF Cybercity
+                  </div>
+                </li>
+              </ul>
+
+              <h4 class="font-semibold mb-3 mt-6">Phase 2 Characteristics</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>5 km longer internal distance than Phase 1</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <span>May experience congestion during peak office hours</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Well-connected with multiple exit routes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Phase 3 Details -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 className="h-8 w-8 text-orange-600" />
+        Hinjewadi Phase 3: Emerging IT Hub
+      </h2>
+
+      <Card className="border-2 border-orange-500 mb-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-orange-700">
+            <Route className="h-6 w-6" />
+            Phase 3 to Mumbai Airport: Optimal Route
+          </CardTitle>
+          <CardDescription>Newest phase with expanding IT infrastructure</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="p-3 bg-orange-50 rounded mb-4">
+                <p class="font-semibold mb-1">Total Distance: 175 km</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 3.5-4 hours (early morning/night)</p>
+                <p class="text-sm text-muted-foreground">Travel Time: 4-4.5 hours (daytime/peak hours)</p>
+              </div>
+              <h4 class="font-semibold mb-2">Route Breakdown:</h4>
+              <ol class="list-decimal list-inside space-y-2 text-sm">
+                <li>Start from IT park/office in Phase 3</li>
+                <li>Navigate through Phase 3 towards highway (8-12 km, 20-25 min)</li>
+                <li>Pass through portions of Phase 2 and Phase 1 if needed</li>
+                <li>Join Old Highway towards Lonavala (18 km, 25 min)</li>
+                <li>Enter Expressway at Lonavala</li>
+                <li>Drive 95 km on Expressway (1.5-2 hours)</li>
+                <li>Exit at Panvel, continue to Mumbai Airport (45 km, 50 min)</li>
+              </ol>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-3">Major Areas in Phase 3</h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Emerging IT Parks</strong> - Under development SEZs
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>TCS Phase 3 Campus</strong> - New development area
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Startup Clusters</strong> - Co-working spaces & incubators
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong>Residential Complexes</strong> - Newer housing societies
+                  </div>
+                </li>
+              </ul>
+
+              <h4 class="font-semibold mb-3 mt-6">Phase 3 Considerations</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <span>10 km longer internal distance than Phase 1</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <span>Longer exit time during peak office hours (8-11 AM, 5-9 PM)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Clear roads during early morning/night - negligible time difference</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Rapid infrastructure development ongoing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Timing Recommendations by Phase -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Clock className="h-8 w-8 text-emerald-600" />
+        Phase-Wise Timing Recommendations for 9 AM Flight
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-blue-700">From Phase 1</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="font-semibold mb-1">Leave by: 4:45-5:00 AM</p>
+              <p class="text-xs text-muted-foreground">3 hours travel + 45 min buffer</p>
+            </div>
+            <ul class="text-xs space-y-1">
+              <li>✓ Reach airport by 7:45-8:00 AM</li>
+              <li>✓ Check-in 60-75 min before flight</li>
+              <li>✓ Comfortable timing with buffer</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-purple-700">From Phase 2</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-purple-50 rounded">
+              <p class="font-semibold mb-1">Leave by: 4:30-4:45 AM</p>
+              <p class="text-xs text-muted-foreground">3.5 hours travel + 45 min buffer</p>
+            </div>
+            <ul class="text-xs space-y-1">
+              <li>✓ Reach airport by 8:00-8:15 AM</li>
+              <li>✓ Check-in 45-60 min before flight</li>
+              <li>✓ Add 15 min earlier than Phase 1</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-orange-700">From Phase 3</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-orange-50 rounded">
+              <p class="font-semibold mb-1">Leave by: 4:15-4:30 AM</p>
+              <p class="text-xs text-muted-foreground">3.5-4 hours travel + 45 min buffer</p>
+            </div>
+            <ul class="text-xs space-y-1">
+              <li>✓ Reach airport by 8:00-8:30 AM</li>
+              <li>✓ Check-in 30-60 min before flight</li>
+              <li>✓ Add 30 min earlier than Phase 1</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Corporate Packages -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Briefcase className="h-8 w-8 text-emerald-600" />
+        Corporate Packages for Hinjewadi IT Companies
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          Many Hinjewadi IT companies have employees traveling frequently for client meetings, training, conferences, and business development. We offer specialized corporate packages tailored for IT organizations across all three phases.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>IT Company Monthly Package</CardTitle>
+            <CardDescription>For companies with 10+ trips/month</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-4">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="text-2xl font-bold text-emerald-600 mb-1">₹3,300 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
+              <p class="text-xs text-muted-foreground">Save ₹400 per trip (regular: ₹3,700)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Pickup from any Hinjewadi phase (1, 2, or 3)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Employee self-booking portal with trip history</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Consolidated monthly invoicing (compatible with SAP/Oracle)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Dedicated account manager for your company</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Priority booking during peak travel seasons</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-blue-500">
+          <CardHeader>
+            <CardTitle>Department-Level Package</CardTitle>
+            <CardDescription>For teams with regular travel needs</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-4">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="text-2xl font-bold text-blue-600 mb-1">₹3,500 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
+              <p class="text-xs text-muted-foreground">Save ₹200 per trip (5-10 trips/month)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Perfect for sales, BD, or client services teams</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Monthly department billing report</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>WhatsApp group for quick bookings</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>30-day payment terms</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-blue-50 to-emerald-50">
+        <CardHeader>
+          <CardTitle>Perfect For These IT Company Scenarios</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h4 class="font-semibold mb-2">Client-Facing Teams</h4>
+              <p class="text-muted-foreground">Regular Mumbai client visits, demos, and stakeholder meetings</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">L&D / Training</h4>
+              <p class="text-muted-foreground">Employee training programs, certification courses, conferences</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Leadership Travel</h4>
+              <p class="text-muted-foreground">Executive business travel, board meetings, investor presentations</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Pricing -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee className="h-8 w-8 text-emerald-600" />
+        Standard Pricing: All Phases
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV (6-Seater)</CardTitle>
+            <CardDescription>Same price for all phases</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive, phase 1/2/3</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>No price difference despite distance variance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>All tolls included (₹665 expressway toll)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>Pickup from office/residential society</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>6 passengers + luggage</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>BYD eMax 7 (6-Seater Luxury)</CardTitle>
+            <CardDescription>Premium comfort, same pricing across phases</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Premium captain seats</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Extra legroom for 3.5-4 hour journey</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Ideal for executives and senior management</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Advanced climate control</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle className="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Related Services & Guides</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Service Pages</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/electric-cab-service-hinjewadi" class="text-emerald-600 hover:underline text-sm">
+                  → Electric Cab Service in Hinjewadi
+                </a>
+              </li>
+              <li>
+                <a href="/airport/mumbai-airport" class="text-emerald-600 hover:underline text-sm">
+                  → Mumbai Airport Cab Service
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Related Guides</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/blog/blue-ridge-ravet-mumbai-airport-cab-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Blue Ridge Ravet to Mumbai Airport Guide
+                </a>
+              </li>
+              <li>
+                <a href="/blog/cerebrum-it-park-aundh-mumbai-airport-complete-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Cerebrum IT Park Aundh Guide
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Book Your Hinjewadi Airport Cab Today</h3>
+          <p class="mb-6 text-blue-50">
+            Whether you're in Phase 1, Phase 2, or Phase 3, we provide reliable, comfortable, and affordable electric cab service to Mumbai Airport. Direct pickup from your IT park or residential society.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need a cab from Hinjewadi to Mumbai Airport`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Book via WhatsApp
+              </Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-blue-600 hover:bg-blue-50">
+                <Phone className="mr-2 h-5 w-5" />
+                Call +91 74982 64215
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+  </article>
+</MainLayout>

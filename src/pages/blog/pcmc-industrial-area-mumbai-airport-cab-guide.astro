@@ -1,0 +1,875 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Factory, MapPin, Route, IndianRupee, Users, CheckCircle2, Clock, Briefcase, Building2, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'PCMC Industrial Area to Mumbai Airport Cab Service: Complete Guide for Workers';
+const description = 'Reliable electric cab service from PCMC Industrial Area, Pimpri MIDC, Bhosari MIDC, and Chinchwad industrial zones to Mumbai Airport. Shift-friendly timing, group bookings, and corporate packages.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE_URL}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'PCMC Industrial Area to Mumbai Airport Cab Guide',
+      item: `${SITE_URL}/blog/pcmc-industrial-area-mumbai-airport-cab-guide`,
+    },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive cab guide for manufacturing and industrial workers from PCMC area to Mumbai Airport.',
+};
+
+const faqs = [
+  {
+    question: 'Which industrial areas in PCMC do you cover for Mumbai Airport cab service?',
+    answer: 'We cover all major industrial zones: Pimpri MIDC, Bhosari MIDC, Chinchwad industrial area, Talawade MIDC, Nigdi industrial belt, Akurdi industrial estates, and Chakan industrial zone. We provide doorstep pickup from factory gates, MIDC zones, and worker accommodations.',
+  },
+  {
+    question: 'How much does a cab cost from PCMC Industrial Area to Mumbai Airport?',
+    answer: 'From PCMC industrial areas to Mumbai Airport: ₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (luxury 6-seater). All-inclusive pricing with zero hidden charges - no toll extra, no driver fees. Group discounts available for 4+ employees traveling together.',
+  },
+  {
+    question: 'Can I book a cab for early morning shift workers (3-5 AM pickups)?',
+    answer: 'Absolutely! We specialize in early morning and night shift pickups from PCMC industrial areas. Book at least 6 hours in advance for 3-5 AM departures. Our drivers are experienced with shift timings and will arrive punctually at your factory gate or accommodation.',
+  },
+  {
+    question: 'Do you offer group bookings for factory employees traveling together?',
+    answer: 'Yes, we encourage group bookings! If 4-6 employees from the same factory are traveling to Mumbai Airport on the same day, you can share one cab and split the cost (₹620-700 per person for 6 people). Contact us for bulk booking discounts for 10+ employees.',
+  },
+  {
+    question: 'What is the travel time from Bhosari MIDC to Mumbai Airport?',
+    answer: 'From Bhosari MIDC to Mumbai Airport: 3-3.5 hours via Chakan-Talegaon-Expressway route (155 km). Early morning departures (3-6 AM) typically take 3 hours. Add 30-45 minutes buffer during weekday peak hours (8-11 AM).',
+  },
+  {
+    question: 'Can companies book monthly airport cab packages for employees?',
+    answer: 'Yes! We offer corporate monthly packages for manufacturing companies. Packages include priority booking, dedicated account manager, consolidated billing, and discounted rates for frequent travelers. Ideal for companies with regular employee business travel to Mumbai, Delhi, Bangalore, etc.',
+  },
+  {
+    question: 'Do you pick up from worker hostels and PG accommodations near PCMC industrial area?',
+    answer: 'Yes, we pick up from all worker accommodations, hostels, PGs, and company quarters near PCMC industrial zones. Common pickup points include Bhosari worker colonies, Pimpri accommodations, and Chinchwad PG areas. Provide exact address when booking.',
+  },
+  {
+    question: 'How do I book a cab from PCMC Industrial Area to Mumbai Airport?',
+    answer: 'Book via WhatsApp at +91 74982 64215 or call the same number. Provide: pickup location (factory name/MIDC zone), date & time, flight details, and number of passengers. For group bookings, share employee names and contact numbers. Instant confirmation provided.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">PCMC Industrial Area to Mumbai Airport Cab Guide</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Industrial Workers</Badge>
+        <Badge variant="secondary">PCMC MIDC</Badge>
+        <Badge variant="outline">Corporate Bookings</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <time datetime={publishDate}>Published: January 15, 2025</time>
+        <span>•</span>
+        <span>9 min read</span>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        The <strong>PCMC (Pimpri-Chinchwad Municipal Corporation) Industrial Area</strong> is home to hundreds of manufacturing companies and thousands of industrial workers. From automotive giants to pharma companies, the region's industrial zones - Pimpri MIDC, Bhosari MIDC, Chinchwad, Talawade, and Nigdi - form the manufacturing backbone of Pune.
+      </p>
+      <p class="text-lg leading-relaxed">
+        For employees working in these industrial areas, business travel to Mumbai, Delhi, Bangalore, and other cities is common. Whether you're an engineer attending a supplier meet, a manager flying for a corporate event, or a technician heading for training, getting to Mumbai Airport reliably and affordably is essential.
+      </p>
+      <p class="text-lg leading-relaxed">
+        This guide is tailored for <strong>manufacturing and industrial sector employees</strong> in PCMC. We'll cover shift-friendly pickup timings, exact factory gate pickups, group booking options, corporate monthly packages, and the most efficient routes from PCMC industrial zones to Mumbai Airport. Learn more about our <a href="/electric-cab-service-pcmc" class="text-emerald-600 hover:underline">electric cab service in PCMC</a>.
+      </p>
+    </section>
+
+    <!-- Coverage Areas -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Factory className="h-8 w-8 text-emerald-600" />
+        Industrial Zones We Cover in PCMC
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-blue-600" />
+              Pimpri MIDC
+            </CardTitle>
+            <CardDescription>One of Pune's oldest industrial zones</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Major Companies:</strong> Forbes Marshall, Alfa Laval, Thermax
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Distance to Airport:</strong> 145 km (3-3.5 hours)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pickup Points:</strong> Company gates, MIDC bus stop, worker colonies
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-purple-600" />
+              Bhosari MIDC
+            </CardTitle>
+            <CardDescription>Large-scale manufacturing hub</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Major Companies:</strong> Bajaj Auto, Kinetic, SKF Bearings
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Distance to Airport:</strong> 155 km (3-3.5 hours)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pickup Points:</strong> Factory main gates, Bhosari MIDC Circle, accommodations
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-orange-600" />
+              Chinchwad Industrial Area
+            </CardTitle>
+            <CardDescription>Automotive and engineering cluster</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Major Companies:</strong> Mahindra, Tata Motors vendors, John Deere
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Distance to Airport:</strong> 150 km (3-3.5 hours)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pickup Points:</strong> Company campuses, Chinchwad Station area
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-green-600" />
+              Talawade & Nigdi MIDC
+            </CardTitle>
+            <CardDescription>Emerging manufacturing zones</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Major Companies:</strong> Pharma, electronics, precision engineering
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Distance to Airport:</strong> 160 km (3.5-4 hours)
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong>Pickup Points:</strong> MIDC gates, Nigdi Station, Talawade phata
+                </div>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-blue-50">
+        <CardContent class="pt-6">
+          <p class="text-sm leading-relaxed">
+            <strong>Coverage Note:</strong> We also cover Chakan industrial zone (170 km, 3.5-4 hours), Akurdi industrial estates, and Ravet manufacturing units. Wherever your factory or company is located in the PCMC region, we provide reliable doorstep pickup for Mumbai Airport transfers.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Shift-Friendly Service -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Clock className="h-8 w-8 text-emerald-600" />
+        Shift-Friendly Airport Cab Service
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          We understand that manufacturing employees often work in shifts and may need early morning or late-night airport pickups. Our service is designed to accommodate your shift schedules and flight timings.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Morning Shift Workers</CardTitle>
+            <CardDescription>7 AM - 3 PM shift</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="font-semibold mb-1">Best Flight Times:</p>
+              <p class="text-sm text-muted-foreground">Evening flights (6-10 PM)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Pickup after shift ends (3:30-4 PM)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Reach airport by 7-7:30 PM</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Comfortable for 9-10 PM departures</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-blue-500">
+          <CardHeader>
+            <CardTitle>Evening Shift Workers</CardTitle>
+            <CardDescription>3 PM - 11 PM shift</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="font-semibold mb-1">Best Flight Times:</p>
+              <p class="text-sm text-muted-foreground">Early morning flights (6-10 AM)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Pickup directly after shift (11:30 PM)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Reach airport by 3-3:30 AM</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Perfect for 6-7 AM flights</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-purple-500">
+          <CardHeader>
+            <CardTitle>Night Shift Workers</CardTitle>
+            <CardDescription>11 PM - 7 AM shift</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-purple-50 rounded">
+              <p class="font-semibold mb-1">Best Flight Times:</p>
+              <p class="text-sm text-muted-foreground">Late morning/noon flights (10 AM-2 PM)</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span>Pickup post-shift at 7:30 AM</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span>Reach by 11 AM - 12 PM</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span>Suitable for 12-2 PM departures</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-emerald-50 to-green-50">
+        <CardHeader>
+          <CardTitle>Early Morning & Night Pickup Availability</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="font-semibold mb-2">24/7 Service</h4>
+              <p class="text-sm text-muted-foreground">We operate round-the-clock for industrial area pickups. No matter what time your shift ends or your flight departs, we'll be there.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Advance Booking Required</h4>
+              <p class="text-sm text-muted-foreground">For 3-5 AM pickups or post-midnight pickups, book at least 6-8 hours in advance. For same-day bookings, call directly for availability.</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Group Bookings -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Users className="h-8 w-8 text-emerald-600" />
+        Group Bookings for Factory Employees
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          If multiple colleagues from your factory are traveling to Mumbai Airport on the same day, consider sharing a cab. It's economical, environmentally friendly, and more convenient than coordinating separate rides.
+        </p>
+      </div>
+
+      <Card className="mb-6 border-l-4 border-l-emerald-500">
+        <CardHeader>
+          <CardTitle>Group Booking Benefits</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-3">Cost Savings</h4>
+              <div class="space-y-2 text-sm">
+                <div class="p-3 bg-emerald-50 rounded">
+                  <p class="font-semibold">₹620-700 per person (6 passengers)</p>
+                  <p class="text-xs text-muted-foreground">Split ₹3,700-4,200 total cost among 6 employees</p>
+                </div>
+                <p class="text-muted-foreground">Compare to: Local taxi to Pune station (₹300) + Train (₹150) + Auto to airport (₹500) = ₹950 per person</p>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-3">Convenience Benefits</h4>
+              <ul class="space-y-1 text-sm">
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Single pickup from factory gate - no coordination hassles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Direct drop at airport terminal - no transfers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Ample luggage space for everyone</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span>Travel comfortably with colleagues</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="border-l-4 border-l-blue-500">
+        <CardHeader>
+          <CardTitle>How to Book for Groups</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol class="list-decimal list-inside space-y-3 text-sm">
+            <li>
+              <strong>Coordinate with colleagues:</strong> Find 4-6 employees traveling on the same date/time
+            </li>
+            <li>
+              <strong>Nominate a coordinator:</strong> One person to handle booking and communication
+            </li>
+            <li>
+              <strong>Contact us:</strong> WhatsApp +91 74982 64215 with group details:
+              <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-muted-foreground">
+                <li>Number of passengers (max 6 per cab)</li>
+                <li>Pickup location (factory gate/accommodation)</li>
+                <li>Pickup date & time</li>
+                <li>Flight details for each passenger</li>
+                <li>Primary contact person</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Payment:</strong> Can be split individually or paid by one person (company reimbursement)
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Corporate Packages -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Briefcase className="h-8 w-8 text-emerald-600" />
+        Corporate Monthly Packages for Manufacturing Companies
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          For manufacturing companies with regular employee travel to Mumbai Airport (suppliers meets, training programs, corporate events), we offer tailored monthly packages with discounted rates and dedicated support.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Small Business Package</CardTitle>
+            <CardDescription>4-8 trips/month</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-4">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="text-2xl font-bold text-emerald-600 mb-1">₹3,500 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
+              <p class="text-xs text-muted-foreground">Save ₹200 per trip vs regular pricing</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Priority booking for employees</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Consolidated monthly invoicing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>30-day payment terms</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Dedicated support number</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-blue-500">
+          <CardHeader>
+            <CardTitle>Enterprise Package</CardTitle>
+            <CardDescription>10+ trips/month</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-4">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="text-2xl font-bold text-blue-600 mb-1">₹3,300 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
+              <p class="text-xs text-muted-foreground">Save ₹400 per trip + volume benefits</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>All Small Business Package benefits</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Dedicated account manager</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Employee self-booking portal access</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Quarterly business review</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span>Custom invoicing formats (for ERP integration)</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-blue-50 to-emerald-50">
+        <CardHeader>
+          <CardTitle>Perfect For Manufacturing Companies</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h4 class="font-semibold mb-2">Quality & Supply Chain Teams</h4>
+              <p class="text-muted-foreground">Regular vendor visits, supplier audits, material sourcing trips</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Engineering & R&D</h4>
+              <p class="text-muted-foreground">Conference attendance, training programs, technology exhibitions</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Sales & Marketing</h4>
+              <p class="text-muted-foreground">Client meetings, trade shows, product demonstrations</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Routes -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Route className="h-8 w-8 text-emerald-600" />
+        Best Routes from PCMC Industrial Areas to Mumbai Airport
+      </h2>
+
+      <Card className="mb-6 border-2 border-emerald-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Route className="h-6 w-6 text-emerald-600" />
+            Primary Route: Via Chakan-Talegaon-Expressway (RECOMMENDED)
+          </CardTitle>
+          <CardDescription>Optimal for most PCMC industrial areas</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="p-3 bg-emerald-50 rounded mb-4">
+            <p class="font-semibold mb-1">Distance: 145-160 km (depending on pickup point)</p>
+            <p class="text-sm text-muted-foreground">Time: 3-3.5 hours (normal traffic)</p>
+          </div>
+          <div class="mb-4">
+            <h4 class="font-semibold mb-2">Route Details:</h4>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+              <li>Start from MIDC area (Pimpri/Bhosari/Chinchwad)</li>
+              <li>Head towards Chakan via PCMC-Chakan Road</li>
+              <li>Join NH48 (Pune-Mumbai Highway) at Talegaon</li>
+              <li>Continue on Mumbai-Pune Expressway</li>
+              <li>Exit at Panvel towards Mumbai Airport</li>
+              <li>Reach Terminal 1 (domestic) or Terminal 2 (international)</li>
+            </ol>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 text-emerald-700">Why This Route?</h4>
+            <ul class="space-y-1 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Shortest route from northern PCMC areas</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Avoids Pune city traffic completely</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Excellent road conditions (Expressway)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Predictable travel time year-round</span>
+              </li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Route className="h-6 w-6 text-blue-600" />
+            Alternative Route: Via Wakad-Hinjewadi-Lonavala
+          </CardTitle>
+          <CardDescription>For southern PCMC areas (Pimpri, Akurdi)</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="p-3 bg-blue-50 rounded mb-4">
+            <p class="font-semibold mb-1">Distance: 165-175 km</p>
+            <p class="text-sm text-muted-foreground">Time: 3.5-4 hours</p>
+          </div>
+          <p class="text-sm text-muted-foreground">
+            This route goes through Wakad and Hinjewadi before joining the Expressway at Lonavala. Best used when coming from Pimpri or Akurdi areas, or during peak morning hours (8-10 AM) when Chakan route might have commercial vehicle traffic.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Pricing -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee className="h-8 w-8 text-emerald-600" />
+        Transparent Pricing from PCMC to Mumbai Airport
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV (6-Seater)</CardTitle>
+            <CardDescription>Ideal for small groups</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive pricing</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>6 passengers comfortably</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>₹620 per person (if split among 6)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>All tolls & taxes included</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>Zero emissions, eco-friendly</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>BYD eMax 7 (6-Seater Luxury)</CardTitle>
+            <CardDescription>Premium comfort for executives</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Premium captain seats (middle row)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>₹700 per person (if split among 6)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Extra legroom for long journey</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Advanced climate control</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-green-50">
+        <CardContent class="pt-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-2">What's Included</h4>
+              <ul class="space-y-1 text-sm text-muted-foreground">
+                <li>✓ All toll charges (₹665 expressway + local tolls)</li>
+                <li>✓ Professional driver with 5+ years experience</li>
+                <li>✓ Door-to-door service (factory gate to airport terminal)</li>
+                <li>✓ GST invoice for company reimbursement</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">No Hidden Charges</h4>
+              <ul class="space-y-1 text-sm text-muted-foreground">
+                <li>✗ No driver allowance</li>
+                <li>✗ No parking fees</li>
+                <li>✗ No waiting charges (for reasonable delays)</li>
+                <li>✗ No fuel surcharge</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle className="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Related Services & Guides</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Service Pages</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/electric-cab-service-pcmc" class="text-emerald-600 hover:underline text-sm">
+                  → Electric Cab Service in PCMC
+                </a>
+              </li>
+              <li>
+                <a href="/routes/pcmc-to-mumbai-airport" class="text-emerald-600 hover:underline text-sm">
+                  → PCMC to Mumbai Airport Route Details
+                </a>
+              </li>
+              <li>
+                <a href="/electric-cab-service-nigdi" class="text-emerald-600 hover:underline text-sm">
+                  → Electric Cab Service in Nigdi
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Related Guides</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/blog/pimple-saudagar-chowk-mumbai-airport-timing-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Pimple Saudagar to Mumbai Airport Timing Guide
+                </a>
+              </li>
+              <li>
+                <a href="/blog/early-morning-cab-nigdi-mumbai-airport-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Early Morning Cab from Nigdi to Mumbai Airport
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Book Your Factory-to-Airport Cab Today</h3>
+          <p class="mb-6 text-emerald-50">
+            Whether you're a solo traveler or booking for a group of colleagues, we've got you covered with reliable, shift-friendly, economical airport transfers from all PCMC industrial areas.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need a cab from PCMC Industrial Area to Mumbai Airport`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Book via WhatsApp
+              </Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-emerald-600 hover:bg-emerald-50">
+                <Phone className="mr-2 h-5 w-5" />
+                Call +91 74982 64215
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+  </article>
+</MainLayout>

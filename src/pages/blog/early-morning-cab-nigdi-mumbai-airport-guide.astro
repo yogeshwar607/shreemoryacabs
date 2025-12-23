@@ -1,0 +1,860 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Clock, Sunrise, Moon, CheckCircle2, AlertTriangle, MapPin, Route, Calendar, Shield, Phone as PhoneIcon, MessageCircle, IndianRupee, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Early Morning Cab from Nigdi to Mumbai Airport: Complete Guide for First Flights';
+const description = 'Expert guide for early morning airport transfers from Nigdi. Perfect timing for 6-9 AM flights, reliable 3-5 AM pickups, night-before preparation tips, and guaranteed punctuality.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE_URL}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Early Morning Cab Nigdi to Mumbai Airport',
+      item: `${SITE_URL}/blog/early-morning-cab-nigdi-mumbai-airport-guide`,
+    },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  datePublished: publishDate,
+  dateModified: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  articleBody: 'Comprehensive guide for early morning airport transfers from Nigdi to Mumbai Airport with timing tips and reliability guarantees.',
+};
+
+const faqs = [
+  {
+    question: 'What time should I book a cab from Nigdi for a 6 AM flight at Mumbai Airport?',
+    answer: 'For a 6 AM flight, book pickup at 2:00-2:15 AM from Nigdi. This gives you 3 hours travel time (minimal traffic at night), plus you\'ll reach the airport by 5:00-5:15 AM, allowing 45-60 minutes for check-in and security before your 6 AM departure.',
+  },
+  {
+    question: 'Is early morning cab service (3-5 AM) reliable from Nigdi?',
+    answer: 'Yes, absolutely. GreenEVCabs operates 24/7 with dedicated drivers for early morning shifts. Book at least 8-12 hours in advance for 3-5 AM pickups. Our drivers arrive 5-10 minutes early and will call you upon arrival. We have 100% on-time record for pre-booked early morning trips.',
+  },
+  {
+    question: 'How much does an early morning cab cost from Nigdi to Mumbai Airport?',
+    answer: 'Early morning pricing is the same as regular: ₹3,700 for Kia Carens EV and ₹4,200 for BYD eMax 7. No surge pricing or night charges. All-inclusive with tolls, no hidden fees. We believe in fair, transparent pricing regardless of time of day.',
+  },
+  {
+    question: 'What if my flight is at 7 AM? When should I leave Nigdi?',
+    answer: 'For a 7 AM flight, leave Nigdi by 3:00-3:15 AM. Early morning roads are clear, so travel time is approximately 3 hours. You\'ll reach by 6:00-6:15 AM, perfect for domestic flights (45 min before departure is sufficient for check-in and security).',
+  },
+  {
+    question: 'Can I book an early morning cab at 2 AM or 3 AM?',
+    answer: 'Yes, we accept bookings for any time between 1 AM and 6 AM. However, advance booking is mandatory. Book at least 8 hours before pickup time. For very early pickups (1-3 AM), we recommend booking the previous evening or afternoon to ensure driver allocation.',
+  },
+  {
+    question: 'What happens if the driver is late for my early morning pickup?',
+    answer: 'Our drivers are never late for pre-booked early morning trips - we have a 100% punctuality record. Drivers arrive 5-10 minutes early. However, in the extremely rare case of any delay, we provide real-time tracking and driver contact. If delay exceeds 10 minutes, the trip is free (we\'ve never had to honor this guarantee).',
+  },
+  {
+    question: 'Will the driver find my society gate at 3 AM in the dark?',
+    answer: 'Yes. When you book, provide your exact address with society name and gate details. Our drivers use GPS navigation and have prior instructions. We also share your contact number with the driver - they will call you 5 minutes before arrival. You can guide them if needed.',
+  },
+  {
+    question: 'Should I book the night before or same day for a 6 AM flight?',
+    answer: 'Always book the night before (or earlier). For a 6 AM flight requiring 2 AM pickup, book by 6 PM the previous evening at the latest. Earlier is better - booking 24 hours in advance is ideal for guaranteed availability and peace of mind.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Early Morning Cab Nigdi to Mumbai Airport</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Early Morning</Badge>
+        <Badge variant="secondary">Nigdi</Badge>
+        <Badge variant="outline">First Flights</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <time datetime={publishDate}>Published: January 15, 2025</time>
+        <span>•</span>
+        <span>9 min read</span>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        Catching an early morning flight from Mumbai Airport requires careful planning, especially when you're traveling from Nigdi. The challenge isn't just waking up at an ungodly hour - it's ensuring your cab arrives on time, navigating in the dark, and reaching the airport with enough buffer for check-in and security.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Early morning flights (typically 6-9 AM departures) are popular because they minimize travel disruption, offer lower airfares, and provide full-day availability at your destination. However, they demand <strong>absolute reliability from your cab service</strong> - one delayed pickup can mean a missed flight and ruined travel plans.
+      </p>
+      <p class="text-lg leading-relaxed">
+        This comprehensive guide is designed for Nigdi residents who need early morning airport transfers. We'll cover exact pickup timings for different flight slots, reliability best practices, advance booking strategies, night-before preparation tips, and what to expect from a professional <a href="/electric-cab-service-nigdi" class="text-emerald-600 hover:underline">early morning cab service from Nigdi</a>.
+      </p>
+    </section>
+
+    <!-- Timing Calculator -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Sunrise className="h-8 w-8 text-orange-600" />
+        Exact Pickup Times: Nigdi to Mumbai Airport for Early Flights
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-orange-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Moon className="h-6 w-6 text-orange-600" />
+              6:00 AM Flight
+            </CardTitle>
+            <CardDescription>First flight of the day</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-orange-50 rounded">
+              <p class="font-semibold mb-1">Recommended Pickup: 2:00-2:15 AM</p>
+              <p class="text-sm text-muted-foreground">Reach airport by 5:00-5:15 AM</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Travel time:</span>
+                <span class="font-semibold">3 hours</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Check-in buffer:</span>
+                <span class="font-semibold">45-60 minutes</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Traffic:</span>
+                <span class="font-semibold text-green-600">Minimal (night)</span>
+              </div>
+            </div>
+            <ul class="space-y-1 text-xs text-muted-foreground border-t pt-3">
+              <li>✓ Perfect for domestic flights (45 min check-in window)</li>
+              <li>✓ Zero traffic on Expressway at 2-5 AM</li>
+              <li>✓ Comfortable buffer for security checks</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-blue-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Sunrise className="h-6 w-6 text-blue-600" />
+              7:00 AM Flight
+            </CardTitle>
+            <CardDescription>Popular early morning slot</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-blue-50 rounded">
+              <p class="font-semibold mb-1">Recommended Pickup: 3:00-3:15 AM</p>
+              <p class="text-sm text-muted-foreground">Reach airport by 6:00-6:15 AM</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Travel time:</span>
+                <span class="font-semibold">3 hours</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Check-in buffer:</span>
+                <span class="font-semibold">45-60 minutes</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Traffic:</span>
+                <span class="font-semibold text-green-600">Minimal (early morning)</span>
+              </div>
+            </div>
+            <ul class="space-y-1 text-xs text-muted-foreground border-t pt-3">
+              <li>✓ Most common early morning flight time</li>
+              <li>✓ Still very light traffic at 3-6 AM</li>
+              <li>✓ Ideal for business travelers</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Clock className="h-6 w-6 text-emerald-600" />
+              8:00 AM Flight
+            </CardTitle>
+            <CardDescription>Late early morning option</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-emerald-50 rounded">
+              <p class="font-semibold mb-1">Recommended Pickup: 4:00-4:15 AM</p>
+              <p class="text-sm text-muted-foreground">Reach airport by 7:00-7:15 AM</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Travel time:</span>
+                <span class="font-semibold">3 hours</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Check-in buffer:</span>
+                <span class="font-semibold">45-60 minutes</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Traffic:</span>
+                <span class="font-semibold text-green-600">Light (dawn)</span>
+              </div>
+            </div>
+            <ul class="space-y-1 text-xs text-muted-foreground border-t pt-3">
+              <li>✓ Slightly later wake-up time (3:30 AM)</li>
+              <li>✓ Sunrise during journey (safer feeling)</li>
+              <li>✓ Less stressful than 6-7 AM flights</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-purple-500">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Calendar className="h-6 w-6 text-purple-600" />
+              9:00 AM Flight
+            </CardTitle>
+            <CardDescription>Mid-morning departure</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div class="p-3 bg-purple-50 rounded">
+              <p class="font-semibold mb-1">Recommended Pickup: 5:00-5:15 AM</p>
+              <p class="text-sm text-muted-foreground">Reach airport by 8:00-8:15 AM</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Travel time:</span>
+                <span class="font-semibold">3 hours</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Check-in buffer:</span>
+                <span class="font-semibold">45-60 minutes</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-muted-foreground">Traffic:</span>
+                <span class="font-semibold text-yellow-600">Light to moderate</span>
+              </div>
+            </div>
+            <ul class="space-y-1 text-xs text-muted-foreground border-t pt-3">
+              <li>✓ More reasonable wake-up time (4:30 AM)</li>
+              <li>✓ Full daylight during travel</li>
+              <li>⚠ May encounter early morning Mumbai traffic</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-l-orange-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <AlertTriangle className="h-6 w-6 text-orange-600" />
+            International Flights: Add Extra Buffer
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p class="text-sm leading-relaxed mb-3">
+            For international flights, airlines recommend arriving <strong>3 hours before departure</strong> (vs 1.5 hours for domestic). Add 1 hour to all pickup times above.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4 text-sm">
+            <div class="p-3 bg-white rounded">
+              <p class="font-semibold mb-1">6 AM International Flight</p>
+              <p class="text-muted-foreground">Pickup at 1:00-1:15 AM (reach by 4:00-4:15 AM)</p>
+            </div>
+            <div class="p-3 bg-white rounded">
+              <p class="font-semibold mb-1">7 AM International Flight</p>
+              <p class="text-muted-foreground">Pickup at 2:00-2:15 AM (reach by 5:00-5:15 AM)</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Reliability Guarantee -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Shield className="h-8 w-8 text-emerald-600" />
+        Our Early Morning Reliability Guarantee
+      </h2>
+
+      <div class="prose prose-lg max-w-none mb-6">
+        <p>
+          Early morning pickups require absolute reliability - there's no room for error when your flight is at stake. Here's how we ensure 100% punctuality:
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
+              <CheckCircle2 className="h-6 w-6 text-emerald-600" />
+            </div>
+            <CardTitle className="text-lg">Dedicated Night Shift Drivers</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2 text-muted-foreground">
+            <p>We have dedicated drivers specifically for early morning shifts (12 AM - 8 AM pickups).</p>
+            <p>These drivers are well-rested, experienced with night driving, and understand the critical nature of early morning airport transfers.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+              <Clock className="h-6 w-6 text-blue-600" />
+            </div>
+            <CardTitle className="text-lg">5-10 Minutes Early Arrival</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2 text-muted-foreground">
+            <p>Our drivers are instructed to arrive 5-10 minutes before scheduled pickup time.</p>
+            <p>Driver will call you upon arrival and wait at your gate/society entrance. No rush, no stress.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-2">
+              <MapPin className="h-6 w-6 text-purple-600" />
+            </div>
+            <CardTitle className="text-lg">GPS Tracking & Live Updates</CardTitle>
+          </CardHeader>
+          <CardContent class="text-sm space-y-2 text-muted-foreground">
+            <p>Real-time GPS tracking of your cab from dispatch to arrival.</p>
+            <p>WhatsApp updates with driver details shared 30 minutes before pickup. Live location link provided.</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+        <CardContent class="pt-6">
+          <div class="flex items-start gap-4">
+            <Shield className="h-12 w-12 flex-shrink-0" />
+            <div>
+              <h4 class="font-bold text-xl mb-2">100% Punctuality Guarantee</h4>
+              <p class="text-emerald-50 text-sm leading-relaxed mb-3">
+                We have <strong>never missed</strong> a pre-booked early morning pickup in our operating history. If our driver is more than 10 minutes late (which has never happened), your entire trip is free.
+              </p>
+              <p class="text-emerald-100 text-xs italic">
+                *Free trip guarantee valid for bookings made at least 8 hours in advance with confirmed driver allocation.
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Booking Strategy -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Early Morning Booking Strategy: Best Practices</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-l-4 border-l-green-500">
+          <CardHeader>
+            <CardTitle className="text-green-700 flex items-center gap-2">
+              <CheckCircle2 className="h-6 w-6" />
+              DO: Best Practices
+            </CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✓ Book 8-24 Hours in Advance</h4>
+              <p class="text-xs text-muted-foreground">For 2-5 AM pickups, book by 6 PM the previous evening at minimum. 24 hours advance is ideal.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✓ Provide Complete Details</h4>
+              <p class="text-xs text-muted-foreground">Share exact address, society gate, landmark, flight time, and airline. More details = smoother pickup.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✓ Confirm Driver Details Night Before</h4>
+              <p class="text-xs text-muted-foreground">We send driver details 30 mins before pickup, but you can request them the evening before for peace of mind.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✓ Save Driver Contact Number</h4>
+              <p class="text-xs text-muted-foreground">When you receive driver details, save the number. Call if you need to step out early or have any last-minute changes.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✓ Set Multiple Alarms</h4>
+              <p class="text-xs text-muted-foreground">For 2-4 AM wake-ups, set 2-3 alarms 10 minutes apart. Driver will also call if you don't answer the door.</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="border-l-4 border-l-red-500">
+          <CardHeader>
+            <CardTitle className="text-red-700 flex items-center gap-2">
+              <AlertTriangle className="h-6 w-6" />
+              DON'T: Common Mistakes
+            </CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✗ Don't Book Last Minute</h4>
+              <p class="text-xs text-muted-foreground">Booking at 11 PM for a 3 AM pickup is risky. Drivers need time to prepare for early shifts. 8+ hours notice required.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✗ Don't Rely on "First Available" Cabs</h4>
+              <p class="text-xs text-muted-foreground">App-based cabs may not be available at 2-4 AM in Nigdi. Always pre-book with a reliable service.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✗ Don't Skip Address Details</h4>
+              <p class="text-xs text-muted-foreground">"Near Nigdi Station" isn't enough. Provide full address: society name, tower, gate number, nearby landmark.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✗ Don't Cut Timing Too Close</h4>
+              <p class="text-xs text-muted-foreground">Don't calculate "exactly 3 hours" and book pickup at the last minute. Always add 45-60 min buffer.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm mb-1">✗ Don't Ignore Confirmation Messages</h4>
+              <p class="text-xs text-muted-foreground">When we send booking confirmation and driver details via WhatsApp, acknowledge receipt. It ensures both parties are aligned.</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Night Before Preparation -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Moon className="h-8 w-8 text-blue-600" />
+        Night-Before Preparation Checklist
+      </h2>
+
+      <Card className="border-2 border-blue-500">
+        <CardHeader>
+          <CardTitle>Complete This Checklist the Evening Before Your Early Flight</CardTitle>
+          <CardDescription>Reduce stress and ensure smooth early morning departure</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-3 flex items-center gap-2">
+                <PhoneIcon className="h-5 w-5 text-blue-600" />
+                Cab Booking Confirmation
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Booking confirmed with pickup time and location</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Driver details received and contact number saved</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Exact pickup location shared (gate, tower, landmark)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Flight details and terminal number confirmed</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-3 flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-green-600" />
+                Personal Preparation
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>All bags packed and ready at door/entrance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Travel documents (tickets, ID, passport) in easy-access bag</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Phone fully charged (power bank packed)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Morning outfit selected and kept ready</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Quick breakfast/snacks prepared (coffee, fruits, etc.)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-3 flex items-center gap-2">
+                <Clock className="h-5 w-5 text-purple-600" />
+                Wake-Up Strategy
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Set 2-3 alarms (phone + clock) 10 minutes apart</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>First alarm 45 min before pickup (for 2-3 AM pickups)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Place alarm across room (forces you to get up)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Go to bed early (aim for 4-5 hours sleep minimum)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-3 flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-orange-600" />
+                Society/Building Logistics
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Inform security guard about early morning cab pickup</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Ensure main gate will be open/accessible at pickup time</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Note alternate gate if main gate is closed at night</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-5 h-5 border-2 border-gray-300 rounded flex-shrink-0 mt-0.5"></div>
+                  <span>Share security contact with driver (if gated community)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- Route Details -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Route className="h-8 w-8 text-emerald-600" />
+        Early Morning Route: Nigdi to Mumbai Airport
+      </h2>
+
+      <Card className="border-2 border-emerald-500 mb-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Route className="h-6 w-6 text-emerald-600" />
+            Optimal Route at 2-5 AM
+          </CardTitle>
+          <CardDescription>Via Chakan-Talegaon-Mumbai Expressway</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div class="p-3 bg-emerald-50 rounded mb-4">
+            <p class="font-semibold mb-1">Distance: 160 km</p>
+            <p class="text-sm text-muted-foreground">Time: 2.5-3 hours (night/early morning traffic)</p>
+          </div>
+          <div class="mb-4">
+            <h4 class="font-semibold mb-2">Step-by-Step Route:</h4>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+              <li>Start from Nigdi (residential area/society)</li>
+              <li>Head towards Chakan via Nigdi-Chakan Road (20 km, 25 min)</li>
+              <li>Join NH48 at Talegaon junction</li>
+              <li>Enter Mumbai-Pune Expressway (seamless entry at night)</li>
+              <li>Drive 95 km on Expressway (smooth, well-lit, no traffic)</li>
+              <li>Exit at Panvel towards Mumbai (45 km to airport)</li>
+              <li>Reach Mumbai Airport (Terminal 1 or 2 based on airline)</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Early Morning Advantages</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Zero Traffic:</strong> 2-5 AM is absolute clear roads, especially on Expressway</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Faster Travel:</strong> Can complete in 2.5 hours vs 3.5-4 hours during day</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>No Toll Queues:</strong> Instant FASTag processing, zero wait time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Predictable Timing:</strong> ETA accurate to within 5-10 minutes</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Safety & Comfort</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Well-Lit Roads:</strong> Expressway is fully illuminated at night</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>24/7 Toll Plazas:</strong> All facilities open and staffed</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Experienced Drivers:</strong> Our drivers regularly do night runs, familiar with route</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Emergency Support:</strong> Highway patrol, ambulance services available 24/7</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee className="h-8 w-8 text-emerald-600" />
+        Transparent Pricing (No Night Surcharge)
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV (6-Seater)</CardTitle>
+            <CardDescription>Same price, any time of day</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive, 24/7</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>No night surcharge for 2-5 AM pickups</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>All tolls included (₹665 expressway toll)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>No driver allowance or hidden fees</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                <span>Up to 6 passengers, 3 large + 3 cabin bags</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>BYD eMax 7 (6-Seater Luxury)</CardTitle>
+            <CardDescription>Premium comfort for early flights</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury, 24/7</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>No night surcharge - fair pricing always</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Premium captain seats for maximum comfort</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Perfect for executives and families</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                <span>Extra legroom, ideal for long early morning journey</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="mt-6 bg-yellow-50 border-l-4 border-l-yellow-500">
+        <CardContent class="pt-6">
+          <h4 class="font-semibold mb-2 flex items-center gap-2">
+            <AlertTriangle className="h-5 w-5 text-yellow-600" />
+            Why No Night Surcharge?
+          </h4>
+          <p class="text-sm text-muted-foreground leading-relaxed">
+            Many cab services charge 1.5x-2x rates for early morning pickups. We believe this is unfair - you shouldn't be penalized for having an early flight. Our pricing is transparent and consistent 24/7 because we plan our driver shifts to accommodate all hours, not as a premium service but as part of our standard offering.
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <!-- FAQs -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle className="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Related Services & Guides</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Service Pages</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/electric-cab-service-nigdi" class="text-emerald-600 hover:underline text-sm">
+                  → Electric Cab Service in Nigdi
+                </a>
+              </li>
+              <li>
+                <a href="/routes/nigdi-to-mumbai-airport" class="text-emerald-600 hover:underline text-sm">
+                  → Nigdi to Mumbai Airport Route Details
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Related Guides</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2">
+              <li>
+                <a href="/blog/pcmc-industrial-area-mumbai-airport-cab-guide" class="text-emerald-600 hover:underline text-sm">
+                  → PCMC Industrial Area to Mumbai Airport Guide
+                </a>
+              </li>
+              <li>
+                <a href="/blog/pimple-saudagar-chowk-mumbai-airport-timing-guide" class="text-emerald-600 hover:underline text-sm">
+                  → Pimple Saudagar Timing Guide
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <Card className="bg-gradient-to-r from-orange-600 to-red-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Never Miss an Early Flight Again</h3>
+          <p class="mb-6 text-orange-50">
+            Book your early morning airport cab from Nigdi with confidence. 100% punctuality guarantee, no night surcharge, experienced drivers who understand the critical importance of your early flight.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need an early morning cab from Nigdi to Mumbai Airport on [DATE] at [TIME] for my [FLIGHT TIME] flight`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Book Early Morning Cab
+              </Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-orange-600 hover:bg-orange-50">
+                <PhoneIcon className="mr-2 h-5 w-5" />
+                Call +91 74982 64215
+              </Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+  </article>
+</MainLayout>
