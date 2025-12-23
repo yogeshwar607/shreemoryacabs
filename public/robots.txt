@@ -16,13 +16,34 @@ Crawl-delay: 1
 Allow: /routes/
 Allow: /fleet/
 Allow: /blog/
-Allow: /electric-cab-service-hinjewadi
-Allow: /electric-cab-service-wakad
-Allow: /electric-cab-service-baner
+
+# Airport pages
 Allow: /mumbai-airport-to-pune-electric-cab
 Allow: /navi-mumbai-airport-to-pune-cab
 Allow: /pune-airport-cab-service
 Allow: /pune-to-shirdi-electric-cab
+
+# Locality service pages (comprehensive)
+Allow: /electric-cab-service-hinjewadi
+Allow: /electric-cab-service-wakad
+Allow: /electric-cab-service-baner
+Allow: /electric-cab-service-ravet
+Allow: /electric-cab-service-pcmc
+Allow: /electric-cab-service-nigdi
+Allow: /electric-cab-service-pimple-saudagar
+Allow: /electric-cab-service-pimple-nilakh
+Allow: /electric-cab-service-aundh
+Allow: /electric-cab-service-balewadi
+Allow: /electric-cab-service-kothrud
+Allow: /electric-cab-service-hadapsar
+Allow: /electric-cab-service-viman-nagar
+
+# Route-specific pages
+Allow: /routes/ravet-to-mumbai-airport
+Allow: /routes/pcmc-to-mumbai-airport
+Allow: /routes/aundh-to-mumbai-airport
+Allow: /routes/pimple-saudagar-to-mumbai-airport
+Allow: /routes/nigdi-to-mumbai-airport
 
 # Special rules for specific bots
 User-agent: Googlebot

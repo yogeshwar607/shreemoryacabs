@@ -11,6 +11,16 @@ export function WhatsAppButton({
   className = ""
 }: WhatsAppButtonProps) {
   const handleClick = () => {
+    // Track WhatsApp click event in Google Analytics
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: message,
+        page_location: window.location.pathname,
+        page_title: document.title
+      });
+    }
+
     const link = generateWhatsAppLink(message);
     window.open(link, "_blank");
   };
