@@ -1,0 +1,134 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Plane, MapPin, Clock, IndianRupee, CheckCircle2, Route as RouteIcon, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Mumbai Airport to Wakad Cab Service - Electric Cab ₹3,700';
+const description = 'Book electric cab from Mumbai Airport to Wakad. Terminal 1 & 2 pickup, 165 km, 3-3.5 hours. Fixed rates, 24/7 service, free flight tracking.';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Routes', item: `${SITE_URL}/routes` },
+    { '@type': 'ListItem', position: 3, name: 'Mumbai Airport to Wakad' },
+  ],
+};
+
+const faqs = [
+  { question: 'How much is a cab from Mumbai Airport to Wakad?', answer: '₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (luxury). All-inclusive with tolls.' },
+  { question: 'How long from Mumbai Airport to Wakad?', answer: '3-3.5 hours (165 km) via Expressway. Early morning arrivals reach faster with clear roads.' },
+  { question: 'Do you pickup from both terminals at Mumbai Airport?', answer: 'Yes, Terminal 1 (domestic) and Terminal 2 (domestic + international). Driver coordinates via call after landing.' },
+  { question: 'Is service available for late night arrivals?', answer: 'Yes, 24/7 service available. Book in advance for late night/early morning arrivals, share flight details.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })),
+};
+---
+
+<MainLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/routes" class="hover:text-foreground">Routes</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Mumbai Airport to Wakad</span>
+    </nav>
+
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Return Journey</Badge>
+        <Badge variant="secondary">Wakad</Badge>
+        <Badge variant="outline">24/7</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground">{description}</p>
+    </header>
+
+    <div class="grid md:grid-cols-3 gap-4 mb-12">
+      <Card><CardContent class="pt-6 text-center"><MapPin class="h-8 w-8 mx-auto mb-2 text-emerald-600" /><p class="text-2xl font-bold">165 km</p><p class="text-sm text-muted-foreground">Distance</p></CardContent></Card>
+      <Card><CardContent class="pt-6 text-center"><Clock class="h-8 w-8 mx-auto mb-2 text-blue-600" /><p class="text-2xl font-bold">3-3.5 hrs</p><p class="text-sm text-muted-foreground">Travel Time</p></CardContent></Card>
+      <Card><CardContent class="pt-6 text-center"><IndianRupee class="h-8 w-8 mx-auto mb-2 text-purple-600" /><p class="text-2xl font-bold">₹3,700</p><p class="text-sm text-muted-foreground">Starting Price</p></CardContent></Card>
+    </div>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Route Details</h2>
+      <Card><CardContent class="pt-6"><ol class="space-y-2 text-sm">
+        <li class="flex gap-2"><span class="font-bold text-emerald-600">1.</span>Pickup from Mumbai Airport (T1/T2)</li>
+        <li class="flex gap-2"><span class="font-bold text-emerald-600">2.</span>Mumbai-Pune Expressway via Panvel (95 km)</li>
+        <li class="flex gap-2"><span class="font-bold text-emerald-600">3.</span>Exit towards Pune via Talegaon</li>
+        <li class="flex gap-2"><span class="font-bold text-emerald-600">4.</span>Direct to Wakad via Mumbai-Pune Highway</li>
+        <li class="flex gap-2"><span class="font-bold text-emerald-600">5.</span>Drop at your exact Wakad address</li>
+      </ol></CardContent></Card>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Pricing</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card class="border-2 border-emerald-500">
+          <CardHeader><CardTitle>Kia Carens EV</CardTitle><CardDescription>6-Seater</CardDescription></CardHeader>
+          <CardContent>
+            <p class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600" /> All tolls included</li>
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600" /> 30 min free waiting</li>
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600" /> Flight tracking</li>
+            </ul>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader><CardTitle>BYD eMax 7</CardTitle><CardDescription>Luxury 6-Seater</CardDescription></CardHeader>
+          <CardContent>
+            <p class="text-4xl font-bold text-blue-600 mb-4">₹4,200</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600" /> Premium seats</li>
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600" /> Extra comfort</li>
+              <li class="flex items-center gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600" /> 45 min free waiting</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">FAQs</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (<Card><CardHeader><CardTitle className="text-lg">{faq.question}</CardTitle></CardHeader><CardContent><p class="text-sm text-muted-foreground">{faq.answer}</p></CardContent></Card>))}
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <Card class="bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Book Mumbai Airport to Wakad Cab</h3>
+          <p class="mb-6 text-emerald-50">Fixed rates • 24/7 service • Flight tracking</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I need a cab from Mumbai Airport to Wakad`} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />Book via WhatsApp</Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-emerald-600 hover:bg-emerald-50">
+                <Phone className="mr-2 h-5 w-5" />Call Now</Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+  </div>
+</MainLayout>

@@ -1,0 +1,722 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { MapPin, Clock, IndianRupee, MessageCircle, Phone, CheckCircle2, TrendingUp, Zap, Building2, Route, Calendar, Users, Star, Briefcase, ArrowRight } from 'lucide-react';
+
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+
+const title = 'Navi Mumbai Airport to Hinjewadi: Complete 2025 Guide for IT Professionals';
+const description = 'Ultimate guide to Navi Mumbai International Airport to Hinjewadi cab service. Distance, time, routes, pricing for Phase 1/2/3 IT parks. Professional electric cabs for Infosys, TCS, Wipro employees.';
+
+const faqs = [
+  {
+    question: 'How far is Navi Mumbai Airport from Hinjewadi IT Park?',
+    answer: 'Navi Mumbai International Airport (Navi Mumbai Airport) is approximately 140-150 km from Hinjewadi, depending on which phase you\'re going to. Phase 1 is closest (~140 km), Phase 2 is ~145 km, and Phase 3 is ~150 km from the airport.',
+  },
+  {
+    question: 'How long does it take to reach Hinjewadi from Navi Mumbai Airport?',
+    answer: 'The journey takes 2.5-3 hours via Mumbai-Pune Expressway. Early morning or late night trips can be as quick as 2.5 hours, while peak traffic times might extend to 3-3.5 hours. The route is mostly highway driving.',
+  },
+  {
+    question: 'What is the cab fare from Navi Mumbai Airport to Hinjewadi?',
+    answer: 'GreenEVCabs charges ₹3,500 for Kia Carens (6-seater) and ₹4,000 for BYD eMax 7 (6-seater premium). Fixed pricing with no surge charges, tolls included. 24/7 availability.',
+  },
+  {
+    question: 'Is Navi Mumbai Airport closer to Hinjewadi than Mumbai Airport?',
+    answer: 'Yes, Navi Mumbai Airport is approximately 20-25 km closer to Hinjewadi compared to Mumbai Airport (Chhatrapati Shivaji Maharaj International Airport). This saves 20-30 minutes of travel time and makes it more convenient for Pune travelers.',
+  },
+  {
+    question: 'Which route is best from Navi Mumbai Airport to Hinjewadi?',
+    answer: 'The best route is: Navi Mumbai Airport → Sion-Panvel Highway → Mumbai-Pune Expressway → Exit at Kiwale/Wakad → Hinjewadi Road → Your destination in Phase 1/2/3. This is the fastest and most reliable route.',
+  },
+  {
+    question: 'Can I book a cab in advance from Navi Mumbai Airport to Hinjewadi?',
+    answer: 'Yes, absolutely. We recommend booking 24 hours in advance for guaranteed availability. For early morning or late night flights, advance booking ensures your driver is ready at the airport when you land.',
+  },
+  {
+    question: 'Do you have electric cabs for Navi Mumbai Airport to Hinjewadi route?',
+    answer: 'Yes, all our cabs are electric vehicles. We operate Kia Carens EV and BYD eMax 7 with full range coverage for Navi Mumbai Airport to Hinjewadi. No range anxiety, comfortable, and eco-friendly.',
+  },
+  {
+    question: 'Is there a corporate package for regular Navi Mumbai Airport trips?',
+    answer: 'Yes, we offer monthly corporate packages for IT professionals with regular airport transfers. Discounted rates, priority booking, dedicated account manager, and invoice support for companies. Contact us for custom packages.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: 'Navi Mumbai Airport to Hinjewadi Complete Guide' },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  author: { '@type': 'Organization', name: 'GreenEVCabs' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` },
+  },
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
+};
+---
+
+<MainLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <div class="mb-8">
+      <Badge className="mb-4">Airport Guide</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground">{description}</p>
+      <div class="flex items-center gap-4 mt-4 text-sm text-muted-foreground">
+        <span class="flex items-center gap-1"><Clock className="h-4 w-4" /> 10 min read</span>
+        <span>Updated January 2025</span>
+      </div>
+    </div>
+
+    <Card class="mb-8 border-emerald-200 bg-emerald-50">
+      <CardContent class="pt-6">
+        <p class="text-lg font-medium mb-4">Quick Summary: Navi Mumbai Airport to Hinjewadi</p>
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <div class="flex items-center gap-2">
+            <MapPin class="h-5 w-5 text-emerald-600" />
+            <span class="font-semibold">140-150 km</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Clock class="h-5 w-5 text-blue-600" />
+            <span class="font-semibold">2.5-3 hours</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <IndianRupee class="h-5 w-5 text-purple-600" />
+            <span class="font-semibold">₹3,500-4,000</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700">
+          <strong>20-25 km closer</strong> than Mumbai Airport • Faster access to Pune • Modern infrastructure • Perfect for Hinjewadi IT professionals
+        </p>
+      </CardContent>
+    </Card>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 class="h-8 w-8 text-emerald-600" />
+        Navi Mumbai International Airport: Game Changer for Hinjewadi
+      </h2>
+
+      <p>
+        Navi Mumbai International Airport (NMIA), also known as Navi Mumbai Airport, is India's newest greenfield airport located in Ulwe, Navi Mumbai. For IT professionals working in Hinjewadi, this airport is a significant improvement over the existing Mumbai Airport (CSMIA).
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Why Navi Mumbai Airport is Better for Hinjewadi Travelers</h3>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <Card class="border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <CheckCircle2 class="h-5 w-5 text-green-600" />
+              20-25 km Shorter Distance
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Navi Mumbai Airport is ~140 km from Hinjewadi compared to Mumbai Airport's ~165 km. This saves approximately 20-30 minutes of travel time.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <CheckCircle2 class="h-5 w-5 text-green-600" />
+              Less City Traffic
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Direct access to Mumbai-Pune Expressway without navigating through congested Mumbai city roads. Faster, more predictable journey.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <CheckCircle2 class="h-5 w-5 text-green-600" />
+              Modern Infrastructure
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Brand new terminal with state-of-the-art facilities, organized pickup zones, and better passenger experience compared to crowded Mumbai Airport.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <CheckCircle2 class="h-5 w-5 text-green-600" />
+              Lower Cab Fares
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              ₹200-300 cheaper than Mumbai Airport pickups due to shorter distance. Over time, this adds up to significant savings for frequent travelers.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Route class="h-8 w-8 text-emerald-600" />
+        Best Route: Navi Mumbai Airport to Hinjewadi
+      </h2>
+
+      <p>
+        The optimal route from Navi Mumbai Airport to Hinjewadi is straightforward and primarily highway-based, making it comfortable and predictable for travelers.
+      </p>
+
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-4">Detailed Route Breakdown</h3>
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">1</div>
+            <div>
+              <h4 class="font-semibold mb-1">Navi Mumbai Airport Exit</h4>
+              <p class="text-sm text-gray-600">Exit the airport and join Sion-Panvel Highway heading towards Panvel. Distance: ~5 km, Time: 5-10 minutes</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">2</div>
+            <div>
+              <h4 class="font-semibold mb-1">Panvel to Expressway Entrance</h4>
+              <p class="text-sm text-gray-600">Continue through Panvel and enter Mumbai-Pune Expressway (start point). Distance: ~15 km, Time: 15-20 minutes</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">3</div>
+            <div>
+              <h4 class="font-semibold mb-1">Mumbai-Pune Expressway</h4>
+              <p class="text-sm text-gray-600">Cruise on the expressway passing 5 toll plazas (Khandala, Talegaon, etc.). Distance: ~94.5 km, Time: 80-90 minutes</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">4</div>
+            <div>
+              <h4 class="font-semibold mb-1">Exit at Kiwale/Wakad</h4>
+              <p class="text-sm text-gray-600">Take the Kiwale/Wakad exit from the expressway. This is the closest exit for Hinjewadi. Distance: At km 94.5 marker, Time: Instant</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">5</div>
+            <div>
+              <h4 class="font-semibold mb-1">Kiwale to Hinjewadi</h4>
+              <p class="text-sm text-gray-600">Follow Hinjewadi Road through Wakad. Destination depends on Phase 1/2/3. Distance: ~15-25 km, Time: 20-35 minutes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+        <p class="font-medium mb-2">Total Distance & Time</p>
+        <ul class="ml-4 space-y-1 text-sm">
+          <li><strong>Hinjewadi Phase 1:</strong> ~140 km, 2.5-3 hours</li>
+          <li><strong>Hinjewadi Phase 2:</strong> ~145 km, 2.75-3.25 hours</li>
+          <li><strong>Hinjewadi Phase 3:</strong> ~150 km, 3-3.5 hours</li>
+        </ul>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Alternative Route (Via Lonavala)</h3>
+
+      <p>
+        Some drivers may suggest an alternative via Lonavala exit, but the Kiwale/Wakad exit is more direct and saves 10-15 minutes for Hinjewadi destinations.
+      </p>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <IndianRupee class="h-8 w-8 text-emerald-600" />
+        Pricing & Vehicle Options
+      </h2>
+
+      <p class="mb-6">
+        GreenEVCabs offers fixed, transparent pricing for Navi Mumbai Airport to Hinjewadi trips. No surge pricing, no hidden charges, tolls included.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <Card class="border-2 border-emerald-500">
+          <CardHeader class="bg-emerald-50">
+            <CardTitle class="text-xl flex items-center justify-between">
+              <span>Kia Carens EV</span>
+              <Badge className="bg-emerald-600">Popular</Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent class="pt-6">
+            <p class="text-3xl font-bold text-emerald-700 mb-4">₹3,500</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>6-seater electric SUV</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>Spacious legroom & boot space</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>Air conditioning</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>2 large suitcases + cabin bags</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>Professional driver</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600" />
+                <span>All tolls included</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card class="border-2 border-purple-500">
+          <CardHeader class="bg-purple-50">
+            <CardTitle class="text-xl flex items-center justify-between">
+              <span>BYD eMax 7</span>
+              <Badge className="bg-purple-600">Premium</Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent class="pt-6">
+            <p class="text-3xl font-bold text-purple-700 mb-4">₹4,000</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>6-seater premium electric SUV</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>Extra spacious captain seats</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>Dual-zone climate control</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>3 large suitcases + cabin bags</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>Premium driver service</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 class="h-4 w-4 text-purple-600" />
+                <span>All tolls + bottled water</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+        <p class="font-semibold text-yellow-800 mb-2">No Surge Pricing Policy</p>
+        <p class="text-yellow-700 text-sm">
+          Unlike app-based cabs, our prices remain fixed 24/7. No surge during peak hours, holidays, or late nights. What you see is what you pay.
+        </p>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 class="h-8 w-8 text-emerald-600" />
+        Hinjewadi IT Parks: Phase-wise Guide
+      </h2>
+
+      <p class="mb-6">
+        Hinjewadi has three distinct phases, each with major IT parks. Knowing your exact destination helps optimize the route and timing.
+      </p>
+
+      <div class="space-y-6">
+        <Card class="border-blue-200">
+          <CardHeader class="bg-blue-50">
+            <CardTitle class="text-xl">Hinjewadi Phase 1 (~140 km from Navi Mumbai Airport)</CardTitle>
+          </CardHeader>
+          <CardContent class="pt-6">
+            <p class="text-sm text-gray-700 mb-3">
+              The original Rajiv Gandhi Infotech Park. Most mature phase with established infrastructure.
+            </p>
+            <div class="mb-3">
+              <p class="font-semibold text-sm mb-2">Major IT Companies:</p>
+              <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                <span>• Infosys SEZ</span>
+                <span>• Wipro Campus</span>
+                <span>• Cognizant</span>
+                <span>• TCS</span>
+                <span>• Tech Mahindra</span>
+                <span>• Persistent Systems</span>
+              </div>
+            </div>
+            <div class="bg-blue-100 rounded p-3">
+              <p class="text-xs text-blue-800">
+                <strong>Time from Navi Mumbai Airport:</strong> 2.5-3 hours | <strong>Cab Fare:</strong> ₹3,500-4,000
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card class="border-purple-200">
+          <CardHeader class="bg-purple-50">
+            <CardTitle class="text-xl">Hinjewadi Phase 2 (~145 km from Navi Mumbai Airport)</CardTitle>
+          </CardHeader>
+          <CardContent class="pt-6">
+            <p class="text-sm text-gray-700 mb-3">
+              Expansion phase with mix of IT parks and residential complexes.
+            </p>
+            <div class="mb-3">
+              <p class="font-semibold text-sm mb-2">Major IT Companies:</p>
+              <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                <span>• Blue Ridge SEZ</span>
+                <span>• Megapolis IT Park</span>
+                <span>• Agilent Technologies</span>
+                <span>• Accenture</span>
+                <span>• Capgemini</span>
+                <span>• Larsen & Toubro Infotech</span>
+              </div>
+            </div>
+            <div class="bg-purple-100 rounded p-3">
+              <p class="text-xs text-purple-800">
+                <strong>Time from Navi Mumbai Airport:</strong> 2.75-3.25 hours | <strong>Cab Fare:</strong> ₹3,500-4,000
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card class="border-green-200">
+          <CardHeader class="bg-green-50">
+            <CardTitle class="text-xl">Hinjewadi Phase 3 (~150 km from Navi Mumbai Airport)</CardTitle>
+          </CardHeader>
+          <CardContent class="pt-6">
+            <p class="text-sm text-gray-700 mb-3">
+              Newest phase with upcoming IT parks and residential townships.
+            </p>
+            <div class="mb-3">
+              <p class="font-semibold text-sm mb-2">Major IT Companies:</p>
+              <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                <span>• Tata Consultancy Services</span>
+                <span>• Mphasis</span>
+                <span>• Syntel</span>
+                <span>• Zensar Technologies</span>
+                <span>• Various startups</span>
+                <span>• Emerging tech companies</span>
+              </div>
+            </div>
+            <div class="bg-green-100 rounded p-3">
+              <p class="text-xs text-green-800">
+                <strong>Time from Navi Mumbai Airport:</strong> 3-3.5 hours | <strong>Cab Fare:</strong> ₹3,500-4,000
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Briefcase class="h-8 w-8 text-emerald-600" />
+        Corporate Packages for IT Professionals
+      </h2>
+
+      <p class="mb-6">
+        Frequent flyer? We offer specialized corporate packages for IT professionals with regular Navi Mumbai Airport to Hinjewadi trips.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-4 mb-6">
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Monthly Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>4+ trips/month</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>10% discount</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Priority booking</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Monthly invoice</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Quarterly Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>12+ trips/quarter</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>15% discount</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Dedicated driver</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Flexible cancellation</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle class="text-lg">Annual Package</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>40+ trips/year</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>20% discount</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Account manager</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle2 class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <span>Custom billing</span>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4">
+        <p class="font-semibold text-blue-800 mb-2">Enterprise Solutions</p>
+        <p class="text-blue-700 text-sm">
+          For companies with multiple employees traveling regularly, we offer customized enterprise packages with dedicated account support, online booking portal, and consolidated billing.
+        </p>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Clock class="h-8 w-8 text-emerald-600" />
+        Best Times to Travel & Traffic Insights
+      </h2>
+
+      <p class="mb-6">
+        Understanding traffic patterns helps plan your journey better, especially for important flights or meetings.
+      </p>
+
+      <div class="space-y-4">
+        <Card class="border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <CheckCircle2 class="h-5 w-5 text-green-600" />
+              Best Times: Early Morning (4-7 AM) & Late Night (10 PM-12 AM)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Lightest traffic, fastest journey times. Expressway is clear. Expect 2.5-2.75 hours for Hinjewadi Phase 1. Recommended for important flights or urgent travel.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-yellow-200 bg-yellow-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <TrendingUp class="h-5 w-5 text-yellow-600" />
+              Moderate Times: Mid-Morning (7-10 AM) & Evening (6-9 PM)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Some expressway traffic, Panvel area congestion possible. Expect 2.75-3.25 hours for Hinjewadi Phase 1. Build in 15-20 minute buffer for flight departures.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-orange-200 bg-orange-50">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-center gap-2">
+              <TrendingUp class="h-5 w-5 text-orange-600" />
+              Avoid If Possible: Late Morning (10 AM-12 PM) & Afternoon (2-5 PM)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-700">
+              Weekend traffic on expressway, possible Panvel delays. Expect 3-3.5 hours for Hinjewadi Phase 1. Not recommended for tight flight schedules. Add 30-minute buffer.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mt-6">
+        <p class="font-semibold text-blue-800 mb-2">Pro Tip: Monsoon Season (June-September)</p>
+        <p class="text-blue-700 text-sm">
+          Mumbai-Pune Expressway can have waterlogging and slower speeds during heavy rains. During monsoon, add 30-45 minutes to journey time and inform your driver if you have a tight connection.
+        </p>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6">Why Choose GreenEVCabs for Navi Mumbai Airport Transfers?</h2>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <Zap class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">100% Electric Fleet</h4>
+                <p class="text-sm text-gray-600">Eco-friendly travel with zero emissions. Modern Kia Carens and BYD eMax 7 EVs with full range coverage for the route.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <Users class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Professional Drivers</h4>
+                <p class="text-sm text-gray-600">Experienced drivers familiar with Navi Mumbai Airport and all Hinjewadi phases. Polite, punctual, and professional.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <Clock class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Flight Tracking</h4>
+                <p class="text-sm text-gray-600">We monitor your flight in real-time. If delayed, driver adjusts pickup time automatically. No extra waiting charges.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <IndianRupee class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Transparent Pricing</h4>
+                <p class="text-sm text-gray-600">Fixed rates with all tolls included. No hidden charges, no surge pricing. What you book is what you pay.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-600">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <Card class="bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+      <CardContent class="pt-8 pb-8">
+        <div class="text-center mb-6">
+          <h3 class="text-3xl font-bold mb-3">Book Your Navi Mumbai Airport to Hinjewadi Cab</h3>
+          <p class="text-lg opacity-90 mb-2">Premium electric cabs • Fixed pricing • 24/7 service</p>
+          <div class="flex items-center justify-center gap-8 text-sm mt-4 flex-wrap">
+            <span class="flex items-center gap-2">
+              <IndianRupee class="h-5 w-5" />
+              ₹3,500 - ₹4,000
+            </span>
+            <span class="flex items-center gap-2">
+              <MapPin class="h-5 w-5" />
+              140-150 km
+            </span>
+            <span class="flex items-center gap-2">
+              <Clock class="h-5 w-5" />
+              2.5-3 hours
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=I need a cab from Navi Mumbai Airport to Hinjewadi`} target="_blank">
+            <Button size="lg" variant="secondary" className="text-lg">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href={`tel:+${WHATSAPP_NUMBER}`}>
+            <Button size="lg" variant="outline" className="bg-white text-emerald-600 hover:bg-gray-100 text-lg">
+              <Phone class="mr-2 h-5 w-5" />
+              Call Now
+            </Button>
+          </a>
+        </div>
+      </CardContent>
+    </Card>
+  </article>
+</MainLayout>

@@ -1,0 +1,283 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Moon, Clock, Shield, MapPin, AlertCircle, CheckCircle2, IndianRupee, MessageCircle, Phone } from 'lucide-react';
+
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+
+const title = 'Late Night Arrival at Mumbai Airport: Complete Guide to Reaching Pune Safely';
+const description = 'Complete guide for late night arrivals (10 PM - 6 AM) at Mumbai Airport. 24/7 cab service to Pune, safety tips, pricing, terminal pickup instructions.';
+const publishDate = '2025-01-15';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: 'Late Night Mumbai Airport to Pune Guide' },
+  ],
+};
+
+const faqs = [
+  { question: 'Are cabs available from Mumbai Airport to Pune at midnight?', answer: 'Yes, GreenEVCabs operates 24/7. Book in advance for late night arrivals (10 PM - 6 AM) to ensure driver allocation. Share flight details when booking.' },
+  { question: 'Is it safe to travel from Mumbai Airport to Pune at night?', answer: 'Yes, completely safe. Mumbai-Pune Expressway is well-lit, patrolled 24/7. Our drivers are experienced with night driving, all vehicles have GPS tracking, and we share live location with you.' },
+  { question: 'How much does a late night cab cost from Mumbai Airport to Pune?', answer: 'No surge pricing. Same flat rates: ₹3,700 (Kia Carens) or ₹4,200 (BYD eMax 7). No extra charges for late night pickup.' },
+  { question: 'How long does it take at night from Mumbai Airport to Pune?', answer: '2.5-3 hours (145 km) during late night/early morning. Roads are clear, less traffic on Expressway.' },
+  { question: 'What if my international flight lands at 1 AM - will driver wait?', answer: 'Yes. Share flight number when booking. We track delays automatically and driver waits up to 60 min free for international arrivals after landing.' },
+  { question: 'Can I book a late night cab on the same day?', answer: 'Yes, if available. However, advance booking (4-6 hours minimum) recommended for late night arrivals to ensure guaranteed availability.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })),
+};
+---
+
+<MainLayout {title} {description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <nav class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-foreground">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/blog" class="hover:text-foreground">Blog</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Late Night Mumbai Airport to Pune Guide</span>
+    </nav>
+
+    <header class="mb-8">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Badge variant="default">Late Night Travel</Badge>
+        <Badge variant="secondary">Safety Guide</Badge>
+        <Badge variant="outline">24/7 Service</Badge>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground mb-4">{description}</p>
+      <p class="text-sm text-muted-foreground">Published: {publishDate} • 8 min read</p>
+    </header>
+
+    <section class="mb-12 prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed">
+        Landing at Mumbai Airport late at night or in the early morning hours can be stressful, especially if you need to reach Pune. Whether it's a red-eye international flight touching down at 1 AM or a delayed domestic flight arriving at midnight, getting reliable, safe transportation to Pune at odd hours is a legitimate concern.
+      </p>
+      <p class="text-lg leading-relaxed">
+        This comprehensive guide covers everything you need to know about <strong>late night arrivals at Mumbai Airport and reaching Pune safely</strong>: 24/7 cab availability, safety considerations, pricing, terminal pickup procedures, and booking strategies for peace of mind.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Moon class="h-8 w-8 text-blue-600" />
+        Understanding "Late Night" Arrivals
+      </h2>
+
+      <Card>
+        <CardContent class="pt-6">
+          <p class="mb-4">We define late night arrivals as flights landing between <strong>10 PM and 6 AM</strong>. Here's the breakdown:</p>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="p-4 bg-blue-50 rounded">
+              <h4 class="font-semibold mb-2">Evening (10 PM - 12 AM)</h4>
+              <p class="text-sm text-muted-foreground">Still moderate activity at airport. More cabs available. Slightly less concern.</p>
+            </div>
+            <div class="p-4 bg-purple-50 rounded">
+              <h4 class="font-semibold mb-2">Midnight (12 AM - 4 AM)</h4>
+              <p class="text-sm text-muted-foreground">Quietest hours. Fewer cabs. Pre-booking essential. Peak safety concerns.</p>
+            </div>
+            <div class="p-4 bg-orange-50 rounded">
+              <h4 class="font-semibold mb-2">Early Morning (4 AM - 6 AM)</h4>
+              <p class="text-sm text-muted-foreground">Airport activity picking up. First domestic flights. More driver availability.</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Shield class="h-8 w-8 text-emerald-600" />
+        Safety First: Why Pre-Booked Electric Cabs Are Safest
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-l-4 border-l-green-500">
+          <CardHeader>
+            <CardTitle className="text-green-700">✓ Pre-Booked Electric Cabs (Recommended)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> Driver details shared in advance</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> GPS tracking throughout journey</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> Fixed pricing - no surge, no haggling</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> Driver vetted, verified, experienced</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> Flight tracking - driver adjusts for delays</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0"/> Emergency support number 24/7</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="border-l-4 border-l-red-500">
+          <CardHeader>
+            <CardTitle className="text-red-700">✗ Airport Taxis/Auto (Not Recommended)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> Limited availability post-midnight</li>
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> Surge pricing 1.5x-2x at night</li>
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> Driver unknown until you get in</li>
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> No pre-confirmed pricing</li>
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> May refuse Pune trips at night</li>
+              <li class="flex gap-2"><AlertCircle class="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0"/> No live tracking or accountability</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Terminal-Wise Pickup at Late Night Hours</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Terminal 1 (Domestic)</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3 text-sm">
+            <p><strong>Late Night Activity:</strong> Less crowded post-11 PM. Most domestic flights stop after midnight.</p>
+            <p><strong>Pickup Point:</strong> Arrivals exit, near pre-paid taxi counter. Driver will call and guide you.</p>
+            <p><strong>Waiting Area:</strong> Well-lit arrivals hall. Stay inside until driver confirms arrival.</p>
+            <p><strong>Safety Tip:</strong> Don't go to parking lot alone. Driver comes to terminal entrance.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Terminal 2 (International + Domestic)</CardTitle>
+          </CardHeader>
+          <CardContent class="space-y-3 text-sm">
+            <p><strong>Late Night Activity:</strong> International flights continue throughout night. More active than T1.</p>
+            <p><strong>Pickup Point:</strong> International arrivals - Gate 8. Domestic - similar to T1.</p>
+            <p><strong>Customs Delay:</strong> International arrivals can take 45-60 min. Driver waits patiently.</p>
+            <p><strong>Safety Tip:</strong> After clearing customs, call driver. They guide you to exact spot.</p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Pricing for Late Night Arrivals</h2>
+
+      <Card className="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-l-emerald-500">
+        <CardContent class="pt-6">
+          <h3 class="text-xl font-bold mb-2">No Night Surcharge Policy</h3>
+          <p class="text-sm leading-relaxed">
+            Unlike many cab services that charge 1.5x-2x during late hours, we maintain <strong>flat pricing 24/7</strong>. A 2 AM pickup costs the same as a 2 PM pickup. We believe late night travelers shouldn't be penalized with surge pricing.
+          </p>
+        </CardContent>
+      </Card>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <Card className="border-2 border-emerald-500">
+          <CardHeader>
+            <CardTitle>Kia Carens EV</CardTitle>
+            <CardDescription>6-Seater Electric SUV</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> Same price 24/7</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> All tolls included</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> 30 min free waiting</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> Flight tracking</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>BYD eMax 7</CardTitle>
+            <CardDescription>Luxury 6-Seater EV</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p class="text-4xl font-bold text-blue-600 mb-4">₹4,200</p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> No night surcharge</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> Premium seats</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> 60 min free waiting</li>
+              <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> Extra comfort</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Booking Strategy for Late Night Arrivals</h2>
+
+      <div class="space-y-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Best Practice: Book 6-12 Hours in Advance</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="mb-4 text-sm">For a 1 AM arrival, book by 6-7 PM the previous day. For a 4 AM arrival, book by 10 PM previous night.</p>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <h4 class="font-semibold mb-2">What to Share When Booking:</h4>
+                <ul class="space-y-1 text-muted-foreground">
+                  <li>• Flight number (for tracking)</li>
+                  <li>• Scheduled arrival time</li>
+                  <li>• Terminal number (T1 or T2)</li>
+                  <li>• Destination in Pune (exact address)</li>
+                  <li>• Number of passengers & luggage</li>
+                  <li>• Your mobile number</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">What You'll Receive:</h4>
+                <ul class="space-y-1 text-muted-foreground">
+                  <li>• Instant booking confirmation</li>
+                  <li>• Driver name & photo (30 min before arrival)</li>
+                  <li>• Driver mobile number</li>
+                  <li>• Vehicle number</li>
+                  <li>• Live tracking link</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">FAQs</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (<Card><CardHeader><CardTitle className="text-lg">{faq.question}</CardTitle></CardHeader><CardContent><p class="text-sm text-muted-foreground">{faq.answer}</p></CardContent></Card>))}
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <Card class="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
+        <CardContent class="pt-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Book Your Late Night Mumbai Airport to Pune Cab</h3>
+          <p class="mb-6 text-blue-50">24/7 service • No surge pricing • Safe & reliable</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=I need late night cab from Mumbai Airport to Pune`} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="secondary"><MessageCircle class="mr-2 h-5 w-5"/>Book via WhatsApp</Button>
+            </a>
+            <a href={`tel:+${WHATSAPP_NUMBER}`}>
+              <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50"><Phone class="mr-2 h-5 w-5"/>Call 24/7</Button>
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+  </article>
+</MainLayout>

@@ -1,0 +1,713 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { MapPin, Navigation, AlertCircle, Clock, CheckCircle2, ArrowRight, Plane, Building2, Phone, MessageCircle, IndianRupee, Users } from 'lucide-react';
+
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '917498264215';
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://greenevcabs.com';
+
+const title = 'Mumbai Airport Arrivals: Complete Cab Pickup Guide for Pune Travelers 2025';
+const description = 'Step-by-step guide to finding your pre-booked cab at Mumbai Airport. Terminal 1 & 2 pickup points, exact exits, navigation from arrivals, and common mistakes to avoid.';
+
+const faqs = [
+  {
+    question: 'Which terminal will I arrive at in Mumbai Airport?',
+    answer: 'Terminal 1 (T1) handles domestic flights from budget airlines (IndiGo, SpiceJet, Air India Express). Terminal 2 (T2) handles all international flights and domestic flights from full-service airlines (Air India, Vistara). Check your ticket or airline to confirm.',
+  },
+  {
+    question: 'Where exactly should I meet my cab driver at Mumbai Airport?',
+    answer: 'For Terminal 1: Exit from Gate 2 (Arrivals), turn left, walk to the parking plaza entrance. For Terminal 2: Exit from Gate 3 (Domestic) or Gate 5 (International), go to the designated cab pickup area in the parking plaza. Your driver will share exact location on WhatsApp.',
+  },
+  {
+    question: 'How long does it take to reach the cab pickup point from arrivals?',
+    answer: 'Terminal 1: 3-5 minutes walk from baggage claim to parking plaza. Terminal 2: 5-8 minutes walk from baggage claim to cab pickup area. Allow 10-15 minutes total from landing to meeting your driver (including immigration for international flights).',
+  },
+  {
+    question: 'Can I find my pre-booked cab easily at Mumbai Airport?',
+    answer: 'Yes, absolutely. GreenEVCabs sends you driver details (name, phone, vehicle number) 2-3 hours before your flight lands. Driver will track your flight and wait at the designated pickup point. You can call/WhatsApp the driver for exact location.',
+  },
+  {
+    question: 'What if I arrive at the wrong terminal or get confused?',
+    answer: 'No problem. T1 and T2 are connected by shuttle bus (5-10 min ride). However, your driver will be at the correct terminal based on your flight details. Just call the driver, and they will guide you to the exact pickup location.',
+  },
+  {
+    question: 'Are there multiple exits at each terminal? Which one should I use?',
+    answer: 'Terminal 1 has 4 gates (1-4), but Gate 2 is the main exit for most passengers. Terminal 2 has separate exits for domestic (Gate 3) and international (Gates 5-8). All exits lead to the same parking plaza, but Gate 3 (T2 domestic) and Gate 2 (T1) are most convenient.',
+  },
+  {
+    question: 'Is the cab pickup area inside or outside the terminal?',
+    answer: 'Outside. After exiting the arrivals hall, you walk through a covered pathway to the multi-level parking plaza. Pre-booked cabs wait in designated areas within this parking plaza, not inside the terminal building.',
+  },
+  {
+    question: 'What should I do if I cannot find my driver at the pickup point?',
+    answer: 'First, call or WhatsApp your driver using the contact details sent to you. They will guide you to their exact location. Our drivers are trained to assist passengers and will come to meet you if needed. We also provide 24/7 customer support.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: 'Mumbai Airport Arrivals Cab Pickup Guide' },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  author: { '@type': 'Organization', name: 'GreenEVCabs' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'GreenEVCabs',
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` },
+  },
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
+};
+---
+
+<MainLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article class="container mx-auto px-4 py-12 max-w-4xl">
+    <div class="mb-8">
+      <Badge className="mb-4">Arrival Guide</Badge>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
+      <p class="text-xl text-muted-foreground">{description}</p>
+      <div class="flex items-center gap-4 mt-4 text-sm text-muted-foreground">
+        <span class="flex items-center gap-1"><Clock className="h-4 w-4" /> 8 min read</span>
+        <span>Updated January 2025</span>
+      </div>
+    </div>
+
+    <Card class="mb-8 border-emerald-200 bg-emerald-50">
+      <CardContent class="pt-6">
+        <p class="text-lg font-medium mb-4">Quick Answer: Where to Get Your Pune Cab?</p>
+        <div class="space-y-2">
+          <p class="flex items-start gap-2">
+            <CheckCircle2 class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span><strong>Terminal 1:</strong> Exit Gate 2 → Turn left → Walk to Parking Plaza (3-5 min walk)</span>
+          </p>
+          <p class="flex items-start gap-2">
+            <CheckCircle2 class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span><strong>Terminal 2:</strong> Exit Gate 3 (Domestic) or Gate 5 (International) → Follow signs to Parking Plaza (5-8 min walk)</span>
+          </p>
+          <p class="flex items-start gap-2">
+            <CheckCircle2 class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span>Your driver will send exact location on WhatsApp 2-3 hours before landing</span>
+          </p>
+        </div>
+      </CardContent>
+    </Card>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Building2 class="h-8 w-8 text-emerald-600" />
+        Understanding Mumbai Airport: Terminal 1 vs Terminal 2
+      </h2>
+
+      <p>
+        Mumbai's Chhatrapati Shivaji Maharaj International Airport (BOM) has two main terminals. If you're traveling from Mumbai to Pune, understanding which terminal you'll arrive at is the first step to a smooth pickup experience.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Terminal 1 (Domestic Budget Airlines)</h3>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+        <p class="font-medium mb-2">You'll arrive at Terminal 1 if flying:</p>
+        <ul class="ml-4 space-y-1">
+          <li><strong>IndiGo</strong> (6E flights)</li>
+          <li><strong>SpiceJet</strong> (SG flights)</li>
+          <li><strong>Air India Express</strong> (IX flights)</li>
+          <li><strong>Akasa Air</strong> (QP flights)</li>
+        </ul>
+      </div>
+
+      <p>
+        Terminal 1 is Mumbai Airport's domestic budget terminal. It's smaller and more compact than Terminal 2, making navigation easier. The terminal has 4 exit gates, but most passengers use Gate 2 as it's the main exit from the arrivals hall.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Terminal 2 (International + Full-Service Domestic)</h3>
+
+      <div class="bg-purple-50 border-l-4 border-purple-600 p-4 mb-6">
+        <p class="font-medium mb-2">You'll arrive at Terminal 2 if flying:</p>
+        <ul class="ml-4 space-y-1">
+          <li><strong>All international flights</strong> (any airline)</li>
+          <li><strong>Air India</strong> domestic (AI flights)</li>
+          <li><strong>Vistara</strong> (UK flights - now merged with Air India)</li>
+          <li><strong>Some IndiGo international</strong> flights</li>
+        </ul>
+      </div>
+
+      <p>
+        Terminal 2 is Mumbai's modern, larger terminal that handles all international traffic and full-service domestic carriers. It has separate wings for international and domestic arrivals, with multiple exit gates numbered 1-8.
+      </p>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Navigation class="h-8 w-8 text-emerald-600" />
+        Step-by-Step: From Arrivals to Your Cab
+      </h2>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Terminal 1 Navigation Guide</h3>
+
+      <div class="bg-white border-2 border-gray-200 rounded-lg p-6 mb-6">
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">1</div>
+            <div>
+              <h4 class="font-semibold mb-1">Collect Baggage</h4>
+              <p class="text-gray-600">After landing, follow signs to baggage claim. Terminal 1 has 2 baggage carousels.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">2</div>
+            <div>
+              <h4 class="font-semibold mb-1">Exit Through Gate 2</h4>
+              <p class="text-gray-600">Walk towards the main exit. Gate 2 is the primary exit for most passengers. You'll see "Exit" signs clearly marked.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">3</div>
+            <div>
+              <h4 class="font-semibold mb-1">Turn Left After Exiting</h4>
+              <p class="text-gray-600">Once outside the terminal building, turn left and walk along the covered pathway.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">4</div>
+            <div>
+              <h4 class="font-semibold mb-1">Enter Parking Plaza</h4>
+              <p class="text-gray-600">Walk for 3-5 minutes to reach the multi-level parking plaza. Pre-booked cabs wait here.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">5</div>
+            <div>
+              <h4 class="font-semibold mb-1">Contact Your Driver</h4>
+              <p class="text-gray-600">Call or WhatsApp your driver (details sent 2-3 hours before flight). They'll guide you to their exact parking spot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Terminal 2 Navigation Guide</h3>
+
+      <div class="bg-white border-2 border-gray-200 rounded-lg p-6 mb-6">
+        <div class="mb-6">
+          <h4 class="font-semibold text-lg mb-3 text-purple-700">Domestic Arrivals (Terminal 2)</h4>
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">1</div>
+              <div>
+                <h5 class="font-semibold mb-1">Collect Baggage</h5>
+                <p class="text-gray-600">Terminal 2 has multiple baggage belts. Check display screens for your flight number.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">2</div>
+              <div>
+                <h5 class="font-semibold mb-1">Exit Through Gate 3</h5>
+                <p class="text-gray-600">Gate 3 is the main exit for domestic arrivals. Follow "Exit" and "Ground Transportation" signs.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">3</div>
+              <div>
+                <h5 class="font-semibold mb-1">Follow Signs to Parking Plaza</h5>
+                <p class="text-gray-600">Walk straight through the covered pathway. Clear signage directs you to the parking area.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">4</div>
+              <div>
+                <h5 class="font-semibold mb-1">Reach Cab Pickup Area</h5>
+                <p class="text-gray-600">5-8 minute walk to the designated cab pickup zone in the parking plaza.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">5</div>
+              <div>
+                <h5 class="font-semibold mb-1">Meet Your Driver</h5>
+                <p class="text-gray-600">WhatsApp or call your driver for exact parking spot number.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-lg mb-3 text-blue-700">International Arrivals (Terminal 2)</h4>
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">1</div>
+              <div>
+                <h5 class="font-semibold mb-1">Immigration & Baggage</h5>
+                <p class="text-gray-600">Complete immigration formalities, collect baggage, clear customs. Allow 30-45 minutes.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">2</div>
+              <div>
+                <h5 class="font-semibold mb-1">Exit Through Gates 5-8</h5>
+                <p class="text-gray-600">International arrivals exit through gates 5, 6, 7, or 8. All lead to the same parking plaza.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">3</div>
+              <div>
+                <h5 class="font-semibold mb-1">Navigate to Parking Plaza</h5>
+                <p class="text-gray-600">Follow "Pre-Paid Taxis" or "Private Cars" signs to reach the parking area.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">4</div>
+              <div>
+                <h5 class="font-semibold mb-1">Contact Your Driver</h5>
+                <p class="text-gray-600">Your driver will be waiting. Call/WhatsApp for precise location within the parking plaza.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <AlertCircle class="h-8 w-8 text-orange-600" />
+        Common Mistakes to Avoid
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <Card class="border-orange-200">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-start gap-2">
+              <AlertCircle class="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
+              Mistake #1: Going to Pre-Paid Taxi Counters
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-600 mb-3">
+              Many first-timers see "Pre-Paid Taxi" counters and assume that's where all cabs are booked. If you've already pre-booked with GreenEVCabs, skip these counters.
+            </p>
+            <p class="text-sm font-medium text-emerald-700">
+              ✓ Solution: Walk directly to the parking plaza where your driver is waiting.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-orange-200">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-start gap-2">
+              <AlertCircle class="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
+              Mistake #2: Waiting Inside the Terminal
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-600 mb-3">
+              Pre-booked cabs cannot enter the terminal building. Drivers wait outside in designated parking areas.
+            </p>
+            <p class="text-sm font-medium text-emerald-700">
+              ✓ Solution: Exit the terminal and proceed to the parking plaza immediately after collecting baggage.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-orange-200">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-start gap-2">
+              <AlertCircle class="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
+              Mistake #3: Not Checking Flight Details
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-600 mb-3">
+              Arriving at the wrong terminal because you didn't confirm which terminal your airline uses.
+            </p>
+            <p class="text-sm font-medium text-emerald-700">
+              ✓ Solution: Check your ticket or airline app for terminal information before landing.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card class="border-orange-200">
+          <CardHeader>
+            <CardTitle class="text-lg flex items-start gap-2">
+              <AlertCircle class="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
+              Mistake #4: Not Contacting Driver
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm text-gray-600 mb-3">
+              Wandering around the parking plaza without calling the driver to ask for their exact location.
+            </p>
+            <p class="text-sm font-medium text-emerald-700">
+              ✓ Solution: As soon as you exit, WhatsApp or call your driver. They'll guide you directly to their spot.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <CheckCircle2 class="h-8 w-8 text-emerald-600" />
+        How GreenEVCabs Makes Terminal Navigation Easy
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <Card class="border-emerald-200">
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <MessageCircle class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Driver Details in Advance</h4>
+                <p class="text-sm text-gray-600">Receive driver name, photo, phone number, and vehicle details 2-3 hours before your flight lands.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card class="border-emerald-200">
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <Plane class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Flight Tracking</h4>
+                <p class="text-sm text-gray-600">Drivers monitor your flight status in real-time. If delayed, they adjust pickup time automatically.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card class="border-emerald-200">
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <MapPin class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">Exact Location Sharing</h4>
+                <p class="text-sm text-gray-600">Driver shares live location on WhatsApp. You can see exactly where they're parked in the plaza.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card class="border-emerald-200">
+          <CardContent class="pt-6">
+            <div class="flex gap-3 mb-3">
+              <Phone class="h-6 w-6 text-emerald-600 flex-shrink-0" />
+              <div>
+                <h4 class="font-semibold mb-1">24/7 Phone Support</h4>
+                <p class="text-sm text-gray-600">If you can't find the driver or have any confusion, call our support team for instant assistance.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <Clock class="h-8 w-8 text-emerald-600" />
+        Timing: How Long Does It Take?
+      </h2>
+
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-4">Terminal 1 Timeline</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Landing to Baggage Claim</span>
+            <span class="font-semibold">5-10 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Baggage Claim to Exit Gate 2</span>
+            <span class="font-semibold">3-5 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Exit to Parking Plaza</span>
+            <span class="font-semibold">3-5 minutes</span>
+          </div>
+          <div class="flex justify-between items-center font-bold text-lg pt-2">
+            <span class="text-emerald-700">Total Time</span>
+            <span class="text-emerald-700">12-20 minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-4">Terminal 2 Domestic Timeline</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Landing to Baggage Claim</span>
+            <span class="font-semibold">5-10 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Baggage Claim to Exit Gate 3</span>
+            <span class="font-semibold">5-8 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Exit to Cab Pickup Area</span>
+            <span class="font-semibold">5-8 minutes</span>
+          </div>
+          <div class="flex justify-between items-center font-bold text-lg pt-2">
+            <span class="text-purple-700">Total Time</span>
+            <span class="text-purple-700">15-25 minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-4">Terminal 2 International Timeline</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Landing to Immigration</span>
+            <span class="font-semibold">10-15 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Immigration Queue</span>
+            <span class="font-semibold">15-30 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Baggage + Customs</span>
+            <span class="font-semibold">10-20 minutes</span>
+          </div>
+          <div class="flex justify-between items-center border-b pb-2">
+            <span class="text-gray-700">Exit to Cab Pickup Area</span>
+            <span class="font-semibold">5-8 minutes</span>
+          </div>
+          <div class="flex justify-between items-center font-bold text-lg pt-2">
+            <span class="text-blue-700">Total Time</span>
+            <span class="text-blue-700">40-70 minutes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6">Pro Tips for Smooth Pickup</h2>
+
+      <div class="space-y-4">
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Save Driver's Number Before Landing</h4>
+                <p class="text-sm text-gray-600">Once you receive driver details, save the number in your phone. Mobile data works immediately upon landing at Mumbai Airport.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Turn On Mobile Data While Landing</h4>
+                <p class="text-sm text-gray-600">Enable data as soon as the plane lands. This lets you WhatsApp the driver immediately and receive location updates.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Use Restroom Before Exiting Terminal</h4>
+                <p class="text-sm text-gray-600">Airport terminal restrooms are cleaner and more convenient than those in the parking plaza. Use them before heading out.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Don't Rely on Public WiFi</h4>
+                <p class="text-gray-600 text-sm">Airport WiFi requires login and can be slow. Use your mobile data to contact the driver reliably.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Note Your Vehicle Number</h4>
+                <p class="text-sm text-gray-600">GreenEVCabs sends the vehicle number (MH-12-XX-XXXX format). Note this down to easily spot your cab in the parking plaza.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent class="pt-6">
+            <div class="flex gap-3">
+              <CheckCircle2 class="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 class="font-semibold mb-1">Ask Driver for Parking Spot Number</h4>
+                <p class="text-sm text-gray-600">Parking plaza has numbered spots (P1, P2, etc.). Ask your driver which spot they're in for fastest navigation.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <section class="prose prose-lg max-w-none mb-12">
+      <h2 class="text-3xl font-bold mb-6">Popular Routes from Mumbai Airport to Pune</h2>
+
+      <p class="mb-6">
+        Once you've found your cab, you'll be on your way to Pune. Here are our most popular return routes:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <a href="/routes/mumbai-airport-to-hinjewadi" class="no-underline">
+          <Card class="hover:border-emerald-500 transition-colors cursor-pointer h-full">
+            <CardHeader>
+              <CardTitle class="text-lg flex items-center justify-between">
+                Mumbai Airport to Hinjewadi
+                <ArrowRight class="h-5 w-5 text-emerald-600" />
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-gray-600 mb-2">165-175 km • 3-3.5 hours</p>
+              <p class="text-emerald-700 font-semibold">₹3,700 - ₹4,200</p>
+            </CardContent>
+          </Card>
+        </a>
+
+        <a href="/routes/mumbai-airport-to-wakad" class="no-underline">
+          <Card class="hover:border-emerald-500 transition-colors cursor-pointer h-full">
+            <CardHeader>
+              <CardTitle class="text-lg flex items-center justify-between">
+                Mumbai Airport to Wakad
+                <ArrowRight class="h-5 w-5 text-emerald-600" />
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-gray-600 mb-2">160 km • 3 hours</p>
+              <p class="text-emerald-700 font-semibold">₹3,700 - ₹4,200</p>
+            </CardContent>
+          </Card>
+        </a>
+
+        <a href="/routes/mumbai-airport-to-baner" class="no-underline">
+          <Card class="hover:border-emerald-500 transition-colors cursor-pointer h-full">
+            <CardHeader>
+              <CardTitle class="text-lg flex items-center justify-between">
+                Mumbai Airport to Baner
+                <ArrowRight class="h-5 w-5 text-emerald-600" />
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-gray-600 mb-2">155 km • 2.5-3 hours</p>
+              <p class="text-emerald-700 font-semibold">₹3,700 - ₹4,200</p>
+            </CardContent>
+          </Card>
+        </a>
+
+        <a href="/routes/mumbai-airport-to-aundh" class="no-underline">
+          <Card class="hover:border-emerald-500 transition-colors cursor-pointer h-full">
+            <CardHeader>
+              <CardTitle class="text-lg flex items-center justify-between">
+                Mumbai Airport to Aundh
+                <ArrowRight class="h-5 w-5 text-emerald-600" />
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-gray-600 mb-2">150 km • 2.5-3 hours</p>
+              <p class="text-emerald-700 font-semibold">₹3,700 - ₹4,200</p>
+            </CardContent>
+          </Card>
+        </a>
+      </div>
+
+      <p class="text-center">
+        <a href="/routes" class="text-emerald-600 hover:text-emerald-700 font-medium inline-flex items-center gap-2">
+          View all routes <ArrowRight class="h-4 w-4" />
+        </a>
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">{faq.question}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-600">{faq.answer}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <Card class="bg-gradient-to-r from-emerald-600 to-green-600 text-white border-0">
+      <CardContent class="pt-8 pb-8">
+        <div class="text-center mb-6">
+          <h3 class="text-3xl font-bold mb-3">Book Your Mumbai Airport to Pune Cab</h3>
+          <p class="text-lg opacity-90 mb-2">Premium electric cabs • No surge pricing • 24/7 service</p>
+          <div class="flex items-center justify-center gap-8 text-sm mt-4">
+            <span class="flex items-center gap-2">
+              <IndianRupee class="h-5 w-5" />
+              Fixed ₹3,700 - ₹4,200
+            </span>
+            <span class="flex items-center gap-2">
+              <Users class="h-5 w-5" />
+              6-seater EVs
+            </span>
+            <span class="flex items-center gap-2">
+              <MapPin class="h-5 w-5" />
+              All Pune localities
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4 justify-center">
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=I need a cab from Mumbai Airport to Pune`} target="_blank">
+            <Button size="lg" variant="secondary" className="text-lg">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href={`tel:+${WHATSAPP_NUMBER}`}>
+            <Button size="lg" variant="outline" className="bg-white text-emerald-600 hover:bg-gray-100 text-lg">
+              <Phone class="mr-2 h-5 w-5" />
+              Call Now
+            </Button>
+          </a>
+        </div>
+      </CardContent>
+    </Card>
+  </article>
+</MainLayout>
