@@ -1,0 +1,294 @@
+---
+/**
+ * RelatedLinks Component - Smart Internal Linking
+ *
+ * Auto-populated component that displays related routes, localities, and blog posts.
+ * Powers the internal linking engine across all page types.
+ *
+ * Usage:
+ * <RelatedLinks
+ *   routes={relatedRoutes}
+ *   localities={relatedLocalities}
+ *   blogPosts={relatedBlogPosts}
+ *   title="Related Content"
+ * />
+ */
+
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import type { Route } from "@/data/routes";
+import type { Locality } from "@/data/localities";
+import type { BlogPost } from "@/data/blog-posts";
+import {
+  MapPin,
+  Navigation,
+  FileText,
+  Clock,
+  IndianRupee,
+  ArrowRight,
+  TrendingUp
+} from "lucide-react";
+
+interface Props {
+  routes?: Route[];
+  localities?: Locality[];
+  blogPosts?: BlogPost[];
+  title?: string;
+  showAll?: boolean; // If true, show all provided items; if false, limit to 3 per section
+}
+
+const {
+  routes = [],
+  localities = [],
+  blogPosts = [],
+  title = "Related Content",
+  showAll = false
+} = Astro.props;
+
+// Limit items if showAll is false
+const displayRoutes = showAll ? routes : routes.slice(0, 3);
+const displayLocalities = showAll ? localities : localities.slice(0, 3);
+const displayBlogPosts = showAll ? blogPosts : blogPosts.slice(0, 3);
+
+// Check if we have any content to display
+const hasContent = displayRoutes.length > 0 || displayLocalities.length > 0 || displayBlogPosts.length > 0;
+
+if (!hasContent) {
+  // Don't render anything if there's no related content
+  return null;
+}
+---
+
+<section class="w-full py-12 md:py-16 bg-muted/30">
+  <div class="container px-4 md:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+          {title}
+        </h2>
+        <Badge variant="secondary" className="hidden sm:flex">
+          <TrendingUp class="w-4 h-4 mr-2" />
+          Auto-discovered
+        </Badge>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Popular Routes Column -->
+        {displayRoutes.length > 0 && (
+          <div class="space-y-4">
+            <div class="flex items-center gap-2 mb-4">
+              <Navigation class="w-5 h-5 text-primary" />
+              <h3 class="text-xl font-semibold">Popular Routes</h3>
+            </div>
+
+            <div class="space-y-3">
+              {displayRoutes.map((route) => (
+                <a href={`/routes/${route.slug}`} class="block">
+                  <Card className="hover:shadow-lg transition-all hover:border-primary/50">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-start justify-between">
+                        <span class="flex-1">{route.name}</span>
+                        {route.popular && (
+                          <Badge variant="secondary" className="ml-2 text-xs">
+                            Popular
+                          </Badge>
+                        )}
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        {route.distance} • {route.duration}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-1 text-primary font-bold">
+                          <IndianRupee class="w-4 h-4" />
+                          <span>{route.pricing.kiaCarens.toLocaleString('en-IN')}</span>
+                        </div>
+                        <ArrowRight class="w-4 h-4 text-muted-foreground" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </div>
+
+            {routes.length > 3 && !showAll && (
+              <a href="/routes" class="block">
+                <Card className="border-dashed hover:border-solid hover:border-primary transition-all">
+                  <CardContent className="pt-6 text-center">
+                    <p class="text-sm text-primary font-medium">
+                      View all routes →
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
+            )}
+          </div>
+        )}
+
+        <!-- Nearby Areas Column -->
+        {displayLocalities.length > 0 && (
+          <div class="space-y-4">
+            <div class="flex items-center gap-2 mb-4">
+              <MapPin class="w-5 h-5 text-primary" />
+              <h3 class="text-xl font-semibold">Nearby Areas</h3>
+            </div>
+
+            <div class="space-y-3">
+              {displayLocalities.map((locality) => (
+                <a href={`/electric-cab-service/${locality.slug}`} class="block">
+                  <Card className="hover:shadow-lg transition-all hover:border-primary/50">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-start justify-between">
+                        <span class="flex-1">{locality.name}</span>
+                        {locality.popular && (
+                          <Badge variant="secondary" className="ml-2 text-xs">
+                            Popular
+                          </Badge>
+                        )}
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        {locality.area}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <p class="text-xs text-muted-foreground line-clamp-2 mb-2">
+                        {locality.description}
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-1 text-primary font-bold text-sm">
+                          <IndianRupee class="w-4 h-4" />
+                          <span>{locality.pricing.mumbaiAirport.toLocaleString('en-IN')}</span>
+                        </div>
+                        <ArrowRight class="w-4 h-4 text-muted-foreground" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Travel Guides Column -->
+        {displayBlogPosts.length > 0 && (
+          <div class="space-y-4">
+            <div class="flex items-center gap-2 mb-4">
+              <FileText class="w-5 h-5 text-primary" />
+              <h3 class="text-xl font-semibold">Travel Guides</h3>
+            </div>
+
+            <div class="space-y-3">
+              {displayBlogPosts.map((post) => (
+                <a href={`/blog/${post.slug}`} class="block">
+                  <Card className="hover:shadow-lg transition-all hover:border-primary/50">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-start justify-between">
+                        <span class="flex-1 line-clamp-2">{post.title}</span>
+                        {post.featured && (
+                          <Badge variant="secondary" className="ml-2 text-xs">
+                            Featured
+                          </Badge>
+                        )}
+                      </CardTitle>
+                      <CardDescription className="text-xs flex items-center gap-2">
+                        <Clock class="w-3 h-3" />
+                        {post.readTime}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <p class="text-xs text-muted-foreground line-clamp-2 mb-2">
+                        {post.description}
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <Badge variant="outline" className="text-xs">
+                          {post.category}
+                        </Badge>
+                        <ArrowRight class="w-4 h-4 text-muted-foreground" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </div>
+
+            {blogPosts.length > 3 && !showAll && (
+              <a href="/blog" class="block">
+                <Card className="border-dashed hover:border-solid hover:border-primary transition-all">
+                  <CardContent className="pt-6 text-center">
+                    <p class="text-sm text-primary font-medium">
+                      View all guides →
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+
+      <!-- SEO Text (hidden, for crawlers) -->
+      <div class="sr-only">
+        {displayRoutes.length > 0 && (
+          <div>
+            <h3>Related Routes:</h3>
+            <ul>
+              {displayRoutes.map((route) => (
+                <li>
+                  <a href={`/routes/${route.slug}`}>
+                    {route.name} - {route.distance}, {route.duration}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {displayLocalities.length > 0 && (
+          <div>
+            <h3>Nearby Service Areas:</h3>
+            <ul>
+              {displayLocalities.map((locality) => (
+                <li>
+                  <a href={`/electric-cab-service/${locality.slug}`}>
+                    Electric Cab Service {locality.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {displayBlogPosts.length > 0 && (
+          <div>
+            <h3>Related Travel Guides:</h3>
+            <ul>
+              {displayBlogPosts.map((post) => (
+                <li>
+                  <a href={`/blog/${post.slug}`}>
+                    {post.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Ensure smooth transitions */
+  a {
+    text-decoration: none;
+  }
+
+  /* Line clamp support for older browsers */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

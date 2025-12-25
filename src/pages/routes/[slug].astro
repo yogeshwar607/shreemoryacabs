@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
+import RelatedLinks from "@/components/seo/RelatedLinks.astro";
 import { routes, getRouteBySlug } from "@/data/routes";
 import { vehicles } from "@/data/vehicles";
 import { generateRouteSchema } from "@/lib/seo";
+import { getRelatedContent } from "@/lib/content-helpers";
 import { MapPin, Clock, Route as RouteIcon, Check } from "lucide-react";
 
 export async function getStaticPaths() {
@@ -25,6 +27,13 @@ if (!route) {
 
 // Generate structured data
 const routeSchema = generateRouteSchema(route);
+
+// Get related content for internal linking
+const related = getRelatedContent({
+  type: 'route',
+  slug: route.slug,
+  limit: 3
+});
 ---
 
 <MainLayout
@@ -189,6 +198,13 @@ const routeSchema = generateRouteSchema(route);
       </div>
     </div>
   </section>
+
+  <!-- Related Content - Smart Internal Linking -->
+  <RelatedLinks
+    routes={related.routes}
+    localities={related.localities}
+    title="Related Routes & Locations"
+  />
 
   <!-- CTA Section -->
   <section class="w-full py-12 md:py-24 bg-primary/10">

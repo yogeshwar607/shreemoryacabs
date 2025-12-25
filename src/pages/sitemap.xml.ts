@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { vehicles } from '@/data/vehicles';
 import { routes } from '@/data/routes';
+import { localities } from '@/data/localities';
+import { blogPosts } from '@/data/blog-posts';
 
 const BASE_URL = 'https://greenevcabs.com';
 
@@ -44,35 +46,10 @@ export const GET: APIRoute = async () => {
 
   const vehiclePages = vehicles.map((vehicle) => `/fleet/${vehicle.slug}`);
   const routePages = routes.map((route) => `/routes/${route.slug}`);
+  const localityPages = localities.map((locality) => `/electric-cab-service/${locality.slug}`);
+  const blogPages = blogPosts.map((post) => `/blog/${post.slug}`);
 
-  // Blog posts
-  const blogPosts = [
-    'how-to-book-electric-cab-pune-mumbai-airport',
-    'electric-vs-diesel-cab-cost-comparison-2025',
-    'pune-mumbai-cab-cost-real-prices',
-    'best-time-travel-pune-mumbai-airport-traffic',
-    'ev-range-explained-will-cab-make-it',
-    'kia-carens-ev-vs-byd-emax-7-comparison',
-    '5-seater-vs-7-seater-electric-cab-guide',
-    'pune-mumbai-train-vs-bus-vs-cab-comparison',
-    'navi-mumbai-airport-pune-complete-guide',
-    'mumbai-airport-terminal-guide-pune-travelers',
-    'best-rest-stops-pune-mumbai-expressway',
-    'ev-charging-pune-mumbai-corridor-2025',
-    'carbon-footprint-cab-travel-pune-mumbai',
-    'maharashtra-ev-regulations-cab-guide-2025',
-    'weekend-getaways-pune-ev-cab-2025',
-    'safety-guide-electric-cab-pune-mumbai-airport',
-    'best-electric-cab-service-pune-2025',
-    'greenevcabs-vs-grel-detailed-comparison',
-    'how-to-save-money-pune-mumbai-cab',
-    'electric-vs-diesel-cab-pune-mumbai-comparison',
-    '5-things-check-before-booking-electric-cab-pune-mumbai',
-    'mumbai-airport-complete-travel-guide'
-  ];
-  const blogPages = blogPosts.map((slug) => `/blog/${slug}`);
-
-  const allPages = [...staticPages, ...vehiclePages, ...routePages, ...blogPages];
+  const allPages = [...staticPages, ...vehiclePages, ...routePages, ...localityPages, ...blogPages];
 
   // Helper function to determine priority and change frequency
   const getPageMetadata = (page: string) => {
@@ -82,6 +59,7 @@ export const GET: APIRoute = async () => {
     if (page === '/about' || page === '/faq') return { priority: '0.7', changefreq: 'monthly' };
     if (page.startsWith('/airport')) return { priority: '0.9', changefreq: 'weekly' };
     if (page.startsWith('/fleet/') || page.startsWith('/routes/')) return { priority: '0.8', changefreq: 'weekly' };
+    if (page.startsWith('/electric-cab-service/')) return { priority: '0.9', changefreq: 'weekly' }; // High priority locality pages
     if (page.startsWith('/blog/')) return { priority: '0.8', changefreq: 'monthly' };
     return { priority: '0.8', changefreq: 'weekly' };
   };

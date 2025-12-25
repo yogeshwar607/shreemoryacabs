@@ -1,0 +1,337 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import RelatedLinks from "@/components/seo/RelatedLinks.astro";
+import { localities, getAllLocalitySlugs, getLocalityBySlug } from "@/data/localities";
+import { getRelatedContent, generateLocalityFAQs } from "@/lib/content-helpers";
+import { SEO_TEMPLATES, SITE_CONFIG } from "@/data/config";
+import { generateFAQSchema, generateServiceSchema, generateLocalBusinessSchema } from "@/lib/seo";
+import {
+  MapPin,
+  Clock,
+  IndianRupee,
+  Check,
+  Star,
+  Zap,
+  Shield,
+  Phone,
+  MessageCircle,
+  Building2,
+  Briefcase,
+  Users,
+  Navigation
+} from "lucide-react";
+
+export async function getStaticPaths() {
+  return localities.map((locality) => ({
+    params: { locality: locality.slug },
+  }));
+}
+
+const { locality: localitySlug } = Astro.params;
+const locality = getLocalityBySlug(localitySlug);
+
+if (!locality) {
+  return Astro.redirect("/404");
+}
+
+// Get related content
+const related = getRelatedContent({
+  type: 'locality',
+  slug: locality.slug,
+  limit: 4
+});
+
+// Generate dynamic FAQs
+const faqs = generateLocalityFAQs(locality);
+
+// Generate schemas
+const faqSchema = generateFAQSchema(faqs);
+const serviceSchema = generateServiceSchema();
+const localBusinessSchema = generateLocalBusinessSchema();
+
+// SEO
+const title = SEO_TEMPLATES.locality.title(locality.name, locality.pricing.mumbaiAirport);
+const description = SEO_TEMPLATES.locality.description(
+  locality.name,
+  locality.area,
+  locality.highlights[0]
+);
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  keywords={locality.keywords}
+>
+  <StructuredData data={[faqSchema, serviceSchema, localBusinessSchema]} />
+
+  <Breadcrumbs items={[
+    { name: `Electric Cab Service ${locality.name}`, url: `/electric-cab-service/${locality.slug}` }
+  ]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <MapPin class="w-4 h-4 mr-2" />
+          {locality.displayName} • 24/7 Service
+        </Badge>
+
+        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+          Electric Cab Service {locality.name} | Best Rates ₹{locality.pricing.mumbaiAirport.toLocaleString('en-IN')}
+        </h1>
+
+        <p class="text-xl text-muted-foreground mb-8">
+          {locality.longDescription}
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <IndianRupee class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">₹{locality.pricing.mumbaiAirport.toLocaleString('en-IN')}</p>
+                  <p class="text-sm text-muted-foreground">Mumbai Airport</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Clock class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">24/7</p>
+                  <p class="text-sm text-muted-foreground">Available</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div class="flex items-center gap-3">
+                <Star class="h-8 w-8 text-primary" />
+                <div>
+                  <p class="text-2xl font-bold">{SITE_CONFIG.rating.value}★</p>
+                  <p class="text-sm text-muted-foreground">Customer Rating</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href={`${SITE_CONFIG.contact.whatsappLink}?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20${encodeURIComponent(locality.name)}`} target="_blank" rel="noopener">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href={`tel:${SITE_CONFIG.contact.phone}`}>
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Phone class="mr-2 h-5 w-5" />
+              Call {SITE_CONFIG.contact.phoneDisplay}
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Why {locality.name} Residents Choose GreenEVCabs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          {locality.highlights.slice(0, 4).map((highlight) => (
+            <Card>
+              <CardHeader>
+                <CardTitle class="flex items-center gap-2">
+                  <Check class="h-5 w-5 text-primary" />
+                  {highlight}
+                </CardTitle>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          {locality.name} Electric Cab Pricing
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Mumbai Airport -->
+          <Card className="border-2 border-primary">
+            <CardHeader>
+              <Badge className="w-fit mb-2">Most Popular</Badge>
+              <CardTitle>{locality.name} to Mumbai Airport</CardTitle>
+              <CardDescription>{locality.popularDestinations.airportDistance}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div class="mb-6">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-4xl font-bold text-primary">₹{locality.pricing.mumbaiAirport.toLocaleString('en-IN')}</span>
+                  <span class="text-sm text-muted-foreground">Kia Carens EV</span>
+                </div>
+              </div>
+              <div class="space-y-2 mb-6">
+                <h4 class="font-semibold text-sm">What's Included:</h4>
+                <ul class="space-y-1 text-sm text-muted-foreground">
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Pickup from any {locality.name} location</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>All tolls, parking, driver charges</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Flight tracking included</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <Check class="h-4 w-4 text-green-600" />
+                    <span>Zero surge pricing - same rate 24/7</span>
+                  </li>
+                </ul>
+              </div>
+              <a href={`${SITE_CONFIG.contact.whatsappLink}?text=Book%20${encodeURIComponent(locality.name)}%20to%20Mumbai%20Airport`} target="_blank" rel="noopener">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  <MessageCircle class="mr-2 h-4 w-4" />
+                  Book Now on WhatsApp
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
+          <!-- Other destinations -->
+          <div class="space-y-4">
+            {locality.pricing.puneAirport && (
+              <Card>
+                <CardContent className="pt-6">
+                  <div class="flex justify-between items-center mb-2">
+                    <div>
+                      <p class="font-semibold">{locality.name} to Pune Airport</p>
+                      <p class="text-sm text-muted-foreground">{locality.popularDestinations.puneAirportDistance || 'Quick local transfer'}</p>
+                    </div>
+                    <p class="text-2xl font-bold text-primary">₹{locality.pricing.puneAirport.toLocaleString('en-IN')}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {locality.pricing.naviMumbaiAirport && (
+              <Card>
+                <CardContent className="pt-6">
+                  <div class="flex justify-between items-center mb-2">
+                    <div>
+                      <p class="font-semibold">{locality.name} to Navi Mumbai Airport</p>
+                      <p class="text-sm text-muted-foreground">{locality.popularDestinations.naviMumbaiAirportDistance || 'New airport connectivity'}</p>
+                    </div>
+                    <p class="text-2xl font-bold text-primary">₹{locality.pricing.naviMumbaiAirport.toLocaleString('en-IN')}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {locality.pricing.lonavala && (
+              <Card>
+                <CardContent className="pt-6">
+                  <div class="flex justify-between items-center mb-2">
+                    <div>
+                      <p class="font-semibold">{locality.name} to Lonavala</p>
+                      <p class="text-sm text-muted-foreground">Weekend getaway</p>
+                    </div>
+                    <p class="text-2xl font-bold text-primary">₹{locality.pricing.lonavala.toLocaleString('en-IN')}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Content - Smart Internal Linking -->
+  <RelatedLinks
+    routes={related.routes}
+    localities={related.localities}
+    title={`Explore More from ${locality.name}`}
+  />
+
+  <!-- FAQ Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
+          Frequently Asked Questions - {locality.name} Service
+        </h2>
+
+        <div class="space-y-6">
+          {faqs.map((faq) => (
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">{faq.question}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-muted-foreground">{faq.answer}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
+          Ready to Book Your Electric Cab from {locality.name}?
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Join {locality.name} residents who've switched to GreenEVCabs for reliable, eco-friendly, and affordable transportation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href={`${SITE_CONFIG.contact.whatsappLink}?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab%20from%20${encodeURIComponent(locality.name)}%20to%20Mumbai%20Airport`} target="_blank" rel="noopener">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100">
+              <MessageCircle class="mr-2 h-5 w-5" />
+              Book on WhatsApp Now
+            </Button>
+          </a>
+          <a href={`tel:${SITE_CONFIG.contact.phone}`}>
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10">
+              <Phone class="mr-2 h-5 w-5" />
+              Call {SITE_CONFIG.contact.phoneDisplay}
+            </Button>
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-75">
+          ✓ No advance payment • ✓ Free cancellation up to 2 hours • ✓ 24/7 availability
+        </p>
+      </div>
+    </div>
+  </section>
+</MainLayout>
