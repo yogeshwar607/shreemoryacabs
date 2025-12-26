@@ -28,5 +28,8 @@ export default defineConfig({
     '/electric-cab-service-viman-nagar': '/electric-cab-service/viman-nagar',
     '/electric-cab-service-aundh': '/electric-cab-service/aundh',
     '/electric-cab-service-balewadi': '/electric-cab-service/balewadi',
+
+    // FAQ URL standardization
+    '/mumbai-airport-pune-faq': '/mumbai-airport-to-pune-cab-faq',
   },
 });
