@@ -1,0 +1,865 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = {
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Group Cab Booking Pune to NMIA: Complete Guide for 3-6 Travelers",
+	"description": "Complete guide for group cab bookings from Pune to Navi Mumbai Airport. Covers cost sharing strategies, vehicle capacity, coordination tips, corporate group travel, and family vacation logistics.",
+	"datePublished": "2025-12-26",
+	"dateModified": "2025-12-26",
+	"author": {
+		"@type": "Organization",
+		"name": "GreenEVCabs"
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "GreenEVCabs"
+	}
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+	{ name: "Blog", url: "/blog" },
+	{ name: "Group Cab Booking NMIA Guide", url: "/blog/nmia-group-booking-guide-pune" }
+]);
+---
+
+<MainLayout
+	title="Group Cab Booking Pune to NMIA: Complete Guide for 3-6 Travelers | GreenEVCabs"
+	description="Complete guide for group cab bookings from Pune to Navi Mumbai Airport. Covers cost sharing strategies, vehicle capacity, coordination tips, corporate group travel, and family vacation logistics for 3-6 travelers."
+	keywords={[
+		"group cab pune to navi mumbai airport",
+		"shared cab nmia",
+		"pune to nmia group booking",
+		"6 seater cab nmia",
+		"family cab to navi mumbai airport",
+		"corporate cab nmia pune",
+		"friends cab booking nmia",
+		"shared taxi pune to nmia",
+		"group travel navi mumbai airport",
+		"cost sharing cab nmia"
+	]}
+>
+	<StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+	<article class="py-16">
+		<div class="container mx-auto px-4 max-w-4xl">
+			<!-- Header -->
+			<div class="mb-8">
+				<Badge variant="secondary" class="mb-4">Group Travel</Badge>
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">
+					Group Cab Booking: Pune to Navi Mumbai Airport Complete Guide
+				</h1>
+				<p class="text-xl text-muted-foreground">
+					Everything you need to know about booking cabs for groups of 3-6 travelers from Pune to NMIA. Covers cost sharing, coordination, vehicle capacity, and special scenarios for families, colleagues, and friends.
+				</p>
+			</div>
+
+			<!-- Quick Answer -->
+			<div class="not-prose my-8">
+				<Card class="bg-green-50">
+					<CardContent class="pt-6">
+						<p class="font-bold mb-3">Quick Answer: Group Cab Economics</p>
+						<div class="space-y-3 text-sm">
+							<div class="bg-white p-3 rounded">
+								<p class="font-semibold mb-2">Single Cab: ₹3,700 for up to 6 passengers</p>
+								<table class="w-full text-xs">
+									<thead>
+										<tr class="border-b">
+											<th class="text-left py-1">Group Size</th>
+											<th class="text-left py-1">Cost Per Person</th>
+											<th class="text-left py-1">vs Individual Uber/Ola</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-b">
+											<td class="py-1">3 people</td>
+											<td class="py-1 font-semibold text-green-600">₹1,233 each</td>
+											<td class="py-1">Save ₹2,767/person</td>
+										</tr>
+										<tr class="border-b">
+											<td class="py-1">4 people</td>
+											<td class="py-1 font-semibold text-green-600">₹925 each</td>
+											<td class="py-1">Save ₹3,075/person</td>
+										</tr>
+										<tr class="border-b">
+											<td class="py-1">5 people</td>
+											<td class="py-1 font-semibold text-green-600">₹740 each</td>
+											<td class="py-1">Save ₹3,260/person</td>
+										</tr>
+										<tr class="bg-green-100 font-semibold">
+											<td class="py-1">6 people</td>
+											<td class="py-1 text-green-700">₹617 each</td>
+											<td class="py-1">Save ₹3,383/person</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p><strong>WhatsApp Booking:</strong> <a href="https://wa.me/919145499009?text=I%20need%20a%20group%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 font-semibold">+91 91454 99009</a></p>
+						</div>
+						<div class="mt-4">
+							<Button asChild class="w-full sm:w-auto">
+								<a href="https://wa.me/919145499009?text=I%20need%20a%20group%20cab%20from%20Pune%20to%20NMIA">Book Group Cab via WhatsApp</a>
+							</Button>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- Table of Contents -->
+			<div class="not-prose my-8">
+				<Card>
+					<CardHeader>
+						<CardTitle>Complete Guide Contents</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<ul class="space-y-2 text-sm">
+							<li><a href="#cost-breakdown" class="text-green-600 hover:underline">1. Cost Breakdown & Savings Analysis</a></li>
+							<li><a href="#vehicle-capacity" class="text-green-600 hover:underline">2. Vehicle Capacity & Luggage Planning</a></li>
+							<li><a href="#coordination" class="text-green-600 hover:underline">3. Group Coordination Strategies</a></li>
+							<li><a href="#scenarios" class="text-green-600 hover:underline">4. Common Group Travel Scenarios</a></li>
+							<li><a href="#payment" class="text-green-600 hover:underline">5. Payment & Cost Sharing Methods</a></li>
+							<li><a href="#pickup-strategy" class="text-green-600 hover:underline">6. Multi-Location Pickup Strategy</a></li>
+							<li><a href="#booking-process" class="text-green-600 hover:underline">7. Booking Process for Groups</a></li>
+						</ul>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- Section 1: Cost Breakdown -->
+			<section id="cost-breakdown" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Cost Breakdown & Savings Analysis</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Why Group Cab Booking is Financially Smart</h3>
+
+				<p class="mb-4">
+					Individual Uber/Ola from Pune to NMIA costs ₹4,000-4,500 per person (if they even accept the long trip). A single GreenEVCabs vehicle costs ₹3,700 for up to 6 people.
+				</p>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Detailed Savings Comparison:</p>
+							<table class="w-full text-sm">
+								<thead>
+									<tr class="border-b bg-gray-50">
+										<th class="text-left py-2 px-2">Scenario</th>
+										<th class="text-left py-2 px-2">Individual Cabs Cost</th>
+										<th class="text-left py-2 px-2">Shared Cab Cost</th>
+										<th class="text-left py-2 px-2">Total Savings</th>
+										<th class="text-left py-2 px-2">Per Person</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-b">
+										<td class="py-2 px-2"><strong>3 Colleagues</strong></td>
+										<td class="py-2 px-2">3 × ₹4,000 = ₹12,000</td>
+										<td class="py-2 px-2 bg-green-50">₹3,700</td>
+										<td class="py-2 px-2 font-semibold text-green-600">₹8,300</td>
+										<td class="py-2 px-2">₹1,233/person</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2"><strong>4 Friends</strong></td>
+										<td class="py-2 px-2">4 × ₹4,000 = ₹16,000</td>
+										<td class="py-2 px-2 bg-green-50">₹3,700</td>
+										<td class="py-2 px-2 font-semibold text-green-600">₹12,300</td>
+										<td class="py-2 px-2">₹925/person</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2"><strong>Family of 5</strong></td>
+										<td class="py-2 px-2">2 cabs needed = ₹8,000</td>
+										<td class="py-2 px-2 bg-green-50">₹3,700</td>
+										<td class="py-2 px-2 font-semibold text-green-600">₹4,300</td>
+										<td class="py-2 px-2">₹740/person</td>
+									</tr>
+									<tr class="bg-green-100 font-semibold">
+										<td class="py-2 px-2"><strong>6 Travelers (Max)</strong></td>
+										<td class="py-2 px-2">2 cabs = ₹8,000+</td>
+										<td class="py-2 px-2">₹3,700</td>
+										<td class="py-2 px-2 text-green-700">₹4,300+</td>
+										<td class="py-2 px-2">₹617/person</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-xs mt-3 text-muted-foreground">Individual cab costs based on typical Uber/Ola pricing for 100-140 km Pune-NMIA route</p>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Monthly / Recurring Group Travel Savings</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Real Scenario: 3 Bengaluru Commuters (Same Company)</p>
+							<div class="space-y-2 text-sm">
+								<p><strong>Situation:</strong> 3 colleagues at TCS Hinjewadi travel to Bengaluru office every Monday, return every Friday</p>
+								<p><strong>If traveling separately:</strong></p>
+								<ul class="ml-4 space-y-1">
+									<li>• Each person: ₹4,000 (one way) = ₹8,000/week (both ways)</li>
+									<li>• 3 people: ₹24,000/week total</li>
+									<li>• Monthly (4 weeks): ₹96,000</li>
+								</ul>
+								<p><strong>If sharing GreenEVCabs:</strong></p>
+								<ul class="ml-4 space-y-1">
+									<li>• ₹3,700 per trip (both ways: ₹7,400/week)</li>
+									<li>• Split 3 ways: ₹2,467/person/week</li>
+									<li>• Monthly (4 weeks): ₹29,600 total</li>
+								</ul>
+								<p class="font-bold text-green-700 mt-3">Monthly Savings: ₹96,000 - ₹29,600 = ₹66,400 saved!</p>
+								<p class="text-xs mt-2">That's ₹7,96,800 saved per year by coordinating travel!</p>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 2: Vehicle Capacity -->
+			<section id="vehicle-capacity" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Vehicle Capacity & Luggage Planning</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Understanding 6-Seater Configuration</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="grid md:grid-cols-2 gap-6">
+								<div>
+									<p class="font-bold mb-3">KIA Carens (Standard)</p>
+									<ul class="text-sm space-y-2">
+										<li><strong>Seating:</strong> 6 passengers (2+2+2 configuration)</li>
+										<li><strong>Row 1 (Front):</strong> Driver + 1 passenger</li>
+										<li><strong>Row 2 (Middle):</strong> 2 passengers (captain seats)</li>
+										<li><strong>Row 3 (Rear):</strong> 2 passengers</li>
+										<li><strong>Boot Space:</strong> Large (4-5 check-in bags)</li>
+										<li><strong>Foldable Row:</strong> 3rd row folds = massive luggage space</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-3">BYD eMax 7 (Premium)</p>
+									<ul class="text-sm space-y-2">
+										<li><strong>Seating:</strong> 6 passengers (2+2+2 configuration)</li>
+										<li><strong>Row 1 (Front):</strong> Driver + 1 passenger</li>
+										<li><strong>Row 2 (Middle):</strong> 2 passengers (premium captain seats)</li>
+										<li><strong>Row 3 (Rear):</strong> 2 passengers</li>
+										<li><strong>Boot Space:</strong> Extra large (5-6 check-in bags)</li>
+										<li><strong>Luxury:</strong> More legroom, better comfort for groups</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Group Size vs Luggage Trade-offs</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Capacity Planning Matrix:</p>
+							<table class="w-full text-sm">
+								<thead>
+									<tr class="border-b bg-gray-50">
+										<th class="text-left py-2 px-2">Passengers</th>
+										<th class="text-left py-2 px-2">Check-In Bags</th>
+										<th class="text-left py-2 px-2">Cabin Bags</th>
+										<th class="text-left py-2 px-2">Configuration</th>
+										<th class="text-left py-2 px-2">Comfort Level</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-b bg-green-50">
+										<td class="py-2 px-2"><strong>3 people</strong></td>
+										<td class="py-2 px-2">6 bags</td>
+										<td class="py-2 px-2">3 bags</td>
+										<td class="py-2 px-2">All in Row 2, fold Row 3</td>
+										<td class="py-2 px-2">Excellent (lots of space)</td>
+									</tr>
+									<tr class="border-b bg-green-50">
+										<td class="py-2 px-2"><strong>4 people</strong></td>
+										<td class="py-2 px-2">5 bags</td>
+										<td class="py-2 px-2">4 bags</td>
+										<td class="py-2 px-2">2 in Row 2, 2 in Row 3</td>
+										<td class="py-2 px-2">Very Good (spacious)</td>
+									</tr>
+									<tr class="border-b bg-yellow-50">
+										<td class="py-2 px-2"><strong>5 people</strong></td>
+										<td class="py-2 px-2">4 bags</td>
+										<td class="py-2 px-2">5 bags</td>
+										<td class="py-2 px-2">1+2+2 seating</td>
+										<td class="py-2 px-2">Good (reasonable space)</td>
+									</tr>
+									<tr class="border-b bg-orange-50">
+										<td class="py-2 px-2"><strong>6 people</strong></td>
+										<td class="py-2 px-2">2-3 bags</td>
+										<td class="py-2 px-2">6 bags</td>
+										<td class="py-2 px-2">All seats occupied</td>
+										<td class="py-2 px-2">Cozy (limited luggage)</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-xs mt-3 text-muted-foreground">Check-in bags = 23kg suitcases. Cabin bags = backpacks/small bags.</p>
+						</CardContent>
+					</Card>
+				</div>
+
+				<div class="not-prose my-6">
+					<Card class="bg-yellow-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-2">Important: Communicating Luggage Needs</p>
+							<p class="text-sm mb-3">When booking for 5-6 people, <strong>always mention luggage quantity</strong> in your WhatsApp message:</p>
+							<div class="bg-white p-3 rounded text-sm">
+								<p class="font-semibold mb-2">Good Examples:</p>
+								<p class="italic mb-1">✓ "6 people, only cabin bags (weekend trip)"</p>
+								<p class="italic mb-1">✓ "5 people, 3 large bags + 5 cabin bags (Bengaluru trip)"</p>
+								<p class="italic mb-1">✓ "4 people, 6 large bags (family vacation with lots of luggage)"</p>
+								<p class="font-semibold mt-3 mb-2">Why This Matters:</p>
+								<p>We can allocate BYD eMax 7 (larger vehicle) if you have heavy luggage needs, ensuring comfortable journey for everyone.</p>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 3: Coordination -->
+			<section id="coordination" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Group Coordination Strategies</h2>
+
+				<p class="mb-4">
+					Coordinating group travel requires planning. Here are proven strategies for smooth group cab experiences:
+				</p>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Pre-Travel Coordination Checklist</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="space-y-4 text-sm">
+								<div class="border-l-4 border-l-green-500 pl-4">
+									<p class="font-semibold mb-2">1. Confirm Flight Details (All Travelers)</p>
+									<ul class="space-y-1 text-muted-foreground">
+										<li>✓ Everyone on same flight? (Ideal scenario)</li>
+										<li>✓ Flights within 1-hour window? (Manageable)</li>
+										<li>✓ Flights 2+ hours apart? (Consider separate bookings)</li>
+									</ul>
+								</div>
+
+								<div class="border-l-4 border-l-blue-500 pl-4">
+									<p class="font-semibold mb-2">2. Decide Single Pickup or Multi-Pickup</p>
+									<ul class="space-y-1 text-muted-foreground">
+										<li>✓ <strong>Option A:</strong> Everyone meets at one location (faster)</li>
+										<li>✓ <strong>Option B:</strong> Pick up from multiple locations (add 15-30 min)</li>
+										<li>✓ Rule: Max 2 pickup locations for efficiency</li>
+									</ul>
+								</div>
+
+								<div class="border-l-4 border-l-purple-500 pl-4">
+									<p class="font-semibold mb-2">3. Assign a "Group Coordinator"</p>
+									<ul class="space-y-1 text-muted-foreground">
+										<li>✓ One person handles booking via WhatsApp</li>
+										<li>✓ Coordinator has everyone's contact numbers</li>
+										<li>✓ Coordinator communicates with driver for entire group</li>
+										<li>✓ Reduces confusion, single point of contact</li>
+									</ul>
+								</div>
+
+								<div class="border-l-4 border-l-orange-500 pl-4">
+									<p class="font-semibold mb-2">4. Agree on Payment Method Upfront</p>
+									<ul class="space-y-1 text-muted-foreground">
+										<li>✓ Will one person pay, others reimburse?</li>
+										<li>✓ Or split payment at end of journey?</li>
+										<li>✓ Set expectation before travel (avoids awkwardness)</li>
+									</ul>
+								</div>
+
+								<div class="border-l-4 border-l-red-500 pl-4">
+									<p class="font-semibold mb-2">5. Share Timeline with All Travelers</p>
+									<ul class="space-y-1 text-muted-foreground">
+										<li>✓ "Cab picks up from Hinjewadi at 4 AM"</li>
+										<li>✓ "Then Wakad at 4:15 AM"</li>
+										<li>✓ "Reach NMIA by 6:15 AM for 7:00 AM flight"</li>
+										<li>✓ Everyone knows their exact pickup time</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Communication Flow</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Recommended: Create WhatsApp Group for Trip</p>
+							<ol class="text-sm space-y-2">
+								<li><strong>1. Create Group:</strong> "NMIA Trip - [Date]" with all travelers</li>
+								<li><strong>2. Share Booking Confirmation:</strong> Forward our confirmation message to group</li>
+								<li><strong>3. Driver Details:</strong> Add driver to WhatsApp group once assigned (optional)</li>
+								<li><strong>4. Day Before:</strong> Coordinator confirms pickup time with everyone</li>
+								<li><strong>5. Travel Day:</strong> Real-time updates ("Driver 5 min away", "Picked up Person 1")</li>
+								<li><strong>6. At Airport:</strong> Share gate/terminal info with group</li>
+							</ol>
+							<p class="text-xs mt-3 text-muted-foreground">This eliminates 95% of coordination issues and missed communications.</p>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 4: Common Scenarios -->
+			<section id="scenarios" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Common Group Travel Scenarios</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Scenario 1: Corporate Colleagues (Same Flight)</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-semibold mb-3">Example: 4 colleagues at Infosys Hinjewadi going to Bengaluru office</p>
+							<div class="text-sm space-y-3">
+								<div>
+									<p class="font-bold mb-1">Details:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• All 4 on same 7 AM NMIA-BLR flight</li>
+										<li>• All live in Hinjewadi (within 2 km radius)</li>
+										<li>• Light luggage (1 cabin bag each)</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-1">Optimal Plan:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• Pick single meeting point: Infosys main gate</li>
+										<li>• Pickup time: 4:30 AM (2.5 hours before flight)</li>
+										<li>• All reach gate by 4:25 AM, cab loads everyone in 5 minutes</li>
+										<li>• Reach NMIA by 6:30 AM (30 min buffer)</li>
+										<li>• Cost: ₹925/person (₹3,700 ÷ 4)</li>
+									</ul>
+								</div>
+								<div class="bg-green-50 p-3 rounded">
+									<p class="font-bold text-green-700 mb-1">Why This Works:</p>
+									<p>Single pickup = no coordination hassle, everyone knows one location, smooth start to journey</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Scenario 2: Family Vacation (Different Ages)</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-semibold mb-3">Example: Family of 5 (2 adults, 2 kids, 1 elderly grandparent)</p>
+							<div class="text-sm space-y-3">
+								<div>
+									<p class="font-bold mb-1">Details:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• 1 PM flight to Goa (via NMIA)</li>
+										<li>• Heavy luggage (4 large bags, 1 stroller)</li>
+										<li>• Starting from Magarpatta City</li>
+										<li>• Grandparent needs easy entry/exit (Row 2 captain seat)</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-1">Optimal Plan:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• Request BYD eMax 7 when booking (more space, easier access)</li>
+										<li>• Mention "1 elderly passenger, needs Row 2 captain seat"</li>
+										<li>• Pickup time: 10:00 AM (3 hours for 125 km journey + buffer)</li>
+										<li>• Seating: Grandparent (Row 2), Parents (Row 2 + Row 1), Kids (Row 3)</li>
+										<li>• Stroller + 4 bags fit in boot easily</li>
+										<li>• Cost: ₹740/person (₹3,700 ÷ 5)</li>
+									</ul>
+								</div>
+								<div class="bg-blue-50 p-3 rounded">
+									<p class="font-bold text-blue-700 mb-1">Family-Friendly Advantage:</p>
+									<p>Single vehicle = family stays together, kids comfortable, grandparent doesn't need to manage separate cab. Electric vehicle = quiet ride, kids can nap.</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Scenario 3: Friends Weekend Trip (Multi-Pickup)</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-semibold mb-3">Example: 6 friends going to Goa for weekend, live in different areas</p>
+							<div class="text-sm space-y-3">
+								<div>
+									<p class="font-bold mb-1">Details:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• 2 friends in Hinjewadi, 2 in Wakad, 2 in Baner</li>
+										<li>• 9 AM flight (weekend getaway)</li>
+										<li>• Light luggage (6 cabin bags, 2 small check-in bags)</li>
+										<li>• Want to minimize individual commute</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-1">Optimal Plan:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• <strong>Pickup Point 1:</strong> Hinjewadi Phase 1 Rajiv Gandhi Infotech Park gate (2 friends) - 6:00 AM</li>
+										<li>• <strong>Pickup Point 2:</strong> Wakad D-Mart (4 friends meet here from Wakad + Baner) - 6:20 AM</li>
+										<li>• Cab picks Hinjewadi first, then Wakad (15 km, 20 min)</li>
+										<li>• All 6 together by 6:25 AM, start NMIA journey</li>
+										<li>• Reach NMIA by 8:15 AM (45 min buffer for 9 AM flight)</li>
+										<li>• Cost: ₹617/person (₹3,700 ÷ 6) - Cheapest possible!</li>
+									</ul>
+								</div>
+								<div class="bg-purple-50 p-3 rounded">
+									<p class="font-bold text-purple-700 mb-1">Multi-Pickup Strategy:</p>
+									<p><strong>Key:</strong> Choose 2 central points, ask friends from nearby areas to meet there. Saves 30-45 min vs picking up from 6 individual homes. Baner friends drive/Uber 5 min to Wakad meeting point = overall efficiency.</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Scenario 4: Recurring Corporate Travel (Weekly)</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-semibold mb-3">Example: 3 consultants at Deloitte, travel Pune-Bengaluru every Monday</p>
+							<div class="text-sm space-y-3">
+								<div>
+									<p class="font-bold mb-1">Details:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• Same flight every Monday: 6:30 AM NMIA-BLR</li>
+										<li>• All 3 live in Kharadi IT park area</li>
+										<li>• Minimal luggage (laptop bags + 1 small bag each)</li>
+										<li>• Need consistent, reliable service</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-1">Optimal Plan:</p>
+									<ul class="ml-4 space-y-1">
+										<li>• Set up <strong>recurring weekly booking</strong> (book 4 weeks at once)</li>
+										<li>• Fixed pickup: EON IT Park Kharadi main gate, every Monday 3:30 AM</li>
+										<li>• Same vehicle preference (build rapport with driver)</li>
+										<li>• Corporate billing: Monthly invoice sent to Deloitte (if company pays)</li>
+										<li>• Cost: ₹1,233/person/trip = ₹4,932/person/month (4 trips)</li>
+										<li>• Company saves vs individual reimbursements</li>
+									</ul>
+								</div>
+								<div class="bg-green-50 p-3 rounded">
+									<p class="font-bold text-green-700 mb-1">Corporate Efficiency:</p>
+									<p>Recurring bookings = zero planning overhead each week. Same driver = familiarity, reliability. Company billing = easier expense management for employer.</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 5: Payment -->
+			<section id="payment" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Payment & Cost Sharing Methods</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Payment Options for Groups</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="grid md:grid-cols-2 gap-6 text-sm">
+								<div>
+									<p class="font-bold mb-3 text-green-600">Option 1: Single Payer (Recommended)</p>
+									<ul class="space-y-2">
+										<li><strong>How:</strong> One person pays ₹3,700 at journey end</li>
+										<li><strong>Others Pay Back:</strong> Via UPI/Google Pay to that person</li>
+										<li><strong>Pros:</strong> Fast checkout, driver gets single payment, clean transaction</li>
+										<li><strong>Cons:</strong> Requires trust, one person fronts money</li>
+										<li><strong>Best For:</strong> Friends, colleagues who know each other well</li>
+									</ul>
+								</div>
+								<div>
+									<p class="font-bold mb-3 text-blue-600">Option 2: Split Payment</p>
+									<ul class="space-y-2">
+										<li><strong>How:</strong> Each person pays their share to driver</li>
+										<li><strong>Example:</strong> 4 people = ₹925 each via UPI to driver</li>
+										<li><strong>Pros:</strong> No one fronts money, immediate settlement</li>
+										<li><strong>Cons:</strong> 4 separate UPI transactions (slight delay)</li>
+										<li><strong>Best For:</strong> Acquaintances, people meeting for first time</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Corporate Billing Options</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">For Companies Arranging Group Travel:</p>
+							<ul class="text-sm space-y-2">
+								<li><strong>Option A: Individual Reimbursement</strong>
+									<ul class="ml-4 mt-1 space-y-1 text-muted-foreground">
+										<li>• Each employee pays their share (₹925 for 4 people)</li>
+										<li>• Submit receipt to company for reimbursement</li>
+										<li>• We provide individual receipts with name breakdown</li>
+									</ul>
+								</li>
+								<li><strong>Option B: Corporate Direct Billing</strong>
+									<ul class="ml-4 mt-1 space-y-1 text-muted-foreground">
+										<li>• Company has account with GreenEVCabs</li>
+										<li>• We send monthly consolidated invoice</li>
+										<li>• Employees don't pay out of pocket</li>
+										<li>• Easier for finance team (single invoice vs 10 individual claims)</li>
+									</ul>
+								</li>
+								<li><strong>Option C: Manager/Admin Pays, Company Reimburses</strong>
+									<ul class="ml-4 mt-1 space-y-1 text-muted-foreground">
+										<li>• Team lead/manager pays ₹3,700</li>
+										<li>• Claims entire amount from company</li>
+										<li>• Single reimbursement vs multiple small claims</li>
+									</ul>
+								</li>
+							</ul>
+							<p class="text-xs mt-3"><strong>To set up corporate billing:</strong> WhatsApp us with company name, GST number, billing contact. Takes 1-2 days to activate.</p>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Cost Sharing Apps & Tools</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Recommended Apps for Easy Settlement:</p>
+							<div class="grid md:grid-cols-3 gap-4 text-sm">
+								<div class="border-l-4 border-l-green-500 pl-3">
+									<p class="font-semibold mb-2">Splitwise</p>
+									<ul class="space-y-1 text-xs">
+										<li>✓ Add "NMIA Cab" expense</li>
+										<li>✓ Enter ₹3,700, split among group</li>
+										<li>✓ App calculates who owes whom</li>
+										<li>✓ Tracks balances over multiple trips</li>
+									</ul>
+								</div>
+								<div class="border-l-4 border-l-blue-500 pl-3">
+									<p class="font-semibold mb-2">Google Pay Groups</p>
+									<ul class="space-y-1 text-xs">
+										<li>✓ Create group for travelers</li>
+										<li>✓ Add expense ₹3,700</li>
+										<li>✓ Pay directly within app</li>
+										<li>✓ Instant UPI settlement</li>
+									</ul>
+								</div>
+								<div class="border-l-4 border-l-purple-500 pl-3">
+									<p class="font-semibold mb-2">Simple Calculator</p>
+									<ul class="space-y-1 text-xs">
+										<li>✓ ₹3,700 ÷ [number of people]</li>
+										<li>✓ Everyone sends amount via UPI</li>
+										<li>✓ No app needed</li>
+										<li>✓ Straightforward, works for everyone</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 6: Pickup Strategy -->
+			<section id="pickup-strategy" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Multi-Location Pickup Strategy</h2>
+
+				<p class="mb-4">
+					When group members live in different areas, smart pickup planning saves time while maintaining convenience.
+				</p>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Pickup Planning Rules</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<ul class="text-sm space-y-3">
+								<li>
+									<strong>Rule 1: Maximum 2-3 Pickup Locations</strong>
+									<p class="text-muted-foreground mt-1">Each additional stop adds 10-15 minutes. More than 3 stops = inefficient, risk missing flight.</p>
+								</li>
+								<li>
+									<strong>Rule 2: Choose Strategic Meeting Points</strong>
+									<p class="text-muted-foreground mt-1">Pick well-known landmarks (IT park gates, malls, metro stations) instead of individual addresses.</p>
+								</li>
+								<li>
+									<strong>Rule 3: Follow Logical Route Sequence</strong>
+									<p class="text-muted-foreground mt-1">Pick up in order toward NMIA. Example: Hinjewadi → Wakad → Aundh → NMIA (not Wakad → Hinjewadi → Aundh)</p>
+								</li>
+								<li>
+									<strong>Rule 4: First Pickup Gets Luggage Space</strong>
+									<p class="text-muted-foreground mt-1">If someone has large luggage, pick them up first to load boot properly.</p>
+								</li>
+								<li>
+									<strong>Rule 5: Add 5 Minutes Per Stop to Base Time</strong>
+									<p class="text-muted-foreground mt-1">Account for loading passengers, adjusting seats, storing bags at each pickup.</p>
+								</li>
+							</ul>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Example Multi-Pickup Route Planning</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Scenario: 5 people from Hinjewadi (2), Wakad (2), Aundh (1) → NMIA</p>
+							<div class="text-sm space-y-3">
+								<p><strong>Flight Time:</strong> 8:00 AM at NMIA</p>
+								<p><strong>Required Airport Arrival:</strong> 6:30 AM (1.5 hours before)</p>
+								<p><strong>Total Journey:</strong> Hinjewadi to NMIA = 100 km = 2 hours base</p>
+
+								<div class="bg-white p-3 rounded mt-3">
+									<p class="font-semibold mb-2">Pickup Timeline (Working Backwards):</p>
+									<table class="w-full text-xs">
+										<tbody>
+											<tr class="border-b">
+												<td class="py-2"><strong>6:30 AM</strong></td>
+												<td class="py-2">Target arrival at NMIA</td>
+												<td class="py-2"></td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>4:35 AM</strong></td>
+												<td class="py-2">Leave Aundh (last pickup)</td>
+												<td class="py-2">1h 55min to NMIA</td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>4:30 AM</strong></td>
+												<td class="py-2">Pickup at Aundh University Road</td>
+												<td class="py-2">5 min stop (1 person)</td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>4:20 AM</strong></td>
+												<td class="py-2">Travel Wakad → Aundh</td>
+												<td class="py-2">10 min (7 km)</td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>4:15 AM</strong></td>
+												<td class="py-2">Pickup at Wakad D-Mart</td>
+												<td class="py-2">5 min stop (2 people)</td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>4:05 AM</strong></td>
+												<td class="py-2">Travel Hinjewadi → Wakad</td>
+												<td class="py-2">10 min (7 km)</td>
+											</tr>
+											<tr class="bg-green-100 font-semibold">
+												<td class="py-2"><strong>4:00 AM</strong></td>
+												<td class="py-2">First Pickup: Hinjewadi Rajiv Gandhi Infotech Park</td>
+												<td class="py-2">Start journey (2 people)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="bg-green-50 p-3 rounded mt-3">
+									<p class="font-semibold mb-2">Result:</p>
+									<ul class="space-y-1">
+										<li>• All 5 people picked up in 35 minutes (4:00-4:35 AM)</li>
+										<li>• Logical route (west to central, toward NMIA direction)</li>
+										<li>• Reach airport 6:30 AM (on time, with buffer)</li>
+										<li>• Total door-to-airport time for first person: 2h 30min</li>
+										<li>• Total door-to-airport time for last person: 2h</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 7: Booking Process -->
+			<section id="booking-process" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Booking Process for Groups</h2>
+
+				<div class="not-prose my-6">
+					<Card class="bg-gradient-to-r from-green-50 to-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-4">WhatsApp Booking Template for Groups:</p>
+							<div class="bg-white p-4 rounded text-sm">
+								<p class="font-semibold mb-2">Copy-paste and fill in:</p>
+								<div class="font-mono text-xs space-y-1 bg-gray-50 p-3 rounded">
+									<p>Hi, I need a group cab from Pune to NMIA</p>
+									<p>Number of passengers: [3/4/5/6]</p>
+									<p>Flight: [Airline] [Flight Number]</p>
+									<p>Flight Date & Time: [DD-MM-YYYY] [Time]</p>
+									<p>Pickup Locations:</p>
+									<p>1. [First location] - [Number] people - [Time]</p>
+									<p>2. [Second location] - [Number] people - [Time] (if multi-pickup)</p>
+									<p>Luggage: [Number] check-in bags + [Number] cabin bags</p>
+									<p>Payment: [Single person paying / Split payment]</p>
+									<p>Contact for group: [Name] [Phone Number]</p>
+								</div>
+
+								<p class="font-semibold mt-4 mb-2">Example (filled):</p>
+								<div class="font-mono text-xs space-y-1 bg-blue-50 p-3 rounded">
+									<p>Hi, I need a group cab from Pune to NMIA</p>
+									<p>Number of passengers: 4</p>
+									<p>Flight: IndiGo 6E 7834</p>
+									<p>Flight Date & Time: 28-12-2025 7:00 AM</p>
+									<p>Pickup Locations:</p>
+									<p>1. Hinjewadi Phase 1 Rajiv Gandhi Infotech Park Gate - 4 people - 4:15 AM</p>
+									<p>Luggage: 2 check-in bags + 4 cabin bags (light luggage)</p>
+									<p>Payment: Single person paying (I will pay)</p>
+									<p>Contact for group: Rahul Sharma +91 98765 43210</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">What Happens After Booking:</p>
+							<ol class="text-sm space-y-2">
+								<li><strong>1. Instant Confirmation (within 5 minutes)</strong>
+									<p class="text-muted-foreground">Booking ID, Cost confirmation (₹3,700), Vehicle details (KIA Carens or BYD eMax 7)</p>
+								</li>
+								<li><strong>2. Pickup Timeline Confirmation</strong>
+									<p class="text-muted-foreground">We confirm each pickup location and time based on your flight schedule</p>
+								</li>
+								<li><strong>3. Driver Assignment (night before or morning of travel)</strong>
+									<p class="text-muted-foreground">Driver name, phone number, vehicle license plate shared with coordinator</p>
+								</li>
+								<li><strong>4. Real-Time Updates (travel day)</strong>
+									<p class="text-muted-foreground">Driver shares location when departing for first pickup. Updates after each pickup.</p>
+								</li>
+								<li><strong>5. Smooth Journey</strong>
+									<p class="text-muted-foreground">All passengers comfortable, on-time arrival at NMIA</p>
+								</li>
+							</ol>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Final CTA -->
+			<div class="not-prose my-12">
+				<Card class="bg-gradient-to-r from-green-600 to-blue-600 text-white">
+					<CardContent class="pt-6 text-center">
+						<h3 class="text-2xl font-bold mb-4">Book Group Cab to NMIA Now</h3>
+						<p class="mb-2">₹3,700 flat rate for 3-6 passengers | Professional drivers | Silent electric vehicles</p>
+						<p class="text-sm mb-6 opacity-90">Save up to ₹12,300 vs individual cabs | Perfect for colleagues, families, friends</p>
+						<Button asChild size="lg" variant="secondary" class="w-full sm:w-auto">
+							<a href="https://wa.me/919145499009?text=I%20need%20a%20group%20cab%20from%20Pune%20to%20NMIA">
+								Book Group Cab via WhatsApp →
+							</a>
+						</Button>
+						<p class="text-xs mt-4 opacity-75">Available 24/7 | Multi-location pickup available | Corporate billing available</p>
+					</CardContent>
+				</Card>
+			</div>
+
+		</div>
+	</article>
+</MainLayout>
