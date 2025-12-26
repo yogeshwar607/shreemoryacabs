@@ -1,0 +1,759 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = {
+	"@context": "https://schema.org",
+	"@type": "HowTo",
+	"name": "How to Book NMIA Cab from Pune: Complete Step-by-Step Guide",
+	"description": "Complete step-by-step guide for booking cab from Pune to Navi Mumbai Airport. Covers WhatsApp booking, payment methods, timing calculation, and first-time user walkthrough.",
+	"totalTime": "PT5M",
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "Open WhatsApp and send booking message",
+			"text": "Send message to +91 91454 99009 with pickup location, destination, date, and time",
+			"url": "https://wa.me/919145499009"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Receive confirmation",
+			"text": "Get instant confirmation with booking ID and fare details within 5 minutes"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Get driver details",
+			"text": "Receive driver name, phone number, and vehicle details 3-4 hours before pickup"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Complete journey",
+			"text": "Driver picks you up on time, comfortable journey to NMIA in electric vehicle"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Make payment",
+			"text": "Pay ₹3,700 at end of journey via cash, UPI, or card"
+		}
+	],
+	"datePublished": "2025-12-26",
+	"dateModified": "2025-12-26"
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+	{ name: "Blog", url: "/blog" },
+	{ name: "How to Book NMIA Cab Guide", url: "/blog/how-to-book-nmia-cab-complete-step-by-step-guide" }
+]);
+---
+
+<MainLayout
+	title="How to Book NMIA Cab from Pune: Complete Step-by-Step Guide | GreenEVCabs"
+	description="Complete step-by-step guide for booking cab from Pune to Navi Mumbai Airport. Covers WhatsApp booking process, payment methods, timing calculation, flight details sharing, and first-time user walkthrough with screenshots."
+	keywords={[
+		"how to book nmia cab",
+		"book cab pune to navi mumbai airport",
+		"nmia cab booking process",
+		"whatsapp cab booking nmia",
+		"first time nmia cab booking",
+		"step by step cab booking guide",
+		"pune to nmia booking tutorial",
+		"nmia cab payment methods",
+		"book electric cab nmia",
+		"greenevcabs booking guide"
+	]}
+>
+	<StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+	<article class="py-16">
+		<div class="container mx-auto px-4 max-w-4xl">
+			<!-- Header -->
+			<div class="mb-8">
+				<Badge variant="secondary" class="mb-4">Booking Guide</Badge>
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">
+					How to Book NMIA Cab from Pune: Complete Step-by-Step Guide
+				</h1>
+				<p class="text-xl text-muted-foreground">
+					First-time booking a cab to Navi Mumbai Airport from Pune? This complete guide walks you through every step, from sending your first WhatsApp message to completing your journey. Takes 5 minutes to book, zero hassle.
+				</p>
+			</div>
+
+			<!-- Quick Summary -->
+			<div class="not-prose my-8">
+				<Card class="bg-green-50">
+					<CardContent class="pt-6">
+						<p class="font-bold mb-3">TL;DR - Booking in 30 Seconds:</p>
+						<ol class="text-sm space-y-2">
+							<li><strong>1.</strong> Open WhatsApp, send message to <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 font-semibold">+91 91454 99009</a></li>
+							<li><strong>2.</strong> Share: Your location, NMIA, flight date/time</li>
+							<li><strong>3.</strong> Get confirmation in 5 minutes (Booking ID + ₹3,700 fare)</li>
+							<li><strong>4.</strong> Receive driver details on travel day</li>
+							<li><strong>5.</strong> Pay ₹3,700 after journey (cash/UPI/card)</li>
+						</ol>
+						<div class="mt-4">
+							<Button asChild class="w-full sm:w-auto">
+								<a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA">Start Booking Now via WhatsApp</a>
+							</Button>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- Table of Contents -->
+			<div class="not-prose my-8">
+				<Card>
+					<CardHeader>
+						<CardTitle>Complete Booking Guide Contents</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<ul class="space-y-2 text-sm">
+							<li><a href="#method-comparison" class="text-green-600 hover:underline">1. Booking Methods Comparison</a></li>
+							<li><a href="#whatsapp-booking" class="text-green-600 hover:underline">2. WhatsApp Booking (Step-by-Step)</a></li>
+							<li><a href="#timing-calculation" class="text-green-600 hover:underline">3. How to Calculate Pickup Time</a></li>
+							<li><a href="#flight-details" class="text-green-600 hover:underline">4. Sharing Flight Details (Why & How)</a></li>
+							<li><a href="#confirmation" class="text-green-600 hover:underline">5. Understanding Your Confirmation</a></li>
+							<li><a href="#driver-details" class="text-green-600 hover:underline">6. Getting Driver Details</a></li>
+							<li><a href="#day-of-travel" class="text-green-600 hover:underline">7. Day of Travel: What to Expect</a></li>
+							<li><a href="#payment" class="text-green-600 hover:underline">8. Payment Methods & Process</a></li>
+							<li><a href="#faq" class="text-green-600 hover:underline">9. Common First-Timer Questions</a></li>
+						</ul>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- Section 1: Method Comparison -->
+			<section id="method-comparison" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Booking Methods Comparison</h2>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Available Booking Methods:</p>
+							<table class="w-full text-sm">
+								<thead>
+									<tr class="border-b bg-gray-50">
+										<th class="text-left py-2 px-2">Method</th>
+										<th class="text-left py-2 px-2">Speed</th>
+										<th class="text-left py-2 px-2">Ease</th>
+										<th class="text-left py-2 px-2">Support</th>
+										<th class="text-left py-2 px-2">Best For</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-b bg-green-100">
+										<td class="py-2 px-2"><strong>WhatsApp</strong><br/>+91 91454 99009</td>
+										<td class="py-2 px-2">5 min confirmation</td>
+										<td class="py-2 px-2">Very Easy</td>
+										<td class="py-2 px-2">Real-time chat</td>
+										<td class="py-2 px-2 font-semibold text-green-700">Most users (90%)</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2"><strong>Phone Call</strong><br/>Same number</td>
+										<td class="py-2 px-2">Instant (if answered)</td>
+										<td class="py-2 px-2">Easy</td>
+										<td class="py-2 px-2">Voice support</td>
+										<td class="py-2 px-2">Urgent bookings, elderly users</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2"><strong>Website Form</strong><br/>(if available)</td>
+										<td class="py-2 px-2">10-15 min</td>
+										<td class="py-2 px-2">Moderate</td>
+										<td class="py-2 px-2">Email response</td>
+										<td class="py-2 px-2">Those who prefer forms over chat</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-xs mt-3 text-muted-foreground"><strong>Recommended:</strong> WhatsApp is fastest, easiest, and provides written confirmation you can refer back to.</p>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Why WhatsApp is the Best Method</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<ul class="text-sm space-y-2">
+								<li>✓ <strong>Written Confirmation:</strong> Booking ID, fare, pickup time all in one message (screenshot-able)</li>
+								<li>✓ <strong>No App Download:</strong> You already have WhatsApp on your phone</li>
+								<li>✓ <strong>Async Communication:</strong> Send message anytime (midnight, during meeting), get reply within minutes</li>
+								<li>✓ <strong>Photo Sharing:</strong> Can share flight ticket screenshot easily if needed</li>
+								<li>✓ <strong>Real-Time Updates:</strong> Driver sends location, ETA updates on same WhatsApp thread</li>
+								<li>✓ <strong>Message History:</strong> All your bookings saved in one WhatsApp chat</li>
+								<li>✓ <strong>No Typos in Number:</strong> Click WhatsApp link = auto-opens correct chat</li>
+							</ul>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 2: WhatsApp Booking -->
+			<section id="whatsapp-booking" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">WhatsApp Booking: Complete Step-by-Step Process</h2>
+
+				<div class="not-prose my-6">
+					<Card class="bg-gradient-to-r from-green-50 to-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-4">Detailed Walkthrough (First-Time User):</p>
+
+							<div class="space-y-6">
+								<!-- Step 1 -->
+								<div class="bg-white p-4 rounded border-l-4 border-l-green-500">
+									<p class="font-bold text-lg mb-2">Step 1: Open WhatsApp Chat</p>
+									<p class="text-sm mb-3"><strong>Option A (Easiest):</strong> Click this link on your phone → <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 underline">Direct WhatsApp Link</a></p>
+									<p class="text-sm mb-3"><strong>Option B (Manual):</strong></p>
+									<ol class="text-sm space-y-1 ml-4">
+										<li>1. Open WhatsApp on your phone</li>
+										<li>2. Tap "New Chat" (green button bottom-right)</li>
+										<li>3. Type number: <strong>+91 91454 99009</strong></li>
+										<li>4. Tap to open chat</li>
+									</ol>
+								</div>
+
+								<!-- Step 2 -->
+								<div class="bg-white p-4 rounded border-l-4 border-l-blue-500">
+									<p class="font-bold text-lg mb-2">Step 2: Send Your Booking Message</p>
+									<p class="text-sm mb-3"><strong>Template Message (Copy-Paste Ready):</strong></p>
+									<div class="bg-gray-100 p-3 rounded font-mono text-xs space-y-1">
+										<p>Hi, I need a cab from Pune to Navi Mumbai Airport</p>
+										<p>Pickup Location: [Your exact address/landmark]</p>
+										<p>Destination: NMIA (Navi Mumbai International Airport)</p>
+										<p>Date: [DD-MM-YYYY]</p>
+										<p>Time: [Pickup time you calculated]</p>
+										<p>Flight Time: [If applicable, e.g., "7:00 AM flight"]</p>
+										<p>Passengers: [Number of people]</p>
+										<p>Luggage: [e.g., "2 large bags + 2 cabin bags"]</p>
+									</div>
+									<p class="text-xs mt-3 italic">Example filled: "Hi, I need a cab from Pune to NMIA. Pickup: Rajiv Gandhi Infotech Park, Hinjewadi Phase 1. Date: 28-12-2025. Time: 4:00 AM. Flight: 7:00 AM IndiGo to Bengaluru. Passengers: 1. Luggage: 1 cabin bag."</p>
+								</div>
+
+								<!-- Step 3 -->
+								<div class="bg-white p-4 rounded border-l-4 border-l-purple-500">
+									<p class="font-bold text-lg mb-2">Step 3: Receive Instant Confirmation (Within 5 Minutes)</p>
+									<p class="text-sm mb-2">You'll get a reply like this:</p>
+									<div class="bg-green-50 p-3 rounded text-sm">
+										<p class="font-semibold mb-2">✅ Booking Confirmed!</p>
+										<p><strong>Booking ID:</strong> GEV2025-1234</p>
+										<p><strong>Route:</strong> Hinjewadi → NMIA</p>
+										<p><strong>Pickup:</strong> 28 Dec 2025, 4:00 AM</p>
+										<p><strong>Fare:</strong> ₹3,700 (all-inclusive)</p>
+										<p><strong>Vehicle:</strong> KIA Carens EV (6-seater)</p>
+										<p><strong>Distance:</strong> ~100 km (2 hours journey)</p>
+										<p class="mt-2 italic">Driver details will be shared 3-4 hours before pickup. Safe travels!</p>
+									</div>
+								</div>
+
+								<!-- Step 4 -->
+								<div class="bg-white p-4 rounded border-l-4 border-l-orange-500">
+									<p class="font-bold text-lg mb-2">Step 4: Save Confirmation (Important!)</p>
+									<p class="text-sm">What to do with confirmation:</p>
+									<ul class="text-sm space-y-1 mt-2 ml-4">
+										<li>✓ Screenshot the confirmation message</li>
+										<li>✓ Star the message in WhatsApp (tap & hold → star icon)</li>
+										<li>✓ Note down Booking ID in your calendar/reminder</li>
+										<li>✓ Share screenshot with family/colleagues if needed</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 3: Timing Calculation -->
+			<section id="timing-calculation" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">How to Calculate Correct Pickup Time</h2>
+
+				<p class="mb-4">
+					<strong>Most common mistake:</strong> Booking cab for flight time instead of calculating backward. Here's the right way:
+				</p>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-4">Reverse Timeline Calculation Method:</p>
+							<div class="space-y-4 text-sm">
+								<div class="bg-blue-50 p-4 rounded">
+									<p class="font-bold mb-2">Example: 7:00 AM Flight at NMIA (Departure to Bengaluru)</p>
+									<table class="w-full text-xs">
+										<tbody>
+											<tr class="border-b">
+												<td class="py-2"><strong>7:00 AM</strong></td>
+												<td class="py-2">Flight departure time</td>
+												<td class="py-2"></td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>5:30 AM</strong></td>
+												<td class="py-2">↑ Latest airport arrival (1.5 hours before domestic flight)</td>
+												<td class="py-2 text-red-600">You MUST be at airport by this time</td>
+											</tr>
+											<tr class="border-b">
+												<td class="py-2"><strong>3:30 AM</strong></td>
+												<td class="py-2">↑ Subtract 2 hours travel time (Hinjewadi-NMIA)</td>
+												<td class="py-2">Cab should start from Hinjewadi</td>
+											</tr>
+											<tr class="bg-green-100 font-semibold">
+												<td class="py-2"><strong>3:20 AM</strong></td>
+												<td class="py-2">↑ Add 10 min buffer (loading luggage, unexpected delay)</td>
+												<td class="py-2 text-green-700">📍 PICKUP TIME TO BOOK</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="mt-3 font-semibold">Answer: Book cab for 3:20 AM pickup for 7:00 AM flight from NMIA</p>
+								</div>
+
+								<div class="bg-yellow-50 p-4 rounded mt-4">
+									<p class="font-bold mb-2">Formula (Universal):</p>
+									<div class="bg-white p-3 rounded">
+										<p class="font-mono text-sm">Pickup Time = Flight Time - Airport Arrival Buffer - Journey Time - Loading Buffer</p>
+										<p class="text-xs mt-2">Where:</p>
+										<ul class="text-xs space-y-1 mt-1">
+											<li>• Airport Arrival Buffer: 1.5 hours (domestic), 2.5 hours (international)</li>
+											<li>• Journey Time: 2 hours (Hinjewadi/Wakad), 2.5 hours (Kharadi/East Pune)</li>
+											<li>• Loading Buffer: 10-15 minutes</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Ready-to-Use Pickup Time Table</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">From Hinjewadi/Wakad/Baner to NMIA:</p>
+							<table class="w-full text-sm">
+								<thead>
+									<tr class="border-b bg-gray-50">
+										<th class="text-left py-2 px-2">Flight Time at NMIA</th>
+										<th class="text-left py-2 px-2">Pickup Time (Domestic)</th>
+										<th class="text-left py-2 px-2">Pickup Time (International)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-b">
+										<td class="py-2 px-2">6:00 AM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">2:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50">1:20 AM</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2">7:00 AM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">3:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50">2:20 AM</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2">8:00 AM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">4:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50">3:20 AM</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2">10:00 AM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">6:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50">5:20 AM</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2">2:00 PM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">10:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50">9:20 AM</td>
+									</tr>
+									<tr class="border-b">
+										<td class="py-2 px-2">6:00 PM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">2:20 PM</td>
+										<td class="py-2 px-2 bg-orange-50">1:20 PM</td>
+									</tr>
+									<tr>
+										<td class="py-2 px-2">10:00 PM</td>
+										<td class="py-2 px-2 bg-green-50 font-semibold">6:20 PM</td>
+										<td class="py-2 px-2 bg-orange-50">5:20 PM</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-xs mt-3 text-muted-foreground">For Kharadi/Viman Nagar/East Pune: Add 30 minutes to pickup times shown above.</p>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 4: Flight Details -->
+			<section id="flight-details" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Sharing Flight Details (Why & How)</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Why We Ask for Flight Details</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">3 Key Reasons:</p>
+							<div class="text-sm space-y-3">
+								<div class="border-l-4 border-l-green-500 pl-3">
+									<p class="font-semibold">1. Automatic Delay Tracking (FREE Service)</p>
+									<p class="text-muted-foreground">If your flight gets delayed, we automatically adjust driver timing. You don't need to call/message. Driver arrives at new time. Zero stress for you.</p>
+								</div>
+								<div class="border-l-4 border-l-blue-500 pl-3">
+									<p class="font-semibold">2. Better Pickup Time Advice</p>
+									<p class="text-muted-foreground">We know traffic patterns. If you booked 3 AM pickup for 6 AM flight (too early), we'll suggest 3:30 AM instead. Or if you booked too late, we'll warn you.</p>
+								</div>
+								<div class="border-l-4 border-l-purple-500 pl-3">
+									<p class="font-semibold">3. Return Journey Planning</p>
+									<p class="text-muted-foreground">Many travelers book return cab too. Having flight details helps us proactively offer return booking at good rates.</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">What Flight Info to Share</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="grid md:grid-cols-2 gap-6 text-sm">
+								<div>
+									<p class="font-bold mb-2 text-green-600">Minimum Required:</p>
+									<ul class="space-y-1">
+										<li>✓ Flight date</li>
+										<li>✓ Flight time (departure)</li>
+										<li>✓ Destination (e.g., Bengaluru, Goa, Delhi)</li>
+									</ul>
+									<p class="text-xs mt-2 italic">This is enough for booking confirmation</p>
+								</div>
+								<div>
+									<p class="font-bold mb-2 text-blue-600">Recommended (For Full Service):</p>
+									<ul class="space-y-1">
+										<li>✓ Airline name (IndiGo, Air India, etc.)</li>
+										<li>✓ Flight number (e.g., 6E 7834)</li>
+										<li>✓ PNR / Booking reference (optional)</li>
+									</ul>
+									<p class="text-xs mt-2 italic">Enables automatic delay tracking</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">How to Find Your Flight Number</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-purple-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Quick Guide:</p>
+							<ol class="text-sm space-y-2">
+								<li><strong>1. Check Your Booking Email/SMS:</strong> Airline sends confirmation with flight number (looks like "6E 7834" or "AI 504")</li>
+								<li><strong>2. Look at E-Ticket:</strong> Top of ticket has flight number clearly</li>
+								<li><strong>3. Airline App:</strong> Open booking in IndiGo/Air India app, flight number shown prominently</li>
+								<li><strong>4. Screenshot & Share:</strong> Just send screenshot of flight ticket to our WhatsApp, we'll extract details</li>
+							</ol>
+							<p class="text-xs mt-3 italic">Don't worry if you can't find it—just share basic details (date, time, destination) and we'll book cab anyway.</p>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 5: Confirmation -->
+			<section id="confirmation" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Understanding Your Booking Confirmation</h2>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-4">Sample Confirmation Message Breakdown:</p>
+							<div class="bg-green-50 p-4 rounded text-sm mb-4">
+								<p class="font-bold mb-2">✅ Booking Confirmed!</p>
+								<p><strong>Booking ID:</strong> GEV2025-1234 ← <span class="text-muted-foreground">Your reference number (for future communication)</span></p>
+								<p><strong>Route:</strong> Hinjewadi → NMIA ← <span class="text-muted-foreground">Double-check this matches your request</span></p>
+								<p><strong>Pickup:</strong> 28 Dec 2025, 4:00 AM ← <span class="text-muted-foreground">Driver will reach here at this time</span></p>
+								<p><strong>Fare:</strong> ₹3,700 (all-inclusive) ← <span class="text-muted-foreground">No hidden charges, pay after journey</span></p>
+								<p><strong>Vehicle:</strong> KIA Carens EV (6-seater) ← <span class="text-muted-foreground">Electric vehicle, comfortable for up to 6 people</span></p>
+								<p><strong>Distance:</strong> ~100 km (2 hours journey) ← <span class="text-muted-foreground">Expected travel time</span></p>
+								<p class="mt-2 italic">Driver details will be shared 3-4 hours before pickup.</p>
+							</div>
+
+							<div class="bg-blue-50 p-4 rounded text-sm">
+								<p class="font-bold mb-2">What This Confirmation Means:</p>
+								<ul class="space-y-1">
+									<li>✓ Your booking is 100% confirmed (we don't overbook)</li>
+									<li>✓ A vehicle has been allocated to you</li>
+									<li>✓ Price is locked at ₹3,700 (won't change on travel day)</li>
+									<li>✓ You'll get driver details closer to travel time (standard practice)</li>
+									<li>✓ No payment needed now (pay after journey)</li>
+								</ul>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 6: Driver Details -->
+			<section id="driver-details" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Getting Driver Details</h2>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">When You'll Receive Driver Info</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="text-sm space-y-3">
+								<p><strong>Standard Timeline:</strong> 3-4 hours before your pickup time</p>
+								<p><strong>Example:</strong> If pickup is 4:00 AM, you'll get driver details around 12 midnight-1 AM</p>
+								<p><strong>Why Not Immediately?</strong></p>
+								<ul class="ml-4 space-y-1">
+									<li>• We allocate driver based on their location/schedule closer to your time</li>
+									<li>• Ensures you get driver closest to your area (faster pickup)</li>
+									<li>• Allows us to handle any last-minute vehicle maintenance</li>
+									<li>• Standard practice across all professional cab services</li>
+								</ul>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">What Driver Details You'll Receive</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-green-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Sample Driver Details Message:</p>
+							<div class="bg-white p-3 rounded text-sm">
+								<p class="font-semibold mb-2">🚗 Your Driver Details (Booking ID: GEV2025-1234)</p>
+								<p><strong>Driver Name:</strong> Rajesh Kumar</p>
+								<p><strong>Phone:</strong> +91 98765 43210 (WhatsApp enabled)</p>
+								<p><strong>Vehicle:</strong> KIA Carens EV</p>
+								<p><strong>Color:</strong> White</p>
+								<p><strong>License Plate:</strong> MH 12 AB 1234</p>
+								<p><strong>Pickup Location:</strong> Rajiv Gandhi Infotech Park Gate, Hinjewadi</p>
+								<p><strong>Pickup Time:</strong> 28 Dec, 4:00 AM</p>
+								<p class="mt-2 italic">Driver will send location when departing. Estimated arrival at pickup: 3:55 AM</p>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">What to Do After Receiving Driver Details</h3>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<ol class="text-sm space-y-2">
+								<li><strong>1. Save Driver's Number:</strong> Add to contacts as "GEV Driver - [Date]"</li>
+								<li><strong>2. Verify Details Match:</strong> Check pickup time, location matches your booking</li>
+								<li><strong>3. Set Alarm:</strong> Wake up 30 min before pickup (if early morning)</li>
+								<li><strong>4. Keep Luggage Ready:</strong> Pack night before, ready to load quickly</li>
+								<li><strong>5. Charge Phone:</strong> Ensure 100% battery for communication during journey</li>
+								<li><strong>6. Optional - Call Driver:</strong> You can call 1 hour before if you want to confirm (most don't need to)</li>
+							</ol>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 7: Day of Travel -->
+			<section id="day-of-travel" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Day of Travel: Complete Timeline</h2>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-4">What Happens on Travel Day (Hour-by-Hour):</p>
+							<div class="space-y-4 text-sm">
+								<div class="bg-blue-50 p-3 rounded">
+									<p class="font-semibold">30 Minutes Before Pickup (e.g., 3:30 AM for 4 AM pickup):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Driver leaves from his location, heading to your pickup point</li>
+										<li>• You receive WhatsApp message: "On the way to pickup location. Will reach by 4:00 AM"</li>
+										<li>• Optional: Driver shares live location link (you can track cab approaching)</li>
+									</ul>
+								</div>
+
+								<div class="bg-green-50 p-3 rounded">
+									<p class="font-semibold">5 Minutes Before Pickup (e.g., 3:55 AM):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Driver sends message: "Reached near [your location]. White KIA Carens, MH 12 AB 1234"</li>
+										<li>• You go out, identify vehicle by number plate or driver holds nameplate/calls you</li>
+										<li>• Driver helps load luggage into boot</li>
+									</ul>
+								</div>
+
+								<div class="bg-purple-50 p-3 rounded">
+									<p class="font-semibold">Journey Start (4:00 AM):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Quick introductions, driver confirms destination: "NMIA, correct?"</li>
+										<li>• You settle in, driver begins journey</li>
+										<li>• Electric vehicle = silent, smooth ride (can sleep/work/relax)</li>
+										<li>• Climate control set to your preference</li>
+									</ul>
+								</div>
+
+								<div class="bg-yellow-50 p-3 rounded">
+									<p class="font-semibold">During Journey (4:00 AM - 6:00 AM):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Driver follows Google Maps optimal route (usually Mumbai-Pune Expressway)</li>
+										<li>• Professional driver maintains safe speed (80-90 km/h expressway)</li>
+										<li>• Toll payments handled by driver (included in ₹3,700 fare)</li>
+										<li>• If you need rest stop (bathroom/coffee), just ask - driver will find safe spot</li>
+										<li>• WiFi available if needed for work/calls</li>
+									</ul>
+								</div>
+
+								<div class="bg-orange-50 p-3 rounded">
+									<p class="font-semibold">Arrival at NMIA (6:00 AM):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Driver navigates to departure terminal (Domestic/International as per your flight)</li>
+										<li>• Stops at airline drop-off zone</li>
+										<li>• Helps unload luggage from boot</li>
+										<li>• Confirms you're at correct terminal/airline counter</li>
+									</ul>
+								</div>
+
+								<div class="bg-green-100 p-3 rounded">
+									<p class="font-semibold">Payment & Completion (6:05 AM):</p>
+									<ul class="ml-4 space-y-1 mt-2">
+										<li>• Driver says total: "₹3,700 sir/madam"</li>
+										<li>• You pay via UPI/cash/card (your choice)</li>
+										<li>• Driver sends digital receipt to your WhatsApp immediately</li>
+										<li>• Driver wishes you safe journey, leaves</li>
+										<li>• You proceed to check-in (with 1 hour buffer—comfortable timing!)</li>
+									</ul>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 8: Payment -->
+			<section id="payment" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Payment Methods & Process</h2>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Accepted Payment Methods:</p>
+							<div class="grid md:grid-cols-3 gap-4 text-sm">
+								<div class="bg-green-50 p-3 rounded">
+									<p class="font-semibold text-green-700 mb-2">UPI (Recommended)</p>
+									<ul class="space-y-1">
+										<li>✓ Google Pay</li>
+										<li>✓ PhonePe</li>
+										<li>✓ Paytm</li>
+										<li>✓ Any UPI app</li>
+									</ul>
+									<p class="text-xs mt-2">Driver shares UPI ID or QR code</p>
+								</div>
+								<div class="bg-blue-50 p-3 rounded">
+									<p class="font-semibold text-blue-700 mb-2">Cash</p>
+									<ul class="space-y-1">
+										<li>✓ Exact change appreciated</li>
+										<li>✓ Driver carries change for ₹500 notes</li>
+										<li>✓ Receipt provided immediately</li>
+									</ul>
+									<p class="text-xs mt-2">Keep ₹3,700 ready if paying cash</p>
+								</div>
+								<div class="bg-purple-50 p-3 rounded">
+									<p class="font-semibold text-purple-700 mb-2">Card (Swipe Machine)</p>
+									<ul class="space-y-1">
+										<li>✓ Debit cards</li>
+										<li>✓ Credit cards</li>
+										<li>✓ Contactless supported</li>
+									</ul>
+									<p class="text-xs mt-2">Driver carries portable card machine</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8 mb-4">Receipt & Reimbursement</h3>
+
+				<div class="not-prose my-6">
+					<Card class="bg-blue-50">
+						<CardContent class="pt-6">
+							<p class="font-bold mb-3">Digital Receipt (Sent Instantly):</p>
+							<div class="bg-white p-3 rounded text-sm mb-3">
+								<p class="font-semibold">GreenEVCabs Invoice</p>
+								<p>Booking ID: GEV2025-1234</p>
+								<p>Date: 28 Dec 2025</p>
+								<p>Route: Hinjewadi → NMIA (100 km)</p>
+								<p>Passenger: [Your Name]</p>
+								<p>Amount: ₹3,700 (All-inclusive)</p>
+								<p>Payment: UPI (Google Pay)</p>
+								<p>GST: Included (GSTIN: XXXXX)</p>
+								<p class="mt-2 text-xs">For queries: support@greenevcabs.com</p>
+							</div>
+							<p class="text-sm"><strong>For Company Reimbursement:</strong> This receipt is GST-compliant and accepted by all companies. Forward WhatsApp receipt to your finance team or upload in expense system (Zoho/SAP Concur/etc.)</p>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Section 9: FAQ -->
+			<section id="faq" class="mb-12">
+				<h2 class="text-3xl font-bold mb-6">Common First-Timer Questions</h2>
+
+				<div class="not-prose my-6">
+					<Card>
+						<CardContent class="pt-6">
+							<div class="space-y-4 text-sm">
+								<div>
+									<p class="font-semibold mb-1">Q: Do I need to pay booking advance?</p>
+									<p class="text-muted-foreground">A: No. Zero advance payment. Pay ₹3,700 only after journey completion.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: Can I cancel/reschedule my booking?</p>
+									<p class="text-muted-foreground">A: Yes, FREE cancellation/rescheduling up to 2 hours before pickup time. Just send WhatsApp message.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: What if my flight gets delayed?</p>
+									<p class="text-muted-foreground">A: If you shared flight details, we track automatically. If flight delayed 2 hours, driver timing adjusted automatically +2 hours. Zero extra charge.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: Can I book for someone else (family/friend)?</p>
+									<p class="text-muted-foreground">A: Yes! Just provide their name, phone number, pickup location in booking message. They'll receive driver details on their WhatsApp.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: Is ₹3,700 the final price? Any hidden charges?</p>
+									<p class="text-muted-foreground">A: ₹3,700 is ALL-INCLUSIVE. Covers: driver charges, vehicle charges, fuel/electricity, tolls, parking, taxes. Literally zero hidden charges.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: How do I know the driver is legitimate?</p>
+									<p class="text-muted-foreground">A: We send driver's verified details (name, phone, vehicle number). Driver also has your booking ID. Match vehicle number when cab arrives. Our drivers are background-verified.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: Can I share cab with colleagues to split cost?</p>
+									<p class="text-muted-foreground">A: Absolutely! Cab fits 6 people comfortably. If 4 colleagues share, cost is ₹925/person instead of ₹3,700. Mention "group booking" in message.</p>
+								</div>
+								<div>
+									<p class="font-semibold mb-1">Q: What if I have extra luggage (6-7 bags)?</p>
+									<p class="text-muted-foreground">A: Mention luggage quantity when booking. We'll allocate BYD eMax 7 (larger boot) instead of Carens. Same ₹3,700 price.</p>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
+
+			<!-- Final CTA -->
+			<div class="not-prose my-12">
+				<Card class="bg-gradient-to-r from-green-600 to-blue-600 text-white">
+					<CardContent class="pt-6 text-center">
+						<h3 class="text-2xl font-bold mb-4">Ready to Book Your NMIA Cab?</h3>
+						<p class="mb-2">Takes 2 minutes | Instant confirmation | Zero advance payment</p>
+						<p class="text-sm mb-6 opacity-90">Follow the steps above or click below to start booking now</p>
+						<Button asChild size="lg" variant="secondary" class="w-full sm:w-auto">
+							<a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA">
+								Book via WhatsApp Now →
+							</a>
+						</Button>
+						<p class="text-xs mt-4 opacity-75">+91 91454 99009 | Available 24/7 | Reply within 5 minutes</p>
+					</CardContent>
+				</Card>
+			</div>
+
+		</div>
+	</article>
+</MainLayout>
