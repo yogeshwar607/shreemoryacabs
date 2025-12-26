@@ -42,19 +42,19 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 <thead>
                   <tr class="border-b">
                     <th class="text-left p-3">Factor</th>
-                    <th class="text-left p-3 bg-green-50">Navi Mumbai Airport</th>
+                    <th class="text-left p-3 bg-green-50 dark:bg-green-900/30">Navi Mumbai Airport</th>
                     <th class="text-left p-3">Mumbai Airport</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b"><td class="p-3 font-semibold">Distance from Pune</td><td class="p-3 bg-green-50">110 km</td><td class="p-3">150 km</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Travel Time</td><td class="p-3 bg-green-50">2-2.5 hours</td><td class="p-3">2.5-3.5 hours</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Cab Fare</td><td class="p-3 bg-green-50">₹3,700</td><td class="p-3">₹3,700</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Route Quality</td><td class="p-3 bg-green-50">95% expressway</td><td class="p-3">70% expressway</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Traffic</td><td class="p-3 bg-green-50">Minimal</td><td class="p-3">Mumbai city traffic</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Airlines (as of Dec 2025)</td><td class="p-3 bg-green-50">IndiGo, Akasa Air, Air India Express, Star Air</td><td class="p-3">All major airlines</td></tr>
-                  <tr class="border-b"><td class="p-3 font-semibold">Operational Hours</td><td class="p-3 bg-green-50">8 AM - 8 PM (24/7 from Feb 2026)</td><td class="p-3">24/7</td></tr>
-                  <tr><td class="p-3 font-semibold">Airport Condition</td><td class="p-3 bg-green-50">Brand new (opened Dec 2025)</td><td class="p-3">Established, crowded</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Distance from Pune</td><td class="p-3 bg-green-50 dark:bg-green-900/30">110 km</td><td class="p-3">150 km</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Travel Time</td><td class="p-3 bg-green-50 dark:bg-green-900/30">2-2.5 hours</td><td class="p-3">2.5-3.5 hours</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Cab Fare</td><td class="p-3 bg-green-50 dark:bg-green-900/30">₹2,300</td><td class="p-3">₹2,300</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Route Quality</td><td class="p-3 bg-green-50 dark:bg-green-900/30">95% expressway</td><td class="p-3">70% expressway</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Traffic</td><td class="p-3 bg-green-50 dark:bg-green-900/30">Minimal</td><td class="p-3">Mumbai city traffic</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Airlines (as of Dec 2025)</td><td class="p-3 bg-green-50 dark:bg-green-900/30">IndiGo, Akasa Air, Air India Express, Star Air</td><td class="p-3">All major airlines</td></tr>
+                  <tr class="border-b"><td class="p-3 font-semibold">Operational Hours</td><td class="p-3 bg-green-50 dark:bg-green-900/30">8 AM - 8 PM (24/7 from Feb 2026)</td><td class="p-3">24/7</td></tr>
+                  <tr><td class="p-3 font-semibold">Airport Condition</td><td class="p-3 bg-green-50 dark:bg-green-900/30">Brand new (opened Dec 2025)</td><td class="p-3">Established, crowded</td></tr>
                 </tbody>
               </table>
             </CardContent>
@@ -84,24 +84,24 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <h2 class="text-3xl font-bold mt-12 mb-6">2. Cost Comparison</h2>
 
         <div class="not-prose my-8">
-          <Card className="bg-green-50">
+          <Card className="bg-green-50 dark:bg-green-900/30">
             <CardHeader>
               <CardTitle>GreenEVCabs Pricing</CardTitle>
             </CardHeader>
             <CardContent>
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
-                  <p class="font-bold text-2xl text-green-600">₹3,700</p>
+                  <p class="font-bold text-2xl text-green-600">₹2,300</p>
                   <p class="text-sm">Navi Mumbai Airport to Pune</p>
                   <p class="text-xs text-muted-foreground">110 km journey</p>
                 </div>
                 <div>
-                  <p class="font-bold text-2xl">₹3,700</p>
+                  <p class="font-bold text-2xl">₹2,300</p>
                   <p class="text-sm">Mumbai Airport to Pune</p>
                   <p class="text-xs text-muted-foreground">150 km journey</p>
                 </div>
               </div>
-              <p class="mt-4 text-sm text-green-700">Same price, but NMIA offers better value: shorter journey, faster arrival</p>
+              <p class="mt-4 text-sm text-green-700 dark:text-green-400">Same price, but NMIA offers better value: shorter journey, faster arrival</p>
             </CardContent>
           </Card>
         </div>
@@ -166,7 +166,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <h2 class="text-3xl font-bold mt-12 mb-6">When to Choose Navi Mumbai Airport</h2>
 
         <div class="not-prose my-8">
-          <Card className="border-green-500 border-2">
+          <Card className="border-green-500 dark:border-green-600 border-2">
             <CardContent className="pt-6">
               <ul class="space-y-2">
                 <li>✓ Your destination is served by NMIA airlines</li>
@@ -210,9 +210,9 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
         <p>As NMIA expands operations (24/7 from Feb 2026, international flights coming soon, more airlines joining), it will become the default choice for Pune residents.</p>
 
-        <div class="not-prose mt-12 p-6 bg-green-50 rounded-lg">
+        <div class="not-prose mt-12 p-6 bg-green-50 dark:bg-green-900/30 rounded-lg">
           <h3 class="text-2xl font-bold mb-4">Book Your NMIA Cab from Pune</h3>
-          <p class="mb-4">Comfortable electric cab service at flat ₹3,700 to all Pune localities</p>
+          <p class="mb-4">Comfortable electric cab service at flat ₹2,300 to all Pune localities</p>
           <div class="flex gap-4">
             <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Call: +91-7498264215</a></Button>
             <Button size="lg" variant="outline" asChild><a href="https://wa.me/917498264215">💬 WhatsApp</a></Button>

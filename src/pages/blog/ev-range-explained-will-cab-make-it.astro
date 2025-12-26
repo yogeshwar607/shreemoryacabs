@@ -156,7 +156,7 @@ const faqSchema = {
     </div>
 
     <!-- Quick Answer Box -->
-    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+    <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
         <Zap className="h-6 w-6 text-green-600" />
         Quick Answer: Yes, Your EV Cab Will Make It!
@@ -179,7 +179,7 @@ const faqSchema = {
             <span><strong>500+ trips completed, ZERO mid-journey charging stops required</strong></span>
           </li>
         </ul>
-        <p class="text-sm text-gray-700 mt-4">
+        <p class="text-sm text-gray-700 dark:text-gray-200 mt-4">
           💡 <strong>Bottom Line:</strong> You have 3x more range than needed. EV cabs are safer than diesel cabs for long journeys (no risk of running out of fuel on highway).
         </p>
       </div>
@@ -189,39 +189,39 @@ const faqSchema = {
     <Card className="p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
       <nav class="space-y-2">
-        <a href="#basics" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#basics" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           EV Range Basics: How It Works
         </a>
-        <a href="#real-vs-claimed" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#real-vs-claimed" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Real-World vs Claimed Range
         </a>
-        <a href="#factors" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#factors" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           8 Factors That Affect Range
         </a>
-        <a href="#pune-mumbai" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#pune-mumbai" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Pune-Mumbai Range Analysis
         </a>
-        <a href="#regen-braking" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#regen-braking" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Regenerative Braking Explained
         </a>
-        <a href="#comparison" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#comparison" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           EV vs Diesel: Range Comparison
         </a>
-        <a href="#myths" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#myths" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Range Anxiety Myths Busted
         </a>
-        <a href="#emergency" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#emergency" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           What If Battery Runs Low?
         </a>
-        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           FAQs
         </a>
@@ -234,10 +234,10 @@ const faqSchema = {
 
       <Card className="p-6 mb-6">
         <h3 class="text-xl font-bold mb-4">What Is EV Range?</h3>
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700 dark:text-gray-200 mb-4">
           <strong>EV Range</strong> is the distance an electric vehicle can travel on a fully charged battery before it needs recharging. It's equivalent to asking "how far can a diesel car go on a full tank?"
         </p>
-        <div class="bg-blue-50 p-4 rounded-lg">
+        <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
           <p class="text-sm">
             <strong>Simple Formula:</strong><br/>
             Range (km) = Battery Capacity (kWh) ÷ Energy Consumption (kWh/km) × Efficiency
@@ -290,7 +290,7 @@ const faqSchema = {
           <p><strong>0% battery</strong> = Not actually empty! 5-10% reserve for safety</p>
         </div>
 
-        <div class="bg-green-50 p-4 rounded-lg mt-4">
+        <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg mt-4">
           <p class="text-sm">
             <strong>Pro Tip:</strong> Our EV cabs start each Pune-Mumbai trip with 90-100% charge and arrive with 60-70% remaining. We never let battery go below 40% on passenger trips.
           </p>
@@ -304,7 +304,7 @@ const faqSchema = {
 
       <Card className="p-6 mb-6">
         <h3 class="text-xl font-bold mb-4">Why Are There Two Different Ranges?</h3>
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700 dark:text-gray-200 mb-4">
           When manufacturers advertise EV range, they use standardized test conditions (ARAI in India, EPA in USA, WLTP in Europe). Real-world driving has more variables, so actual range is typically 85-90% of claimed range.
         </p>
       </Card>
@@ -323,13 +323,13 @@ const faqSchema = {
             <tr>
               <td class="border p-3 font-semibold">Kia Carens EV</td>
               <td class="border p-3 text-center">452 km</td>
-              <td class="border p-3 text-center font-semibold text-green-700">380-400 km</td>
+              <td class="border p-3 text-center font-semibold text-green-700 dark:text-green-400">380-400 km</td>
               <td class="border p-3 text-center">84-88%</td>
             </tr>
             <tr>
               <td class="border p-3 font-semibold">BYD E-MAX 7</td>
               <td class="border p-3 text-center">530 km</td>
-              <td class="border p-3 text-center font-semibold text-green-700">450-480 km</td>
+              <td class="border p-3 text-center font-semibold text-green-700 dark:text-green-400">450-480 km</td>
               <td class="border p-3 text-center">85-91%</td>
             </tr>
           </tbody>
@@ -374,13 +374,13 @@ const faqSchema = {
         </div>
       </Card>
 
-      <Card className="p-6 bg-green-50 border-2 border-green-400">
+      <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-400">
         <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
           <Check className="h-6 w-6 text-green-600" />
           Why Lower Real-World Range Is Still Plenty
         </h3>
         <div class="space-y-3">
-          <p class="text-gray-700">
+          <p class="text-gray-700 dark:text-gray-200">
             <strong>For Pune-Mumbai (150 km):</strong>
           </p>
           <ul class="space-y-2 ml-6 text-sm">
@@ -388,7 +388,7 @@ const faqSchema = {
             <li>• BYD E-MAX 7 real-world range: 450 km → <strong>You'll use 33% of battery</strong> → Arrive with 67% remaining</li>
             <li>• Even in worst case (heavy traffic, full AC, monsoon), you'll still arrive with <strong>50%+ battery</strong></li>
           </ul>
-          <p class="text-sm font-semibold text-green-700 mt-4">
+          <p class="text-sm font-semibold text-green-700 dark:text-green-400 mt-4">
             The "lower" real-world range is still 2.5-3x more than you need for the journey!
           </p>
         </div>
@@ -399,7 +399,7 @@ const faqSchema = {
     <section id="factors" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">8 Factors That Affect EV Range</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Understanding these factors helps explain why range varies. Our professional drivers optimize all of them for maximum efficiency.
       </p>
 
@@ -411,7 +411,7 @@ const faqSchema = {
               <Car className="h-5 w-5 text-blue-600" />
               1. Speed (Biggest Factor)
             </h3>
-            <Badge className="bg-red-200 text-red-700">High Impact</Badge>
+            <Badge className="bg-red-200 text-red-700 dark:text-red-400">High Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -430,11 +430,11 @@ const faqSchema = {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-green-50">
+                  <tr class="bg-green-50 dark:bg-green-900/30">
                     <td class="border p-2">60 km/h (city)</td>
                     <td class="border p-2 text-center">16 kWh/100km</td>
                     <td class="border p-2 text-center">440 km</td>
-                    <td class="border p-2 text-center text-green-700">Best</td>
+                    <td class="border p-2 text-center text-green-700 dark:text-green-400">Best</td>
                   </tr>
                   <tr>
                     <td class="border p-2">80 km/h</td>
@@ -448,17 +448,17 @@ const faqSchema = {
                     <td class="border p-2 text-center">350 km</td>
                     <td class="border p-2 text-center">-20%</td>
                   </tr>
-                  <tr class="bg-red-50">
+                  <tr class="bg-red-50 dark:bg-red-900/30">
                     <td class="border p-2">120 km/h</td>
                     <td class="border p-2 text-center">24 kWh/100km</td>
                     <td class="border p-2 text-center">290 km</td>
-                    <td class="border p-2 text-center text-red-700">-34%</td>
+                    <td class="border p-2 text-center text-red-700 dark:text-red-400">-34%</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div class="bg-blue-50 p-3 rounded-lg">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Our Practice:</strong> We maintain 90-100 km/h on Pune-Mumbai Expressway (legal speed limit 100 km/h). This balances time and range perfectly. At this speed, 150 km journey uses ~30 kWh (30% of 70 kWh battery).</p>
             </div>
           </div>
@@ -471,7 +471,7 @@ const faqSchema = {
               <Wind className="h-5 w-5 text-cyan-600" />
               2. Air Conditioning Usage
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate Impact</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -513,7 +513,7 @@ const faqSchema = {
               <ThermometerSun className="h-5 w-5 text-orange-600" />
               3. Outside Temperature
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate Impact</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -538,10 +538,10 @@ const faqSchema = {
                     <td class="border p-2 text-center">-10 to -15%</td>
                     <td class="border p-2 text-xs">Rare in Pune/Mumbai</td>
                   </tr>
-                  <tr class="bg-green-50">
+                  <tr class="bg-green-50 dark:bg-green-900/30">
                     <td class="border p-2">20-30°C (optimal)</td>
                     <td class="border p-2 text-center">100%</td>
-                    <td class="border p-2 text-center text-green-700">Best</td>
+                    <td class="border p-2 text-center text-green-700 dark:text-green-400">Best</td>
                     <td class="border p-2 text-xs">Oct-Feb, mornings</td>
                   </tr>
                   <tr>
@@ -560,7 +560,7 @@ const faqSchema = {
               </table>
             </div>
 
-            <div class="bg-orange-50 p-3 rounded-lg">
+            <div class="bg-orange-50 dark:bg-orange-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Good News:</strong> Both Kia and BYD have excellent thermal management systems. Battery is kept at optimal temperature automatically. Temperature impact is minimal in Indian conditions.</p>
             </div>
           </div>
@@ -573,7 +573,7 @@ const faqSchema = {
               <Mountain className="h-5 w-5 text-green-600" />
               4. Terrain (Hills & Slopes)
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Variable Impact</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Variable Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -582,7 +582,7 @@ const faqSchema = {
             </p>
 
             <div class="grid md:grid-cols-2 gap-4 text-sm">
-              <div class="bg-red-50 p-3 rounded-lg">
+              <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg">
                 <p class="font-semibold mb-2">⛰️ Uphill (Energy Drain)</p>
                 <ul class="ml-4 space-y-1">
                   <li>• Motor works harder against gravity</li>
@@ -590,7 +590,7 @@ const faqSchema = {
                   <li>• Lonavala ghat climb (Pune side): Uses extra 10-12 km range</li>
                 </ul>
               </div>
-              <div class="bg-green-50 p-3 rounded-lg">
+              <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
                 <p class="font-semibold mb-2">⬇️ Downhill (Energy Recovery)</p>
                 <ul class="ml-4 space-y-1">
                   <li>• Regenerative braking captures energy</li>
@@ -600,7 +600,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-green-50 p-3 rounded-lg">
+            <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Pune-Mumbai Balance:</strong> You climb Lonavala ghats (drain), then descend on Mumbai side (regenerate). Net impact is nearly zero! Route is well-balanced for EVs.</p>
             </div>
           </div>
@@ -613,13 +613,13 @@ const faqSchema = {
               <Zap className="h-5 w-5 text-yellow-600" />
               5. Driving Style
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate Impact</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate Impact</Badge>
           </div>
 
           <div class="space-y-3">
             <div class="grid md:grid-cols-2 gap-4 text-sm">
-              <div class="bg-red-50 p-3 rounded-lg">
-                <p class="font-semibold mb-2 text-red-700">❌ Inefficient Driving:</p>
+              <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg">
+                <p class="font-semibold mb-2 text-red-700 dark:text-red-400">❌ Inefficient Driving:</p>
                 <ul class="ml-4 space-y-1">
                   <li>• Rapid acceleration (jackrabbit starts)</li>
                   <li>• Hard braking (wastes kinetic energy)</li>
@@ -628,8 +628,8 @@ const faqSchema = {
                   <li><strong>Impact: 15-20% more consumption</strong></li>
                 </ul>
               </div>
-              <div class="bg-green-50 p-3 rounded-lg">
-                <p class="font-semibold mb-2 text-green-700">✅ Efficient Driving:</p>
+              <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
+                <p class="font-semibold mb-2 text-green-700 dark:text-green-400">✅ Efficient Driving:</p>
                 <ul class="ml-4 space-y-1">
                   <li>• Smooth, gradual acceleration</li>
                   <li>• Anticipate traffic (coast to slow down)</li>
@@ -640,7 +640,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-blue-50 p-3 rounded-lg">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Our Drivers:</strong> All our professional drivers are trained in efficient EV driving. They optimize range without compromising passenger comfort or journey time.</p>
             </div>
           </div>
@@ -653,7 +653,7 @@ const faqSchema = {
               <Users className="h-5 w-5 text-purple-600" />
               6. Passenger and Luggage Weight
             </h3>
-            <Badge className="bg-green-200 text-green-700">Low Impact</Badge>
+            <Badge className="bg-green-200 text-green-700 dark:text-green-400">Low Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -675,7 +675,7 @@ const faqSchema = {
                   <tr>
                     <td class="border p-2">Empty (driver only)</td>
                     <td class="border p-2 text-center">0 kg</td>
-                    <td class="border p-2 text-center text-green-700">Baseline (100%)</td>
+                    <td class="border p-2 text-center text-green-700 dark:text-green-400">Baseline (100%)</td>
                     <td class="border p-2 text-center">33% battery used</td>
                   </tr>
                   <tr>
@@ -700,7 +700,7 @@ const faqSchema = {
               </table>
             </div>
 
-            <div class="bg-green-50 p-3 rounded-lg">
+            <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Takeaway:</strong> Even with 7 passengers and full luggage, impact is only 5-7% (20-25 km less range). You'll still arrive at Mumbai Airport with 57-60% battery remaining. Weight is not a concern!</p>
             </div>
           </div>
@@ -713,7 +713,7 @@ const faqSchema = {
               <TrendingDown className="h-5 w-5 text-gray-600" />
               7. Tire Pressure & Condition
             </h3>
-            <Badge className="bg-green-200 text-green-700">Low Impact</Badge>
+            <Badge className="bg-green-200 text-green-700 dark:text-green-400">Low Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -742,7 +742,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-blue-50 p-3 rounded-lg">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Our Practice:</strong> Fleet maintenance ensures optimal tire condition at all times. This factor is controlled and negligible in our professional service.</p>
             </div>
           </div>
@@ -755,7 +755,7 @@ const faqSchema = {
               <Zap className="h-5 w-5 text-blue-600" />
               8. Auxiliary Systems (Lights, Infotainment, USB)
             </h3>
-            <Badge className="bg-green-200 text-green-700">Minimal Impact</Badge>
+            <Badge className="bg-green-200 text-green-700 dark:text-green-400">Minimal Impact</Badge>
           </div>
 
           <div class="space-y-3">
@@ -793,16 +793,16 @@ const faqSchema = {
                     <td class="border p-2 text-center">80W</td>
                     <td class="border p-2 text-center">< 1 km</td>
                   </tr>
-                  <tr class="bg-green-50">
+                  <tr class="bg-green-50 dark:bg-green-900/30">
                     <td class="border p-2 font-semibold">Total All Auxiliary</td>
                     <td class="border p-2 text-center font-semibold">~300W</td>
-                    <td class="border p-2 text-center font-semibold text-green-700">< 3 km (< 1%)</td>
+                    <td class="border p-2 text-center font-semibold text-green-700 dark:text-green-400">< 3 km (< 1%)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div class="bg-green-50 p-3 rounded-lg">
+            <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
               <p class="text-xs"><strong>Bottom Line:</strong> Use all the comforts! Charge your phone, play music, use lights - combined impact is less than 1% on journey. Enjoy the ride!</p>
             </div>
           </div>
@@ -814,17 +814,17 @@ const faqSchema = {
         <h3 class="text-xl font-bold mb-4 text-center">Factors Impact Summary</h3>
         <div class="grid grid-cols-4 gap-4 text-center text-sm">
           <div class="bg-red-100 p-3 rounded-lg">
-            <p class="font-bold text-red-700 mb-1">High Impact</p>
+            <p class="font-bold text-red-700 dark:text-red-400 mb-1">High Impact</p>
             <p class="text-xs">Speed (-20 to -34%)</p>
           </div>
           <div class="bg-yellow-100 p-3 rounded-lg">
-            <p class="font-bold text-yellow-700 mb-1">Moderate</p>
+            <p class="font-bold text-yellow-700 dark:text-yellow-400 mb-1">Moderate</p>
             <p class="text-xs">AC (-10 to -15%)</p>
             <p class="text-xs">Temperature (-5 to -12%)</p>
             <p class="text-xs">Driving Style (-15 to -20%)</p>
           </div>
           <div class="bg-green-100 p-3 rounded-lg">
-            <p class="font-bold text-green-700 mb-1">Low Impact</p>
+            <p class="font-bold text-green-700 dark:text-green-400 mb-1">Low Impact</p>
             <p class="text-xs">Weight (-3 to -7%)</p>
             <p class="text-xs">Tires (-2 to -6%)</p>
           </div>
@@ -844,11 +844,11 @@ const faqSchema = {
     <section id="pune-mumbai" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Pune-Mumbai Airport: Detailed Range Analysis</h2>
 
-      <Card className="p-6 mb-6 bg-gradient-to-r from-blue-50 to-green-50 border-2 border-green-500">
+      <Card className="p-6 mb-6 bg-gradient-to-r from-blue-50 to-green-50 border-2 border-green-500 dark:border-green-600">
         <h3 class="text-2xl font-bold mb-4 text-center">Real Trip Data: 500+ Journeys</h3>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white p-4 rounded-lg">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
             <h4 class="font-bold text-lg mb-3 text-blue-600">Kia Carens EV</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
@@ -865,11 +865,11 @@ const faqSchema = {
               </div>
               <div class="flex justify-between border-t pt-2">
                 <span>Arriving Battery:</span>
-                <span class="font-semibold text-green-700">57-67%</span>
+                <span class="font-semibold text-green-700 dark:text-green-400">57-67%</span>
               </div>
               <div class="flex justify-between">
                 <span>Range Remaining:</span>
-                <span class="font-semibold text-green-700">220-260 km</span>
+                <span class="font-semibold text-green-700 dark:text-green-400">220-260 km</span>
               </div>
               <div class="flex justify-between border-t pt-2">
                 <span class="text-xs text-gray-600">Lowest ever recorded:</span>
@@ -878,7 +878,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-white p-4 rounded-lg">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
             <h4 class="font-bold text-lg mb-3 text-red-600">BYD E-MAX 7</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
@@ -895,11 +895,11 @@ const faqSchema = {
               </div>
               <div class="flex justify-between border-t pt-2">
                 <span>Arriving Battery:</span>
-                <span class="font-semibold text-green-700">62-72%</span>
+                <span class="font-semibold text-green-700 dark:text-green-400">62-72%</span>
               </div>
               <div class="flex justify-between">
                 <span>Range Remaining:</span>
-                <span class="font-semibold text-green-700">280-330 km</span>
+                <span class="font-semibold text-green-700 dark:text-green-400">280-330 km</span>
               </div>
               <div class="flex justify-between border-t pt-2">
                 <span class="text-xs text-gray-600">Lowest ever recorded:</span>
@@ -910,7 +910,7 @@ const faqSchema = {
         </div>
 
         <div class="mt-6 p-4 bg-green-100 rounded-lg text-center">
-          <p class="font-bold text-lg text-green-700 mb-2">✅ Key Insight</p>
+          <p class="font-bold text-lg text-green-700 dark:text-green-400 mb-2">✅ Key Insight</p>
           <p class="text-sm">
             In <strong>500+ trips</strong>, we have <strong>NEVER</strong> arrived with less than <strong>50% battery</strong> remaining.<br/>
             That's 200+ km range still available - enough for entire return journey!
@@ -929,7 +929,7 @@ const faqSchema = {
                 <p class="font-semibold">Segment 1: Pune to Khandala (60 km)</p>
                 <p class="text-sm text-gray-600">Mostly flat → Uphill climb in ghats</p>
               </div>
-              <Badge className="bg-yellow-200 text-yellow-700">Medium Drain</Badge>
+              <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Medium Drain</Badge>
             </div>
             <div class="text-sm">
               <p>• Battery used: <strong>15-17%</strong> (due to uphill climb)</p>
@@ -944,13 +944,13 @@ const faqSchema = {
                 <p class="font-semibold">Segment 2: Khandala to Panvel (60 km)</p>
                 <p class="text-sm text-gray-600">Downhill descent → Flat expressway</p>
               </div>
-              <Badge className="bg-green-200 text-green-700">Low Drain (Regen!)</Badge>
+              <Badge className="bg-green-200 text-green-700 dark:text-green-400">Low Drain (Regen!)</Badge>
             </div>
             <div class="text-sm">
               <p>• Battery used: <strong>8-10%</strong> (regenerative braking on descent)</p>
               <p>• Speed: 90-110 km/h (fast expressway section)</p>
               <p>• Terrain: -350m descent (Khandala 910m → Panvel 560m)</p>
-              <p class="text-green-700">• <strong>Regen recovery: ~8-12 km range added!</strong></p>
+              <p class="text-green-700 dark:text-green-400">• <strong>Regen recovery: ~8-12 km range added!</strong></p>
             </div>
           </div>
 
@@ -960,7 +960,7 @@ const faqSchema = {
                 <p class="font-semibold">Segment 3: Panvel to Mumbai Airport (30 km)</p>
                 <p class="text-sm text-gray-600">City traffic → Airport approach</p>
               </div>
-              <Badge className="bg-yellow-200 text-yellow-700">Medium Drain</Badge>
+              <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Medium Drain</Badge>
             </div>
             <div class="text-sm">
               <p>• Battery used: <strong>7-9%</strong></p>
@@ -970,12 +970,12 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-gray-50 p-4 rounded-lg font-semibold">
+          <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg font-semibold">
             <div class="flex justify-between">
               <span>Total Battery Used (All Segments):</span>
               <span class="text-lg">30-36%</span>
             </div>
-            <div class="flex justify-between text-green-700">
+            <div class="flex justify-between text-green-700 dark:text-green-400">
               <span>Battery Remaining on Arrival:</span>
               <span class="text-lg">64-70%</span>
             </div>
@@ -999,11 +999,11 @@ const faqSchema = {
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-green-50">
+              <tr class="bg-green-50 dark:bg-green-900/30">
                 <td class="border p-3 font-semibold">Best Case</td>
                 <td class="border p-3 text-xs">Early morning, no traffic, mild weather, no AC</td>
                 <td class="border p-3 text-center">28-30%</td>
-                <td class="border p-3 text-center text-green-700 font-semibold">70-72%</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400 font-semibold">70-72%</td>
                 <td class="border p-3 text-center">270-280 km</td>
               </tr>
               <tr>
@@ -1020,18 +1020,18 @@ const faqSchema = {
                 <td class="border p-3 text-center font-semibold">61-64%</td>
                 <td class="border p-3 text-center">230-250 km</td>
               </tr>
-              <tr class="bg-yellow-50">
+              <tr class="bg-yellow-50 dark:bg-yellow-900/30">
                 <td class="border p-3 font-semibold">Worst Case</td>
                 <td class="border p-3 text-xs">Heavy monsoon, cold AC, extreme traffic, 7 passengers</td>
                 <td class="border p-3 text-center">42-48%</td>
-                <td class="border p-3 text-center text-yellow-700 font-semibold">52-58%</td>
+                <td class="border p-3 text-center text-yellow-700 dark:text-yellow-400 font-semibold">52-58%</td>
                 <td class="border p-3 text-center">200-220 km</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+        <div class="mt-4 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
           <p class="text-sm">
             <strong>Notice:</strong> Even in the absolute <strong>worst case scenario</strong>, you still have 200+ km range remaining. That's <strong>33% more than the return journey needs!</strong>
           </p>
@@ -1043,15 +1043,15 @@ const faqSchema = {
     <section id="regen-braking" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Regenerative Braking: Free Extra Range</h2>
 
-      <Card className="p-6 mb-6 bg-green-50 border-2 border-green-500">
+      <Card className="p-6 mb-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
         <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
           <TrendingUp className="h-6 w-6 text-green-600" />
           What Is Regenerative Braking?
         </h3>
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700 dark:text-gray-200 mb-4">
           When you slow down in a diesel car, friction brakes convert kinetic energy into heat (wasted). In an EV, the motor acts as a generator, converting that kinetic energy back into electricity and storing it in the battery. You literally create range while slowing down!
         </p>
-        <div class="bg-white p-4 rounded-lg">
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
           <p class="font-semibold mb-2">How Much Energy Can You Recover?</p>
           <ul class="text-sm space-y-1 ml-4">
             <li>• Gentle slowdown (coasting): Recover 10-15% of kinetic energy</li>
@@ -1071,7 +1071,7 @@ const faqSchema = {
               <Mountain className="h-5 w-5 text-red-600" />
               Uphill: Pune to Lonavala (Energy Drain)
             </p>
-            <div class="bg-red-50 p-3 rounded-lg text-sm">
+            <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg text-sm">
               <p>• Climbing from 560m to 910m elevation (350m gain)</p>
               <p>• Uses extra <strong>~25 kWh</strong> of energy (15% of battery)</p>
               <p>• Range display drops faster than usual</p>
@@ -1083,15 +1083,15 @@ const faqSchema = {
               <TrendingDown className="h-5 w-5 text-green-600" />
               Downhill: Lonavala to Panvel (Energy Recovery)
             </p>
-            <div class="bg-green-50 p-3 rounded-lg text-sm">
+            <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg text-sm">
               <p>• Descending from 910m to 560m elevation (350m loss)</p>
               <p>• Regenerates <strong>~18 kWh</strong> back into battery (10% of battery)</p>
               <p>• Range display increases or drops much slower</p>
-              <p class="text-green-700 font-semibold">• Net cost of entire ghat section: Only 5% battery!</p>
+              <p class="text-green-700 dark:text-green-400 font-semibold">• Net cost of entire ghat section: Only 5% battery!</p>
             </div>
           </div>
 
-          <div class="bg-blue-50 p-4 rounded-lg">
+          <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
             <p class="text-sm font-semibold mb-2">Real Example from Our Fleet:</p>
             <p class="text-sm">
               Trip on Dec 15, 2024 (Kia Carens EV):<br/>
@@ -1108,8 +1108,8 @@ const faqSchema = {
         <h3 class="text-xl font-bold mb-4">Comparing: EV vs Diesel on Ghats</h3>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-red-50 p-4 rounded-lg">
-            <p class="font-bold mb-3 text-red-700">❌ Diesel Car on Ghats</p>
+          <div class="bg-red-50 dark:bg-red-900/30 p-4 rounded-lg">
+            <p class="font-bold mb-3 text-red-700 dark:text-red-400">❌ Diesel Car on Ghats</p>
             <ul class="text-sm space-y-2">
               <li>• Uphill: Uses extra fuel (engine works harder)</li>
               <li>• Downhill: Uses friction brakes (wastes all energy as heat)</li>
@@ -1118,8 +1118,8 @@ const faqSchema = {
             </ul>
           </div>
 
-          <div class="bg-green-50 p-4 rounded-lg">
-            <p class="font-bold mb-3 text-green-700">✅ EV on Ghats</p>
+          <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg">
+            <p class="font-bold mb-3 text-green-700 dark:text-green-400">✅ EV on Ghats</p>
             <ul class="text-sm space-y-2">
               <li>• Uphill: Uses extra electricity (motor works harder)</li>
               <li>• Downhill: Motor becomes generator (recovers 60-70% of energy)</li>
@@ -1144,7 +1144,7 @@ const faqSchema = {
           <thead>
             <tr class="bg-gray-100">
               <th class="border p-3 text-left font-bold">Aspect</th>
-              <th class="border p-3 text-center font-bold text-green-700">EV (Kia Carens)</th>
+              <th class="border p-3 text-center font-bold text-green-700 dark:text-green-400">EV (Kia Carens)</th>
               <th class="border p-3 text-center font-bold text-gray-700">Diesel (Ertiga)</th>
               <th class="border p-3 text-center font-bold">Winner</th>
             </tr>
@@ -1160,7 +1160,7 @@ const faqSchema = {
               <td class="border p-3">Range for Pune-Mumbai</td>
               <td class="border p-3 text-center">150 km (38% of range)</td>
               <td class="border p-3 text-center">150 km (25% of tank)</td>
-              <td class="border p-3 text-center text-green-700">EV (more buffer)</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">EV (more buffer)</td>
             </tr>
             <tr>
               <td class="border p-3">Refuel/Recharge Time</td>
@@ -1172,13 +1172,13 @@ const faqSchema = {
               <td class="border p-3">Refuel/Recharge Cost</td>
               <td class="border p-3 text-center">₹280 (full charge)</td>
               <td class="border p-3 text-center">₹3,500 (full tank)</td>
-              <td class="border p-3 text-center text-green-700">EV (12x cheaper!)</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">EV (12x cheaper!)</td>
             </tr>
             <tr>
               <td class="border p-3">Cost per 150 km</td>
               <td class="border p-3 text-center">₹105</td>
               <td class="border p-3 text-center">₹800-900</td>
-              <td class="border p-3 text-center text-green-700">EV (8x cheaper)</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">EV (8x cheaper)</td>
             </tr>
             <tr>
               <td class="border p-3">Stations on Route</td>
@@ -1190,13 +1190,13 @@ const faqSchema = {
               <td class="border p-3">Range Loss in Traffic</td>
               <td class="border p-3 text-center">Minimal (regen braking)</td>
               <td class="border p-3 text-center">High (idling wastes fuel)</td>
-              <td class="border p-3 text-center text-green-700">EV</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">EV</td>
             </tr>
             <tr>
               <td class="border p-3">Hill Climb Efficiency</td>
               <td class="border p-3 text-center">Energy back on descent</td>
               <td class="border p-3 text-center">Energy wasted on descent</td>
-              <td class="border p-3 text-center text-green-700">EV</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">EV</td>
             </tr>
             <tr>
               <td class="border p-3">Range Anxiety</td>
@@ -1204,17 +1204,17 @@ const faqSchema = {
               <td class="border p-3 text-center">None (familiar)</td>
               <td class="border p-3 text-center">Diesel</td>
             </tr>
-            <tr class="bg-green-50">
+            <tr class="bg-green-50 dark:bg-green-900/30">
               <td class="border p-3 font-bold">For Pune-Mumbai Trips</td>
-              <td class="border p-3 text-center text-green-700 font-bold">Perfect! 2.5x buffer</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400 font-bold">Perfect! 2.5x buffer</td>
               <td class="border p-3 text-center font-bold">Also works fine</td>
-              <td class="border p-3 text-center text-green-700 font-bold">EV (cheaper, cleaner)</td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400 font-bold">EV (cheaper, cleaner)</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <Card className="p-6 bg-blue-50">
+      <Card className="p-6 bg-blue-50 dark:bg-blue-900/30">
         <p class="text-sm">
           <strong>Honest Assessment:</strong> For maximum range (500+ km) or fastest refueling, diesel wins. However, for the 150 km Pune-Mumbai trip, EVs are <strong>better suited</strong> - you have massive range buffer, much lower cost, and regenerative braking actually improves efficiency on ghat sections. The "range anxiety" concern is unfounded for this route.
         </p>
@@ -1231,10 +1231,10 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #1: "EVs can't make long trips"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> Modern EVs (400-530 km range) easily handle "long trips" by Indian standards. Pune-Mumbai is medium-range (150 km). EVs regularly do Delhi-Jaipur (280 km), Mumbai-Goa (580 km with one charge stop), Bangalore-Chennai (350 km) without issues.
               </p>
-              <div class="bg-green-50 p-3 rounded-lg text-sm">
+              <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg text-sm">
                 <strong>Our Record:</strong> Longest single-charge trip in our fleet: Pune to Nashik (220 km) - arrived with 38% battery remaining!
               </div>
             </div>
@@ -1246,7 +1246,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #2: "Batteries drain faster in real world"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> Real-world range is 85-90% of claimed (not 50% like some believe). Kia Carens EV claims 452 km, delivers 380-400 km. That's only 12-15% lower, not drastically different. Modern battery management systems are highly accurate.
               </p>
             </div>
@@ -1258,7 +1258,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #3: "AC will kill the battery"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> AC reduces range by 10-15% (40-50 km on 400 km range). For Pune-Mumbai, that's only 15-20 km difference. You'll arrive with 55-60% battery instead of 65-70%. Still massive buffer! Modern EV AC systems are efficient.
               </p>
             </div>
@@ -1270,7 +1270,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #4: "You'll get stranded with no charging stations"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> Pune-Mumbai Expressway has 8-10 DC fast charging stations (Lonavala, Khandala, Talegaon, Panvel, Navi Mumbai). However, with 60%+ battery remaining on arrival, you <strong>never need to charge en route</strong>. Charging infrastructure is a non-issue for this route.
               </p>
             </div>
@@ -1282,7 +1282,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #5: "Traffic jams will drain the battery"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> EVs are <strong>more efficient</strong> in traffic! When stationary, EV uses zero energy (diesel idles and wastes fuel). When crawling, regen braking recovers energy on every slowdown. Heavy traffic may add 10 minutes to journey time but only 2-3% extra battery drain.
               </p>
             </div>
@@ -1294,7 +1294,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #6: "Cold weather will reduce range dramatically"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> In extreme cold (below 0°C), yes, range drops 20-30%. However, Pune-Mumbai temperatures rarely go below 15°C. In Indian winter (15-25°C), range reduction is only 5-8%. Not a concern for our region. Summer heat (35-40°C) also has minimal 5-10% impact due to good thermal management.
               </p>
             </div>
@@ -1306,7 +1306,7 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
             <div class="flex-1">
               <p class="font-bold text-lg mb-2">Myth #7: "Battery percentage is inaccurate"</p>
-              <p class="text-sm text-gray-700 mb-3">
+              <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
                 <strong>Reality:</strong> Modern EVs (2023+) have highly accurate battery management systems. Display shows battery % within 2-3% accuracy. Range estimate adjusts based on your recent driving pattern, AC usage, and terrain. After 500+ trips, we trust the display completely.
               </p>
             </div>
@@ -1314,7 +1314,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="p-6 mt-6 bg-green-50 border-2 border-green-500">
+      <Card className="p-6 mt-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
         <h3 class="text-xl font-bold mb-4 text-center">The Truth About Range Anxiety</h3>
         <p class="text-center text-gray-700">
           <strong>"Range anxiety" is psychological, not technical.</strong><br/><br/>
@@ -1330,7 +1330,7 @@ const faqSchema = {
     <section id="emergency" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">What If Battery Runs Low? (Hypothetical Emergency Plan)</h2>
 
-      <Card className="p-6 mb-6 bg-yellow-50 border-2 border-yellow-400">
+      <Card className="p-6 mb-6 bg-yellow-50 dark:bg-yellow-900/30 border-2 border-yellow-400">
         <div class="flex items-start gap-3 mb-4">
           <AlertCircle className="h-6 w-6 text-yellow-600 flex-shrink-0 mt-1" />
           <div>
@@ -1351,32 +1351,32 @@ const faqSchema = {
           <div class="space-y-3 text-sm">
             <div>
               <p class="font-semibold mb-1">20% Battery Remaining (~80 km range)</p>
-              <p class="text-gray-700">• Yellow warning on dashboard</p>
-              <p class="text-gray-700">• "Low battery - charge soon" message</p>
-              <p class="text-gray-700">• Full performance still available</p>
-              <p class="text-green-700">✓ Still 30 km more than needed for arrival!</p>
+              <p class="text-gray-700 dark:text-gray-200">• Yellow warning on dashboard</p>
+              <p class="text-gray-700 dark:text-gray-200">• "Low battery - charge soon" message</p>
+              <p class="text-gray-700 dark:text-gray-200">• Full performance still available</p>
+              <p class="text-green-700 dark:text-green-400">✓ Still 30 km more than needed for arrival!</p>
             </div>
 
             <div>
               <p class="font-semibold mb-1">10% Battery Remaining (~40 km range)</p>
-              <p class="text-gray-700">• Orange warning, urgent tone</p>
-              <p class="text-gray-700">• "Charge immediately" message</p>
-              <p class="text-gray-700">• Vehicle suggests nearby charging stations</p>
-              <p class="text-gray-700">• Full performance still available</p>
+              <p class="text-gray-700 dark:text-gray-200">• Orange warning, urgent tone</p>
+              <p class="text-gray-700 dark:text-gray-200">• "Charge immediately" message</p>
+              <p class="text-gray-700 dark:text-gray-200">• Vehicle suggests nearby charging stations</p>
+              <p class="text-gray-700 dark:text-gray-200">• Full performance still available</p>
             </div>
 
             <div>
               <p class="font-semibold mb-1">5% Battery Remaining (~20 km range)</p>
-              <p class="text-gray-700">• Red critical warning</p>
-              <p class="text-gray-700">• Some features disabled to conserve power</p>
-              <p class="text-gray-700">• Performance slightly reduced</p>
+              <p class="text-gray-700 dark:text-gray-200">• Red critical warning</p>
+              <p class="text-gray-700 dark:text-gray-200">• Some features disabled to conserve power</p>
+              <p class="text-gray-700 dark:text-gray-200">• Performance slightly reduced</p>
             </div>
 
-            <div class="bg-red-50 p-3 rounded-lg">
+            <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg">
               <p class="font-semibold mb-1">2% Battery - "Turtle Mode"</p>
-              <p class="text-gray-700">• Maximum speed limited to 40-50 km/h</p>
-              <p class="text-gray-700">• Still drivable for 8-10 km</p>
-              <p class="text-gray-700">• Enough to reach nearest charging station</p>
+              <p class="text-gray-700 dark:text-gray-200">• Maximum speed limited to 40-50 km/h</p>
+              <p class="text-gray-700 dark:text-gray-200">• Still drivable for 8-10 km</p>
+              <p class="text-gray-700 dark:text-gray-200">• Enough to reach nearest charging station</p>
             </div>
           </div>
         </Card>
@@ -1407,7 +1407,7 @@ const faqSchema = {
               </ul>
             </div>
 
-            <div class="bg-blue-50 p-3 rounded-lg">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
               <p class="font-semibold mb-1">Our Emergency Protocol:</p>
               <p class="text-xs">1. If battery drops to 25% (highly unlikely), stop at next charging station</p>
               <p class="text-xs">2. 15-minute top-up adds 100+ km range</p>
@@ -1418,23 +1418,23 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="p-6 bg-green-50 border-2 border-green-500">
+      <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
         <h3 class="text-xl font-bold mb-4 text-center">Reality Check</h3>
         <div class="text-center">
           <p class="text-lg mb-4">
             In <strong>500+ trips</strong>, battery has never dropped below:
           </p>
           <div class="grid md:grid-cols-3 gap-4 mb-4">
-            <div class="bg-white p-4 rounded-lg">
-              <p class="text-4xl font-bold text-green-700">52%</p>
+            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400">52%</p>
               <p class="text-sm text-gray-600">Lowest arrival % (extreme conditions)</p>
             </div>
-            <div class="bg-white p-4 rounded-lg">
-              <p class="text-4xl font-bold text-green-700">200+ km</p>
+            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400">200+ km</p>
               <p class="text-sm text-gray-600">Minimum range remaining</p>
             </div>
-            <div class="bg-white p-4 rounded-lg">
-              <p class="text-4xl font-bold text-green-700">0</p>
+            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400">0</p>
               <p class="text-sm text-gray-600">Number of mid-journey charges</p>
             </div>
           </div>
@@ -1452,52 +1452,52 @@ const faqSchema = {
       <div class="space-y-4">
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Will an EV cab make it from Pune to Mumbai Airport without charging?</h3>
-          <p class="text-gray-700">Absolutely yes! Pune to Mumbai Airport is 150 km. Our Kia Carens EV has 452 km real-world range and BYD E-MAX 7 has 530 km range. That means you'll arrive with 65-70% battery still remaining. We've completed 500+ trips without a single mid-journey charging stop.</p>
+          <p class="text-gray-700 dark:text-gray-200">Absolutely yes! Pune to Mumbai Airport is 150 km. Our Kia Carens EV has 452 km real-world range and BYD E-MAX 7 has 530 km range. That means you'll arrive with 65-70% battery still remaining. We've completed 500+ trips without a single mid-journey charging stop.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What is the real-world range of electric cabs?</h3>
-          <p class="text-gray-700">Real-world range (actual driving) is 85-90% of ARAI-claimed range. Kia Carens EV: ARAI 452 km → Real-world 380-400 km. BYD E-MAX 7: ARAI 530 km → Real-world 450-480 km. Factors like AC usage, speed, and weather reduce range by 10-15% from claimed figures.</p>
+          <p class="text-gray-700 dark:text-gray-200">Real-world range (actual driving) is 85-90% of ARAI-claimed range. Kia Carens EV: ARAI 452 km → Real-world 380-400 km. BYD E-MAX 7: ARAI 530 km → Real-world 450-480 km. Factors like AC usage, speed, and weather reduce range by 10-15% from claimed figures.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What factors affect electric vehicle range?</h3>
-          <p class="text-gray-700">Main factors: Speed (faster = more drain), AC/heating usage (reduces 10-15%), weather (cold/hot affects battery), driving style (aggressive braking wastes energy), terrain (uphill uses more, downhill regenerates), passenger load (heavier = more consumption), and tire pressure (low pressure increases drag).</p>
+          <p class="text-gray-700 dark:text-gray-200">Main factors: Speed (faster = more drain), AC/heating usage (reduces 10-15%), weather (cold/hot affects battery), driving style (aggressive braking wastes energy), terrain (uphill uses more, downhill regenerates), passenger load (heavier = more consumption), and tire pressure (low pressure increases drag).</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Does AC reduce electric car range significantly?</h3>
-          <p class="text-gray-700">AC usage reduces range by 10-15% (about 40-50 km on 400 km range). However, this is already factored into our planning. On Pune-Mumbai (150 km), even with AC on full, you'll still have 200+ km range remaining at arrival. Modern EV AC systems are very efficient.</p>
+          <p class="text-gray-700 dark:text-gray-200">AC usage reduces range by 10-15% (about 40-50 km on 400 km range). However, this is already factored into our planning. On Pune-Mumbai (150 km), even with AC on full, you'll still have 200+ km range remaining at arrival. Modern EV AC systems are very efficient.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">How does regenerative braking work in EV cabs?</h3>
-          <p class="text-gray-700">Regenerative braking converts kinetic energy back into electricity when slowing down. Instead of wasting energy as heat (like regular brakes), EVs send power back to battery. On Pune-Mumbai ghats (Lonavala hills), regen braking can recover 15-20 km of range during downhill sections.</p>
+          <p class="text-gray-700 dark:text-gray-200">Regenerative braking converts kinetic energy back into electricity when slowing down. Instead of wasting energy as heat (like regular brakes), EVs send power back to battery. On Pune-Mumbai ghats (Lonavala hills), regen braking can recover 15-20 km of range during downhill sections.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What happens if EV cab battery runs low during journey?</h3>
-          <p class="text-gray-700">This has never happened in our 500+ trips (we always maintain 40%+ buffer). If it hypothetically did: EV would enter 'turtle mode' (reduced power but still drivable), we'd use DC fast charging stations on route (30 min for 200+ km), multiple charging stations exist between Pune-Mumbai, and professional drivers monitor battery constantly.</p>
+          <p class="text-gray-700 dark:text-gray-200">This has never happened in our 500+ trips (we always maintain 40%+ buffer). If it hypothetically did: EV would enter 'turtle mode' (reduced power but still drivable), we'd use DC fast charging stations on route (30 min for 200+ km), multiple charging stations exist between Pune-Mumbai, and professional drivers monitor battery constantly.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Is EV range affected by passenger weight and luggage?</h3>
-          <p class="text-gray-700">Yes, but minimally. Extra 300 kg (4 passengers + luggage) reduces range by approximately 3-5% (12-20 km on 400 km range). For Pune-Mumbai, this means arrival battery drops from 65% to 60% - still very safe margin. Weight impact is much less than in diesel cars.</p>
+          <p class="text-gray-700 dark:text-gray-200">Yes, but minimally. Extra 300 kg (4 passengers + luggage) reduces range by approximately 3-5% (12-20 km on 400 km range). For Pune-Mumbai, this means arrival battery drops from 65% to 60% - still very safe margin. Weight impact is much less than in diesel cars.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">How accurate are EV range displays?</h3>
-          <p class="text-gray-700">Modern EV range displays (like in Kia Carens and BYD E-MAX 7) are very accurate, typically within 5-10%. They calculate based on recent driving patterns, current battery state, AC usage, and terrain. Our drivers trust the display and it has proven reliable in 500+ trips.</p>
+          <p class="text-gray-700 dark:text-gray-200">Modern EV range displays (like in Kia Carens and BYD E-MAX 7) are very accurate, typically within 5-10%. They calculate based on recent driving patterns, current battery state, AC usage, and terrain. Our drivers trust the display and it has proven reliable in 500+ trips.</p>
         </Card>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="mb-12">
-      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 dark:border-green-600">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">Ready to Experience Worry-Free EV Travel?</h2>
-          <p class="text-lg text-gray-700 mb-6">
+          <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
             Now that you know EVs have 3x more range than needed, book your stress-free, zero-emission journey!
           </p>
 
@@ -1509,7 +1509,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href="tel:+919075020422">
-              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 dark:text-green-400 hover:bg-green-50 dark:bg-green-900/30 w-full sm:w-auto">
                 <Phone className="h-5 w-5 mr-2" />
                 Call: +91 90750 20422
               </Button>

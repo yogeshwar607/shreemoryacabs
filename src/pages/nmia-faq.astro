@@ -2,6 +2,8 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { MessageCircle, Phone } from "lucide-react";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateBreadcrumbSchema } from "@/lib/seo";
 
@@ -11,329 +13,1073 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does a cab cost from Pune to Navi Mumbai Airport?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Electric cab from Pune to Navi Mumbai Airport costs ₹3,700 flat rate covering all Pune localities. This all-inclusive price includes tolls, parking, and covers distances of 100-140 km depending on your Pune location. Same rate from Hinjewadi (100 km), Wakad (105 km), Kothrud (125 km), Kharadi (130 km), or Hadapsar (135 km)." }
+      "name": "How much does a cab from Navi Mumbai Airport to Pune cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cab from Navi Mumbai International Airport (NMIA) to Pune starts from ₹2,300 with GreenEVCabs for a 5-seater electric cab. Prices range from ₹2,300 (Citroen eC3) to ₹6,300 (Innova Hycross). All-inclusive rates covering tolls, parking, driver charges, and meet & greet service. No surge pricing, even during peak hours or late-night flights."
+      }
     },
     {
       "@type": "Question",
-      "name": "How long does it take to reach NMIA from Pune?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Journey time from Pune to Navi Mumbai Airport is 2.5 to 3 hours via Mumbai-Pune Expressway. West Pune areas like Hinjewadi and Wakad take 2-2.5 hours (100-115 km). Central and East Pune areas like Kharadi and Hadapsar take 2.5-3 hours (130-140 km)." }
+      "name": "How long does it take to reach Pune from Navi Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The journey from Navi Mumbai Airport to Pune typically takes 2 to 2.5 hours via the Mumbai-Pune Expressway. During peak traffic hours (8-10 AM, 6-8 PM), it may take up to 3 hours."
+      }
     },
     {
       "@type": "Question",
-      "name": "Which airlines operate from Navi Mumbai Airport?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Navi Mumbai Airport is served by IndiGo, Akasa Air, Air India Express, and Star Air. IndiGo operates the most flights including 7 daily flights to Bengaluru. Akasa Air and Air India Express serve Delhi, Hyderabad, and Kochi routes." }
+      "name": "What type of cabs are available for Navi Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs operates 100% electric 7-seater premium SUVs: Kia Carens EV (400+ km range) and BYD E-MAX 7 (530+ km range). Both vehicles feature climate control, ample luggage space, USB charging ports, and silent electric operation."
+      }
     },
     {
       "@type": "Question",
-      "name": "Are there direct Bengaluru flights from NMIA?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, Navi Mumbai Airport has 7 daily direct flights to Bengaluru operated by IndiGo, Akasa Air, and Air India Express. Flight times include 6:00 AM, 7:00 AM, 9:30 AM, 1:00 PM, 4:30 PM, 7:00 PM, and 9:00 PM departures. Flight duration is 1 hour 30 minutes." }
+      "name": "Do you track flight delays for Navi Mumbai Airport pickups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide complimentary real-time flight tracking. If your flight is delayed, our driver automatically adjusts arrival time. You won't be charged any waiting fee for flight delays."
+      }
     },
     {
       "@type": "Question",
-      "name": "Should I use NMIA or Pune Airport from Pune?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Choose NMIA for Bengaluru (7 direct flights vs 0 from Pune Airport), Hyderabad, and major cities. Choose Pune Airport for Mumbai (multiple daily flights, closer at 10-30 km), Dubai/Sharjah (direct international), and quick domestic hops. NMIA is 100-140 km from Pune vs Pune Airport at 10-35 km." }
+      "name": "Are there any hidden charges in the fare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hidden charges. The ₹3,700 fare includes all expressway tolls, airport parking charges, driver allowance, meet & greet service, 30 minutes free waiting, and GST. The price you see is the price you pay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a cab from Navi Mumbai Airport at midnight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs operates 24/7 airport pickup service from Navi Mumbai Airport. Whether your flight lands at 2 AM or 5 AM, our drivers will be waiting at the arrivals terminal. No extra night charges apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a cab from Navi Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can book via WhatsApp at +91 74982 64215 (recommended for instant confirmation), phone call at +91 74982 64215, or through the website greenevcabs.com. We recommend booking 24 hours in advance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to book a cab for late-night arrival?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely safe. We specialize in 24/7 airport pickups with pre-verified professional drivers, real-time trip tracking, 24/7 customer support, vehicle GPS monitoring, and emergency assistance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cheapest cab from Navi Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs offers the cheapest cab service from Navi Mumbai Airport to Pune starting from ₹2,300. Premium 7-seater cabs are ₹3,700, which is ₹500 cheaper than other EV services and up to ₹1,300 cheaper than diesel cabs that charge ₹5,000+ with surge pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which route does the cab take from Navi Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our cabs take the fastest route via the Mumbai-Pune Expressway (NH48): Navi Mumbai Airport → Panvel → Khalapur Toll → Lonavala → Talegaon → Pune. This expressway route offers smooth, well-maintained roads ideal for electric vehicles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many passengers can travel in your Navi Mumbai Airport cabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our 7-seater electric SUVs comfortably accommodate up to 6 passengers plus the driver. This makes them ideal for families and groups traveling together from Navi Mumbai Airport to Pune."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where will the driver meet me at Navi Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our driver will meet you at the Arrivals terminal exit with a name placard. You'll receive the driver's photo, name, contact number, and vehicle registration details via WhatsApp before your flight lands."
+      }
     }
   ]
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "NMIA FAQ", url: "/nmia-faq" }]);
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "NMIA FAQ", url: "/nmia-faq" }
+]);
 ---
 
-<MainLayout title="NMIA FAQ: All Questions About Navi Mumbai Airport from Pune Answered" description="Complete FAQ about Navi Mumbai Airport for Pune travelers. Cab booking, flights, timing, costs, airlines, routes. Everything you need to know about NMIA." keywords={["nmia faq", "navi mumbai airport questions", "pune to nmia faq"]}>
+<MainLayout
+  title="NMIA FAQ: 40 Questions About Navi Mumbai Airport to Pune Cab - GreenEVCabs"
+  description="Complete FAQ about Navi Mumbai Airport to Pune cab service. Pricing, booking, routes, timing, safety, vehicles. Starting from ₹2,300 all-inclusive fare."
+  keywords={[
+    "navi mumbai airport to pune cab faq",
+    "nmia to pune taxi questions",
+    "navi mumbai airport cab booking",
+    "pune to nmia faq",
+    "electric cab navi mumbai airport"
+  ]}
+>
   <StructuredData data={[faqSchema, breadcrumbSchema]} />
 
-  <div class="py-16">
-    <div class="container mx-auto px-4 max-w-5xl">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Navi Mumbai Airport (NMIA) FAQ for Pune Travelers</h1>
-      <p class="text-xl text-muted-foreground mb-12">All your questions about traveling to Navi Mumbai Airport from Pune, answered comprehensively</p>
+  <div class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <Badge className="mb-4 bg-green-600 text-white">Complete FAQ Guide</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Navi Mumbai Airport to Pune Cab - FAQ
+        </h1>
+        <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+          40 frequently asked questions about booking electric cab from Navi Mumbai Airport to Pune. Starting from ₹2,300, 24/7 service, premium EVs.
+        </p>
+      </div>
 
-      <div class="space-y-12">
-        <!-- General Questions -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">General Questions About NMIA</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">What is Navi Mumbai Airport (NMIA)?</CardTitle></CardHeader><CardContent>
-            <p>Navi Mumbai International Airport (NMIA) is India's newest international airport that opened on December 25, 2025. Located in Navi Mumbai, Maharashtra, it's 100-140 km from various Pune localities and serves as an excellent alternative to Pune Airport and Mumbai Airport for Pune residents traveling to major Indian cities.</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">When did NMIA open?</CardTitle></CardHeader><CardContent>
-            <p>Navi Mumbai Airport officially opened on December 25, 2025, making it brand new with modern facilities, less crowding, and faster processing times compared to older airports.</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Why should Pune residents use NMIA instead of Pune Airport?</CardTitle></CardHeader><CardContent>
-            <p><strong>Main reason: Bengaluru flights.</strong> NMIA has 7 daily direct flights to Bengaluru while Pune Airport has ZERO direct Bengaluru flights. For IT professionals commuting to Bengaluru, NMIA saves 2-3 hours per trip despite the longer cab ride. NMIA also offers better connectivity to Hyderabad, Kochi, and more flight options to Delhi compared to Pune Airport.</p>
-          </CardContent></Card>
-        </section>
-
-        <!-- Cab Booking Questions -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">Cab Booking Questions</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">How much does a cab cost from Pune to NMIA?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 text-xl mb-2">₹3,700 Flat Rate</p>
-            <p>This all-inclusive price covers:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>All Pune localities (Hinjewadi, Wakad, Baner, Aundh, Kharadi, Magarpatta, etc.)</li>
-              <li>All tolls on Mumbai-Pune Expressway</li>
-              <li>Airport parking charges</li>
-              <li>Distances from 100 km to 140 km</li>
-              <li>No hidden charges or surge pricing</li>
-            </ul>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">How do I book a cab to NMIA?</CardTitle></CardHeader><CardContent>
-            <p class="mb-3"><strong>Easiest method: WhatsApp</strong></p>
-            <p>Send message to <strong>+91-7498264215</strong> with:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>Your name</li>
-              <li>Pickup location (e.g., "Hinjewadi Phase 1, Blue Ridge")</li>
-              <li>Date and pickup time</li>
-              <li>Flight number and departure time</li>
-              <li>Number of passengers</li>
-            </ul>
-            <p class="mt-3">You'll receive instant confirmation with booking reference and ₹3,700 fare confirmation.</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Do I need to pay in advance?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-2">No advance payment required.</p>
-            <p>Pay ₹3,700 only after reaching NMIA airport safely. Payment methods accepted: Cash, UPI (PhonePe, Google Pay, Paytm), or Credit/Debit Card. No booking fee or advance payment needed.</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">When should I book my cab?</CardTitle></CardHeader><CardContent>
-            <p><strong>For early morning flights (6-7 AM):</strong> Book by 8 PM the night before (mandatory)</p>
-            <p><strong>For daytime flights:</strong> Book at least 6 hours in advance</p>
-            <p><strong>For late evening flights:</strong> Can book same day (subject to availability)</p>
-            <p class="mt-2 text-sm text-muted-foreground">Recommendation: Always book 24 hours in advance for guaranteed availability</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Can I cancel my cab booking?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-2">Yes, free cancellation up to 2 hours before pickup.</p>
-            <p>Call +91-7498264215 immediately to cancel. No cancellation charges if canceled 2+ hours before scheduled pickup time.</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">What type of cab is used for NMIA service?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold mb-2">BYD eMax 7 Electric SUV</p>
-            <p>Features:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>7-seater capacity (6 passengers + driver)</li>
-              <li>Spacious with dedicated luggage boot</li>
-              <li>Electric vehicle = quieter, smoother ride</li>
-              <li>Dual-zone AC for comfortable long journey</li>
-              <li>USB charging ports</li>
-              <li>Perfect for 2.5-3 hour journey</li>
-            </ul>
-          </CardContent></Card>
-        </section>
-
-        <!-- Timing Questions -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">Travel Time & Timing Questions</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">How long does it take to reach NMIA from different Pune areas?</CardTitle></CardHeader><CardContent>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm">
-                <thead>
-                  <tr class="border-b"><th class="text-left p-2">Pune Area</th><th class="text-left p-2">Distance</th><th class="text-left p-2">Time</th></tr>
-                </thead>
-                <tbody>
-                  <tr class="border-b"><td class="p-2">Hinjewadi</td><td class="p-2">100 km</td><td class="p-2">2 hours</td></tr>
-                  <tr class="border-b"><td class="p-2">Wakad/Baner</td><td class="p-2">105-115 km</td><td class="p-2">2-2.5 hours</td></tr>
-                  <tr class="border-b"><td class="p-2">Aundh/Kothrud</td><td class="p-2">110-125 km</td><td class="p-2">2.5 hours</td></tr>
-                  <tr class="border-b"><td class="p-2">Magarpatta</td><td class="p-2">125 km</td><td class="p-2">2.5 hours</td></tr>
-                  <tr class="border-b"><td class="p-2">Kharadi</td><td class="p-2">130 km</td><td class="p-2">2.5-3 hours</td></tr>
-                  <tr><td class="p-2">Hadapsar/Viman Nagar</td><td class="p-2">135-140 km</td><td class="p-2">3 hours</td></tr>
-                </tbody>
-              </table>
+      <!-- Quick Reference Card -->
+      <Card class="mb-12 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-green-200">
+        <CardContent class="pt-6">
+          <div class="grid md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Starting From</p>
+              <p class="text-3xl font-bold text-green-700 dark:text-green-400">₹2,300</p>
+              <p class="text-xs text-muted-foreground">All-inclusive</p>
             </div>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">What time should I leave Pune for a 6 AM flight from NMIA?</CardTitle></CardHeader><CardContent>
-            <p class="mb-2"><strong>General Rule:</strong> Leave 4-4.5 hours before flight time</p>
-            <p class="mb-3">For 6:00 AM flight:</p>
-            <ul class="list-disc ml-6 space-y-1">
-              <li>Hinjewadi/Wakad: Leave at 2:00 AM (reach NMIA by 4:00-4:15 AM)</li>
-              <li>Aundh/Kothrud: Leave at 1:30 AM (reach by 4:00 AM)</li>
-              <li>Kharadi/Hadapsar: Leave at 1:00-1:30 AM (reach by 4:00 AM)</li>
-            </ul>
-            <p class="mt-3 text-sm text-muted-foreground">Recommendation: 2 hours at airport before flight = comfortable check-in, security, and boarding</p>
-          </CardContent></Card>
-        </section>
-
-        <!-- Flight Questions -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">Flight & Route Questions</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Which airlines operate from NMIA?</CardTitle></CardHeader><CardContent>
-            <ul class="space-y-2">
-              <li><strong>IndiGo (6E):</strong> Most flights, including 7 daily Bengaluru flights</li>
-              <li><strong>Akasa Air (QP):</strong> Bengaluru, Delhi, Hyderabad routes</li>
-              <li><strong>Air India Express (IX):</strong> Bengaluru, Kochi routes</li>
-              <li><strong>Star Air:</strong> Select regional routes</li>
-            </ul>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">How many Bengaluru flights are there from NMIA?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-3">7 Daily Direct Flights to Bengaluru</p>
-            <p>Flight timings:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>6:00 AM - IndiGo (most popular for Monday morning office)</li>
-              <li>7:00 AM - IndiGo</li>
-              <li>9:30 AM - Akasa Air</li>
-              <li>1:00 PM - Air India Express</li>
-              <li>4:30 PM - IndiGo</li>
-              <li>7:00 PM - IndiGo</li>
-              <li>9:00 PM - Star Air</li>
-            </ul>
-            <p class="mt-3">Flight duration: 1 hour 30 minutes</p>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Does NMIA have international flights?</CardTitle></CardHeader><CardContent>
-            <p><strong>Currently (Jan 2026):</strong> No international flights</p>
-            <p><strong>Coming Soon (Q2 2026):</strong> International routes expected to start to Middle East and Southeast Asia</p>
-            <p class="mt-2">For international travel from Pune currently, use:</p>
-            <ul class="list-disc ml-6 mt-2">
-              <li><strong>Dubai/Sharjah:</strong> Pune Airport (direct flights available)</li>
-              <li><strong>Other international:</strong> Mumbai Airport (100+ destinations)</li>
-            </ul>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Which destinations are best served from NMIA for Pune residents?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold mb-2">Choose NMIA for:</p>
-            <ul class="list-disc ml-6 space-y-1">
-              <li><strong>Bengaluru</strong> - 7 direct flights (vs 0 from Pune Airport)</li>
-              <li><strong>Hyderabad</strong> - Multiple daily options</li>
-              <li><strong>Delhi</strong> - 3 daily flights with good timings</li>
-              <li><strong>Kochi</strong> - Direct flights available</li>
-            </ul>
-            <p class="font-semibold mt-4 mb-2">Choose Pune Airport for:</p>
-            <ul class="list-disc ml-6 space-y-1">
-              <li><strong>Mumbai</strong> - Multiple daily, much closer</li>
-              <li><strong>Dubai/Sharjah</strong> - Direct international</li>
-              <li><strong>Quick domestic hops</strong></li>
-            </ul>
-          </CardContent></Card>
-        </section>
-
-        <!-- Cost Questions -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">Cost & Value Questions</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Is NMIA worth it despite higher cab cost compared to Pune Airport?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold mb-3">For Bengaluru travel: Absolutely YES</p>
-            <div class="bg-blue-50 p-4 rounded mt-3">
-              <p class="font-semibold mb-2">Cost Comparison Example:</p>
-              <div class="grid md:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <p class="font-semibold">Via NMIA (Direct):</p>
-                  <p>Cab: ₹3,700</p>
-                  <p>Flight: ₹4,500</p>
-                  <p class="font-bold">Total: ₹8,200</p>
-                  <p>Time: 4 hours</p>
-                </div>
-                <div>
-                  <p class="font-semibold">Via Pune Airport (Connect):</p>
-                  <p>Cab: ₹500</p>
-                  <p>Flights: ₹10,000</p>
-                  <p class="font-bold">Total: ₹10,500</p>
-                  <p>Time: 6 hours</p>
-                </div>
-              </div>
-              <p class="mt-3 font-semibold text-green-700">NMIA saves ₹2,300 + 2 hours per trip for Bengaluru</p>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Distance</p>
+              <p class="text-3xl font-bold text-green-700 dark:text-green-400">120 km</p>
+              <p class="text-xs text-muted-foreground">Via Expressway</p>
             </div>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Can multiple passengers share one cab to save money?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-2">Yes! Perfect for cost sharing</p>
-            <p>BYD eMax 7 seats 6 passengers comfortably. Examples:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li><strong>4 colleagues:</strong> ₹3,700 ÷ 4 = ₹925 per person</li>
-              <li><strong>3 friends:</strong> ₹3,700 ÷ 3 = ₹1,233 per person</li>
-              <li><strong>2 passengers:</strong> ₹3,700 ÷ 2 = ₹1,850 per person</li>
-            </ul>
-            <p class="mt-3">Common for: Office teams, student groups, family travel</p>
-          </CardContent></Card>
-        </section>
-
-        <!-- Special Situations -->
-        <section>
-          <h2 class="text-3xl font-bold mb-6">Special Situations</h2>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">What if my flight gets delayed?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-2">We track flights automatically</p>
-            <p>When you provide your flight number during booking:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>Driver tracks flight status in real-time</li>
-              <li>Pickup time adjusted automatically for delays</li>
-              <li>No need to call us if flight is delayed</li>
-              <li>30 minutes free waiting time after scheduled pickup</li>
-              <li>No extra charges for reasonable delays</li>
-            </ul>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Can I book for early morning pickups (1-3 AM)?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold text-green-600 mb-2">Yes, 24/7 service available</p>
-            <p>For early morning (1-3 AM) pickups:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li><strong>Must book by:</strong> 8 PM the night before</li>
-              <li><strong>Confirm:</strong> Exact pickup location (landmarks help in darkness)</li>
-              <li><strong>Driver arrives:</strong> 10-15 minutes before scheduled time</li>
-              <li><strong>Contact:</strong> Driver calls you when reaching your area</li>
-            </ul>
-          </CardContent></Card>
-
-          <Card class="mb-4"><CardHeader><CardTitle class="text-xl">Do you provide return journey from NMIA to Pune?</CardTitle></CardHeader><CardContent>
-            <p class="font-semibold mb-2">Yes, same ₹3,700 rate</p>
-            <p>Book return journey when landing at NMIA:</p>
-            <ul class="list-disc ml-6 mt-2 space-y-1">
-              <li>Call/WhatsApp with flight arrival details</li>
-              <li>Driver picks up from NMIA arrivals</li>
-              <li>Drop to any Pune location</li>
-              <li>Recommended: Book in advance before landing</li>
-            </ul>
-          </CardContent></Card>
-        </section>
-
-        <!-- Quick Reference -->
-        <section class="mt-12">
-          <Card class="bg-green-50">
-            <CardHeader><CardTitle class="text-2xl">Quick Reference</CardTitle></CardHeader>
-            <CardContent>
-              <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                  <p class="font-semibold mb-2">Booking Contact:</p>
-                  <p class="text-2xl font-bold text-green-600">+91-7498264215</p>
-                  <p class="text-sm mt-1">WhatsApp preferred | 24/7 available</p>
-                </div>
-                <div>
-                  <p class="font-semibold mb-2">Flat Rate:</p>
-                  <p class="text-2xl font-bold text-green-600">₹3,700</p>
-                  <p class="text-sm mt-1">All-inclusive | All Pune areas</p>
-                </div>
-                <div>
-                  <p class="font-semibold mb-2">Journey Time:</p>
-                  <p class="text-xl font-bold">2.5-3 hours</p>
-                  <p class="text-sm mt-1">Via Mumbai-Pune Expressway</p>
-                </div>
-                <div>
-                  <p class="font-semibold mb-2">Vehicle:</p>
-                  <p class="text-xl font-bold">BYD eMax 7</p>
-                  <p class="text-sm mt-1">Electric SUV | 6-seater</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        <!-- CTA -->
-        <div class="mt-12 p-6 bg-green-50 rounded-lg text-center">
-          <h3 class="text-2xl font-bold mb-4">Have More Questions? Contact Us!</h3>
-          <p class="mb-6">Our team is available 24/7 to answer all your NMIA travel questions</p>
-          <div class="flex justify-center gap-4">
-            <Button size="lg" class="bg-green-600" asChild><a href="tel:+917498264215">📞 Call Now</a></Button>
-            <Button size="lg" variant="outline" asChild><a href="https://wa.me/917498264215">💬 WhatsApp</a></Button>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Journey Time</p>
+              <p class="text-3xl font-bold text-green-700 dark:text-green-400">2-2.5 hrs</p>
+              <p class="text-xs text-muted-foreground">Average</p>
+            </div>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Service</p>
+              <p class="text-3xl font-bold text-green-700 dark:text-green-400">24/7</p>
+              <p class="text-xs text-muted-foreground">No night charges</p>
+            </div>
           </div>
-        </div>
+        </CardContent>
+      </Card>
+
+      <div class="space-y-16">
+        <!-- Section 1: Pricing & Booking -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">01.</span> Pricing & Booking
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much does a cab from Navi Mumbai Airport to Pune cost?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">A cab from Navi Mumbai International Airport (NMIA) to Pune starts from <strong class="text-green-600 text-lg">₹2,300</strong> for our electric vehicles. All-inclusive rates covering tolls, parking, driver charges, and meet & greet service. No surge pricing, even during peak hours or late-night flights.</p>
+                <div class="overflow-x-auto mt-4">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Vehicle Type</th>
+                        <th class="text-left p-2">Capacity</th>
+                        <th class="text-left p-2">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Citroen eC3 (Electric)</td>
+                        <td class="p-2">5-seater</td>
+                        <td class="p-2"><strong>₹2,300</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">MG ZS EV (Electric SUV)</td>
+                        <td class="p-2">5-seater</td>
+                        <td class="p-2"><strong>₹2,600</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Kia Carens EV</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹2,900</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">BYD E-MAX 7 (Premium)</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹3,700</strong></td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Innova Hycross (Luxury)</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹6,300</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What is the cheapest cab from Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">GreenEVCabs offers the cheapest premium cab service from Navi Mumbai Airport to Pune starting from <strong>₹2,300</strong>. Our premium 7-seater cabs at ₹3,700 are:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>₹500 cheaper than other EV services</li>
+                  <li>Up to ₹1,300 cheaper than diesel cabs that charge ₹5,000+ with surge pricing</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How do I book a cab from Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">You can book a GreenEVCabs cab via:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Method</th>
+                        <th class="text-left p-2">Contact</th>
+                        <th class="text-left p-2">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>WhatsApp</strong> (Recommended)</td>
+                        <td class="p-2">+91 74982 64215</td>
+                        <td class="p-2">24/7, instant confirmation</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Phone Call</strong></td>
+                        <td class="p-2">+91 74982 64215</td>
+                        <td class="p-2">24/7</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Website</strong></td>
+                        <td class="p-2">greenevcabs.com</td>
+                        <td class="p-2">24/7</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 text-sm text-muted-foreground">We recommend booking 24 hours in advance for guaranteed availability.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I book a cab from Navi Mumbai Airport at midnight?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, GreenEVCabs operates <strong>24/7 airport pickup service</strong> from Navi Mumbai Airport. Whether your flight lands at 2 AM or 5 AM, our drivers will be waiting at the arrivals terminal. No extra night charges apply - rates start from ₹2,300.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is there any advance payment required to book?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">No advance payment is required for most bookings. You can pay after completing your journey via:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>UPI</li>
+                  <li>Cash</li>
+                  <li>Credit card</li>
+                  <li>Debit card</li>
+                </ul>
+                <p class="mt-3">Corporate clients can opt for monthly invoicing with GST.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I cancel my Navi Mumbai Airport to Pune cab booking?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, cancellations are <strong>free if made 4+ hours before pickup</strong>. Cancellations within 4 hours may attract a nominal fee. Contact us on WhatsApp to modify or cancel your booking.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 2: Route & Travel Time -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">02.</span> Route & Travel Time
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How far is Navi Mumbai Airport from Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Navi Mumbai International Airport (NMIA) is approximately <strong>120 km</strong> from Pune city center. The distance varies slightly depending on your exact drop location:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Destination</th>
+                        <th class="text-left p-2">Distance from NMIA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Hinjewadi</td>
+                        <td class="p-2">~110 km</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Pune City Center</td>
+                        <td class="p-2">~120 km</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Hadapsar</td>
+                        <td class="p-2">~125 km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How long does it take to reach Pune from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>The journey from Navi Mumbai Airport to Pune typically takes <strong>2 to 2.5 hours</strong> via the Mumbai-Pune Expressway. During peak traffic hours (8-10 AM, 6-8 PM), it may take up to 3 hours. Our drivers choose the optimal route based on real-time traffic conditions.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Which route does the cab take from Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Our cabs take the fastest route via the <strong>Mumbai-Pune Expressway (NH48)</strong>:</p>
+                <div class="bg-muted/50 p-4 rounded-lg font-mono text-sm">
+                  Navi Mumbai Airport → Panvel → Khalapur Toll → Lonavala → Talegaon → Pune
+                </div>
+                <p class="mt-3">This expressway route offers smooth, well-maintained roads ideal for our electric vehicles.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide cab service from Pune to Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, we offer both:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>Pune to Navi Mumbai Airport</strong> (drop service)</li>
+                  <li><strong>Navi Mumbai Airport to Pune</strong> (pickup service)</li>
+                </ul>
+                <p class="mt-3">Both services start from <strong>₹2,300</strong>. For drop service, we recommend scheduling pickup 3.5-4 hours before your flight departure.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Which areas in Pune do you cover for airport pickup/drop?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">We provide door-to-door service across all Pune locations:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="font-semibold mb-2">IT Hubs:</p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Hinjewadi Phase 1/2/3</li>
+                      <li>• Magarpatta</li>
+                      <li>• Kharadi</li>
+                      <li>• Talawade</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-2">Central Pune:</p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Shivajinagar</li>
+                      <li>• Camp</li>
+                      <li>• Deccan</li>
+                      <li>• FC Road</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-2">West Pune:</p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Baner</li>
+                      <li>• Balewadi</li>
+                      <li>• Aundh</li>
+                      <li>• Wakad</li>
+                      <li>• Pimple Saudagar</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-2">East & South Pune:</p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Viman Nagar</li>
+                      <li>• Wagholi</li>
+                      <li>• Hadapsar</li>
+                      <li>• Kothrud</li>
+                      <li>• Sinhagad Road</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 3: Vehicle & Amenities -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">03.</span> Vehicle & Amenities
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What type of cabs are available for Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">GreenEVCabs operates <strong>100% electric 7-seater premium SUVs</strong>:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Vehicle</th>
+                        <th class="text-left p-2">Range</th>
+                        <th class="text-left p-2">Features</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Kia Carens EV</strong></td>
+                        <td class="p-2">400+ km</td>
+                        <td class="p-2">Spacious interiors, ADAS safety features</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>BYD E-MAX 7</strong></td>
+                        <td class="p-2">530+ km</td>
+                        <td class="p-2">Luxury interiors, premium ride quality</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3">Both vehicles feature climate control, ample luggage space, USB charging ports, and silent electric operation.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How many passengers can travel in your Navi Mumbai Airport cabs?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Our 7-seater electric SUVs comfortably accommodate <strong>up to 6 passengers</strong> plus the driver. This makes them ideal for families and groups traveling together from Navi Mumbai Airport to Pune.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much luggage space is available?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Our Kia Carens EV and BYD E-MAX 7 offer generous boot space for:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>4-5 large suitcases</li>
+                  <li>Plus cabin bags</li>
+                </ul>
+                <p class="mt-3">For extra luggage (more than 5 large bags), please inform us while booking so we can arrange accordingly.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are your electric cabs safe for the expressway journey?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Absolutely. Our electric vehicles are equipped with advanced safety features:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✅ ADAS Level 2 (Adaptive Cruise Control, Lane Keep Assist)</li>
+                  <li>✅ 360-degree parking cameras</li>
+                  <li>✅ 6+ airbags</li>
+                  <li>✅ ABS with EBD</li>
+                  <li>✅ Electronic Stability Control</li>
+                  <li>✅ Reinforced battery protection</li>
+                </ul>
+                <p class="mt-3">Our professional drivers are trained for expressway driving and maintain safe speeds throughout.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Will the electric cab have enough battery for Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, definitely.</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Vehicle</th>
+                        <th class="text-left p-2">Range</th>
+                        <th class="text-left p-2">Route Distance</th>
+                        <th class="text-left p-2">Buffer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Kia Carens EV</td>
+                        <td class="p-2">400+ km</td>
+                        <td class="p-2">120 km</td>
+                        <td class="p-2">280+ km extra</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">BYD E-MAX 7</td>
+                        <td class="p-2">530+ km</td>
+                        <td class="p-2">120 km</td>
+                        <td class="p-2">410+ km extra</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3">All vehicles depart fully charged - you'll never face range issues.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 4: Airport Pickup Process -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">04.</span> Airport Pickup Process
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Where will the driver meet me at Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Our driver will meet you at the <strong>Arrivals terminal exit</strong> with a name placard. You'll receive via WhatsApp before your flight lands:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Driver's photo</li>
+                  <li>Driver's name</li>
+                  <li>Contact number</li>
+                  <li>Vehicle registration details</li>
+                </ul>
+                <p class="mt-3">Simply call the driver when you exit arrivals.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you track flight delays for Navi Mumbai Airport pickups?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we provide <strong>complimentary real-time flight tracking</strong>. If your flight is delayed, our driver automatically adjusts arrival time. You won't be charged any waiting fee for flight delays - our commitment is to be there when you land.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How early will the driver arrive at Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Our drivers arrive <strong>15-20 minutes before</strong> your scheduled flight landing time. For delayed flights, we track real-time updates and adjust accordingly. You'll never have to wait for your cab at the airport.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is there waiting time included in the fare?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, <strong>30 minutes of free waiting time</strong> is included after flight landing for airport pickups. This gives you enough time for:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Immigration (international flights)</li>
+                  <li>Baggage claim</li>
+                  <li>Reaching the pickup point</li>
+                </ul>
+                <p class="mt-3">Additional waiting is charged at ₹100 per 30 minutes.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I book a cab for domestic and international arrivals at NMIA?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we serve both <strong>domestic and international arrivals</strong> at Navi Mumbai International Airport. For international flights, we recommend adding 45-60 minutes buffer for immigration and customs clearance.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 5: Pricing Comparison -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">05.</span> Pricing Comparison
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Why is GreenEVCabs cheaper than Uber/Ola for Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Unlike Uber and Ola, GreenEVCabs offers:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Feature</th>
+                        <th class="text-left p-2">GreenEVCabs</th>
+                        <th class="text-left p-2">Uber/Ola</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Pricing</td>
+                        <td class="p-2">From ₹2,300</td>
+                        <td class="p-2">₹5,000-8,000 (surge)</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Cancellations</td>
+                        <td class="p-2">Guaranteed pickup</td>
+                        <td class="p-2">Driver cancellations common</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Vehicle</td>
+                        <td class="p-2">7-seater electric SUV</td>
+                        <td class="p-2">Standard sedans</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Inclusions</td>
+                        <td class="p-2">Tolls, parking, meet & greet</td>
+                        <td class="p-2">Often extra</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 font-semibold text-green-700 dark:text-green-400">You save up to ₹1,300+ per trip with us.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are there any hidden charges in the ₹3,700 fare?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="font-semibold mb-3">No hidden charges.</p>
+                <p class="mb-2">The ₹3,700 fare includes:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✅ All expressway tolls (₹300+)</li>
+                  <li>✅ Airport parking charges</li>
+                  <li>✅ Driver allowance</li>
+                  <li>✅ Meet & greet service</li>
+                  <li>✅ 30 minutes free waiting</li>
+                  <li>✅ GST (for invoice requests)</li>
+                </ul>
+                <p class="mt-3 font-semibold">The price you see is the price you pay.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you charge extra for night pickups from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p><strong>No night charges or late-night surcharges.</strong> Whether your flight lands at 3 PM or 3 AM, fares start from ₹2,300. This is a significant saving compared to other services that charge 1.5x-2x rates for night rides.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is it cheaper to book round trip (Pune-NMIA-Pune)?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes! <strong>Book a round trip and save 10%.</strong> If you need both Pune to Navi Mumbai Airport drop and return pickup, contact us for a combined package rate. Corporate clients can access even better rates with monthly packages.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 6: Corporate & Special Services -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">06.</span> Corporate & Special Services
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide corporate cab service for Navi Mumbai Airport transfers?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, we offer dedicated <strong>corporate airport transfer services</strong> with:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✅ Priority booking & guaranteed availability</li>
+                  <li>✅ Monthly invoicing with GST</li>
+                  <li>✅ Detailed trip reports</li>
+                  <li>✅ Dedicated account manager</li>
+                  <li>✅ Volume discounts for regular bookings</li>
+                  <li>✅ Employee travel coordination</li>
+                </ul>
+                <p class="mt-3">Contact us for customized corporate packages.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I book a cab for a group traveling from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes! Our 7-seater SUVs are perfect for group travel. For larger groups (7+ passengers), we can arrange <strong>multiple vehicles traveling together</strong>. Group bookings qualify for special rates - contact us on WhatsApp for quotes.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide child seat/baby seat in cabs?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, <strong>child seats and baby seats are available on request</strong> at no extra charge. Please mention the child's age while booking so we can install the appropriate seat. Safety is our priority for young travelers.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is wheelchair accessible cab available from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Our spacious 7-seater SUVs can accommodate <strong>folding wheelchairs in the boot</strong>. For passengers requiring special assistance, please inform us while booking so our driver can provide appropriate support at the airport.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 7: Why Electric Cabs -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">07.</span> Why Electric Cabs
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What are the benefits of booking an electric cab from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Choosing GreenEVCabs electric cab offers:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Benefit</th>
+                        <th class="text-left p-2">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">🔇 <strong>Silent ride</strong></td>
+                        <td class="p-2">No engine noise - work or rest peacefully</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">🚗 <strong>Smooth travel</strong></td>
+                        <td class="p-2">No gear jerks, instant torque acceleration</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">🌱 <strong>Zero emissions</strong></td>
+                        <td class="p-2">Eco-friendly, reduces your carbon footprint</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">🌬️ <strong>No fuel smell</strong></td>
+                        <td class="p-2">Clean, fresh cabin air</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">💰 <strong>Lower cost</strong></td>
+                        <td class="p-2">No surge pricing linked to fuel fluctuations</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">✨ <strong>Premium comfort</strong></td>
+                        <td class="p-2">Modern vehicles with latest technology</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much CO2 do I save by taking an electric cab to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Each Navi Mumbai Airport to Pune trip in our electric cab saves approximately <strong>12-15 kg of CO2 emissions</strong> compared to a diesel/petrol cab. Over a year, regular travelers can offset hundreds of kilograms of carbon emissions by choosing electric.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are electric cabs reliable for long-distance airport transfers?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Absolutely. Our electric vehicles are specifically chosen for intercity travel:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>400-530 km range</strong> - far exceeding the 120 km route</li>
+                  <li><strong>Fewer moving parts</strong> than conventional vehicles</li>
+                  <li><strong>Lower breakdown risk</strong> due to simpler mechanics</li>
+                  <li><strong>All vehicles fully charged</strong> before every trip</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 8: Payment & Receipts -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">08.</span> Payment & Receipts
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What payment methods are accepted?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">We accept multiple payment options:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Payment Method</th>
+                        <th class="text-left p-2">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">UPI (GPay, PhonePe, Paytm)</td>
+                        <td class="p-2">✅</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Credit Cards (Visa, Mastercard, Amex)</td>
+                        <td class="p-2">✅</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Debit Cards</td>
+                        <td class="p-2">✅</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Cash</td>
+                        <td class="p-2">✅</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Bank Transfer (corporate)</td>
+                        <td class="p-2">✅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3">Payment is collected after trip completion.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I get a GST invoice for my Navi Mumbai Airport cab booking?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, <strong>GST invoices are provided on request</strong>. Share your company name and GSTIN while booking or after the trip, and we'll email the invoice within 24 hours. This is especially useful for business travelers claiming travel expenses.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is online payment available before the trip?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>While not mandatory, <strong>advance payment via UPI or bank transfer is available</strong> for customers who prefer it. Contact us on WhatsApp to arrange advance payment if needed.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 9: Safety & Trust -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">09.</span> Safety & Trust
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are your drivers verified and professional?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, all GreenEVCabs drivers are:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✅ Background verified with police clearance</li>
+                  <li>✅ Commercially licensed with valid documents</li>
+                  <li>✅ Trained in customer service & safe driving</li>
+                  <li>✅ Experienced on Mumbai-Pune Expressway routes</li>
+                  <li>✅ Equipped with smartphones for navigation & communication</li>
+                </ul>
+                <p class="mt-3">Driver details (name, photo, vehicle number) are shared before pickup.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is it safe to book a cab for late-night Navi Mumbai Airport arrival?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, completely safe. We specialize in <strong>24/7 airport pickups</strong> with:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Pre-verified, professional drivers</li>
+                  <li>Real-time trip tracking shared with family</li>
+                  <li>24/7 customer support line</li>
+                  <li>Vehicle GPS monitoring</li>
+                  <li>Emergency assistance available</li>
+                </ul>
+                <p class="mt-3">Thousands of passengers have safely traveled with us at all hours.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I share my trip details with family?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, once your trip begins, we can share a <strong>live tracking link</strong> with your family members via WhatsApp. This lets them monitor your journey in real-time from Navi Mumbai Airport to your Pune destination.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 10: Comparison with Other Options -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-green-600">10.</span> Comparison with Other Options
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Navi Mumbai Airport to Pune - cab vs train vs bus?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Option</th>
+                        <th class="text-left p-2">Time</th>
+                        <th class="text-left p-2">Cost</th>
+                        <th class="text-left p-2">Comfort</th>
+                        <th class="text-left p-2">Convenience</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b bg-green-50 dark:bg-green-900/30">
+                        <td class="p-2"><strong>GreenEVCabs</strong></td>
+                        <td class="p-2">2-2.5 hrs</td>
+                        <td class="p-2">₹3,700</td>
+                        <td class="p-2">★★★★★</td>
+                        <td class="p-2">Door-to-door</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Train</td>
+                        <td class="p-2">3+ hrs</td>
+                        <td class="p-2">₹200-500</td>
+                        <td class="p-2">★★★☆☆</td>
+                        <td class="p-2">Station transfers needed</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Bus</td>
+                        <td class="p-2">3-4 hrs</td>
+                        <td class="p-2">₹400-800</td>
+                        <td class="p-2">★★☆☆☆</td>
+                        <td class="p-2">Bus stop transfers</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 font-semibold text-green-700 dark:text-green-400">For direct, comfortable, hassle-free travel - especially with luggage - a private cab is the best option.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Should I book Navi Mumbai Airport to Pune cab in advance or get one at the airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3 font-semibold">Book in advance for these benefits:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p class="font-semibold mb-2 text-green-700 dark:text-green-400">Advance Booking</p>
+                    <ul class="text-sm space-y-1">
+                      <li>✅ Guaranteed availability</li>
+                      <li>✅ From ₹2,300</li>
+                      <li>✅ Driver waiting at arrivals</li>
+                      <li>✅ Premium 7-seater EV</li>
+                      <li>✅ No negotiation</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-2 text-muted-foreground">Airport Taxi</p>
+                    <ul class="text-sm space-y-1">
+                      <li>❌ Long queues possible</li>
+                      <li>❌ ₹4,500-5,500+</li>
+                      <li>❌ Need to find taxi stand</li>
+                      <li>❌ Standard vehicles</li>
+                      <li>❌ Price haggling</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      </div>
+
+      <!-- CTA Section -->
+      <section class="mt-16">
+        <Card class="bg-gradient-to-r from-green-600 to-emerald-600 text-white border-0">
+          <CardContent class="pt-8 pb-8">
+            <div class="text-center">
+              <h2 class="text-3xl font-bold mb-4">Ready to Book Your Cab?</h2>
+              <p class="text-xl mb-6 text-green-50">
+                From ₹2,300 • 24/7 Service • Premium Electric SUVs
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20to%20Pune%20Cab" target="_blank">
+                  <Button size="lg" className="w-full sm:w-auto bg-white text-green-700 hover:bg-green-50">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    WhatsApp Booking
+                  </Button>
+                </a>
+                <a href="tel:+917498264215">
+                  <Button size="lg" className="w-full sm:w-auto bg-white/20 hover:bg-white/30 border-2 border-white text-white">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call: +91 74982 64215
+                  </Button>
+                </a>
+              </div>
+              <p class="text-sm text-green-100">
+                ✓ All Pune areas ✓ Flight tracking ✓ 30 min free waiting ✓ No hidden charges
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Contact Info -->
+      <div class="mt-12 text-center text-sm text-muted-foreground">
+        <p><strong>Contact:</strong> WhatsApp/Phone: +91 74982 64215</p>
+        <p><strong>Email:</strong> greenevcabs@gmail.com</p>
+        <p><strong>Website:</strong> greenevcabs.com</p>
+        <p class="mt-4">© 2025 GreenEVCabs - A brand of Soulputs Technology Solutions Pvt Ltd</p>
       </div>
     </div>
   </div>

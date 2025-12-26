@@ -29,7 +29,7 @@ const serviceSchema = {
   ],
   "offers": {
     "@type": "Offer",
-    "price": "3700",
+    "price": "2300",
     "priceCurrency": "INR",
     "description": "All-inclusive fare from Navi Mumbai Airport to anywhere in Pune. Includes tolls, driver allowance, parking, and GST.",
     "availability": "https://schema.org/InStock",
@@ -64,7 +64,7 @@ const faqSchema = {
       "name": "How much does cab cost from Navi Mumbai Airport to Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Electric cab from Navi Mumbai Airport to Pune costs ₹3,700 all-inclusive with GreenEVCabs. This covers 110 km distance, tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges, zero surge pricing. Same rate to any Pune location."
+        "text": "Electric cab from Navi Mumbai Airport to Pune costs starting at ₹2,300 (multiple vehicle options available) with GreenEVCabs. This covers 110 km distance, tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges, zero surge pricing. Same rate to any Pune location."
       }
     },
     {
@@ -133,8 +133,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ---
 
 <MainLayout
-  title="Navi Mumbai Airport to Pune Cab ₹3,700 | NOW OPEN | NMIA Electric Taxi"
-  description="Navi Mumbai Airport NOW OPEN! Book electric cab to Pune at ₹3,700. 40 km closer than Mumbai Airport (110 km). IndiGo, Akasa Air flights. Book 24/7 pickup from NMIA."
+  title="Navi Mumbai Airport to Pune Cab Starting ₹2,300 | NOW OPEN | NMIA Electric Taxi"
+  description="Navi Mumbai Airport NOW OPEN! Book electric cab to Pune at Starting ₹2,300. 40 km closer than Mumbai Airport (110 km). IndiGo, Akasa Air flights. Book 24/7 pickup from NMIA."
   keywords={[
     "navi mumbai airport to pune cab",
     "navi mumbai airport taxi to pune",
@@ -156,7 +156,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-5xl mx-auto text-center">
         <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">🎉 NOW OPEN - Started Operations Dec 25, 2025</Badge>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-          Navi Mumbai Airport to Pune<br/>Electric Cab - ₹3,700
+          Navi Mumbai Airport to Pune<br/>Electric Cab Starting ₹2,300
         </h1>
         <p class="text-xl md:text-2xl text-muted-foreground mb-4">
           Now Operational | 40 km Closer | IndiGo, Akasa Air Flights
@@ -167,7 +167,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
         <!-- Distance Comparison -->
         <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-3xl mx-auto">
-          <Card className="border-green-200 bg-green-50">
+          <Card className="border-green-200 bg-green-50 dark:bg-green-900/30">
             <CardHeader>
               <Badge className="mb-2 w-fit bg-green-600">Closer & Faster</Badge>
               <CardTitle>Navi Mumbai Airport</CardTitle>
@@ -176,17 +176,17 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <div class="space-y-2">
                 <div class="flex justify-between text-sm">
                   <span>Distance to Pune:</span>
-                  <span class="font-bold text-green-700">110 km</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">110 km</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Travel Time:</span>
-                  <span class="font-bold text-green-700">2-2.5 hours</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">2-2.5 hours</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Cab Fare:</span>
-                  <span class="font-bold text-green-700">₹3,700</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">Starting ₹2,300</span>
                 </div>
-                <p class="text-xs text-green-700 font-semibold mt-3">✓ Direct Expressway Access</p>
+                <p class="text-xs text-green-700 dark:text-green-400 font-semibold mt-3">✓ Direct Expressway Access</p>
               </div>
             </CardContent>
           </Card>
@@ -208,7 +208,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Cab Fare:</span>
-                  <span class="font-bold">₹3,700</span>
+                  <span class="font-bold">Starting ₹2,300</span>
                 </div>
                 <p class="text-xs mt-3">40 km longer route</p>
               </div>
@@ -216,24 +216,24 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           </Card>
         </div>
 
-        <div class="bg-green-50 border-2 border-green-300 rounded-lg p-5 mb-8 max-w-2xl mx-auto">
+        <div class="bg-green-50 dark:bg-green-900/30 border-2 border-green-300 rounded-lg p-5 mb-8 max-w-2xl mx-auto">
           <p class="font-bold text-green-900 mb-2 text-lg">
             <Plane class="inline w-6 h-6 mr-2" />
             Navi Mumbai Airport Operational from Dec 25, 2025
           </p>
-          <p class="text-sm text-green-800 mb-2">
+          <p class="text-sm text-green-800 dark:text-green-300 mb-2">
             <strong>Airlines:</strong> IndiGo, Akasa Air, Air India Express, Star Air<br/>
             <strong>Routes:</strong> Bengaluru, Delhi, Hyderabad, Kochi, Ahmedabad & more<br/>
             <strong>Operations:</strong> 8 AM - 8 PM daily (24/7 from Feb 2026)
           </p>
         </div>
 
-        <div class="bg-blue-50 border-2 border-blue-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
+        <div class="bg-blue-50 dark:bg-blue-900/30 border-2 border-blue-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
           <p class="font-semibold text-blue-900 mb-2">
             <TrendingUp class="inline w-5 h-5 mr-2" />
             Save 30-40 Minutes vs Mumbai Airport
           </p>
-          <p class="text-sm text-blue-800">
+          <p class="text-sm text-blue-800 dark:text-blue-300">
             Shorter distance + Direct expressway access + No city traffic = Faster journey to Pune
           </p>
         </div>
@@ -253,7 +253,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <p class="text-sm text-muted-foreground mt-4">
-          ✓ Same ₹3,700 rate ✓ Flight tracking ✓ No advance payment ✓ 24/7 service
+          ✓ Transparent pricing starting at ₹2,300 ✓ Flight tracking ✓ No advance payment ✓ 24/7 service
         </p>
       </div>
     </div>
@@ -325,11 +325,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card>
             <CardHeader>
               <IndianRupee class="w-10 h-10 text-primary mb-2" />
-              <CardTitle>Same ₹3,700 Fare</CardTitle>
+              <CardTitle>Same ₹2,300 Fare</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground mb-3">
-                Despite being closer (40 km less), we charge the same ₹3,700 as Mumbai Airport route.
+                Despite being closer (40 km less), we charge the same ₹2,300 as Mumbai Airport route.
               </p>
               <p class="text-sm font-semibold text-primary">Better value, faster journey</p>
             </CardContent>
@@ -422,7 +422,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                   <span class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
                   <div>
                     <p class="font-medium">Pune Entry - Your Destination (10 km)</p>
-                    <p class="text-sm text-muted-foreground">Drop anywhere in Pune - same ₹3,700</p>
+                    <p class="text-sm text-muted-foreground">Drop anywhere in Pune - same ₹2,300</p>
                   </div>
                 </li>
               </ol>
@@ -431,22 +431,22 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <!-- Best Travel Times -->
-        <Card className="bg-blue-50 border-blue-200">
+        <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
           <CardHeader>
             <CardTitle>Best Travel Times from Navi Mumbai Airport</CardTitle>
           </CardHeader>
           <CardContent>
             <div class="grid md:grid-cols-3 gap-4 text-sm">
               <div>
-                <p class="font-semibold mb-2 text-green-700">✓ Fastest (5-8 AM)</p>
+                <p class="font-semibold mb-2 text-green-700 dark:text-green-400">✓ Fastest (5-8 AM)</p>
                 <p class="text-muted-foreground">Early morning flights. Minimal traffic. Journey time: 2 hours exactly. Perfect for reaching Pune offices by 9-10 AM.</p>
               </div>
               <div>
-                <p class="font-semibold mb-2 text-yellow-700">⚠ Moderate (9 AM-6 PM)</p>
+                <p class="font-semibold mb-2 text-yellow-700 dark:text-yellow-400">⚠ Moderate (9 AM-6 PM)</p>
                 <p class="text-muted-foreground">Daytime travel. Some expressway traffic. Journey time: 2-2.5 hours. Still faster than Mumbai Airport route.</p>
               </div>
               <div>
-                <p class="font-semibold mb-2 text-green-700">✓ Fast (8 PM-5 AM)</p>
+                <p class="font-semibold mb-2 text-green-700 dark:text-green-400">✓ Fast (8 PM-5 AM)</p>
                 <p class="text-muted-foreground">Night/late-evening flights. Empty expressway. Journey time: 2-2.15 hours. Smooth drive throughout.</p>
               </div>
             </div>
@@ -526,7 +526,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 <div class="flex-1">
                   <h3 class="font-semibold mb-2">Comfortable Journey to Pune</h3>
                   <p class="text-sm text-muted-foreground">
-                    Smooth 2-hour drive on expressway in luxury electric SUV. Silent ride, AC, phone charging. Pay ₹3,700 after reaching your Pune destination safely.
+                    Smooth 2-hour drive on expressway in luxury electric SUV. Silent ride, AC, phone charging. Pay ₹2,300 after reaching your Pune destination safely.
                   </p>
                 </div>
               </div>
@@ -571,7 +571,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   <section class="w-full py-12 md:py-16 bg-muted/30">
     <div class="container px-4 md:px-6">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What's Included in ₹3,700?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What's Included in ₹2,300?</h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <Card>
@@ -663,7 +663,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                   <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <p class="font-medium">Zero Surge Pricing</p>
-                    <p class="text-sm text-muted-foreground">Same ₹3,700 rate 24/7, no peak hour charges</p>
+                    <p class="text-sm text-muted-foreground">Transparent pricing starting at ₹2,300 24/7, no peak hour charges</p>
                   </div>
                 </li>
               </ul>
@@ -672,7 +672,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <div class="mt-8 text-center">
-          <p class="text-2xl font-bold text-primary mb-2">₹3,700 = Your Total Payment</p>
+          <p class="text-2xl font-bold text-primary mb-2">₹2,300 = Your Total Payment</p>
           <p class="text-muted-foreground">No hidden charges. No surprises. What you see is what you pay.</p>
         </div>
       </div>
@@ -692,7 +692,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Electric cab from Navi Mumbai Airport to Pune costs ₹3,700 all-inclusive with GreenEVCabs. This covers 110 km distance, tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges, zero surge pricing. Same rate to any Pune location.
+                Electric cab from Navi Mumbai Airport to Pune costs starting at ₹2,300 (multiple vehicle options available) with GreenEVCabs. This covers 110 km distance, tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges, zero surge pricing. Same rate to any Pune location.
               </p>
             </CardContent>
           </Card>
@@ -805,8 +805,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           Faster route. Modern airport. Same great price. Book your electric cab today.
         </p>
 
-        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div class="text-5xl font-bold text-green-600 mb-2">₹3,700</div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
+          <div class="text-5xl font-bold text-green-600 mb-2">Starting ₹2,300</div>
           <p class="text-muted-foreground mb-2">Navi Mumbai Airport → Any Pune Location</p>
           <p class="text-sm text-blue-600 mb-6">Save 30-40 minutes vs Mumbai Airport route</p>
 
@@ -858,11 +858,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <div class="grid md:grid-cols-3 gap-6">
           <!-- Hinjewadi -->
           <a href="/navi-mumbai-airport-hinjewadi-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit bg-green-600">Closest IT Hub</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Hinjewadi</CardTitle>
-                <CardDescription>100 km • 2 hours • ₹3,700</CardDescription>
+                <CardDescription>100 km • 2 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -875,11 +875,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Wakad -->
           <a href="/navi-mumbai-airport-wakad-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">IT & Residential</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Wakad</CardTitle>
-                <CardDescription>105 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>105 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -892,11 +892,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Baner -->
           <a href="/navi-mumbai-airport-baner-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Startup Hub</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Baner</CardTitle>
-                <CardDescription>115 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>115 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -909,11 +909,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Aundh -->
           <a href="/navi-mumbai-airport-aundh-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Premium Area</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Aundh</CardTitle>
-                <CardDescription>120 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>120 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -926,11 +926,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Viman Nagar -->
           <a href="/navi-mumbai-airport-viman-nagar-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Airport Area</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Viman Nagar</CardTitle>
-                <CardDescription>125 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>125 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -943,11 +943,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Kharadi -->
           <a href="/navi-mumbai-airport-kharadi-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Eastern IT Hub</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Kharadi</CardTitle>
-                <CardDescription>130 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>130 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -960,11 +960,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Magarpatta -->
           <a href="/navi-mumbai-airport-magarpatta-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">IT Township</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Magarpatta</CardTitle>
-                <CardDescription>130 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>130 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -977,11 +977,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Kothrud -->
           <a href="/navi-mumbai-airport-kothrud-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Educational Hub</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Kothrud</CardTitle>
-                <CardDescription>125 km • 2.5-3 hours • ₹3,700</CardDescription>
+                <CardDescription>125 km • 2.5-3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -994,11 +994,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Hadapsar -->
           <a href="/navi-mumbai-airport-hadapsar-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">IT & MIDC</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Hadapsar</CardTitle>
-                <CardDescription>135 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>135 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1011,11 +1011,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Pimple Saudagar -->
           <a href="/navi-mumbai-airport-pimple-saudagar-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Industrial</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Pimple Saudagar</CardTitle>
-                <CardDescription>110 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>110 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1028,11 +1028,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- PCMC -->
           <a href="/navi-mumbai-airport-pimpri-chinchwad-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">PCMC Belt</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Pimpri Chinchwad</CardTitle>
-                <CardDescription>105 km • 2.5 hours • ₹3,700</CardDescription>
+                <CardDescription>105 km • 2.5 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1045,11 +1045,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Kalyani Nagar -->
           <a href="/navi-mumbai-airport-kalyani-nagar-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Premium</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Kalyani Nagar</CardTitle>
-                <CardDescription>130 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>130 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1062,11 +1062,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- Koregaon Park -->
           <a href="/navi-mumbai-airport-koregaon-park-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Premium</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to Koregaon Park</CardTitle>
-                <CardDescription>135 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>135 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1079,11 +1079,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <!-- SB Road -->
           <a href="/navi-mumbai-airport-senapati-bapat-road-cab" class="block group">
-            <Card className="hover:shadow-xl hover:border-green-500 transition-all h-full">
+            <Card className="hover:shadow-xl hover:border-green-500 dark:border-green-600 transition-all h-full">
               <CardHeader>
                 <Badge className="mb-2 w-fit">Commercial</Badge>
                 <CardTitle className="group-hover:text-green-600 transition-colors">NMIA to SB Road</CardTitle>
-                <CardDescription>130 km • 3 hours • ₹3,700</CardDescription>
+                <CardDescription>130 km • 3 hours • ₹2,300</CardDescription>
               </CardHeader>
               <CardContent>
                 <p class="text-sm text-muted-foreground mb-3">
@@ -1095,11 +1095,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           </a>
         </div>
 
-        <div class="mt-12 bg-green-50 border-2 border-green-200 rounded-xl p-6 text-center">
+        <div class="mt-12 bg-green-50 dark:bg-green-900/30 border-2 border-green-200 rounded-xl p-6 text-center">
           <p class="text-lg font-semibold text-green-900 mb-2">
-            Same Flat Rate of ₹3,700 to All Pune Localities
+            Same Flat Rate of ₹2,300 to All Pune Localities
           </p>
-          <p class="text-green-700">
+          <p class="text-green-700 dark:text-green-400">
             Whether it's Hinjewadi, Baner, Aundh, Kharadi, or any other Pune area - one transparent price
           </p>
         </div>
@@ -1126,7 +1126,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow h-full">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">Mumbai Airport to Pune</h4>
-                <p class="text-sm text-muted-foreground mb-2">T1, T2 pickup at ₹3,700</p>
+                <p class="text-sm text-muted-foreground mb-2">T1, T2 pickup starting at ₹2,300</p>
                 <p class="text-xs text-muted-foreground">150 km • 2.5-3 hours</p>
               </CardContent>
             </Card>
@@ -1144,7 +1144,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow h-full">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">Pune to Mumbai Drop</h4>
-                <p class="text-sm text-muted-foreground mb-2">Airport drop service ₹3,700</p>
+                <p class="text-sm text-muted-foreground mb-2">Airport drop service ₹2,300</p>
                 <p class="text-xs text-muted-foreground">Reverse route available</p>
               </CardContent>
             </Card>

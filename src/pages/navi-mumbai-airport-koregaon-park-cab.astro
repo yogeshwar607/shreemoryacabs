@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateBreadcrumbSchema } from "@/lib/seo";
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" }, "offers": { "price": "3700", "priceCurrency": "INR" } };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" }, "offers": { "price": "2300", "priceCurrency": "INR" } };
 const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "NMIA", url: "/navi-mumbai-airport-to-pune-cab" }, { name: "Koregaon Park", url: "/navi-mumbai-airport-koregaon-park-cab" }]);
 ---
 
-<MainLayout title="NMIA to Koregaon Park Cab ₹3,700 | KP Pune Taxi" description="Navi Mumbai Airport to Koregaon Park ₹3,700. Osho Ashram, MG Road area. 135 km. Book!" keywords={["nmia koregaon park"]}>
+<MainLayout title="NMIA to Koregaon Park Cab Starting ₹2,300 | KP Pune Taxi" description="Navi Mumbai Airport to Koregaon Park Starting ₹2,300. Osho Ashram, MG Road area. 135 km. Book!" keywords={["nmia koregaon park"]}>
   <StructuredData data={[serviceSchema, breadcrumbSchema]} />
   <section class="py-20 bg-gradient-to-b from-green-50 to-white">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-6">NMIA to Koregaon Park ₹3,700</h1>
+      <h1 class="text-5xl font-bold mb-6">NMIA to Koregaon Park Starting ₹2,300</h1>
       <p class="text-xl mb-8">135 km | Osho Ashram | MG Road | Premium Area</p>
       <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">Book Cab</a></Button>
     </div>

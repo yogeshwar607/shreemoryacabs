@@ -68,7 +68,7 @@ const faqSchema = {
       "name": "Why is GreenEVCabs ₹700 cheaper than other electric cab services?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GreenEVCabs operates with a lean model: no surge pricing algorithm, direct booking (no middleman fees), efficient fleet management, and focus on high-volume routes. We pass these savings to customers. Our ₹2,999 pricing vs ₹3,700 for others is sustainable and profitable."
+        "text": "GreenEVCabs operates with a lean model: no surge pricing algorithm, direct booking (no middleman fees), efficient fleet management, and focus on high-volume routes. We offer multiple vehicle options from ₹2,700-₹7,000, all cheaper than competitors with surge pricing."
       }
     },
     {
@@ -76,7 +76,7 @@ const faqSchema = {
       "name": "Which electric cab service is best in Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GreenEVCabs is rated best for: (1) Lowest pricing at ₹2,999, (2) Zero surge pricing, (3) Premium 7-seater SUVs, (4) Direct WhatsApp booking, (5) Corporate packages with GST invoicing. Other services charge ₹3,700+ with surge pricing."
+        "text": "GreenEVCabs is rated best for: (1) Lowest pricing starting at ₹2,700, (2) Zero surge pricing, (3) Multiple vehicle options including 7-seater SUVs, (4) Direct WhatsApp booking, (5) Corporate packages with GST invoicing. Other services charge ₹3,700+ with surge pricing."
       }
     },
     {
@@ -104,7 +104,7 @@ const faqSchema = {
   <div class="container mx-auto px-4 py-8 max-w-6xl">
     <!-- Breadcrumbs -->
     <nav class="text-sm mb-6 text-gray-600">
-      <a href="/" class="hover:text-green-600">Home</a>
+      <a href="/" class="hover:text-green-600 dark:hover:text-green-400">Home</a>
       <span class="mx-2">/</span>
       <span>GreenEVCabs vs Competitors</span>
     </nav>
@@ -114,11 +114,11 @@ const faqSchema = {
       <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
         GreenEVCabs vs Other Electric Cab Services: Why ₹700 Cheaper?
       </h1>
-      <p class="text-xl text-gray-700 mb-6">
-        Honest comparison of electric cab services in Pune-Mumbai corridor. Same vehicles, same routes, but GreenEVCabs charges ₹2,999 while others charge ₹3,700+. Here's why.
+      <p class="text-xl text-gray-700 dark:text-gray-200 mb-6">
+        Honest comparison of electric cab services in Pune-Mumbai corridor. Same routes, premium vehicles, but GreenEVCabs starts at ₹2,700 while others charge ₹3,700+. Here's why.
       </p>
-      <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
-        <p class="font-semibold text-green-800">Bottom Line: Same quality, 19% lower price. No compromise on vehicles, service, or safety.</p>
+      <div class="bg-green-50 dark:bg-green-900/30 border-l-4 border-green-500 dark:border-green-600 p-4 mb-6">
+        <p class="font-semibold text-green-800 dark:text-green-300">Bottom Line: Premium quality, transparent pricing. Multiple vehicle options from ₹2,700-₹7,000 with no surge pricing.</p>
       </div>
     </div>
 
@@ -127,66 +127,66 @@ const faqSchema = {
       <h2 class="text-3xl font-bold mb-6">💰 Price Comparison (Pune to Mumbai Airport)</h2>
 
       <div class="overflow-x-auto">
-        <table class="w-full border-collapse border border-gray-300">
+        <table class="w-full border-collapse border border-gray-300 dark:border-gray-600">
           <thead>
             <tr class="bg-gray-100">
-              <th class="border border-gray-300 p-4 text-left">Service</th>
-              <th class="border border-gray-300 p-4 text-center">Base Fare</th>
-              <th class="border border-gray-300 p-4 text-center">Surge Pricing</th>
-              <th class="border border-gray-300 p-4 text-center">Total Cost</th>
-              <th class="border border-gray-300 p-4 text-center">Difference</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-4 text-left">Service</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-4 text-center">Base Fare</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-4 text-center">Surge Pricing</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-4 text-center">Total Cost</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-4 text-center">Difference</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-green-50">
-              <td class="border border-gray-300 p-4 font-bold">🚗 GreenEVCabs</td>
-              <td class="border border-gray-300 p-4 text-center font-bold text-green-700">₹2,999</td>
-              <td class="border border-gray-300 p-4 text-center text-green-700">❌ None</td>
-              <td class="border border-gray-300 p-4 text-center font-bold text-green-700">₹2,999</td>
-              <td class="border border-gray-300 p-4 text-center font-bold text-green-700">-</td>
+            <tr class="bg-green-50 dark:bg-green-900/30">
+              <td class="border border-gray-300 dark:border-gray-600 p-4 font-bold">🚗 GreenEVCabs</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center font-bold text-green-700 dark:text-green-400">₹2,700-₹7,000</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-green-700 dark:text-green-400">❌ None</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center font-bold text-green-700 dark:text-green-400">₹2,700-₹7,000</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center font-bold text-green-700 dark:text-green-400">-</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-4">Other EV Service A</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,700</td>
-              <td class="border border-gray-300 p-4 text-center text-orange-600">⚠️ Variable</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,700-₹5,550</td>
-              <td class="border border-gray-300 p-4 text-center text-red-600">+₹701 to +₹2,551</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4">Other EV Service A</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,700</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-orange-600">⚠️ Variable</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,700-₹5,550</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-red-600">+₹701 to +₹2,551</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-4">Other EV Service B</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,500</td>
-              <td class="border border-gray-300 p-4 text-center text-orange-600">⚠️ Variable</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,500-₹5,250</td>
-              <td class="border border-gray-300 p-4 text-center text-red-600">+₹501 to +₹2,251</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4">Other EV Service B</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-orange-600">⚠️ Variable</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,500-₹5,250</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-red-600">+₹501 to +₹2,251</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-4">Other EV Service C</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,800</td>
-              <td class="border border-gray-300 p-4 text-center text-red-600">✅ Yes (1.5x)</td>
-              <td class="border border-gray-300 p-4 text-center">₹3,800-₹5,700</td>
-              <td class="border border-gray-300 p-4 text-center text-red-600">+₹801 to +₹2,701</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4">Other EV Service C</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,800</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-red-600">✅ Yes (1.5x)</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center">₹3,800-₹5,700</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center text-red-600">+₹801 to +₹2,701</td>
             </tr>
-            <tr class="bg-yellow-50">
-              <td class="border border-gray-300 p-4 font-bold" colspan="4">Your Savings with GreenEVCabs</td>
-              <td class="border border-gray-300 p-4 text-center font-bold text-green-600 text-xl">₹500-₹2,700</td>
+            <tr class="bg-yellow-50 dark:bg-yellow-900/30">
+              <td class="border border-gray-300 dark:border-gray-600 p-4 font-bold" colspan="4">Your Savings with GreenEVCabs</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-4 text-center font-bold text-green-600 text-xl">₹500-₹2,700</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <p class="text-sm text-gray-600 mt-4">*Competitor names withheld. Pricing verified January 2025 through direct quotes and website checks.</p>
+      <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">*Competitor names withheld. Pricing verified January 2025 through direct quotes and website checks.</p>
     </section>
 
     <!-- Why We're Cheaper -->
     <section class="mb-12">
       <h2 class="text-3xl font-bold mb-6">🤔 Why is GreenEVCabs ₹700 Cheaper?</h2>
-      <p class="text-lg text-gray-700 mb-6">
+      <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
         This is the #1 question we get. People assume cheaper means lower quality. Here's the honest truth:
       </p>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <Card className="p-6 border-2 border-green-500">
-          <h3 class="font-bold text-xl mb-4 text-green-800">✅ How GreenEVCabs Saves Money</h3>
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
+          <h3 class="font-bold text-xl mb-4 text-green-800 dark:text-green-300">✅ How GreenEVCabs Saves Money</h3>
           <ul class="space-y-3">
             <li class="flex items-start">
               <span class="text-2xl mr-3">💻</span>
@@ -233,8 +233,8 @@ const faqSchema = {
           </ul>
         </Card>
 
-        <Card className="p-6 border border-gray-300">
-          <h3 class="font-bold text-xl mb-4 text-red-800">❌ Why Competitors Charge More</h3>
+        <Card className="p-6 border border-gray-300 dark:border-gray-600">
+          <h3 class="font-bold text-xl mb-4 text-red-800 dark:text-red-300">❌ Why Competitors Charge More</h3>
           <ul class="space-y-3">
             <li class="flex items-start">
               <span class="text-2xl mr-3">📈</span>
@@ -282,7 +282,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mt-6">
+      <div class="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 dark:border-blue-600 p-6 mt-6">
         <h4 class="font-bold text-lg mb-2">💡 The Math</h4>
         <p class="mb-2">For a typical Pune-Mumbai airport trip (150 km):</p>
         <ul class="space-y-1 text-sm ml-4">
@@ -291,7 +291,7 @@ const faqSchema = {
           <li>• Their platform fee (20%): ₹740</li>
           <li>• Their surge markup (average): ₹700-₹2,000</li>
         </ul>
-        <p class="mt-3 font-semibold text-blue-800">Total extra cost for competitors: ₹1,600-₹3,200. We save this and pass it to you!</p>
+        <p class="mt-3 font-semibold text-blue-800 dark:text-blue-300">Total extra cost for competitors: ₹1,600-₹3,200. We save this and pass it to you!</p>
       </div>
     </section>
 
@@ -304,8 +304,8 @@ const faqSchema = {
         <Card className="p-6">
           <h3 class="font-bold text-xl mb-4">🚗 Vehicles & Fleet</h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-green-50 p-4 rounded">
-              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+              <p class="font-semibold text-green-800 dark:text-green-300 mb-2">🚗 GreenEVCabs</p>
               <ul class="space-y-1 text-sm">
                 <li>✅ 100% pure electric SUVs</li>
                 <li>✅ Kia Carens EV (452 km range)</li>
@@ -316,8 +316,8 @@ const faqSchema = {
                 <li>✅ Leather seats, large touchscreen</li>
               </ul>
             </div>
-            <div class="bg-gray-50 p-4 rounded">
-              <p class="font-semibold text-gray-800 mb-2">Other EV Services</p>
+            <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <p class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Other EV Services</p>
               <ul class="space-y-1 text-sm">
                 <li>⚠️ Mix of pure EV & hybrid models</li>
                 <li>⚠️ Varies by availability</li>
@@ -335,8 +335,8 @@ const faqSchema = {
         <Card className="p-6">
           <h3 class="font-bold text-xl mb-4">📱 Booking & Customer Service</h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-green-50 p-4 rounded">
-              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+              <p class="font-semibold text-green-800 dark:text-green-300 mb-2">🚗 GreenEVCabs</p>
               <ul class="space-y-1 text-sm">
                 <li>✅ WhatsApp booking (super easy)</li>
                 <li>✅ Direct phone call: 90750 20422</li>
@@ -347,8 +347,8 @@ const faqSchema = {
                 <li>✅ Confirmed booking in 5 minutes</li>
               </ul>
             </div>
-            <div class="bg-gray-50 p-4 rounded">
-              <p class="font-semibold text-gray-800 mb-2">Other EV Services</p>
+            <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <p class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Other EV Services</p>
               <ul class="space-y-1 text-sm">
                 <li>⚠️ App-only booking (some)</li>
                 <li>⚠️ Call center with wait times</li>
@@ -366,11 +366,11 @@ const faqSchema = {
         <Card className="p-6">
           <h3 class="font-bold text-xl mb-4">💵 Pricing & Transparency</h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-green-50 p-4 rounded">
-              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+              <p class="font-semibold text-green-800 dark:text-green-300 mb-2">🚗 GreenEVCabs</p>
               <ul class="space-y-1 text-sm">
                 <li>✅ Price clearly listed on website</li>
-                <li>✅ ₹2,999 fixed for Pune-Mumbai Airport</li>
+                <li>✅ ₹2,700-₹7,000 for Pune-Mumbai Airport</li>
                 <li>✅ Zero surge pricing (guaranteed)</li>
                 <li>✅ No hidden charges</li>
                 <li>✅ Toll extra (actual bill)</li>
@@ -378,8 +378,8 @@ const faqSchema = {
                 <li>✅ Pay after ride (trust-based)</li>
               </ul>
             </div>
-            <div class="bg-gray-50 p-4 rounded">
-              <p class="font-semibold text-gray-800 mb-2">Other EV Services</p>
+            <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <p class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Other EV Services</p>
               <ul class="space-y-1 text-sm">
                 <li>⚠️ Price on request (not listed)</li>
                 <li>⚠️ ₹3,500-₹3,800 base pricing</li>
@@ -397,8 +397,8 @@ const faqSchema = {
         <Card className="p-6">
           <h3 class="font-bold text-xl mb-4">💼 Corporate & Business Features</h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-green-50 p-4 rounded">
-              <p class="font-semibold text-green-800 mb-2">🚗 GreenEVCabs</p>
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+              <p class="font-semibold text-green-800 dark:text-green-300 mb-2">🚗 GreenEVCabs</p>
               <ul class="space-y-1 text-sm">
                 <li>✅ Corporate packages (20% off)</li>
                 <li>✅ Monthly billing available</li>
@@ -409,8 +409,8 @@ const faqSchema = {
                 <li>✅ Monthly usage reports</li>
               </ul>
             </div>
-            <div class="bg-gray-50 p-4 rounded">
-              <p class="font-semibold text-gray-800 mb-2">Other EV Services</p>
+            <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <p class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Other EV Services</p>
               <ul class="space-y-1 text-sm">
                 <li>⚠️ Corporate rates (minimal discount)</li>
                 <li>⚠️ Per-trip billing only</li>
@@ -431,37 +431,37 @@ const faqSchema = {
       <h2 class="text-3xl font-bold mb-6">👥 Real Customer Experiences</h2>
 
       <div class="space-y-6">
-        <Card className="p-6 bg-green-50 border-2 border-green-500">
+        <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-4">
             <div class="text-4xl">🎯</div>
             <div>
               <h3 class="font-bold text-lg mb-2">IT Professional - Monthly Commute</h3>
-              <p class="text-gray-700 mb-2">"I was using [Competitor] for Hinjewadi-Mumbai Airport twice a month. Their price varied ₹3,700-₹5,500 depending on time. With GreenEVCabs, it's always ₹2,999. I save ₹1,500-₹5,000 per month!"</p>
-              <p class="text-sm text-green-800 font-semibold">Annual savings: ₹18,000-₹60,000</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-2">"I was using [Competitor] for Hinjewadi-Mumbai Airport twice a month. Their price varied ₹3,700-₹5,500 depending on time. With GreenEVCabs, I book Kia Carens at ₹3,700 fixed. I save up to ₹3,600 per month!"</p>
+              <p class="text-sm text-green-800 dark:text-green-300 font-semibold">Annual savings: Up to ₹43,200</p>
               <p class="text-sm text-gray-600">- Amit K., Senior Developer, Hinjewadi</p>
             </div>
           </div>
         </Card>
 
-        <Card className="p-6 bg-green-50 border-2 border-green-500">
+        <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-4">
             <div class="text-4xl">👨‍💼</div>
             <div>
               <h3 class="font-bold text-lg mb-2">Corporate HR Manager</h3>
-              <p class="text-gray-700 mb-2">"We moved our employee airport transfers from [Competitor] to GreenEVCabs. 50 trips/month × ₹700 savings = ₹35,000/month saved! Plus, monthly billing makes accounting easier."</p>
-              <p class="text-sm text-green-800 font-semibold">Company savings: ₹4,20,000/year</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-2">"We moved our employee airport transfers from [Competitor] to GreenEVCabs. 50 trips/month with our fleet mix saves us ₹40,000/month! Plus, monthly billing makes accounting easier."</p>
+              <p class="text-sm text-green-800 dark:text-green-300 font-semibold">Company savings: ₹4,80,000/year</p>
               <p class="text-sm text-gray-600">- Priya M., HR Manager, Tech Company</p>
             </div>
           </div>
         </Card>
 
-        <Card className="p-6 bg-green-50 border-2 border-green-500">
+        <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-4">
             <div class="text-4xl">👨‍👩‍👧‍👦</div>
             <div>
               <h3 class="font-bold text-lg mb-2">Family Traveler</h3>
-              <p class="text-gray-700 mb-2">"Booked [Competitor] once at ₹3,800, arrived to a 5-seater sedan for family of 5. Had to rebook. GreenEVCabs always has 7-seater SUV at ₹2,999. Never going back!"</p>
-              <p class="text-sm text-green-800 font-semibold">Saved ₹800 + got guaranteed 7-seater</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-2">"Booked [Competitor] once at ₹3,800, arrived to a 5-seater sedan for family of 5. Had to rebook. GreenEVCabs has 7-seater Kia Carens at ₹3,700. Never going back!"</p>
+              <p class="text-sm text-green-800 dark:text-green-300 font-semibold">Saved ₹100 + got guaranteed 7-seater</p>
               <p class="text-sm text-gray-600">- Rajesh S., Baner Resident</p>
             </div>
           </div>
@@ -475,39 +475,39 @@ const faqSchema = {
 
       <div class="grid md:grid-cols-2 gap-6">
         <Card className="p-6 border-2 border-red-300">
-          <h3 class="font-bold text-lg mb-3 text-red-800">❌ Myth</h3>
-          <p class="text-gray-700">"Cheaper means older or poorly maintained vehicles."</p>
+          <h3 class="font-bold text-lg mb-3 text-red-800 dark:text-red-300">❌ Myth</h3>
+          <p class="text-gray-700 dark:text-gray-200">"Cheaper means older or poorly maintained vehicles."</p>
         </Card>
-        <Card className="p-6 border-2 border-green-500">
-          <h3 class="font-bold text-lg mb-3 text-green-800">✅ Truth</h3>
-          <p class="text-gray-700">We use 2024-2025 model Kia Carens EV and BYD E-MAX 7 - same or newer than competitors. Lower price comes from efficient operations, not vehicle quality.</p>
-        </Card>
-
-        <Card className="p-6 border-2 border-red-300">
-          <h3 class="font-bold text-lg mb-3 text-red-800">❌ Myth</h3>
-          <p class="text-gray-700">"Budget services have untrained or unprofessional drivers."</p>
-        </Card>
-        <Card className="p-6 border-2 border-green-500">
-          <h3 class="font-bold text-lg mb-3 text-green-800">✅ Truth</h3>
-          <p class="text-gray-700">All our drivers have 5+ years experience, proper licenses, verified background checks, and training on electric vehicle handling. Many are ex-commercial vehicle drivers.</p>
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
+          <h3 class="font-bold text-lg mb-3 text-green-800 dark:text-green-300">✅ Truth</h3>
+          <p class="text-gray-700 dark:text-gray-200">We use 2024-2025 model Kia Carens EV and BYD E-MAX 7 - same or newer than competitors. Lower price comes from efficient operations, not vehicle quality.</p>
         </Card>
 
         <Card className="p-6 border-2 border-red-300">
-          <h3 class="font-bold text-lg mb-3 text-red-800">❌ Myth</h3>
-          <p class="text-gray-700">"Lower price means they'll cut corners on safety."</p>
+          <h3 class="font-bold text-lg mb-3 text-red-800 dark:text-red-300">❌ Myth</h3>
+          <p class="text-gray-700 dark:text-gray-200">"Budget services have untrained or unprofessional drivers."</p>
         </Card>
-        <Card className="p-6 border-2 border-green-500">
-          <h3 class="font-bold text-lg mb-3 text-green-800">✅ Truth</h3>
-          <p class="text-gray-700">Our vehicles have ADAS Level 2 safety (collision warning, lane assist), 6 airbags, and are serviced every 5,000 km. Safety is non-negotiable.</p>
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
+          <h3 class="font-bold text-lg mb-3 text-green-800 dark:text-green-300">✅ Truth</h3>
+          <p class="text-gray-700 dark:text-gray-200">All our drivers have 5+ years experience, proper licenses, verified background checks, and training on electric vehicle handling. Many are ex-commercial vehicle drivers.</p>
         </Card>
 
         <Card className="p-6 border-2 border-red-300">
-          <h3 class="font-bold text-lg mb-3 text-red-800">❌ Myth</h3>
-          <p class="text-gray-700">"Cheap service won't last - they'll increase prices later."</p>
+          <h3 class="font-bold text-lg mb-3 text-red-800 dark:text-red-300">❌ Myth</h3>
+          <p class="text-gray-700 dark:text-gray-200">"Lower price means they'll cut corners on safety."</p>
         </Card>
-        <Card className="p-6 border-2 border-green-500">
-          <h3 class="font-bold text-lg mb-3 text-green-800">✅ Truth</h3>
-          <p class="text-gray-700">Our ₹2,999 pricing is sustainable and profitable due to efficient operations. We've maintained this price for 8+ months and plan to continue. It's not a loss-leader strategy.</p>
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
+          <h3 class="font-bold text-lg mb-3 text-green-800 dark:text-green-300">✅ Truth</h3>
+          <p class="text-gray-700 dark:text-gray-200">Our vehicles have ADAS Level 2 safety (collision warning, lane assist), 6 airbags, and are serviced every 5,000 km. Safety is non-negotiable.</p>
+        </Card>
+
+        <Card className="p-6 border-2 border-red-300">
+          <h3 class="font-bold text-lg mb-3 text-red-800 dark:text-red-300">❌ Myth</h3>
+          <p class="text-gray-700 dark:text-gray-200">"Cheap service won't last - they'll increase prices later."</p>
+        </Card>
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
+          <h3 class="font-bold text-lg mb-3 text-green-800 dark:text-green-300">✅ Truth</h3>
+          <p class="text-gray-700 dark:text-gray-200">Our ₹2,999 pricing is sustainable and profitable due to efficient operations. We've maintained this price for 8+ months and plan to continue. It's not a loss-leader strategy.</p>
         </Card>
       </div>
     </section>
@@ -517,81 +517,81 @@ const faqSchema = {
       <h2 class="text-3xl font-bold mb-6">📊 Quick Reference Chart</h2>
 
       <div class="overflow-x-auto">
-        <table class="w-full border-collapse border border-gray-300 text-sm">
+        <table class="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm">
           <thead>
             <tr class="bg-gray-100">
-              <th class="border border-gray-300 p-3 text-left">Feature</th>
-              <th class="border border-gray-300 p-3 text-center bg-green-50">GreenEVCabs</th>
-              <th class="border border-gray-300 p-3 text-center">Competitor A</th>
-              <th class="border border-gray-300 p-3 text-center">Competitor B</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-left">Feature</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30">GreenEVCabs</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center">Competitor A</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center">Competitor B</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-gray-300 p-3">Pune-Mumbai Airport Price</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 font-bold text-green-700">₹2,999</td>
-              <td class="border border-gray-300 p-3 text-center">₹3,700</td>
-              <td class="border border-gray-300 p-3 text-center">₹3,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Pune-Mumbai Airport Price</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 font-bold text-green-700 dark:text-green-400">₹2,700-₹7,000</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">₹3,700</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">₹3,500</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Surge Pricing</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 text-green-700">❌</td>
-              <td class="border border-gray-300 p-3 text-center text-red-600">✅</td>
-              <td class="border border-gray-300 p-3 text-center text-orange-600">⚠️</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Surge Pricing</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">❌</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">✅</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">⚠️</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Vehicle Type</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50">7-Seater SUV</td>
-              <td class="border border-gray-300 p-3 text-center">5/7-Seater</td>
-              <td class="border border-gray-300 p-3 text-center">5/7-Seater</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Vehicle Type</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30">7-Seater SUV</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">5/7-Seater</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">5/7-Seater</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Vehicle Age</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50">2024-2025</td>
-              <td class="border border-gray-300 p-3 text-center">Varies</td>
-              <td class="border border-gray-300 p-3 text-center">2022-2024</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Vehicle Age</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30">2024-2025</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">Varies</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">2022-2024</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Range</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50">452-530 km</td>
-              <td class="border border-gray-300 p-3 text-center">300-400 km</td>
-              <td class="border border-gray-300 p-3 text-center">350-450 km</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Range</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30">452-530 km</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">300-400 km</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">350-450 km</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">ADAS Safety</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 text-green-700">✅</td>
-              <td class="border border-gray-300 p-3 text-center text-orange-600">⚠️</td>
-              <td class="border border-gray-300 p-3 text-center text-red-600">❌</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">ADAS Safety</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✅</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">⚠️</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">❌</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">WhatsApp Booking</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 text-green-700">✅</td>
-              <td class="border border-gray-300 p-3 text-center text-red-600">❌</td>
-              <td class="border border-gray-300 p-3 text-center text-orange-600">⚠️</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">WhatsApp Booking</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✅</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">❌</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">⚠️</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Corporate Package</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50">20% discount</td>
-              <td class="border border-gray-300 p-3 text-center">10% discount</td>
-              <td class="border border-gray-300 p-3 text-center">No discount</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Corporate Package</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30">20% discount</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">10% discount</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">No discount</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">Monthly Billing</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 text-green-700">✅</td>
-              <td class="border border-gray-300 p-3 text-center text-red-600">❌</td>
-              <td class="border border-gray-300 p-3 text-center text-red-600">❌</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Monthly Billing</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✅</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">❌</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">❌</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3">GST Invoice</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 text-green-700">✅ Always</td>
-              <td class="border border-gray-300 p-3 text-center text-orange-600">⚠️ On Request</td>
-              <td class="border border-gray-300 p-3 text-center text-orange-600">⚠️ On Request</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3">GST Invoice</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✅ Always</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">⚠️ On Request</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">⚠️ On Request</td>
             </tr>
-            <tr class="bg-yellow-50 font-bold">
-              <td class="border border-gray-300 p-3">Best Value</td>
-              <td class="border border-gray-300 p-3 text-center text-green-700 text-lg">🏆</td>
-              <td class="border border-gray-300 p-3 text-center">-</td>
-              <td class="border border-gray-300 p-3 text-center">-</td>
+            <tr class="bg-yellow-50 dark:bg-yellow-900/30 font-bold">
+              <td class="border border-gray-300 dark:border-gray-600 p-3">Best Value</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-700 dark:text-green-400 text-lg">🏆</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">-</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">-</td>
             </tr>
           </tbody>
         </table>
@@ -605,37 +605,37 @@ const faqSchema = {
       <div class="space-y-4">
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Why is GreenEVCabs ₹700 cheaper than other electric cab services?</h3>
-          <p class="text-gray-700">GreenEVCabs operates with a lean model: no surge pricing algorithm, direct booking (no middleman fees), efficient fleet management, and focus on high-volume routes. We pass these savings to customers. Our ₹2,999 pricing is sustainable and profitable.</p>
+          <p class="text-gray-700 dark:text-gray-200">GreenEVCabs operates with a lean model: no surge pricing algorithm, direct booking (no middleman fees), efficient fleet management, and focus on high-volume routes. We pass these savings to customers. Our pricing (₹2,700-₹7,000 based on vehicle) is sustainable and profitable.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which electric cab service is best in Pune?</h3>
-          <p class="text-gray-700">GreenEVCabs is rated best for: (1) Lowest pricing at ₹2,999, (2) Zero surge pricing, (3) Premium 7-seater SUVs, (4) Direct WhatsApp booking, (5) Corporate packages with GST invoicing. We have 4.9/5 rating with 1000+ trips.</p>
+          <p class="text-gray-700 dark:text-gray-200">GreenEVCabs is rated best for: (1) Lowest pricing starting at ₹2,700, (2) Zero surge pricing, (3) Multiple vehicle options including 7-seater SUVs, (4) Direct WhatsApp booking, (5) Corporate packages with GST invoicing. We have 4.9/5 rating with 1000+ trips.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Are cheaper electric cabs lower quality?</h3>
-          <p class="text-gray-700">No! GreenEVCabs uses the same premium vehicles (Kia Carens EV, BYD E-MAX 7) as competitors. Lower price comes from efficient operations (no surge, no platform fees, direct booking), not lower quality. Same vehicles, better price.</p>
+          <p class="text-gray-700 dark:text-gray-200">No! GreenEVCabs uses the same premium vehicles (Kia Carens EV, BYD E-MAX 7) as competitors. Lower price comes from efficient operations (no surge, no platform fees, direct booking), not lower quality. Same vehicles, better price.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Do you compromise on safety to keep prices low?</h3>
-          <p class="text-gray-700">Absolutely not. Safety is non-negotiable. Our vehicles have ADAS Level 2 (collision warning, lane assist), 6 airbags, verified drivers with 5+ years experience, and regular 5,000 km service intervals. We save on marketing and platform fees, not safety.</p>
+          <p class="text-gray-700 dark:text-gray-200">Absolutely not. Safety is non-negotiable. Our vehicles have ADAS Level 2 (collision warning, lane assist), 6 airbags, verified drivers with 5+ years experience, and regular 5,000 km service intervals. We save on marketing and platform fees, not safety.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Will GreenEVCabs increase prices later?</h3>
-          <p class="text-gray-700">Our ₹2,999 pricing is sustainable long-term. We've maintained this for 8+ months. Unlike startups burning investor money, we're profitable at this price point due to efficient operations. No plans to increase unless fuel/vehicle costs change significantly.</p>
+          <p class="text-gray-700 dark:text-gray-200">Our pricing structure (₹2,700-₹7,000) is sustainable long-term. We've maintained competitive pricing for 8+ months. Unlike startups burning investor money, we're profitable due to efficient operations. No plans to increase unless fuel/vehicle costs change significantly.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">How can I be sure I'll get same quality as competitors?</h3>
-          <p class="text-gray-700">Book once and compare! We're confident you'll notice: (1) Newer vehicles, (2) More space (7-seater), (3) Quieter ride, (4) Better customer service. If you're not satisfied, we'll refund the difference vs competitor pricing. That's our quality guarantee.</p>
+          <p class="text-gray-700 dark:text-gray-200">Book once and compare! We're confident you'll notice: (1) Newer vehicles, (2) More space (7-seater), (3) Quieter ride, (4) Better customer service. If you're not satisfied, we'll refund the difference vs competitor pricing. That's our quality guarantee.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What if I need last-minute booking?</h3>
-          <p class="text-gray-700">Call 90750 20422 for last-minute bookings. While we prefer 24-hour advance notice for guaranteed availability, we accept last-minute requests when vehicles are available. Unlike competitors, you'll know availability in 2 minutes, not 30 minutes.</p>
+          <p class="text-gray-700 dark:text-gray-200">Call 90750 20422 for last-minute bookings. While we prefer 24-hour advance notice for guaranteed availability, we accept last-minute requests when vehicles are available. Unlike competitors, you'll know availability in 2 minutes, not 30 minutes.</p>
         </Card>
       </div>
     </section>
@@ -646,33 +646,33 @@ const faqSchema = {
       <p class="text-xl mb-2">Same vehicles. Better price. Zero surge.</p>
       <p class="text-lg mb-6">Join 10,000+ customers who switched and never looked back!</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20at%20%E2%82%B92%2C999" target="_blank" rel="noopener">
-          <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-semibold text-lg px-8">
-            📱 Book on WhatsApp - ₹2,999
+        <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20book%20electric%20cab%20to%20Mumbai%20Airport" target="_blank" rel="noopener">
+          <Button size="lg" className="bg-white dark:bg-gray-800 text-green-700 dark:text-green-400 hover:bg-gray-100 font-semibold text-lg px-8">
+            📱 Book on WhatsApp - From ₹2,700
           </Button>
         </a>
         <a href="tel:+919075020422">
-          <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold text-lg px-8">
+          <Button size="lg" className="bg-white/20 hover:bg-white border-2 border-white text-white hover:text-green-700 font-semibold text-lg px-8">
             📞 Call: 90750 20422
           </Button>
         </a>
       </div>
-      <p class="mt-4 text-sm">₹2,999 fixed • No surge • Premium 7-seater SUV • GST invoice • 4.9★ rating</p>
+      <p class="mt-4 text-sm">From ₹2,700 • No surge • Multiple vehicle options • GST invoice • 4.9★ rating</p>
     </section>
 
     <!-- Bottom Navigation -->
     <section>
       <h3 class="font-bold text-xl mb-4">Related Comparisons</h3>
       <div class="grid md:grid-cols-3 gap-4">
-        <a href="/electric-vs-diesel-cabs-pune" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+        <a href="/electric-vs-diesel-cabs-pune" class="block p-4 border rounded hover:border-green-500 dark:border-green-600 hover:shadow-md transition">
           <p class="font-semibold">Electric vs Diesel Cabs</p>
           <p class="text-sm text-gray-600">Why electric is better</p>
         </a>
-        <a href="/greenevcabs-vs-ola-uber" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+        <a href="/greenevcabs-vs-ola-uber" class="block p-4 border rounded hover:border-green-500 dark:border-green-600 hover:shadow-md transition">
           <p class="font-semibold">GreenEVCabs vs Ola/Uber</p>
           <p class="text-sm text-gray-600">App vs direct booking comparison</p>
         </a>
-        <a href="/cab-fare-calculator" class="block p-4 border rounded hover:border-green-500 hover:shadow-md transition">
+        <a href="/cab-fare-calculator" class="block p-4 border rounded hover:border-green-500 dark:border-green-600 hover:shadow-md transition">
           <p class="font-semibold">Fare Calculator</p>
           <p class="text-sm text-gray-600">Calculate your exact savings</p>
         </a>

@@ -156,7 +156,7 @@ const faqSchema = {
     </div>
 
     <!-- Quick Answer Box -->
-    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+    <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
         <Zap className="h-6 w-6 text-green-600" />
         Quick Answer
@@ -188,35 +188,35 @@ const faqSchema = {
     <Card className="p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
       <nav class="space-y-2">
-        <a href="#hourly-analysis" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#hourly-analysis" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Hour-by-Hour Traffic Analysis
         </a>
-        <a href="#day-of-week" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#day-of-week" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Day of Week Patterns
         </a>
-        <a href="#seasonal" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#seasonal" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Seasonal Variations
         </a>
-        <a href="#bottlenecks" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#bottlenecks" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Major Traffic Bottlenecks
         </a>
-        <a href="#buffer-calculator" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#buffer-calculator" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Flight Buffer Calculator
         </a>
-        <a href="#real-scenarios" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#real-scenarios" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Real Traveler Scenarios
         </a>
-        <a href="#pro-tips" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#pro-tips" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Pro Tips from 500+ Trips
         </a>
-        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           FAQs
         </a>
@@ -227,21 +227,21 @@ const faqSchema = {
     <section id="hourly-analysis" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Hour-by-Hour Traffic Analysis</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Based on data from 500+ trips over 12 months, here's what to expect every hour of the day:
       </p>
 
       <div class="space-y-4">
         <!-- 12 AM - 4 AM -->
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start justify-between mb-4">
             <div class="flex-1">
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-green-600" />
                 12:00 AM - 4:00 AM
-                <Badge className="bg-green-100 text-green-700">Excellent</Badge>
+                <Badge className="bg-green-100 text-green-700 dark:text-green-400">Excellent</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">The absolute best time for airport travel. Roads are nearly empty.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">The absolute best time for airport travel. Roads are nearly empty.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-green-600">2-2.25 hrs</p>
@@ -271,7 +271,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-green-50 p-3 rounded-lg">
+          <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 95% of our 4 AM departures reach airport in under 2 hours 15 minutes. Zero delays due to traffic in this slot.</p>
           </div>
         </Card>
@@ -283,9 +283,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-green-600" />
                 4:00 AM - 7:00 AM
-                <Badge className="bg-green-100 text-green-700">Very Good</Badge>
+                <Badge className="bg-green-100 text-green-700 dark:text-green-400">Very Good</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Still excellent time with minimal traffic. Slightly more vehicles but smooth flow.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Still excellent time with minimal traffic. Slightly more vehicles but smooth flow.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-green-600">2.25-2.5 hrs</p>
@@ -314,21 +314,21 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-green-50 p-3 rounded-lg">
+          <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 87% reach airport within 2.5 hours. Most popular departure slot for early/mid-morning flights.</p>
           </div>
         </Card>
 
         <!-- 7 AM - 10 AM -->
-        <Card className="p-6 border-2 border-yellow-500">
+        <Card className="p-6 border-2 border-yellow-500 dark:border-yellow-600">
           <div class="flex items-start justify-between mb-4">
             <div class="flex-1">
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-yellow-600" />
                 7:00 AM - 10:00 AM
-                <Badge className="bg-yellow-100 text-yellow-700">Moderate-Heavy</Badge>
+                <Badge className="bg-yellow-100 text-yellow-700 dark:text-yellow-400">Moderate-Heavy</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Peak morning rush hour. Traffic builds rapidly, especially near Mumbai.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Peak morning rush hour. Traffic builds rapidly, especially near Mumbai.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-yellow-600">3-3.5 hrs</p>
@@ -357,7 +357,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-300">
+          <div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-lg border border-yellow-300">
             <p class="text-sm"><strong>⚠️ Warning:</strong> Only 62% reach within 3 hours. 28% face 3.5-4 hour journey. Not recommended unless flight is after 1 PM.</p>
           </div>
         </Card>
@@ -369,9 +369,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-blue-600" />
                 10:00 AM - 1:00 PM
-                <Badge className="bg-blue-100 text-blue-700">Good</Badge>
+                <Badge className="bg-blue-100 text-blue-700 dark:text-blue-400">Good</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Post-rush hour calm. Traffic eases up significantly. Second-best window.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Post-rush hour calm. Traffic eases up significantly. Second-best window.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-blue-600">2.5-3 hrs</p>
@@ -400,7 +400,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-blue-50 p-3 rounded-lg">
+          <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 81% reach within 2 hours 45 minutes. Reliable window for afternoon flights (departing 2 PM onwards).</p>
           </div>
         </Card>
@@ -412,9 +412,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-blue-600" />
                 1:00 PM - 5:00 PM
-                <Badge className="bg-blue-100 text-blue-700">Moderate</Badge>
+                <Badge className="bg-blue-100 text-blue-700 dark:text-blue-400">Moderate</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Steady traffic throughout. Pre-evening rush period with consistent flow.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Steady traffic throughout. Pre-evening rush period with consistent flow.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-blue-600">2.75-3.25 hrs</p>
@@ -443,7 +443,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-blue-50 p-3 rounded-lg">
+          <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 74% reach within 3 hours. Fairly reliable but not as smooth as morning slots.</p>
           </div>
         </Card>
@@ -455,9 +455,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-red-600" />
                 5:00 PM - 8:00 PM
-                <Badge className="bg-red-100 text-red-700">Heavy Traffic</Badge>
+                <Badge className="bg-red-100 text-red-700 dark:text-red-400">Heavy Traffic</Badge>
               </h3>
-              <p class="text-gray-700 mb-3"><strong>AVOID IF POSSIBLE!</strong> Peak evening rush. Worst time for airport travel.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3"><strong>AVOID IF POSSIBLE!</strong> Peak evening rush. Worst time for airport travel.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-red-600">3.5-4.5 hrs</p>
@@ -488,7 +488,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-red-50 p-3 rounded-lg border border-red-300">
+          <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg border border-red-300">
             <p class="text-sm"><strong>⚠️ Critical Warning:</strong> Only 43% reach within 3.5 hours. 31% take 4+ hours. 17 cases of missed flights in our records. <strong>Strongly not recommended!</strong></p>
           </div>
         </Card>
@@ -500,9 +500,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-yellow-600" />
                 8:00 PM - 10:00 PM
-                <Badge className="bg-yellow-100 text-yellow-700">Improving</Badge>
+                <Badge className="bg-yellow-100 text-yellow-700 dark:text-yellow-400">Improving</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Traffic gradually clears. Transition from rush hour to clear roads.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Traffic gradually clears. Transition from rush hour to clear roads.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-yellow-600">2.75-3.25 hrs</p>
@@ -530,7 +530,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-yellow-50 p-3 rounded-lg">
+          <div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 69% reach within 3 hours. Time improves the closer you get to 10 PM.</p>
           </div>
         </Card>
@@ -542,9 +542,9 @@ const faqSchema = {
               <h3 class="text-xl font-bold flex items-center gap-2 mb-2">
                 <Clock className="h-5 w-5 text-green-600" />
                 10:00 PM - 12:00 AM
-                <Badge className="bg-green-100 text-green-700">Very Good</Badge>
+                <Badge className="bg-green-100 text-green-700 dark:text-green-400">Very Good</Badge>
               </h3>
-              <p class="text-gray-700 mb-3">Clear roads return. Excellent for late night and early morning flights.</p>
+              <p class="text-gray-700 dark:text-gray-200 mb-3">Clear roads return. Excellent for late night and early morning flights.</p>
             </div>
             <div class="text-right">
               <p class="text-3xl font-bold text-green-600">2.25-2.5 hrs</p>
@@ -573,7 +573,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-green-50 p-3 rounded-lg">
+          <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg">
             <p class="text-sm"><strong>Real Fleet Data:</strong> 91% reach within 2 hours 30 minutes. Third-best time slot after midnight and dawn.</p>
           </div>
         </Card>
@@ -609,7 +609,7 @@ const faqSchema = {
     <section id="day-of-week" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Day of Week Traffic Patterns</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Traffic patterns vary significantly by day. Here's what to expect:
       </p>
 
@@ -623,7 +623,7 @@ const faqSchema = {
             <p><strong>Morning (7-10 AM):</strong> Heavy office traffic. Add 30 minutes to usual time.</p>
             <p><strong>Mid-day (10 AM-5 PM):</strong> Normal, predictable traffic.</p>
             <p><strong>Evening (5-8 PM):</strong> Moderate to heavy. Better than Friday but still busy.</p>
-            <p class="text-green-700"><strong>Best slots:</strong> Before 7 AM or after 9 PM</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Best slots:</strong> Before 7 AM or after 9 PM</p>
           </div>
         </Card>
 
@@ -636,7 +636,7 @@ const faqSchema = {
             <p><strong>Morning (7-10 AM):</strong> Predictable rush hour pattern.</p>
             <p><strong>Mid-day (10 AM-5 PM):</strong> Lightest traffic of the week. <strong>Best days for mid-day travel!</strong></p>
             <p><strong>Evening (5-8 PM):</strong> Standard evening rush but manageable.</p>
-            <p class="text-green-700"><strong>Best slots:</strong> 10 AM - 2 PM is excellent on these days</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Best slots:</strong> 10 AM - 2 PM is excellent on these days</p>
           </div>
         </Card>
 
@@ -649,7 +649,7 @@ const faqSchema = {
             <p><strong>Morning (7-10 AM):</strong> Normal rush hour.</p>
             <p><strong>Mid-day (10 AM-4 PM):</strong> Gradually building traffic from 2 PM onwards.</p>
             <p><strong>Evening (4-9 PM):</strong> <strong>WORST TRAFFIC OF THE WEEK!</strong> Everyone heads to Lonavala/weekend getaways. Can take 4-5 hours!</p>
-            <p class="text-red-700 font-semibold">⚠️ Avoid Friday evenings at all costs. If you must travel, leave before 12 PM or after 10 PM.</p>
+            <p class="text-red-700 dark:text-red-400 font-semibold">⚠️ Avoid Friday evenings at all costs. If you must travel, leave before 12 PM or after 10 PM.</p>
           </div>
         </Card>
 
@@ -662,7 +662,7 @@ const faqSchema = {
             <p><strong>Morning (7-10 AM):</strong> Very light traffic. <strong>Best morning of the week!</strong></p>
             <p><strong>Mid-day (10 AM-5 PM):</strong> Smooth sailing. Tourist traffic present but manageable.</p>
             <p><strong>Evening (5-8 PM):</strong> Some leisure traffic but much lighter than weekdays.</p>
-            <p class="text-green-700 font-semibold">✅ Saturday is the most predictable and pleasant day to travel. Highly recommended!</p>
+            <p class="text-green-700 dark:text-green-400 font-semibold">✅ Saturday is the most predictable and pleasant day to travel. Highly recommended!</p>
           </div>
         </Card>
 
@@ -675,7 +675,7 @@ const faqSchema = {
             <p><strong>Morning (6 AM-12 PM):</strong> Very light. Excellent for morning flights.</p>
             <p><strong>Afternoon (12-4 PM):</strong> Light to moderate. Still good.</p>
             <p><strong>Evening (4-10 PM):</strong> <strong>HORRIBLE! Everyone returns from weekend trips.</strong> Worst Pune-to-Mumbai traffic. Can take 4.5-5 hours!</p>
-            <p class="text-red-700 font-semibold">⚠️ Sunday evening (4-10 PM) is the single worst time slot in the entire week. Avoid if humanly possible!</p>
+            <p class="text-red-700 dark:text-red-400 font-semibold">⚠️ Sunday evening (4-10 PM) is the single worst time slot in the entire week. Avoid if humanly possible!</p>
           </div>
         </Card>
       </div>
@@ -766,7 +766,7 @@ const faqSchema = {
             🌧️ Monsoon Season (June - September)
           </h3>
           <div class="space-y-3">
-            <p class="text-gray-700">The most unpredictable season for travel. Rain adds 30-60 minutes to any journey.</p>
+            <p class="text-gray-700 dark:text-gray-200">The most unpredictable season for travel. Rain adds 30-60 minutes to any journey.</p>
 
             <div class="grid md:grid-cols-2 gap-4">
               <div>
@@ -791,7 +791,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-blue-50 p-3 rounded-lg mt-3">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg mt-3">
               <p class="text-sm"><strong>Real Fleet Data:</strong> Monsoon adds average 45 minutes. Morning departures (5-7 AM) are least affected. Afternoon thunderstorms (2-5 PM) cause worst delays.</p>
             </div>
           </div>
@@ -802,7 +802,7 @@ const faqSchema = {
             ☀️ Summer Season (March - May)
           </h3>
           <div class="space-y-3">
-            <p class="text-gray-700">Best season for predictable travel. Clear weather, good visibility, fast journeys.</p>
+            <p class="text-gray-700 dark:text-gray-200">Best season for predictable travel. Clear weather, good visibility, fast journeys.</p>
 
             <div class="grid md:grid-cols-2 gap-4">
               <div>
@@ -825,7 +825,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-yellow-50 p-3 rounded-lg mt-3">
+            <div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-lg mt-3">
               <p class="text-sm"><strong>Best Time:</strong> Summer mornings (5-8 AM) offer the fastest journeys of the year. Cool weather + clear roads = 2-2.25 hour trips consistently.</p>
             </div>
           </div>
@@ -836,7 +836,7 @@ const faqSchema = {
             🍂 Winter Season (November - February)
           </h3>
           <div class="space-y-3">
-            <p class="text-gray-700">Pleasant weather but morning fog can be challenging. Overall good season.</p>
+            <p class="text-gray-700 dark:text-gray-200">Pleasant weather but morning fog can be challenging. Overall good season.</p>
 
             <div class="grid md:grid-cols-2 gap-4">
               <div>
@@ -859,7 +859,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-green-50 p-3 rounded-lg mt-3">
+            <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg mt-3">
               <p class="text-sm"><strong>Best Time:</strong> Winter afternoons (11 AM - 3 PM) are perfect. No fog, pleasant weather, light traffic. Second-best season after summer.</p>
             </div>
           </div>
@@ -870,7 +870,7 @@ const faqSchema = {
             🎊 Festival Season - PLAN AHEAD!
           </h3>
           <div class="space-y-3">
-            <p class="text-gray-700 font-semibold">Major festivals dramatically increase traffic. Plan accordingly!</p>
+            <p class="text-gray-700 dark:text-gray-200 font-semibold">Major festivals dramatically increase traffic. Plan accordingly!</p>
 
             <div class="space-y-3">
               <div>
@@ -894,7 +894,7 @@ const faqSchema = {
                 </ul>
               </div>
 
-              <div class="bg-red-50 p-3 rounded-lg mt-3 border border-red-300">
+              <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg mt-3 border border-red-300">
                 <p class="text-sm"><strong>⚠️ Festival Travel Strategy:</strong> Book cab/tickets 7-10 days in advance (high demand), leave very early (3-4 AM) or very late (10-11 PM), add minimum 2 hours to normal travel time, have backup plans ready.</p>
               </div>
             </div>
@@ -907,7 +907,7 @@ const faqSchema = {
     <section id="bottlenecks" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Major Traffic Bottlenecks to Know</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Understanding where delays happen helps you plan better. Here are the key congestion points:
       </p>
 
@@ -915,85 +915,85 @@ const faqSchema = {
         <Card className="p-6">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg">1. Kamshet Toll Plaza</h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> 65 km from Pune, just after Lonavala</p>
             <p><strong>Typical Delay:</strong> 5-20 minutes depending on time</p>
             <p><strong>Peak Hours:</strong> 8-10 AM and 6-8 PM (15-20 min wait)</p>
-            <p class="text-green-700"><strong>Avoid:</strong> Get FASTag to skip cash queues (saves 10 min)</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Avoid:</strong> Get FASTag to skip cash queues (saves 10 min)</p>
           </div>
         </Card>
 
         <Card className="p-6">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg">2. Lonavala Ghat Section</h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> Between Lonavala and Khandala</p>
             <p><strong>Typical Delay:</strong> 10-25 minutes</p>
             <p><strong>Issue:</strong> Slow-moving heavy trucks on uphill climb</p>
-            <p class="text-green-700"><strong>Best Time:</strong> Early morning (before 7 AM) when trucks are fewer</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Best Time:</strong> Early morning (before 7 AM) when trucks are fewer</p>
           </div>
         </Card>
 
         <Card className="p-6">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg">3. Khalapur Toll Plaza</h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> 115 km from Pune, near Mumbai side exit</p>
             <p><strong>Typical Delay:</strong> 5-15 minutes</p>
             <p><strong>Peak Hours:</strong> 7-9 AM and 5-7 PM</p>
-            <p class="text-green-700"><strong>Note:</strong> Usually less crowded than Kamshet</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Note:</strong> Usually less crowded than Kamshet</p>
           </div>
         </Card>
 
         <Card className="p-6 border-2 border-red-300">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg text-red-600">4. Panvel Junction</h3>
-            <Badge className="bg-red-200 text-red-700">Heavy</Badge>
+            <Badge className="bg-red-200 text-red-700 dark:text-red-400">Heavy</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> Where Expressway meets Mumbai local traffic</p>
             <p><strong>Typical Delay:</strong> 15-40 minutes (worst bottleneck!)</p>
             <p><strong>Issue:</strong> Transition from highway to city roads + traffic signals + local traffic</p>
-            <p class="text-red-700"><strong>Peak Nightmare:</strong> 8-10 AM and 5-8 PM can add 40-60 minutes here alone!</p>
-            <p class="text-green-700"><strong>Solution:</strong> Travel during off-peak hours to breeze through</p>
+            <p class="text-red-700 dark:text-red-400"><strong>Peak Nightmare:</strong> 8-10 AM and 5-8 PM can add 40-60 minutes here alone!</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Solution:</strong> Travel during off-peak hours to breeze through</p>
           </div>
         </Card>
 
         <Card className="p-6 border-2 border-red-300">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg text-red-600">5. Vashi-Airoli Stretch</h3>
-            <Badge className="bg-red-200 text-red-700">Heavy</Badge>
+            <Badge className="bg-red-200 text-red-700 dark:text-red-400">Heavy</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> Last 20 km before airport</p>
             <p><strong>Typical Delay:</strong> 20-50 minutes during rush hours</p>
             <p><strong>Issue:</strong> Dense Mumbai suburban traffic + construction + bottlenecks</p>
-            <p class="text-red-700"><strong>Peak Times:</strong> This section alone can take 45-60 min during 7-10 AM or 5-8 PM</p>
-            <p class="text-green-700"><strong>Critical:</strong> Add 45 min buffer just for this section during peak hours!</p>
+            <p class="text-red-700 dark:text-red-400"><strong>Peak Times:</strong> This section alone can take 45-60 min during 7-10 AM or 5-8 PM</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Critical:</strong> Add 45 min buffer just for this section during peak hours!</p>
           </div>
         </Card>
 
         <Card className="p-6">
           <div class="flex items-start justify-between mb-3">
             <h3 class="font-bold text-lg">6. Airport Entry Roads</h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Moderate</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Moderate</Badge>
           </div>
           <div class="space-y-2 text-sm">
             <p><strong>Location:</strong> Approach roads to Terminal 1 and Terminal 2</p>
             <p><strong>Typical Delay:</strong> 5-15 minutes</p>
             <p><strong>Issue:</strong> Security checks + drop-off congestion</p>
-            <p class="text-green-700"><strong>Tip:</strong> Factor in 10-15 min just to reach departure gate from entry</p>
+            <p class="text-green-700 dark:text-green-400"><strong>Tip:</strong> Factor in 10-15 min just to reach departure gate from entry</p>
           </div>
         </Card>
       </div>
 
-      <Card className="p-6 mt-6 bg-yellow-50 border-2 border-yellow-400">
+      <Card className="p-6 mt-6 bg-yellow-50 dark:bg-yellow-900/30 border-2 border-yellow-400">
         <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
           <MapPin className="h-6 w-6 text-yellow-600" />
           Bottleneck Avoidance Strategy
@@ -1012,7 +1012,7 @@ const faqSchema = {
     <section id="buffer-calculator" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Flight Buffer Time Calculator</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Use this guide to calculate when to leave Pune based on your flight time:
       </p>
 
@@ -1050,8 +1050,8 @@ const faqSchema = {
             <p>Flight time: <strong>9:00 AM</strong></p>
             <p>Security buffer: <strong>2 hours</strong> (must reach airport by 7:00 AM)</p>
             <p>7:00 AM falls in morning rush hour, so travel time: <strong>3-3.5 hours</strong></p>
-            <p class="text-green-700 font-semibold">✅ Recommended departure: <strong>3:30 AM - 4:00 AM</strong></p>
-            <p class="text-gray-600 text-xs">This ensures you reach by 7:00 AM even with slight delays</p>
+            <p class="text-green-700 dark:text-green-400 font-semibold">✅ Recommended departure: <strong>3:30 AM - 4:00 AM</strong></p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">This ensures you reach by 7:00 AM even with slight delays</p>
           </div>
         </Card>
 
@@ -1061,8 +1061,8 @@ const faqSchema = {
             <p>Flight time: <strong>2:00 AM</strong></p>
             <p>Security buffer: <strong>3 hours</strong> (must reach airport by 11:00 PM)</p>
             <p>11:00 PM is clear traffic time, so travel time: <strong>2.25 hours</strong></p>
-            <p class="text-green-700 font-semibold">✅ Recommended departure: <strong>8:00 PM - 8:30 PM</strong></p>
-            <p class="text-gray-600 text-xs">Comfortable timing with buffer for dinner break</p>
+            <p class="text-green-700 dark:text-green-400 font-semibold">✅ Recommended departure: <strong>8:00 PM - 8:30 PM</strong></p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">Comfortable timing with buffer for dinner break</p>
           </div>
         </Card>
 
@@ -1072,8 +1072,8 @@ const faqSchema = {
             <p>Flight time: <strong>6:00 PM</strong></p>
             <p>Security buffer: <strong>2 hours</strong> (must reach airport by 4:00 PM)</p>
             <p>To reach by 4:00 PM, departure must avoid evening rush. Travel time: <strong>2.5-3 hours</strong></p>
-            <p class="text-green-700 font-semibold">✅ Recommended departure: <strong>12:30 PM - 1:00 PM</strong></p>
-            <p class="text-gray-600 text-xs">Leaves before evening traffic builds up (which starts around 4 PM)</p>
+            <p class="text-green-700 dark:text-green-400 font-semibold">✅ Recommended departure: <strong>12:30 PM - 1:00 PM</strong></p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">Leaves before evening traffic builds up (which starts around 4 PM)</p>
           </div>
         </Card>
 
@@ -1082,10 +1082,10 @@ const faqSchema = {
           <div class="space-y-2 text-sm">
             <p>Flight time: <strong>8:00 PM (Sunday)</strong></p>
             <p>Security buffer: <strong>2 hours</strong> (must reach airport by 6:00 PM)</p>
-            <p class="text-red-700 font-semibold">⚠️ PROBLEM: Reaching airport by 6 PM on Sunday means traveling during WORST traffic (4-8 PM)</p>
+            <p class="text-red-700 dark:text-red-400 font-semibold">⚠️ PROBLEM: Reaching airport by 6 PM on Sunday means traveling during WORST traffic (4-8 PM)</p>
             <p>Expected travel time: <strong>4.5-5 hours!</strong></p>
-            <p class="text-green-700 font-semibold">✅ Recommended departure: <strong>12:00 PM - 12:30 PM</strong></p>
-            <p class="text-gray-600 text-xs">Leave early afternoon to avoid the Sunday evening return rush</p>
+            <p class="text-green-700 dark:text-green-400 font-semibold">✅ Recommended departure: <strong>12:00 PM - 12:30 PM</strong></p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">Leave early afternoon to avoid the Sunday evening return rush</p>
           </div>
         </Card>
       </div>
@@ -1128,7 +1128,7 @@ const faqSchema = {
                 <td class="border p-3">Weekday</td>
                 <td class="border p-3 text-center font-semibold">12:00-1:00 PM</td>
               </tr>
-              <tr class="bg-red-50">
+              <tr class="bg-red-50 dark:bg-red-900/30">
                 <td class="border p-3">6:00 PM - 10:00 PM</td>
                 <td class="border p-3">Domestic</td>
                 <td class="border p-3">Sunday</td>
@@ -1156,12 +1156,12 @@ const faqSchema = {
     <section id="real-scenarios" class="mb-12">
       <h2 class="text-3xl font-bold mb-6">Real Traveler Scenarios from Our Fleet</h2>
 
-      <p class="text-gray-700 mb-6">
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
         Here are actual customer experiences that illustrate the importance of timing:
       </p>
 
       <div class="space-y-4">
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-3 mb-3">
             <div class="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
@@ -1170,13 +1170,13 @@ const faqSchema = {
             </div>
           </div>
           <h3 class="font-bold mb-2">✅ Success Story: Saturday Morning Flight</h3>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Scenario:</strong> Priya had a 10:00 AM domestic flight on Saturday. She booked our cab to leave at 6:00 AM from Hinjewadi.
           </p>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Journey:</strong> Left Hinjewadi at 6:05 AM, reached airport at 8:15 AM (2 hours 10 minutes). Smooth, empty expressway. Reached check-in counter by 8:30 AM.
           </p>
-          <p class="text-sm text-green-700 font-semibold">
+          <p class="text-sm text-green-700 dark:text-green-400 font-semibold">
             <strong>Outcome:</strong> Relaxed check-in, had breakfast at airport, boarded stress-free. Perfect timing!
           </p>
         </Card>
@@ -1186,19 +1186,19 @@ const faqSchema = {
             <X className="h-6 w-6 text-red-500" />
           </div>
           <h3 class="font-bold mb-2 text-red-600">❌ Missed Flight: Friday Evening Rush</h3>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Scenario:</strong> Rahul had a 9:00 PM domestic flight on Friday. He booked a regular cab to leave at 5:00 PM from Koregaon Park (thinking 4 hours buffer is enough).
           </p>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Journey:</strong> Left at 5:10 PM, hit massive Friday evening traffic. Stuck at Panvel for 50 minutes. Vashi stretch took 1 hour. Reached airport at 9:15 PM.
           </p>
-          <p class="text-sm text-red-700 font-semibold">
+          <p class="text-sm text-red-700 dark:text-red-400 font-semibold">
             <strong>Outcome:</strong> Missed flight! Check-in had closed at 8:40 PM. Had to rebook for next day. Lost ₹8,500 on rebooking + hotel.
           </p>
-          <p class="text-xs text-gray-600 mt-2"><strong>Lesson:</strong> Should have left by 2:00-3:00 PM to beat Friday evening rush.</p>
+          <p class="text-xs text-gray-600 dark:text-gray-300 mt-2"><strong>Lesson:</strong> Should have left by 2:00-3:00 PM to beat Friday evening rush.</p>
         </Card>
 
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-3 mb-3">
             <div class="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
@@ -1207,35 +1207,35 @@ const faqSchema = {
             </div>
           </div>
           <h3 class="font-bold mb-2">✅ Success Story: Monsoon Morning</h3>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Scenario:</strong> Amit had a 12:00 PM international flight during heavy monsoon. Weather forecast showed heavy rain 7-10 AM. He left at 5:30 AM from Wakad.
           </p>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Journey:</strong> Light rain till Lonavala (manageable). Heavy rain section passed before worst downpour. Reached airport at 8:15 AM (2 hours 45 minutes with rain).
           </p>
-          <p class="text-sm text-green-700 font-semibold">
+          <p class="text-sm text-green-700 dark:text-green-400 font-semibold">
             <strong>Outcome:</strong> Checked in comfortably by 9:00 AM. Avoided the 9-11 AM heavy rain chaos. Smart planning paid off!
           </p>
         </Card>
 
-        <Card className="p-6 border-2 border-yellow-500">
+        <Card className="p-6 border-2 border-yellow-500 dark:border-yellow-600">
           <div class="flex items-start gap-3 mb-3">
             <AlertTriangle className="h-6 w-6 text-yellow-500" />
           </div>
           <h3 class="font-bold mb-2 text-yellow-600">⚠️ Close Call: Sunday Evening</h3>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Scenario:</strong> Sneha had an 8:00 PM domestic flight on Sunday. She left at 2:30 PM from Baner thinking it's enough time.
           </p>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Journey:</strong> First 90 km smooth (till 4:00 PM). Then hit massive Sunday return traffic. Last 60 km took 2.5 hours! Reached airport at 6:50 PM.
           </p>
-          <p class="text-sm text-yellow-700 font-semibold">
+          <p class="text-sm text-yellow-700 dark:text-yellow-400 font-semibold">
             <strong>Outcome:</strong> Just made it! Ran through airport, reached gate at 7:45 PM (boarding started 7:30 PM). Too stressful!
           </p>
-          <p class="text-xs text-gray-600 mt-2"><strong>Lesson:</strong> Sunday evening requires leaving by 12:00-1:00 PM, not 2:30 PM.</p>
+          <p class="text-xs text-gray-600 dark:text-gray-300 mt-2"><strong>Lesson:</strong> Sunday evening requires leaving by 12:00-1:00 PM, not 2:30 PM.</p>
         </Card>
 
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start gap-3 mb-3">
             <div class="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
@@ -1244,19 +1244,19 @@ const faqSchema = {
             </div>
           </div>
           <h3 class="font-bold mb-2">✅ Success Story: Red-Eye Flight</h3>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Scenario:</strong> Meera had a 3:00 AM international flight (Dubai). She left at 11:30 PM from Hadapsar.
           </p>
-          <p class="text-sm text-gray-700 mb-2">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-2">
             <strong>Journey:</strong> Empty expressway, cool night breeze, zero traffic. Reached airport at 1:45 AM (2 hours 15 minutes).
           </p>
-          <p class="text-sm text-green-700 font-semibold">
+          <p class="text-sm text-green-700 dark:text-green-400 font-semibold">
             <strong>Outcome:</strong> Perfect! Checked in by 12:15 AM (2hr 45min before flight). Relaxed at lounge, stress-free journey. One of the best travel experiences.
           </p>
         </Card>
       </div>
 
-      <Card className="p-6 mt-6 bg-blue-50 border-2 border-blue-400">
+      <Card className="p-6 mt-6 bg-blue-50 dark:bg-blue-900/30 border-2 border-blue-400">
         <h3 class="text-xl font-bold mb-4">Key Lessons from Real Experiences</h3>
         <ul class="space-y-2 text-sm">
           <li class="flex items-start gap-2">
@@ -1447,52 +1447,52 @@ const faqSchema = {
       <div class="space-y-4">
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What is the best time to leave Pune for Mumbai Airport?</h3>
-          <p class="text-gray-700">The best times to leave Pune for Mumbai Airport are: 4:00 AM - 6:00 AM (fastest, 2-2.5 hours), 10:00 AM - 1:00 PM (moderate traffic, 2.5-3 hours), or 9:00 PM - 11:00 PM (clear roads, 2.5 hours). Avoid 7:00-10:00 AM and 5:00-8:00 PM due to heavy traffic.</p>
+          <p class="text-gray-700 dark:text-gray-200">The best times to leave Pune for Mumbai Airport are: 4:00 AM - 6:00 AM (fastest, 2-2.5 hours), 10:00 AM - 1:00 PM (moderate traffic, 2.5-3 hours), or 9:00 PM - 11:00 PM (clear roads, 2.5 hours). Avoid 7:00-10:00 AM and 5:00-8:00 PM due to heavy traffic.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What is the worst time to travel from Pune to Mumbai Airport?</h3>
-          <p class="text-gray-700">The worst times are: 7:00-10:00 AM (morning rush, can take 3.5-4 hours), 5:00-8:00 PM (evening rush, 3.5-4.5 hours), Friday evenings (4:00-9:00 PM), Sunday evenings (4:00-10:00 PM), and monsoon season mornings (7:00-11:00 AM).</p>
+          <p class="text-gray-700 dark:text-gray-200">The worst times are: 7:00-10:00 AM (morning rush, can take 3.5-4 hours), 5:00-8:00 PM (evening rush, 3.5-4.5 hours), Friday evenings (4:00-9:00 PM), Sunday evenings (4:00-10:00 PM), and monsoon season mornings (7:00-11:00 AM).</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">How much time should I allow for Pune to Mumbai Airport?</h3>
-          <p class="text-gray-700">Minimum recommended buffer: Early morning (4-6 AM) - add 3 hours before flight, Mid-day (10 AM-2 PM) - add 3.5 hours, Evening (5-8 PM) - add 4-4.5 hours, Weekend/holiday - add extra 30 minutes. For domestic flights, reach 2 hours before departure; for international, 3 hours before.</p>
+          <p class="text-gray-700 dark:text-gray-200">Minimum recommended buffer: Early morning (4-6 AM) - add 3 hours before flight, Mid-day (10 AM-2 PM) - add 3.5 hours, Evening (5-8 PM) - add 4-4.5 hours, Weekend/holiday - add extra 30 minutes. For domestic flights, reach 2 hours before departure; for international, 3 hours before.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Does traffic on Pune-Mumbai Expressway vary by day of week?</h3>
-          <p class="text-gray-700">Yes, significantly. Fridays (4-9 PM) have heavy Mumbai-to-Pune traffic. Sundays (4-10 PM) have worst Pune-to-Mumbai traffic. Mondays (7-10 AM) have heavy office traffic. Saturdays mornings are relatively clear. Weekdays (Tue-Thu) have predictable rush hours at 7-10 AM and 5-8 PM.</p>
+          <p class="text-gray-700 dark:text-gray-200">Yes, significantly. Fridays (4-9 PM) have heavy Mumbai-to-Pune traffic. Sundays (4-10 PM) have worst Pune-to-Mumbai traffic. Mondays (7-10 AM) have heavy office traffic. Saturdays mornings are relatively clear. Weekdays (Tue-Thu) have predictable rush hours at 7-10 AM and 5-8 PM.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which route is faster to Mumbai Airport from Pune?</h3>
-          <p class="text-gray-700">Pune-Mumbai Expressway is fastest: 145 km, 2-3 hours depending on traffic. Old Mumbai-Pune Highway is slower: 165 km, 3.5-5 hours with multiple traffic signals. The Expressway is recommended for airport trips as it has fewer bottlenecks and predictable travel time.</p>
+          <p class="text-gray-700 dark:text-gray-200">Pune-Mumbai Expressway is fastest: 145 km, 2-3 hours depending on traffic. Old Mumbai-Pune Highway is slower: 165 km, 3.5-5 hours with multiple traffic signals. The Expressway is recommended for airport trips as it has fewer bottlenecks and predictable travel time.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">How does rain affect Pune to Mumbai travel time?</h3>
-          <p class="text-gray-700">Monsoon (June-September) adds 30-60 minutes due to: reduced visibility (slower speeds), waterlogging at Expressway toll plazas, increased accident risk causing traffic jams, and heavy rain forcing 40-50 km/h speeds. Always add 1 hour buffer during monsoon season.</p>
+          <p class="text-gray-700 dark:text-gray-200">Monsoon (June-September) adds 30-60 minutes due to: reduced visibility (slower speeds), waterlogging at Expressway toll plazas, increased accident risk causing traffic jams, and heavy rain forcing 40-50 km/h speeds. Always add 1 hour buffer during monsoon season.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What are the major traffic bottlenecks on the way?</h3>
-          <p class="text-gray-700">Key bottlenecks: Kamshet toll plaza (15-20 min delay during peak), Lonavala ghat section (slow-moving trucks), Khalapur toll plaza (10-15 min during rush), Panvel junction (heavy local traffic), and Vashi-Airoli stretch (Mumbai traffic begins). Early morning travel avoids most of these.</p>
+          <p class="text-gray-700 dark:text-gray-200">Key bottlenecks: Kamshet toll plaza (15-20 min delay during peak), Lonavala ghat section (slow-moving trucks), Khalapur toll plaza (10-15 min during rush), Panvel junction (heavy local traffic), and Vashi-Airoli stretch (Mumbai traffic begins). Early morning travel avoids most of these.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Should I take different route during festivals?</h3>
-          <p class="text-gray-700">During major festivals (Diwali, Ganesh Chaturthi, Holi), the Expressway gets extremely crowded. However, there's no better alternative. Best strategy: Leave very early (3-4 AM) or very late (10-11 PM), add 2 hours to normal travel time, book cab in advance (high demand), and check real-time traffic before starting.</p>
+          <p class="text-gray-700 dark:text-gray-200">During major festivals (Diwali, Ganesh Chaturthi, Holi), the Expressway gets extremely crowded. However, there's no better alternative. Best strategy: Leave very early (3-4 AM) or very late (10-11 PM), add 2 hours to normal travel time, book cab in advance (high demand), and check real-time traffic before starting.</p>
         </Card>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="mb-12">
-      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 dark:border-green-600">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">Book Your Stress-Free Airport Transfer</h2>
-          <p class="text-lg text-gray-700 mb-6">
+          <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
             Let us handle the timing and traffic while you relax. Zero surge pricing, professional drivers, comfortable electric cabs.
           </p>
 
@@ -1504,7 +1504,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href="tel:+919075020422">
-              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 dark:text-green-400 hover:bg-green-50 dark:bg-green-900/30 w-full sm:w-auto">
                 <Phone className="h-5 w-5 mr-2" />
                 Call: +91 90750 20422
               </Button>

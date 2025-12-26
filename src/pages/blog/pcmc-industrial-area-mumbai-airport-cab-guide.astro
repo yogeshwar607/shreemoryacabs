@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     question: 'How much does a cab cost from PCMC Industrial Area to Mumbai Airport?',
-    answer: 'From PCMC industrial areas to Mumbai Airport: ₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (luxury 6-seater). All-inclusive pricing with zero hidden charges - no toll extra, no driver fees. Group discounts available for 4+ employees traveling together.',
+    answer: 'From PCMC industrial areas to Mumbai Airport: ₹2,700 for Kia Carens EV (6-seater) and ₹3,000 for BYD eMax 7 (luxury 6-seater). All-inclusive pricing with zero hidden charges - no toll extra, no driver fees. Group discounts available for 4+ employees traveling together.',
   },
   {
     question: 'Can I book a cab for early morning shift workers (3-5 AM pickups)?',
@@ -291,7 +291,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="mt-6 bg-blue-50">
+      <Card className="mt-6 bg-blue-50 dark:bg-blue-900/30">
         <CardContent class="pt-6">
           <p class="text-sm leading-relaxed">
             <strong>Coverage Note:</strong> We also cover Chakan industrial zone (170 km, 3.5-4 hours), Akurdi industrial estates, and Ravet manufacturing units. Wherever your factory or company is located in the PCMC region, we provide reliable doorstep pickup for Mumbai Airport transfers.
@@ -320,7 +320,7 @@ const faqSchema = {
             <CardDescription>7 AM - 3 PM shift</CardDescription>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-emerald-50 rounded">
+            <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded">
               <p class="font-semibold mb-1">Best Flight Times:</p>
               <p class="text-sm text-muted-foreground">Evening flights (6-10 PM)</p>
             </div>
@@ -341,13 +341,13 @@ const faqSchema = {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-blue-500">
+        <Card className="border-2 border-blue-500 dark:border-blue-600">
           <CardHeader>
             <CardTitle>Evening Shift Workers</CardTitle>
             <CardDescription>3 PM - 11 PM shift</CardDescription>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-blue-50 rounded">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded">
               <p class="font-semibold mb-1">Best Flight Times:</p>
               <p class="text-sm text-muted-foreground">Early morning flights (6-10 AM)</p>
             </div>
@@ -437,9 +437,9 @@ const faqSchema = {
             <div>
               <h4 class="font-semibold mb-3">Cost Savings</h4>
               <div class="space-y-2 text-sm">
-                <div class="p-3 bg-emerald-50 rounded">
+                <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded">
                   <p class="font-semibold">₹620-700 per person (6 passengers)</p>
-                  <p class="text-xs text-muted-foreground">Split ₹3,700-4,200 total cost among 6 employees</p>
+                  <p class="text-xs text-muted-foreground">Split ₹2,700-4,200 total cost among 6 employees</p>
                 </div>
                 <p class="text-muted-foreground">Compare to: Local taxi to Pune station (₹300) + Train (₹150) + Auto to airport (₹500) = ₹950 per person</p>
               </div>
@@ -519,7 +519,7 @@ const faqSchema = {
             <CardDescription>4-8 trips/month</CardDescription>
           </CardHeader>
           <CardContent class="space-y-4">
-            <div class="p-3 bg-emerald-50 rounded">
+            <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded">
               <p class="text-2xl font-bold text-emerald-600 mb-1">₹3,500 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
               <p class="text-xs text-muted-foreground">Save ₹200 per trip vs regular pricing</p>
             </div>
@@ -544,13 +544,13 @@ const faqSchema = {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-blue-500">
+        <Card className="border-2 border-blue-500 dark:border-blue-600">
           <CardHeader>
             <CardTitle>Enterprise Package</CardTitle>
             <CardDescription>10+ trips/month</CardDescription>
           </CardHeader>
           <CardContent class="space-y-4">
-            <div class="p-3 bg-blue-50 rounded">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded">
               <p class="text-2xl font-bold text-blue-600 mb-1">₹3,300 <span class="text-sm font-normal text-muted-foreground">per trip</span></p>
               <p class="text-xs text-muted-foreground">Save ₹400 per trip + volume benefits</p>
             </div>
@@ -619,7 +619,7 @@ const faqSchema = {
           <CardDescription>Optimal for most PCMC industrial areas</CardDescription>
         </CardHeader>
         <CardContent>
-          <div class="p-3 bg-emerald-50 rounded mb-4">
+          <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded mb-4">
             <p class="font-semibold mb-1">Distance: 145-160 km (depending on pickup point)</p>
             <p class="text-sm text-muted-foreground">Time: 3-3.5 hours (normal traffic)</p>
           </div>
@@ -667,7 +667,7 @@ const faqSchema = {
           <CardDescription>For southern PCMC areas (Pimpri, Akurdi)</CardDescription>
         </CardHeader>
         <CardContent>
-          <div class="p-3 bg-blue-50 rounded mb-4">
+          <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded mb-4">
             <p class="font-semibold mb-1">Distance: 165-175 km</p>
             <p class="text-sm text-muted-foreground">Time: 3.5-4 hours</p>
           </div>
@@ -692,7 +692,7 @@ const faqSchema = {
             <CardDescription>Ideal for small groups</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹2,700</div>
             <p class="text-sm text-muted-foreground mb-4">All-inclusive pricing</p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2">
@@ -721,7 +721,7 @@ const faqSchema = {
             <CardDescription>Premium comfort for executives</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹3,000</div>
             <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury</p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2">
@@ -745,7 +745,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="mt-6 bg-green-50">
+      <Card className="mt-6 bg-green-50 dark:bg-green-900/30">
         <CardContent class="pt-6">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
@@ -861,7 +861,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href={`tel:+${WHATSAPP_NUMBER}`}>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-emerald-600 hover:bg-emerald-50">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white dark:bg-gray-800 text-emerald-600 hover:bg-emerald-50 dark:bg-emerald-900/30 dark:bg-emerald-900/30">
                 <Phone className="mr-2 h-5 w-5" />
                 Call +91 74982 64215
               </Button>

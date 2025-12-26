@@ -37,7 +37,7 @@ const articleSchema = {
 		{
 			"@type": "HowToStep",
 			"name": "Make payment",
-			"text": "Pay ₹3,700 at end of journey via cash, UPI, or card"
+			"text": "Pay ₹2,300 at end of journey via cash, UPI, or card"
 		}
 	],
 	"datePublished": "2025-12-26",
@@ -83,15 +83,15 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 			<!-- Quick Summary -->
 			<div class="not-prose my-8">
-				<Card class="bg-green-50">
+				<Card class="bg-green-50 dark:bg-green-900/30">
 					<CardContent class="pt-6">
 						<p class="font-bold mb-3">TL;DR - Booking in 30 Seconds:</p>
 						<ol class="text-sm space-y-2">
 							<li><strong>1.</strong> Open WhatsApp, send message to <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 font-semibold">+91 91454 99009</a></li>
 							<li><strong>2.</strong> Share: Your location, NMIA, flight date/time</li>
-							<li><strong>3.</strong> Get confirmation in 5 minutes (Booking ID + ₹3,700 fare)</li>
+							<li><strong>3.</strong> Get confirmation in 5 minutes (Booking ID + ₹2,300 fare)</li>
 							<li><strong>4.</strong> Receive driver details on travel day</li>
-							<li><strong>5.</strong> Pay ₹3,700 after journey (cash/UPI/card)</li>
+							<li><strong>5.</strong> Pay ₹2,300 after journey (cash/UPI/card)</li>
 						</ol>
 						<div class="mt-4">
 							<Button asChild class="w-full sm:w-auto">
@@ -134,7 +134,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Available Booking Methods:</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Method</th>
 										<th class="text-left py-2 px-2">Speed</th>
 										<th class="text-left py-2 px-2">Ease</th>
@@ -148,7 +148,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<td class="py-2 px-2">5 min confirmation</td>
 										<td class="py-2 px-2">Very Easy</td>
 										<td class="py-2 px-2">Real-time chat</td>
-										<td class="py-2 px-2 font-semibold text-green-700">Most users (90%)</td>
+										<td class="py-2 px-2 font-semibold text-green-700 dark:text-green-400">Most users (90%)</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>Phone Call</strong><br/>Same number</td>
@@ -174,7 +174,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Why WhatsApp is the Best Method</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<ul class="text-sm space-y-2">
 								<li>✓ <strong>Written Confirmation:</strong> Booking ID, fare, pickup time all in one message (screenshot-able)</li>
@@ -201,7 +201,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 							<div class="space-y-6">
 								<!-- Step 1 -->
-								<div class="bg-white p-4 rounded border-l-4 border-l-green-500">
+								<div class="bg-white dark:bg-gray-800 p-4 rounded border-l-4 border-l-green-500">
 									<p class="font-bold text-lg mb-2">Step 1: Open WhatsApp Chat</p>
 									<p class="text-sm mb-3"><strong>Option A (Easiest):</strong> Click this link on your phone → <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 underline">Direct WhatsApp Link</a></p>
 									<p class="text-sm mb-3"><strong>Option B (Manual):</strong></p>
@@ -214,7 +214,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</div>
 
 								<!-- Step 2 -->
-								<div class="bg-white p-4 rounded border-l-4 border-l-blue-500">
+								<div class="bg-white dark:bg-gray-800 p-4 rounded border-l-4 border-l-blue-500">
 									<p class="font-bold text-lg mb-2">Step 2: Send Your Booking Message</p>
 									<p class="text-sm mb-3"><strong>Template Message (Copy-Paste Ready):</strong></p>
 									<div class="bg-gray-100 p-3 rounded font-mono text-xs space-y-1">
@@ -231,15 +231,15 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</div>
 
 								<!-- Step 3 -->
-								<div class="bg-white p-4 rounded border-l-4 border-l-purple-500">
+								<div class="bg-white dark:bg-gray-800 p-4 rounded border-l-4 border-l-purple-500">
 									<p class="font-bold text-lg mb-2">Step 3: Receive Instant Confirmation (Within 5 Minutes)</p>
 									<p class="text-sm mb-2">You'll get a reply like this:</p>
-									<div class="bg-green-50 p-3 rounded text-sm">
+									<div class="bg-green-50 dark:bg-green-900/30 p-3 rounded text-sm">
 										<p class="font-semibold mb-2">✅ Booking Confirmed!</p>
 										<p><strong>Booking ID:</strong> GEV2025-1234</p>
 										<p><strong>Route:</strong> Hinjewadi → NMIA</p>
 										<p><strong>Pickup:</strong> 28 Dec 2025, 4:00 AM</p>
-										<p><strong>Fare:</strong> ₹3,700 (all-inclusive)</p>
+										<p><strong>Fare:</strong> ₹2,300 (all-inclusive)</p>
 										<p><strong>Vehicle:</strong> KIA Carens EV (6-seater)</p>
 										<p><strong>Distance:</strong> ~100 km (2 hours journey)</p>
 										<p class="mt-2 italic">Driver details will be shared 3-4 hours before pickup. Safe travels!</p>
@@ -247,7 +247,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</div>
 
 								<!-- Step 4 -->
-								<div class="bg-white p-4 rounded border-l-4 border-l-orange-500">
+								<div class="bg-white dark:bg-gray-800 p-4 rounded border-l-4 border-l-orange-500">
 									<p class="font-bold text-lg mb-2">Step 4: Save Confirmation (Important!)</p>
 									<p class="text-sm">What to do with confirmation:</p>
 									<ul class="text-sm space-y-1 mt-2 ml-4">
@@ -276,7 +276,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<p class="font-bold mb-4">Reverse Timeline Calculation Method:</p>
 							<div class="space-y-4 text-sm">
-								<div class="bg-blue-50 p-4 rounded">
+								<div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded">
 									<p class="font-bold mb-2">Example: 7:00 AM Flight at NMIA (Departure to Bengaluru)</p>
 									<table class="w-full text-xs">
 										<tbody>
@@ -298,16 +298,16 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 											<tr class="bg-green-100 font-semibold">
 												<td class="py-2"><strong>3:20 AM</strong></td>
 												<td class="py-2">↑ Add 10 min buffer (loading luggage, unexpected delay)</td>
-												<td class="py-2 text-green-700">📍 PICKUP TIME TO BOOK</td>
+												<td class="py-2 text-green-700 dark:text-green-400">📍 PICKUP TIME TO BOOK</td>
 											</tr>
 										</tbody>
 									</table>
 									<p class="mt-3 font-semibold">Answer: Book cab for 3:20 AM pickup for 7:00 AM flight from NMIA</p>
 								</div>
 
-								<div class="bg-yellow-50 p-4 rounded mt-4">
+								<div class="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded mt-4">
 									<p class="font-bold mb-2">Formula (Universal):</p>
-									<div class="bg-white p-3 rounded">
+									<div class="bg-white dark:bg-gray-800 p-3 rounded">
 										<p class="font-mono text-sm">Pickup Time = Flight Time - Airport Arrival Buffer - Journey Time - Loading Buffer</p>
 										<p class="text-xs mt-2">Where:</p>
 										<ul class="text-xs space-y-1 mt-1">
@@ -330,7 +330,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">From Hinjewadi/Wakad/Baner to NMIA:</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Flight Time at NMIA</th>
 										<th class="text-left py-2 px-2">Pickup Time (Domestic)</th>
 										<th class="text-left py-2 px-2">Pickup Time (International)</th>
@@ -339,38 +339,38 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								<tbody>
 									<tr class="border-b">
 										<td class="py-2 px-2">6:00 AM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">2:20 AM</td>
-										<td class="py-2 px-2 bg-orange-50">1:20 AM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">2:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">1:20 AM</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2">7:00 AM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">3:20 AM</td>
-										<td class="py-2 px-2 bg-orange-50">2:20 AM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">3:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">2:20 AM</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2">8:00 AM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">4:20 AM</td>
-										<td class="py-2 px-2 bg-orange-50">3:20 AM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">4:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">3:20 AM</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2">10:00 AM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">6:20 AM</td>
-										<td class="py-2 px-2 bg-orange-50">5:20 AM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">6:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">5:20 AM</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2">2:00 PM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">10:20 AM</td>
-										<td class="py-2 px-2 bg-orange-50">9:20 AM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">10:20 AM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">9:20 AM</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2">6:00 PM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">2:20 PM</td>
-										<td class="py-2 px-2 bg-orange-50">1:20 PM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">2:20 PM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">1:20 PM</td>
 									</tr>
 									<tr>
 										<td class="py-2 px-2">10:00 PM</td>
-										<td class="py-2 px-2 bg-green-50 font-semibold">6:20 PM</td>
-										<td class="py-2 px-2 bg-orange-50">5:20 PM</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30 font-semibold">6:20 PM</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">5:20 PM</td>
 									</tr>
 								</tbody>
 							</table>
@@ -387,7 +387,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Why We Ask for Flight Details</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">3 Key Reasons:</p>
 							<div class="text-sm space-y-3">
@@ -463,23 +463,23 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<Card>
 						<CardContent class="pt-6">
 							<p class="font-bold mb-4">Sample Confirmation Message Breakdown:</p>
-							<div class="bg-green-50 p-4 rounded text-sm mb-4">
+							<div class="bg-green-50 dark:bg-green-900/30 p-4 rounded text-sm mb-4">
 								<p class="font-bold mb-2">✅ Booking Confirmed!</p>
 								<p><strong>Booking ID:</strong> GEV2025-1234 ← <span class="text-muted-foreground">Your reference number (for future communication)</span></p>
 								<p><strong>Route:</strong> Hinjewadi → NMIA ← <span class="text-muted-foreground">Double-check this matches your request</span></p>
 								<p><strong>Pickup:</strong> 28 Dec 2025, 4:00 AM ← <span class="text-muted-foreground">Driver will reach here at this time</span></p>
-								<p><strong>Fare:</strong> ₹3,700 (all-inclusive) ← <span class="text-muted-foreground">No hidden charges, pay after journey</span></p>
+								<p><strong>Fare:</strong> ₹2,300 (all-inclusive) ← <span class="text-muted-foreground">No hidden charges, pay after journey</span></p>
 								<p><strong>Vehicle:</strong> KIA Carens EV (6-seater) ← <span class="text-muted-foreground">Electric vehicle, comfortable for up to 6 people</span></p>
 								<p><strong>Distance:</strong> ~100 km (2 hours journey) ← <span class="text-muted-foreground">Expected travel time</span></p>
 								<p class="mt-2 italic">Driver details will be shared 3-4 hours before pickup.</p>
 							</div>
 
-							<div class="bg-blue-50 p-4 rounded text-sm">
+							<div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded text-sm">
 								<p class="font-bold mb-2">What This Confirmation Means:</p>
 								<ul class="space-y-1">
 									<li>✓ Your booking is 100% confirmed (we don't overbook)</li>
 									<li>✓ A vehicle has been allocated to you</li>
-									<li>✓ Price is locked at ₹3,700 (won't change on travel day)</li>
+									<li>✓ Price is locked at ₹2,300 (won't change on travel day)</li>
 									<li>✓ You'll get driver details closer to travel time (standard practice)</li>
 									<li>✓ No payment needed now (pay after journey)</li>
 								</ul>
@@ -516,13 +516,13 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">What Driver Details You'll Receive</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-green-50">
+					<Card class="bg-green-50 dark:bg-green-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Sample Driver Details Message:</p>
-							<div class="bg-white p-3 rounded text-sm">
+							<div class="bg-white dark:bg-gray-800 p-3 rounded text-sm">
 								<p class="font-semibold mb-2">🚗 Your Driver Details (Booking ID: GEV2025-1234)</p>
 								<p><strong>Driver Name:</strong> Rajesh Kumar</p>
-								<p><strong>Phone:</strong> +91 98765 43210 (WhatsApp enabled)</p>
+								<p><strong>Phone:</strong> +917498264215 (WhatsApp enabled)</p>
 								<p><strong>Vehicle:</strong> KIA Carens EV</p>
 								<p><strong>Color:</strong> White</p>
 								<p><strong>License Plate:</strong> MH 12 AB 1234</p>
@@ -561,7 +561,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<p class="font-bold mb-4">What Happens on Travel Day (Hour-by-Hour):</p>
 							<div class="space-y-4 text-sm">
-								<div class="bg-blue-50 p-3 rounded">
+								<div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded">
 									<p class="font-semibold">30 Minutes Before Pickup (e.g., 3:30 AM for 4 AM pickup):</p>
 									<ul class="ml-4 space-y-1 mt-2">
 										<li>• Driver leaves from his location, heading to your pickup point</li>
@@ -570,7 +570,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</ul>
 								</div>
 
-								<div class="bg-green-50 p-3 rounded">
+								<div class="bg-green-50 dark:bg-green-900/30 p-3 rounded">
 									<p class="font-semibold">5 Minutes Before Pickup (e.g., 3:55 AM):</p>
 									<ul class="ml-4 space-y-1 mt-2">
 										<li>• Driver sends message: "Reached near [your location]. White KIA Carens, MH 12 AB 1234"</li>
@@ -589,18 +589,18 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</ul>
 								</div>
 
-								<div class="bg-yellow-50 p-3 rounded">
+								<div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded">
 									<p class="font-semibold">During Journey (4:00 AM - 6:00 AM):</p>
 									<ul class="ml-4 space-y-1 mt-2">
 										<li>• Driver follows Google Maps optimal route (usually Mumbai-Pune Expressway)</li>
 										<li>• Professional driver maintains safe speed (80-90 km/h expressway)</li>
-										<li>• Toll payments handled by driver (included in ₹3,700 fare)</li>
+										<li>• Toll payments handled by driver (included in ₹2,300 fare)</li>
 										<li>• If you need rest stop (bathroom/coffee), just ask - driver will find safe spot</li>
 										<li>• WiFi available if needed for work/calls</li>
 									</ul>
 								</div>
 
-								<div class="bg-orange-50 p-3 rounded">
+								<div class="bg-orange-50 dark:bg-orange-900/30 p-3 rounded">
 									<p class="font-semibold">Arrival at NMIA (6:00 AM):</p>
 									<ul class="ml-4 space-y-1 mt-2">
 										<li>• Driver navigates to departure terminal (Domestic/International as per your flight)</li>
@@ -613,7 +613,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								<div class="bg-green-100 p-3 rounded">
 									<p class="font-semibold">Payment & Completion (6:05 AM):</p>
 									<ul class="ml-4 space-y-1 mt-2">
-										<li>• Driver says total: "₹3,700 sir/madam"</li>
+										<li>• Driver says total: "₹2,300 sir/madam"</li>
 										<li>• You pay via UPI/cash/card (your choice)</li>
 										<li>• Driver sends digital receipt to your WhatsApp immediately</li>
 										<li>• Driver wishes you safe journey, leaves</li>
@@ -635,8 +635,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Accepted Payment Methods:</p>
 							<div class="grid md:grid-cols-3 gap-4 text-sm">
-								<div class="bg-green-50 p-3 rounded">
-									<p class="font-semibold text-green-700 mb-2">UPI (Recommended)</p>
+								<div class="bg-green-50 dark:bg-green-900/30 p-3 rounded">
+									<p class="font-semibold text-green-700 dark:text-green-400 mb-2">UPI (Recommended)</p>
 									<ul class="space-y-1">
 										<li>✓ Google Pay</li>
 										<li>✓ PhonePe</li>
@@ -645,14 +645,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</ul>
 									<p class="text-xs mt-2">Driver shares UPI ID or QR code</p>
 								</div>
-								<div class="bg-blue-50 p-3 rounded">
-									<p class="font-semibold text-blue-700 mb-2">Cash</p>
+								<div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded">
+									<p class="font-semibold text-blue-700 dark:text-blue-400 mb-2">Cash</p>
 									<ul class="space-y-1">
 										<li>✓ Exact change appreciated</li>
 										<li>✓ Driver carries change for ₹500 notes</li>
 										<li>✓ Receipt provided immediately</li>
 									</ul>
-									<p class="text-xs mt-2">Keep ₹3,700 ready if paying cash</p>
+									<p class="text-xs mt-2">Keep ₹2,300 ready if paying cash</p>
 								</div>
 								<div class="bg-purple-50 p-3 rounded">
 									<p class="font-semibold text-purple-700 mb-2">Card (Swipe Machine)</p>
@@ -671,16 +671,16 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Receipt & Reimbursement</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Digital Receipt (Sent Instantly):</p>
-							<div class="bg-white p-3 rounded text-sm mb-3">
+							<div class="bg-white dark:bg-gray-800 p-3 rounded text-sm mb-3">
 								<p class="font-semibold">GreenEVCabs Invoice</p>
 								<p>Booking ID: GEV2025-1234</p>
 								<p>Date: 28 Dec 2025</p>
 								<p>Route: Hinjewadi → NMIA (100 km)</p>
 								<p>Passenger: [Your Name]</p>
-								<p>Amount: ₹3,700 (All-inclusive)</p>
+								<p>Amount: ₹2,300 (All-inclusive)</p>
 								<p>Payment: UPI (Google Pay)</p>
 								<p>GST: Included (GSTIN: XXXXX)</p>
 								<p class="mt-2 text-xs">For queries: support@greenevcabs.com</p>
@@ -701,7 +701,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<div class="space-y-4 text-sm">
 								<div>
 									<p class="font-semibold mb-1">Q: Do I need to pay booking advance?</p>
-									<p class="text-muted-foreground">A: No. Zero advance payment. Pay ₹3,700 only after journey completion.</p>
+									<p class="text-muted-foreground">A: No. Zero advance payment. Pay ₹2,300 only after journey completion.</p>
 								</div>
 								<div>
 									<p class="font-semibold mb-1">Q: Can I cancel/reschedule my booking?</p>
@@ -716,8 +716,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									<p class="text-muted-foreground">A: Yes! Just provide their name, phone number, pickup location in booking message. They'll receive driver details on their WhatsApp.</p>
 								</div>
 								<div>
-									<p class="font-semibold mb-1">Q: Is ₹3,700 the final price? Any hidden charges?</p>
-									<p class="text-muted-foreground">A: ₹3,700 is ALL-INCLUSIVE. Covers: driver charges, vehicle charges, fuel/electricity, tolls, parking, taxes. Literally zero hidden charges.</p>
+									<p class="font-semibold mb-1">Q: Is ₹2,300 the final price? Any hidden charges?</p>
+									<p class="text-muted-foreground">A: ₹2,300 is ALL-INCLUSIVE. Covers: driver charges, vehicle charges, fuel/electricity, tolls, parking, taxes. Literally zero hidden charges.</p>
 								</div>
 								<div>
 									<p class="font-semibold mb-1">Q: How do I know the driver is legitimate?</p>
@@ -725,11 +725,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</div>
 								<div>
 									<p class="font-semibold mb-1">Q: Can I share cab with colleagues to split cost?</p>
-									<p class="text-muted-foreground">A: Absolutely! Cab fits 6 people comfortably. If 4 colleagues share, cost is ₹925/person instead of ₹3,700. Mention "group booking" in message.</p>
+									<p class="text-muted-foreground">A: Absolutely! Cab fits 6 people comfortably. If 4 colleagues share, cost is ₹925/person instead of ₹2,300. Mention "group booking" in message.</p>
 								</div>
 								<div>
 									<p class="font-semibold mb-1">Q: What if I have extra luggage (6-7 bags)?</p>
-									<p class="text-muted-foreground">A: Mention luggage quantity when booking. We'll allocate BYD eMax 7 (larger boot) instead of Carens. Same ₹3,700 price.</p>
+									<p class="text-muted-foreground">A: Mention luggage quantity when booking. We'll allocate BYD eMax 7 (larger boot) instead of Carens. Same ₹2,300 price.</p>
 								</div>
 							</div>
 						</CardContent>

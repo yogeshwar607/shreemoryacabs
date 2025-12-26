@@ -28,19 +28,19 @@ const serviceSchema = generateServiceSchema();
 const faqSchema = generateFAQSchema([
   {
     question: "How much does Pune to Mumbai cab cost?",
-    answer: "GreenEVCabs charges ₹3,700 all-inclusive for Pune to Mumbai in a luxury 7-seater electric SUV (Kia Carens EV). This includes tolls, driver allowance, and parking - no hidden charges. We're ₹500 cheaper than other electric cab services and ₹1,300 cheaper than diesel cabs.",
+    answer: "GreenEVCabs charges ₹2,700 all-inclusive for Pune to Mumbai in a luxury 5-seater electric hatchback (Citroen eC3), or ₹3,700 for the spacious 7-seater Kia Carens EV. This includes tolls, driver allowance, and parking - no hidden charges. We're cheaper than other electric cab services and diesel cabs.",
   },
   {
     question: "Is GreenEVCabs cheaper than GrEL Cabs?",
-    answer: "Yes, GreenEVCabs is ₹500 cheaper than GrEL Cabs for Pune-Mumbai routes. We charge ₹3,700 all-inclusive while GrEL charges ₹4,200+. Both use similar electric vehicles (Kia Carens EV, BYD eMax 7), but we offer direct booking without middleman commissions, saving you money.",
+    answer: "Yes, GreenEVCabs offers better rates than GrEL Cabs for Pune-Mumbai routes. We charge starting from ₹2,700 (Citroen eC3) or ₹3,700 (Kia Carens) all-inclusive. Both use similar electric vehicles (Kia Carens EV, BYD eMax 7), but we offer direct booking without middleman commissions, saving you money.",
   },
   {
     question: "Do you charge surge pricing?",
-    answer: "No, GreenEVCabs has zero surge pricing. We charge the same ₹3,700 rate during peak hours, rain, festivals, or any time of day. Unlike app-based services that charge 1.5x-3x surge, our prices are fixed and transparent 24/7.",
+    answer: "No, GreenEVCabs has zero surge pricing. Our fixed rates (₹2,700 for Citroen eC3, ₹3,700 for Kia Carens) apply during peak hours, rain, festivals, or any time of day. Unlike app-based services that charge 1.5x-3x surge, our prices are fixed and transparent 24/7.",
   },
   {
     question: "Are there any hidden charges or extra costs?",
-    answer: "No hidden charges. Our ₹3,700 rate for Pune-Mumbai is all-inclusive covering base fare, tolls (₹430), driver allowance (₹500), and parking (₹70). You pay exactly ₹3,700 - nothing more at the end of your trip.",
+    answer: "No hidden charges. Our rates for Pune-Mumbai are all-inclusive covering base fare, tolls (₹430), driver allowance (₹500), and parking (₹70). You pay exactly the quoted price - nothing more at the end of your trip.",
   },
   {
     question: "What type of electric vehicles do you use?",
@@ -52,7 +52,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: "Do I need to pay advance or booking charges?",
-    answer: "No advance payment required. You pay the full ₹3,700 only after your trip completes. We also offer free cancellation up to 2 hours before pickup time - no cancellation charges.",
+    answer: "No advance payment required. You pay the full amount only after your trip completes. We also offer free cancellation up to 2 hours before pickup time - no cancellation charges.",
   },
   {
     question: "How do I book GreenEVCabs?",
@@ -64,7 +64,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: "Can I travel from Mumbai to Pune at the same rate?",
-    answer: "Yes, ₹3,700 applies for both directions - Pune to Mumbai and Mumbai to Pune. We also provide airport pickups from Mumbai Airport, Navi Mumbai Airport, and Pune Airport at the same all-inclusive rate with 30 minutes free waiting time.",
+    answer: "Yes, the same rates apply for both directions - Pune to Mumbai and Mumbai to Pune. Starting from ₹2,700 (Citroen eC3) for Mumbai CSIA Airport and ₹2,300 (Citroen eC3) for Navi Mumbai Airport. We also provide airport pickups with 30 minutes free waiting time.",
   },
   {
     question: "Do you provide pickup from all areas in Pune?",
@@ -84,7 +84,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: "Can I book electric cab for one-way or round-trip?",
-    answer: "Both! One-way Pune-Mumbai is ₹3,700. Round-trip same-day is ₹7,000 (saves ₹400). For overnight return, we charge ₹7,500 including driver accommodation. You can also book multi-city trips to Lonavala, Shirdi, or other destinations.",
+    answer: "Both! One-way Pune-Mumbai starts from ₹2,700 (Citroen eC3) or ₹3,700 (Kia Carens). Round-trip pricing available with discounts. You can also book multi-city trips to Lonavala, Shirdi, or other destinations.",
   },
   {
     question: "What if my flight is delayed?",
@@ -112,7 +112,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: "Is GreenEVCabs available 24/7?",
-    answer: "Yes, 24/7 availability including early morning (3-5 AM) airport drops and late night pickups. No extra night charges. Same ₹3,700 rate whether you book for 3 AM or 3 PM. Our drivers work in shifts to ensure round-the-clock service.",
+    answer: "Yes, 24/7 availability including early morning (3-5 AM) airport drops and late night pickups. No extra night charges. Same fixed rates whether you book for 3 AM or 3 PM. Our drivers work in shifts to ensure round-the-clock service.",
   },
   {
     question: "What happens if vehicle breaks down mid-journey?",
@@ -136,11 +136,11 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: "What is the difference between GreenEVCabs and Ola/Uber Electric?",
-    answer: "GreenEVCabs offers fixed ₹3,700 pricing vs Ola/Uber's surge pricing (₹4,500-6,000). We provide guaranteed 7-seater SUVs vs random vehicle allocation. Professional drivers vs gig workers. Zero cancellations vs frequent driver cancellations. Airport specialization vs general taxi service.",
+    answer: "GreenEVCabs offers fixed pricing starting from ₹2,700 vs Ola/Uber's surge pricing (₹4,500-6,000). We provide guaranteed electric vehicles (5-seater to 7-seater options) vs random vehicle allocation. Professional drivers vs gig workers. Zero cancellations vs frequent driver cancellations. Airport specialization vs general taxi service.",
   },
   {
     question: "Do you serve other destinations besides Pune-Mumbai?",
-    answer: "Yes, we serve all Maharashtra destinations: Pune Airport (₹700), Navi Mumbai Airport (₹3,900), Shirdi (₹5,000), Lonavala (₹1,800), Nashik (₹4,200), Mahabaleshwar (₹3,500), Alibaug (₹5,500), and more. Contact us for custom outstation trips.",
+    answer: "Yes, we serve all Maharashtra destinations: Pune Airport (₹700), Navi Mumbai Airport (starting ₹2,300), Shirdi (₹5,000), Lonavala (₹1,800), Nashik (₹4,200), Mahabaleshwar (₹3,500), Alibaug (₹5,500), and more. Contact us for custom outstation trips.",
   },
   {
     question: "How reliable are electric vehicles for highway travel?",
@@ -217,7 +217,7 @@ const reviewSchema = {
         "name": "Amit Patil"
       },
       "datePublished": "2025-01-18",
-      "reviewBody": "Switched from Ola/Uber to GreenEVCabs for airport trips. No more surge pricing surprises! Always ₹2,999 fixed. The BYD E-MAX 7 is luxurious with plenty of space for luggage. 5 stars!",
+      "reviewBody": "Switched from Ola/Uber to GreenEVCabs for airport trips. No more surge pricing surprises! Fixed rates starting from ₹2,700. The electric vehicles are luxurious with plenty of space for luggage. 5 stars!",
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": "5",
@@ -257,8 +257,8 @@ const reviewSchema = {
 ---
 
 <MainLayout
-  title="Electric Cab Pune to Mumbai ₹3,700 | Best Rates | Professional Drivers - GreenEVCabs"
-  description="Premium electric cab Pune-Mumbai at ₹3,700. Save ₹500-1,300 vs competitors. Professional drivers, luxury SUVs, zero surge pricing. Book 24/7. Best rated EV taxi service in Maharashtra."
+  title="Electric Cab Pune to Mumbai ₹2,700 | Best Rates | Professional Drivers - GreenEVCabs"
+  description="Premium electric cab Pune-Mumbai starting at ₹2,700. Best prices in Maharashtra. Professional drivers, luxury electric vehicles, zero surge pricing. Book 24/7. Best rated EV taxi service."
   keywords={[
     "ev cabs pune",
     "electric suv cab pune",
@@ -304,7 +304,7 @@ const reviewSchema = {
             Premium Electric Cab Service | Best Rates in Pune-Mumbai
           </h1>
           <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-            Experience luxury electric travel with professionally trained drivers and premium 7-seater electric SUVs. Best rates from ₹3,700 for Pune-Mumbai. White-glove service, executive comfort, zero emissions—premium quality at the most competitive prices.
+            Experience luxury electric travel with professionally trained drivers and premium electric vehicles. Best rates from ₹2,700 for Pune-Mumbai. White-glove service, executive comfort, zero emissions—premium quality at the most competitive prices.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
@@ -333,15 +333,15 @@ const reviewSchema = {
               ✈️ Premium Airport Service • Best Rates • Professional Drivers
             </Badge>
             <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-              Premium Airport Transfers | Best Price ₹3,700
+              Premium Airport Transfers | Starting ₹2,700
             </h2>
             <p class="text-lg text-muted-foreground mb-6">
-              Experience luxury airport transfers with professional drivers at unbeatable rates. Premium electric SUVs, meet & greet service, flight tracking—all at the most competitive price in Maharashtra. Excellence without the premium price tag.
+              Experience luxury airport transfers with professional drivers at unbeatable rates. Premium electric vehicles, meet & greet service, flight tracking—all at the most competitive price in Maharashtra. Excellence without the premium price tag.
             </p>
             <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-2">
                 <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <span class="text-sm">Best rate ₹3,700 - cheaper than competitors</span>
+                <span class="text-sm">Best rate starting ₹2,700 - cheaper than competitors</span>
               </li>
               <li class="flex items-start gap-2">
                 <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -353,7 +353,7 @@ const reviewSchema = {
               </li>
               <li class="flex items-start gap-2">
                 <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <span class="text-sm">Premium 7-seater luxury electric SUVs</span>
+                <span class="text-sm">Premium electric vehicles (5-seater to 7-seater)</span>
               </li>
             </ul>
             <div class="flex flex-col sm:flex-row gap-4">
@@ -381,7 +381,7 @@ const reviewSchema = {
                       <p class="font-semibold">Pune → Mumbai Airport</p>
                       <p class="text-xs text-muted-foreground">148 km • 2.5-3 hrs</p>
                     </div>
-                    <p class="font-bold text-primary">₹4,500</p>
+                    <p class="font-bold text-primary">from ₹2,700</p>
                   </div>
                 </a>
                 <a href="/routes/mumbai-airport-to-pune" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
@@ -390,7 +390,7 @@ const reviewSchema = {
                       <p class="font-semibold">Mumbai Airport → Pune</p>
                       <p class="text-xs text-muted-foreground">Flight tracking included</p>
                     </div>
-                    <p class="font-bold text-primary">₹4,500</p>
+                    <p class="font-bold text-primary">from ₹2,700</p>
                   </div>
                 </a>
                 <a href="/routes/hinjewadi-to-mumbai-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
@@ -399,7 +399,7 @@ const reviewSchema = {
                       <p class="font-semibold">Hinjewadi → Mumbai Airport</p>
                       <p class="text-xs text-muted-foreground">Corporate packages available</p>
                     </div>
-                    <p class="font-bold text-primary">₹4,500</p>
+                    <p class="font-bold text-primary">from ₹2,700</p>
                   </div>
                 </a>
               </CardContent>
@@ -431,7 +431,7 @@ const reviewSchema = {
             <CardHeader className="bg-primary text-primary-foreground">
               <div class="text-center">
                 <CardTitle className="text-2xl mb-2">Professional Drivers</CardTitle>
-                <Badge variant="secondary" className="bg-white text-primary">Excellence</Badge>
+                <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-primary dark:text-primary">Excellence</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
@@ -464,7 +464,7 @@ const reviewSchema = {
             <CardHeader className="bg-primary text-primary-foreground">
               <div class="text-center">
                 <CardTitle className="text-2xl mb-2">Luxury Fleet</CardTitle>
-                <Badge variant="secondary" className="bg-white text-primary">Premium</Badge>
+                <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-primary dark:text-primary">Premium</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
@@ -497,7 +497,7 @@ const reviewSchema = {
             <CardHeader className="bg-primary text-primary-foreground">
               <div class="text-center">
                 <CardTitle className="text-2xl mb-2">White-Glove Service</CardTitle>
-                <Badge variant="secondary" className="bg-white text-primary">Exclusive</Badge>
+                <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-primary dark:text-primary">Exclusive</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
@@ -529,10 +529,10 @@ const reviewSchema = {
 
         <div class="bg-gradient-to-r from-primary to-primary/90 text-white rounded-lg p-8 text-center">
           <h3 class="text-2xl font-bold mb-3">Premium Quality at Unbeatable Prices</h3>
-          <p class="mb-6 text-lg">Best rates in Maharashtra - from ₹3,700 for Pune-Mumbai with luxury electric SUVs</p>
+          <p class="mb-6 text-lg">Best rates in Maharashtra - from ₹2,700 for Pune-Mumbai with premium electric vehicles</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/routes/pune-to-mumbai-airport">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-green-50">
+              <Button size="lg" variant="secondary" className="bg-white dark:bg-gray-800 text-primary dark:text-primary hover:bg-green-50 dark:hover:bg-gray-700">
                 Book Now at Best Price →
               </Button>
             </a>
@@ -591,7 +591,7 @@ const reviewSchema = {
             </div>
             <CardTitle>Best Pricing</CardTitle>
             <CardDescription>
-              Premium quality without the premium price - from ₹3,700
+              Premium quality without the premium price - from ₹2,700
             </CardDescription>
           </CardHeader>
         </Card>
@@ -617,13 +617,13 @@ const reviewSchema = {
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-8">
           <Badge variant="secondary" className="mb-4">
-            💰 Cheapest Electric SUV Cab Pune to Mumbai - Save Up to ₹1,300!
+            💰 Cheapest Electric Cab Pune to Mumbai - Best Rates Starting ₹2,700!
           </Badge>
           <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
             Why Pay More? Get Premium Quality at Best Price
           </h2>
           <p class="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Same luxury 7-seater electric SUV, same excellent service - but at the most competitive price
+            Premium electric vehicles, excellent service - at the most competitive prices
           </p>
         </div>
 
@@ -632,18 +632,18 @@ const reviewSchema = {
             <CardHeader className="bg-primary text-primary-foreground">
               <div class="text-center">
                 <CardTitle className="text-2xl mb-2">GreenEVCabs</CardTitle>
-                <Badge variant="secondary" className="bg-white text-primary">Best Value</Badge>
+                <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-primary dark:text-primary">Best Value</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
               <div class="text-center mb-4">
-                <div class="text-4xl font-bold text-primary mb-2">₹3,700</div>
+                <div class="text-4xl font-bold text-primary mb-2">from ₹2,700</div>
                 <p class="text-sm text-muted-foreground">Pune to Mumbai Airport</p>
               </div>
               <ul class="space-y-2 text-sm">
                 <li class="flex items-start gap-2">
                   <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Premium 7-seater electric SUV</span>
+                  <span>Premium electric vehicles (5 to 7-seater)</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <Check class="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -673,7 +673,7 @@ const reviewSchema = {
             <CardHeader>
               <div class="text-center">
                 <CardTitle className="text-xl mb-2">Other EV Services</CardTitle>
-                <Badge variant="secondary" className="bg-orange-100 text-orange-700">₹500 More</Badge>
+                <Badge variant="secondary" className="bg-orange-100 text-orange-700">₹1,500 More</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
@@ -700,7 +700,7 @@ const reviewSchema = {
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-orange-600 font-bold">⚠</span>
-                  <span class="font-semibold">Pay ₹500 extra for same vehicle</span>
+                  <span class="font-semibold">Pay ₹1,500 extra for same 7-seater</span>
                 </li>
               </ul>
             </CardContent>
@@ -710,7 +710,7 @@ const reviewSchema = {
             <CardHeader>
               <div class="text-center">
                 <CardTitle className="text-xl mb-2">Diesel Cabs</CardTitle>
-                <Badge variant="destructive">₹1,300 More + Surge</Badge>
+                <Badge variant="destructive">₹2,300+ More + Surge</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
@@ -737,7 +737,7 @@ const reviewSchema = {
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-red-600 font-bold">⚠</span>
-                  <span class="font-semibold">Pay ₹1,300+ more (35% costlier)</span>
+                  <span class="font-semibold">Pay ₹2,300+ more (46% costlier)</span>
                 </li>
               </ul>
             </CardContent>
@@ -746,20 +746,20 @@ const reviewSchema = {
 
         <div class="grid md:grid-cols-2 gap-6">
           <div class="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg p-6">
-            <h3 class="text-2xl font-bold mb-2">Save ₹500 vs Other EVs!</h3>
-            <p class="mb-4">Get the same premium 7-seater electric SUV at ₹3,700 instead of ₹4,200</p>
+            <h3 class="text-2xl font-bold mb-2">Save ₹1,500 vs Other EVs!</h3>
+            <p class="mb-4">Get the same premium 7-seater electric SUV at ₹3,700 (Kia Carens) vs ₹4,200+ competitors charge</p>
             <div class="flex items-center gap-2 text-lg font-semibold">
               <span>That's 12% cheaper</span>
-              <Badge variant="secondary" className="bg-white text-green-700">₹500 Savings</Badge>
+              <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-green-700 dark:text-green-400">₹500 Savings</Badge>
             </div>
           </div>
 
           <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6">
-            <h3 class="text-2xl font-bold mb-2">Save ₹1,300 vs Diesel Cabs!</h3>
-            <p class="mb-4">Premium electric SUV with better service at ₹3,700 vs ₹5,000 for diesel</p>
+            <h3 class="text-2xl font-bold mb-2">Save ₹2,300 vs Diesel Cabs!</h3>
+            <p class="mb-4">Premium electric vehicle with better service starting ₹2,700 vs ₹5,000 for diesel</p>
             <div class="flex items-center gap-2 text-lg font-semibold">
-              <span>That's 26% cheaper</span>
-              <Badge variant="secondary" className="bg-white text-blue-700">₹1,300 Savings</Badge>
+              <span>That's 46% cheaper</span>
+              <Badge variant="secondary" className="bg-white dark:bg-gray-800 text-blue-700 dark:text-blue-400">₹2,300 Savings</Badge>
             </div>
           </div>
         </div>
@@ -767,7 +767,7 @@ const reviewSchema = {
         <div class="mt-8 text-center">
           <a href="/routes/pune-to-mumbai-airport">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8">
-              Book Now at ₹3,700 - Save Money! →
+              Book Now from ₹2,700 - Save Money! →
             </Button>
           </a>
           <p class="mt-3 text-sm text-muted-foreground">
@@ -904,6 +904,71 @@ const reviewSchema = {
     </div>
   </section>
 
+  <!-- FAQ CTAs -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto space-y-6">
+        <!-- NMIA FAQ -->
+        <Card className="border-green-200 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30">
+          <CardContent className="pt-6">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-2">
+                  📋 Navi Mumbai Airport to Pune - Complete FAQ
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  40 frequently asked questions about NMIA to Pune cab service. Everything you need to know about pricing, booking, routes, timing, safety, and more.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm text-muted-foreground">
+                  <Badge variant="outline" className="bg-white">Starting from ₹2,300</Badge>
+                  <Badge variant="outline" className="bg-white">24/7 Service</Badge>
+                  <Badge variant="outline" className="bg-white">All Pune Areas</Badge>
+                  <Badge variant="outline" className="bg-white">No Hidden Charges</Badge>
+                </div>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="/nmia-faq">
+                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+                    View Complete FAQ →
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <!-- Mumbai Airport FAQ -->
+        <Card className="border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30">
+          <CardContent className="pt-6">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-2">
+                  📋 Mumbai Airport to Pune - Complete FAQ
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  50 frequently asked questions about Mumbai Airport (BOM) to Pune cab service. Comprehensive guide covering pricing, terminals, routes, vehicles, safety, and more.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm text-muted-foreground">
+                  <Badge variant="outline" className="bg-white">Starting from ₹2,700</Badge>
+                  <Badge variant="outline" className="bg-white">T1 & T2 Pickup</Badge>
+                  <Badge variant="outline" className="bg-white">148 km Journey</Badge>
+                  <Badge variant="outline" className="bg-white">Flight Tracking</Badge>
+                </div>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="/mumbai-airport-pune-faq">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                    View Complete FAQ →
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section - SEO Rich Content -->
   <section class="w-full py-12 md:py-24 lg:py-32">
     <div class="container px-4 md:px-6">
@@ -935,7 +1000,7 @@ const reviewSchema = {
         </h2>
         <div class="prose prose-lg max-w-none text-muted-foreground space-y-4">
           <p>
-            The <strong>Pune to Mumbai route</strong> is our most popular service, with hundreds of satisfied customers choosing our electric cabs for this 148-kilometer journey every week. We offer comfortable, zero-emission travel on the scenic Mumbai-Pune Expressway starting at just ₹4,500 for the Kia Carens EV and ₹5,500 for the premium BYD E-MAX 7.
+            The <strong>Pune to Mumbai route</strong> is our most popular service, with hundreds of satisfied customers choosing our electric cabs for this 148-kilometer journey every week. We offer comfortable, zero-emission travel on the scenic Mumbai-Pune Expressway starting at just ₹2,700 for the Citroen eC3, ₹3,700 for the Kia Carens EV, and ₹4,200 for the premium BYD eMax 7.
           </p>
           <p>
             Our <strong>Pune Mumbai electric cab service</strong> includes flexible pickup from any location in Pune (Hinjewadi, Wakad, Kothrud, Hadapsar, Viman Nagar, Baner, Aundh) with drop-off anywhere in Mumbai (Andheri, Bandra, Powai, Thane, Navi Mumbai). We also provide dedicated <strong>Mumbai to Pune cab service</strong> for return journeys and one-way trips. Book both legs of your journey together and save 10% with our round-trip packages.
@@ -978,7 +1043,7 @@ const reviewSchema = {
 
           <h3 class="text-2xl font-semibold text-foreground mt-8">Popular Outstation Destinations</h3>
           <p>
-            <strong>Pune to Shirdi Electric Cab:</strong> Comfortable pilgrimage trips to Shirdi (185 km) in our spacious 7-seater electric vehicles. Perfect for family temple visits with affordable pricing starting at ₹5,500.
+            <strong>Pune to Shirdi Electric Cab:</strong> Comfortable pilgrimage trips to Shirdi (185 km) in our spacious electric vehicles. Perfect for family temple visits with affordable pricing.
           </p>
           <p>
             <strong>Pune to Lonavala/Khandala:</strong> Weekend getaways to these beautiful hill stations (65-70 km) in eco-friendly electric cabs. Enjoy the scenic Western Ghats with zero emissions.

@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     question: 'How much does an electric cab cost from Pimple Saudagar Chowk to Mumbai Airport?',
-    answer: 'GreenEVCabs charges ₹3,700 for Kia Carens EV (6-seater) and ₹4,200 for BYD eMax 7 (6-seater luxury) from Pimple Saudagar to Mumbai Airport. This is all-inclusive with zero hidden charges - no toll extra, no driver allowance, no parking fees.',
+    answer: 'GreenEVCabs charges ₹2,700 for Kia Carens EV (6-seater) and ₹3,000 for BYD eMax 7 (6-seater luxury) from Pimple Saudagar to Mumbai Airport. This is all-inclusive with zero hidden charges - no toll extra, no driver allowance, no parking fees.',
   },
   {
     question: 'Which route is faster from Pimple Saudagar to Mumbai Airport - via Wakad or Hinjewadi?',
@@ -168,7 +168,7 @@ const faqSchema = {
             <CardDescription>Most popular flight time slot</CardDescription>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-emerald-50 rounded">
+            <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded">
               <p class="font-semibold mb-1">Recommended Departure: 4:00-4:30 AM</p>
               <p class="text-sm text-muted-foreground">Travel time: 3-3.5 hours (minimal traffic)</p>
               <p class="text-sm text-muted-foreground">Arrival at airport: 7:00-7:30 AM</p>
@@ -199,7 +199,7 @@ const faqSchema = {
             <CardDescription>Moderate traffic conditions</CardDescription>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-blue-50 rounded">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded">
               <p class="font-semibold mb-1">Recommended Departure: 4:30-5:30 AM</p>
               <p class="text-sm text-muted-foreground">Travel time: 3.5-4 hours</p>
               <p class="text-sm text-muted-foreground">Arrival at airport: 8:00-9:00 AM</p>
@@ -261,7 +261,7 @@ const faqSchema = {
             <CardDescription>Evening traffic considerations</CardDescription>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-orange-50 rounded">
+            <div class="p-3 bg-orange-50 dark:bg-orange-900/30 rounded">
               <p class="font-semibold mb-1">Recommended Departure: Based on flight time minus 6-7 hours</p>
               <p class="text-sm text-muted-foreground">Travel time: 3.5-4.5 hours</p>
               <p class="text-sm text-muted-foreground">Add buffer for evening rush (5-9 PM)</p>
@@ -297,7 +297,7 @@ const faqSchema = {
 
       <Card className="mb-6 border-l-4 border-l-red-500">
         <CardHeader>
-          <CardTitle className="text-red-700">Peak Traffic Hours (AVOID for Airport Trips)</CardTitle>
+          <CardTitle className="text-red-700 dark:text-red-400">Peak Traffic Hours (AVOID for Airport Trips)</CardTitle>
         </CardHeader>
         <CardContent class="space-y-4">
           <div>
@@ -323,7 +323,7 @@ const faqSchema = {
 
       <Card className="border-l-4 border-l-green-500">
         <CardHeader>
-          <CardTitle className="text-green-700">Best Travel Times (RECOMMENDED)</CardTitle>
+          <CardTitle className="text-green-700 dark:text-green-400">Best Travel Times (RECOMMENDED)</CardTitle>
         </CardHeader>
         <CardContent class="space-y-4">
           <div>
@@ -372,7 +372,7 @@ const faqSchema = {
             <CardDescription>Faster for most time slots</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="p-3 bg-emerald-50 rounded mb-4">
+            <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded mb-4">
               <p class="font-semibold mb-1">Distance: 165 km</p>
               <p class="text-sm text-muted-foreground">Time: 3-3.5 hours (normal traffic)</p>
             </div>
@@ -420,7 +420,7 @@ const faqSchema = {
             <CardDescription>Alternative during Wakad peak hours</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="p-3 bg-blue-50 rounded mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded mb-4">
               <p class="font-semibold mb-1">Distance: 175 km</p>
               <p class="text-sm text-muted-foreground">Time: 3.5-4 hours (normal traffic)</p>
             </div>
@@ -435,7 +435,7 @@ const faqSchema = {
               </ol>
             </div>
             <div>
-              <h4 class="font-semibold mb-2 text-blue-700">When to Use This Route?</h4>
+              <h4 class="font-semibold mb-2 text-blue-700 dark:text-blue-400">When to Use This Route?</h4>
               <ul class="space-y-1 text-sm">
                 <li class="flex items-start gap-2">
                   <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -572,7 +572,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="mt-6 bg-blue-50">
+      <Card className="mt-6 bg-blue-50 dark:bg-blue-900/30">
         <CardContent class="pt-6">
           <p class="text-sm leading-relaxed">
             <strong>Booking Tip:</strong> When booking your cab, provide your exact society name, tower/wing number, and preferred gate. For early morning pickups (3-6 AM), also share your mobile number so our driver can reach you directly upon arrival without disturbing neighbors.
@@ -595,7 +595,7 @@ const faqSchema = {
             <CardDescription>Perfect for families and small groups</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</div>
+            <div class="text-4xl font-bold text-emerald-600 mb-4">₹2,700</div>
             <p class="text-sm text-muted-foreground mb-4">All-inclusive pricing</p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2">
@@ -624,7 +624,7 @@ const faqSchema = {
             <CardDescription>Premium experience for discerning travelers</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="text-4xl font-bold text-blue-600 mb-4">₹4,200</div>
+            <div class="text-4xl font-bold text-blue-600 mb-4">₹3,000</div>
             <p class="text-sm text-muted-foreground mb-4">All-inclusive luxury pricing</p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2">
@@ -842,7 +842,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href={`tel:+${WHATSAPP_NUMBER}`}>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-emerald-600 hover:bg-emerald-50">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white dark:bg-gray-800 text-emerald-600 hover:bg-emerald-50 dark:bg-emerald-900/30 dark:bg-emerald-900/30">
                 <Phone className="mr-2 h-5 w-5" />
                 Call for Instant Booking
               </Button>

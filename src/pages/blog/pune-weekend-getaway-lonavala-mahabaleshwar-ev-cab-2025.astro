@@ -159,16 +159,16 @@ const faqSchema = {
       <h2 class="text-3xl font-bold mb-6">Lonavala vs Mahabaleshwar: Which One for Your Weekend?</h2>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <Card className="border-2 border-blue-500">
+        <Card className="border-2 border-blue-500 dark:border-blue-600">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-blue-700">
+            <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-400">
               <Mountain className="h-6 w-6" />
               Lonavala
             </CardTitle>
             <CardDescription>Quick weekend escape - ideal for day trips</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="p-3 bg-blue-50 rounded mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded mb-4">
               <p class="font-semibold mb-1">Distance from Pune: 65 km (one way)</p>
               <p class="text-sm text-muted-foreground">Travel time: 1.5-2 hours | Best for: Same-day trips or overnight</p>
             </div>
@@ -196,7 +196,7 @@ const faqSchema = {
               </li>
             </ul>
             <div class="border-t pt-3">
-              <h4 class="font-semibold mb-2 text-blue-700">Best For:</h4>
+              <h4 class="font-semibold mb-2 text-blue-700 dark:text-blue-400">Best For:</h4>
               <ul class="space-y-1 text-xs text-muted-foreground">
                 <li>✓ Quick 1-day trip (6-8 hours total)</li>
                 <li>✓ Monsoon visits (waterfalls & greenery)</li>
@@ -207,16 +207,16 @@ const faqSchema = {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-green-500">
+        <Card className="border-2 border-green-500 dark:border-green-600">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-green-700">
+            <CardTitle className="flex items-center gap-2 text-green-700 dark:text-green-400">
               <Trees className="h-6 w-6" />
               Mahabaleshwar
             </CardTitle>
             <CardDescription>Scenic hill station - perfect for 2-3 day trips</CardDescription>
           </CardHeader>
           <CardContent>
-            <div class="p-3 bg-green-50 rounded mb-4">
+            <div class="p-3 bg-green-50 dark:bg-green-900/30 rounded mb-4">
               <p class="font-semibold mb-1">Distance from Pune: 120 km (one way)</p>
               <p class="text-sm text-muted-foreground">Travel time: 3-3.5 hours | Best for: Overnight/2-3 day trips</p>
             </div>
@@ -248,7 +248,7 @@ const faqSchema = {
               </li>
             </ul>
             <div class="border-t pt-3">
-              <h4 class="font-semibold mb-2 text-green-700">Best For:</h4>
+              <h4 class="font-semibold mb-2 text-green-700 dark:text-green-400">Best For:</h4>
               <ul class="space-y-1 text-xs text-muted-foreground">
                 <li>✓ Full weekend getaway (2-3 days)</li>
                 <li>✓ Family vacations with kids</li>
@@ -280,7 +280,7 @@ const faqSchema = {
             <CardTitle>BYD eMax 7 - Premium EV</CardTitle>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-emerald-50 rounded">
+            <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded">
               <p class="font-semibold mb-1">Certified Range: 530 km (single charge)</p>
               <p class="text-sm text-muted-foreground">Real-world range: 450-480 km (with AC, hills)</p>
             </div>
@@ -312,7 +312,7 @@ const faqSchema = {
             <CardTitle>Kia Carens EV - Value EV</CardTitle>
           </CardHeader>
           <CardContent class="space-y-3">
-            <div class="p-3 bg-blue-50 rounded">
+            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded">
               <p class="font-semibold mb-1">Certified Range: 450 km (single charge)</p>
               <p class="text-sm text-muted-foreground">Real-world range: 380-400 km (with AC, hills)</p>
             </div>
@@ -381,18 +381,18 @@ const faqSchema = {
             Lonavala Packages
           </h3>
           <div class="grid md:grid-cols-2 gap-6">
-            <Card className="border-2 border-blue-500">
+            <Card className="border-2 border-blue-500 dark:border-blue-600">
               <CardHeader>
                 <CardTitle>Same-Day Lonavala Trip</CardTitle>
                 <CardDescription>6-hour rental | 130 km round-trip</CardDescription>
               </CardHeader>
               <CardContent class="space-y-4">
                 <div class="grid grid-cols-2 gap-4">
-                  <div class="p-3 bg-blue-50 rounded text-center">
+                  <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
                     <p class="text-2xl font-bold text-blue-600">₹2,200</p>
                   </div>
-                  <div class="p-3 bg-emerald-50 rounded text-center">
+                  <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
                     <p class="text-2xl font-bold text-emerald-600">₹2,500</p>
                   </div>
@@ -429,11 +429,11 @@ const faqSchema = {
               </CardHeader>
               <CardContent class="space-y-4">
                 <div class="grid grid-cols-2 gap-4">
-                  <div class="p-3 bg-blue-50 rounded text-center">
+                  <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
                     <p class="text-2xl font-bold text-blue-600">₹4,500</p>
                   </div>
-                  <div class="p-3 bg-emerald-50 rounded text-center">
+                  <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
                     <p class="text-2xl font-bold text-emerald-600">₹5,200</p>
                   </div>
@@ -472,18 +472,18 @@ const faqSchema = {
             Mahabaleshwar Packages
           </h3>
           <div class="grid md:grid-cols-2 gap-6">
-            <Card className="border-2 border-green-500">
+            <Card className="border-2 border-green-500 dark:border-green-600">
               <CardHeader>
                 <CardTitle>Same-Day Mahabaleshwar Trip</CardTitle>
                 <CardDescription>10-hour rental | 250 km round-trip</CardDescription>
               </CardHeader>
               <CardContent class="space-y-4">
                 <div class="grid grid-cols-2 gap-4">
-                  <div class="p-3 bg-green-50 rounded text-center">
+                  <div class="p-3 bg-green-50 dark:bg-green-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
                     <p class="text-2xl font-bold text-green-600">₹4,200</p>
                   </div>
-                  <div class="p-3 bg-emerald-50 rounded text-center">
+                  <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
                     <p class="text-2xl font-bold text-emerald-600">₹4,800</p>
                   </div>
@@ -520,11 +520,11 @@ const faqSchema = {
               </CardHeader>
               <CardContent class="space-y-4">
                 <div class="grid grid-cols-2 gap-4">
-                  <div class="p-3 bg-green-50 rounded text-center">
+                  <div class="p-3 bg-green-50 dark:bg-green-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">Kia Carens EV</p>
                     <p class="text-2xl font-bold text-green-600">₹6,500</p>
                   </div>
-                  <div class="p-3 bg-emerald-50 rounded text-center">
+                  <div class="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded text-center">
                     <p class="text-xs text-muted-foreground mb-1">BYD eMax 7</p>
                     <p class="text-2xl font-bold text-emerald-600">₹7,500</p>
                   </div>
@@ -565,37 +565,37 @@ const faqSchema = {
       <div class="overflow-x-auto mb-6">
         <table class="w-full border-collapse text-sm">
           <thead>
-            <tr class="bg-emerald-50">
-              <th class="border border-gray-300 p-3 text-left font-semibold">Trip Type</th>
-              <th class="border border-gray-300 p-3 text-center font-semibold bg-blue-50">Electric Cab (EV)</th>
-              <th class="border border-gray-300 p-3 text-center font-semibold bg-orange-50">Diesel Cab</th>
-              <th class="border border-gray-300 p-3 text-center font-semibold bg-green-50">You Save</th>
+            <tr class="bg-emerald-50 dark:bg-emerald-900/30 dark:bg-emerald-900/30">
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">Trip Type</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold bg-blue-50 dark:bg-blue-900/30">Electric Cab (EV)</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">Diesel Cab</th>
+              <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold bg-green-50 dark:bg-green-900/30">You Save</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-gray-300 p-3 font-semibold">Lonavala Same-Day</td>
-              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹2,200 - ₹2,500</td>
-              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹2,800 - ₹3,200</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹600 - ₹700</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Lonavala Same-Day</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-blue-50 dark:bg-blue-900/30">₹2,200 - ₹2,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">₹2,800 - ₹3,200</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 font-semibold">₹600 - ₹700</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3 font-semibold">Lonavala Overnight</td>
-              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹4,500 - ₹5,200</td>
-              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹5,500 - ₹6,500</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹1,000 - ₹1,300</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Lonavala Overnight</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-blue-50 dark:bg-blue-900/30">₹4,500 - ₹5,200</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">₹5,500 - ₹6,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 font-semibold">₹1,000 - ₹1,300</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3 font-semibold">Mahabaleshwar Same-Day</td>
-              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹4,200 - ₹4,800</td>
-              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹5,200 - ₹6,000</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹1,000 - ₹1,200</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Mahabaleshwar Same-Day</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-blue-50 dark:bg-blue-900/30">₹4,200 - ₹4,800</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">₹5,200 - ₹6,000</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 font-semibold">₹1,000 - ₹1,200</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 p-3 font-semibold">Mahabaleshwar Weekend</td>
-              <td class="border border-gray-300 p-3 text-center bg-blue-50">₹6,500 - ₹7,500</td>
-              <td class="border border-gray-300 p-3 text-center bg-orange-50">₹8,500 - ₹9,500</td>
-              <td class="border border-gray-300 p-3 text-center bg-green-50 font-semibold">₹2,000 - ₹2,000</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Mahabaleshwar Weekend</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-blue-50 dark:bg-blue-900/30">₹6,500 - ₹7,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">₹8,500 - ₹9,500</td>
+              <td class="border border-gray-300 dark:border-gray-600 p-3 text-center bg-green-50 dark:bg-green-900/30 font-semibold">₹2,000 - ₹2,000</td>
             </tr>
           </tbody>
         </table>
@@ -823,7 +823,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href={`tel:+${WHATSAPP_NUMBER}`}>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white text-green-600 hover:bg-green-50">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white dark:bg-gray-800 text-green-600 hover:bg-green-50 dark:bg-green-900/30">
                 <Phone className="mr-2 h-5 w-5" />
                 Call for Custom Packages
               </Button>

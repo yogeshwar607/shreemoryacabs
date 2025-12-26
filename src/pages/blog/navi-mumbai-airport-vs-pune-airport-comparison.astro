@@ -25,13 +25,13 @@ const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, {
             <table class="w-full text-sm">
               <thead><tr class="border-b"><th class="text-left p-2">Factor</th><th class="text-left p-2">Pune Airport</th><th class="text-left p-2">NMIA</th></tr></thead>
               <tbody>
-                <tr class="border-b"><td class="p-2">Distance from Central Pune</td><td class="p-2 bg-green-50">10 km</td><td class="p-2">120 km</td></tr>
-                <tr class="border-b"><td class="p-2">Travel Time</td><td class="p-2 bg-green-50">30 min</td><td class="p-2">2.5 hours</td></tr>
-                <tr class="border-b"><td class="p-2">Cab Fare</td><td class="p-2 bg-green-50">₹400-600</td><td class="p-2">₹3,700</td></tr>
-                <tr class="border-b"><td class="p-2">Daily Flights</td><td class="p-2">~50 flights</td><td class="p-2 bg-green-50">~15 flights (expanding)</td></tr>
-                <tr class="border-b"><td class="p-2">Destinations</td><td class="p-2">30+ domestic</td><td class="p-2 bg-green-50">Bengaluru, Delhi, Hyderabad, Kochi +</td></tr>
+                <tr class="border-b"><td class="p-2">Distance from Central Pune</td><td class="p-2 bg-green-50 dark:bg-green-900/30">10 km</td><td class="p-2">120 km</td></tr>
+                <tr class="border-b"><td class="p-2">Travel Time</td><td class="p-2 bg-green-50 dark:bg-green-900/30">30 min</td><td class="p-2">2.5 hours</td></tr>
+                <tr class="border-b"><td class="p-2">Cab Fare</td><td class="p-2 bg-green-50 dark:bg-green-900/30">₹400-600</td><td class="p-2">₹2,300</td></tr>
+                <tr class="border-b"><td class="p-2">Daily Flights</td><td class="p-2">~50 flights</td><td class="p-2 bg-green-50 dark:bg-green-900/30">~15 flights (expanding)</td></tr>
+                <tr class="border-b"><td class="p-2">Destinations</td><td class="p-2">30+ domestic</td><td class="p-2 bg-green-50 dark:bg-green-900/30">Bengaluru, Delhi, Hyderabad, Kochi +</td></tr>
                 <tr class="border-b"><td class="p-2">International Flights</td><td class="p-2">Dubai, Sharjah</td><td class="p-2">Coming 2026</td></tr>
-                <tr><td class="p-2">Airport Condition</td><td class="p-2">Established</td><td class="p-2 bg-green-50">Brand new (Dec 2025)</td></tr>
+                <tr><td class="p-2">Airport Condition</td><td class="p-2">Established</td><td class="p-2 bg-green-50 dark:bg-green-900/30">Brand new (Dec 2025)</td></tr>
               </tbody>
             </table>
           </CardContent></Card>
@@ -71,7 +71,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, {
 
         <h2 class="text-3xl font-bold mt-12 mb-6">Cost-Benefit Analysis</h2>
         <div class="not-prose my-6">
-          <Card className="bg-blue-50"><CardContent className="pt-6">
+          <Card className="bg-blue-50 dark:bg-blue-900/30"><CardContent className="pt-6">
             <p class="font-semibold mb-2">Example: Pune to Bengaluru Trip</p>
             <div class="grid md:grid-cols-2 gap-4 text-sm">
               <div>
@@ -82,14 +82,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, {
                 <p>• Hassle: 1 stop, baggage claim</p>
               </div>
               <div class="bg-green-100 p-3 rounded">
-                <p class="font-semibold text-green-800">Via NMIA:</p>
+                <p class="font-semibold text-green-800 dark:text-green-300">Via NMIA:</p>
                 <p>• Flight: Direct (7 options)</p>
-                <p>• Cab: ₹3,700</p>
+                <p>• Cab: ₹2,300</p>
                 <p>• Total time: 4 hours</p>
                 <p>• Hassle: None, direct flight</p>
               </div>
             </div>
-            <p class="mt-3 text-green-700 font-semibold">Verdict: NMIA worth it for Bengaluru despite higher cab cost</p>
+            <p class="mt-3 text-green-700 dark:text-green-400 font-semibold">Verdict: NMIA worth it for Bengaluru despite higher cab cost</p>
           </CardContent></Card>
         </div>
 
@@ -102,8 +102,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, {
           <li><strong>Your budget:</strong> Cab cost vs total trip time</li>
         </ol>
 
-        <div class="not-prose mt-12 p-6 bg-green-50 rounded-lg">
-          <h3 class="text-2xl font-bold mb-4">Need NMIA Cab? ₹3,700 Flat Rate</h3>
+        <div class="not-prose mt-12 p-6 bg-green-50 dark:bg-green-900/30 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Need NMIA Cab? ₹2,300 Flat Rate</h3>
           <p class="mb-4">All Pune localities | Electric cab | Professional service</p>
           <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Book Now: +91-7498264215</a></Button>
         </div>

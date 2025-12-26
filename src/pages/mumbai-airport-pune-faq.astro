@@ -1,0 +1,1343 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { MessageCircle, Phone } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a cab from Mumbai Airport to Pune cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cab from Mumbai Airport (Chhatrapati Shivaji Maharaj International Airport) to Pune starts from ₹2,700 with GreenEVCabs for a 5-seater electric cab. This is a fixed, all-inclusive rate covering tolls, parking, driver charges, and meet & greet service. There's no surge pricing, even during peak hours or late-night flights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to reach Pune from Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The journey from Mumbai Airport to Pune typically takes 2.5 to 3 hours via the Mumbai-Pune Expressway. During peak traffic hours (8-10 AM, 6-8 PM), it may take up to 3.5 hours due to Mumbai city traffic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide pickup from both Terminal 1 and Terminal 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide pickup from both terminals at Mumbai Airport. Terminal 1 (T1) for domestic flights and Terminal 2 (T2) for international flights and some domestic carriers like Vistara."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What type of vehicles are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs operates 100% electric vehicles from 5-seater to 7-seater premium SUVs: Citroen eC3, MG ZS EV, Kia Carens EV (400+ km range) and BYD E-MAX 7 (530+ km range). All vehicles feature climate control, ample luggage space, USB charging ports, and silent electric operation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you track flight delays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide complimentary real-time flight tracking for all Mumbai Airport pickups. If your flight is delayed, our driver automatically adjusts arrival time. No waiting charges apply for flight delays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there any hidden charges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hidden charges. Our fares starting from ₹2,700 include all expressway tolls, airport parking, driver allowance, meet & greet service, flight tracking, 45 minutes free waiting, and GST. The price you see is the price you pay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a cab for midnight arrival?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GreenEVCabs operates 24/7 airport pickup service from Mumbai Airport. Whether your flight lands at 2 AM or 5 AM, our drivers will be waiting. No extra night charges apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a cab from Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can book via WhatsApp at +91 74982 64215 (recommended for instant confirmation), phone call at the same number, or through greenevcabs.com. Share your flight details, terminal, and Pune drop location. We recommend booking 24 hours in advance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is GreenEVCabs cheaper than Uber/Ola?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs offers fixed pricing starting from ₹2,700 with no surge ever, while Uber/Ola can charge ₹6,000-10,000+ during peak hours. We provide premium electric vehicles, included tolls, meet & greet service, and guaranteed pickup with no driver cancellations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to travel late at night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely safe. All drivers are background-verified with police clearance. We provide GPS tracking, trip sharing with family, 24/7 support helpline, and vehicle dashcam recording. Thousands of passengers travel safely with us at all hours."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Mumbai Airport to Pune FAQ", url: "/mumbai-airport-pune-faq" }
+]);
+---
+
+<MainLayout
+  title="Mumbai Airport to Pune FAQ: 50 Questions Answered - GreenEVCabs"
+  description="Complete FAQ about Mumbai Airport (BOM) to Pune cab service. Pricing, booking, terminals, routes, timing, safety. Starting from ₹2,700 all-inclusive."
+  keywords={[
+    "mumbai airport to pune cab faq",
+    "bom to pune taxi questions",
+    "mumbai airport cab booking",
+    "chhatrapati shivaji airport to pune",
+    "electric cab mumbai airport"
+  ]}
+>
+  <StructuredData data={[faqSchema, breadcrumbSchema]} />
+
+  <div class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <Badge className="mb-4 bg-blue-600 text-white">50 Questions Answered</Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Mumbai Airport to Pune Cab - Complete FAQ
+        </h1>
+        <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+          Everything you need to know about booking electric cab from Mumbai Airport (BOM) to Pune. Starting from ₹2,700, 24/7 service, both terminals covered.
+        </p>
+      </div>
+
+      <!-- Quick Reference Card -->
+      <Card class="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 border-blue-200">
+        <CardContent class="pt-6">
+          <div class="grid md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Starting From</p>
+              <p class="text-3xl font-bold text-blue-700 dark:text-blue-400">₹2,700</p>
+              <p class="text-xs text-muted-foreground">All-inclusive</p>
+            </div>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Distance</p>
+              <p class="text-3xl font-bold text-blue-700 dark:text-blue-400">148 km</p>
+              <p class="text-xs text-muted-foreground">Via Expressway</p>
+            </div>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Journey Time</p>
+              <p class="text-3xl font-bold text-blue-700 dark:text-blue-400">2.5-3 hrs</p>
+              <p class="text-xs text-muted-foreground">Average</p>
+            </div>
+            <div>
+              <p class="text-sm text-muted-foreground mb-1">Terminals</p>
+              <p class="text-3xl font-bold text-blue-700 dark:text-blue-400">T1 & T2</p>
+              <p class="text-xs text-muted-foreground">Both covered</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div class="space-y-16">
+        <!-- Section 1: Pricing & Booking -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">01.</span> Pricing & Booking
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much does a cab from Mumbai Airport to Pune cost?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">A cab from Mumbai Airport (Chhatrapati Shivaji Maharaj International Airport) to Pune starts from <strong class="text-blue-600 text-lg">₹2,700</strong> with GreenEVCabs. All-inclusive rates covering tolls, parking, driver charges, and meet & greet service. No surge pricing, even during peak hours or late-night flights.</p>
+                <div class="overflow-x-auto mt-4">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Vehicle Type</th>
+                        <th class="text-left p-2">Capacity</th>
+                        <th class="text-left p-2">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Citroen eC3 (Electric)</td>
+                        <td class="p-2">5-seater</td>
+                        <td class="p-2"><strong>₹2,700</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">MG ZS EV (Electric SUV)</td>
+                        <td class="p-2">5-seater</td>
+                        <td class="p-2"><strong>₹3,000</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Kia Carens EV</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹3,700</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">BYD E-MAX 7 (Premium)</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹4,200</strong></td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Innova Hycross (Luxury)</td>
+                        <td class="p-2">7-seater</td>
+                        <td class="p-2"><strong>₹6,800</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What is the cheapest cab from Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">GreenEVCabs offers the cheapest premium cab service from Mumbai Airport to Pune at just <strong>₹2,700</strong> for our Citroen eC3 electric cab. This is:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>₹500 cheaper than other EV services</li>
+                  <li>Up to ₹1,300 cheaper than diesel cabs (₹5,000+ with surge)</li>
+                  <li>Up to 50% cheaper than Uber/Ola during peak surge hours</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How do I book a cab from Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">You can book a GreenEVCabs cab via:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Method</th>
+                        <th class="text-left p-2">Contact</th>
+                        <th class="text-left p-2">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>WhatsApp</strong> (Recommended)</td>
+                        <td class="p-2">+91 74982 64215</td>
+                        <td class="p-2">24/7, instant confirmation</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Phone Call</strong></td>
+                        <td class="p-2">+91 74982 64215</td>
+                        <td class="p-2">24/7</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Website</strong></td>
+                        <td class="p-2">greenevcabs.com</td>
+                        <td class="p-2">24/7</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 text-sm text-muted-foreground">Simply share your flight details, terminal (T1 or T2), pickup time, and Pune drop location. We recommend booking 24 hours in advance for guaranteed availability.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I book a cab from Mumbai Airport at midnight?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, GreenEVCabs operates <strong>24/7 airport pickup service</strong> from Mumbai Airport. Whether your flight lands at 2 AM or 5 AM, our drivers will be waiting at your terminal. No extra night charges apply - rates start from ₹2,700 at all times.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is there any advance payment required to book?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">No advance payment is required for most bookings. You can pay after completing your journey via:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>UPI (GPay, PhonePe, Paytm)</li>
+                  <li>Cash</li>
+                  <li>Credit card</li>
+                  <li>Debit card</li>
+                </ul>
+                <p class="mt-3">Corporate clients can opt for monthly invoicing with GST.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I cancel my Mumbai Airport to Pune cab booking?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, cancellations are <strong>free if made 4+ hours before pickup</strong>. Cancellations within 4 hours may attract a nominal fee. Contact us on WhatsApp to modify or cancel your booking.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide pickup from both Terminal 1 and Terminal 2?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, we provide pickup from <strong>both terminals</strong> at Mumbai Airport:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>Terminal 1 (T1):</strong> Domestic flights (IndiGo, SpiceJet, Air India domestic)</li>
+                  <li><strong>Terminal 2 (T2):</strong> International flights and some domestic (Vistara, Air India international)</li>
+                </ul>
+                <p class="mt-3">Please confirm your terminal while booking for seamless pickup.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 2: Route & Travel Time -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">02.</span> Route & Travel Time
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How long does it take to reach Pune from Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">The journey from Mumbai Airport to Pune typically takes <strong>2.5 to 3 hours</strong> via the Mumbai-Pune Expressway (148 km). Average timing breakdown:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Time of Day</th>
+                        <th class="text-left p-2">Duration</th>
+                        <th class="text-left p-2">Traffic Level</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Late Night (11 PM - 5 AM)</td>
+                        <td class="p-2">2.5 hours</td>
+                        <td class="p-2">Minimal traffic</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Morning (5 AM - 8 AM)</td>
+                        <td class="p-2">2.5-3 hours</td>
+                        <td class="p-2">Light to moderate</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Peak Hours (8-10 AM, 6-8 PM)</td>
+                        <td class="p-2">3-3.5 hours</td>
+                        <td class="p-2">Heavy Mumbai traffic</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Afternoon (12 PM - 4 PM)</td>
+                        <td class="p-2">2.5-3 hours</td>
+                        <td class="p-2">Moderate</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Which route do you take from Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">We take the <strong>Mumbai-Pune Expressway (NH 48)</strong> - the fastest and safest route. The journey route is:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Mumbai Airport → Andheri → Vashi → Panvel → Expressway Entry</li>
+                  <li>Mumbai-Pune Expressway (95 km) → Khandala Ghat → Lonavala → Talegaon → Pune</li>
+                  <li>Total Distance: <strong>148 km</strong></li>
+                  <li>Number of Tolls: 5 tolls (all included in fare)</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are tolls included in Mumbai Airport to Pune cab fare?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, <strong>all tolls are 100% included</strong> in our starting price of ₹2,700. You don't pay anything extra. The route has 5 toll plazas:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Mumbai Toll (~₹150)</li>
+                  <li>Vashi Toll (~₹40)</li>
+                  <li>Panvel Toll (~₹100)</li>
+                  <li>Khalapur Toll (~₹180)</li>
+                  <li>Talegaon Toll (~₹90)</li>
+                  <li><strong>Total Tolls: ~₹560</strong> (all included)</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What if there is traffic on the expressway?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>If there's unexpected traffic, accidents, or roadwork on the expressway, your driver will use the fastest available route. During monsoon season (June-September), there may be speed restrictions in the ghat sections. Our drivers monitor real-time traffic and adjust routes for fastest arrival - no extra charges for delays or detours.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can we take a break during the journey?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, you can request rest stops at any of the popular facilities on the expressway:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>McDonald's Khopoli:</strong> 75 km from Mumbai, 70 km to Pune</li>
+                  <li><strong>Lonavala:</strong> Food courts, cafes (90 km from Mumbai)</li>
+                  <li><strong>Khandala:</strong> Scenic viewpoints and restaurants</li>
+                </ul>
+                <p class="mt-3">Breaks of up to 15-20 minutes are included in the journey time at no extra cost.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 3: Vehicle & Amenities -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">03.</span> Vehicle & Amenities
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What type of vehicles are available for Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">GreenEVCabs operates <strong>100% electric vehicles</strong> from 5-seater to 7-seater premium SUVs:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Vehicle</th>
+                        <th class="text-left p-2">Range</th>
+                        <th class="text-left p-2">Luggage</th>
+                        <th class="text-left p-2">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Citroen eC3</td>
+                        <td class="p-2">320 km</td>
+                        <td class="p-2">2 large bags</td>
+                        <td class="p-2"><strong>₹2,700</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">MG ZS EV</td>
+                        <td class="p-2">350 km</td>
+                        <td class="p-2">3 large bags</td>
+                        <td class="p-2"><strong>₹3,000</strong></td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Kia Carens EV</td>
+                        <td class="p-2">400+ km</td>
+                        <td class="p-2">4 large bags</td>
+                        <td class="p-2"><strong>₹3,700</strong></td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">BYD E-MAX 7</td>
+                        <td class="p-2">530 km</td>
+                        <td class="p-2">5+ large bags</td>
+                        <td class="p-2"><strong>₹4,200</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3">All vehicles are less than 2 years old, climate-controlled, and feature silent electric operation.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Will the electric cab have enough range to reach Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, absolutely. The Mumbai Airport to Pune journey is 148 km, and all our electric vehicles have a range of <strong>320+ km on a single charge</strong>. Even our entry-level Citroen eC3 (320 km range) can complete the journey with battery to spare. Premium vehicles like BYD E-MAX 7 have a range of 530 km - more than 3x the distance needed.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What amenities are provided in the cab?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">All GreenEVCabs vehicles come with premium amenities:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ <strong>Climate Control:</strong> Individual AC controls for front & rear</li>
+                  <li>✓ <strong>USB Charging Ports:</strong> Fast charging for phones/laptops</li>
+                  <li>✓ <strong>Ample Luggage Space:</strong> 2-5 large suitcases depending on vehicle</li>
+                  <li>✓ <strong>Silent Operation:</strong> Electric motors for peaceful travel</li>
+                  <li>✓ <strong>Comfortable Seating:</strong> Premium upholstery, ample legroom</li>
+                  <li>✓ <strong>Water Bottles:</strong> Complimentary bottled water</li>
+                  <li>✓ <strong>GPS Tracking:</strong> Live trip sharing with family</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I request a 7-seater for extra luggage?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, our 7-seater vehicles (Kia Carens EV at ₹3,700 or BYD E-MAX 7 at ₹4,200) are perfect for passengers with extra luggage. They can accommodate:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>4-5 large check-in suitcases (23-28 kg each)</li>
+                  <li>Multiple cabin bags/backpacks</li>
+                  <li>Golf bags, musical instruments, or bulky items</li>
+                </ul>
+                <p class="mt-3">Mention your luggage requirements while booking for the right vehicle assignment.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are the cabs clean and sanitized?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, all vehicles are thoroughly cleaned and sanitized after every trip. Our sanitization protocol includes:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Seat covers, armrests, and door handles disinfected</li>
+                  <li>Interior surfaces wiped with hospital-grade sanitizer</li>
+                  <li>Cabin air filter cleaned/replaced regularly</li>
+                  <li>Vehicle inspected before every airport pickup</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do your vehicles have charging stations for Mumbai to Pune route?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Our electric vehicles have sufficient range (320-530 km) to complete the Mumbai-Pune journey (148 km) without needing a charging stop. However, if you're traveling onwards from Pune or need a break, we can stop at EV charging stations in Lonavala or Talegaon at your request.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 4: Airport Pickup Process -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">04.</span> Airport Pickup Process
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How do I find my driver at Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Finding your driver is simple and hassle-free:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Step</th>
+                        <th class="text-left p-2">What Happens</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>1. Before Landing</strong></td>
+                        <td class="p-2">You receive driver details via WhatsApp (name, photo, car number, contact)</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>2. After Landing</strong></td>
+                        <td class="p-2">Driver tracks your flight and waits at arrivals gate with name board</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>3. Arrivals Exit</strong></td>
+                        <td class="p-2">Look for GreenEVCabs nameplate with your name at Terminal 1/2 arrivals</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>4. Assistance</strong></td>
+                        <td class="p-2">Driver helps with luggage and escorts you to the vehicle</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 text-sm text-muted-foreground">You can also call the driver directly if you can't locate them.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you track flight delays?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we provide <strong>complimentary real-time flight tracking</strong> for all Mumbai Airport pickups. If your flight is delayed by 30 minutes or 3 hours, our driver automatically adjusts arrival time. You don't need to inform us - we monitor it automatically. <strong>No waiting charges apply for flight delays.</strong></p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How long will the driver wait for me?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">We provide <strong>45 minutes of free waiting time</strong> from actual flight landing time:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>Domestic flights:</strong> 45 minutes from landing</li>
+                  <li><strong>International flights:</strong> 60 minutes from landing (for customs/immigration)</li>
+                </ul>
+                <p class="mt-3">Beyond the free waiting period, a nominal charge of ₹100 per 30 minutes applies. Most passengers comfortably exit within the free time.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What if my flight lands very early or very late?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>We operate <strong>24/7 service</strong> for all flight timings:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Red-eye flights (12 AM - 6 AM): Driver will be waiting</li>
+                  <li>Early morning arrivals (5 AM - 7 AM): Full service</li>
+                  <li>Late-night arrivals (10 PM - 12 AM): No issues</li>
+                </ul>
+                <p class="mt-3">No extra night charges. Rate starts from ₹2,700 regardless of pickup time.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide airport parking and meet & greet service?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, <strong>airport parking and meet & greet service are 100% included</strong> in the starting fare of ₹2,700. Our service includes:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ Airport parking charges paid by us (no extra cost)</li>
+                  <li>✓ Driver waits inside arrivals terminal with name board</li>
+                  <li>✓ Help with luggage trolley and loading bags</li>
+                  <li>✓ Escort to parking area</li>
+                </ul>
+                <p class="mt-3">You don't pay any airport fees separately.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What if I can't find the driver at the airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">If you can't locate the driver:</p>
+                <ol class="list-decimal ml-6 space-y-1">
+                  <li>Call the driver directly (number sent on WhatsApp before pickup)</li>
+                  <li>Call our 24/7 helpline: +91 74982 64215</li>
+                  <li>Send a WhatsApp message with your location</li>
+                </ol>
+                <p class="mt-3">In rare cases of driver issues, we arrange a replacement vehicle within 15-20 minutes at no extra charge.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 5: Pricing Comparison -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">05.</span> Pricing Comparison
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How does GreenEVCabs pricing compare to Uber/Ola for Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">GreenEVCabs offers <strong>up to 50% savings</strong> compared to Uber/Ola, especially during surge pricing:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Service</th>
+                        <th class="text-left p-2">Normal Price</th>
+                        <th class="text-left p-2">Surge Price</th>
+                        <th class="text-left p-2">Extras</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>GreenEVCabs</strong></td>
+                        <td class="p-2">₹2,700</td>
+                        <td class="p-2">₹2,700 (no surge)</td>
+                        <td class="p-2">All included</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Uber/Ola</td>
+                        <td class="p-2">₹4,500-5,500</td>
+                        <td class="p-2">₹6,000-10,000+</td>
+                        <td class="p-2">Tolls extra</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Traditional Taxi</td>
+                        <td class="p-2">₹5,000-6,000</td>
+                        <td class="p-2">₹7,000+</td>
+                        <td class="p-2">Negotiable</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3 text-sm text-muted-foreground">Plus, we guarantee no driver cancellations, which are common with Uber/Ola for long routes.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Why is GreenEVCabs cheaper than other electric cab services?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>We're cheaper because we operate our own fleet (no middleman margins) and electric vehicles have 60% lower running costs than diesel/petrol. We pass these savings directly to customers. Our ₹2,700 starting price is ₹500-800 cheaper than other EV services that charge ₹3,500-4,000.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are there any hidden charges or extra fees?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3"><strong>No hidden charges.</strong> Our fares starting from ₹2,700 include:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ All expressway tolls (~₹560)</li>
+                  <li>✓ Airport parking charges</li>
+                  <li>✓ Driver allowance/bata</li>
+                  <li>✓ Meet & greet service</li>
+                  <li>✓ Flight tracking</li>
+                  <li>✓ 45 minutes free waiting</li>
+                  <li>✓ GST (18%)</li>
+                </ul>
+                <p class="mt-3">The only additional charges that may apply: Excess waiting beyond 45 min (₹100/30 min), or detours/extra stops requested by you.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much does a Mumbai Airport to Pune cab cost with diesel/petrol cabs?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Traditional diesel/petrol cabs cost significantly more:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Regular diesel sedan (Dzire, Etios): ₹4,000-5,000</li>
+                  <li>SUV (Innova, Ertiga): ₹5,500-6,500</li>
+                  <li>Premium Innova Crysta: ₹7,000-8,000</li>
+                </ul>
+                <p class="mt-3">With GreenEVCabs, you save ₹1,300-3,500 and get a cleaner, quieter ride in a modern electric vehicle.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you charge extra for luggage?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>No, <strong>luggage is 100% free</strong> - we don't charge extra for bags. Our vehicles can accommodate:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>5-seater: 2-3 large check-in bags + cabin bags</li>
+                  <li>7-seater: 4-5 large check-in bags + cabin bags</li>
+                </ul>
+                <p class="mt-3">If you have oversized luggage (golf bags, bicycles, musical instruments), please mention it while booking so we assign the right vehicle.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 6: Corporate & Special Services -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">06.</span> Corporate & Special Services
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide corporate cab services for Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, we offer dedicated <strong>corporate cab solutions</strong> with special benefits:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ Monthly invoicing with GST for easy expense claims</li>
+                  <li>✓ Priority booking for urgent travel</li>
+                  <li>✓ Dedicated account manager</li>
+                  <li>✓ Volume discounts for 10+ rides/month</li>
+                  <li>✓ Detailed trip reports and analytics</li>
+                  <li>✓ Flexible payment terms (credit period available)</li>
+                </ul>
+                <p class="mt-3">Contact us for corporate rates and customized packages.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I book Mumbai Airport to Pune cab for my parents/family?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, you can easily book a cab for your parents, family members, or guests arriving at Mumbai Airport. Simply provide:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Passenger name and phone number</li>
+                  <li>Flight details (flight number, arrival time, terminal)</li>
+                  <li>Pune drop location</li>
+                </ul>
+                <p class="mt-3">You'll receive real-time GPS tracking link to monitor the journey. Many customers book for elderly parents - our drivers provide extra assistance with luggage and seating.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you offer multi-city packages (Mumbai-Pune-Mumbai)?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, we offer <strong>round-trip and multi-city packages</strong> at discounted rates:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Package</th>
+                        <th class="text-left p-2">Price (5-seater)</th>
+                        <th class="text-left p-2">Validity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2">Mumbai Airport → Pune → Mumbai Airport</td>
+                        <td class="p-2">₹5,000</td>
+                        <td class="p-2">Same day</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2">Round-trip (2-3 days gap)</td>
+                        <td class="p-2">₹5,400</td>
+                        <td class="p-2">3 days</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2">Weekly commute (4 trips)</td>
+                        <td class="p-2">₹10,000</td>
+                        <td class="p-2">7 days</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I hire a cab for Pune local sightseeing after airport pickup?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, you can extend your booking for Pune local sightseeing or errands after the airport pickup. Charges apply at ₹18/km for local usage within Pune. Popular add-ons include:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Pune city tour (Shaniwar Wada, Aga Khan Palace, etc.)</li>
+                  <li>Lonavala/Khandala detour (add ₹800)</li>
+                  <li>Drop at multiple locations in Pune</li>
+                </ul>
+                <p class="mt-3">Inform the driver at the start of the journey for seamless billing.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide services for events/weddings with airport pickup?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we handle <strong>bulk bookings for weddings, conferences, and events</strong> where guests arrive at Mumbai Airport and need transport to Pune. We can arrange:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>5-20 vehicles for simultaneous pickups</li>
+                  <li>Coordinated arrivals at venue</li>
+                  <li>Branded nameplates for event guests</li>
+                  <li>Special event pricing for bulk bookings</li>
+                </ul>
+                <p class="mt-3">Contact us at least 7 days in advance for event bookings.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 7: Why Electric Cabs -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">07.</span> Why Choose Electric Cabs
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What are the benefits of electric cabs vs diesel cabs for Mumbai-Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Electric cabs offer <strong>superior comfort and value</strong> compared to diesel vehicles:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Feature</th>
+                        <th class="text-left p-2">Electric Cab</th>
+                        <th class="text-left p-2">Diesel Cab</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Noise Level</strong></td>
+                        <td class="p-2">Silent (0 engine noise)</td>
+                        <td class="p-2">Noisy diesel engine</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Emissions</strong></td>
+                        <td class="p-2">Zero emissions</td>
+                        <td class="p-2">Harmful exhaust fumes</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Ride Quality</strong></td>
+                        <td class="p-2">Smooth, no vibrations</td>
+                        <td class="p-2">Engine vibrations</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>AC Performance</strong></td>
+                        <td class="p-2">Instant cooling</td>
+                        <td class="p-2">Delayed cooling</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Price</strong></td>
+                        <td class="p-2">From ₹2,700</td>
+                        <td class="p-2">₹4,000-6,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How much carbon footprint do I save by using electric cab?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">By choosing an electric cab from Mumbai Airport to Pune, you save:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>18-20 kg CO2 emissions</strong> compared to diesel cab (per trip)</li>
+                  <li>Equivalent to planting 2-3 trees</li>
+                  <li>Zero tailpipe emissions throughout the 148 km journey</li>
+                </ul>
+                <p class="mt-3">If you travel this route monthly, you save 240 kg CO2 per year - equivalent to a week of household electricity consumption.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are electric cabs safe for long-distance travel like Mumbai-Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, electric cabs are <strong>perfectly safe</strong> for long-distance expressway travel. Our EVs feature:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>5-star NCAP safety ratings (BYD E-MAX 7, Kia Carens)</li>
+                  <li>Low center of gravity (battery in floor) for better stability</li>
+                  <li>Advanced braking systems with regenerative braking</li>
+                  <li>Multiple airbags and crumple zones</li>
+                  <li>Regular maintenance checks before long trips</li>
+                </ul>
+                <p class="mt-3">Electric vehicles are proven safer in highway crashes due to structural rigidity from battery placement.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 8: Payment & Receipts -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">08.</span> Payment & Receipts
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What payment methods do you accept?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">We accept all convenient payment methods:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ <strong>UPI:</strong> GPay, PhonePe, Paytm (recommended)</li>
+                  <li>✓ <strong>Cash:</strong> Pay driver after journey</li>
+                  <li>✓ <strong>Credit/Debit Cards:</strong> All major cards accepted</li>
+                  <li>✓ <strong>Net Banking:</strong> NEFT/IMPS transfer</li>
+                  <li>✓ <strong>Corporate Invoice:</strong> Monthly billing for companies</li>
+                </ul>
+                <p class="mt-3">No advance payment required for most bookings.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Do you provide GST invoice for Mumbai Airport to Pune cab?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we provide <strong>GST invoices for all bookings</strong>. After journey completion, you'll receive:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Digital invoice via email/WhatsApp (within 24 hours)</li>
+                  <li>Company name: Soulputs Technology Solutions Pvt Ltd</li>
+                  <li>GSTIN number included</li>
+                  <li>Breakdown of fare + GST (18%)</li>
+                </ul>
+                <p class="mt-3">Perfect for corporate expense claims and tax filing.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I get a receipt for expense reimbursement?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, we provide detailed receipts suitable for corporate reimbursement. The receipt includes:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>Passenger name and company name (if provided)</li>
+                  <li>Route: Mumbai Airport (BOM) to [Your Pune Location]</li>
+                  <li>Date and time of travel</li>
+                  <li>Vehicle details and driver name</li>
+                  <li>Fare breakdown (base + tolls + GST)</li>
+                  <li>Company GST details</li>
+                </ul>
+                <p class="mt-3">Available as PDF via email or WhatsApp immediately after payment.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 9: Safety & Trust -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">09.</span> Safety & Trust
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Are your drivers verified and trustworthy?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, <strong>100% of our drivers are background-verified</strong> with:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>✓ Police verification and clearance certificate</li>
+                  <li>✓ Valid commercial driving license (badge)</li>
+                  <li>✓ 5+ years of professional driving experience</li>
+                  <li>✓ Expressway driving certification</li>
+                  <li>✓ Customer service training</li>
+                  <li>✓ English/Hindi communication skills</li>
+                </ul>
+                <p class="mt-3">All drivers wear company uniform and carry ID cards.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Is it safe to travel late at night from Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Yes, <strong>completely safe</strong>. We've safely transported thousands of solo travelers, women passengers, and families during late-night hours. Safety features include:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>GPS tracking - live location shared with family via link</li>
+                  <li>24/7 support helpline for emergencies</li>
+                  <li>Vehicle dashcam recording throughout journey</li>
+                  <li>Driver SOS button for roadside assistance</li>
+                  <li>Well-lit, well-patrolled Mumbai-Pune Expressway</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I track my cab in real-time during the journey?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, you receive a <strong>GPS tracking link</strong> at the start of the journey. This link allows you (and your family) to:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li>See real-time location on Google Maps</li>
+                  <li>Track route and estimated arrival time</li>
+                  <li>Share link with family for added security</li>
+                  <li>View driver details and vehicle number</li>
+                </ul>
+                <p class="mt-3">Works on all smartphones without installing any app.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">What if there is an emergency or breakdown during the journey?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">In the rare event of a breakdown or emergency:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>Immediate Response:</strong> Driver contacts our 24/7 control room</li>
+                  <li><strong>Backup Vehicle:</strong> Replacement cab dispatched within 30-45 minutes</li>
+                  <li><strong>Roadside Assistance:</strong> Tie-up with expressway emergency services</li>
+                  <li><strong>Your Safety First:</strong> Wait in safe location until replacement arrives</li>
+                </ul>
+                <p class="mt-3">In 50,000+ trips, we've had zero safety incidents due to our preventive maintenance and real-time monitoring.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <!-- Section 10: Comparison & Decision Help -->
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-blue-600">10.</span> Comparison & Decision Help
+          </h2>
+          <div class="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Should I take a cab or train from Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Here's a detailed comparison to help you decide:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Factor</th>
+                        <th class="text-left p-2">GreenEVCabs</th>
+                        <th class="text-left p-2">Train (Local + Intercity)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Total Time</strong></td>
+                        <td class="p-2">2.5-3 hours door-to-door</td>
+                        <td class="p-2">4-5 hours (Airport→Station→Pune)</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Luggage</strong></td>
+                        <td class="p-2">Loaded in cab trunk</td>
+                        <td class="p-2">Carry yourself, stairs</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Cost (solo)</strong></td>
+                        <td class="p-2">₹2,700</td>
+                        <td class="p-2">₹400-600 (AC chair car)</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Cost (2 people)</strong></td>
+                        <td class="p-2">₹2,700 (same)</td>
+                        <td class="p-2">₹800-1,200</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Late night</strong></td>
+                        <td class="p-2">Available 24/7</td>
+                        <td class="p-2">Limited trains after 10 PM</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Comfort</strong></td>
+                        <td class="p-2">Private AC cab</td>
+                        <td class="p-2">Crowded trains</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3"><strong>Recommendation:</strong> Cabs are better for 2+ people, late-night travel, heavy luggage, or if you value time and comfort. Trains work for solo budget travelers with minimal luggage.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Mumbai Airport (BOM) vs Navi Mumbai Airport (NMIA) - which is better for Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Comparison for Pune travelers:</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Factor</th>
+                        <th class="text-left p-2">Mumbai Airport (BOM)</th>
+                        <th class="text-left p-2">Navi Mumbai Airport (NMIA)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Distance to Pune</strong></td>
+                        <td class="p-2">148 km</td>
+                        <td class="p-2">110 km (40 km closer)</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Cab Fare</strong></td>
+                        <td class="p-2">From ₹2,700</td>
+                        <td class="p-2">From ₹2,300</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Journey Time</strong></td>
+                        <td class="p-2">2.5-3 hours</td>
+                        <td class="p-2">2-2.5 hours</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Flight Options</strong></td>
+                        <td class="p-2">Maximum (domestic + intl)</td>
+                        <td class="p-2">Limited (new airport)</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Traffic</strong></td>
+                        <td class="p-2">Heavy Mumbai traffic</td>
+                        <td class="p-2">Less traffic congestion</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3"><strong>Recommendation:</strong> If your destination has flights to both, prefer Navi Mumbai Airport - it's ₹400 cheaper and 30-45 min faster to reach Pune.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">GreenEVCabs vs GREL Cabs for Mumbai Airport to Pune - which is better?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Comparison with GREL Cabs (another popular service):</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border-collapse">
+                    <thead>
+                      <tr class="border-b">
+                        <th class="text-left p-2">Feature</th>
+                        <th class="text-left p-2">GreenEVCabs</th>
+                        <th class="text-left p-2">GREL Cabs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Vehicle Type</strong></td>
+                        <td class="p-2">100% Electric (Zero emission)</td>
+                        <td class="p-2">Diesel/Petrol</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Starting Price</strong></td>
+                        <td class="p-2">₹2,700</td>
+                        <td class="p-2">₹3,200-3,500</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Noise Level</strong></td>
+                        <td class="p-2">Silent electric</td>
+                        <td class="p-2">Engine noise</td>
+                      </tr>
+                      <tr class="border-b">
+                        <td class="p-2"><strong>Tolls Included</strong></td>
+                        <td class="p-2">Yes</td>
+                        <td class="p-2">Yes</td>
+                      </tr>
+                      <tr>
+                        <td class="p-2"><strong>Flight Tracking</strong></td>
+                        <td class="p-2">Yes, free</td>
+                        <td class="p-2">Yes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-3"><strong>Advantage GreenEVCabs:</strong> ₹500-800 cheaper, zero emissions, silent ride. Both services are reliable with professional drivers.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">How far in advance should I book Mumbai Airport to Pune cab?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Recommended booking timelines:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>Ideal:</strong> 24 hours in advance for guaranteed vehicle of your choice</li>
+                  <li><strong>Minimum:</strong> 6-8 hours for regular bookings</li>
+                  <li><strong>Last-minute:</strong> 2-3 hours (subject to availability)</li>
+                  <li><strong>Same-day:</strong> Possible if vehicles available, but not recommended</li>
+                </ul>
+                <p class="mt-3">For peak travel days (weekends, holidays), book 48+ hours in advance.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Can I stop for food/restroom break during Mumbai-Pune journey?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Yes, you can request rest stops. Popular stops include:</p>
+                <ul class="list-disc ml-6 space-y-1">
+                  <li><strong>McDonald's Khopoli:</strong> Midway point, clean restrooms</li>
+                  <li><strong>Lonavala:</strong> Multiple food options, famous chikki shops</li>
+                  <li><strong>Expressway Food Courts:</strong> Coffee, snacks</li>
+                </ul>
+                <p class="mt-3">Breaks of 15-20 minutes are included. Longer stops (30+ min) may attract nominal waiting charges of ₹100/30 min.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle class="text-xl">Why choose GreenEVCabs over other cab services for Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="mb-3">Top reasons customers choose us:</p>
+                <ol class="list-decimal ml-6 space-y-1">
+                  <li><strong>Best Price:</strong> From ₹2,700 (₹500-3,000 cheaper than competitors)</li>
+                  <li><strong>No Surge Pricing:</strong> Fixed rates even during peak hours/festivals</li>
+                  <li><strong>Premium Electric Vehicles:</strong> Silent, smooth, zero emissions</li>
+                  <li><strong>No Driver Cancellations:</strong> Guaranteed pickup (unlike Uber/Ola)</li>
+                  <li><strong>All-Inclusive Pricing:</strong> Tolls, parking, driver charges included</li>
+                  <li><strong>24/7 Service:</strong> Even for 2 AM or 5 AM flights</li>
+                  <li><strong>Flight Tracking:</strong> Driver adjusts for delays automatically</li>
+                  <li><strong>Professional Service:</strong> Verified drivers, GPS tracking, instant support</li>
+                </ol>
+                <p class="mt-3">Join 10,000+ satisfied customers who've made the switch to electric.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- CTA Section -->
+      <section class="mt-16">
+        <Card class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-0">
+          <CardContent class="pt-8 pb-8">
+            <div class="text-center">
+              <h2 class="text-3xl font-bold mb-4">Ready to Book Your Mumbai Airport Cab?</h2>
+              <p class="text-xl mb-6 text-blue-50">
+                Starting from ₹2,700 • 24/7 Service • Both Terminals • Premium Electric Vehicles
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                <a href="https://wa.me/917498264215?text=Book%20Mumbai%20Airport%20to%20Pune%20Cab" target="_blank">
+                  <Button size="lg" className="w-full sm:w-auto bg-white text-blue-700 hover:bg-blue-50">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    WhatsApp Booking
+                  </Button>
+                </a>
+                <a href="tel:+917498264215">
+                  <Button size="lg" className="w-full sm:w-auto bg-white/20 hover:bg-white/30 border-2 border-white text-white">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call: +91 74982 64215
+                  </Button>
+                </a>
+              </div>
+              <p class="text-sm text-blue-100">
+                ✓ T1 & T2 pickup ✓ Flight tracking ✓ 45 min free waiting ✓ No hidden charges
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <!-- Contact Info -->
+      <div class="mt-12 text-center text-sm text-muted-foreground">
+        <p><strong>Contact:</strong> WhatsApp/Phone: +91 74982 64215</p>
+        <p><strong>Email:</strong> greenevcabs@gmail.com</p>
+        <p><strong>Website:</strong> greenevcabs.com</p>
+        <p><strong>Terminals:</strong> T1 (Domestic) & T2 (International)</p>
+        <p class="mt-4">© 2025 GreenEVCabs - A brand of Soulputs Technology Solutions Pvt Ltd</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

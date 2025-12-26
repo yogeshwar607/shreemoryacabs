@@ -1,0 +1,203 @@
+---
+/**
+ * ServiceAreaMap Component
+ * Displays interactive map showing service coverage areas in Pune
+ */
+
+interface Props {
+  height?: string;
+  showRoute?: boolean;
+}
+
+const { height = "500px", showRoute = false } = Astro.props;
+
+// Service area markers (key Pune localities)
+const serviceLocations = [
+  { name: "Hinjewadi IT Park", lat: 18.5913, lng: 73.7389 },
+  { name: "Wakad", lat: 18.5974, lng: 73.7679 },
+  { name: "Baner", lat: 18.5590, lng: 73.7864 },
+  { name: "Aundh", lat: 18.5590, lng: 73.8073 },
+  { name: "Kharadi", lat: 18.5515, lng: 73.9475 },
+  { name: "Viman Nagar", lat: 18.5679, lng: 73.9143 },
+  { name: "Magarpatta", lat: 18.5157, lng: 73.9304 },
+  { name: "Hadapsar", lat: 18.5089, lng: 73.9260 },
+  { name: "Kothrud", lat: 18.5074, lng: 73.8077 },
+  { name: "Pimpri-Chinchwad", lat: 18.6298, lng: 73.7997 },
+];
+
+// NMIA coordinates
+const nmiaLocation = { name: "Navi Mumbai International Airport", lat: 19.0896, lng: 73.0291 };
+
+// Center map between Pune and NMIA
+const mapCenter = { lat: 18.8, lng: 73.4 };
+---
+
+<div class="service-area-map-container" style={`height: ${height}`}>
+  <div id="service-map" style="width: 100%; height: 100%; border-radius: 8px;"></div>
+</div>
+
+<script define:vars={{ serviceLocations, nmiaLocation, mapCenter, showRoute }}>
+  // Initialize map when Google Maps API is loaded
+  function initServiceMap() {
+    const map = new google.maps.Map(document.getElementById("service-map"), {
+      center: mapCenter,
+      zoom: showRoute ? 9 : 11,
+      mapTypeControl: true,
+      streetViewControl: false,
+      styles: [
+        {
+          featureType: "poi",
+          elementType: "labels",
+          stylers: [{ visibility: "off" }]
+        }
+      ]
+    });
+
+    // Custom marker icon for service areas (green)
+    const serviceIcon = {
+      path: google.maps.SymbolPath.CIRCLE,
+      fillColor: "#10B981",
+      fillOpacity: 0.9,
+      strokeColor: "#059669",
+      strokeWeight: 2,
+      scale: 8
+    };
+
+    // Custom marker icon for NMIA (blue)
+    const airportIcon = {
+      path: google.maps.SymbolPath.CIRCLE,
+      fillColor: "#3B82F6",
+      fillOpacity: 0.9,
+      strokeColor: "#2563EB",
+      strokeWeight: 2,
+      scale: 10
+    };
+
+    // Add service location markers
+    serviceLocations.forEach(location => {
+      const marker = new google.maps.Marker({
+        position: { lat: location.lat, lng: location.lng },
+        map: map,
+        title: location.name,
+        icon: serviceIcon,
+        animation: google.maps.Animation.DROP
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: `
+          <div style="padding: 8px; font-family: sans-serif;">
+            <h3 style="margin: 0 0 8px 0; font-size: 14px; font-weight: 600; color: #1F2937;">
+              ${location.name}
+            </h3>
+            <p style="margin: 0 0 4px 0; font-size: 12px; color: #6B7280;">
+              ✓ Service Available
+            </p>
+            <p style="margin: 0 0 8px 0; font-size: 12px; color: #059669; font-weight: 500;">
+              ₹3,700 to NMIA
+            </p>
+            <a href="https://wa.me/919145499009?text=I need a cab from ${encodeURIComponent(location.name)} to NMIA"
+               target="_blank"
+               style="display: inline-block; padding: 6px 12px; background: #10B981; color: white; text-decoration: none; border-radius: 4px; font-size: 12px; font-weight: 500;">
+              Book Now
+            </a>
+          </div>
+        `
+      });
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+    });
+
+    // Add NMIA marker
+    const nmiaMarker = new google.maps.Marker({
+      position: { lat: nmiaLocation.lat, lng: nmiaLocation.lng },
+      map: map,
+      title: nmiaLocation.name,
+      icon: airportIcon,
+      animation: google.maps.Animation.DROP
+    });
+
+    const nmiaInfoWindow = new google.maps.InfoWindow({
+      content: `
+        <div style="padding: 8px; font-family: sans-serif;">
+          <h3 style="margin: 0 0 8px 0; font-size: 14px; font-weight: 600; color: #1F2937;">
+            ✈️ Navi Mumbai International Airport
+          </h3>
+          <p style="margin: 0; font-size: 12px; color: #6B7280;">
+            Fixed ₹3,700 from any Pune locality
+          </p>
+        </div>
+      `
+    });
+
+    nmiaMarker.addListener("click", () => {
+      nmiaInfoWindow.open(map, nmiaMarker);
+    });
+
+    // Draw route if showRoute is true
+    if (showRoute) {
+      const routePath = [
+        { lat: 18.5590, lng: 73.7864 }, // Baner (sample start)
+        { lat: 18.5515, lng: 73.8520 }, // Pune-Mumbai Highway entry
+        { lat: 18.7200, lng: 73.4500 }, // Lonavala area
+        { lat: 18.9800, lng: 73.1200 }, // Panvel area
+        { lat: 19.0896, lng: 73.0291 }  // NMIA
+      ];
+
+      const routeLine = new google.maps.Polyline({
+        path: routePath,
+        geodesic: true,
+        strokeColor: "#10B981",
+        strokeOpacity: 0.8,
+        strokeWeight: 4
+      });
+
+      routeLine.setMap(map);
+    }
+
+    // Add service area circle around Pune
+    const puneCircle = new google.maps.Circle({
+      strokeColor: "#10B981",
+      strokeOpacity: 0.3,
+      strokeWeight: 2,
+      fillColor: "#10B981",
+      fillOpacity: 0.1,
+      map: map,
+      center: { lat: 18.5204, lng: 73.8567 },
+      radius: 25000 // 25km radius
+    });
+  }
+
+  // Load Google Maps API if not already loaded
+  if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+    const script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initServiceMap';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+    window.initServiceMap = initServiceMap;
+  } else {
+    // Already loaded, initialize immediately
+    initServiceMap();
+  }
+</script>
+
+<style>
+  .service-area-map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  /* Info window custom styles (injected via content) */
+  :global(.gm-style .gm-style-iw-c) {
+    padding: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  :global(.gm-style .gm-style-iw-d) {
+    overflow: hidden !important;
+  }
+</style>

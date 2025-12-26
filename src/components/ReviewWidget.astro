@@ -11,29 +11,29 @@ const { variant = "full" } = Astro.props;
 ---
 
 {variant === "full" ? (
-  <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200">
+  <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-green-200 dark:border-green-700">
     <div class="text-center mb-6">
       <div class="flex justify-center gap-1 mb-4">
-        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500" />
-        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500" />
-        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500" />
-        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500" />
-        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500" />
+        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+        <Star className="h-8 w-8 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
       </div>
-      <h3 class="text-2xl font-bold mb-2">Love Our Service?</h3>
-      <p class="text-lg text-gray-700 mb-6">
+      <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">Love Our Service?</h3>
+      <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
         Share your experience and help others discover eco-friendly electric cab travel!
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-4 mb-6">
-      <div class="bg-white p-4 rounded-lg">
-        <h4 class="font-semibold mb-2">⭐ 4.9/5 Rating</h4>
-        <p class="text-sm text-gray-600">Based on 1,247+ reviews</p>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">⭐ 4.9/5 Rating</h4>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Based on 1,247+ reviews</p>
       </div>
-      <div class="bg-white p-4 rounded-lg">
-        <h4 class="font-semibold mb-2">🎁 Get ₹100 Off</h4>
-        <p class="text-sm text-gray-600">On your next booking with review</p>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">🎁 Get ₹100 Off</h4>
+        <p class="text-sm text-gray-600 dark:text-gray-300">On your next booking with review</p>
       </div>
     </div>
 
@@ -44,29 +44,29 @@ const { variant = "full" } = Astro.props;
         </Button>
       </a>
       <a href="https://wa.me/919075020422?text=Hi%2C%20I%20want%20to%20share%20my%20feedback" target="_blank" rel="noopener">
-        <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+        <Button size="lg" variant="outline" className="border-2 border-green-600 dark:border-green-500 text-green-700 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/30 w-full sm:w-auto">
           💬 Share on WhatsApp
         </Button>
       </a>
     </div>
 
-    <p class="text-center text-sm text-gray-600 mt-6">
+    <p class="text-center text-sm text-gray-600 dark:text-gray-300 mt-6">
       Your feedback helps us improve and helps other travelers make informed decisions
     </p>
   </Card>
 ) : (
-  <Card className="p-6 bg-green-50 border-2 border-green-200">
+  <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-2 border-green-200 dark:border-green-700">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex-1">
         <div class="flex gap-1 mb-2">
-          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
+          <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 dark:text-yellow-400 dark:fill-yellow-400" />
         </div>
-        <h4 class="font-bold text-lg mb-1">Had a great trip?</h4>
-        <p class="text-sm text-gray-700">Share your review and get ₹100 off your next booking!</p>
+        <h4 class="font-bold text-lg mb-1 text-gray-900 dark:text-gray-100">Had a great trip?</h4>
+        <p class="text-sm text-gray-700 dark:text-gray-200">Share your review and get ₹100 off your next booking!</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-2">
         <a href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review" target="_blank" rel="noopener">

@@ -62,7 +62,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 			<!-- Quick Answer -->
 			<div class="not-prose my-8">
-				<Card class="bg-blue-50">
+				<Card class="bg-blue-50 dark:bg-blue-900/30">
 					<CardContent class="pt-6">
 						<p class="font-bold mb-3">Quick Monsoon Travel Summary:</p>
 						<div class="space-y-2 text-sm">
@@ -116,8 +116,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Good News: Expressway is Better Than City Routes in Rain</p>
 							<div class="grid md:grid-cols-2 gap-6 text-sm">
-								<div class="bg-green-50 p-4 rounded">
-									<p class="font-semibold text-green-700 mb-3">Expressway Advantages (Monsoon):</p>
+								<div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+									<p class="font-semibold text-green-700 dark:text-green-400 mb-3">Expressway Advantages (Monsoon):</p>
 									<ul class="space-y-2">
 										<li>✓ <strong>Excellent Drainage:</strong> Water clears within 15-20 min of rain stopping</li>
 										<li>✓ <strong>6-Lane Divided:</strong> Ample space, no oncoming traffic risk</li>
@@ -127,8 +127,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<li>✓ <strong>No Encroachments:</strong> Unlike city roads, clear path always</li>
 									</ul>
 								</div>
-								<div class="bg-orange-50 p-4 rounded">
-									<p class="font-semibold text-orange-700 mb-3">Challenges to Watch:</p>
+								<div class="bg-orange-50 dark:bg-orange-900/30 p-4 rounded">
+									<p class="font-semibold text-orange-700 dark:text-orange-400 mb-3">Challenges to Watch:</p>
 									<ul class="space-y-2">
 										<li>⚠ <strong>Lonavala Ghat Section:</strong> Reduced visibility in heavy fog + rain</li>
 										<li>⚠ <strong>High Speed Spray:</strong> Trucks create water spray, temporarily blocks view</li>
@@ -148,7 +148,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Route Segment</th>
 										<th class="text-left py-2 px-2">Distance</th>
 										<th class="text-left py-2 px-2">Monsoon Condition</th>
@@ -161,35 +161,35 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<td class="py-2 px-2"><strong>Pune City Exit</strong><br/>(Hinjewadi/Wakad → Expressway entry)</td>
 										<td class="py-2 px-2">5-10 km</td>
 										<td class="py-2 px-2">City road waterlogging possible</td>
-										<td class="py-2 px-2 bg-yellow-50">Medium</td>
+										<td class="py-2 px-2 bg-yellow-50 dark:bg-yellow-900/30">Medium</td>
 										<td class="py-2 px-2">Potholes after heavy rain, slow down</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>Expressway (Flat Section)</strong><br/>(Kiwale → Lonavala)</td>
 										<td class="py-2 px-2">40 km</td>
 										<td class="py-2 px-2">Excellent drainage, smooth</td>
-										<td class="py-2 px-2 bg-green-50">Low</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">Low</td>
 										<td class="py-2 px-2">Best section, 60-80 km/h safe speed</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>Lonavala Ghat</strong><br/>(Lonavala → Khandala tunnel)</td>
 										<td class="py-2 px-2">15 km</td>
 										<td class="py-2 px-2">Heavy fog + rain = low visibility</td>
-										<td class="py-2 px-2 bg-orange-50">Medium-High</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">Medium-High</td>
 										<td class="py-2 px-2">Drive slow (40-50 km/h), use fog lights</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>Mumbai Side Descent</strong><br/>(After tunnel → Panvel)</td>
 										<td class="py-2 px-2">35 km</td>
 										<td class="py-2 px-2">Generally good, occasional spray</td>
-										<td class="py-2 px-2 bg-green-50">Low</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">Low</td>
 										<td class="py-2 px-2">Watch for heavy vehicle spray</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>Panvel → NMIA</strong><br/>(Exit to airport)</td>
 										<td class="py-2 px-2">10 km</td>
 										<td class="py-2 px-2">New road, excellent condition</td>
-										<td class="py-2 px-2 bg-green-50">Very Low</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">Very Low</td>
 										<td class="py-2 px-2">Smooth approach to airport</td>
 									</tr>
 								</tbody>
@@ -211,7 +211,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Standard Travel Time Adjustments:</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Rain Intensity</th>
 										<th class="text-left py-2 px-2">Dry Season Time</th>
 										<th class="text-left py-2 px-2">Add Buffer</th>
@@ -220,28 +220,28 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="border-b bg-green-50">
+									<tr class="border-b bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>Light Rain / Drizzle</strong></td>
 										<td class="py-2 px-2">2 hours</td>
 										<td class="py-2 px-2">+15 minutes</td>
 										<td class="py-2 px-2">2h 15min</td>
 										<td class="py-2 px-2">2.5 hours before flight</td>
 									</tr>
-									<tr class="border-b bg-yellow-50">
+									<tr class="border-b bg-yellow-50 dark:bg-yellow-900/30">
 										<td class="py-2 px-2"><strong>Moderate Rain</strong></td>
 										<td class="py-2 px-2">2 hours</td>
 										<td class="py-2 px-2">+30 minutes</td>
 										<td class="py-2 px-2">2h 30min</td>
 										<td class="py-2 px-2">3 hours before flight</td>
 									</tr>
-									<tr class="border-b bg-orange-50">
+									<tr class="border-b bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>Heavy Rain</strong></td>
 										<td class="py-2 px-2">2 hours</td>
 										<td class="py-2 px-2">+45 minutes</td>
 										<td class="py-2 px-2">2h 45min</td>
 										<td class="py-2 px-2">3.5 hours before flight</td>
 									</tr>
-									<tr class="bg-red-50 font-semibold">
+									<tr class="bg-red-50 dark:bg-red-900/30 font-semibold">
 										<td class="py-2 px-2"><strong>Very Heavy / Storm</strong></td>
 										<td class="py-2 px-2">2 hours</td>
 										<td class="py-2 px-2">+60-90 minutes</td>
@@ -345,8 +345,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<Card>
 						<CardContent class="pt-6">
 							<div class="grid md:grid-cols-2 gap-6 text-sm">
-								<div class="bg-green-50 p-4 rounded">
-									<p class="font-bold text-green-700 mb-3">Electric Vehicle Rain Advantages:</p>
+								<div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+									<p class="font-bold text-green-700 dark:text-green-400 mb-3">Electric Vehicle Rain Advantages:</p>
 									<ul class="space-y-2">
 										<li>✓ <strong>Lower Center of Gravity:</strong> Battery pack at bottom = more stable, less rollover risk</li>
 										<li>✓ <strong>Better Traction Control:</strong> Electronic systems respond in milliseconds vs mechanical</li>
@@ -357,8 +357,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<li>✓ <strong>Quieter = Better Awareness:</strong> Driver hears rain intensity, can adjust speed accordingly</li>
 									</ul>
 								</div>
-								<div class="bg-orange-50 p-4 rounded">
-									<p class="font-bold text-orange-700 mb-3">Diesel Vehicle Rain Challenges:</p>
+								<div class="bg-orange-50 dark:bg-orange-900/30 p-4 rounded">
+									<p class="font-bold text-orange-700 dark:text-orange-400 mb-3">Diesel Vehicle Rain Challenges:</p>
 									<ul class="space-y-2">
 										<li>⚠ <strong>Higher Center of Gravity:</strong> Engine at front = less stable in corners during rain</li>
 										<li>⚠ <strong>Mechanical Traction Control:</strong> Slower response time to wheel slip</li>
@@ -376,7 +376,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Water Wading Capability</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Our Electric Vehicles: Water Wading Specs</p>
 							<div class="grid md:grid-cols-2 gap-6 text-sm">
@@ -417,7 +417,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Waterlogging-Prone Areas (During Heavy Rain):</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Location</th>
 										<th class="text-left py-2 px-2">Typical Depth</th>
 										<th class="text-left py-2 px-2">Alternate Route</th>
@@ -496,7 +496,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Speed Limits Based on Visibility:</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Visibility Range</th>
 										<th class="text-left py-2 px-2">Rain Intensity</th>
 										<th class="text-left py-2 px-2">Maximum Speed</th>
@@ -504,25 +504,25 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="border-b bg-green-50">
+									<tr class="border-b bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>200m+ visibility</strong></td>
 										<td class="py-2 px-2">Light rain</td>
 										<td class="py-2 px-2">80 km/h (expressway)</td>
 										<td class="py-2 px-2">Normal driving, wipers on</td>
 									</tr>
-									<tr class="border-b bg-yellow-50">
+									<tr class="border-b bg-yellow-50 dark:bg-yellow-900/30">
 										<td class="py-2 px-2"><strong>100-200m visibility</strong></td>
 										<td class="py-2 px-2">Moderate rain</td>
 										<td class="py-2 px-2">60 km/h</td>
 										<td class="py-2 px-2">Headlights on, increase following distance</td>
 									</tr>
-									<tr class="border-b bg-orange-50">
+									<tr class="border-b bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>50-100m visibility</strong></td>
 										<td class="py-2 px-2">Heavy rain</td>
 										<td class="py-2 px-2">40 km/h</td>
 										<td class="py-2 px-2">Hazard lights, stay in left lane</td>
 									</tr>
-									<tr class="bg-red-50 font-semibold">
+									<tr class="bg-red-50 dark:bg-red-900/30 font-semibold">
 										<td class="py-2 px-2"><strong>&lt;50m visibility</strong></td>
 										<td class="py-2 px-2">Very heavy rain/storm</td>
 										<td class="py-2 px-2">STOP at rest area</td>
@@ -537,7 +537,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Lonavala Ghat Section (Special Protocol)</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-orange-50">
+					<Card class="bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Ghat Sections: Rain + Fog = Extra Caution</p>
 							<div class="text-sm space-y-3">
@@ -625,7 +625,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<Card>
 						<CardContent class="pt-6">
 							<div class="space-y-4 text-sm">
-								<div class="border-l-4 border-l-red-500 pl-4 bg-red-50 p-3">
+								<div class="border-l-4 border-l-red-500 pl-4 bg-red-50 dark:bg-red-900/30 p-3">
 									<p class="font-semibold mb-2">Scenario 1: IMD Red Alert (Very Heavy Rainfall Warning)</p>
 									<p class="mb-2"><strong>Our Recommendation:</strong> Reschedule travel if possible. Red alert = 200mm+ rain in 24 hours = high risk.</p>
 									<p><strong>If Travel Unavoidable:</strong></p>
@@ -638,20 +638,20 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</ul>
 								</div>
 
-								<div class="border-l-4 border-l-orange-500 pl-4 bg-orange-50 p-3">
+								<div class="border-l-4 border-l-orange-500 pl-4 bg-orange-50 dark:bg-orange-900/30 p-3">
 									<p class="font-semibold mb-2">Scenario 2: Expressway Closure (Rare, but happened in 2021)</p>
 									<p class="mb-2"><strong>Backup Route:</strong> Old Mumbai-Pune Highway (NH48)</p>
 									<p><strong>Time Impact:</strong> 3.5-4 hours vs 2 hours on expressway</p>
 									<p><strong>Our Protocol:</strong></p>
 									<ul class="space-y-1 mt-2">
 										<li>• Immediate WhatsApp notification of closure + new route + revised ETA</li>
-										<li>• No extra charges (₹3,700 remains same even if old highway route taken)</li>
+										<li>• No extra charges (₹2,300 remains same even if old highway route taken)</li>
 										<li>• More frequent stops offered (old highway has villages, rest areas every 20 km)</li>
 										<li>• If flight at risk, we discuss options: reschedule flight, take alternate airport (Pune Airport)</li>
 									</ul>
 								</div>
 
-								<div class="border-l-4 border-l-blue-500 pl-4 bg-blue-50 p-3">
+								<div class="border-l-4 border-l-blue-500 pl-4 bg-blue-50 dark:bg-blue-900/30 p-3">
 									<p class="font-semibold mb-2">Scenario 3: Vehicle Breakdown (Extremely Rare with EVs, but protocol exists)</p>
 									<p class="mb-2"><strong>EV Advantage:</strong> 90% fewer moving parts than diesel = 90% less breakdown risk. But prepared anyway.</p>
 									<p><strong>Our Protocol:</strong></p>
@@ -671,7 +671,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Emergency Contact Information</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-red-50">
+					<Card class="bg-red-50 dark:bg-red-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">During Monsoon Travel, You Have:</p>
 							<ul class="text-sm space-y-2">
@@ -696,7 +696,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Month</th>
 										<th class="text-left py-2 px-2">Rain Pattern</th>
 										<th class="text-left py-2 px-2">Risk Level</th>
@@ -707,25 +707,25 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>June</strong></td>
 										<td class="py-2 px-2">Monsoon arrival, sudden heavy bursts</td>
-										<td class="py-2 px-2 bg-orange-50">High</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">High</td>
 										<td class="py-2 px-2">Add 60 min buffer, landslide risk in ghats</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>July</strong></td>
 										<td class="py-2 px-2">Peak monsoon, continuous heavy rain</td>
-										<td class="py-2 px-2 bg-red-50">Very High</td>
+										<td class="py-2 px-2 bg-red-50 dark:bg-red-900/30">Very High</td>
 										<td class="py-2 px-2">Add 90 min buffer, monitor IMD alerts daily</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>August</strong></td>
 										<td class="py-2 px-2">Sustained rain, occasional breaks</td>
-										<td class="py-2 px-2 bg-orange-50">High</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">High</td>
 										<td class="py-2 px-2">Add 45 min buffer, good travel windows exist</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>September</strong></td>
 										<td class="py-2 px-2">Monsoon retreat, intermittent showers</td>
-										<td class="py-2 px-2 bg-yellow-50">Medium</td>
+										<td class="py-2 px-2 bg-yellow-50 dark:bg-yellow-900/30">Medium</td>
 										<td class="py-2 px-2">Add 30 min buffer, conditions improving</td>
 									</tr>
 								</tbody>
@@ -741,7 +741,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<CardContent class="pt-6 text-center">
 						<h3 class="text-2xl font-bold mb-4">Book Monsoon-Ready Electric Cab to NMIA</h3>
 						<p class="mb-2">Safer EVs | Experienced Monsoon Drivers | Real-Time Weather Tracking</p>
-						<p class="text-sm mb-6 opacity-90">Fixed ₹3,700 rate | Free waiting during delays | 24/7 support</p>
+						<p class="text-sm mb-6 opacity-90">Fixed ₹2,300 rate | Free waiting during delays | 24/7 support</p>
 						<Button asChild size="lg" variant="secondary" class="w-full sm:w-auto">
 							<a href="https://wa.me/919145499009?text=I%20need%20a%20monsoon%20season%20cab%20from%20Pune%20to%20NMIA">
 								Book Monsoon Cab via WhatsApp →

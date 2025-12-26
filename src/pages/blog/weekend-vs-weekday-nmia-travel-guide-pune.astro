@@ -62,12 +62,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 			<!-- Quick Comparison -->
 			<div class="not-prose my-8">
-				<Card class="bg-green-50">
+				<Card class="bg-green-50 dark:bg-green-900/30">
 					<CardContent class="pt-6">
 						<p class="font-bold mb-3">Quick Comparison: Weekend vs Weekday</p>
 						<div class="grid md:grid-cols-2 gap-4 text-sm">
-							<div class="bg-blue-50 p-3 rounded">
-								<p class="font-semibold text-blue-700 mb-2">Weekday (Mon-Thu) Advantages:</p>
+							<div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded">
+								<p class="font-semibold text-blue-700 dark:text-blue-400 mb-2">Weekday (Mon-Thu) Advantages:</p>
 								<ul class="space-y-1">
 									<li>✓ More flight options (especially Bengaluru - 7 daily)</li>
 									<li>✓ Better for business travel (corporate billing)</li>
@@ -85,7 +85,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</ul>
 							</div>
 						</div>
-						<p class="mt-3 text-sm"><strong>Cab Rate:</strong> ₹3,700 flat rate (same for weekend and weekday!) | <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 font-semibold">Book via WhatsApp</a></p>
+						<p class="mt-3 text-sm"><strong>Cab Rate:</strong> ₹2,300 flat rate (same for weekend and weekday!) | <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA" class="text-green-600 font-semibold">Book via WhatsApp</a></p>
 					</CardContent>
 				</Card>
 			</div>
@@ -122,7 +122,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Pune City Exit Traffic (Weekday Mornings):</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Time Window</th>
 										<th class="text-left py-2 px-2">Hinjewadi/Wakad</th>
 										<th class="text-left py-2 px-2">Aundh/Baner</th>
@@ -131,42 +131,42 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="border-b bg-green-50">
+									<tr class="border-b bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>Before 7 AM</strong></td>
 										<td class="py-2 px-2">Clear (15 min)</td>
 										<td class="py-2 px-2">Clear (12 min)</td>
 										<td class="py-2 px-2">Clear (18 min)</td>
 										<td class="py-2 px-2">Fastest</td>
 									</tr>
-									<tr class="border-b bg-yellow-50">
+									<tr class="border-b bg-yellow-50 dark:bg-yellow-900/30">
 										<td class="py-2 px-2"><strong>7-9 AM</strong></td>
 										<td class="py-2 px-2">Heavy (35 min)</td>
 										<td class="py-2 px-2">Moderate (20 min)</td>
 										<td class="py-2 px-2">Heavy (40 min)</td>
 										<td class="py-2 px-2">+20 min delay</td>
 									</tr>
-									<tr class="border-b bg-orange-50">
+									<tr class="border-b bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>9-11 AM</strong></td>
 										<td class="py-2 px-2">Reducing (25 min)</td>
 										<td class="py-2 px-2">Light (15 min)</td>
 										<td class="py-2 px-2">Moderate (25 min)</td>
 										<td class="py-2 px-2">+10 min delay</td>
 									</tr>
-									<tr class="border-b bg-green-50">
+									<tr class="border-b bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>11 AM-5 PM</strong></td>
 										<td class="py-2 px-2">Clear (15 min)</td>
 										<td class="py-2 px-2">Clear (12 min)</td>
 										<td class="py-2 px-2">Light (20 min)</td>
 										<td class="py-2 px-2">Normal</td>
 									</tr>
-									<tr class="border-b bg-orange-50">
+									<tr class="border-b bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>5-9 PM</strong></td>
 										<td class="py-2 px-2">Very Heavy (45 min)</td>
 										<td class="py-2 px-2">Heavy (30 min)</td>
 										<td class="py-2 px-2">Heavy (35 min)</td>
 										<td class="py-2 px-2">+30 min delay</td>
 									</tr>
-									<tr class="bg-green-50">
+									<tr class="bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>After 9 PM</strong></td>
 										<td class="py-2 px-2">Clear (15 min)</td>
 										<td class="py-2 px-2">Clear (12 min)</td>
@@ -207,12 +207,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										</ul>
 									</div>
 								</div>
-								<div class="bg-white p-3 rounded mt-3">
+								<div class="bg-white dark:bg-gray-800 p-3 rounded mt-3">
 									<p class="font-bold mb-2">Weekend Time Savings:</p>
 									<ul class="space-y-1">
 										<li>• Hinjewadi to NMIA: <strong>1h 50min</strong> (vs 2h 20min weekday morning)</li>
 										<li>• Kharadi to NMIA: <strong>2h 15min</strong> (vs 2h 50min weekday morning)</li>
-										<li>• <span class="text-green-700 font-semibold">Average savings: 30-35 minutes on weekend vs weekday peak hours</span></li>
+										<li>• <span class="text-green-700 dark:text-green-400 font-semibold">Average savings: 30-35 minutes on weekend vs weekday peak hours</span></li>
 									</ul>
 								</div>
 							</div>
@@ -233,7 +233,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">NMIA to Bengaluru (Most Popular Route for Pune Travelers):</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Day Type</th>
 										<th class="text-left py-2 px-2">Total Daily Flights</th>
 										<th class="text-left py-2 px-2">Morning (6-11 AM)</th>
@@ -243,7 +243,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="border-b bg-blue-50">
+									<tr class="border-b bg-blue-50 dark:bg-blue-900/30">
 										<td class="py-2 px-2"><strong>Monday-Thursday</strong></td>
 										<td class="py-2 px-2 font-semibold">7 flights</td>
 										<td class="py-2 px-2">3 flights</td>
@@ -265,7 +265,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<td class="py-2 px-2">2 flights</td>
 										<td class="py-2 px-2">2 flights</td>
 										<td class="py-2 px-2">1 flight</td>
-										<td class="py-2 px-2 text-orange-600">₹5,000-6,000</td>
+										<td class="py-2 px-2 text-orange-600">₹2,900-6,000</td>
 									</tr>
 									<tr class="bg-purple-50">
 										<td class="py-2 px-2"><strong>Sunday</strong></td>
@@ -285,7 +285,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<h3 class="text-2xl font-semibold mt-8 mb-4">Why Weekday Has More/Cheaper Flights</h3>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<div class="text-sm space-y-3">
 								<p class="font-bold">Business Travel Demand Pattern:</p>
@@ -297,7 +297,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								</ul>
 								<p class="font-bold mt-4">Airlines' Strategy:</p>
 								<p>More flights on weekdays = capture business travelers (price-insensitive, consistent demand). Fewer weekend flights = maintain high fares for leisure travelers (price-sensitive but will pay for convenience).</p>
-								<p class="font-semibold text-blue-700 mt-3">Tip: Book weekend flights 3-4 weeks early for better prices (₹4,500 vs ₹7,000 last-minute)</p>
+								<p class="font-semibold text-blue-700 dark:text-blue-400 mt-3">Tip: Book weekend flights 3-4 weeks early for better prices (₹4,500 vs ₹7,000 last-minute)</p>
 							</div>
 						</CardContent>
 					</Card>
@@ -315,7 +315,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 						<CardContent class="pt-6">
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Departure Time</th>
 										<th class="text-left py-2 px-2">Weekday Journey</th>
 										<th class="text-left py-2 px-2">Weekend Journey</th>
@@ -326,40 +326,40 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								<tbody>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>5:00 AM</strong></td>
-										<td class="py-2 px-2 bg-green-50">2h 00min</td>
-										<td class="py-2 px-2 bg-green-50">1h 50min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">2h 00min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">1h 50min</td>
 										<td class="py-2 px-2">10 min saved</td>
 										<td class="py-2 px-2">Early flights (7-8 AM)</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>7:00 AM</strong></td>
-										<td class="py-2 px-2 bg-orange-50">2h 30min</td>
-										<td class="py-2 px-2 bg-green-50">1h 55min</td>
+										<td class="py-2 px-2 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">2h 30min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">1h 55min</td>
 										<td class="py-2 px-2 font-semibold text-green-600">35 min saved!</td>
 										<td class="py-2 px-2">Mid-morning flights (9-10 AM)</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>10:00 AM</strong></td>
-										<td class="py-2 px-2 bg-yellow-50">2h 10min</td>
-										<td class="py-2 px-2 bg-green-50">1h 50min</td>
+										<td class="py-2 px-2 bg-yellow-50 dark:bg-yellow-900/30">2h 10min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">1h 50min</td>
 										<td class="py-2 px-2">20 min saved</td>
 										<td class="py-2 px-2">Afternoon flights (12-2 PM)</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>2:00 PM</strong></td>
-										<td class="py-2 px-2 bg-green-50">2h 00min</td>
-										<td class="py-2 px-2 bg-green-50">1h 50min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">2h 00min</td>
+										<td class="py-2 px-2 bg-green-50 dark:bg-green-900/30">1h 50min</td>
 										<td class="py-2 px-2">10 min saved</td>
 										<td class="py-2 px-2">Evening flights (4-6 PM)</td>
 									</tr>
 									<tr class="border-b">
 										<td class="py-2 px-2"><strong>5:00 PM</strong></td>
-										<td class="py-2 px-2 bg-red-50">2h 40min</td>
-										<td class="py-2 px-2 bg-yellow-50">2h 05min</td>
+										<td class="py-2 px-2 bg-red-50 dark:bg-red-900/30">2h 40min</td>
+										<td class="py-2 px-2 bg-yellow-50 dark:bg-yellow-900/30">2h 05min</td>
 										<td class="py-2 px-2 font-semibold text-green-600">35 min saved!</td>
 										<td class="py-2 px-2">Late evening flights (7-9 PM)</td>
 									</tr>
-									<tr class="bg-green-50">
+									<tr class="bg-green-50 dark:bg-green-900/30">
 										<td class="py-2 px-2"><strong>9:00 PM</strong></td>
 										<td class="py-2 px-2">1h 55min</td>
 										<td class="py-2 px-2">1h 50min</td>
@@ -382,7 +382,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<Card>
 						<CardContent class="pt-6">
 							<div class="space-y-6 text-sm">
-								<div class="border-l-4 border-l-blue-500 pl-4 bg-blue-50 p-3">
+								<div class="border-l-4 border-l-blue-500 pl-4 bg-blue-50 dark:bg-blue-900/30 p-3">
 									<p class="font-bold text-lg mb-2">Business Travel → Weekday (Monday-Thursday)</p>
 									<p class="mb-2"><strong>Why Weekday is Better:</strong></p>
 									<ul class="space-y-1">
@@ -393,7 +393,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										<li>✓ Can work during cab ride (quiet electric vehicle, WiFi available)</li>
 										<li>✓ Same-day return options available (morning flight, return evening)</li>
 									</ul>
-									<p class="mt-3 italic">Example: TCS consultant traveling Pune → Bengaluru Monday for week-long client project. Chooses Monday 6:30 AM flight (₹4,200), cab pickup 3:45 AM, smooth journey.</p>
+									<p class="mt-3 italic">Example: TCS consultant traveling Pune → Bengaluru Monday for week-long client project. Chooses Monday 6:30 AM flight (₹2,600), cab pickup 3:45 AM, smooth journey.</p>
 								</div>
 
 								<div class="border-l-4 border-l-purple-500 pl-4 bg-purple-50 p-3">
@@ -409,7 +409,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									<p class="mt-3 italic">Example: Family of 4 going to Goa for weekend getaway. Choose Sunday 10 AM flight, cab pickup 7:30 AM, kids sleep during smooth journey, reach Goa noon refreshed.</p>
 								</div>
 
-								<div class="border-l-4 border-l-green-500 pl-4 bg-green-50 p-3">
+								<div class="border-l-4 border-l-green-500 pl-4 bg-green-50 dark:bg-green-900/30 p-3">
 									<p class="font-bold text-lg mb-2">Weekly Commuter → Monday Outbound, Friday Return</p>
 									<p class="mb-2"><strong>Optimal Pattern:</strong></p>
 									<ul class="space-y-1">
@@ -421,7 +421,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									<p class="mt-3 italic">Example: Software architect at Zensar Pune, Bengaluru office Mon-Thu. Fixed schedule: Monday 6 AM flight, Friday 8 PM return. Pre-booked recurring cabs (₹7,400/week both ways).</p>
 								</div>
 
-								<div class="border-l-4 border-l-orange-500 pl-4 bg-orange-50 p-3">
+								<div class="border-l-4 border-l-orange-500 pl-4 bg-orange-50 dark:bg-orange-900/30 p-3">
 									<p class="font-bold text-lg mb-2">Same-Day Round Trip → Tuesday-Thursday</p>
 									<p class="mb-2"><strong>Why Mid-Week is Ideal:</strong></p>
 									<ul class="space-y-1">
@@ -447,7 +447,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				</p>
 
 				<div class="not-prose my-6">
-					<Card class="bg-yellow-50">
+					<Card class="bg-yellow-50 dark:bg-yellow-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Friday Traffic Pattern (Unique Challenges):</p>
 							<div class="text-sm space-y-3">
@@ -471,7 +471,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 										</ul>
 									</div>
 								</div>
-								<div class="bg-white p-3 rounded mt-3">
+								<div class="bg-white dark:bg-gray-800 p-3 rounded mt-3">
 									<p class="font-semibold mb-2">Evening (5-9 PM): ⚠️ WORST FRIDAY WINDOW</p>
 									<ul class="space-y-1">
 										<li>• Office + Weekend outbound traffic combined</li>
@@ -517,7 +517,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 							<p class="font-bold mb-3">Total Cost Per Person (Pune → NMIA → Bengaluru):</p>
 							<table class="w-full text-sm">
 								<thead>
-									<tr class="border-b bg-gray-50">
+									<tr class="border-b bg-gray-50 dark:bg-gray-800">
 										<th class="text-left py-2 px-2">Day</th>
 										<th class="text-left py-2 px-2">Cab (solo)</th>
 										<th class="text-left py-2 px-2">Flight (avg)</th>
@@ -528,49 +528,49 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 								<tbody>
 									<tr class="border-b bg-green-100">
 										<td class="py-2 px-2"><strong>Monday-Thursday</strong></td>
-										<td class="py-2 px-2">₹3,700</td>
-										<td class="py-2 px-2">₹4,200</td>
-										<td class="py-2 px-2 font-semibold text-green-700">₹7,900</td>
-										<td class="py-2 px-2">₹5,125 (₹925 cab + ₹4,200 flight)</td>
+										<td class="py-2 px-2">₹2,300</td>
+										<td class="py-2 px-2">₹2,600</td>
+										<td class="py-2 px-2 font-semibold text-green-700 dark:text-green-400">₹7,900</td>
+										<td class="py-2 px-2">₹5,125 (₹925 cab + ₹2,600 flight)</td>
 									</tr>
-									<tr class="border-b bg-yellow-50">
+									<tr class="border-b bg-yellow-50 dark:bg-yellow-900/30">
 										<td class="py-2 px-2"><strong>Friday</strong></td>
-										<td class="py-2 px-2">₹3,700</td>
+										<td class="py-2 px-2">₹2,300</td>
 										<td class="py-2 px-2">₹6,000</td>
 										<td class="py-2 px-2 font-semibold text-orange-600">₹9,700</td>
 										<td class="py-2 px-2">₹6,925 (₹925 cab + ₹6,000 flight)</td>
 									</tr>
-									<tr class="border-b bg-orange-50">
+									<tr class="border-b bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>Saturday</strong></td>
-										<td class="py-2 px-2">₹3,700</td>
+										<td class="py-2 px-2">₹2,300</td>
 										<td class="py-2 px-2">₹5,500</td>
 										<td class="py-2 px-2 font-semibold text-orange-700">₹9,200</td>
 										<td class="py-2 px-2">₹6,425 (₹925 cab + ₹5,500 flight)</td>
 									</tr>
-									<tr class="bg-orange-50">
+									<tr class="bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
 										<td class="py-2 px-2"><strong>Sunday</strong></td>
-										<td class="py-2 px-2">₹3,700</td>
+										<td class="py-2 px-2">₹2,300</td>
 										<td class="py-2 px-2">₹6,500</td>
-										<td class="py-2 px-2 font-semibold text-red-700">₹10,200</td>
+										<td class="py-2 px-2 font-semibold text-red-700 dark:text-red-400">₹10,200</td>
 										<td class="py-2 px-2">₹7,425 (₹925 cab + ₹6,500 flight)</td>
 									</tr>
 								</tbody>
 							</table>
-							<p class="text-xs mt-3 text-muted-foreground">Cab cost is same ₹3,700 regardless of day. Flight prices vary significantly. Sharing cab with colleagues/friends dramatically reduces per-person cost.</p>
+							<p class="text-xs mt-3 text-muted-foreground">Cab cost is same ₹2,300 regardless of day. Flight prices vary significantly. Sharing cab with colleagues/friends dramatically reduces per-person cost.</p>
 						</CardContent>
 					</Card>
 				</div>
 
 				<div class="not-prose my-6">
-					<Card class="bg-blue-50">
+					<Card class="bg-blue-50 dark:bg-blue-900/30">
 						<CardContent class="pt-6">
 							<p class="font-bold mb-3">Smart Cost Optimization Strategies:</p>
 							<div class="text-sm space-y-2">
 								<p><strong>1. Flexible Date Booking:</strong> Check flight prices for Mon-Thu. Often ₹2,000 cheaper than Fri-Sun. If you can choose dates, pick Tuesday/Wednesday.</p>
-								<p><strong>2. Group Cab Sharing:</strong> If 3-4 colleagues traveling same day, share one cab = ₹925/person instead of ₹3,700. Company saves ₹11,100 (4 people × ₹3,700 - ₹3,700 shared).</p>
+								<p><strong>2. Group Cab Sharing:</strong> If 3-4 colleagues traveling same day, share one cab = ₹925/person instead of ₹2,300. Company saves ₹11,100 (4 people × ₹2,300 - ₹2,300 shared).</p>
 								<p><strong>3. Friday Morning vs Evening:</strong> If traveling Friday, choose morning flight (₹4,500) instead of evening (₹6,500) = save ₹2,000.</p>
 								<p><strong>4. Book Flights Early:</strong> Weekend flights booked 3-4 weeks ahead: ₹4,500-5,000. Last-minute weekend: ₹7,000-8,000.</p>
-								<p class="font-bold mt-3 text-blue-700">Combined Strategy Example: 4 colleagues book Tuesday flight 4 weeks early + share cab = ₹925 cab + ₹3,800 flight = ₹4,725 total per person (vs ₹10,200 last-minute Sunday solo!)</p>
+								<p class="font-bold mt-3 text-blue-700 dark:text-blue-400">Combined Strategy Example: 4 colleagues book Tuesday flight 4 weeks early + share cab = ₹925 cab + ₹3,800 flight = ₹4,725 total per person (vs ₹10,200 last-minute Sunday solo!)</p>
 							</div>
 						</CardContent>
 					</Card>
@@ -585,12 +585,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 					<Card>
 						<CardContent class="pt-6">
 							<div class="space-y-4 text-sm">
-								<div class="bg-blue-50 p-4 rounded">
-									<p class="font-bold text-blue-700 mb-2">Weekday Business Travel Booking:</p>
+								<div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded">
+									<p class="font-bold text-blue-700 dark:text-blue-400 mb-2">Weekday Business Travel Booking:</p>
 									<ol class="space-y-2">
 										<li><strong>1. Book Flight First:</strong> Lock in good weekday price (₹4,000-4,500)</li>
 										<li><strong>2. Book Cab 24-48 Hours Before:</strong> Flexibility to adjust pickup time based on traffic/weather</li>
-										<li><strong>3. Share with Colleagues:</strong> Check if anyone traveling same day (split ₹3,700)</li>
+										<li><strong>3. Share with Colleagues:</strong> Check if anyone traveling same day (split ₹2,300)</li>
 										<li><strong>4. Choose Pickup Time:</strong> Avoid 7-9 AM city traffic (pick 5-6 AM or 10-11 AM departures)</li>
 										<li><strong>5. Corporate Billing:</strong> If company has account, mention during booking (smoother expense process)</li>
 									</ol>
@@ -607,10 +607,10 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 									</ol>
 								</div>
 
-								<div class="bg-green-50 p-4 rounded">
-									<p class="font-bold text-green-700 mb-2">Friday Travel Booking (If Unavoidable):</p>
+								<div class="bg-green-50 dark:bg-green-900/30 p-4 rounded">
+									<p class="font-bold text-green-700 dark:text-green-400 mb-2">Friday Travel Booking (If Unavoidable):</p>
 									<ol class="space-y-2">
-										<li><strong>1. Choose Morning Flight:</strong> 6-10 AM flights cheaper (₹5,000 vs ₹6,500 evening)</li>
+										<li><strong>1. Choose Morning Flight:</strong> 6-10 AM flights cheaper (₹2,900 vs ₹6,500 evening)</li>
 										<li><strong>2. Extra Early Cab Pickup:</strong> Add 30 min buffer for unpredictable Friday traffic</li>
 										<li><strong>3. Avoid 5-8 PM Departures:</strong> Worst traffic window, may miss flight</li>
 										<li><strong>4. Book Cab 2-3 Days Early:</strong> Friday is high-demand day for cabs</li>
@@ -681,7 +681,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 				<Card class="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
 					<CardContent class="pt-6 text-center">
 						<h3 class="text-2xl font-bold mb-4">Book Your NMIA Cab - Any Day, Same Great Price</h3>
-						<p class="mb-2">₹3,700 flat rate | Weekday or Weekend | Professional Drivers | Electric Vehicles</p>
+						<p class="mb-2">₹2,300 flat rate | Weekday or Weekend | Professional Drivers | Electric Vehicles</p>
 						<p class="text-sm mb-6 opacity-90">Book now for any day: Monday to Sunday, all same price!</p>
 						<Button asChild size="lg" variant="secondary" class="w-full sm:w-auto">
 							<a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20from%20Pune%20to%20NMIA">

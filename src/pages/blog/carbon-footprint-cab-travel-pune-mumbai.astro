@@ -85,7 +85,7 @@ const faqSchema = {
           <Leaf className="h-6 w-6" />
         </div>
         <div class="flex-1">
-          <h2 class="text-xl font-bold text-gray-900 mb-2">Environmental Impact: Quick Facts</h2>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Environmental Impact: Quick Facts</h2>
           <div class="grid md:grid-cols-2 gap-3 text-sm">
             <div>
               <p class="font-semibold mb-2">Diesel Cab (Pune-Mumbai)</p>
@@ -105,8 +105,8 @@ const faqSchema = {
             </div>
           </div>
           <div class="mt-4 p-3 bg-green-100 rounded">
-            <p class="font-bold text-green-800">You Save: 18-20 kg CO2 per trip by choosing electric!</p>
-            <p class="text-sm text-green-700">That is equivalent to planting half a tree per trip.</p>
+            <p class="font-bold text-green-800 dark:text-green-300">You Save: 18-20 kg CO2 per trip by choosing electric!</p>
+            <p class="text-sm text-green-700 dark:text-green-400">That is equivalent to planting half a tree per trip.</p>
           </div>
         </div>
       </div>
@@ -115,10 +115,10 @@ const faqSchema = {
     <!-- Article Header -->
     <header class="mb-8">
       <Badge className="mb-4">Environmental Impact</Badge>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
         Carbon Footprint of Cab Travel: Pune Edition
       </h1>
-      <p class="text-xl text-gray-600 mb-4">
+      <p class="text-xl text-gray-600 dark:text-gray-300 mb-4">
         Exact emissions data comparing electric vs diesel cabs for Pune-Mumbai travel. Real numbers, environmental impact, and your climate contribution.
       </p>
       <div class="flex flex-wrap gap-2 mb-4">
@@ -134,9 +134,9 @@ const faqSchema = {
 
       <!-- The Numbers -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Numbers: Exact Emissions Comparison</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">The Numbers: Exact Emissions Comparison</h2>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 dark:text-gray-200 mb-6">
           Let us cut through greenwashing and show you real, verified emissions data for Pune-Mumbai cab travel. Based on actual measurements and industry-standard calculations.
         </p>
 
@@ -144,54 +144,54 @@ const faqSchema = {
           <table class="w-full border-collapse">
             <thead>
               <tr class="bg-gray-100">
-                <th class="border border-gray-300 p-3 text-left font-semibold">Transport Mode</th>
-                <th class="border border-gray-300 p-3 text-center font-semibold">CO2 per Trip<br/>(130 km)</th>
-                <th class="border border-gray-300 p-3 text-center font-semibold">Per Passenger<br/>(4 people)</th>
-                <th class="border border-gray-300 p-3 text-center font-semibold">Other Pollutants</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">Transport Mode</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold">CO2 per Trip<br/>(130 km)</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold">Per Passenger<br/>(4 people)</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-center font-semibold">Other Pollutants</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-red-50">
-                <td class="border border-gray-300 p-3"><strong>Diesel Cab (Innova)</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold text-red-700">24-28 kg</td>
-                <td class="border border-gray-300 p-3 text-center">6-7 kg</td>
-                <td class="border border-gray-300 p-3 text-center text-sm">High NOx, PM2.5, CO</td>
+              <tr class="bg-red-50 dark:bg-red-900/30">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Diesel Cab (Innova)</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold text-red-700 dark:text-red-400">24-28 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">6-7 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-sm">High NOx, PM2.5, CO</td>
               </tr>
-              <tr class="bg-green-50">
-                <td class="border border-gray-300 p-3"><strong>Electric Cab (BYD/Kia EV)</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold text-green-700">6-8 kg</td>
-                <td class="border border-gray-300 p-3 text-center">1.5-2 kg</td>
-                <td class="border border-gray-300 p-3 text-center text-sm">Zero direct emissions</td>
+              <tr class="bg-green-50 dark:bg-green-900/30">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Electric Cab (BYD/Kia EV)</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold text-green-700 dark:text-green-400">6-8 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">1.5-2 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-sm">Zero direct emissions</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="border border-gray-300 p-3"><strong>Train (AC/Non-AC)</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold">3-4 kg</td>
-                <td class="border border-gray-300 p-3 text-center">3-4 kg</td>
-                <td class="border border-gray-300 p-3 text-center text-sm">Low</td>
+              <tr class="bg-gray-50 dark:bg-gray-800">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Train (AC/Non-AC)</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">3-4 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">3-4 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-sm">Low</td>
               </tr>
               <tr>
-                <td class="border border-gray-300 p-3"><strong>Bus (Diesel)</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold">5-7 kg</td>
-                <td class="border border-gray-300 p-3 text-center">5-7 kg</td>
-                <td class="border border-gray-300 p-3 text-center text-sm">Moderate NOx, PM</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Bus (Diesel)</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">5-7 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">5-7 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-sm">Moderate NOx, PM</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="border border-gray-300 p-3"><strong>Petrol Cab (Sedan)</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold">22-26 kg</td>
-                <td class="border border-gray-300 p-3 text-center">5.5-6.5 kg</td>
-                <td class="border border-gray-300 p-3 text-center text-sm">Moderate NOx, CO</td>
+              <tr class="bg-gray-50 dark:bg-gray-800">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Petrol Cab (Sedan)</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">22-26 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">5.5-6.5 kg</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center text-sm">Moderate NOx, CO</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <Card className="p-6 bg-red-50 border-red-200">
+          <Card className="p-6 bg-red-50 dark:bg-red-900/30 border-red-200">
             <div class="flex items-center gap-2 mb-3">
               <TrendingUp className="h-6 w-6 text-red-600" />
               <h3 class="font-bold text-lg">Diesel Cab Impact</h3>
             </div>
-            <ul class="text-sm text-gray-700 space-y-2">
+            <ul class="text-sm text-gray-700 dark:text-gray-200 space-y-2">
               <li>• <strong>24-28 kg CO2</strong> per Pune-Mumbai trip</li>
               <li>• <strong>288-336 kg CO2</strong> per year (monthly trips)</li>
               <li>• Equivalent to <strong>13-15 trees</strong> needed to offset</li>
@@ -200,12 +200,12 @@ const faqSchema = {
             </ul>
           </Card>
 
-          <Card className="p-6 bg-green-50 border-green-200">
+          <Card className="p-6 bg-green-50 dark:bg-green-900/30 border-green-200">
             <div class="flex items-center gap-2 mb-3">
               <TrendingDown className="h-6 w-6 text-green-600" />
               <h3 class="font-bold text-lg">Electric Cab Impact</h3>
             </div>
-            <ul class="text-sm text-gray-700 space-y-2">
+            <ul class="text-sm text-gray-700 dark:text-gray-200 space-y-2">
               <li>• <strong>6-8 kg CO2</strong> per Pune-Mumbai trip</li>
               <li>• <strong>72-96 kg CO2</strong> per year (monthly trips)</li>
               <li>• Equivalent to <strong>3-4 trees</strong> needed to offset</li>
@@ -216,18 +216,18 @@ const faqSchema = {
         </div>
 
         <Card className="p-6 mt-6 bg-gradient-to-r from-green-100 to-emerald-100 border-green-300">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Your Annual Savings (12 Round Trips)</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Your Annual Savings (12 Round Trips)</h3>
           <div class="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <p class="text-4xl font-bold text-green-700 mb-2">432 kg</p>
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400 mb-2">432 kg</p>
               <p class="text-sm text-gray-700">CO2 Saved per Year</p>
             </div>
             <div>
-              <p class="text-4xl font-bold text-green-700 mb-2">19-21</p>
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400 mb-2">19-21</p>
               <p class="text-sm text-gray-700">Trees Equivalent</p>
             </div>
             <div>
-              <p class="text-4xl font-bold text-green-700 mb-2">70%</p>
+              <p class="text-4xl font-bold text-green-700 dark:text-green-400 mb-2">70%</p>
               <p class="text-sm text-gray-700">Emission Reduction</p>
             </div>
           </div>
@@ -236,9 +236,9 @@ const faqSchema = {
 
       <!-- How We Calculate -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">How We Calculate: The Science Behind Numbers</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">How We Calculate: The Science Behind Numbers</h2>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 dark:text-gray-200 mb-6">
           Transparency is important. Here is exactly how we calculate these emissions:
         </p>
 
@@ -304,9 +304,9 @@ const faqSchema = {
           </Card>
         </div>
 
-        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-6">
-          <p class="font-semibold text-blue-800 mb-2">Key Insight: Grid Matters</p>
-          <p class="text-blue-700 text-sm">
+        <div class="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-400 p-4 mt-6">
+          <p class="font-semibold text-blue-800 dark:text-blue-300 mb-2">Key Insight: Grid Matters</p>
+          <p class="text-blue-700 dark:text-blue-400 text-sm">
             As Maharashtra adds more solar and wind power, EVs get cleaner automatically. By 2030, with 50% renewable target, EV emissions will drop to 3-4 kg CO2 per trip - matching train efficiency while maintaining cab convenience.
           </p>
         </div>
@@ -314,9 +314,9 @@ const faqSchema = {
 
       <!-- Beyond CO2 -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Beyond CO2: Other Environmental Benefits</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Beyond CO2: Other Environmental Benefits</h2>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 dark:text-gray-200 mb-6">
           Carbon footprint is just one piece. EVs deliver comprehensive environmental benefits:
         </p>
 
@@ -329,28 +329,28 @@ const faqSchema = {
             <ul class="space-y-3 text-sm text-gray-700">
               <li>
                 <p class="font-semibold">Nitrogen Oxides (NOx)</p>
-                <p className="text-gray-600">Causes respiratory issues, smog formation, acid rain</p>
+                <p className="text-gray-600 dark:text-gray-300">Causes respiratory issues, smog formation, acid rain</p>
               </li>
               <li>
                 <p class="font-semibold">Particulate Matter (PM2.5/PM10)</p>
-                <p className="text-gray-600">Enters lungs, causes cancer, heart disease</p>
+                <p className="text-gray-600 dark:text-gray-300">Enters lungs, causes cancer, heart disease</p>
               </li>
               <li>
                 <p class="font-semibold">Carbon Monoxide (CO)</p>
-                <p className="text-gray-600">Toxic gas, reduces oxygen in blood</p>
+                <p className="text-gray-600 dark:text-gray-300">Toxic gas, reduces oxygen in blood</p>
               </li>
               <li>
                 <p class="font-semibold">Unburnt Hydrocarbons</p>
-                <p className="text-gray-600">Ground-level ozone, smog contributor</p>
+                <p className="text-gray-600 dark:text-gray-300">Ground-level ozone, smog contributor</p>
               </li>
               <li>
                 <p class="font-semibold">Noise Pollution</p>
-                <p className="text-gray-600">70-80 dB, stressful for urban residents</p>
+                <p className="text-gray-600 dark:text-gray-300">70-80 dB, stressful for urban residents</p>
               </li>
             </ul>
           </Card>
 
-          <Card className="p-6 bg-green-50">
+          <Card className="p-6 bg-green-50 dark:bg-green-900/30">
             <div class="flex items-center gap-2 mb-4">
               <Badge variant="default" className="bg-green-600">Electric Cab</Badge>
               <h3 class="font-bold text-lg">Clean Operation</h3>
@@ -358,34 +358,34 @@ const faqSchema = {
             <ul class="space-y-3 text-sm text-gray-700">
               <li>
                 <p class="font-semibold">Zero NOx Emissions</p>
-                <p className="text-gray-600">No tailpipe, no respiratory harm</p>
+                <p className="text-gray-600 dark:text-gray-300">No tailpipe, no respiratory harm</p>
               </li>
               <li>
                 <p class="font-semibold">Zero Particulate Matter</p>
-                <p className="text-gray-600">Cleaner air in cities and highways</p>
+                <p className="text-gray-600 dark:text-gray-300">Cleaner air in cities and highways</p>
               </li>
               <li>
                 <p class="font-semibold">Zero CO Emissions</p>
-                <p className="text-gray-600">No toxic gas release</p>
+                <p className="text-gray-600 dark:text-gray-300">No toxic gas release</p>
               </li>
               <li>
                 <p class="font-semibold">No Hydrocarbon Emissions</p>
-                <p className="text-gray-600">No smog contribution</p>
+                <p className="text-gray-600 dark:text-gray-300">No smog contribution</p>
               </li>
               <li>
                 <p class="font-semibold">Significantly Quieter</p>
-                <p className="text-gray-600">50-60 dB, peaceful for all</p>
+                <p className="text-gray-600 dark:text-gray-300">50-60 dB, peaceful for all</p>
               </li>
             </ul>
           </Card>
         </div>
 
-        <Card className="p-6 mt-6 bg-yellow-50 border-yellow-200">
+        <Card className="p-6 mt-6 bg-yellow-50 dark:bg-yellow-900/30 border-yellow-200">
           <h3 class="font-bold mb-3">Health Impact in Numbers</h3>
-          <p class="text-sm text-gray-700 mb-3">
+          <p class="text-sm text-gray-700 dark:text-gray-200 mb-3">
             Pune's air quality (AQI often 150-200) is significantly impacted by vehicle emissions. Here's what switching to EVs means:
           </p>
-          <ul class="text-sm text-gray-700 space-y-2">
+          <ul class="text-sm text-gray-700 dark:text-gray-200 space-y-2">
             <li>• <strong>If 10,000 cabs</strong> switch diesel → EV: <strong>2,160 tons CO2 saved annually</strong></li>
             <li>• <strong>Reduction in PM2.5:</strong> Estimated 15-20% in high-traffic corridors</li>
             <li>• <strong>Health cost savings:</strong> Rs.50-80 crore/year (fewer respiratory illnesses)</li>
@@ -396,9 +396,9 @@ const faqSchema = {
 
       <!-- Lifecycle Analysis -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Lifecycle Analysis: The Complete Picture</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Lifecycle Analysis: The Complete Picture</h2>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 dark:text-gray-200 mb-6">
           Critics often mention EV battery production. Let us look at the full lifecycle - from manufacturing to disposal:
         </p>
 
@@ -406,50 +406,50 @@ const faqSchema = {
           <table class="w-full border-collapse text-sm">
             <thead>
               <tr class="bg-gray-100">
-                <th class="border border-gray-300 p-3 text-left">Lifecycle Stage</th>
-                <th class="border border-gray-300 p-3 text-center">Diesel Cab<br/>(10 years, 500,000 km)</th>
-                <th class="border border-gray-300 p-3 text-center">Electric Cab<br/>(10 years, 500,000 km)</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-left">Lifecycle Stage</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-center">Diesel Cab<br/>(10 years, 500,000 km)</th>
+                <th class="border border-gray-300 dark:border-gray-600 p-3 text-center">Electric Cab<br/>(10 years, 500,000 km)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="border border-gray-300 p-3"><strong>Manufacturing</strong></td>
-                <td class="border border-gray-300 p-3 text-center">8-10 tons CO2</td>
-                <td class="border border-gray-300 p-3 text-center">12-15 tons CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Manufacturing</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">8-10 tons CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">12-15 tons CO2</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="border border-gray-300 p-3"><strong>10 Years Operation</strong></td>
-                <td class="border border-gray-300 p-3 text-center">95-110 tons CO2</td>
-                <td class="border border-gray-300 p-3 text-center">25-35 tons CO2</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-3"><strong>Maintenance & Parts</strong></td>
-                <td class="border border-gray-300 p-3 text-center">3-4 tons CO2</td>
-                <td class="border border-gray-300 p-3 text-center">1-2 tons CO2</td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="border border-gray-300 p-3"><strong>End of Life/Recycling</strong></td>
-                <td class="border border-gray-300 p-3 text-center">0.5-1 ton CO2</td>
-                <td class="border border-gray-300 p-3 text-center">-1 to 0 tons (battery recycling credit)</td>
-              </tr>
-              <tr class="bg-green-50">
-                <td class="border border-gray-300 p-3"><strong>TOTAL LIFECYCLE</strong></td>
-                <td class="border border-gray-300 p-3 text-center font-bold text-red-700">107-125 tons CO2</td>
-                <td class="border border-gray-300 p-3 text-center font-bold text-green-700">38-52 tons CO2</td>
+              <tr class="bg-gray-50 dark:bg-gray-800">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>10 Years Operation</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">95-110 tons CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">25-35 tons CO2</td>
               </tr>
               <tr>
-                <td class="border border-gray-300 p-3"><strong>Savings</strong></td>
-                <td class="border border-gray-300 p-3 text-center" colspan="2">
-                  <strong className="text-green-700">55-87 tons CO2 saved over 10 years</strong>
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Maintenance & Parts</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">3-4 tons CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">1-2 tons CO2</td>
+              </tr>
+              <tr class="bg-gray-50 dark:bg-gray-800">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>End of Life/Recycling</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">0.5-1 ton CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center">-1 to 0 tons (battery recycling credit)</td>
+              </tr>
+              <tr class="bg-green-50 dark:bg-green-900/30">
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>TOTAL LIFECYCLE</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold text-red-700 dark:text-red-400">107-125 tons CO2</td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold text-green-700 dark:text-green-400">38-52 tons CO2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 dark:border-gray-600 p-3"><strong>Savings</strong></td>
+                <td class="border border-gray-300 dark:border-gray-600 p-3 text-center" colspan="2">
+                  <strong className="text-green-700 dark:text-green-400">55-87 tons CO2 saved over 10 years</strong>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
-          <p class="font-semibold text-blue-800 mb-2">Key Takeaway</p>
-          <p class="text-blue-700 text-sm">
+        <div class="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-400 p-4">
+          <p class="font-semibold text-blue-800 dark:text-blue-300 mb-2">Key Takeaway</p>
+          <p class="text-blue-700 dark:text-blue-400 text-sm">
             Even accounting for higher manufacturing emissions (battery production), EVs recover the difference within <strong>1-2 years of operation</strong>. After that, it is pure environmental savings. Over 10 years, EVs emit <strong>50-65% less CO2</strong> than diesel cabs.
           </p>
         </div>
@@ -457,9 +457,9 @@ const faqSchema = {
 
       <!-- What Your Choice Means -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">What Your Choice Means: Real-World Impact</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">What Your Choice Means: Real-World Impact</h2>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 dark:text-gray-200 mb-6">
           Personal choices add up. Here's what your decision to choose electric cabs means:
         </p>
 
@@ -469,19 +469,19 @@ const faqSchema = {
             <div class="space-y-3 text-sm">
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Annual CO2 saved</span>
-                <span class="font-bold text-green-700">432 kg</span>
+                <span class="font-bold text-green-700 dark:text-green-400">432 kg</span>
               </div>
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Equivalent trees planted</span>
-                <span class="font-bold text-green-700">19-21 trees</span>
+                <span class="font-bold text-green-700 dark:text-green-400">19-21 trees</span>
               </div>
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Car-free days equivalent</span>
-                <span class="font-bold text-green-700">145 days</span>
+                <span class="font-bold text-green-700 dark:text-green-400">145 days</span>
               </div>
               <div class="flex items-center justify-between py-2">
                 <span>Contribution to UN SDG 13</span>
-                <span class="font-bold text-green-700">✓ Significant</span>
+                <span class="font-bold text-green-700 dark:text-green-400">✓ Significant</span>
               </div>
             </div>
           </Card>
@@ -491,19 +491,19 @@ const faqSchema = {
             <div class="space-y-3 text-sm">
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Annual CO2 saved</span>
-                <span class="font-bold text-blue-700">432,000 kg</span>
+                <span class="font-bold text-blue-700 dark:text-blue-400">432,000 kg</span>
               </div>
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Equivalent trees planted</span>
-                <span class="font-bold text-blue-700">19,000+ trees</span>
+                <span class="font-bold text-blue-700 dark:text-blue-400">19,000+ trees</span>
               </div>
               <div class="flex items-center justify-between py-2 border-b">
                 <span>Acres of forest preserved</span>
-                <span class="font-bold text-blue-700">~30 acres</span>
+                <span class="font-bold text-blue-700 dark:text-blue-400">~30 acres</span>
               </div>
               <div class="flex items-center justify-between py-2">
                 <span>Cleaner air for</span>
-                <span class="font-bold text-blue-700">Entire city</span>
+                <span class="font-bold text-blue-700 dark:text-blue-400">Entire city</span>
               </div>
             </div>
           </Card>
@@ -515,17 +515,17 @@ const faqSchema = {
             <div>
               <p class="text-3xl font-bold text-purple-700 mb-2">1 Trip</p>
               <p>= 18 kg CO2 saved</p>
-              <p class="text-xs text-gray-600 mt-1">(Half a tree)</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">(Half a tree)</p>
             </div>
             <div>
               <p class="text-3xl font-bold text-purple-700 mb-2">12 Trips</p>
               <p>= 216 kg CO2 saved</p>
-              <p class="text-xs text-gray-600 mt-1">(10 trees, one year)</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">(10 trees, one year)</p>
             </div>
             <div>
               <p class="text-3xl font-bold text-purple-700 mb-2">120 Trips</p>
               <p>= 2.16 tons CO2 saved</p>
-              <p class="text-xs text-gray-600 mt-1">(100 trees, 10 years)</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">(100 trees, 10 years)</p>
             </div>
           </div>
         </Card>
@@ -533,47 +533,47 @@ const faqSchema = {
 
       <!-- FAQs -->
       <section id="faq" class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Frequently Asked Questions</h2>
 
         <div class="space-y-4">
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">How much CO2 does an electric cab save vs diesel?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">How much CO2 does an electric cab save vs diesel?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               An electric cab saves approximately <strong>18-22 kg of CO2 per 130 km trip</strong> (Pune-Mumbai). Over a year with monthly trips, that is 216-264 kg CO2 saved, equivalent to planting 10-12 trees.
             </p>
           </Card>
 
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Are electric cabs truly zero emission?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">Are electric cabs truly zero emission?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               Electric cabs produce <strong>zero direct emissions</strong> while driving. However, electricity generation does have a carbon footprint. In Maharashtra, with 30% renewable energy in the grid, EVs still produce <strong>60-70% less emissions</strong> than diesel vehicles.
             </p>
           </Card>
 
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">What about battery production emissions?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">What about battery production emissions?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               Battery production adds <strong>4-5 tons CO2</strong> to EV manufacturing (vs regular car). However, this is recovered within <strong>1-2 years</strong> of operation. Over a 10-year lifetime, EVs still emit 50-65% less CO2 than diesel vehicles.
             </p>
           </Card>
 
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">What is the carbon footprint of a Pune to Mumbai cab trip?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">What is the carbon footprint of a Pune to Mumbai cab trip?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               <strong>Diesel cab:</strong> 24-28 kg CO2. <strong>Electric cab:</strong> 6-8 kg CO2 (including grid emissions). <strong>Train:</strong> 3-4 kg CO2. <strong>Bus:</strong> 5-7 kg CO2. EVs are the best personal transport option.
             </p>
           </Card>
 
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Will EVs get even cleaner in the future?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">Will EVs get even cleaner in the future?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               Yes! As Maharashtra adds more <strong>solar and wind power</strong> (target: 50% renewable by 2030), EV emissions will drop further. By 2030, EVs could emit just <strong>3-4 kg CO2 per trip</strong> - matching train efficiency.
             </p>
           </Card>
 
           <Card className="p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">How can I track my personal carbon savings?</h3>
-            <p class="text-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">How can I track my personal carbon savings?</h3>
+            <p class="text-gray-700 dark:text-gray-200">
               Simple formula: <strong>Each EV cab trip saves ~18 kg CO2</strong>. Multiply by your annual trips. For monthly Pune-Mumbai travelers: <strong>12 trips × 18 kg = 216 kg CO2 saved</strong> = 10 trees planted equivalent.
             </p>
           </Card>
@@ -615,14 +615,14 @@ const faqSchema = {
           </div>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919876543210">
+            <a href="tel:+917498264215">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto">
                 <Phone className="mr-2 h-5 w-5" />
-                Call: +91 98765 43210
+                Call: +917498264215
               </Button>
             </a>
-            <a href="https://wa.me/919876543210">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20">
+            <a href="https://wa.me/917498264215">
+              <Button size="lg" className="w-full sm:w-auto bg-white text-green-700 hover:bg-green-50">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Booking
               </Button>

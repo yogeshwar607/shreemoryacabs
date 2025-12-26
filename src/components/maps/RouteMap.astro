@@ -1,0 +1,265 @@
+---
+/**
+ * RouteMap Component
+ * Displays specific route from origin to destination with distance/time info
+ */
+
+interface Props {
+  origin: string;
+  destination: string;
+  originCoords?: { lat: number; lng: number };
+  destinationCoords?: { lat: number; lng: number };
+  height?: string;
+  showDirections?: boolean;
+}
+
+const {
+  origin,
+  destination,
+  originCoords = { lat: 18.5590, lng: 73.7864 }, // Default: Baner
+  destinationCoords = { lat: 19.0896, lng: 73.0291 }, // Default: NMIA
+  height = "450px",
+  showDirections = true
+} = Astro.props;
+
+const mapId = `route-map-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<div class="route-map-wrapper">
+  {showDirections && (
+    <div class="route-info-panel">
+      <div class="route-header">
+        <div class="route-points">
+          <div class="point origin">
+            <span class="icon">📍</span>
+            <span class="location">{origin}</span>
+          </div>
+          <div class="route-arrow">→</div>
+          <div class="point destination">
+            <span class="icon">✈️</span>
+            <span class="location">{destination}</span>
+          </div>
+        </div>
+      </div>
+      <div id={`${mapId}-info`} class="route-stats">
+        <div class="stat">
+          <span class="label">Distance</span>
+          <span class="value" id={`${mapId}-distance`}>Calculating...</span>
+        </div>
+        <div class="stat">
+          <span class="label">Duration</span>
+          <span class="value" id={`${mapId}-duration`}>Calculating...</span>
+        </div>
+        <div class="stat">
+          <span class="label">Price</span>
+          <span class="value price">₹3,700</span>
+        </div>
+      </div>
+    </div>
+  )}
+
+  <div class="route-map-container" style={`height: ${height}`}>
+    <div id={mapId} style="width: 100%; height: 100%; border-radius: 8px;"></div>
+  </div>
+</div>
+
+<script define:vars={{ mapId, originCoords, destinationCoords, showDirections }}>
+  function initRouteMap() {
+    const map = new google.maps.Map(document.getElementById(mapId), {
+      zoom: 9,
+      center: {
+        lat: (originCoords.lat + destinationCoords.lat) / 2,
+        lng: (originCoords.lng + destinationCoords.lng) / 2
+      },
+      mapTypeControl: true,
+      streetViewControl: false,
+      styles: [
+        {
+          featureType: "poi.business",
+          elementType: "labels",
+          stylers: [{ visibility: "off" }]
+        }
+      ]
+    });
+
+    const directionsService = new google.maps.DirectionsService();
+    const directionsRenderer = new google.maps.DirectionsRenderer({
+      map: map,
+      suppressMarkers: false,
+      polylineOptions: {
+        strokeColor: "#10B981",
+        strokeWeight: 5,
+        strokeOpacity: 0.8
+      }
+    });
+
+    // Request directions
+    const request = {
+      origin: originCoords,
+      destination: destinationCoords,
+      travelMode: google.maps.TravelMode.DRIVING,
+      avoidTolls: false,
+      provideRouteAlternatives: false
+    };
+
+    directionsService.route(request, (result, status) => {
+      if (status === google.maps.DirectionsStatus.OK) {
+        directionsRenderer.setDirections(result);
+
+        // Extract route info
+        const route = result.routes[0].legs[0];
+
+        if (showDirections) {
+          // Update distance and duration
+          const distanceEl = document.getElementById(`${mapId}-distance`);
+          const durationEl = document.getElementById(`${mapId}-duration`);
+
+          if (distanceEl) distanceEl.textContent = route.distance.text;
+          if (durationEl) durationEl.textContent = route.duration.text;
+        }
+      } else {
+        console.error('Directions request failed:', status);
+
+        // Fallback: show markers without route
+        new google.maps.Marker({
+          position: originCoords,
+          map: map,
+          title: "Pickup Location",
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: "#10B981",
+            fillOpacity: 1,
+            strokeColor: "#059669",
+            strokeWeight: 2,
+            scale: 8
+          }
+        });
+
+        new google.maps.Marker({
+          position: destinationCoords,
+          map: map,
+          title: "Drop-off Location",
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: "#3B82F6",
+            fillOpacity: 1,
+            strokeColor: "#2563EB",
+            strokeWeight: 2,
+            scale: 10
+          }
+        });
+      }
+    });
+  }
+
+  // Initialize map
+  if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+    const script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initRouteMapCallback';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+    window.initRouteMapCallback = initRouteMap;
+  } else {
+    initRouteMap();
+  }
+</script>
+
+<style>
+  .route-map-wrapper {
+    width: 100%;
+  }
+
+  .route-info-panel {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+
+  .route-header {
+    margin-bottom: 16px;
+  }
+
+  .route-points {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .point {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .point .icon {
+    font-size: 20px;
+  }
+
+  .point .location {
+    font-weight: 600;
+    color: #1F2937;
+    font-size: 16px;
+  }
+
+  .route-arrow {
+    color: #10B981;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .route-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stat .label {
+    font-size: 12px;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+  .stat .value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+
+  .stat .value.price {
+    color: #10B981;
+  }
+
+  .route-map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  @media (max-width: 640px) {
+    .route-points {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .route-arrow {
+      transform: rotate(90deg);
+    }
+
+    .route-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

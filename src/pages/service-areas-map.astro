@@ -1,0 +1,184 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import ServiceAreaMap from "@/components/maps/ServiceAreaMap.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+
+const title = "Service Areas Map - GreenEVCabs Electric Cab Coverage Pune";
+const description = "Interactive map showing GreenEVCabs electric cab service coverage across Pune, Hinjewadi, Wakad, Kharadi, Baner, and routes to Navi Mumbai International Airport (NMIA).";
+
+const serviceAreas = [
+  {
+    zone: "West Pune",
+    localities: ["Hinjewadi (Phase 1, 2, 3)", "Wakad", "Baner", "Aundh", "Balewadi", "Pimple Saudagar"],
+    coverage: "100%",
+    pickupTime: "2 hrs 15 min to NMIA"
+  },
+  {
+    zone: "East Pune",
+    localities: ["Kharadi", "Viman Nagar", "Magarpatta", "Hadapsar", "Kalyani Nagar", "Koregaon Park"],
+    coverage: "100%",
+    pickupTime: "2 hrs to NMIA"
+  },
+  {
+    zone: "Central Pune",
+    localities: ["Kothrud", "Shivajinagar", "Deccan", "FC Road", "Sadashiv Peth"],
+    coverage: "100%",
+    pickupTime: "2 hrs to NMIA"
+  },
+  {
+    zone: "Pimpri-Chinchwad",
+    localities: ["Pimple Saudagar", "Ravet", "Nigdi", "Chinchwad", "Pimpri", "Akurdi"],
+    coverage: "100%",
+    pickupTime: "2 hrs 10 min to NMIA"
+  }
+];
+---
+
+<MainLayout title={title} description={description}>
+  <div class="py-16 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Header -->
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <Badge variant="outline" className="mb-4">
+          Service Coverage Map
+        </Badge>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          Where We Serve: Pune to NMIA
+        </h1>
+        <p class="text-xl text-gray-600">
+          GreenEVCabs provides electric cab service across all major Pune localities with fixed ₹3,700 rate to Navi Mumbai International Airport.
+        </p>
+      </div>
+
+      <!-- Interactive Map -->
+      <div class="mb-16">
+        <Card>
+          <CardHeader>
+            <CardTitle>Interactive Service Area Map</CardTitle>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+              Click on any green marker to see pickup details and book instantly via WhatsApp.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <ServiceAreaMap height="600px" showRoute={true} />
+          </CardContent>
+        </Card>
+      </div>
+
+      <!-- Service Zones Grid -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">
+          Coverage by Zone
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          {serviceAreas.map((zone) => (
+            <Card>
+              <CardHeader>
+                <div class="flex items-center justify-between">
+                  <CardTitle>{zone.zone}</CardTitle>
+                  <Badge variant="default" className="bg-green-600">
+                    {zone.coverage} Coverage
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-sm text-gray-700 dark:text-gray-200 mb-2">Localities Served:</h4>
+                    <div class="flex flex-wrap gap-2">
+                      {zone.localities.map((locality) => (
+                        <Badge variant="outline" className="text-xs">
+                          {locality}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-3">
+                      <span class="text-sm text-gray-600">Travel Time to NMIA:</span>
+                      <span class="font-semibold text-green-600">{zone.pickupTime}</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-600">Fixed Rate:</span>
+                      <span class="font-bold text-xl text-green-600">₹3,700</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <!-- How to Book Section -->
+      <div class="bg-green-50 dark:bg-green-900/30 rounded-xl p-8 mb-12">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900">
+            Ready to Book Your Electric Cab?
+          </h2>
+          <p class="text-gray-700 dark:text-gray-200 mb-6">
+            Available 24/7 from any location shown on the map above. Same ₹3,700 fixed rate, zero surge pricing.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+              <a href="https://wa.me/919145499009?text=I%20need%20a%20cab%20to%20NMIA" target="_blank">
+                📱 Book via WhatsApp
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href="/routes/pune-to-navi-mumbai-airport">
+                View Route Details
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardContent className="pt-6">
+            <div class="text-center">
+              <div class="text-4xl mb-3">🗺️</div>
+              <h3 class="font-semibold mb-2">All Pune Localities</h3>
+              <p class="text-sm text-gray-600">
+                Same ₹3,700 rate whether you're in Hinjewadi, Kharadi, or anywhere in Pune
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6">
+            <div class="text-center">
+              <div class="text-4xl mb-3">⚡</div>
+              <h3 class="font-semibold mb-2">100% Electric Fleet</h3>
+              <p class="text-sm text-gray-600">
+                KIA Carens EV & BYD eMax 7 with 450+ km range - zero range anxiety
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6">
+            <div class="text-center">
+              <div class="text-4xl mb-3">⏰</div>
+              <h3 class="font-semibold mb-2">24/7 Availability</h3>
+              <p class="text-sm text-gray-600">
+                Early morning 4 AM flights? Late night arrivals? We've got you covered.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  /* Additional custom styles if needed */
+</style>

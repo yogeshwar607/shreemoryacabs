@@ -156,7 +156,7 @@ const faqSchema = {
     </div>
 
     <!-- Quick Answer Box -->
-    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+    <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
         <TrendingUp className="h-6 w-6 text-green-600" />
         Quick Recommendation
@@ -165,8 +165,8 @@ const faqSchema = {
         <p><strong>Choose Train if:</strong> Budget travel (₹145-280), don't mind crowds, station access is easy, have light luggage, flexible timing</p>
         <p><strong>Choose Bus if:</strong> Moderate budget (₹300-800), want overnight travel, don't need speed, traveling solo with light bags</p>
         <p><strong>Choose Cab if:</strong> Need door-to-door service, traveling with 3+ people, have luggage, value time/comfort, airport-bound, willing to pay premium</p>
-        <div class="bg-white p-3 rounded-lg mt-3">
-          <p class="text-sm font-semibold text-green-700">💡 Sweet Spot: 4 passengers in electric cab = ₹675/person = competitive with premium bus but infinitely more convenient!</p>
+        <div class="bg-white dark:bg-gray-800 p-3 rounded-lg mt-3">
+          <p class="text-sm font-semibold text-green-700 dark:text-green-400">💡 Sweet Spot: 4 passengers in electric cab = ₹675/person = competitive with premium bus but infinitely more convenient!</p>
         </div>
       </div>
     </Card>
@@ -175,35 +175,35 @@ const faqSchema = {
     <Card className="p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
       <nav class="space-y-2">
-        <a href="#overview" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#overview" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Quick Overview Table
         </a>
-        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Cost Comparison
         </a>
-        <a href="#time" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#time" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Time & Punctuality
         </a>
-        <a href="#comfort" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#comfort" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Comfort Analysis
         </a>
-        <a href="#convenience" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#convenience" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Convenience Factors
         </a>
-        <a href="#scenarios" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#scenarios" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Best for Different Scenarios
         </a>
-        <a href="#decision" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#decision" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Decision Helper
         </a>
-        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           FAQs
         </a>
@@ -236,7 +236,7 @@ const faqSchema = {
           <tbody>
             <tr>
               <td class="border p-3 font-semibold">Cost (per person)</td>
-              <td class="border p-3 text-center text-green-700">₹145-280<br/><span class="text-xs">Cheapest</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">₹145-280<br/><span class="text-xs">Cheapest</span></td>
               <td class="border p-3 text-center">₹300-800<br/><span class="text-xs">Mid-range</span></td>
               <td class="border p-3 text-center">₹675-2,700<br/><span class="text-xs">Most expensive</span></td>
             </tr>
@@ -244,29 +244,29 @@ const faqSchema = {
               <td class="border p-3 font-semibold">Time (door-to-door)</td>
               <td class="border p-3 text-center">4-5 hours<br/><span class="text-xs">+ transfers</span></td>
               <td class="border p-3 text-center">4-5.5 hours<br/><span class="text-xs">+ terminal access</span></td>
-              <td class="border p-3 text-center text-green-700">2.5-3 hours<br/><span class="text-xs">Fastest</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">2.5-3 hours<br/><span class="text-xs">Fastest</span></td>
             </tr>
             <tr>
               <td class="border p-3 font-semibold">Comfort</td>
               <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">AC chair car</span></td>
               <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">Luxury volvo</span></td>
-              <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Private space</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">⭐⭐⭐⭐⭐<br/><span class="text-xs">Private space</span></td>
             </tr>
             <tr>
               <td class="border p-3 font-semibold">Luggage Capacity</td>
               <td class="border p-3 text-center">⚠️ Limited<br/><span class="text-xs">Overhead only</span></td>
               <td class="border p-3 text-center">⚠️ Limited<br/><span class="text-xs">Under-seat</span></td>
-              <td class="border p-3 text-center text-green-700">✅ Ample<br/><span class="text-xs">Dedicated boot</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">✅ Ample<br/><span class="text-xs">Dedicated boot</span></td>
             </tr>
             <tr>
               <td class="border p-3 font-semibold">Flexibility</td>
               <td class="border p-3 text-center">❌ Fixed schedule</td>
               <td class="border p-3 text-center">❌ Fixed schedule</td>
-              <td class="border p-3 text-center text-green-700">✅ Anytime<br/><span class="text-xs">24/7 service</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">✅ Anytime<br/><span class="text-xs">24/7 service</span></td>
             </tr>
             <tr>
               <td class="border p-3 font-semibold">Safety</td>
-              <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Safest</span></td>
+              <td class="border p-3 text-center text-green-700 dark:text-green-400">⭐⭐⭐⭐⭐<br/><span class="text-xs">Safest</span></td>
               <td class="border p-3 text-center">⭐⭐⭐⭐<br/><span class="text-xs">Generally safe</span></td>
               <td class="border p-3 text-center">⭐⭐⭐⭐⭐<br/><span class="text-xs">Professional driver</span></td>
             </tr>
@@ -287,13 +287,13 @@ const faqSchema = {
 
       <div class="space-y-6">
         <!-- Train Costs -->
-        <Card className="p-6 border-2 border-blue-500">
+        <Card className="p-6 border-2 border-blue-500 dark:border-blue-600">
           <div class="flex items-start justify-between mb-4">
             <h3 class="text-xl font-bold flex items-center gap-2 text-blue-600">
               <Train className="h-6 w-6" />
               Train Costs
             </h3>
-            <Badge className="bg-green-200 text-green-700">Cheapest Option</Badge>
+            <Badge className="bg-green-200 text-green-700 dark:text-green-400">Cheapest Option</Badge>
           </div>
 
           <div class="space-y-4">
@@ -318,7 +318,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-blue-50 p-4 rounded-lg">
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
               <p class="font-semibold mb-2 text-sm">Total Cost (door-to-door):</p>
               <div class="space-y-1 text-sm">
                 <p>• <strong>Budget (General + local):</strong> ₹400-550</p>
@@ -341,7 +341,7 @@ const faqSchema = {
               <Bus className="h-6 w-6" />
               Bus Costs
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Mid-Range</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Mid-Range</Badge>
           </div>
 
           <div class="space-y-4">
@@ -366,7 +366,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-orange-50 p-4 rounded-lg">
+            <div class="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg">
               <p class="font-semibold mb-2 text-sm">Total Cost (door-to-door):</p>
               <div class="space-y-1 text-sm">
                 <p>• <strong>Budget (Non-AC + local):</strong> ₹600-800</p>
@@ -383,13 +383,13 @@ const faqSchema = {
         </Card>
 
         <!-- Cab Costs -->
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-start justify-between mb-4">
             <h3 class="text-xl font-bold flex items-center gap-2 text-green-600">
               <Car className="h-6 w-6" />
               Private Cab Costs
             </h3>
-            <Badge className="bg-blue-200 text-blue-700">Best Value for Groups</Badge>
+            <Badge className="bg-blue-200 text-blue-700 dark:text-blue-400">Best Value for Groups</Badge>
           </div>
 
           <div class="space-y-4">
@@ -416,12 +416,12 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-green-50 p-4 rounded-lg">
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg">
               <p class="font-semibold mb-2 text-sm">Cost Per Person (Split):</p>
               <div class="overflow-x-auto">
                 <table class="w-full text-xs border-collapse mt-2">
                   <thead>
-                    <tr class="bg-white">
+                    <tr class="bg-white dark:bg-gray-800">
                       <th class="border p-2">Passengers</th>
                       <th class="border p-2">Total Cost</th>
                       <th class="border p-2">Per Person</th>
@@ -451,13 +451,13 @@ const faqSchema = {
                       <td class="border p-2 text-center font-bold">4</td>
                       <td class="border p-2 text-center">₹2,700</td>
                       <td class="border p-2 text-center font-bold">₹675</td>
-                      <td class="border p-2 text-center text-green-700 font-bold">+₹395 (worth it!)</td>
+                      <td class="border p-2 text-center text-green-700 dark:text-green-400 font-bold">+₹395 (worth it!)</td>
                     </tr>
                     <tr class="bg-green-100">
                       <td class="border p-2 text-center">5-6</td>
                       <td class="border p-2 text-center">₹2,700</td>
                       <td class="border p-2 text-center">₹450-540</td>
-                      <td class="border p-2 text-center text-green-700">Cheaper than bus!</td>
+                      <td class="border p-2 text-center text-green-700 dark:text-green-400">Cheaper than bus!</td>
                     </tr>
                   </tbody>
                 </table>
@@ -476,17 +476,17 @@ const faqSchema = {
       <Card className="p-6 mt-6 bg-gradient-to-r from-green-50 to-blue-50">
         <h3 class="text-xl font-bold mb-4 text-center">Cost Winner by Passenger Count</h3>
         <div class="grid md:grid-cols-3 gap-4 text-center">
-          <div class="bg-white p-4 rounded-lg">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
             <p class="font-bold text-lg mb-2">Solo Traveler</p>
             <p class="text-3xl mb-2">🚂</p>
             <p class="text-sm">Train wins<br/>(₹400-1,200 total)</p>
           </div>
-          <div class="bg-white p-4 rounded-lg">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg">
             <p class="font-bold text-lg mb-2">2-3 People</p>
             <p class="text-3xl mb-2">🚂</p>
             <p class="text-sm">Train still cheaper<br/>(₹800-3,600 total)</p>
           </div>
-          <div class="bg-white p-4 rounded-lg border-2 border-green-500">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg border-2 border-green-500 dark:border-green-600">
             <p class="font-bold text-lg mb-2">4+ People</p>
             <p class="text-3xl mb-2">🚗</p>
             <p class="text-sm">Cab competitive<br/>(₹675/person)</p>
@@ -515,26 +515,26 @@ const faqSchema = {
 
             <div class="pl-8 space-y-2 text-sm">
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 1: Home to Pune Station</strong></p>
-                  <p class="text-gray-600">Auto/cab from Hinjewadi/Baner: 30-60 minutes (traffic dependent)</p>
+                  <p class="text-gray-600 dark:text-gray-300">Auto/cab from Hinjewadi/Baner: 30-60 minutes (traffic dependent)</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 2: Platform Finding & Waiting</strong></p>
-                  <p class="text-gray-600">Navigate station, find platform, board: 15-30 minutes</p>
+                  <p class="text-gray-600 dark:text-gray-300">Navigate station, find platform, board: 15-30 minutes</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 3: Train Journey</strong></p>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 dark:text-gray-300">
                     • Deccan Queen / Pragati Express: 3 hours 10 minutes<br/>
                     • Intercity Express: 3.5 hours<br/>
                     • Average including delays: 3.5-4 hours
@@ -543,10 +543,10 @@ const faqSchema = {
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 4: Mumbai Station to Final Destination</strong></p>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 dark:text-gray-300">
                     • To South Mumbai: Local train 20-40 mins + walk<br/>
                     • To Airport: Local + taxi = 60-90 minutes<br/>
                     • To Suburbs: Cab/local = 45-90 minutes
@@ -554,9 +554,9 @@ const faqSchema = {
                 </div>
               </div>
 
-              <div class="bg-blue-50 p-3 rounded-lg mt-3">
-                <p class="font-bold">Total Door-to-Door: <span class="text-blue-700">4.5 - 6 hours</span></p>
-                <p class="text-xs text-gray-600 mt-1">Highly variable depending on destination and connections</p>
+              <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg mt-3">
+                <p class="font-bold">Total Door-to-Door: <span class="text-blue-700 dark:text-blue-400">4.5 - 6 hours</span></p>
+                <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">Highly variable depending on destination and connections</p>
               </div>
             </div>
           </div>
@@ -570,26 +570,26 @@ const faqSchema = {
 
             <div class="pl-8 space-y-2 text-sm">
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 1: Home to Swargate/Wakdewadi</strong></p>
-                  <p class="text-gray-600">Auto from West Pune: 20-45 minutes</p>
+                  <p class="text-gray-600 dark:text-gray-300">Auto from West Pune: 20-45 minutes</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 2: Terminal Wait & Boarding</strong></p>
-                  <p class="text-gray-600">Arrive 15-30 minutes early: 15-30 minutes</p>
+                  <p class="text-gray-600 dark:text-gray-300">Arrive 15-30 minutes early: 15-30 minutes</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 3: Bus Journey</strong></p>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 dark:text-gray-300">
                     • Non-peak: 3.5-4 hours<br/>
                     • Peak traffic: 4.5-5.5 hours<br/>
                     • Monsoon/accidents: 5-6+ hours
@@ -598,19 +598,19 @@ const faqSchema = {
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 4: Dadar/Drop Point to Final Destination</strong></p>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 dark:text-gray-300">
                     • Local cab/taxi: 30-60 minutes<br/>
                     • To Airport: Additional 60-90 minutes
                   </p>
                 </div>
               </div>
 
-              <div class="bg-orange-50 p-3 rounded-lg mt-3">
-                <p class="font-bold">Total Door-to-Door: <span class="text-orange-700">4.5 - 7 hours</span></p>
-                <p class="text-xs text-gray-600 mt-1">Most unpredictable due to traffic variability</p>
+              <div class="bg-orange-50 dark:bg-orange-900/30 p-3 rounded-lg mt-3">
+                <p class="font-bold">Total Door-to-Door: <span class="text-orange-700 dark:text-orange-400">4.5 - 7 hours</span></p>
+                <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">Most unpredictable due to traffic variability</p>
               </div>
             </div>
           </div>
@@ -624,18 +624,18 @@ const faqSchema = {
 
             <div class="pl-8 space-y-2 text-sm">
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 1: Pickup from Your Door</strong></p>
-                  <p class="text-gray-600">Driver arrives at your location: 0 travel time for you!</p>
+                  <p class="text-gray-600 dark:text-gray-300">Driver arrives at your location: 0 travel time for you!</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 2: Direct Journey</strong></p>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 dark:text-gray-300">
                     • Early morning (4-7 AM): 2 hours 15 minutes<br/>
                     • Mid-day (10 AM-2 PM): 2.5-3 hours<br/>
                     • Peak hours (7-10 AM, 5-8 PM): 3.5-4 hours
@@ -644,16 +644,16 @@ const faqSchema = {
               </div>
 
               <div class="flex items-start gap-2">
-                <Clock className="h-4 w-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                <Clock className="h-4 w-4 text-gray-600 dark:text-gray-300 flex-shrink-0 mt-0.5" />
                 <div class="flex-1">
                   <p><strong>Step 3: Drop at Final Destination</strong></p>
-                  <p class="text-gray-600">Direct drop (airport terminal, hotel door, home): 0 additional time!</p>
+                  <p class="text-gray-600 dark:text-gray-300">Direct drop (airport terminal, hotel door, home): 0 additional time!</p>
                 </div>
               </div>
 
-              <div class="bg-green-50 p-3 rounded-lg mt-3 border-2 border-green-500">
-                <p class="font-bold">Total Door-to-Door: <span class="text-green-700">2.5 - 3.5 hours</span></p>
-                <p class="text-xs text-gray-600 mt-1">Fastest option overall; predictable with smart timing</p>
+              <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg mt-3 border-2 border-green-500 dark:border-green-600">
+                <p class="font-bold">Total Door-to-Door: <span class="text-green-700 dark:text-green-400">2.5 - 3.5 hours</span></p>
+                <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">Fastest option overall; predictable with smart timing</p>
               </div>
             </div>
           </div>
@@ -679,31 +679,31 @@ const faqSchema = {
                 <td class="border p-3 font-semibold">Average Delay</td>
                 <td class="border p-3 text-center">15-45 min<br/><span class="text-xs text-gray-600">(common)</span></td>
                 <td class="border p-3 text-center">30-90 min<br/><span class="text-xs text-gray-600">(traffic)</span></td>
-                <td class="border p-3 text-center text-green-700">10-30 min<br/><span class="text-xs text-gray-600">(off-peak)</span></td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">10-30 min<br/><span class="text-xs text-gray-600">(off-peak)</span></td>
               </tr>
               <tr>
                 <td class="border p-3 font-semibold">Cancellation Risk</td>
-                <td class="border p-3 text-center text-green-700">Rare<br/><span class="text-xs">(< 1%)</span></td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">Rare<br/><span class="text-xs">(< 1%)</span></td>
                 <td class="border p-3 text-center">Occasional<br/><span class="text-xs">(2-3%)</span></td>
-                <td class="border p-3 text-center text-green-700">Very rare<br/><span class="text-xs">(< 1%)</span></td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">Very rare<br/><span class="text-xs">(< 1%)</span></td>
               </tr>
               <tr>
                 <td class="border p-3 font-semibold">Arrival Predictability</td>
                 <td class="border p-3 text-center">⭐⭐⭐⭐<br/><span class="text-xs">Mostly predictable</span></td>
                 <td class="border p-3 text-center">⭐⭐⭐<br/><span class="text-xs">Traffic dependent</span></td>
-                <td class="border p-3 text-center text-green-700">⭐⭐⭐⭐⭐<br/><span class="text-xs">Most predictable</span></td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">⭐⭐⭐⭐⭐<br/><span class="text-xs">Most predictable</span></td>
               </tr>
               <tr>
                 <td class="border p-3 font-semibold">Alternative if Missed</td>
                 <td class="border p-3 text-center">Next train<br/><span class="text-xs">(hourly)</span></td>
                 <td class="border p-3 text-center">Next bus<br/><span class="text-xs">(30-60 min)</span></td>
-                <td class="border p-3 text-center text-green-700">Rebook anytime<br/><span class="text-xs">(24/7)</span></td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">Rebook anytime<br/><span class="text-xs">(24/7)</span></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="bg-blue-50 p-4 rounded-lg mt-4">
+        <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg mt-4">
           <p class="text-sm">
             <strong>Time Winner:</strong> Private cab is fastest door-to-door (2.5-3.5 hrs) with most predictable arrival. Train is predictable station-to-station but adds 1-2 hours for terminal access. Bus is slowest and least predictable due to traffic.
           </p>
@@ -712,10 +712,10 @@ const faqSchema = {
     </section>
 
     <!-- CTA in the middle -->
-    <Card className="p-6 mb-12 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+    <Card className="p-6 mb-12 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 dark:border-green-600">
       <div class="text-center">
         <h3 class="text-2xl font-bold mb-3">Need to Reach Mumbai Fast?</h3>
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700 dark:text-gray-200 mb-4">
           Skip the hassle of stations and terminals. Door-to-door electric cab service in 2.5-3 hours!
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
@@ -726,7 +726,7 @@ const faqSchema = {
             </Button>
           </a>
           <a href="tel:+919075020422">
-            <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 dark:text-green-400 hover:bg-green-50 dark:bg-green-900/30 w-full sm:w-auto">
               <Phone className="h-5 w-5 mr-2" />
               Call: +91 90750 20422
             </Button>
@@ -823,7 +823,7 @@ const faqSchema = {
         </Card>
 
         <!-- Cab Comfort -->
-        <Card className="p-6 border-2 border-green-500">
+        <Card className="p-6 border-2 border-green-500 dark:border-green-600">
           <div class="flex items-center justify-between mb-4">
             <h3 class="font-bold text-lg flex items-center gap-2">
               <Car className="h-5 w-5 text-green-600" />
@@ -862,7 +862,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="p-4 bg-green-50 border-green-200 mt-6">
+      <Card className="p-4 bg-green-50 dark:bg-green-900/30 border-green-200 mt-6">
         <p class="text-sm">
           <strong>Comfort Winner: Private Cab</strong> offers unmatched personal space, privacy, and control. You can sleep, work, talk freely, and stop whenever needed. Train and bus offer decent comfort but lack privacy and flexibility.
         </p>
@@ -876,52 +876,52 @@ const faqSchema = {
       <div class="space-y-4">
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which is cheapest: train, bus, or cab from Pune to Mumbai?</h3>
-          <p class="text-gray-700">Train is cheapest (₹145-280 per person). Bus is mid-range (₹300-800). Cab is most expensive (₹2,700-4,500) but becomes competitive with 4+ passengers. For 4 people, electric cab costs ₹675/person, which is comparable to premium bus fares but with door-to-door service.</p>
+          <p class="text-gray-700 dark:text-gray-200">Train is cheapest (₹145-280 per person). Bus is mid-range (₹300-800). Cab is most expensive (₹2,700-4,500) but becomes competitive with 4+ passengers. For 4 people, electric cab costs ₹675/person, which is comparable to premium bus fares but with door-to-door service.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which is fastest: train, bus, or cab for Pune-Mumbai?</h3>
-          <p class="text-gray-700">Express trains (Deccan Queen, Shivneri) are fastest at 3-3.5 hours station-to-station. Private EV cabs take 2.5-3 hours door-to-door (including last-mile travel). Buses take 3.5-5 hours. However, when you add station/terminal access time, cab is fastest overall for door-to-door journey.</p>
+          <p class="text-gray-700 dark:text-gray-200">Express trains (Deccan Queen, Shivneri) are fastest at 3-3.5 hours station-to-station. Private EV cabs take 2.5-3 hours door-to-door (including last-mile travel). Buses take 3.5-5 hours. However, when you add station/terminal access time, cab is fastest overall for door-to-door journey.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Is train or cab better for Pune to Mumbai Airport?</h3>
-          <p class="text-gray-700">Cab is significantly better for airport trips. Direct door-to-door (2.5 hours), handles luggage easily, no transfers needed, and arrives right at terminal. Train requires: Pune station → Mumbai station (3 hours) → local train/cab to airport (1+ hour) = 4-5 hours total with 2 transfers and luggage hassle.</p>
+          <p class="text-gray-700 dark:text-gray-200">Cab is significantly better for airport trips. Direct door-to-door (2.5 hours), handles luggage easily, no transfers needed, and arrives right at terminal. Train requires: Pune station → Mumbai station (3 hours) → local train/cab to airport (1+ hour) = 4-5 hours total with 2 transfers and luggage hassle.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which is most comfortable: train, bus or cab?</h3>
-          <p class="text-gray-700">Private cab > Train AC chair car > Luxury bus > Regular train > Regular bus. Private electric cab offers best comfort: climate-controlled, spacious, no crowds, reclining seats, personal space. Train AC chair car is comfortable but crowded. Luxury buses are decent but cramped. Regular options are least comfortable.</p>
+          <p class="text-gray-700 dark:text-gray-200">Private cab > Train AC chair car > Luxury bus > Regular train > Regular bus. Private electric cab offers best comfort: climate-controlled, spacious, no crowds, reclining seats, personal space. Train AC chair car is comfortable but crowded. Luxury buses are decent but cramped. Regular options are least comfortable.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Can I travel with heavy luggage on train vs bus vs cab?</h3>
-          <p class="text-gray-700">Cab is best for luggage (dedicated boot, help with loading). Train AC has overhead racks but heavy bags are difficult to lift; general class is very challenging with luggage. Bus has limited under-seat/overhead space; large suitcases problematic. For airport trips or moving, cab is only practical option.</p>
+          <p class="text-gray-700 dark:text-gray-200">Cab is best for luggage (dedicated boot, help with loading). Train AC has overhead racks but heavy bags are difficult to lift; general class is very challenging with luggage. Bus has limited under-seat/overhead space; large suitcases problematic. For airport trips or moving, cab is only practical option.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which is safer: train, bus, or cab for night travel?</h3>
-          <p class="text-gray-700">All are generally safe. Train is safest statistically (lowest accident rate). Private cab with professional driver is very safe and offers personal security. Buses are safe but higher accident risk on highways. Late night (post-midnight): trains run less frequently, so professional cab service is recommended.</p>
+          <p class="text-gray-700 dark:text-gray-200">All are generally safe. Train is safest statistically (lowest accident rate). Private cab with professional driver is very safe and offers personal security. Buses are safe but higher accident risk on highways. Late night (post-midnight): trains run less frequently, so professional cab service is recommended.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Do trains get delayed more than buses or cabs?</h3>
-          <p class="text-gray-700">Average delays: Trains 15-45 minutes (frequent but predictable), Buses 30-60 minutes (traffic dependent), Cabs 15-30 minutes (most punctual with early morning travel). Trains rarely get canceled. Buses occasionally cancel. Professional cab services are most reliable for time-sensitive travel.</p>
+          <p class="text-gray-700 dark:text-gray-200">Average delays: Trains 15-45 minutes (frequent but predictable), Buses 30-60 minutes (traffic dependent), Cabs 15-30 minutes (most punctual with early morning travel). Trains rarely get canceled. Buses occasionally cancel. Professional cab services are most reliable for time-sensitive travel.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which option is best for families with kids?</h3>
-          <p class="text-gray-700">Private cab is best for families: kids can sleep/play, food breaks possible, bathroom stops easy, no luggage carrying, direct travel. Train is second best (space to move, bathrooms) but crowded and requires station navigation. Bus is least suitable (cramped, limited bathroom access, no flexibility).</p>
+          <p class="text-gray-700 dark:text-gray-200">Private cab is best for families: kids can sleep/play, food breaks possible, bathroom stops easy, no luggage carrying, direct travel. Train is second best (space to move, bathrooms) but crowded and requires station navigation. Bus is least suitable (cramped, limited bathroom access, no flexibility).</p>
         </Card>
       </div>
     </section>
 
     <!-- Final CTA -->
     <section class="mb-12">
-      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 dark:border-green-600">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">Choose What's Best for YOUR Journey</h2>
-          <p class="text-lg text-gray-700 mb-6">
+          <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
             Budget travel? Take the train. Need door-to-door convenience? Book a private electric cab!
           </p>
 
@@ -933,7 +933,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href="tel:+919075020422">
-              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 dark:text-green-400 hover:bg-green-50 dark:bg-green-900/30 w-full sm:w-auto">
                 <Phone className="h-5 w-5 mr-2" />
                 Call: +91 90750 20422
               </Button>

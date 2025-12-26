@@ -25,7 +25,7 @@ const breadcrumbSchema = {
 const faqs = [
   { question: 'Are cabs available from Mumbai Airport to Pune at midnight?', answer: 'Yes, GreenEVCabs operates 24/7. Book in advance for late night arrivals (10 PM - 6 AM) to ensure driver allocation. Share flight details when booking.' },
   { question: 'Is it safe to travel from Mumbai Airport to Pune at night?', answer: 'Yes, completely safe. Mumbai-Pune Expressway is well-lit, patrolled 24/7. Our drivers are experienced with night driving, all vehicles have GPS tracking, and we share live location with you.' },
-  { question: 'How much does a late night cab cost from Mumbai Airport to Pune?', answer: 'No surge pricing. Same flat rates: ₹3,700 (Kia Carens) or ₹4,200 (BYD eMax 7). No extra charges for late night pickup.' },
+  { question: 'How much does a late night cab cost from Mumbai Airport to Pune?', answer: 'No surge pricing. Same flat rates: ₹2,700 (Kia Carens) or ₹3,000 (BYD eMax 7). No extra charges for late night pickup.' },
   { question: 'How long does it take at night from Mumbai Airport to Pune?', answer: '2.5-3 hours (145 km) during late night/early morning. Roads are clear, less traffic on Expressway.' },
   { question: 'What if my international flight lands at 1 AM - will driver wait?', answer: 'Yes. Share flight number when booking. We track delays automatically and driver waits up to 60 min free for international arrivals after landing.' },
   { question: 'Can I book a late night cab on the same day?', answer: 'Yes, if available. However, advance booking (4-6 hours minimum) recommended for late night arrivals to ensure guaranteed availability.' },
@@ -83,7 +83,7 @@ const faqSchema = {
         <CardContent class="pt-6">
           <p class="mb-4">We define late night arrivals as flights landing between <strong>10 PM and 6 AM</strong>. Here's the breakdown:</p>
           <div class="grid md:grid-cols-3 gap-4">
-            <div class="p-4 bg-blue-50 rounded">
+            <div class="p-4 bg-blue-50 dark:bg-blue-900/30 rounded">
               <h4 class="font-semibold mb-2">Evening (10 PM - 12 AM)</h4>
               <p class="text-sm text-muted-foreground">Still moderate activity at airport. More cabs available. Slightly less concern.</p>
             </div>
@@ -91,7 +91,7 @@ const faqSchema = {
               <h4 class="font-semibold mb-2">Midnight (12 AM - 4 AM)</h4>
               <p class="text-sm text-muted-foreground">Quietest hours. Fewer cabs. Pre-booking essential. Peak safety concerns.</p>
             </div>
-            <div class="p-4 bg-orange-50 rounded">
+            <div class="p-4 bg-orange-50 dark:bg-orange-900/30 rounded">
               <h4 class="font-semibold mb-2">Early Morning (4 AM - 6 AM)</h4>
               <p class="text-sm text-muted-foreground">Airport activity picking up. First domestic flights. More driver availability.</p>
             </div>
@@ -109,7 +109,7 @@ const faqSchema = {
       <div class="grid md:grid-cols-2 gap-6">
         <Card className="border-l-4 border-l-green-500">
           <CardHeader>
-            <CardTitle className="text-green-700">✓ Pre-Booked Electric Cabs (Recommended)</CardTitle>
+            <CardTitle className="text-green-700 dark:text-green-400">✓ Pre-Booked Electric Cabs (Recommended)</CardTitle>
           </CardHeader>
           <CardContent>
             <ul class="space-y-2 text-sm">
@@ -125,7 +125,7 @@ const faqSchema = {
 
         <Card className="border-l-4 border-l-red-500">
           <CardHeader>
-            <CardTitle className="text-red-700">✗ Airport Taxis/Auto (Not Recommended)</CardTitle>
+            <CardTitle className="text-red-700 dark:text-red-400">✗ Airport Taxis/Auto (Not Recommended)</CardTitle>
           </CardHeader>
           <CardContent>
             <ul class="space-y-2 text-sm">
@@ -190,7 +190,7 @@ const faqSchema = {
             <CardDescription>6-Seater Electric SUV</CardDescription>
           </CardHeader>
           <CardContent>
-            <p class="text-4xl font-bold text-emerald-600 mb-4">₹3,700</p>
+            <p class="text-4xl font-bold text-emerald-600 mb-4">₹2,700</p>
             <ul class="space-y-2 text-sm">
               <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> Same price 24/7</li>
               <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-emerald-600 mt-0.5"/> All tolls included</li>
@@ -206,7 +206,7 @@ const faqSchema = {
             <CardDescription>Luxury 6-Seater EV</CardDescription>
           </CardHeader>
           <CardContent>
-            <p class="text-4xl font-bold text-blue-600 mb-4">₹4,200</p>
+            <p class="text-4xl font-bold text-blue-600 mb-4">₹3,000</p>
             <ul class="space-y-2 text-sm">
               <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> No night surcharge</li>
               <li class="flex gap-2"><CheckCircle2 class="h-4 w-4 text-blue-600 mt-0.5"/> Premium seats</li>
@@ -273,7 +273,7 @@ const faqSchema = {
               <Button size="lg" variant="secondary"><MessageCircle class="mr-2 h-5 w-5"/>Book via WhatsApp</Button>
             </a>
             <a href={`tel:+${WHATSAPP_NUMBER}`}>
-              <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50"><Phone class="mr-2 h-5 w-5"/>Call 24/7</Button>
+              <Button size="lg" variant="outline" className="bg-white dark:bg-gray-800 text-blue-600 hover:bg-blue-50 dark:bg-blue-900/30"><Phone class="mr-2 h-5 w-5"/>Call 24/7</Button>
             </a>
           </div>
         </CardContent>

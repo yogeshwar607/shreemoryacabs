@@ -106,7 +106,7 @@ const articleSchema = {
               <tbody>
                 <tr>
                   <td class="border p-3 font-medium">Pune-Mumbai Price</td>
-                  <td class="border p-3 bg-green-50 text-green-700 font-bold">₹3,700</td>
+                  <td class="border p-3 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-bold">₹3,700</td>
                   <td class="border p-3">₹4,200</td>
                   <td class="border p-3">₹4,200-4,500</td>
                 </tr>
@@ -124,7 +124,7 @@ const articleSchema = {
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Surge Pricing</td>
-                  <td class="border p-3 bg-green-50 text-green-700 font-semibold">Zero surge</td>
+                  <td class="border p-3 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">Zero surge</td>
                   <td class="border p-3">Occasional surge</td>
                   <td class="border p-3">Peak hour surge</td>
                 </tr>
@@ -136,7 +136,7 @@ const articleSchema = {
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Price Transparency</td>
-                  <td class="border p-3 bg-green-50 text-green-700">Fixed on website</td>
+                  <td class="border p-3 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">Fixed on website</td>
                   <td class="border p-3 text-orange-600">Call for quote</td>
                   <td class="border p-3">Variable</td>
                 </tr>
@@ -224,9 +224,9 @@ const articleSchema = {
                 <p class="text-muted-foreground">All Pune areas: Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Magarpatta, and more.</p>
               </div>
 
-              <div class="bg-green-50 rounded-lg p-4 mb-4">
-                <h4 class="font-semibold text-green-800 mb-2">⭐ Our Verdict</h4>
-                <p class="text-sm text-green-700">
+              <div class="bg-green-50 dark:bg-green-900/30 rounded-lg p-4 mb-4">
+                <h4 class="font-semibold text-green-800 dark:text-green-300 mb-2">⭐ Our Verdict</h4>
+                <p class="text-sm text-green-700 dark:text-green-400">
                   Best overall electric cab service in Pune. Unbeatable combination of price, vehicle quality, and service reliability. Perfect for both occasional travelers and regular commuters.
                 </p>
               </div>
@@ -321,7 +321,7 @@ const articleSchema = {
           <div class="grid md:grid-cols-2 gap-6 mb-6">
             <Card className="border-green-200">
               <CardHeader>
-                <CardTitle className="text-green-700">Electric Cabs (₹3,700)</CardTitle>
+                <CardTitle className="text-green-700 dark:text-green-400">Electric Cabs (₹3,700)</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul class="space-y-2">
@@ -336,7 +336,7 @@ const articleSchema = {
 
             <Card className="border-orange-200">
               <CardHeader>
-                <CardTitle className="text-orange-700">Diesel Cabs (₹5,000+)</CardTitle>
+                <CardTitle className="text-orange-700 dark:text-orange-400">Diesel Cabs (₹5,000+)</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul class="space-y-2 text-muted-foreground">
@@ -350,22 +350,22 @@ const articleSchema = {
             </Card>
           </div>
 
-          <div class="bg-green-50 rounded-lg p-6">
-            <h3 class="font-bold text-xl mb-2 text-green-800">💡 Real Example</h3>
-            <p class="text-green-700 mb-4">
+          <div class="bg-green-50 dark:bg-green-900/30 rounded-lg p-6">
+            <h3 class="font-bold text-xl mb-2 text-green-800 dark:text-green-300">💡 Real Example</h3>
+            <p class="text-green-700 dark:text-green-400 mb-4">
               Regular commuter traveling Hinjewadi to Mumbai Airport twice a month (24 trips/year):
             </p>
             <div class="grid md:grid-cols-3 gap-4">
-              <div class="bg-white rounded-lg p-4">
+              <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
                 <p class="text-sm text-muted-foreground">GreenEVCabs</p>
                 <p class="text-2xl font-bold text-green-600">₹88,800/year</p>
               </div>
-              <div class="bg-white rounded-lg p-4">
+              <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
                 <p class="text-sm text-muted-foreground">Other EVs</p>
                 <p class="text-2xl font-bold">₹1,00,800/year</p>
                 <p class="text-xs text-red-600">₹12,000 more</p>
               </div>
-              <div class="bg-white rounded-lg p-4">
+              <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
                 <p class="text-sm text-muted-foreground">Diesel Cabs</p>
                 <p class="text-2xl font-bold">₹1,20,000/year</p>
                 <p class="text-xs text-red-600">₹31,200 more</p>

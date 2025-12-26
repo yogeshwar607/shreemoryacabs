@@ -10,6 +10,9 @@ export interface Route {
   highlights: string[];
   pricing: {
     kiaCarens: number;
+    citroenEc3: number;
+    mgZsEv: number;
+    innovaHycross: number;
     bydEmax7: number;
   };
   popular: boolean;
@@ -24,9 +27,9 @@ export const routes: Route[] = [
     to: 'Mumbai',
     distance: '148 km',
     duration: '3-3.5 hours',
-    description: 'Premium electric cab service from Pune to Mumbai at the best rate. Professional drivers, luxury 7-seater SUVs (Kia Carens EV & BYD E-MAX 7), and excellent service starting at just ₹3,700. Enjoy comfortable, zero-emission travel on the Mumbai-Pune Expressway with premium amenities at unbeatable prices. Perfect for business travelers and families.',
+    description: 'Premium electric cab service from Pune to Mumbai at the best rate. Professional drivers, luxury 7-seater SUVs (Kia Carens EV & BYD E-MAX 7), and excellent service starting at just ₹2,700. Enjoy comfortable, zero-emission travel on the Mumbai-Pune Expressway with premium amenities at unbeatable prices. Perfect for business travelers and families.',
     highlights: [
-      'Best rate ₹3,700 - cheaper than competitors',
+      'Best rate ₹2,700 - cheaper than competitors',
       'Professional, experienced drivers',
       'Premium 7-seater electric SUVs',
       'Comfortable door-to-door service',
@@ -35,6 +38,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 3700,
+      citroenEc3: 2700,
+      mgZsEv: 3000,
+      innovaHycross: 7000,
       bydEmax7: 4200
     },
     popular: true
@@ -47,9 +53,9 @@ export const routes: Route[] = [
     to: 'Mumbai Airport (BOM)',
     distance: '148 km',
     duration: '2.5-3 hours',
-    description: 'Premium airport transfer from Pune to Mumbai Airport at the best price ₹3,700. Professional drivers, luxury electric SUVs, flight tracking included. Terminal 1 & Terminal 2 drop service with excellent customer care. All tolls included, zero hidden charges. Best value for business travelers and families.',
+    description: 'Premium airport transfer from Pune to Mumbai Airport at the best price ₹2,700. Professional drivers, luxury electric SUVs, flight tracking included. Terminal 1 & Terminal 2 drop service with excellent customer care. All tolls included, zero hidden charges. Best value for business travelers and families.',
     highlights: [
-      'Best price ₹3,700 - fixed rate, no surge',
+      'Best price ₹2,700 - fixed rate, no surge',
       'Professional drivers with excellent service',
       'Complimentary flight tracking included',
       'Terminal 1 & Terminal 2 drop service',
@@ -58,6 +64,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 3700,
+      citroenEc3: 2700,
+      mgZsEv: 3000,
+      innovaHycross: 7000,
       bydEmax7: 4200
     },
     popular: true
@@ -70,9 +79,9 @@ export const routes: Route[] = [
     to: 'Pune',
     distance: '148 km',
     duration: '2.5-3 hours',
-    description: 'Best-priced premium pickup from Mumbai Airport to Pune at just ₹3,700. Professional drivers with meet & greet service, name board, and flight tracking included. Comfortable journey in luxury electric SUVs. Zero waiting charges for delays. Excellent service at the most competitive rate.',
+    description: 'Best-priced premium pickup from Mumbai Airport to Pune at just ₹2,700. Professional drivers with meet & greet service, name board, and flight tracking included. Comfortable journey in luxury electric SUVs. Zero waiting charges for delays. Excellent service at the most competitive rate.',
     highlights: [
-      'Best price ₹3,700 with all services included',
+      'Best price ₹2,700 with all services included',
       'Meet & greet with name board at arrivals',
       'Free flight tracking - zero delay charges',
       'Terminal 1 & 2 pickup service',
@@ -81,6 +90,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 3700,
+      citroenEc3: 2700,
+      mgZsEv: 3000,
+      innovaHycross: 7000,
       bydEmax7: 4200
     },
     popular: true
@@ -104,6 +116,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 3700,
+      citroenEc3: 2700,
+      mgZsEv: 3000,
+      innovaHycross: 7000,
       bydEmax7: 4200
     },
     popular: true
@@ -127,6 +142,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 3700,
+      citroenEc3: 2700,
+      mgZsEv: 3000,
+      innovaHycross: 7000,
       bydEmax7: 4200
     },
     popular: true
@@ -150,6 +168,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 2999,
+      citroenEc3: 2400,
+      mgZsEv: 2700,
+      innovaHycross: 5500,
       bydEmax7: 6400
     },
     popular: true
@@ -173,6 +194,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 2999,
+      citroenEc3: 2200,
+      mgZsEv: 2500,
+      innovaHycross: 4500,
       bydEmax7: 3200
     },
     popular: false
@@ -196,6 +220,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 2999,
+      citroenEc3: 2500,
+      mgZsEv: 2800,
+      innovaHycross: 6000,
       bydEmax7: 7200
     },
     popular: false
@@ -219,6 +246,9 @@ export const routes: Route[] = [
     ],
     pricing: {
       kiaCarens: 2999,
+      citroenEc3: 2400,
+      mgZsEv: 2700,
+      innovaHycross: 5200,
       bydEmax7: 4900
     },
     popular: true
@@ -231,9 +261,9 @@ export const routes: Route[] = [
     to: 'Navi Mumbai Airport (NMI)',
     distance: '120 km',
     duration: '2-2.5 hours',
-    description: 'Premium electric cab service from Pune to Navi Mumbai International Airport (NMI). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. New world-class airport with modern facilities. Book eco-friendly airport transfer starting ₹3,700.',
+    description: 'Premium electric cab service from Pune to Navi Mumbai International Airport (NMI). Zero surge pricing, 24/7 availability, all tolls included. Perfect for business travelers and families. New world-class airport with modern facilities. Book eco-friendly airport transfer starting ₹2,300.',
     highlights: [
-      'Zero surge pricing - ₹3,700 fixed rate 24/7',
+      'Zero surge pricing - ₹2,300 fixed rate 24/7',
       'New world-class airport facility',
       'All tolls & parking included',
       'Early morning pickups (3 AM, 4 AM)',
@@ -241,8 +271,11 @@ export const routes: Route[] = [
       'Luggage capacity: 4-5 large suitcases'
     ],
     pricing: {
-      kiaCarens: 3700,
-      bydEmax7: 4200
+      kiaCarens: 2900,
+      citroenEc3: 2300,
+      mgZsEv: 2600,
+      innovaHycross: 6300,
+      bydEmax7: 3700
     },
     popular: true
   },
@@ -254,7 +287,7 @@ export const routes: Route[] = [
     to: 'Pune',
     distance: '120 km',
     duration: '2-2.5 hours',
-    description: 'Reliable electric cab pickup from Navi Mumbai International Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7. Professional airport pickup service starting ₹3,700.',
+    description: 'Reliable electric cab pickup from Navi Mumbai International Airport to Pune. Real-time flight tracking, meet & greet with name board, zero waiting charges for delays. Available 24/7. Professional airport pickup service starting ₹2,300.',
     highlights: [
       'Flight tracking - automatic delay adjustments',
       'Meet & greet with name board',
@@ -264,8 +297,11 @@ export const routes: Route[] = [
       'Late night pickups available'
     ],
     pricing: {
-      kiaCarens: 3700,
-      bydEmax7: 4200
+      kiaCarens: 2900,
+      citroenEc3: 2300,
+      mgZsEv: 2600,
+      innovaHycross: 6300,
+      bydEmax7: 3700
     },
     popular: true
   }

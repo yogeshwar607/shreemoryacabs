@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateBreadcrumbSchema } from "@/lib/seo";
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" }, "offers": { "price": "3700", "priceCurrency": "INR" } };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" }, "offers": { "price": "2300", "priceCurrency": "INR" } };
 const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "NMIA", url: "/navi-mumbai-airport-to-pune-cab" }, { name: "SB Road", url: "/navi-mumbai-airport-senapati-bapat-road-cab" }]);
 ---
 
-<MainLayout title="NMIA to Senapati Bapat Road Cab ₹3,700 | SB Road Pune" description="Navi Mumbai Airport to Senapati Bapat Road ₹3,700. Deccan, SB Road area. 130 km." keywords={["nmia sb road", "senapati bapat road nmia"]}>
+<MainLayout title="NMIA to Senapati Bapat Road Cab Starting ₹2,300 | SB Road Pune" description="Navi Mumbai Airport to Senapati Bapat Road Starting ₹2,300. Deccan, SB Road area. 130 km." keywords={["nmia sb road", "senapati bapat road nmia"]}>
   <StructuredData data={[serviceSchema, breadcrumbSchema]} />
-  <section class="py-20 bg-green-50">
+  <section class="py-20 bg-green-50 dark:bg-green-900/30">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-6">NMIA to SB Road ₹3,700</h1>
+      <h1 class="text-5xl font-bold mb-6">NMIA to SB Road Starting ₹2,300</h1>
       <p class="text-xl mb-8">130 km | Deccan | Commercial Hub</p>
       <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">Book</a></Button>
     </div>

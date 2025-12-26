@@ -105,7 +105,7 @@ During/after trip, driver notes:
 Driver messages operations team:
 ```
 Trip completed: Pune Hinjewadi to Mumbai Airport
-Passenger: Mr. Sharma (+91 98765 43210)
+Passenger: Mr. Sharma (+917498264215)
 Satisfaction: HIGH - Passenger said "Best cab experience"
 First-time customer: Yes (switched from Ola)
 Review request: RECOMMENDED
@@ -396,7 +396,7 @@ Create a Google Sheet with these columns:
 
 | Date | Customer Name | Phone | Trip Route | Driver | Satisfaction | Request Sent | Template Used | Reminder Sent | Review Posted | Rating | Incentive Given | Notes |
 |------|---------------|-------|------------|--------|--------------|--------------|---------------|---------------|---------------|--------|-----------------|-------|
-| 2025-01-15 | Rahul Sharma | +91 98765 43210 | Pune-Mumbai | Rajesh | HIGH | ✅ Yes | Template 2 | ❌ No | ✅ Yes | 5-star | ✅ ₹100 off | Mentioned "Better than GrEL" |
+| 2025-01-15 | Rahul Sharma | +917498264215 | Pune-Mumbai | Rajesh | HIGH | ✅ Yes | Template 2 | ❌ No | ✅ Yes | 5-star | ✅ ₹100 off | Mentioned "Better than GrEL" |
 | 2025-01-15 | Priya Mehta | +91 98234 56789 | Hinjewadi-Airport | Suresh | HIGH | ✅ Yes | Template 5 | ✅ Yes (24h) | ❌ No | - | - | No response yet |
 
 **Weekly Analysis:**

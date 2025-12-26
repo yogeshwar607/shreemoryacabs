@@ -17,10 +17,10 @@ const serviceSchema = {
     "telephone": "+917498264215"
   },
   "areaServed": { "@type": "Place", "name": "Hadapsar, Pune" },
-  "description": "Electric cab from Navi Mumbai Airport to Hadapsar IT Hub. ₹3,700 flat rate covering BNY Mellon, Zensar, Syntel, MIDC & all Hadapsar areas.",
+  "description": "Electric cab from Navi Mumbai Airport to Hadapsar IT Hub. ₹2,300 flat rate covering BNY Mellon, Zensar, Syntel, MIDC & all Hadapsar areas.",
   "offers": {
     "@type": "Offer",
-    "price": "3700",
+    "price": "2300",
     "priceCurrency": "INR"
   }
 };
@@ -34,7 +34,7 @@ const faqSchema = {
       "name": "Distance from Navi Mumbai Airport to Hadapsar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "135 km via Mumbai-Pune Expressway, approximately 3 hours travel time. Flat ₹3,700 rate covering all Hadapsar IT parks and residential areas."
+        "text": "135 km via Mumbai-Pune Expressway, approximately 3 hours travel time. Flstarting at ₹2,300 rate covering all Hadapsar IT parks and residential areas."
       }
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       "name": "Do you cover BNY Mellon and IT companies in Hadapsar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Direct drops to BNY Mellon, Zensar, Syntel, Bharti Airtel, Jijamata IT Park, and all Hadapsar IT locations at ₹3,700 flat rate."
+        "text": "Yes! Direct drops to BNY Mellon, Zensar, Syntel, Bharti Airtel, Jijamata IT Park, and all Hadapsar IT locations starting at ₹2,300 flat rate."
       }
     }
   ]
@@ -56,8 +56,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ---
 
 <MainLayout
-  title="Navi Mumbai Airport to Hadapsar Cab ₹3,700 | IT Hub BNY Mellon Taxi"
-  description="NMIA to Hadapsar electric cab ₹3,700. Direct to BNY Mellon, Zensar, Syntel, Jijamata IT Park. 135 km via Expressway. 24/7 service. Book now!"
+  title="Navi Mumbai Airport to Hadapsar Cab Starting ₹2,300 | IT Hub BNY Mellon Taxi"
+  description="NMIA to Hadapsar electric cab Starting ₹2,300. Direct to BNY Mellon, Zensar, Syntel, Jijamata IT Park. 135 km via Expressway. 24/7 service. Book now!"
   keywords={["navi mumbai airport to hadapsar", "nmia hadapsar cab", "hadapsar bny mellon cab", "navi mumbai airport it park hadapsar"]}
 >
   <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
@@ -68,7 +68,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-4xl mx-auto text-center">
         <Badge className="mb-4 bg-green-600 text-white">✈️ NMIA Now Open - IT Hub Service</Badge>
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
-          Navi Mumbai Airport to Hadapsar<br/>Electric Cab - ₹3,700
+          Navi Mumbai Airport to Hadapsar<br/>Electric Cab Starting ₹2,300
         </h1>
         <p class="text-xl md:text-2xl text-muted-foreground mb-4">
           135 km | 3 Hours | IT Hub & MIDC Coverage
@@ -136,13 +136,13 @@ const breadcrumbSchema = generateBreadcrumbSchema([
     </div>
   </section>
 
-  <section class="py-16 bg-green-50">
+  <section class="py-16 bg-green-50 dark:bg-green-900/30">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-8">Flat ₹3,700 Rate</h2>
+      <h2 class="text-3xl font-bold mb-8">Flstarting at ₹2,300 Rate</h2>
       <div class="max-w-2xl mx-auto">
         <Card>
           <CardContent className="pt-6">
-            <p class="text-5xl font-bold text-green-600 mb-4">₹3,700</p>
+            <p class="text-5xl font-bold text-green-600 mb-4">₹2,300</p>
             <p class="text-muted-foreground mb-4">All-inclusive | No hidden charges</p>
             <div class="text-left space-y-2">
               <p>✓ 135 km journey covered</p>
@@ -163,19 +163,19 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         <Card>
           <CardHeader>
-            <CardTitle><a href="/navi-mumbai-airport-magarpatta-cab" class="hover:text-green-600">NMIA to Magarpatta</a></CardTitle>
-            <CardDescription>130 km | ₹3,700</CardDescription>
+            <CardTitle><a href="/navi-mumbai-airport-magarpatta-cab" class="hover:text-green-600 dark:hover:text-green-400">NMIA to Magarpatta</a></CardTitle>
+            <CardDescription>130 km | Starting ₹2,300</CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle><a href="/navi-mumbai-airport-kharadi-cab" class="hover:text-green-600">NMIA to Kharadi</a></CardTitle>
-            <CardDescription>130 km | ₹3,700</CardDescription>
+            <CardTitle><a href="/navi-mumbai-airport-kharadi-cab" class="hover:text-green-600 dark:hover:text-green-400">NMIA to Kharadi</a></CardTitle>
+            <CardDescription>130 km | Starting ₹2,300</CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle><a href="/navi-mumbai-airport-to-pune-cab" class="hover:text-green-600">All NMIA Routes</a></CardTitle>
+            <CardTitle><a href="/navi-mumbai-airport-to-pune-cab" class="hover:text-green-600 dark:hover:text-green-400">All NMIA Routes</a></CardTitle>
             <CardDescription>View all destinations</CardDescription>
           </CardHeader>
         </Card>

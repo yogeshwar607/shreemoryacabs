@@ -203,8 +203,8 @@ const breadcrumbSchema = {
 
   <div class="container mx-auto px-4 py-8">
     <!-- Breadcrumbs -->
-    <nav class="text-sm mb-6 text-gray-600">
-      <a href="/" class="hover:text-green-600">Home</a>
+    <nav class="text-sm mb-6 text-gray-600 dark:text-gray-300 dark:text-gray-400">
+      <a href="/" class="hover:text-green-600 dark:hover:text-green-400">Home</a>
       <span class="mx-2">/</span>
       <span>Blog</span>
     </nav>
@@ -214,7 +214,7 @@ const breadcrumbSchema = {
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
         GreenEVCabs Blog
       </h1>
-      <p class="text-xl text-gray-600">
+      <p class="text-xl text-gray-600 dark:text-gray-300">
         Expert guides, tips, and insights on electric cab travel in Pune and Mumbai.
         Learn everything about booking, routes, pricing, and sustainable transportation.
       </p>
@@ -222,13 +222,13 @@ const breadcrumbSchema = {
 
     <!-- Categories Filter -->
     <div class="mb-8">
-      <h2 class="text-sm font-semibold text-gray-700 mb-3">Browse by Category:</h2>
+      <h2 class="text-sm font-semibold text-gray-700 dark:text-gray-200 dark:text-gray-300 mb-3">Browse by Category:</h2>
       <div class="flex flex-wrap gap-2">
-        <Badge variant="outline" className="cursor-pointer hover:bg-green-100">
+        <Badge variant="outline" className="cursor-pointer hover:bg-green-100 dark:hover:bg-green-900/30">
           All Posts
         </Badge>
         {categories.map(category => (
-          <Badge variant="outline" className="cursor-pointer hover:bg-green-100">
+          <Badge variant="outline" className="cursor-pointer hover:bg-green-100 dark:hover:bg-green-900/30">
             {category}
           </Badge>
         ))}
@@ -245,10 +245,10 @@ const breadcrumbSchema = {
               <h2 class="text-xl font-bold mb-3 leading-tight hover:text-green-600 transition-colors">
                 {post.title}
               </h2>
-              <p class="text-gray-600 mb-4 line-clamp-3">
+              <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                 {post.description}
               </p>
-              <div class="flex items-center justify-between text-sm text-gray-500">
+              <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                 <time datetime={post.date}>
                   {new Date(post.date).toLocaleDateString('en-US', {
                     year: 'numeric',
@@ -265,9 +265,9 @@ const breadcrumbSchema = {
     </div>
 
     <!-- CTA Section -->
-    <Card className="bg-gradient-to-r from-green-50 to-blue-50 p-8 text-center">
+    <Card className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 p-8 text-center">
       <h2 class="text-2xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
-      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+      <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
         Experience comfortable, eco-friendly travel from Pune to Mumbai Airport.
         Book your ride with GreenEVCabs today and enjoy a sustainable journey.
       </p>
@@ -288,7 +288,7 @@ const breadcrumbSchema = {
     <!-- Newsletter Section (Optional) -->
     <div class="mt-12 text-center max-w-2xl mx-auto">
       <h3 class="text-xl font-bold mb-3">Stay Updated</h3>
-      <p class="text-gray-600 mb-4">
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
         Get the latest guides, tips, and travel stories delivered to your inbox.
       </p>
       <!-- Add newsletter form here if you have one -->

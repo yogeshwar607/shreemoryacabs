@@ -156,7 +156,7 @@ const faqSchema = {
     </div>
 
     <!-- Quick Answer Box -->
-    <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
+    <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
         <Zap className="h-6 w-6 text-green-600" />
         Quick Decision Guide
@@ -187,35 +187,35 @@ const faqSchema = {
     <Card className="p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
       <nav class="space-y-2">
-        <a href="#vehicles" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#vehicles" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Our 5-Seater & 7-Seater Options
         </a>
-        <a href="#comparison" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#comparison" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Side-by-Side Comparison
         </a>
-        <a href="#passengers" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#passengers" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Passenger Capacity Analysis
         </a>
-        <a href="#luggage" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#luggage" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Luggage Space Comparison
         </a>
-        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#cost" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Cost Analysis
         </a>
-        <a href="#use-cases" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#use-cases" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Best Use Cases
         </a>
-        <a href="#decision-tree" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#decision-tree" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           Decision Tree Helper
         </a>
-        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 hover:underline">
+        <a href="#faqs" class="flex items-center gap-2 text-green-600 hover:text-green-700 dark:text-green-400 hover:underline">
           <ChevronRight className="h-4 w-4" />
           FAQs
         </a>
@@ -228,7 +228,7 @@ const faqSchema = {
 
       <div class="grid md:grid-cols-2 gap-6">
         <!-- 5-Seater -->
-        <Card className="p-6 border-2 border-blue-500">
+        <Card className="p-6 border-2 border-blue-500 dark:border-blue-600">
           <div class="flex items-center justify-between mb-4">
             <h3 class="text-2xl font-bold text-blue-600">5-Seater Option</h3>
             <Car className="h-8 w-8 text-blue-600" />
@@ -314,7 +314,7 @@ const faqSchema = {
         </Card>
       </div>
 
-      <Card className="p-4 bg-blue-50 border-blue-200 mt-6">
+      <Card className="p-4 bg-blue-50 dark:bg-blue-900/30 border-blue-200 mt-6">
         <p class="text-sm">
           <AlertCircle className="h-5 w-5 text-blue-600 inline mr-2" />
           <strong>Note:</strong> Both vehicles are technically 6-7 seaters. The "5-seater" vs "7-seater" terminology refers to typical booking scenarios and pricing tiers, not actual seating capacity.
@@ -331,15 +331,15 @@ const faqSchema = {
           <thead>
             <tr class="bg-gray-100">
               <th class="border p-3 text-left font-bold">Feature</th>
-              <th class="border p-3 text-center font-bold text-blue-700">5-Seater<br/>(Kia Carens)</th>
-              <th class="border p-3 text-center font-bold text-red-700">7-Seater<br/>(BYD E-MAX 7)</th>
+              <th class="border p-3 text-center font-bold text-blue-700 dark:text-blue-400">5-Seater<br/>(Kia Carens)</th>
+              <th class="border p-3 text-center font-bold text-red-700 dark:text-red-400">7-Seater<br/>(BYD E-MAX 7)</th>
               <th class="border p-3 text-center font-bold">Winner</th>
             </tr>
           </thead>
           <tbody>
             <!-- Pricing -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Pricing</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Pricing</td>
             </tr>
             <tr>
               <td class="border p-3">Per km rate</td>
@@ -356,7 +356,7 @@ const faqSchema = {
 
             <!-- Seating -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Seating Capacity</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Seating Capacity</td>
             </tr>
             <tr>
               <td class="border p-3">Maximum passengers</td>
@@ -379,7 +379,7 @@ const faqSchema = {
 
             <!-- Space -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Interior Space</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Interior Space</td>
             </tr>
             <tr>
               <td class="border p-3">Wheelbase</td>
@@ -402,7 +402,7 @@ const faqSchema = {
 
             <!-- Luggage -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Luggage Capacity</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Luggage Capacity</td>
             </tr>
             <tr>
               <td class="border p-3">Boot (all seats up)</td>
@@ -431,7 +431,7 @@ const faqSchema = {
 
             <!-- Features -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Premium Features</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Premium Features</td>
             </tr>
             <tr>
               <td class="border p-3">Panoramic sunroof</td>
@@ -454,7 +454,7 @@ const faqSchema = {
 
             <!-- Performance -->
             <tr>
-              <td class="border p-3 font-semibold bg-gray-50" colspan="4">Performance & Range</td>
+              <td class="border p-3 font-semibold bg-gray-50 dark:bg-gray-800" colspan="4">Performance & Range</td>
             </tr>
             <tr>
               <td class="border p-3">Battery capacity</td>
@@ -476,7 +476,7 @@ const faqSchema = {
             </tr>
 
             <!-- Value -->
-            <tr class="bg-gray-50">
+            <tr class="bg-gray-50 dark:bg-gray-800">
               <td class="border p-3 font-bold">Overall Value</td>
               <td class="border p-3 text-center font-bold text-blue-600">Best for budget</td>
               <td class="border p-3 text-center font-bold text-red-600">Best for premium</td>
@@ -499,7 +499,7 @@ const faqSchema = {
               <Users className="h-6 w-6 text-gray-600" />
               1-2 Passengers
             </h3>
-            <Badge className="bg-blue-200 text-blue-700">Choose 5-Seater</Badge>
+            <Badge className="bg-blue-200 text-blue-700 dark:text-blue-400">Choose 5-Seater</Badge>
           </div>
 
           <div class="grid md:grid-cols-2 gap-4">
@@ -523,7 +523,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-blue-50 p-3 rounded-lg mt-4">
+          <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg mt-4">
             <p class="text-sm"><strong>Recommendation:</strong> 5-seater unless you specifically want premium features (panoramic sunroof, ADAS) or massive boot space.</p>
           </div>
         </Card>
@@ -535,7 +535,7 @@ const faqSchema = {
               <Users className="h-6 w-6 text-gray-600" />
               3-4 Passengers
             </h3>
-            <Badge className="bg-blue-200 text-blue-700">5-Seater Usually Best</Badge>
+            <Badge className="bg-blue-200 text-blue-700 dark:text-blue-400">5-Seater Usually Best</Badge>
           </div>
 
           <div class="grid md:grid-cols-2 gap-4">
@@ -561,7 +561,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-green-50 p-3 rounded-lg mt-4">
+          <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-lg mt-4">
             <p class="text-sm"><strong>Sweet Spot:</strong> 4 passengers is the perfect scenario for either vehicle. Choose based on budget (5-seater) vs comfort/luggage (7-seater).</p>
           </div>
         </Card>
@@ -573,7 +573,7 @@ const faqSchema = {
               <Users className="h-6 w-6 text-gray-600" />
               5-6 Passengers
             </h3>
-            <Badge className="bg-yellow-200 text-yellow-700">Either Works - Consider Luggage</Badge>
+            <Badge className="bg-yellow-200 text-yellow-700 dark:text-yellow-400">Either Works - Consider Luggage</Badge>
           </div>
 
           <div class="grid md:grid-cols-2 gap-4">
@@ -599,7 +599,7 @@ const faqSchema = {
             </div>
           </div>
 
-          <div class="bg-yellow-50 p-3 rounded-lg mt-4">
+          <div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-lg mt-4">
             <p class="text-sm"><strong>Decision Factor:</strong> If traveling with luggage (airport/weekend trip), choose 7-seater for better boot space. For simple commute with minimal bags, 5-seater is fine.</p>
           </div>
         </Card>
@@ -611,11 +611,11 @@ const faqSchema = {
               <Users className="h-6 w-6 text-red-600" />
               7 Passengers
             </h3>
-            <Badge className="bg-red-200 text-red-700">7-Seater Recommended</Badge>
+            <Badge className="bg-red-200 text-red-700 dark:text-red-400">7-Seater Recommended</Badge>
           </div>
 
           <div class="space-y-4">
-            <p class="text-gray-700">
+            <p class="text-gray-700 dark:text-gray-200">
               While both vehicles technically seat 7, comfort level differs significantly:
             </p>
 
@@ -642,7 +642,7 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="bg-red-50 p-3 rounded-lg mt-4 border border-red-300">
+            <div class="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg mt-4 border border-red-300">
               <p class="text-sm"><strong>Strong Recommendation:</strong> For 7 passengers on Pune-Mumbai (2.5+ hour journey), BYD E-MAX 7 is significantly more comfortable. The ₹600 extra is worth it for passenger comfort, especially if any are elderly or tall.</p>
             </div>
           </div>
@@ -666,8 +666,8 @@ const faqSchema = {
             </h4>
 
             <div class="grid md:grid-cols-2 gap-4">
-              <Card className="p-4 bg-blue-50">
-                <p class="font-semibold text-blue-700 mb-2">5-Seater (Kia Carens)</p>
+              <Card className="p-4 bg-blue-50 dark:bg-blue-900/30">
+                <p class="font-semibold text-blue-700 dark:text-blue-400 mb-2">5-Seater (Kia Carens)</p>
                 <div class="space-y-2 text-sm">
                   <p><strong>Boot Space:</strong> 216 liters</p>
                   <p><strong>Can Fit:</strong></p>
@@ -676,12 +676,12 @@ const faqSchema = {
                     <li>• 1 small cabin bag</li>
                     <li>• 2-3 backpacks</li>
                   </ul>
-                  <p class="text-xs text-gray-600 mt-2">⚠️ Tight for 7 people with standard luggage</p>
+                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-2">⚠️ Tight for 7 people with standard luggage</p>
                 </div>
               </Card>
 
-              <Card className="p-4 bg-red-50">
-                <p class="font-semibold text-red-700 mb-2">7-Seater (BYD E-MAX 7)</p>
+              <Card className="p-4 bg-red-50 dark:bg-red-900/30">
+                <p class="font-semibold text-red-700 dark:text-red-400 mb-2">7-Seater (BYD E-MAX 7)</p>
                 <div class="space-y-2 text-sm">
                   <p><strong>Boot Space:</strong> 235 liters</p>
                   <p><strong>Can Fit:</strong></p>
@@ -690,7 +690,7 @@ const faqSchema = {
                     <li>• 1 cabin bag</li>
                     <li>• 3-4 backpacks</li>
                   </ul>
-                  <p class="text-xs text-green-700 mt-2">✓ More manageable for 7 people</p>
+                  <p class="text-xs text-green-700 dark:text-green-400 mt-2">✓ More manageable for 7 people</p>
                 </div>
               </Card>
             </div>
@@ -704,8 +704,8 @@ const faqSchema = {
             </h4>
 
             <div class="grid md:grid-cols-2 gap-4">
-              <Card className="p-4 bg-blue-50">
-                <p class="font-semibold text-blue-700 mb-2">5-Seater (Kia Carens)</p>
+              <Card className="p-4 bg-blue-50 dark:bg-blue-900/30">
+                <p class="font-semibold text-blue-700 dark:text-blue-400 mb-2">5-Seater (Kia Carens)</p>
                 <div class="space-y-2 text-sm">
                   <p><strong>Boot Space:</strong> 485 liters</p>
                   <p><strong>Can Fit:</strong></p>
@@ -715,12 +715,12 @@ const faqSchema = {
                     <li>• Shopping bags</li>
                     <li>• Golf clubs or similar</li>
                   </ul>
-                  <p class="text-xs text-green-700 mt-2">✓ Excellent space for 5 passengers</p>
+                  <p class="text-xs text-green-700 dark:text-green-400 mt-2">✓ Excellent space for 5 passengers</p>
                 </div>
               </Card>
 
-              <Card className="p-4 bg-red-50">
-                <p class="font-semibold text-red-700 mb-2">7-Seater (BYD E-MAX 7)</p>
+              <Card className="p-4 bg-red-50 dark:bg-red-900/30">
+                <p class="font-semibold text-red-700 dark:text-red-400 mb-2">7-Seater (BYD E-MAX 7)</p>
                 <div class="space-y-2 text-sm">
                   <p><strong>Boot Space:</strong> 650 liters</p>
                   <p><strong>Can Fit:</strong></p>
@@ -731,12 +731,12 @@ const faqSchema = {
                     <li>• Sports equipment</li>
                     <li>• Baby stroller + more</li>
                   </ul>
-                  <p class="text-xs text-green-700 mt-2">✓✓ Exceptional cargo capacity</p>
+                  <p class="text-xs text-green-700 dark:text-green-400 mt-2">✓✓ Exceptional cargo capacity</p>
                 </div>
               </Card>
             </div>
 
-            <div class="bg-green-50 p-4 rounded-lg mt-4">
+            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg mt-4">
               <p class="text-sm">
                 <strong>💡 Pro Tip:</strong> If traveling with 4-5 passengers and heavy luggage (airport trips, shopping, weekend getaways), book 7-seater and fold third row. You'll have 650L of boot space - more than most SUVs!
               </p>
@@ -755,11 +755,11 @@ const faqSchema = {
             <div class="grid md:grid-cols-2 gap-3 text-sm">
               <div>
                 <p><strong>5-Seater (Third row folded):</strong></p>
-                <p class="text-gray-700">✓ Fits comfortably with space to spare (485L)</p>
+                <p class="text-gray-700 dark:text-gray-200">✓ Fits comfortably with space to spare (485L)</p>
               </div>
               <div>
                 <p><strong>7-Seater (Third row folded):</strong></p>
-                <p class="text-gray-700">✓✓ Fits easily with lots of extra room (650L)</p>
+                <p class="text-gray-700 dark:text-gray-200">✓✓ Fits easily with lots of extra room (650L)</p>
               </div>
             </div>
           </div>
@@ -769,14 +769,14 @@ const faqSchema = {
             <div class="grid md:grid-cols-2 gap-3 text-sm">
               <div>
                 <p><strong>5-Seater (All seats):</strong></p>
-                <p class="text-red-700">❌ Won't fit - only 216L boot. Need roof carrier or second vehicle</p>
+                <p class="text-red-700 dark:text-red-400">❌ Won't fit - only 216L boot. Need roof carrier or second vehicle</p>
               </div>
               <div>
                 <p><strong>7-Seater (All seats):</strong></p>
-                <p class="text-yellow-700">⚠️ Tight but manageable (235L). Some bags may go on laps</p>
+                <p class="text-yellow-700 dark:text-yellow-400">⚠️ Tight but manageable (235L). Some bags may go on laps</p>
               </div>
             </div>
-            <p class="text-sm text-gray-600 mt-2"><strong>Solution:</strong> With 7 passengers + heavy luggage, consider 2 x 5-seater cabs instead of 1 x 7-seater. Total cost similar but more comfort.</p>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2"><strong>Solution:</strong> With 7 passengers + heavy luggage, consider 2 x 5-seater cabs instead of 1 x 7-seater. Total cost similar but more comfort.</p>
           </div>
 
           <div class="border-b pb-4">
@@ -784,11 +784,11 @@ const faqSchema = {
             <div class="grid md:grid-cols-2 gap-3 text-sm">
               <div>
                 <p><strong>5-Seater:</strong></p>
-                <p class="text-gray-700">✓ Perfect fit, professional look, economical</p>
+                <p class="text-gray-700 dark:text-gray-200">✓ Perfect fit, professional look, economical</p>
               </div>
               <div>
                 <p><strong>7-Seater:</strong></p>
-                <p class="text-gray-700">✓ More premium, extra space for work material</p>
+                <p class="text-gray-700 dark:text-gray-200">✓ More premium, extra space for work material</p>
               </div>
             </div>
           </div>
@@ -798,11 +798,11 @@ const faqSchema = {
             <div class="grid md:grid-cols-2 gap-3 text-sm">
               <div>
                 <p><strong>5-Seater (Third row folded):</strong></p>
-                <p class="text-gray-700">✓ 485L is plenty for shopping bags, boxes, etc.</p>
+                <p class="text-gray-700 dark:text-gray-200">✓ 485L is plenty for shopping bags, boxes, etc.</p>
               </div>
               <div>
                 <p><strong>7-Seater (Third row folded):</strong></p>
-                <p class="text-gray-700">✓✓ 650L = mini cargo van! Load everything</p>
+                <p class="text-gray-700 dark:text-gray-200">✓✓ 650L = mini cargo van! Load everything</p>
               </div>
             </div>
           </div>
@@ -852,7 +852,7 @@ const faqSchema = {
                 <td class="border p-3 text-center">₹1,760</td>
                 <td class="border p-3 text-center">₹320</td>
               </tr>
-              <tr class="bg-gray-50">
+              <tr class="bg-gray-50 dark:bg-gray-800">
                 <td class="border p-3 font-bold">Monthly (10 trips to airport)</td>
                 <td class="border p-3 text-center font-bold">₹27,000</td>
                 <td class="border p-3 text-center font-bold">₹33,000</td>
@@ -863,7 +863,7 @@ const faqSchema = {
         </div>
       </Card>
 
-      <Card className="p-6 mb-6 bg-yellow-50 border-2 border-yellow-400">
+      <Card className="p-6 mb-6 bg-yellow-50 dark:bg-yellow-900/30 border-2 border-yellow-400">
         <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
           <Calculator className="h-6 w-6 text-yellow-600" />
           Value Analysis: What Does ₹600 Extra Buy You?
@@ -911,7 +911,7 @@ const faqSchema = {
           </div>
         </div>
 
-        <div class="mt-4 p-3 bg-white rounded-lg">
+        <div class="mt-4 p-3 bg-white dark:bg-gray-800 rounded-lg">
           <p class="text-sm"><strong>Is it worth ₹600?</strong> Depends on your priorities:</p>
           <ul class="text-sm mt-2 space-y-1 ml-4">
             <li>• <strong>Budget travel (1-4 pax):</strong> Not worth it, save ₹600</li>
@@ -961,29 +961,29 @@ const faqSchema = {
                 <td class="border p-3 text-center">₹825/person</td>
                 <td class="border p-3 text-center">₹150 more</td>
               </tr>
-              <tr class="bg-green-50">
+              <tr class="bg-green-50 dark:bg-green-900/30">
                 <td class="border p-3">5 people</td>
                 <td class="border p-3 text-center">₹540/person</td>
                 <td class="border p-3 text-center">₹660/person</td>
-                <td class="border p-3 text-center text-green-700">₹120 more (worth it!)</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">₹120 more (worth it!)</td>
               </tr>
-              <tr class="bg-green-50">
+              <tr class="bg-green-50 dark:bg-green-900/30">
                 <td class="border p-3">6 people</td>
                 <td class="border p-3 text-center">₹450/person</td>
                 <td class="border p-3 text-center">₹550/person</td>
-                <td class="border p-3 text-center text-green-700">₹100 more (worth it!)</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">₹100 more (worth it!)</td>
               </tr>
-              <tr class="bg-green-50">
+              <tr class="bg-green-50 dark:bg-green-900/30">
                 <td class="border p-3">7 people</td>
                 <td class="border p-3 text-center">₹386/person</td>
                 <td class="border p-3 text-center">₹471/person</td>
-                <td class="border p-3 text-center text-green-700">₹85 more (definitely worth it!)</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">₹85 more (definitely worth it!)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="bg-blue-50 p-3 rounded-lg mt-4">
+        <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg mt-4">
           <p class="text-sm"><strong>Key Insight:</strong> When split among 5+ passengers, the per-person cost difference becomes minimal (₹85-120). At this point, the extra comfort and space in 7-seater is absolutely worth the small per-person premium.</p>
         </div>
       </Card>
@@ -995,7 +995,7 @@ const faqSchema = {
 
       <div class="grid md:grid-cols-2 gap-6">
         <!-- 5-Seater Use Cases -->
-        <Card className="p-6 border-2 border-blue-500">
+        <Card className="p-6 border-2 border-blue-500 dark:border-blue-600">
           <h3 class="text-2xl font-bold mb-4 text-blue-600">Perfect for 5-Seater</h3>
 
           <div class="space-y-4">
@@ -1123,7 +1123,7 @@ const faqSchema = {
 
         <div class="space-y-4">
           <!-- Question 1 -->
-          <Card className="p-4 bg-white">
+          <Card className="p-4 bg-white dark:bg-gray-800">
             <p class="font-bold mb-3">1. How many passengers are traveling?</p>
             <div class="space-y-2 ml-4 text-sm">
               <p>• <strong>1-4 passengers:</strong> Go to Question 2</p>
@@ -1133,7 +1133,7 @@ const faqSchema = {
           </Card>
 
           <!-- Question 2 -->
-          <Card className="p-4 bg-white">
+          <Card className="p-4 bg-white dark:bg-gray-800">
             <p class="font-bold mb-3">2. (For 1-4 passengers) How much luggage?</p>
             <div class="space-y-2 ml-4 text-sm">
               <p>• <strong>Light (1-3 bags):</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
@@ -1142,7 +1142,7 @@ const faqSchema = {
           </Card>
 
           <!-- Question 3 -->
-          <Card className="p-4 bg-white">
+          <Card className="p-4 bg-white dark:bg-gray-800">
             <p class="font-bold mb-3">3. (For 5-6 passengers) Budget priority?</p>
             <div class="space-y-2 ml-4 text-sm">
               <p>• <strong>Save money (₹600):</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
@@ -1151,7 +1151,7 @@ const faqSchema = {
           </Card>
 
           <!-- Question 4 -->
-          <Card className="p-4 bg-white">
+          <Card className="p-4 bg-white dark:bg-gray-800">
             <p class="font-bold mb-3">4. Want premium features (ADAS, panoramic sunroof)?</p>
             <div class="space-y-2 ml-4 text-sm">
               <p>• <strong>No, basic is fine:</strong> → <strong class="text-blue-600">Choose 5-Seater (Kia Carens)</strong></p>
@@ -1160,7 +1160,7 @@ const faqSchema = {
           </Card>
 
           <!-- Question 5 -->
-          <Card className="p-4 bg-white">
+          <Card className="p-4 bg-white dark:bg-gray-800">
             <p class="font-bold mb-3">5. Still confused?</p>
             <div class="space-y-2 ml-4 text-sm">
               <p>• <strong>Default safe choice:</strong> → <strong class="text-blue-600">5-Seater (works for 80% of cases)</strong></p>
@@ -1179,52 +1179,52 @@ const faqSchema = {
       <div class="space-y-4">
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Should I book 5-seater or 7-seater cab for 4 passengers?</h3>
-          <p class="text-gray-700">For 4 passengers with normal luggage, a 5-seater is sufficient and costs less (₹18/km vs ₹22/km). However, if you have heavy luggage (3+ large suitcases), airport-bound, or want extra comfort, upgrade to 7-seater. The third row stays folded, giving massive boot space.</p>
+          <p class="text-gray-700 dark:text-gray-200">For 4 passengers with normal luggage, a 5-seater is sufficient and costs less (₹18/km vs ₹22/km). However, if you have heavy luggage (3+ large suitcases), airport-bound, or want extra comfort, upgrade to 7-seater. The third row stays folded, giving massive boot space.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">What is the cost difference between 5-seater and 7-seater EV cabs?</h3>
-          <p class="text-gray-700">5-seater (Kia Carens EV): ₹18/km. 7-seater (BYD E-MAX 7): ₹22/km. For Pune-Mumbai Airport (150 km), difference is ₹600 per trip. 7-seater includes premium features like panoramic sunroof, ADAS, and more space, justifying the ₹4/km premium.</p>
+          <p class="text-gray-700 dark:text-gray-200">5-seater (Kia Carens EV): ₹18/km. 7-seater (BYD E-MAX 7): ₹22/km. For Pune-Mumbai Airport (150 km), difference is ₹600 per trip. 7-seater includes premium features like panoramic sunroof, ADAS, and more space, justifying the ₹4/km premium.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Can 6-7 seater cab fit 7 adults comfortably?</h3>
-          <p class="text-gray-700">BYD E-MAX 7: Yes, comfortably fits 7 adults with good legroom in all rows. Kia Carens EV: Fits 6 adults very comfortably (captain seats), or 7 adults adequately (bench config). For journeys over 2 hours with 7 people, BYD is more comfortable due to spacious third row.</p>
+          <p class="text-gray-700 dark:text-gray-200">BYD E-MAX 7: Yes, comfortably fits 7 adults with good legroom in all rows. Kia Carens EV: Fits 6 adults very comfortably (captain seats), or 7 adults adequately (bench config). For journeys over 2 hours with 7 people, BYD is more comfortable due to spacious third row.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which is better for families - 5-seater or 7-seater?</h3>
-          <p class="text-gray-700">Family of 4-5: 5-seater is perfect and economical. Family of 6: Either works; 7-seater gives extra space. Family of 7+: Must book 7-seater. Multi-generational travel (grandparents, parents, kids): 7-seater recommended for comfort. Weekend trips with lots of luggage: 7-seater (third row folded = huge boot).</p>
+          <p class="text-gray-700 dark:text-gray-200">Family of 4-5: 5-seater is perfect and economical. Family of 6: Either works; 7-seater gives extra space. Family of 7+: Must book 7-seater. Multi-generational travel (grandparents, parents, kids): 7-seater recommended for comfort. Weekend trips with lots of luggage: 7-seater (third row folded = huge boot).</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Does 7-seater cab have enough luggage space?</h3>
-          <p class="text-gray-700">With all 7 seats occupied: 180-235L boot (fits 2-3 medium suitcases). With third row folded (5 passengers): 580-650L (fits 5-6 large suitcases easily). 7-seaters are excellent for airport trips with families - just fold third row and you have more luggage space than any 5-seater.</p>
+          <p class="text-gray-700 dark:text-gray-200">With all 7 seats occupied: 180-235L boot (fits 2-3 medium suitcases). With third row folded (5 passengers): 580-650L (fits 5-6 large suitcases easily). 7-seaters are excellent for airport trips with families - just fold third row and you have more luggage space than any 5-seater.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Are 7-seater EVs less efficient than 5-seaters?</h3>
-          <p class="text-gray-700">Slightly, but negligible. 7-seaters are heavier (100-150 kg more) which reduces efficiency by 3-5%. BYD E-MAX 7 actually has better range (530 km) than Kia Carens EV (452 km) due to larger 71.8 kWh battery. For Pune-Mumbai, both arrive with 60%+ battery remaining, so efficiency difference doesn't matter.</p>
+          <p class="text-gray-700 dark:text-gray-200">Slightly, but negligible. 7-seaters are heavier (100-150 kg more) which reduces efficiency by 3-5%. BYD E-MAX 7 actually has better range (530 km) than Kia Carens EV (452 km) due to larger 71.8 kWh battery. For Pune-Mumbai, both arrive with 60%+ battery remaining, so efficiency difference doesn't matter.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Can I fold the third row in 7-seater cabs?</h3>
-          <p class="text-gray-700">Yes! Both Kia Carens EV and BYD E-MAX 7 have foldable third rows. When folded, you get massive cargo space (580-650L) while still seating 5 passengers comfortably. Perfect for airport trips, shopping, or weekend getaways. Third row folds in seconds - very convenient.</p>
+          <p class="text-gray-700 dark:text-gray-200">Yes! Both Kia Carens EV and BYD E-MAX 7 have foldable third rows. When folded, you get massive cargo space (580-650L) while still seating 5 passengers comfortably. Perfect for airport trips, shopping, or weekend getaways. Third row folds in seconds - very convenient.</p>
         </Card>
 
         <Card className="p-6">
           <h3 class="font-bold text-lg mb-2">Which cab is better for corporate group travel?</h3>
-          <p class="text-gray-700">For 3-4 professionals: 5-seater (more economical, adequate space, professional look). For 5-6 professionals: 7-seater with third row folded (extra comfort, laptop space). For airport drops with luggage: 7-seater (better boot space). For regular office commute: 5-seater (better cost per person).</p>
+          <p class="text-gray-700 dark:text-gray-200">For 3-4 professionals: 5-seater (more economical, adequate space, professional look). For 5-6 professionals: 7-seater with third row folded (extra comfort, laptop space). For airport drops with luggage: 7-seater (better boot space). For regular office commute: 5-seater (better cost per person).</p>
         </Card>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="mb-12">
-      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500">
+      <Card className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 dark:border-green-600">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">Ready to Book Your Perfect Electric Cab?</h2>
-          <p class="text-lg text-gray-700 mb-6">
+          <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">
             Tell us your passenger count and luggage needs - we'll recommend the perfect vehicle!
           </p>
 
@@ -1236,7 +1236,7 @@ const faqSchema = {
               </Button>
             </a>
             <a href="tel:+919075020422">
-              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-700 dark:text-green-400 hover:bg-green-50 dark:bg-green-900/30 w-full sm:w-auto">
                 <Phone className="h-5 w-5 mr-2" />
                 Call: +91 90750 20422
               </Button>

@@ -29,7 +29,7 @@ const serviceSchema = {
   ],
   "offers": {
     "@type": "Offer",
-    "price": "3700",
+    "price": "2700",
     "priceCurrency": "INR",
     "description": "All-inclusive fare with tolls, parking, driver allowance, and GST. Zero surge pricing.",
     "availability": "https://schema.org/InStock",
@@ -64,7 +64,7 @@ const faqSchema = {
       "name": "How much does electric cab cost from Mumbai Airport to Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GreenEVCabs charges ₹3,700 all-inclusive for Mumbai Airport to Pune in a luxury 7-seater electric SUV. This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden fees, no surge pricing - same rate 24/7."
+        "text": "GreenEVCabs charges ₹2,700 all-inclusive for Mumbai Airport to Pune in a luxury 7-seater electric SUV. This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden fees, no surge pricing - same rate 24/7."
       }
     },
     {
@@ -88,7 +88,7 @@ const faqSchema = {
       "name": "Is GreenEVCabs cheaper than other Mumbai Airport cabs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, GreenEVCabs is ₹500-800 cheaper than other electric cab services (₹3,700 vs ₹4,200-4,500) and ₹1,300 cheaper than diesel cabs (₹5,000+). We offer direct booking without middleman commissions, plus zero surge pricing during peak hours."
+        "text": "Yes, GreenEVCabs is ₹500-800 cheaper than other electric cab services (₹2,700 vs ₹3,000-4,500) and ₹1,300 cheaper than diesel cabs (₹4,200+). We offer direct booking without middleman commissions, plus zero surge pricing during peak hours."
       }
     },
     {
@@ -120,7 +120,7 @@ const faqSchema = {
       "name": "Where exactly do you drop in Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We drop anywhere in Pune at the same ₹3,700 rate: Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Kharadi, Magarpatta, Kore gaon Park, Deccan, Shivajinagar, Aundh, or any other location. No extra charges for specific Pune areas."
+        "text": "We drop anywhere in Pune at the same ₹2,700 rate: Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Kharadi, Magarpatta, Kore gaon Park, Deccan, Shivajinagar, Aundh, or any other location. No extra charges for specific Pune areas."
       }
     }
   ]
@@ -133,8 +133,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ---
 
 <MainLayout
-  title="Mumbai Airport to Pune Electric Cab ₹3,700 | Flight Tracking | Free Waiting - GreenEVCabs"
-  description="Mumbai Airport to Pune electric cab at ₹3,700 all-inclusive. Flight tracking, 30 min free waiting, pickup from T1/T2/Navi Mumbai Airport. Professional drivers, luxury 7-seater SUVs. Book 24/7."
+  title="Mumbai Airport to Pune Electric Cab ₹2,700 | Flight Tracking | Free Waiting - GreenEVCabs"
+  description="Mumbai Airport to Pune electric cab at ₹2,700 all-inclusive. Flight tracking, 30 min free waiting, pickup from T1/T2/Navi Mumbai Airport. Professional drivers, luxury 7-seater SUVs. Book 24/7."
   keywords={[
     "mumbai airport to pune cab",
     "mumbai airport to pune electric cab",
@@ -154,7 +154,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-5xl mx-auto text-center">
         <Badge variant="secondary" className="mb-4">✈️ Airport Pickup Service</Badge>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-          Mumbai Airport to Pune<br/>Electric Cab - ₹3,700
+          Mumbai Airport to Pune<br/>Electric Cab Starting ₹2,700
         </h1>
         <p class="text-xl md:text-2xl text-muted-foreground mb-4">
           Flight Tracking | 30 Minutes Free Waiting | All Terminals Pickup
@@ -164,26 +164,26 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </p>
 
         <!-- Price Comparison -->
-        <div class="bg-green-50 border-2 border-green-200 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+        <div class="bg-green-50 dark:bg-green-900/30 border-2 border-green-200 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
           <h2 class="text-2xl font-bold mb-4">All-Inclusive Pricing</h2>
           <div class="grid md:grid-cols-3 gap-4 text-sm">
-            <div class="bg-white rounded p-4">
-              <div class="text-3xl font-bold text-green-600">₹3,700</div>
+            <div class="bg-white dark:bg-gray-800 rounded p-4">
+              <div class="text-3xl font-bold text-green-600">₹2,700</div>
               <div class="text-muted-foreground">GreenEVCabs</div>
               <div class="text-xs mt-2">✓ All-inclusive</div>
             </div>
-            <div class="bg-red-50 rounded p-4">
-              <div class="text-3xl font-bold text-red-600">₹4,500+</div>
+            <div class="bg-red-50 dark:bg-red-900/30 rounded p-4">
+              <div class="text-3xl font-bold text-red-600">₹4,000+</div>
               <div class="text-muted-foreground">Other EV Cabs</div>
               <div class="text-xs mt-2">+ Surge charges</div>
             </div>
-            <div class="bg-red-50 rounded p-4">
-              <div class="text-3xl font-bold text-red-600">₹5,000+</div>
+            <div class="bg-red-50 dark:bg-red-900/30 rounded p-4">
+              <div class="text-3xl font-bold text-red-600">₹4,200+</div>
               <div class="text-muted-foreground">Diesel Cabs</div>
               <div class="text-xs mt-2">+ Multiple charges</div>
             </div>
           </div>
-          <p class="text-sm mt-4 font-semibold text-green-700">Save ₹500-1,300 per trip with GreenEVCabs</p>
+          <p class="text-sm mt-4 font-semibold text-green-700 dark:text-green-400">Save ₹500-1,300 per trip with GreenEVCabs</p>
         </div>
 
         <!-- CTA Buttons -->
@@ -243,11 +243,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card>
             <CardHeader>
               <IndianRupee class="w-10 h-10 text-primary mb-2" />
-              <CardTitle>Fixed ₹3,700 Rate</CardTitle>
+              <CardTitle>Fixed ₹2,700 Rate</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground">
-                Zero surge pricing. Same ₹3,700 rate whether you land at 3 AM or 8 PM. All tolls and charges included.
+                Zero surge pricing. Same ₹2,700 rate whether you land at 3 AM or 8 PM. All tolls and charges included.
               </p>
             </CardContent>
           </Card>
@@ -319,12 +319,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <p class="text-sm"><strong>New Airport:</strong> Opened 2024, Panvel area</p>
               <p class="text-sm"><strong>Pickup Point:</strong> Main arrivals exit</p>
               <p class="text-sm"><strong>Distance to Pune:</strong> 110 km via Pune-Mumbai Expressway (2-2.5 hours)</p>
-              <p class="text-sm text-primary font-semibold">Same ₹3,700 rate!</p>
+              <p class="text-sm text-primary font-semibold">Same ₹2,700 rate!</p>
             </CardContent>
           </Card>
         </div>
 
-        <Card className="bg-blue-50 border-blue-200">
+        <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
           <CardContent className="pt-6">
             <h3 class="font-semibold mb-3 flex items-center gap-2">
               <Shield class="w-5 h-5 text-primary" />
@@ -351,7 +351,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   <section class="w-full py-12 md:py-16 bg-background">
     <div class="container px-4 md:px-6">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What's Included in ₹3,700?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What's Included in ₹2,700?</h2>
 
         <div class="grid md:grid-cols-2 gap-8">
           <div>
@@ -436,7 +436,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 <Check class="w-5 h-5 text-green-600 mt-0.5" />
                 <div>
                   <p class="font-medium">Zero Surge Pricing</p>
-                  <p class="text-sm text-muted-foreground">Same ₹3,700 at 3 AM or peak hours</p>
+                  <p class="text-sm text-muted-foreground">Same ₹2,700 at 3 AM or peak hours</p>
                 </div>
               </li>
               <li class="flex items-start gap-3">
@@ -478,7 +478,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   <section class="w-full py-12 md:py-16 bg-muted/30">
     <div class="container px-4 md:px-6">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Drop Anywhere in Pune - Same ₹3,700</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Drop Anywhere in Pune - Same ₹2,700</h2>
         <p class="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           No extra charges for specific Pune locations. We drop at your exact address in any Pune area.
         </p>
@@ -537,7 +537,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <p class="text-center text-sm text-muted-foreground mt-8">
-          Not seeing your area? Don't worry! We serve ALL Pune locations at the same ₹3,700 rate. Message us on WhatsApp with your exact address.
+          Not seeing your area? Don't worry! We serve ALL Pune locations at the same ₹2,700 rate. Message us on WhatsApp with your exact address.
         </p>
       </div>
     </div>
@@ -554,7 +554,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <thead>
               <tr class="bg-muted">
                 <th class="border p-3 text-left">Feature</th>
-                <th class="border p-3 text-center bg-green-50">GreenEVCabs</th>
+                <th class="border p-3 text-center bg-green-50 dark:bg-green-900/30">GreenEVCabs</th>
                 <th class="border p-3 text-center">Other EV Cabs</th>
                 <th class="border p-3 text-center">Diesel Cabs</th>
                 <th class="border p-3 text-center">Ola/Uber</th>
@@ -563,73 +563,73 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <tbody>
               <tr>
                 <td class="border p-3 font-medium">Base Price (Mumbai Airport-Pune)</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700 font-bold">₹3,700</td>
-                <td class="border p-3 text-center text-red-700">₹4,200-4,500</td>
-                <td class="border p-3 text-center text-red-700">₹4,000</td>
-                <td class="border p-3 text-center text-red-700">₹3,500+</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-bold">₹2,700</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">₹3,000-4,500</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">₹3,500</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">₹3,500+</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Tolls Included?</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ Yes (₹430)</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ Yes (₹430)</td>
                 <td class="border p-3 text-center">Varies</td>
-                <td class="border p-3 text-center text-red-700">✗ Extra (₹430)</td>
-                <td class="border p-3 text-center text-red-700">✗ Extra (₹430)</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">✗ Extra (₹430)</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">✗ Extra (₹430)</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Driver Allowance Included?</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ Yes (₹500)</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ Yes (₹500)</td>
                 <td class="border p-3 text-center">Varies</td>
-                <td class="border p-3 text-center text-red-700">✗ Extra (₹500)</td>
-                <td class="border p-3 text-center text-green-700">✓ Included</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">✗ Extra (₹500)</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">✓ Included</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Surge Pricing?</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ Zero surge</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ Zero surge</td>
                 <td class="border p-3 text-center">Some have</td>
                 <td class="border p-3 text-center text-muted-foreground">Usually fixed</td>
-                <td class="border p-3 text-center text-red-700">✗ 1.5-3x surge</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">✗ 1.5-3x surge</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Flight Tracking?</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ Included</td>
-                <td class="border p-3 text-center text-green-700">✓ Most offer</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ Included</td>
+                <td class="border p-3 text-center text-green-700 dark:text-green-400">✓ Most offer</td>
                 <td class="border p-3 text-center text-muted-foreground">Rarely</td>
-                <td class="border p-3 text-center text-red-700">✗ No</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">✗ No</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Free Waiting Time</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ 30 minutes</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ 30 minutes</td>
                 <td class="border p-3 text-center">15-20 min</td>
                 <td class="border p-3 text-center">15-20 min</td>
-                <td class="border p-3 text-center text-red-700">5 minutes only</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">5 minutes only</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Vehicle Type</td>
-                <td class="border p-3 text-center bg-green-50">7-seater SUV</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30">7-seater SUV</td>
                 <td class="border p-3 text-center">5-7 seater</td>
                 <td class="border p-3 text-center">Sedan/SUV</td>
                 <td class="border p-3 text-center">Sedan (4-5)</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Advance Payment?</td>
-                <td class="border p-3 text-center bg-green-50 text-green-700">✓ No advance</td>
-                <td class="border p-3 text-center text-red-700">50% advance</td>
-                <td class="border p-3 text-center text-red-700">Usually yes</td>
-                <td class="border p-3 text-center text-red-700">Full advance</td>
+                <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400">✓ No advance</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">50% advance</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">Usually yes</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">Full advance</td>
               </tr>
               <tr class="bg-muted/50 font-bold">
                 <td class="border p-3">Total Final Cost</td>
-                <td class="border p-3 text-center bg-green-100 text-green-700 text-xl">₹3,700</td>
-                <td class="border p-3 text-center text-red-700 text-xl">₹4,500+</td>
-                <td class="border p-3 text-center text-red-700 text-xl">₹5,280+</td>
-                <td class="border p-3 text-center text-red-700 text-xl">₹4,500-7,000</td>
+                <td class="border p-3 text-center bg-green-100 text-green-700 dark:text-green-400 text-xl">₹2,700</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400 text-xl">₹4,000+</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400 text-xl">₹7,000+</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400 text-xl">₹4,000-7,000</td>
               </tr>
               <tr>
                 <td class="border p-3 font-medium">Savings vs GreenEVCabs</td>
-                <td class="border p-3 text-center bg-green-100 text-green-700 font-bold">Best Price</td>
-                <td class="border p-3 text-center text-red-700">-₹800</td>
-                <td class="border p-3 text-center text-red-700">-₹1,580</td>
-                <td class="border p-3 text-center text-red-700">-₹800 to -₹3,300</td>
+                <td class="border p-3 text-center bg-green-100 text-green-700 dark:text-green-400 font-bold">Best Price</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">-₹800</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">-₹1,580</td>
+                <td class="border p-3 text-center text-red-700 dark:text-red-400">-₹800 to -₹3,300</td>
               </tr>
             </tbody>
           </table>
@@ -689,7 +689,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/917498264215?text=Book%20Mumbai%20Airport%20to%20Pune%20-%20Flight:%20[Your%20Flight]%20Date:%20[Date]%20Drop:%20[Pune%20Address]" target="_blank">
               <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                Book on WhatsApp - ₹3,700
+                Book on WhatsApp - ₹2,700
               </Button>
             </a>
             <a href="tel:+917498264215">
@@ -716,7 +716,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                GreenEVCabs charges ₹3,700 all-inclusive for Mumbai Airport to Pune in a luxury 7-seater electric SUV. This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden fees, no surge pricing - same rate 24/7.
+                GreenEVCabs charges ₹2,700 all-inclusive for Mumbai Airport to Pune in a luxury 7-seater electric SUV. This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden fees, no surge pricing - same rate 24/7.
               </p>
             </CardContent>
           </Card>
@@ -749,7 +749,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Yes, GreenEVCabs is ₹500-800 cheaper than other electric cab services (₹3,700 vs ₹4,200-4,500) and ₹1,300 cheaper than diesel cabs (₹5,000+). We offer direct booking without middleman commissions, plus zero surge pricing during peak hours.
+                Yes, GreenEVCabs is ₹500-800 cheaper than other electric cab services (₹2,700 vs ₹3,000-4,500) and ₹1,300 cheaper than diesel cabs (₹4,200+). We offer direct booking without middleman commissions, plus zero surge pricing during peak hours.
               </p>
             </CardContent>
           </Card>
@@ -793,7 +793,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                We drop anywhere in Pune at the same ₹3,700 rate: Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Kharadi, Magarpatta, Koregaon Park, Deccan, Shivajinagar, Aundh, or any other location. No extra charges for specific Pune areas.
+                We drop anywhere in Pune at the same ₹2,700 rate: Hinjewadi, Wakad, Baner, Kothrud, Viman Nagar, Hadapsar, Kharadi, Magarpatta, Koregaon Park, Deccan, Shivajinagar, Aundh, or any other location. No extra charges for specific Pune areas.
               </p>
             </CardContent>
           </Card>
@@ -818,8 +818,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           Save ₹500-1,300 per trip. Zero surge pricing. Professional service. Book in 30 seconds.
         </p>
 
-        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div class="text-5xl font-bold text-green-600 mb-2">₹3,700</div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
+          <div class="text-5xl font-bold text-green-600 mb-2">₹2,700</div>
           <p class="text-muted-foreground mb-6">All-Inclusive | No Hidden Charges | Zero Surge</p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -864,7 +864,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">Pune to Mumbai Airport Cab</h4>
-                <p class="text-sm text-muted-foreground">Drop service from Pune to Mumbai Airport at ₹3,700</p>
+                <p class="text-sm text-muted-foreground">Drop service from Pune to Mumbai Airport at ₹2,700</p>
               </CardContent>
             </Card>
           </a>

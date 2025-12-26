@@ -26,12 +26,12 @@ const serviceSchema = {
     "@type": "Place",
     "name": "Aundh, Pune"
   },
-  "description": "Premium electric cab service from Navi Mumbai Airport to Aundh, Pune. Flat rate ₹3,700 covering University Road, Cerebrum IT Park, and all Aundh localities.",
+  "description": "Premium electric cab service from Navi Mumbai Airport to Aundh, Pune. Starting at ₹2,300 covering University Road, Cerebrum IT Park, and all Aundh localities.",
   "offers": {
     "@type": "Offer",
-    "price": "3700",
+    "price": "2300",
     "priceCurrency": "INR",
-    "description": "Flat rate for Navi Mumbai Airport to Aundh transfer"
+    "description": "Starting price for Navi Mumbai Airport to Aundh transfer"
   }
 };
 
@@ -52,7 +52,7 @@ const faqSchema = {
       "name": "How much does an electric cab cost from Navi Mumbai Airport to Aundh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GreenEVCabs offers a flat rate of ₹3,700 for the journey from Navi Mumbai Airport to Aundh, covering all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges."
+        "text": "GreenEVCabs offers transparent pricing starting at ₹2,300 (Citroen eC3) for the journey from Navi Mumbai Airport to Aundh. Vehicle options: Citroen eC3 (₹2,300), MG ZS EV (₹2,600), Kia Carens (₹2,900), BYD eMax 7 (₹3,700), Innova Hycross (₹6,300). Covers all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges."
       }
     },
     {
@@ -76,7 +76,7 @@ const faqSchema = {
       "name": "Do you provide service to Cerebrum IT Park Aundh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our flat rate of ₹3,700 covers door-to-door service to your exact office location."
+        "text": "Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our transparent pricing starting at ₹2,300 covers door-to-door service to your exact office location."
       }
     },
     {
@@ -114,8 +114,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ---
 
 <MainLayout
-  title="Navi Mumbai Airport to Aundh Cab | Electric Cab ₹3,700 - GreenEVCabs"
-  description="Book electric cab from Navi Mumbai Airport to Aundh, Pune. Flat rate ₹3,700 | Direct service to Cerebrum IT Park, University Road & all Aundh areas | Book now!"
+  title="Navi Mumbai Airport to Aundh Cab | Electric Cab Starting ₹2,300 - GreenEVCabs"
+  description="Book electric cab from Navi Mumbai Airport to Aundh, Pune. Starting at ₹2,300 | Direct service to Cerebrum IT Park, University Road & all Aundh areas | Book now!"
   keywords={[
     "navi mumbai airport to aundh cab",
     "navi mumbai airport to aundh",
@@ -137,7 +137,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">✈️ NMIA Now Open - Serving Aundh</Badge>
 
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-          Navi Mumbai Airport to Aundh<br/>Electric Cab - ₹3,700
+          Navi Mumbai Airport to Aundh<br/>Electric Cab Starting ₹2,300
         </h1>
 
         <p class="text-xl md:text-2xl text-muted-foreground mb-4">
@@ -198,8 +198,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <div class="flex items-start gap-3">
                 <span class="text-2xl">💰</span>
                 <div>
-                  <p class="font-semibold">Flat Rate: ₹3,700</p>
-                  <p class="text-sm text-muted-foreground">All-inclusive, no hidden charges</p>
+                  <p class="font-semibold">Starting at: ₹2,300</p>
+                  <p class="text-sm text-muted-foreground">Multiple vehicle options, no hidden charges</p>
                 </div>
               </div>
               <div class="flex items-start gap-3">
@@ -235,7 +235,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <div class="flex items-start gap-3">
                 <span class="text-2xl">💰</span>
                 <div>
-                  <p class="font-semibold">Cost: ₹4,200+</p>
+                  <p class="font-semibold">Cost: ₹3,200+</p>
                   <p class="text-sm">Higher due to longer distance</p>
                 </div>
               </div>
@@ -250,9 +250,9 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           </Card>
         </div>
 
-        <div class="bg-green-50 border-2 border-green-200 rounded-xl p-6 text-center">
-          <p class="text-2xl font-bold text-green-800 mb-2">Save 40 km Distance + 1 Hour Time + ₹500</p>
-          <p class="text-green-700">By choosing Navi Mumbai Airport over Mumbai Airport for your Aundh journey</p>
+        <div class="bg-green-50 dark:bg-green-900/30 border-2 border-green-200 rounded-xl p-6 text-center">
+          <p class="text-2xl font-bold text-green-800 dark:text-green-300 mb-2">Save 40 km Distance + 1 Hour Time + ₹900</p>
+          <p class="text-green-700 dark:text-green-400">By choosing Navi Mumbai Airport over Mumbai Airport for your Aundh journey</p>
         </div>
       </div>
     </div>
@@ -264,7 +264,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete Aundh Area Coverage</h2>
-          <p class="text-lg text-muted-foreground">We serve every corner of Aundh at the same flat rate of ₹3,700</p>
+          <p class="text-lg text-muted-foreground">We serve every corner of Aundh with transparent pricing starting at ₹2,300</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -495,38 +495,100 @@ const breadcrumbSchema = generateBreadcrumbSchema([
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent Flat Rate Pricing</h2>
-          <p class="text-lg text-muted-foreground">₹3,700 all-inclusive for Navi Mumbai Airport to Aundh</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent Pricing for All Budgets</h2>
+          <p class="text-lg text-muted-foreground">Multiple vehicle options from ₹2,300 to ₹6,300</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <Card className="border-2 border-green-600">
-            <CardHeader className="bg-green-50">
-              <CardTitle className="text-2xl text-center">Electric Cab Service</CardTitle>
-              <CardDescription className="text-center text-lg font-semibold text-green-600">BYD eMax 7-Seater SUV</CardDescription>
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">Citroen eC3</CardTitle>
+              <CardDescription>4-Seater EV</CardDescription>
             </CardHeader>
-            <CardContent className="pt-6">
-              <div class="text-center mb-6">
-                <p class="text-5xl font-bold text-green-600 mb-2">₹3,700</p>
-                <p class="text-muted-foreground">Flat rate, all-inclusive</p>
-              </div>
+            <CardContent>
+              <p class="text-3xl font-bold text-green-600 mb-2">₹2,300</p>
+              <p class="text-sm text-muted-foreground mb-3">Budget-friendly</p>
+              <ul class="text-xs space-y-1">
+                <li>✓ 4 passengers</li>
+                <li>✓ 2-3 bags</li>
+                <li>✓ All tolls included</li>
+              </ul>
+            </CardContent>
+          </Card>
 
-              <div class="space-y-3 mb-6">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">MG ZS EV</CardTitle>
+              <CardDescription>5-Seater SUV</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-green-600 mb-2">₹2,600</p>
+              <p class="text-sm text-muted-foreground mb-3">Comfort</p>
+              <ul class="text-xs space-y-1">
+                <li>✓ 5 passengers</li>
+                <li>✓ 3-4 bags</li>
+                <li>✓ Premium SUV</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="border-2 border-green-600">
+            <CardHeader className="pb-3 bg-green-50 dark:bg-green-900/30">
+              <CardTitle className="text-lg">Kia Carens</CardTitle>
+              <CardDescription>6-Seater MUV</CardDescription>
+            </CardHeader>
+            <CardContent className="pt-4">
+              <p class="text-3xl font-bold text-green-600 mb-2">₹2,900</p>
+              <p class="text-sm text-muted-foreground mb-3">Popular</p>
+              <ul class="text-xs space-y-1">
+                <li>✓ 6 passengers</li>
+                <li>✓ 4-5 bags</li>
+                <li>✓ Spacious</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">BYD eMax 7</CardTitle>
+              <CardDescription>6-Seater SUV</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-green-600 mb-2">₹3,700</p>
+              <p class="text-sm text-muted-foreground mb-3">Premium</p>
+              <ul class="text-xs space-y-1">
+                <li>✓ 6 passengers</li>
+                <li>✓ 5-6 bags</li>
+                <li>✓ Luxury ride</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">Innova Hycross</CardTitle>
+              <CardDescription>7-Seater Hybrid</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-3xl font-bold text-green-600 mb-2">₹6,300</p>
+              <p class="text-sm text-muted-foreground mb-3">Ultimate</p>
+              <ul class="text-xs space-y-1">
+                <li>✓ 7 passengers</li>
+                <li>✓ 6-7 bags</li>
+                <li>✓ Maximum comfort</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
+          <CardContent className="pt-6">
+            <h3 class="font-bold mb-3 text-center">All Prices Include</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+              <div class="space-y-2">
                 <div class="flex items-center gap-2">
                   <span class="text-green-600">✓</span>
-                  <span>Premium electric SUV</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-green-600">✓</span>
-                  <span>Seating for 6 passengers</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-green-600">✓</span>
-                  <span>Ample luggage space</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-green-600">✓</span>
-                  <span>All tolls & parking included</span>
+                  <span>All highway tolls & parking</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-600">✓</span>
@@ -534,72 +596,31 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-600">✓</span>
-                  <span>Zero emissions, eco-friendly</span>
+                  <span>GST & taxes</span>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Door-to-door service</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-600">✓</span>
-                  <span>Silent, smooth ride</span>
+                  <span>No hidden charges</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>24/7 customer support</span>
                 </div>
               </div>
+            </div>
+          </CardContent>
+        </Card>
 
-              <Button className="w-full bg-green-600 hover:bg-green-700" size="lg" asChild>
-                <a href="tel:+917498264215">Book Electric Cab Now</a>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <div class="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>What's Included in ₹3,700</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div class="flex justify-between items-center py-2 border-b">
-                  <span>Base Fare (120 km)</span>
-                  <span class="font-semibold">₹2,800</span>
-                </div>
-                <div class="flex justify-between items-center py-2 border-b">
-                  <span>All Highway Tolls</span>
-                  <span class="font-semibold">₹700</span>
-                </div>
-                <div class="flex justify-between items-center py-2 border-b">
-                  <span>Parking Charges</span>
-                  <span class="font-semibold">₹100</span>
-                </div>
-                <div class="flex justify-between items-center py-2 border-b">
-                  <span>Driver Allowance</span>
-                  <span class="font-semibold">₹100</span>
-                </div>
-                <div class="flex justify-between items-center py-2 font-bold text-lg bg-green-50 px-2 rounded">
-                  <span>Total (No Hidden Charges)</span>
-                  <span class="text-green-600">₹3,700</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-blue-50 border-blue-200">
-              <CardContent className="pt-6">
-                <h3 class="font-bold mb-3">Compare & Save</h3>
-                <div class="space-y-2 text-sm">
-                  <div class="flex justify-between">
-                    <span>Other EVs (NMIA-Aundh)</span>
-                    <span class="line-through text-muted-foreground">₹4,200</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span>Diesel Cabs (NMIA-Aundh)</span>
-                    <span class="line-through text-muted-foreground">₹5,000</span>
-                  </div>
-                  <div class="flex justify-between font-bold text-green-700">
-                    <span>GreenEVCabs</span>
-                    <span>₹3,700</span>
-                  </div>
-                  <div class="pt-2 border-t border-blue-300">
-                    <p class="text-green-700 font-semibold">You save ₹500 - ₹1,300!</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        <div class="text-center mt-6">
+          <Button className="bg-green-600 hover:bg-green-700" size="lg" asChild>
+            <a href="tel:+917498264215">Book Your Preferred Vehicle Now</a>
+          </Button>
         </div>
       </div>
     </div>
@@ -641,7 +662,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <CardTitle>Best Rates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-muted-foreground">Flat ₹3,700 rate beats all competitors. No surge pricing, no hidden charges. Save ₹500-1,300 vs other options.</p>
+              <p class="text-muted-foreground">Starting at ₹2,300 beats all competitors. No surge pricing, no hidden charges. Save up to ₹1,500 vs other options.</p>
             </CardContent>
           </Card>
 
@@ -703,7 +724,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <CardTitle className="text-lg">How much does an electric cab cost from Navi Mumbai Airport to Aundh?</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-muted-foreground">GreenEVCabs offers a flat rate of ₹3,700 for the journey from Navi Mumbai Airport to Aundh, covering all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges.</p>
+              <p class="text-muted-foreground">GreenEVCabs offers transparent pricing starting at ₹2,300 (Citroen eC3) for the journey from Navi Mumbai Airport to Aundh. Vehicle options: Citroen eC3 (₹2,300), MG ZS EV (₹2,600), Kia Carens (₹2,900), BYD eMax 7 (₹3,700), Innova Hycross (₹6,300). Covers all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges.</p>
             </CardContent>
           </Card>
 
@@ -730,7 +751,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <CardTitle className="text-lg">Do you provide service to Cerebrum IT Park Aundh?</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-muted-foreground">Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our flat rate of ₹3,700 covers door-to-door service to your exact office location.</p>
+              <p class="text-muted-foreground">Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our transparent pricing starting at ₹2,300 covers door-to-door service to your exact office location.</p>
             </CardContent>
           </Card>
 
@@ -771,7 +792,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Book Your Ride?</h2>
         <p class="text-xl mb-8 text-green-50">
-          Navi Mumbai Airport to Aundh | Flat ₹3,700 | Premium Electric Cab
+          Navi Mumbai Airport to Aundh | Starting ₹2,300 | Premium Electric Cab
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -791,7 +812,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   </section>
 
   <!-- Related Routes -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-gray-50 dark:bg-gray-800">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Related Routes from Navi Mumbai Airport</h2>
@@ -800,9 +821,10 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="text-lg">
-                <a href="/navi-mumbai-airport-hinjewadi-cab" class="hover:text-green-600">NMIA to Hinjewadi</a>
+                <a href="/navi-mumbai-airport-hinjewadi-cab" class="hover:text-green-600 dark:hover:text-green-400">NMIA to Hinjewadi</a>
               </CardTitle>
-              <CardDescription>100 km | ₹3,700</CardDescription>
+              <CardDescription>100 km | Starting ₹2,300</CardDescription>
+
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground">Direct service to all Hinjewadi phases, Infosys, TCS, Wipro campuses</p>
@@ -812,9 +834,10 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="text-lg">
-                <a href="/navi-mumbai-airport-baner-cab" class="hover:text-green-600">NMIA to Baner</a>
+                <a href="/navi-mumbai-airport-baner-cab" class="hover:text-green-600 dark:hover:text-green-400">NMIA to Baner</a>
               </CardTitle>
-              <CardDescription>115 km | ₹3,700</CardDescription>
+              <CardDescription>115 km | Starting ₹2,300</CardDescription>
+
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground">Balewadi High Street, ICC Trade Tower, startup hub coverage</p>
@@ -824,9 +847,10 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="text-lg">
-                <a href="/navi-mumbai-airport-wakad-cab" class="hover:text-green-600">NMIA to Wakad</a>
+                <a href="/navi-mumbai-airport-wakad-cab" class="hover:text-green-600 dark:hover:text-green-400">NMIA to Wakad</a>
               </CardTitle>
-              <CardDescription>105 km | ₹3,700</CardDescription>
+              <CardDescription>105 km | Starting ₹2,300</CardDescription>
+
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground">Dange Chowk, WTC Wakad, EON IT Park, Kumar Pebble Park</p>

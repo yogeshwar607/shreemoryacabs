@@ -1,0 +1,264 @@
+---
+/**
+ * EmbeddedRouteMap Component (No API Key Required)
+ * Uses Google Maps Embed API for simple route visualization
+ * Perfect for quick implementation without API setup
+ */
+
+interface Props {
+  origin: string;
+  destination: string;
+  height?: string;
+  mode?: "place" | "directions" | "view";
+}
+
+const {
+  origin = "Baner, Pune, Maharashtra",
+  destination = "Navi Mumbai International Airport",
+  height = "450px",
+  mode = "directions"
+} = Astro.props;
+
+// Encode addresses for URL
+const encodedOrigin = encodeURIComponent(origin);
+const encodedDestination = encodeURIComponent(destination);
+
+// Build embed URL based on mode
+let embedUrl = "";
+
+if (mode === "directions") {
+  embedUrl = `https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=${encodedOrigin}&destination=${encodedDestination}&mode=driving&avoid=tolls&zoom=10`;
+} else if (mode === "place") {
+  embedUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedDestination}&zoom=15`;
+} else if (mode === "view") {
+  embedUrl = `https://www.google.com/maps/embed/v1/view?key=YOUR_API_KEY&center=18.8,73.4&zoom=9`;
+}
+
+// Alternative: Use Maps URL (no API key, but opens in new tab)
+const mapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodedOrigin}&destination=${encodedDestination}&travelmode=driving`;
+---
+
+<div class="embedded-map-wrapper">
+  <div class="map-header">
+    <div class="route-info">
+      <span class="origin">📍 {origin}</span>
+      <span class="arrow">→</span>
+      <span class="destination">✈️ {destination}</span>
+    </div>
+    <a
+      href={mapsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="open-in-maps-btn"
+    >
+      Open in Google Maps ↗
+    </a>
+  </div>
+
+  <!-- Fallback: Static image with link (no API key needed) -->
+  <div class="map-container" style={`height: ${height}`}>
+    <a
+      href={mapsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="static-map-link"
+      aria-label={`View route from ${origin} to ${destination} on Google Maps`}
+    >
+      <img
+        src={`https://maps.googleapis.com/maps/api/staticmap?size=800x600&markers=color:green|label:A|${encodedOrigin}&markers=color:blue|label:B|${encodedDestination}&path=color:0x10B981|weight:5|${encodedOrigin}|${encodedDestination}&key=YOUR_API_KEY`}
+        alt={`Route map from ${origin} to ${destination}`}
+        class="static-map-image"
+        loading="lazy"
+      />
+      <div class="map-overlay">
+        <span class="overlay-text">Click to view interactive map</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Route details -->
+  <div class="route-details">
+    <div class="detail-item">
+      <span class="label">Fixed Rate</span>
+      <span class="value">₹3,700</span>
+    </div>
+    <div class="detail-item">
+      <span class="label">Distance</span>
+      <span class="value">~120 km</span>
+    </div>
+    <div class="detail-item">
+      <span class="label">Duration</span>
+      <span class="value">2-2.5 hours</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .embedded-map-wrapper {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .route-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .origin,
+  .destination {
+    font-weight: 600;
+    color: #1F2937;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .arrow {
+    color: #10B981;
+    font-weight: bold;
+  }
+
+  .open-in-maps-btn {
+    padding: 8px 16px;
+    background: #10B981;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .open-in-maps-btn:hover {
+    background: #059669;
+  }
+
+  .map-container {
+    width: 100%;
+    position: relative;
+    background: #F3F4F6;
+  }
+
+  .static-map-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .static-map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 185, 129, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+
+  .static-map-link:hover .map-overlay {
+    background: rgba(16, 185, 129, 0.1);
+  }
+
+  .overlay-text {
+    opacity: 0;
+    color: white;
+    background: #10B981;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+  }
+
+  .static-map-link:hover .overlay-text {
+    opacity: 1;
+  }
+
+  .route-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #E5E7EB;
+  }
+
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: white;
+    gap: 4px;
+  }
+
+  .detail-item .label {
+    font-size: 12px;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .detail-item .value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #10B981;
+  }
+
+  @media (max-width: 640px) {
+    .map-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .route-info {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+    }
+
+    .open-in-maps-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .route-details {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

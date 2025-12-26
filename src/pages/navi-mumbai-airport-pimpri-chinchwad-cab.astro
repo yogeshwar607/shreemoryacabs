@@ -10,7 +10,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" },
-  "offers": { "@type": "Offer", "price": "3700", "priceCurrency": "INR" }
+  "offers": { "@type": "Offer", "price": "2300", "priceCurrency": "INR" }
 };
 
 const breadcrumbSchema = generateBreadcrumbSchema([
@@ -20,11 +20,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 ---
 
-<MainLayout title="NMIA to Pimpri Chinchwad Cab ₹3,700 | PCMC Electric Taxi" description="Navi Mumbai Airport to PCMC electric cab ₹3,700. Covers Nigdi, Chinchwad, Pimpri. 105 km. Book now!" keywords={["nmia pcmc", "navi mumbai airport pimpri chinchwad"]}>
+<MainLayout title="NMIA to Pimpri Chinchwad Cab Starting ₹2,300 | PCMC Electric Taxi" description="Navi Mumbai Airport to PCMC electric cab Starting ₹2,300. Covers Nigdi, Chinchwad, Pimpri. 105 km. Book now!" keywords={["nmia pcmc", "navi mumbai airport pimpri chinchwad"]}>
   <StructuredData data={[serviceSchema, breadcrumbSchema]} />
   <section class="py-20 bg-gradient-to-br from-green-50 to-white">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-6">NMIA to Pimpri Chinchwad<br/>₹3,700</h1>
+      <h1 class="text-5xl font-bold mb-6">NMIA to Pimpri Chinchwad<br/>₹2,300</h1>
       <p class="text-xl mb-8">105 km | 2.5 Hours | PCMC Coverage</p>
       <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">Book Cab</a></Button>
     </div>

@@ -79,9 +79,9 @@ const breadcrumbSchema = {
   <div class="container mx-auto px-4 py-8 max-w-4xl">
     <!-- Breadcrumbs -->
     <nav class="text-sm mb-6 text-gray-600">
-      <a href="/" class="hover:text-green-600">Home</a>
+      <a href="/" class="hover:text-green-600 dark:hover:text-green-400">Home</a>
       <span class="mx-2">/</span>
-      <a href="/blog" class="hover:text-green-600">Blog</a>
+      <a href="/blog" class="hover:text-green-600 dark:hover:text-green-400">Blog</a>
       <span class="mx-2">/</span>
       <span>Pune Mumbai Cab Cost</span>
     </nav>
@@ -93,41 +93,41 @@ const breadcrumbSchema = {
         <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
           How Much Does Pune to Mumbai Cab Actually Cost? Real Prices 2025
         </h1>
-        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+        <div class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300 mb-6">
           <span>By {author}</span>
           <span>•</span>
           <time datetime={publishDate}>February 1, 2025</time>
           <span>•</span>
           <span>10 min read</span>
         </div>
-        <p class="text-xl text-gray-700 leading-relaxed">
+        <p class="text-xl text-gray-700 dark:text-gray-200 leading-relaxed">
           Confused by varying cab quotes for Pune-Mumbai? Here's the brutally honest truth about what you'll actually pay, including all the hidden charges nobody tells you about.
         </p>
       </header>
 
       <!-- Quick Answer -->
-      <Card className="p-6 mb-8 bg-green-50 border-2 border-green-500">
-        <h2 class="font-bold text-2xl mb-4 text-green-800">⚡ Quick Answer</h2>
+      <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-500 dark:border-green-600">
+        <h2 class="font-bold text-2xl mb-4 text-green-800 dark:text-green-300">⚡ Quick Answer</h2>
         <p class="text-lg mb-4">The REAL cost for Pune to Mumbai Airport cab ranges from:</p>
         <ul class="space-y-2 mb-4">
           <li class="flex items-start gap-2">
-            <span class="text-green-700 font-bold">•</span>
-            <span><strong>Electric cab:</strong> ₹3,700 fixed (GreenEVCabs)</span>
+            <span class="text-green-700 dark:text-green-400 font-bold">•</span>
+            <span><strong>Electric cab:</strong> ₹2,700 fixed (GreenEVCabs)</span>
           </li>
           <li class="flex items-start gap-2">
             <span class="text-orange-600 font-bold">•</span>
-            <span><strong>Other EVs:</strong> ₹4,200 (with all charges)</span>
+            <span><strong>Other EVs:</strong> ₹3,000 (with all charges)</span>
           </li>
           <li class="flex items-start gap-2">
             <span class="text-red-600 font-bold">•</span>
-            <span><strong>Diesel cab:</strong> ₹5,000-₹5,500 (with all charges)</span>
+            <span><strong>Diesel cab:</strong> ₹4,200-₹5,500 (with all charges)</span>
           </li>
           <li class="flex items-start gap-2">
             <span class="text-red-600 font-bold">•</span>
             <span><strong>Ola/Uber:</strong> ₹4,500-₹12,000 (depending on surge)</span>
           </li>
         </ul>
-        <p class="text-base text-gray-700"><strong>Average actual payment:</strong> Most people end up paying ₹4,500-₹6,000 when accounting for surge, tolls, and hidden charges. <strong>Save ₹800-₹2,300 with GreenEVCabs at ₹3,700.</strong></p>
+        <p class="text-base text-gray-700"><strong>Average actual payment:</strong> Most people end up paying ₹4,500-₹6,000 when accounting for surge, tolls, and hidden charges. <strong>Save ₹800-₹2,300 with GreenEVCabs at ₹2,700.</strong></p>
       </Card>
 
       <!-- Content -->
@@ -172,19 +172,19 @@ const breadcrumbSchema = {
 
           <div class="space-y-8">
             <!-- GreenEVCabs -->
-            <Card className="p-6 border-2 border-green-500 bg-green-50">
+            <Card className="p-6 border-2 border-green-500 dark:border-green-600 bg-green-50 dark:bg-green-900/30">
               <div class="flex items-start justify-between mb-4">
                 <div>
                   <h3 class="font-bold text-2xl mb-2">⚡ GreenEVCabs (Electric)</h3>
                   <p class="text-sm text-gray-600">Fixed price, no surge</p>
                 </div>
                 <div class="text-right">
-                  <p class="text-4xl font-bold text-green-700">₹3,700</p>
+                  <p class="text-4xl font-bold text-green-700 dark:text-green-400">₹2,700</p>
                   <p class="text-sm text-gray-600">Always</p>
                 </div>
               </div>
 
-              <div class="bg-white p-4 rounded mb-4">
+              <div class="bg-white dark:bg-gray-800 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">What's Included:</h4>
                 <div class="grid grid-cols-2 gap-2 text-sm">
                   <div>✓ 148 km journey</div>
@@ -200,18 +200,18 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-white p-4 rounded">
+              <div class="bg-white dark:bg-gray-800 p-4 rounded">
                 <h4 class="font-semibold mb-2">Hidden Charges:</h4>
-                <p class="text-green-700 font-semibold">None! ₹3,700 is your final price.</p>
+                <p class="text-green-700 dark:text-green-400 font-semibold">None! ₹2,700 is your final price.</p>
               </div>
 
               <div class="mt-4 p-3 bg-green-600 text-white rounded text-center">
-                <p class="font-semibold">💰 You Pay: ₹3,700 (100% guaranteed)</p>
+                <p class="font-semibold">💰 You Pay: ₹2,700 (100% guaranteed)</p>
               </div>
             </Card>
 
             <!-- Traditional Diesel -->
-            <Card className="p-6 border border-gray-300">
+            <Card className="p-6 border border-gray-300 dark:border-gray-600">
               <div class="flex items-start justify-between mb-4">
                 <div>
                   <h3 class="font-bold text-2xl mb-2">🚗 Traditional Diesel Cab</h3>
@@ -223,7 +223,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-gray-50 p-4 rounded mb-4">
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Base Quote Includes:</h4>
                 <div class="grid grid-cols-2 gap-2 text-sm">
                   <div>✓ 148 km journey</div>
@@ -235,7 +235,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-yellow-50 p-4 rounded mb-4">
+              <div class="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Additional Charges:</h4>
                 <ul class="space-y-1 text-sm">
                   <li>+ Toll charges: <span class="font-semibold">₹430</span></li>
@@ -246,7 +246,7 @@ const breadcrumbSchema = {
               </div>
 
               <div class="mt-4 p-3 bg-gray-600 text-white rounded text-center">
-                <p class="font-semibold">💰 You Actually Pay: ₹5,000-₹5,500</p>
+                <p class="font-semibold">💰 You Actually Pay: ₹4,200-₹5,500</p>
               </div>
             </Card>
 
@@ -263,7 +263,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-gray-50 p-4 rounded mb-4">
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Base Fare Includes:</h4>
                 <div class="grid grid-cols-2 gap-2 text-sm">
                   <div>✓ 148 km journey</div>
@@ -273,7 +273,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-orange-50 p-4 rounded mb-4">
+              <div class="bg-orange-50 dark:bg-orange-900/30 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Variable Charges:</h4>
                 <ul class="space-y-2 text-sm">
                   <li>⚠️ Normal hours: <span class="font-semibold">₹3,500-₹3,870</span></li>
@@ -302,7 +302,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-gray-50 p-4 rounded mb-4">
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Base Fare Includes:</h4>
                 <div class="grid grid-cols-2 gap-2 text-sm">
                   <div>✓ 148 km journey</div>
@@ -312,7 +312,7 @@ const breadcrumbSchema = {
                 </div>
               </div>
 
-              <div class="bg-red-50 p-4 rounded mb-4">
+              <div class="bg-red-50 dark:bg-red-900/30 p-4 rounded mb-4">
                 <h4 class="font-semibold mb-3">Variable Charges:</h4>
                 <ul class="space-y-2 text-sm">
                   <li>⚠️ Normal hours: <span class="font-semibold">₹3,800-₹4,120</span></li>
@@ -340,7 +340,7 @@ const breadcrumbSchema = {
               <thead>
                 <tr class="bg-gray-100">
                   <th class="border p-3 text-left">Departure Time</th>
-                  <th class="border p-3 text-center bg-green-50">Electric</th>
+                  <th class="border p-3 text-center bg-green-50 dark:bg-green-900/30">Electric</th>
                   <th class="border p-3 text-center">Diesel</th>
                   <th class="border p-3 text-center">Ola</th>
                   <th class="border p-3 text-center">Uber</th>
@@ -349,35 +349,35 @@ const breadcrumbSchema = {
               <tbody>
                 <tr>
                   <td class="border p-3 font-semibold">Late Night (12-5 AM)</td>
-                  <td class="border p-3 text-center bg-green-50">₹3,700</td>
+                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30">₹2,700</td>
                   <td class="border p-3 text-center">₹5,200</td>
                   <td class="border p-3 text-center">₹4,800</td>
                   <td class="border p-3 text-center">₹5,700</td>
                 </tr>
-                <tr class="bg-orange-50">
+                <tr class="bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
                   <td class="border p-3 font-semibold">Morning Rush (6-9 AM)</td>
-                  <td class="border p-3 text-center bg-green-100 text-green-700 font-bold">₹3,700</td>
-                  <td class="border p-3 text-center">₹5,000</td>
+                  <td class="border p-3 text-center bg-green-100 text-green-700 dark:text-green-400 font-bold">₹2,700</td>
+                  <td class="border p-3 text-center">₹4,200</td>
                   <td class="border p-3 text-center text-orange-600 font-semibold">₹6,300</td>
                   <td class="border p-3 text-center text-red-600 font-semibold">₹8,100</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-semibold">Mid-Day (10 AM-4 PM)</td>
-                  <td class="border p-3 text-center bg-green-50">₹3,700</td>
-                  <td class="border p-3 text-center">₹5,000</td>
+                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30">₹2,700</td>
+                  <td class="border p-3 text-center">₹4,200</td>
                   <td class="border p-3 text-center">₹4,500</td>
                   <td class="border p-3 text-center">₹4,800</td>
                 </tr>
-                <tr class="bg-orange-50">
+                <tr class="bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
                   <td class="border p-3 font-semibold">Evening Rush (5-9 PM)</td>
-                  <td class="border p-3 text-center bg-green-100 text-green-700 font-bold">₹3,700</td>
-                  <td class="border p-3 text-center">₹5,000</td>
+                  <td class="border p-3 text-center bg-green-100 text-green-700 dark:text-green-400 font-bold">₹2,700</td>
+                  <td class="border p-3 text-center">₹4,200</td>
                   <td class="border p-3 text-center text-orange-600 font-semibold">₹5,900</td>
                   <td class="border p-3 text-center text-red-600 font-semibold">₹7,500</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-semibold">Night (10-11 PM)</td>
-                  <td class="border p-3 text-center bg-green-50">₹3,700</td>
+                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30">₹2,700</td>
                   <td class="border p-3 text-center">₹5,200</td>
                   <td class="border p-3 text-center">₹5,100</td>
                   <td class="border p-3 text-center">₹5,650</td>
@@ -386,9 +386,9 @@ const breadcrumbSchema = {
             </table>
           </div>
 
-          <div class="mt-6 p-4 bg-blue-50 rounded">
+          <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/30 rounded">
             <p class="font-semibold mb-2">💡 Pro Tip:</p>
-            <p class="text-sm">If using Ola/Uber, traveling between 10 AM - 4 PM can save you ₹1,500-₹3,500 compared to peak hours. With GreenEVCabs electric cabs, time doesn't matter - always ₹3,700 with zero surge pricing.</p>
+            <p class="text-sm">If using Ola/Uber, traveling between 10 AM - 4 PM can save you ₹1,500-₹3,500 compared to peak hours. With GreenEVCabs electric cabs, time doesn't matter - always ₹2,700 with zero surge pricing.</p>
           </div>
         </section>
 
@@ -398,7 +398,7 @@ const breadcrumbSchema = {
           <p class="mb-6">Here are actual bills from real customers:</p>
 
           <div class="space-y-6">
-            <Card className="p-6 bg-green-50">
+            <Card className="p-6 bg-green-50 dark:bg-green-900/30">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <h3 class="font-bold text-lg">Customer A - Tuesday 10 AM</h3>
@@ -407,18 +407,18 @@ const breadcrumbSchema = {
                 <Badge className="bg-green-600">GreenEVCabs</Badge>
               </div>
               <div class="space-y-1 text-sm mb-4">
-                <div class="flex justify-between"><span>Base Fare:</span><span>₹3,700</span></div>
+                <div class="flex justify-between"><span>Base Fare:</span><span>₹2,700</span></div>
                 <div class="flex justify-between"><span>Toll Charges:</span><span className="text-green-600">Included</span></div>
                 <div class="flex justify-between"><span>Driver Allowance:</span><span className="text-green-600">Included</span></div>
                 <div class="flex justify-between"><span>Surge:</span><span className="text-green-600">₹0</span></div>
                 <div class="flex justify-between border-t pt-2 font-bold text-lg">
-                  <span>Total Paid:</span><span class="text-green-700">₹3,700</span>
+                  <span>Total Paid:</span><span class="text-green-700 dark:text-green-400">₹2,700</span>
                 </div>
               </div>
               <p class="text-xs text-gray-600">✓ Kia Carens EV • Payment via UPI after trip</p>
             </Card>
 
-            <Card className="p-6 bg-gray-50">
+            <Card className="p-6 bg-gray-50 dark:bg-gray-800">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <h3 class="font-bold text-lg">Customer B - Friday 7 AM</h3>
@@ -432,13 +432,13 @@ const breadcrumbSchema = {
                 <div class="flex justify-between"><span>Driver Batta:</span><span className="text-red-600">+ ₹500</span></div>
                 <div class="flex justify-between"><span>Wait Charge (20 min):</span><span className="text-red-600">+ ₹100</span></div>
                 <div class="flex justify-between border-t pt-2 font-bold text-lg">
-                  <span>Total Paid:</span><span class="text-red-700">₹5,030</span>
+                  <span>Total Paid:</span><span class="text-red-700 dark:text-red-400">₹5,030</span>
                 </div>
               </div>
               <p class="text-xs text-gray-600">✓ Paid in cash</p>
             </Card>
 
-            <Card className="p-6 bg-orange-50">
+            <Card className="p-6 bg-orange-50 dark:bg-orange-900/30 dark:bg-orange-900/30">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <h3 class="font-bold text-lg">Customer C - Saturday 8 PM</h3>
@@ -447,17 +447,17 @@ const breadcrumbSchema = {
                 <Badge className="bg-yellow-500">Ola Outstation</Badge>
               </div>
               <div class="space-y-1 text-sm mb-4">
-                <div class="flex justify-between"><span>App Quote:</span><span>₹3,700</span></div>
+                <div class="flex justify-between"><span>App Quote:</span><span>₹2,700</span></div>
                 <div class="flex justify-between"><span>Weekend Surge (1.3x):</span><span className="text-orange-600">+ ₹1,110</span></div>
                 <div class="flex justify-between"><span>Convenience Fee:</span><span className="text-red-600">+ ₹50</span></div>
                 <div class="flex justify-between border-t pt-2 font-bold text-lg">
-                  <span>Total Paid:</span><span class="text-orange-700">₹4,860</span>
+                  <span>Total Paid:</span><span class="text-orange-700 dark:text-orange-400">₹4,860</span>
                 </div>
               </div>
               <p class="text-xs text-gray-600">✓ Paid via app (Paytm Wallet)</p>
             </Card>
 
-            <Card className="p-6 bg-red-50">
+            <Card className="p-6 bg-red-50 dark:bg-red-900/30">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <h3 class="font-bold text-lg">Customer D - Monday 6:30 AM (Monsoon)</h3>
@@ -470,7 +470,7 @@ const breadcrumbSchema = {
                 <div class="flex justify-between"><span>Morning Surge (2.2x):</span><span className="text-red-600">+ ₹4,345</span></div>
                 <div class="flex justify-between"><span>Platform Fee:</span><span className="text-red-600">+ ₹75</span></div>
                 <div class="flex justify-between border-t pt-2 font-bold text-lg">
-                  <span>Total Paid:</span><span class="text-red-700">₹8,370</span>
+                  <span>Total Paid:</span><span class="text-red-700 dark:text-red-400">₹8,370</span>
                 </div>
               </div>
               <p class="text-xs text-gray-600">✓ Paid via app (Credit Card)</p>
@@ -514,22 +514,22 @@ const breadcrumbSchema = {
           <div class="space-y-4">
             <Card className="p-6">
               <h3 class="font-bold mb-2">Why is electric cab ₹1,300 cheaper than diesel?</h3>
-              <p class="text-gray-700">Lower operating costs (electricity vs diesel), no surge pricing model, direct booking without platform fees, and efficient operations. GreenEVCabs at ₹3,700 vs diesel at ₹5,000+ saves you significantly.</p>
+              <p class="text-gray-700 dark:text-gray-200">Lower operating costs (electricity vs diesel), no surge pricing model, direct booking without platform fees, and efficient operations. GreenEVCabs at ₹2,700 vs diesel at ₹4,200+ saves you significantly.</p>
             </Card>
 
             <Card className="p-6">
-              <h3 class="font-bold mb-2">Does the ₹3,700 price ever change?</h3>
-              <p class="text-gray-700">No. GreenEVCabs maintains ₹3,700 fixed pricing 24/7, 365 days a year. No surge during peak hours, festivals, rain, or high demand. This is our commitment to transparent pricing.</p>
+              <h3 class="font-bold mb-2">Does the ₹2,700 price ever change?</h3>
+              <p class="text-gray-700 dark:text-gray-200">No. GreenEVCabs maintains ₹2,700 fixed pricing 24/7, 365 days a year. No surge during peak hours, festivals, rain, or high demand. This is our commitment to transparent pricing.</p>
             </Card>
 
             <Card className="p-6">
               <h3 class="font-bold mb-2">What's the cheapest time to book?</h3>
-              <p class="text-gray-700">With GreenEVCabs, every time is the cheapest - always ₹3,700. With Ola/Uber, book during 10 AM-4 PM on weekdays to avoid surge. With diesel cabs, avoid nights and weekends to minimize extra charges.</p>
+              <p class="text-gray-700 dark:text-gray-200">With GreenEVCabs, every time is the cheapest - always ₹2,700. With Ola/Uber, book during 10 AM-4 PM on weekdays to avoid surge. With diesel cabs, avoid nights and weekends to minimize extra charges.</p>
             </Card>
 
             <Card className="p-6">
               <h3 class="font-bold mb-2">Are there any hidden charges I should know about?</h3>
-              <p class="text-gray-700">GreenEVCabs: None. ₹3,700 is all-inclusive. Diesel cabs: Add ₹930 for tolls + driver batta. Ola/Uber: Add ₹50-₹100 platform fee + surge (unpredictable, can double the price).</p>
+              <p class="text-gray-700 dark:text-gray-200">GreenEVCabs: None. ₹2,700 is all-inclusive. Diesel cabs: Add ₹930 for tolls + driver batta. Ola/Uber: Add ₹50-₹100 platform fee + surge (unpredictable, can double the price).</p>
             </Card>
           </div>
         </section>
@@ -537,15 +537,15 @@ const breadcrumbSchema = {
         <!-- CTA -->
         <section class="my-12 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg p-8 text-center">
           <h2 class="text-3xl font-bold mb-4">Ready to Save ₹1,300-₹4,400 Per Trip?</h2>
-          <p class="text-xl mb-6">Book your fixed-price electric cab at ₹3,700 now</p>
+          <p class="text-xl mb-6">Book your fixed-price electric cab at ₹2,700 now</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Pune%20Mumbai%20₹3,700" target="_blank" rel="noopener">
-              <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-semibold text-lg">
-                📱 Book on WhatsApp - ₹3,700 Fixed
+            <a href="https://wa.me/917498264215?text=Book%20Electric%20Cab%20Pune%20Mumbai%20₹2,700" target="_blank" rel="noopener">
+              <Button size="lg" className="bg-white dark:bg-gray-800 text-green-700 dark:text-green-400 hover:bg-gray-100 font-semibold text-lg">
+                📱 Book on WhatsApp - ₹2,700 Fixed
               </Button>
             </a>
             <a href="tel:+917498264215">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold text-lg">
+              <Button size="lg" className="bg-white/20 hover:bg-white border-2 border-white text-white hover:text-green-700 font-semibold text-lg">
                 📞 Call: +91 74982 64215
               </Button>
             </a>

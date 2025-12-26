@@ -29,7 +29,7 @@ const serviceSchema = {
   ],
   "offers": {
     "@type": "Offer",
-    "price": "3700",
+    "price": "2300",
     "priceCurrency": "INR",
     "description": "All-inclusive fare from Navi Mumbai Airport to Wakad. Includes tolls, driver allowance, parking, and GST.",
     "availability": "https://schema.org/InStock",
@@ -59,7 +59,7 @@ const faqSchema = {
       "name": "How much does cab cost from Navi Mumbai Airport to Wakad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Electric cab from Navi Mumbai Airport to Wakad costs ₹3,700 all-inclusive. This covers 105 km distance, expressway tolls (₹430), driver allowance (₹500), airport parking (₹70), and GST. Same rate whether you're going to IT parks, residential societies, or Dange Chowk area."
+        "text": "Electric cab from Navi Mumbai Airport to Wakad costs starting at ₹2,300 (multiple vehicle options available). This covers 105 km distance, expressway tolls (₹430), driver allowance (₹500), airport parking (₹70), and GST. Same rate whether you're going to IT parks, residential societies, or Dange Chowk area."
       }
     },
     {
@@ -75,7 +75,7 @@ const faqSchema = {
       "name": "Do you drop at Dange Chowk, Wakad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, we drop anywhere in Wakad including Dange Chowk, Wakad Road, Hinjewadi Road, and all residential societies. Popular drops: Shankar Kalat Nagar, Jagtap Dairy, Thermax Chowk, Kaspate Wasti. Same ₹3,700 fare for all Wakad locations."
+        "text": "Yes, we drop anywhere in Wakad including Dange Chowk, Wakad Road, Hinjewadi Road, and all residential societies. Popular drops: Shankar Kalat Nagar, Jagtap Dairy, Thermax Chowk, Kaspate Wasti. Transparent pricing starting at ₹2,300 for all Wakad locations."
       }
     },
     {
@@ -107,7 +107,7 @@ const faqSchema = {
       "name": "Can you pickup from specific residential societies in Wakad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, for return trips (Wakad to NMIA), we pickup from any residential society: Kumar Pebble Park, Ganga Platino, Kalpataru Radiance, Megapolis, Kolte Patil 24K, and all Wakad housing complexes. Same ₹3,700 rate. Book reverse trip via WhatsApp."
+        "text": "Yes, for return trips (Wakad to NMIA), we pickup from any residential society: Kumar Pebble Park, Ganga Platino, Kalpataru Radiance, Megapolis, Kolte Patil 24K, and all Wakad housing complexes. Transparent pricing starting at ₹2,300. Book reverse trip via WhatsApp."
       }
     },
     {
@@ -128,8 +128,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ---
 
 <MainLayout
-  title="Navi Mumbai Airport to Wakad Cab ₹3,700 | NMIA Electric Taxi - GreenEVCabs"
-  description="Navi Mumbai Airport to Wakad electric cab at ₹3,700. NOW OPEN! 105 km via Expressway. IT park & residential drops. Dange Chowk, Wakad Road coverage. Book 24/7."
+  title="Navi Mumbai Airport to Wakad Cab Starting ₹2,300 | NMIA Electric Taxi - GreenEVCabs"
+  description="Navi Mumbai Airport to Wakad electric cab at Starting ₹2,300. NOW OPEN! 105 km via Expressway. IT park & residential drops. Dange Chowk, Wakad Road coverage. Book 24/7."
   keywords={[
     "navi mumbai airport to wakad cab",
     "navi mumbai airport to wakad",
@@ -148,7 +148,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
       <div class="max-w-5xl mx-auto text-center">
         <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">🎉 NMIA NOW OPEN - Dec 25, 2025</Badge>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-          Navi Mumbai Airport to Wakad<br/>Electric Cab - ₹3,700
+          Navi Mumbai Airport to Wakad<br/>Electric Cab Starting ₹2,300
         </h1>
         <p class="text-xl md:text-2xl text-muted-foreground mb-4">
           IT Hub & Residential Paradise | 105 km | 35 km Closer Than Mumbai Airport
@@ -159,13 +159,13 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
         <!-- Key Benefits -->
         <div class="grid md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto">
-          <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+          <div class="bg-green-50 dark:bg-green-900/30 border border-green-200 rounded-lg p-4">
             <p class="font-bold text-green-900 text-lg">105 km</p>
-            <p class="text-sm text-green-700">Via Expressway</p>
+            <p class="text-sm text-green-700 dark:text-green-400">Via Expressway</p>
           </div>
-          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div class="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 rounded-lg p-4">
             <p class="font-bold text-blue-900 text-lg">2-2.5 hrs</p>
-            <p class="text-sm text-blue-700">Travel Time</p>
+            <p class="text-sm text-blue-700 dark:text-blue-400">Travel Time</p>
           </div>
           <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
             <p class="font-bold text-purple-900 text-lg">35 km Closer</p>
@@ -204,7 +204,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </p>
 
         <div class="grid md:grid-cols-2 gap-6 mb-8">
-          <Card className="border-green-200 bg-green-50">
+          <Card className="border-green-200 bg-green-50 dark:bg-green-900/30">
             <CardHeader>
               <Badge className="mb-2 w-fit bg-green-600">Better Choice for Wakad</Badge>
               <CardTitle>Navi Mumbai Airport</CardTitle>
@@ -213,21 +213,21 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <div class="space-y-2">
                 <div class="flex justify-between text-sm">
                   <span>Distance to Wakad:</span>
-                  <span class="font-bold text-green-700">105 km</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">105 km</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Travel Time:</span>
-                  <span class="font-bold text-green-700">2-2.5 hours</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">2-2.5 hours</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Cab Fare:</span>
-                  <span class="font-bold text-green-700">₹3,700</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">Starting ₹2,300</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Route Quality:</span>
-                  <span class="font-bold text-green-700">90% Expressway</span>
+                  <span class="font-bold text-green-700 dark:text-green-400">90% Expressway</span>
                 </div>
-                <p class="text-xs text-green-700 font-semibold mt-3">✓ Saves 30-35 minutes</p>
+                <p class="text-xs text-green-700 dark:text-green-400 font-semibold mt-3">✓ Saves 30-35 minutes</p>
               </div>
             </CardContent>
           </Card>
@@ -249,7 +249,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Cab Fare:</span>
-                  <span class="font-bold">₹3,700</span>
+                  <span class="font-bold">Starting ₹2,300</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>Route Quality:</span>
@@ -261,13 +261,13 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           </Card>
         </div>
 
-        <Card className="bg-blue-50 border-blue-200">
+        <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
           <CardContent className="pt-6">
             <div class="flex items-start gap-4">
               <Home class="w-12 h-12 text-blue-600 flex-shrink-0" />
               <div>
                 <h3 class="font-bold text-blue-900 mb-2 text-lg">Ideal for Wakad IT Professionals & Residents</h3>
-                <p class="text-sm text-blue-800 mb-3">
+                <p class="text-sm text-blue-800 dark:text-blue-300 mb-3">
                   Wakad has emerged as a prime IT and residential hub. With NMIA 35 km closer than Mumbai Airport, it's now the preferred airport for Wakad residents. Quick expressway access means less travel stress, more family time.
                 </p>
                 <div class="grid md:grid-cols-2 gap-2 text-sm text-blue-900">
@@ -403,7 +403,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
         <div class="mt-6 text-center">
           <p class="text-muted-foreground text-sm">
-            ₹3,700 flat rate for all Wakad locations - Dange Chowk, Wakad Road, IT parks, or any residential society
+            ₹2,300 flat rate for all Wakad locations - Dange Chowk, Wakad Road, IT parks, or any residential society
           </p>
         </div>
       </div>
@@ -489,38 +489,38 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <!-- Best Travel Times -->
-        <Card className="bg-blue-50 border-blue-200">
+        <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
           <CardHeader>
             <CardTitle>Best Travel Times - NMIA to Wakad</CardTitle>
           </CardHeader>
           <CardContent>
             <div class="grid md:grid-cols-3 gap-4 text-sm">
               <div>
-                <p class="font-semibold mb-2 text-green-700">✓ Early Morning (5-8 AM)</p>
+                <p class="font-semibold mb-2 text-green-700 dark:text-green-400">✓ Early Morning (5-8 AM)</p>
                 <p class="text-muted-foreground mb-2">
                   <strong>Travel time:</strong> 2 hours<br/>
                   <strong>Best for:</strong> Office arrivals<br/>
                   <strong>Traffic:</strong> Minimal
                 </p>
-                <p class="text-xs text-green-700">Ideal for 9 AM office start</p>
+                <p class="text-xs text-green-700 dark:text-green-400">Ideal for 9 AM office start</p>
               </div>
               <div>
-                <p class="font-semibold mb-2 text-yellow-700">⚠ Daytime (9 AM-6 PM)</p>
+                <p class="font-semibold mb-2 text-yellow-700 dark:text-yellow-400">⚠ Daytime (9 AM-6 PM)</p>
                 <p class="text-muted-foreground mb-2">
                   <strong>Travel time:</strong> 2-2.5 hours<br/>
                   <strong>Best for:</strong> Flexible schedules<br/>
                   <strong>Traffic:</strong> Moderate
                 </p>
-                <p class="text-xs text-yellow-700">Still better than BOM route</p>
+                <p class="text-xs text-yellow-700 dark:text-yellow-400">Still better than BOM route</p>
               </div>
               <div>
-                <p class="font-semibold mb-2 text-green-700">✓ Evening/Night (7 PM-12 AM)</p>
+                <p class="font-semibold mb-2 text-green-700 dark:text-green-400">✓ Evening/Night (7 PM-12 AM)</p>
                 <p class="text-muted-foreground mb-2">
                   <strong>Travel time:</strong> 2-2.15 hours<br/>
                   <strong>Best for:</strong> Late arrivals<br/>
                   <strong>Traffic:</strong> Light
                 </p>
-                <p class="text-xs text-green-700">Comfortable night travel</p>
+                <p class="text-xs text-green-700 dark:text-green-400">Comfortable night travel</p>
               </div>
             </div>
           </CardContent>
@@ -533,7 +533,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   <section class="w-full py-12 md:py-16 bg-muted/30">
     <div class="container px-4 md:px-6">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Transparent ₹3,700 Pricing</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Transparent ₹2,300 Pricing</h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <Card>
@@ -611,7 +611,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                   <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <p class="font-medium">Zero Surge Pricing</p>
-                    <p class="text-sm text-muted-foreground">₹3,700 always - 24/7</p>
+                    <p class="text-sm text-muted-foreground">₹2,300 always - 24/7</p>
                   </div>
                 </li>
               </ul>
@@ -620,7 +620,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         </div>
 
         <div class="mt-8 text-center">
-          <p class="text-2xl font-bold text-primary mb-2">₹3,700 Total</p>
+          <p class="text-2xl font-bold text-primary mb-2">Starting ₹2,300</p>
           <p class="text-muted-foreground">No hidden charges. No surprises. One transparent price for all Wakad.</p>
         </div>
       </div>
@@ -640,7 +640,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Electric cab from Navi Mumbai Airport to Wakad costs ₹3,700 all-inclusive. This covers 105 km distance, expressway tolls (₹430), driver allowance (₹500), airport parking (₹70), and GST. Same rate whether you're going to IT parks, residential societies, or Dange Chowk area.
+                Electric cab from Navi Mumbai Airport to Wakad costs starting at ₹2,300 (multiple vehicle options available). This covers 105 km distance, expressway tolls (₹430), driver allowance (₹500), airport parking (₹70), and GST. Same rate whether you're going to IT parks, residential societies, or Dange Chowk area.
               </p>
             </CardContent>
           </Card>
@@ -662,7 +662,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Yes, we drop anywhere in Wakad including Dange Chowk, Wakad Road, Hinjewadi Road, and all residential societies. Popular drops: Shankar Kalat Nagar, Jagtap Dairy, Thermax Chowk, Kaspate Wasti. Same ₹3,700 fare for all Wakad locations.
+                Yes, we drop anywhere in Wakad including Dange Chowk, Wakad Road, Hinjewadi Road, and all residential societies. Popular drops: Shankar Kalat Nagar, Jagtap Dairy, Thermax Chowk, Kaspate Wasti. Transparent pricing starting at ₹2,300 for all Wakad locations.
               </p>
             </CardContent>
           </Card>
@@ -706,7 +706,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Yes, for return trips (Wakad to NMIA), we pickup from any residential society: Kumar Pebble Park, Ganga Platino, Kalpataru Radiance, Megapolis, Kolte Patil 24K, and all Wakad housing complexes. Same ₹3,700 rate. Book reverse trip via WhatsApp.
+                Yes, for return trips (Wakad to NMIA), we pickup from any residential society: Kumar Pebble Park, Ganga Platino, Kalpataru Radiance, Megapolis, Kolte Patil 24K, and all Wakad housing complexes. Transparent pricing starting at ₹2,300. Book reverse trip via WhatsApp.
               </p>
             </CardContent>
           </Card>
@@ -735,8 +735,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           35 km closer than Mumbai Airport. Faster route. Premium electric cab.
         </p>
 
-        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div class="text-5xl font-bold text-green-600 mb-2">₹3,700</div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
+          <div class="text-5xl font-bold text-green-600 mb-2">Starting ₹2,300</div>
           <p class="text-muted-foreground mb-2">NMIA → All Wakad Areas</p>
           <p class="text-sm text-blue-600 mb-6">105 km | 2-2.5 hours | IT Parks & Residential</p>
 
@@ -786,7 +786,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow h-full">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">NMIA to Hinjewadi</h4>
-                <p class="text-sm text-muted-foreground mb-2">₹3,700 - Neighboring IT hub</p>
+                <p class="text-sm text-muted-foreground mb-2">Starting ₹2,300 - Neighboring IT hub</p>
                 <p class="text-xs text-muted-foreground">100 km • 1.75-2.25 hours</p>
               </CardContent>
             </Card>
@@ -795,7 +795,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow h-full">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">NMIA to Baner</h4>
-                <p class="text-sm text-muted-foreground mb-2">₹3,700 - Nearby area</p>
+                <p class="text-sm text-muted-foreground mb-2">Starting ₹2,300 - Nearby area</p>
                 <p class="text-xs text-muted-foreground">115 km • 2-2.5 hours</p>
               </CardContent>
             </Card>
@@ -804,7 +804,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             <Card className="hover:shadow-lg transition-shadow h-full">
               <CardContent className="pt-6">
                 <h4 class="font-semibold mb-2">NMIA to Pune (All Areas)</h4>
-                <p class="text-sm text-muted-foreground mb-2">₹3,700 - General transfer</p>
+                <p class="text-sm text-muted-foreground mb-2">Starting ₹2,300 - General transfer</p>
                 <p class="text-xs text-muted-foreground">110 km • 2-2.5 hours</p>
               </CardContent>
             </Card>
