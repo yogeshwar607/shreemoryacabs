@@ -83,6 +83,68 @@ export const vehicles: Vehicle[] = [
       topSpeed: '175 km/h',
       acceleration: '0-100 km/h in 8.5s'
     }
+  },
+  {
+    id: '3',
+    slug: 'citroen-ec3',
+    name: 'Citroen eC3',
+    tagline: 'Affordable & Efficient City Electric',
+    description: 'Citroen eC3 - Compact and efficient electric hatchback perfect for city rides and short trips. Features 320 km ARAI range, 10.2-inch touchscreen with wireless Apple CarPlay/Android Auto, and modern LED lighting. Ideal for daily commutes, airport pickups, and local travel in Pune and Mumbai. Zero-emission mobility at affordable rates. Starting at ₹14/km. Experience smart electric travel with India\'s popular electric hatchback.',
+    image: '/images/vehicles/citroen-ec3.jpg',
+    seating: 5,
+    range: '320 km',
+    features: [
+      'Seating for 5 passengers',
+      '10.2-inch touchscreen infotainment',
+      'Wireless Apple CarPlay & Android Auto',
+      'LED DRLs and split headlamps',
+      'Height-adjustable driver seat',
+      'Compact & efficient design',
+      '7-year battery warranty',
+      'Fast DC charging capability'
+    ],
+    pricing: {
+      perKm: 14,
+      minimumKm: 150,
+      fullDay: 3500
+    },
+    specifications: {
+      battery: '29 kWh',
+      charging: '0-100% in 57 mins (DC Fast)',
+      topSpeed: '107 km/h',
+      acceleration: '0-60 km/h in 6.8s'
+    }
+  },
+  {
+    id: '4',
+    slug: 'mg-zs-ev',
+    name: 'MG ZS EV',
+    tagline: 'Premium Electric SUV Comfort',
+    description: 'MG ZS EV - Premium electric SUV with impressive 461 km ARAI range and cutting-edge technology. Features ADAS Level 2, panoramic sunroof, 75+ connected car features, and 6 airbags for maximum safety. Perfect for long-distance travel, business trips, and luxury airport transfers across Maharashtra. Combines SUV comfort with zero emissions. Starting at ₹19/km. Experience India\'s best-selling electric SUV technology.',
+    image: '/images/vehicles/mg-zs-ev.jpg',
+    seating: 5,
+    range: '461 km',
+    features: [
+      'ARAI range of 461 km',
+      'ADAS Level 2 safety features',
+      'Panoramic sunroof',
+      '75+ connected car features',
+      '6 airbags for safety',
+      'Powerful 175 bhp motor',
+      '50 kW fast charging',
+      'Premium SUV comfort'
+    ],
+    pricing: {
+      perKm: 19,
+      minimumKm: 200,
+      fullDay: 5000
+    },
+    specifications: {
+      battery: '50.3 kWh',
+      charging: '0-80% in 60 mins (50 kW DC Fast)',
+      topSpeed: '140 km/h',
+      acceleration: '0-100 km/h in 8.5s'
+    }
   }
 ];
 
