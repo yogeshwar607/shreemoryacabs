@@ -1,0 +1,113 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "NMIA vs Pune Airport: Which is Better for Pune Residents?", "datePublished": "2025-12-26" };
+const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: "NMIA vs Pune Airport", url: "/blog/navi-mumbai-airport-vs-pune-airport-comparison" }]);
+---
+
+<MainLayout title="Navi Mumbai Airport vs Pune Airport: Complete Comparison 2025" description="NMIA vs Pune Airport comparison. Which is better for Pune residents? Distance, flights, connectivity, cost analysis. Make the right choice." keywords={["nmia vs pune airport", "navi mumbai airport pune airport comparison"]}>
+  <StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+  <article class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">NMIA vs Pune Airport: Which Should Pune Residents Choose?</h1>
+      
+      <div class="prose prose-lg max-w-none">
+        <p class="text-xl mb-8">With Navi Mumbai Airport now operational, Pune residents have a crucial choice: the closer Pune Airport or the better-connected NMIA? Here's your complete decision guide.</p>
+
+        <h2 class="text-3xl font-bold mb-6">Quick Comparison Table</h2>
+        <div class="not-prose my-8">
+          <Card><CardContent className="pt-6">
+            <table class="w-full text-sm">
+              <thead><tr class="border-b"><th class="text-left p-2">Factor</th><th class="text-left p-2">Pune Airport</th><th class="text-left p-2">NMIA</th></tr></thead>
+              <tbody>
+                <tr class="border-b"><td class="p-2">Distance from Central Pune</td><td class="p-2 bg-green-50">10 km</td><td class="p-2">120 km</td></tr>
+                <tr class="border-b"><td class="p-2">Travel Time</td><td class="p-2 bg-green-50">30 min</td><td class="p-2">2.5 hours</td></tr>
+                <tr class="border-b"><td class="p-2">Cab Fare</td><td class="p-2 bg-green-50">₹400-600</td><td class="p-2">₹3,700</td></tr>
+                <tr class="border-b"><td class="p-2">Daily Flights</td><td class="p-2">~50 flights</td><td class="p-2 bg-green-50">~15 flights (expanding)</td></tr>
+                <tr class="border-b"><td class="p-2">Destinations</td><td class="p-2">30+ domestic</td><td class="p-2 bg-green-50">Bengaluru, Delhi, Hyderabad, Kochi +</td></tr>
+                <tr class="border-b"><td class="p-2">International Flights</td><td class="p-2">Dubai, Sharjah</td><td class="p-2">Coming 2026</td></tr>
+                <tr><td class="p-2">Airport Condition</td><td class="p-2">Established</td><td class="p-2 bg-green-50">Brand new (Dec 2025)</td></tr>
+              </tbody>
+            </table>
+          </CardContent></Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">When to Choose Pune Airport</h2>
+        <ul>
+          <li><strong>Quick domestic travel:</strong> Multiple daily flights to Mumbai, Delhi</li>
+          <li><strong>Cost-sensitive:</strong> Much cheaper cab fare</li>
+          <li><strong>Time-constrained:</strong> Less travel time to airport</li>
+          <li><strong>Dubai/Sharjah trips:</strong> Direct international flights</li>
+          <li><strong>Living in East Pune:</strong> Viman Nagar, Kharadi nearby</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">When to Choose Navi Mumbai Airport</h2>
+        <ul>
+          <li><strong>Bengaluru travel:</strong> 7 daily flights vs 0 from Pune Airport</li>
+          <li><strong>Better airport experience:</strong> Brand new, less crowded</li>
+          <li><strong>Living in West Pune:</strong> Hinjewadi, Wakad, Baner (relatively closer to NMIA)</li>
+          <li><strong>Premium preference:</strong> Modern facilities, faster processing</li>
+          <li><strong>Flexible budget:</strong> Can afford higher cab fare for better service</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Destination-Specific Recommendations</h2>
+        
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Flying to Bengaluru?</h3>
+        <p><strong>Choose NMIA:</strong> 7 daily flights vs NO direct flights from Pune Airport</p>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Flying to Delhi?</h3>
+        <p><strong>Either works:</strong> Pune Airport has more flights, but NMIA offers good options</p>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Flying to Mumbai?</h3>
+        <p><strong>Choose Pune Airport:</strong> Multiple daily flights, much closer</p>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Flying to Dubai/International?</h3>
+        <p><strong>Choose Pune Airport:</strong> Direct international flights (NMIA coming 2026)</p>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Cost-Benefit Analysis</h2>
+        <div class="not-prose my-6">
+          <Card className="bg-blue-50"><CardContent className="pt-6">
+            <p class="font-semibold mb-2">Example: Pune to Bengaluru Trip</p>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <p class="font-semibold">Via Pune Airport:</p>
+                <p>• Flight: Connect via Mumbai/Hyderabad</p>
+                <p>• Cab: ₹500</p>
+                <p>• Total time: 5-6 hours</p>
+                <p>• Hassle: 1 stop, baggage claim</p>
+              </div>
+              <div class="bg-green-100 p-3 rounded">
+                <p class="font-semibold text-green-800">Via NMIA:</p>
+                <p>• Flight: Direct (7 options)</p>
+                <p>• Cab: ₹3,700</p>
+                <p>• Total time: 4 hours</p>
+                <p>• Hassle: None, direct flight</p>
+              </div>
+            </div>
+            <p class="mt-3 text-green-700 font-semibold">Verdict: NMIA worth it for Bengaluru despite higher cab cost</p>
+          </CardContent></Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">The Smart Strategy</h2>
+        <p class="text-xl">Don't pick one airport exclusively. Choose based on:</p>
+        <ol>
+          <li><strong>Your destination:</strong> Where are you flying?</li>
+          <li><strong>Your location in Pune:</strong> East or West Pune?</li>
+          <li><strong>Flight availability:</strong> Direct vs connecting</li>
+          <li><strong>Your budget:</strong> Cab cost vs total trip time</li>
+        </ol>
+
+        <div class="not-prose mt-12 p-6 bg-green-50 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Need NMIA Cab? ₹3,700 Flat Rate</h3>
+          <p class="mb-4">All Pune localities | Electric cab | Professional service</p>
+          <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Book Now: +91-7498264215</a></Button>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

@@ -1,0 +1,101 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Wakad & Baner to Navi Mumbai Airport: Cab Booking Guide", "datePublished": "2025-12-26" };
+const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: "Wakad Baner NMIA", url: "/blog/wakad-baner-to-navi-mumbai-airport" }]);
+---
+
+<MainLayout title="Wakad & Baner to Navi Mumbai Airport Cab ₹3,700 | NMIA Taxi" description="Wakad/Baner to NMIA cab ₹3,700. 105-115 km. Book electric cab for early flights. WTC, EON IT Park, Balewadi pickup." keywords={["wakad to nmia", "baner to navi mumbai airport", "wakad nmia cab"]}>
+  <StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+  <article class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Wakad & Baner to Navi Mumbai Airport: Complete Cab Guide</h1>
+      
+      <div class="prose prose-lg max-w-none">
+        <p class="text-xl mb-8">Wakad and Baner residents now have easy access to Navi Mumbai Airport (NMIA) with premium electric cab service at just ₹3,700 flat rate.</p>
+
+        <h2 class="text-3xl font-bold mb-6">Quick Overview</h2>
+        <div class="not-prose my-6 grid md:grid-cols-2 gap-4">
+          <Card><CardContent className="pt-6">
+            <h3 class="font-bold text-xl mb-2">Wakad to NMIA</h3>
+            <p><strong>Distance:</strong> 105 km</p>
+            <p><strong>Time:</strong> 2.5 hours</p>
+            <p><strong>Fare:</strong> ₹3,700</p>
+            <p class="text-sm text-green-600 mt-2">Covers: Dange Chowk, WTC Wakad, EON IT Park</p>
+          </CardContent></Card>
+          
+          <Card><CardContent className="pt-6">
+            <h3 class="font-bold text-xl mb-2">Baner to NMIA</h3>
+            <p><strong>Distance:</strong> 115 km</p>
+            <p><strong>Time:</strong> 2.5 hours</p>
+            <p><strong>Fare:</strong> ₹3,700</p>
+            <p class="text-sm text-green-600 mt-2">Covers: Balewadi, ICC Trade Tower, Baner Road</p>
+          </CardContent></Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Why Choose NMIA from Wakad/Baner?</h2>
+        <ul>
+          <li><strong>Closer than Mumbai Airport:</strong> Save 35-40 km</li>
+          <li><strong>Better connectivity:</strong> More flights to Bengaluru, Delhi</li>
+          <li><strong>Less Mumbai traffic:</strong> Direct expressway route</li>
+          <li><strong>Modern airport:</strong> Faster check-in, less crowded</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Pickup Coverage</h2>
+        
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Wakad Area Pickups</h3>
+        <ul>
+          <li>WTC Wakad - IT offices</li>
+          <li>EON IT Park - All company gates</li>
+          <li>Dange Chowk - Residential societies</li>
+          <li>Kumar Pebble Park, Kumar Prospera</li>
+          <li>Teerth Technospace</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Baner Area Pickups</h3>
+        <ul>
+          <li>ICC Trade Tower - Corporate offices</li>
+          <li>Balewadi High Street</li>
+          <li>Baner Road residential societies</li>
+          <li>Aundh-Baner Link Road</li>
+          <li>Startup hubs and coworking spaces</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Best Time to Leave for Early Flights</h2>
+        <div class="not-prose my-6">
+          <Card className="bg-blue-50"><CardContent className="pt-6">
+            <p><strong>For 6-7 AM flights from NMIA:</strong></p>
+            <ul class="mt-2 space-y-1">
+              <li>• Leave Wakad/Baner: 3:00-3:30 AM</li>
+              <li>• Reach NMIA: 5:30-6:00 AM</li>
+              <li>• Buffer: 2 hours before flight</li>
+              <li>• Pre-book cab night before</li>
+            </ul>
+          </CardContent></Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Wakad/Baner vs Other Airports</h2>
+        <ul>
+          <li><strong>NMIA:</strong> 105-115 km, better long-distance connectivity</li>
+          <li><strong>Pune Airport:</strong> 25 km, limited flights</li>
+          <li><strong>Mumbai Airport:</strong> 145 km, heavy traffic</li>
+          <li><strong>Best choice:</strong> NMIA for Bengaluru, Delhi, Hyderabad trips</li>
+        </ul>
+
+        <div class="not-prose mt-12 p-6 bg-green-50 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Book Wakad/Baner to NMIA Cab - ₹3,700</h3>
+          <p class="mb-4">Electric cab | 24/7 service | Professional drivers | All areas covered</p>
+          <div class="flex gap-4">
+            <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Call Now</a></Button>
+            <Button size="lg" variant="outline" asChild><a href="https://wa.me/917498264215">💬 WhatsApp</a></Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
