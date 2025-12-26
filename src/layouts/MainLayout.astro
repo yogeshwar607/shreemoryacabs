@@ -14,6 +14,7 @@ interface Props {
   keywords?: string[];
   noindex?: boolean;
   nofollow?: boolean;
+  canonicalURL?: string;
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   keywords = [],
   noindex = false,
   nofollow = false,
+  canonicalURL,
 } = Astro.props;
 ---
 
@@ -56,6 +58,7 @@ const {
       keywords={keywords}
       noindex={noindex}
       nofollow={nofollow}
+      canonicalURL={canonicalURL}
     />
 
     <!-- Google Analytics 4 -->
