@@ -1,0 +1,379 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, MapPin, Zap, IndianRupee, Clock, Plane, Building2, Navigation } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Electric Cab Service Navi Mumbai Airport to Viman Nagar",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "GreenEVCabs",
+    "description": "Premium electric cab from Navi Mumbai Airport to Viman Nagar with flight tracking",
+    "telephone": "+917498264215"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Navi Mumbai, Maharashtra, India"
+    },
+    {
+      "@type": "Place",
+      "name": "Viman Nagar, Pune, Maharashtra, India"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "3700",
+    "priceCurrency": "INR",
+    "description": "All-inclusive fare from Navi Mumbai Airport to Viman Nagar",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2025-12-25",
+    "priceValidUntil": "2026-12-31"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Distance",
+      "value": "125 km via Mumbai-Pune Expressway"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Travel Time",
+      "value": "2.25 to 2.5 hours"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does cab cost from Navi Mumbai Airport to Viman Nagar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric cab from Navi Mumbai Airport to Viman Nagar costs ₹3,700 all-inclusive. Covers 125 km distance, expressway tolls (₹430), driver allowance (₹500), airport parking (₹70), and GST. Same rate for all Viman Nagar locations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Navi Mumbai Airport from Viman Nagar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Navi Mumbai Airport is 125 km from Viman Nagar via Mumbai-Pune Expressway. Travel time: 2.25 to 2.5 hours. Route: NMIA → Panvel → Expressway → Pune → Viman Nagar. About 25 km closer than Mumbai Airport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Navi Mumbai Airport closer to Viman Nagar than Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Navi Mumbai Airport is approximately 25 km closer to Viman Nagar (125 km vs 150 km from Mumbai Airport). Saves 20-25 minutes travel time with direct expressway route."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Navi Mumbai Airport to Viman Nagar", url: "/navi-mumbai-airport-viman-nagar-cab" }
+]);
+---
+
+<MainLayout
+  title="Navi Mumbai Airport to Viman Nagar Cab ₹3,700 | NMIA Electric Taxi"
+  description="Navi Mumbai Airport to Viman Nagar electric cab at ₹3,700. NOW OPEN! 125 km via Expressway. IT parks, Phoenix Mall, residential drops. Book 24/7."
+  keywords={[
+    "navi mumbai airport to viman nagar cab",
+    "navi mumbai airport to viman nagar",
+    "nmia to viman nagar taxi",
+    "viman nagar to navi mumbai airport cab"
+  ]}
+>
+  <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">🎉 NMIA NOW OPEN - Dec 25, 2025</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Navi Mumbai Airport to Viman Nagar<br/>Electric Cab - ₹3,700
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-4">
+          Near Pune Airport | IT Parks | Phoenix Mall | 125 km
+        </p>
+        <p class="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Premium electric cab from Navi Mumbai Airport to Viman Nagar. Covers IT parks, Phoenix Marketcity, and all residential societies. Direct expressway route. 25 km closer than Mumbai Airport.
+        </p>
+
+        <!-- Key Benefits -->
+        <div class="grid md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+            <p class="font-bold text-green-900 text-lg">125 km</p>
+            <p class="text-sm text-green-700">Via Expressway</p>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <p class="font-bold text-blue-900 text-lg">2.25-2.5 hrs</p>
+            <p class="text-sm text-blue-700">Travel Time</p>
+          </div>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+            <p class="font-bold text-purple-900 text-lg">25 km Closer</p>
+            <p class="text-sm text-purple-700">Than Mumbai Airport</p>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20to%20Viman%20Nagar%20Electric%20Cab" target="_blank">
+            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-8">
+              Book on WhatsApp
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8">
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+
+        <p class="text-sm text-muted-foreground mt-4">
+          ✓ IT Parks ✓ Phoenix Mall ✓ All societies ✓ 24/7 service
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Viman Nagar Benefits -->
+  <section class="w-full py-12 md:py-16 bg-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">NMIA for Viman Nagar Residents</h2>
+        <p class="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Viman Nagar is near Pune Airport, making NMIA a convenient alternative for better connectivity.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <Card className="border-green-200 bg-green-50">
+            <CardHeader>
+              <Badge className="mb-2 w-fit bg-green-600">Better Option</Badge>
+              <CardTitle>Navi Mumbai Airport</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-2">
+                <div class="flex justify-between text-sm">
+                  <span>Distance to Viman Nagar:</span>
+                  <span class="font-bold text-green-700">125 km</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Travel Time:</span>
+                  <span class="font-bold text-green-700">2.25-2.5 hours</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Cab Fare:</span>
+                  <span class="font-bold text-green-700">₹3,700</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Flight Options:</span>
+                  <span class="font-bold text-green-700">Growing</span>
+                </div>
+                <p class="text-xs text-green-700 font-semibold mt-3">✓ Modern airport, less crowded</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-muted bg-muted/50">
+            <CardHeader>
+              <Badge variant="outline" className="mb-2 w-fit">Alternative</Badge>
+              <CardTitle>Mumbai Airport (BOM)</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-2 text-muted-foreground">
+                <div class="flex justify-between text-sm">
+                  <span>Distance to Viman Nagar:</span>
+                  <span class="font-bold">150 km</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Travel Time:</span>
+                  <span class="font-bold">2.5-3 hours</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Cab Fare:</span>
+                  <span class="font-bold">₹3,700</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span>Flight Options:</span>
+                  <span class="font-bold">Extensive</span>
+                </div>
+                <p class="text-xs mt-3">25 km longer journey</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="pt-6">
+            <div class="flex items-start gap-4">
+              <Plane class="w-12 h-12 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 class="font-bold text-blue-900 mb-2 text-lg">Two Airports, More Choices</h3>
+                <p class="text-sm text-blue-800 mb-3">
+                  Viman Nagar residents already enjoy proximity to Pune Airport (5 km). Now with NMIA operational, you have a second airport option for domestic flights with better connectivity to Bengaluru, Delhi, Hyderabad, and other major cities via IndiGo and Akasa Air.
+                </p>
+                <div class="grid md:grid-cols-2 gap-2 text-sm text-blue-900">
+                  <div>✓ More flight options</div>
+                  <div>✓ Competitive fares</div>
+                  <div>✓ Modern airport experience</div>
+                  <div>✓ Direct expressway route</div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route & Pricing -->
+  <section class="w-full py-12 md:py-16 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Route & Pricing</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>NMIA to Viman Nagar Route</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div class="flex justify-between pb-2 border-b">
+                <span class="text-sm text-muted-foreground">Total Distance</span>
+                <span class="font-semibold">125 km</span>
+              </div>
+              <div class="flex justify-between pb-2 border-b">
+                <span class="text-sm text-muted-foreground">Travel Time</span>
+                <span class="font-semibold">2.25-2.5 hours</span>
+              </div>
+              <div class="flex justify-between pb-2 border-b">
+                <span class="text-sm text-muted-foreground">Route</span>
+                <span class="font-semibold text-sm">Expressway → Pune → Viman Nagar</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted-foreground">Toll</span>
+                <span class="font-semibold text-primary">₹430 included</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>₹3,700 All-Inclusive</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Base fare (125 km)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Tolls (₹430)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Driver allowance (₹500)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Parking & GST</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Luxury electric SUV</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Flight tracking</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Book NMIA to Viman Nagar Cab</h2>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+          <div class="text-5xl font-bold text-green-600 mb-2">₹3,700</div>
+          <p class="text-muted-foreground mb-2">NMIA → Viman Nagar</p>
+          <p class="text-sm text-blue-600 mb-6">125 km | 2.25-2.5 hours</p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20to%20Viman%20Nagar" target="_blank">
+              <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-12">
+                Book on WhatsApp
+              </Button>
+            </a>
+            <a href="tel:+917498264215">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-12">
+                Call +91 74982 64215
+              </Button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="w-full py-12 bg-muted/30">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold text-center mb-8">Related NMIA Routes</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/navi-mumbai-airport-kharadi-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardContent className="pt-6">
+                <h4 class="font-semibold mb-2">NMIA to Kharadi</h4>
+                <p class="text-sm text-muted-foreground mb-2">₹3,700 - Nearby area</p>
+                <p class="text-xs text-muted-foreground">130 km • 2.25-2.75 hours</p>
+              </CardContent>
+            </Card>
+          </a>
+          <a href="/navi-mumbai-airport-magarpatta-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardContent className="pt-6">
+                <h4 class="font-semibold mb-2">NMIA to Magarpatta</h4>
+                <p class="text-sm text-muted-foreground mb-2">₹3,700 - IT city</p>
+                <p class="text-xs text-muted-foreground">130 km • 2.25-2.75 hours</p>
+              </CardContent>
+            </Card>
+          </a>
+          <a href="/navi-mumbai-airport-to-pune-cab" class="block">
+            <Card className="hover:shadow-lg transition-shadow h-full">
+              <CardContent className="pt-6">
+                <h4 class="font-semibold mb-2">NMIA to Pune (All)</h4>
+                <p class="text-sm text-muted-foreground mb-2">₹3,700 - Main route</p>
+                <p class="text-xs text-muted-foreground">110 km • 2-2.5 hours</p>
+              </CardContent>
+            </Card>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>

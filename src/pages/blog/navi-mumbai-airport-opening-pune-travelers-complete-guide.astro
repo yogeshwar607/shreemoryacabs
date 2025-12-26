@@ -1,0 +1,808 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Check, Plane, MapPin, Clock, IndianRupee, Calendar, AlertCircle, TrendingUp } from "lucide-react";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Navi Mumbai Airport Opens December 25, 2025: Complete Guide for Pune Travelers",
+  "description": "Everything Pune travelers need to know about India's newest airport - Navi Mumbai International Airport (NMIA). Opening day details, airlines, routes, cab booking, and why it's closer than Mumbai Airport.",
+  "author": {
+    "@type": "Organization",
+    "name": "GreenEVCabs"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://greenevcabs.com/logo.png"
+    }
+  },
+  "datePublished": "2025-12-25",
+  "dateModified": "2025-12-25"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When did Navi Mumbai Airport open?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Navi Mumbai International Airport (NMIA) began commercial operations on December 25, 2025. The first flight was IndiGo 6E460 from Bengaluru, which landed at 8:00 AM and received a water cannon salute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which airlines fly from Navi Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Currently IndiGo (6E), Akasa Air (QP), Air India Express (IX), and Star Air (S5) operate from NMIA. Routes include Bengaluru, Delhi, Hyderabad, Kochi, Ahmedabad and more cities. 15 daily flights initially, expanding to 34 daily flights from February 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Navi Mumbai Airport from Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Navi Mumbai Airport is 110 km from Pune via Mumbai-Pune Expressway. It's 40 km closer than Mumbai Airport (150 km). Travel time: 2 to 2.5 hours by cab. Saves 30-40 minutes compared to Mumbai Airport route."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does cab cost from Navi Mumbai Airport to Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electric cab from Navi Mumbai Airport to Pune costs ₹3,700 all-inclusive (same as Mumbai Airport fare). Includes 110 km distance, expressway tolls (₹430), driver allowance (₹500), parking (₹70), and GST. Book via GreenEVCabs at +91 74982 64215."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are NMIA operating hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Navi Mumbai Airport currently operates 8 AM to 8 PM daily (12 hours). Round-the-clock 24/7 operations will begin from February 2026. Initial capacity: 20 million passengers annually, expanding to 90 million by 2029."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "NMIA Opening Guide", url: "/blog/navi-mumbai-airport-opening-pune-travelers-complete-guide" }
+]);
+---
+
+<MainLayout
+  title="Navi Mumbai Airport Opens Dec 25, 2025: Complete Guide for Pune Travelers"
+  description="NMIA is NOW OPEN! Everything Pune travelers need to know: airlines, routes, cab booking, terminal guide. 40 km closer than Mumbai Airport. IndiGo, Akasa Air flights."
+  keywords={[
+    "navi mumbai airport opening",
+    "navi mumbai airport pune",
+    "nmia opening date",
+    "navi mumbai airport flights",
+    "navi mumbai airport airlines",
+    "navi mumbai airport to pune cab",
+    "when did navi mumbai airport open",
+    "navi mumbai international airport"
+  ]}
+>
+  <StructuredData data={[articleSchema, faqSchema, breadcrumbSchema]} />
+
+  <!-- Hero -->
+  <article class="w-full">
+    <section class="w-full py-12 md:py-16 bg-gradient-to-b from-green-50 to-background">
+      <div class="container px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+          <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">Breaking News - Dec 25, 2025</Badge>
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            Navi Mumbai Airport Opens Today: Complete Guide for Pune Travelers
+          </h1>
+          <p class="text-xl text-muted-foreground mb-6">
+            India's newest international airport begins operations December 25, 2025. Here's everything Pune residents need to know about NMIA - from airlines and routes to cab booking and why it's your new go-to airport.
+          </p>
+          <div class="flex flex-wrap gap-4 text-sm text-muted-foreground mb-8">
+            <div class="flex items-center gap-2">
+              <Calendar class="w-4 h-4" />
+              <span>Published: December 25, 2025</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Clock class="w-4 h-4" />
+              <span>12 min read</span>
+            </div>
+          </div>
+
+          <!-- Quick Summary Box -->
+          <Card className="bg-blue-50 border-blue-200 mb-8">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <AlertCircle class="w-5 h-5 text-blue-600" />
+                Quick Summary
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span><strong>Opening Date:</strong> December 25, 2025 (TODAY)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span><strong>Airlines:</strong> IndiGo, Akasa Air, Air India Express, Star Air</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span><strong>Distance from Pune:</strong> 110 km (40 km closer than Mumbai Airport)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span><strong>Cab Fare:</strong> ₹3,700 all-inclusive to anywhere in Pune</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span><strong>Operating Hours:</strong> 8 AM - 8 PM (24/7 from Feb 2026)</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opening Day Details -->
+    <section class="w-full py-12 md:py-16 bg-background">
+      <div class="container px-4 md:px-6">
+        <div class="max-w-4xl mx-auto prose prose-lg max-w-none">
+          <h2 class="text-3xl font-bold mb-6">Historic Opening Day - December 25, 2025</h2>
+
+          <p class="text-lg mb-6">
+            After years of anticipation, Navi Mumbai International Airport (NMIA) officially began commercial operations on December 25, 2025, marking a watershed moment for aviation in western India. The first commercial flight - IndiGo 6E460 from Bengaluru - touched down at 08:00 hours IST and was greeted with a ceremonial water cannon salute, signaling the start of a new era for travelers.
+          </p>
+
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Plane class="w-6 h-6 text-primary" />
+                First Day Highlights
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p class="font-semibold mb-2">First Arrival</p>
+                  <ul class="space-y-1 text-muted-foreground">
+                    <li>• Flight: IndiGo 6E460</li>
+                    <li>• Route: Bengaluru → Navi Mumbai</li>
+                    <li>• Landing Time: 08:00 AM</li>
+                    <li>• Reception: Water cannon salute</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-semibold mb-2">Opening Day Stats</p>
+                  <ul class="space-y-1 text-muted-foreground">
+                    <li>• Total Daily Flights: 15</li>
+                    <li>• Airlines: 4 carriers</li>
+                    <li>• Destinations: 5+ cities</li>
+                    <li>• Operating Hours: 8 AM - 8 PM</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <p class="text-lg mb-6">
+            Mumbai becomes the first Indian city to operate two commercial airports simultaneously. While Chhatrapati Shivaji Maharaj International Airport (BOM) continues to serve as a major hub, NMIA is positioned to ease congestion and provide a modern alternative, particularly for passengers from Pune, Navi Mumbai, and surrounding regions.
+          </p>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">Airlines & Flight Network</h2>
+
+          <p class="text-lg mb-6">
+            Four major carriers have launched operations from NMIA on opening day, with more airlines expected to join in the coming months. Here's the complete breakdown:
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <Card>
+              <CardHeader>
+                <Badge className="mb-2 w-fit">Leading Carrier</Badge>
+                <CardTitle>IndiGo (6E)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">
+                  India's largest airline leads NMIA operations with maximum frequencies
+                </p>
+                <p class="font-semibold mb-2 text-sm">Destinations:</p>
+                <ul class="space-y-1 text-sm">
+                  <li>• Bengaluru (BLR)</li>
+                  <li>• Delhi (DEL)</li>
+                  <li>• Hyderabad (HYD)</li>
+                  <li>• Kochi (COK)</li>
+                  <li>• Ahmedabad (AMD)</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <Badge className="mb-2 w-fit" variant="outline">New Carrier</Badge>
+                <CardTitle>Akasa Air (QP)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">
+                  India's newest airline brings modern fleet to NMIA
+                </p>
+                <p class="font-semibold mb-2 text-sm">Destinations:</p>
+                <ul class="space-y-1 text-sm">
+                  <li>• Bengaluru (BLR)</li>
+                  <li>• Hyderabad (HYD)</li>
+                  <li>• Additional routes coming soon</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <Badge className="mb-2 w-fit" variant="outline">Tata Group</Badge>
+                <CardTitle>Air India Express (IX)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">
+                  Low-cost arm of Air India serving NMIA
+                </p>
+                <p class="font-semibold mb-2 text-sm">Network:</p>
+                <ul class="space-y-1 text-sm">
+                  <li>• South India connections</li>
+                  <li>• Value-focused fares</li>
+                  <li>• Expanding network</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <Badge className="mb-2 w-fit" variant="outline">Regional Carrier</Badge>
+                <CardTitle>Star Air (S5)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground mb-3">
+                  Regional connectivity specialist
+                </p>
+                <p class="font-semibold mb-2 text-sm">Focus:</p>
+                <ul class="space-y-1 text-sm">
+                  <li>• Tier-2 and Tier-3 cities</li>
+                  <li>• Regional routes</li>
+                  <li>• Connecting smaller destinations</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-green-50 border-green-200 mb-8">
+            <CardContent className="pt-6">
+              <p class="text-sm text-green-900">
+                <strong>Expansion Plans:</strong> From February 2026, NMIA will operate 24/7 with 34 daily departures. Annual capacity will grow from 20 million passengers to 90 million by 2029, making it one of India's largest airports.
+              </p>
+            </CardContent>
+          </Card>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">Why NMIA is a Game-Changer for Pune Travelers</h2>
+
+          <p class="text-lg mb-6">
+            For decades, Pune residents have relied on two airports: Pune Airport (PNQ) for limited domestic flights and Mumbai Airport (BOM) for broader domestic and international connectivity. NMIA fundamentally changes this equation.
+          </p>
+
+          <h3 class="text-2xl font-bold mb-4">Distance Advantage</h3>
+
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-muted">
+                  <th class="border p-3 text-left">Airport</th>
+                  <th class="border p-3 text-left">Distance from Pune</th>
+                  <th class="border p-3 text-left">Travel Time</th>
+                  <th class="border p-3 text-left">Route Quality</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-green-50">
+                  <td class="border p-3 font-semibold">Navi Mumbai (NMIA) ✅</td>
+                  <td class="border p-3 font-semibold text-green-700">110 km</td>
+                  <td class="border p-3">2-2.5 hours</td>
+                  <td class="border p-3">95% Expressway</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Mumbai (BOM)</td>
+                  <td class="border p-3">150 km</td>
+                  <td class="border p-3">2.5-3 hours</td>
+                  <td class="border p-3">85% Expressway + city traffic</td>
+                </tr>
+                <tr>
+                  <td class="border p-3">Pune (PNQ)</td>
+                  <td class="border p-3">10-15 km</td>
+                  <td class="border p-3">30-45 min</td>
+                  <td class="border p-3">City roads</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-lg mb-6">
+            <strong>Key Takeaway:</strong> NMIA is 40 km (25%) closer to Pune than Mumbai Airport. This translates to 30-40 minutes time saving on every trip - significant for frequent travelers.
+          </p>
+
+          <h3 class="text-2xl font-bold mb-4">Locality-Specific Benefits</h3>
+
+          <p class="mb-4">Different Pune localities benefit differently from NMIA's location. Here's how proximity varies:</p>
+
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Closest Areas (100-110 km)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Hinjewadi:</strong> 100 km - Closest major IT hub to NMIA
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Wakad:</strong> 105 km - IT & residential convenience
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Pimple Saudagar:</strong> 110 km - PCMC connectivity
+                    </div>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Well-Connected Areas (115-130 km)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Baner:</strong> 115 km - Young professional hub
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Viman Nagar:</strong> 125 km - Airport vicinity
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <MapPin class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <strong>Kharadi/Magarpatta:</strong> 130 km - Eastern IT corridor
+                    </div>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">How to Book Cab from NMIA to Pune</h2>
+
+          <p class="text-lg mb-6">
+            Getting from Navi Mumbai Airport to Pune is straightforward with multiple cab options. Here's your complete booking guide:
+          </p>
+
+          <h3 class="text-2xl font-bold mb-4">GreenEVCabs - Premium Electric Cab Service</h3>
+
+          <Card className="mb-8 border-green-200">
+            <CardContent className="pt-6">
+              <div class="mb-4">
+                <p class="text-2xl font-bold text-green-600 mb-2">₹3,700 All-Inclusive</p>
+                <p class="text-sm text-muted-foreground">NMIA to anywhere in Pune • No hidden charges • Same as Mumbai Airport rate</p>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <p class="font-semibold mb-3">What's Included:</p>
+                  <ul class="space-y-2 text-sm">
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Base fare for 110 km distance</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Expressway tolls (₹430)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Driver allowance (₹500)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Airport parking (₹70) & GST</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p class="font-semibold mb-3">Premium Features:</p>
+                  <ul class="space-y-2 text-sm">
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Luxury 7-seater electric SUV</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Real-time flight tracking</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>30 minutes free waiting</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <Check class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>Zero surge pricing 24/7</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-6 border-t">
+                <p class="font-semibold mb-3">How to Book:</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20to%20Pune%20Electric%20Cab" target="_blank">
+                    <Button className="bg-green-600 hover:bg-green-700">
+                      Book on WhatsApp
+                    </Button>
+                  </a>
+                  <a href="tel:+917498264215">
+                    <Button variant="outline">
+                      Call +91 74982 64215
+                    </Button>
+                  </a>
+                </div>
+                <p class="text-xs text-muted-foreground mt-3">Provide: Flight number, arrival date/time, Pune drop address</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <h3 class="text-2xl font-bold mb-4">Other Cab Options</h3>
+
+          <div class="space-y-4 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Ola/Uber (Via App)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm mb-2"><strong>Estimated Fare:</strong> ₹3,500 - ₹5,000 (surge pricing applies)</p>
+                <p class="text-sm text-muted-foreground">Available at NMIA taxi stand. Note: Surge pricing during peak hours, limited electric vehicle options.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Airport Taxi Stand</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm mb-2"><strong>Estimated Fare:</strong> ₹4,000 - ₹4,500 (negotiable)</p>
+                <p class="text-sm text-muted-foreground">Pre-paid taxi booth available at arrivals. Fixed rates, but higher than pre-booked cabs. No flight tracking.</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">NMIA Terminal Guide for First-Time Travelers</h2>
+
+          <p class="text-lg mb-6">
+            As India's newest airport, NMIA features modern facilities designed for efficiency and passenger comfort. Here's what to expect:
+          </p>
+
+          <h3 class="text-2xl font-bold mb-4">Terminal Layout</h3>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Departures (Upper Level)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li>• Check-in counters: Modern kiosks + staffed desks</li>
+                  <li>• Security: Latest screening technology</li>
+                  <li>• Boarding gates: Spacious, less crowded</li>
+                  <li>• Lounges: Premium & economy options</li>
+                  <li>• Shopping & dining: Multiple outlets</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Arrivals (Ground Level)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul class="space-y-2 text-sm">
+                  <li>• Baggage claim: Quick belt delivery</li>
+                  <li>• Customs: Efficient processing</li>
+                  <li>• Cab pickup point: Well-marked, covered</li>
+                  <li>• Pre-paid taxi booth: Available 8 AM-8 PM</li>
+                  <li>• Waiting area: Comfortable seating</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-4">Facilities</h3>
+
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+              <div>
+                <strong>Free Wi-Fi:</strong> High-speed internet throughout terminal
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+              <div>
+                <strong>Dining Options:</strong> Quick service restaurants, cafes, food courts
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+              <div>
+                <strong>Shopping:</strong> Duty-free (for international flights), retail stores, bookshops
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+              <div>
+                <strong>Banking:</strong> ATMs, currency exchange, banking services
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <Check class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+              <div>
+                <strong>Accessibility:</strong> Wheelchair-friendly, special assistance available
+              </div>
+            </li>
+          </ul>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">Practical Tips for Pune Travelers</h2>
+
+          <div class="space-y-6 mb-8">
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Clock class="w-5 h-5" />
+                  Tip #1: Book Cab in Advance
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm">
+                  Pre-book your NMIA to Pune cab at least 6 hours before flight arrival. Ensures driver is ready when you land, no surge pricing, and flight tracking activated for automatic delay adjustments.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <TrendingUp class="w-5 h-5" />
+                  Tip #2: Choose Morning or Late Night Flights
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm">
+                  For fastest travel to Pune, book flights landing 6-8 AM or after 8 PM. Expressway traffic is lightest during these hours. Journey time: 2 hours vs 2.5 hours during day.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin class="w-5 h-5" />
+                  Tip #3: Consider Locality Distance
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm">
+                  If you live in Hinjewadi, Wakad, or western Pune, NMIA is significantly closer. If in Kharadi or Hadapsar, the advantage is smaller but still 20-30 km saved vs Mumbai Airport.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Plane class="w-5 h-5" />
+                  Tip #4: Check Flight Availability
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm">
+                  NMIA currently has 15 daily flights to 5+ cities. If your destination isn't available, check connecting flights via Bengaluru or Delhi. Network will expand to 34 flights from February 2026.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">Frequently Asked Questions</h2>
+
+          <div class="space-y-4 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">When did Navi Mumbai Airport open?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  Navi Mumbai International Airport (NMIA) began commercial operations on December 25, 2025. The first flight was IndiGo 6E460 from Bengaluru, which landed at 8:00 AM and received a water cannon salute.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Which airlines fly from Navi Mumbai Airport?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  Currently IndiGo (6E), Akasa Air (QP), Air India Express (IX), and Star Air (S5) operate from NMIA. Routes include Bengaluru, Delhi, Hyderabad, Kochi, Ahmedabad and more cities. 15 daily flights initially, expanding to 34 daily flights from February 2026.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">How far is Navi Mumbai Airport from Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  Navi Mumbai Airport is 110 km from Pune via Mumbai-Pune Expressway. It's 40 km closer than Mumbai Airport (150 km). Travel time: 2 to 2.5 hours by cab. Saves 30-40 minutes compared to Mumbai Airport route.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">How much does cab cost from Navi Mumbai Airport to Pune?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  Electric cab from Navi Mumbai Airport to Pune costs ₹3,700 all-inclusive (same as Mumbai Airport fare). Includes 110 km distance, expressway tolls (₹430), driver allowance (₹500), parking (₹70), and GST. Book via GreenEVCabs at +91 74982 64215.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">What are NMIA operating hours?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  Navi Mumbai Airport currently operates 8 AM to 8 PM daily (12 hours). Round-the-clock 24/7 operations will begin from February 2026. Initial capacity: 20 million passengers annually, expanding to 90 million by 2029.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Should I choose NMIA or Mumbai Airport for Pune travel?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p class="text-sm text-muted-foreground">
+                  For most Pune travelers, NMIA is the better choice due to proximity (40 km closer, 30-40 min time saving). However, Mumbai Airport has more flights and destinations currently. Consider: If your route is available at NMIA → choose NMIA. If not → stick with Mumbai Airport until NMIA network expands.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">The Future of NMIA</h2>
+
+          <p class="text-lg mb-6">
+            While today marks the beginning, NMIA's growth trajectory is ambitious:
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-24 text-sm font-bold text-primary">Feb 2026:</div>
+              <div>24/7 operations begin, 34 daily flights, international routes expected to launch</div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-24 text-sm font-bold text-primary">2027:</div>
+              <div>Additional airlines join, more domestic destinations, potential Gulf connections</div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-24 text-sm font-bold text-primary">2029:</div>
+              <div>Capacity expansion to 90 million passengers annually, major international hub</div>
+            </div>
+          </div>
+
+          <h2 class="text-3xl font-bold mb-6 mt-12">Final Thoughts</h2>
+
+          <p class="text-lg mb-6">
+            The opening of Navi Mumbai International Airport is a historic moment for Pune travelers. After years of choosing between limited Pune Airport flights or the longer journey to Mumbai Airport, we now have a third option that combines proximity with growing connectivity.
+          </p>
+
+          <p class="text-lg mb-6">
+            For Pune's IT professionals, students, and business travelers - particularly those in Hinjewadi, Wakad, Baner, and western Pune - NMIA represents a significant quality-of-life improvement. The 40 km distance advantage translates to real time savings on every trip, less travel fatigue, and more flexibility in travel planning.
+          </p>
+
+          <Card className="bg-green-50 border-green-200 mb-8">
+            <CardContent className="pt-6">
+              <h3 class="font-bold text-green-900 mb-3">Ready to Try NMIA?</h3>
+              <p class="text-sm text-green-800 mb-4">
+                Book your electric cab from Navi Mumbai Airport to Pune today. ₹3,700 all-inclusive with flight tracking, luxury SUV, and zero surge pricing.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="https://wa.me/917498264215?text=Book%20Navi%20Mumbai%20Airport%20to%20Pune%20Electric%20Cab" target="_blank">
+                  <Button className="bg-green-600 hover:bg-green-700">
+                    Book on WhatsApp
+                  </Button>
+                </a>
+                <a href="tel:+917498264215">
+                  <Button variant="outline">
+                    Call +91 74982 64215
+                  </Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <p class="text-muted-foreground text-sm italic">
+            <strong>Last Updated:</strong> December 25, 2025 - Opening Day<br/>
+            Information based on official NMIA announcements and airline schedules. Flight frequencies and destinations subject to change as airport operations expand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="w-full py-12 bg-muted/30">
+      <div class="container px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold mb-6">Related Articles & Services</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <a href="/navi-mumbai-airport-to-pune-cab" class="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="pt-6">
+                  <h4 class="font-semibold mb-2">NMIA to Pune Cab</h4>
+                  <p class="text-sm text-muted-foreground">₹3,700 all-inclusive electric cab service</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/navi-mumbai-airport-hinjewadi-cab" class="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="pt-6">
+                  <h4 class="font-semibold mb-2">NMIA to Hinjewadi</h4>
+                  <p class="text-sm text-muted-foreground">Closest IT hub - 100 km distance</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/navi-mumbai-airport-wakad-cab" class="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="pt-6">
+                  <h4 class="font-semibold mb-2">NMIA to Wakad</h4>
+                  <p class="text-sm text-muted-foreground">IT & residential hub - 105 km</p>
+                </CardContent>
+              </Card>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+</MainLayout>
