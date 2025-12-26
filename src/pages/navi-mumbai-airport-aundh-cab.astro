@@ -1,0 +1,852 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Electric Cab Service Navi Mumbai Airport to Aundh",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "GreenEVCabs",
+    "url": "https://greenevcabs.com",
+    "telephone": "+917498264215",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Aundh, Pune"
+  },
+  "description": "Premium electric cab service from Navi Mumbai Airport to Aundh, Pune. Flat rate ₹3,700 covering University Road, Cerebrum IT Park, and all Aundh localities.",
+  "offers": {
+    "@type": "Offer",
+    "price": "3700",
+    "priceCurrency": "INR",
+    "description": "Flat rate for Navi Mumbai Airport to Aundh transfer"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the distance from Navi Mumbai Airport to Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The distance from Navi Mumbai Airport to Aundh is approximately 120 km via Mumbai-Pune Expressway. Travel time is around 2.5 to 3 hours depending on traffic conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does an electric cab cost from Navi Mumbai Airport to Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GreenEVCabs offers a flat rate of ₹3,700 for the journey from Navi Mumbai Airport to Aundh, covering all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which areas in Aundh do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We cover all major Aundh areas including Cerebrum IT Park, IT Park Aundh, University of Pune area, Aundh-Baner Road, Aundh Gaon, and all residential societies along University Road and Parihar Chowk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Navi Mumbai Airport closer to Aundh than Mumbai Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Navi Mumbai Airport is approximately 40 km closer to Aundh than Mumbai Airport. The journey is also faster via Mumbai-Pune Expressway with less city traffic compared to the route from Mumbai Airport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide service to Cerebrum IT Park Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our flat rate of ₹3,700 covers door-to-door service to your exact office location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a cab from Navi Mumbai Airport to Aundh in advance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we recommend advance booking to ensure availability, especially during peak hours and weekends. Book via call/WhatsApp at +91-7498264215 or visit greenevcabs.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best route from Navi Mumbai Airport to Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best route is: Navi Mumbai Airport → Sion-Panvel Expressway → Mumbai-Pune Expressway → Chandani Chowk Exit → Old Pune-Mumbai Highway → Aundh. This route avoids city traffic and provides the fastest journey time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are electric cabs comfortable for long journeys like NMIA to Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our BYD eMax electric SUVs are specifically designed for long-distance comfort with spacious seating for 6 passengers, ample luggage space, smooth silent ride, and excellent air conditioning. Perfect for the 2.5-hour journey."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://greenevcabs.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Navi Mumbai Airport Cabs",
+      "item": "https://greenevcabs.com/navi-mumbai-airport-to-pune-cab"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Aundh",
+      "item": "https://greenevcabs.com/navi-mumbai-airport-aundh-cab"
+    }
+  ]
+};
+---
+
+<Layout
+  title="Navi Mumbai Airport to Aundh Cab | Electric Cab ₹3,700 - GreenEVCabs"
+  description="Book electric cab from Navi Mumbai Airport to Aundh, Pune. Flat rate ₹3,700 | Direct service to Cerebrum IT Park, University Road & all Aundh areas | Book now!"
+  schema={[serviceSchema, faqSchema, breadcrumbSchema]}
+>
+  <!-- Hero Section -->
+  <section class="relative py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50 -z-10"></div>
+
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">✈️ NMIA Now Open - Serving Aundh</Badge>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Navi Mumbai Airport to Aundh<br/>Electric Cab - ₹3,700
+        </h1>
+
+        <p class="text-xl md:text-2xl text-muted-foreground mb-4">
+          120 km | 2.5 Hours | Premium Residential & IT Hub Service
+        </p>
+
+        <p class="text-lg text-muted-foreground mb-8">
+          Direct service to Cerebrum IT Park, University of Pune, Aundh-Baner Road & all Aundh localities
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <Button size="lg" className="text-lg px-8 bg-green-600 hover:bg-green-700" asChild>
+            <a href="tel:+917498264215">📞 Call: +91-7498264215</a>
+          </Button>
+          <Button size="lg" variant="outline" className="text-lg px-8" asChild>
+            <a href="https://wa.me/917498264215">💬 WhatsApp Booking</a>
+          </Button>
+        </div>
+
+        <div class="inline-flex items-center gap-2 text-sm text-muted-foreground bg-white/80 px-4 py-2 rounded-full">
+          <span class="flex h-2 w-2 rounded-full bg-green-600"></span>
+          Available 24/7 | Advance & Immediate Bookings
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why NMIA for Aundh Section -->
+  <section class="py-16 bg-gradient-to-b from-white to-green-50/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Navi Mumbai Airport for Aundh Residents?</h2>
+          <p class="text-lg text-muted-foreground">Closer, Faster, More Convenient than Mumbai Airport</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-green-600">✈️ Navi Mumbai Airport (NMIA)</CardTitle>
+              <CardDescription>The Smart Choice for Aundh</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">📍</span>
+                <div>
+                  <p class="font-semibold">Distance: 120 km</p>
+                  <p class="text-sm text-muted-foreground">Via Mumbai-Pune Expressway</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">⏱️</span>
+                <div>
+                  <p class="font-semibold">Journey Time: 2.5 - 3 hours</p>
+                  <p class="text-sm text-muted-foreground">Smooth expressway drive, minimal city traffic</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">💰</span>
+                <div>
+                  <p class="font-semibold">Flat Rate: ₹3,700</p>
+                  <p class="text-sm text-muted-foreground">All-inclusive, no hidden charges</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">🛣️</span>
+                <div>
+                  <p class="font-semibold">Route Quality: Excellent</p>
+                  <p class="text-sm text-muted-foreground">90% expressway, well-maintained roads</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-muted">
+            <CardHeader>
+              <CardTitle className="text-muted-foreground">Mumbai Airport (BOM)</CardTitle>
+              <CardDescription>Traditional Option</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3 text-muted-foreground">
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">📍</span>
+                <div>
+                  <p class="font-semibold">Distance: 160+ km</p>
+                  <p class="text-sm">40 km longer journey</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">⏱️</span>
+                <div>
+                  <p class="font-semibold">Journey Time: 3.5 - 4.5 hours</p>
+                  <p class="text-sm">Heavy Mumbai city traffic congestion</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">💰</span>
+                <div>
+                  <p class="font-semibold">Cost: ₹4,200+</p>
+                  <p class="text-sm">Higher due to longer distance</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">🛣️</span>
+                <div>
+                  <p class="font-semibold">Route Quality: Variable</p>
+                  <p class="text-sm">Mumbai city traffic, tolls, congestion</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="bg-green-50 border-2 border-green-200 rounded-xl p-6 text-center">
+          <p class="text-2xl font-bold text-green-800 mb-2">Save 40 km Distance + 1 Hour Time + ₹500</p>
+          <p class="text-green-700">By choosing Navi Mumbai Airport over Mumbai Airport for your Aundh journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Aundh Coverage -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete Aundh Area Coverage</h2>
+          <p class="text-lg text-muted-foreground">We serve every corner of Aundh at the same flat rate of ₹3,700</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- IT Parks & Business -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <span>🏢</span> IT Parks & Business
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-4">
+                <div>
+                  <p class="font-semibold mb-2">Cerebrum IT Park</p>
+                  <p class="text-sm text-muted-foreground mb-3">Major IT companies hub, direct office drops</p>
+                  <div class="grid grid-cols-2 gap-2 text-sm">
+                    <ul class="space-y-1">
+                      <li>• Zensar Technologies</li>
+                      <li>• Accenture</li>
+                      <li>• Capgemini</li>
+                      <li>• Tech Mahindra</li>
+                    </ul>
+                    <ul class="space-y-1">
+                      <li>• L&T Infotech</li>
+                      <li>• Cognizant</li>
+                      <li>• Synechron</li>
+                      <li>• ThoughtWorks</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">IT Park Aundh</p>
+                  <p class="text-sm text-muted-foreground">Software & services companies</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Corporate Offices</p>
+                  <p class="text-sm text-muted-foreground">Aundh-Baner Road commercial zone</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- Premium Residential -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <span>🏘️</span> Premium Residential
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div>
+                  <p class="font-semibold">University Road</p>
+                  <p class="text-sm text-muted-foreground">Premium apartments & gated communities</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Aundh-Baner Road</p>
+                  <p class="text-sm text-muted-foreground">Modern residential complexes</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Parihar Chowk Area</p>
+                  <p class="text-sm text-muted-foreground">Central Aundh residential hub</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Aundh Gaon</p>
+                  <p class="text-sm text-muted-foreground">Traditional & new residential areas</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Shivar Garden Area</p>
+                  <p class="text-sm text-muted-foreground">Well-established residential locality</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Prem Nagar</p>
+                  <p class="text-sm text-muted-foreground">Family-oriented residential zone</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <!-- Educational & Landmarks -->
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <span>🎓</span> Education & Landmarks
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="space-y-3">
+                <div>
+                  <p class="font-semibold">University of Pune</p>
+                  <p class="text-sm text-muted-foreground">Main campus & surrounding areas</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Symbiosis Institute</p>
+                  <p class="text-sm text-muted-foreground">Educational institutions zone</p>
+                </div>
+                <div>
+                  <p class="font-semibold">DP Road</p>
+                  <p class="text-sm text-muted-foreground">Sports complex & commercial area</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Megapolis Smart Homes</p>
+                  <p class="text-sm text-muted-foreground">Modern township development</p>
+                </div>
+                <div>
+                  <p class="font-semibold">City One Mall Area</p>
+                  <p class="text-sm text-muted-foreground">Shopping & entertainment hub</p>
+                </div>
+                <div>
+                  <p class="font-semibold">West End Mall</p>
+                  <p class="text-sm text-muted-foreground">Commercial & retail center</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-muted-foreground mb-4">Can't find your exact location? Don't worry!</p>
+          <Button variant="outline" size="lg" asChild>
+            <a href="https://wa.me/917498264215">💬 Share Your Aundh Address - We'll Confirm Coverage</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Details -->
+  <section class="py-16 bg-gradient-to-b from-green-50/30 to-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Journey Route</h2>
+          <p class="text-lg text-muted-foreground">Navi Mumbai Airport → Aundh via Mumbai-Pune Expressway</p>
+        </div>
+
+        <Card className="mb-8">
+          <CardContent className="pt-6">
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">1</div>
+                  <div class="w-1 flex-1 bg-green-200 my-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                  <h3 class="font-bold text-lg mb-2">Navi Mumbai International Airport (NMIA)</h3>
+                  <p class="text-muted-foreground">Pickup from arrival terminal. Our driver will be waiting with your name card at the designated meeting point.</p>
+                  <p class="text-sm text-green-600 mt-2">📍 Starting Point</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">2</div>
+                  <div class="w-1 flex-1 bg-green-200 my-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                  <h3 class="font-bold text-lg mb-2">Sion-Panvel Expressway</h3>
+                  <p class="text-muted-foreground">15 km smooth expressway connecting to Mumbai-Pune Expressway. Well-lit, excellent road quality.</p>
+                  <p class="text-sm text-green-600 mt-2">⏱️ 15 minutes</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">3</div>
+                  <div class="w-1 flex-1 bg-green-200 my-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                  <h3 class="font-bold text-lg mb-2">Mumbai-Pune Expressway</h3>
+                  <p class="text-muted-foreground">90 km premium expressway with scenic views. Multiple rest stops, clean facilities, and food courts available.</p>
+                  <p class="text-sm text-green-600 mt-2">⏱️ 90 minutes | 🛣️ 6-lane expressway</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">4</div>
+                  <div class="w-1 flex-1 bg-green-200 my-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                  <h3 class="font-bold text-lg mb-2">Chandani Chowk Exit</h3>
+                  <p class="text-muted-foreground">Exit from expressway towards Pune. Well-signposted, easy navigation.</p>
+                  <p class="text-sm text-green-600 mt-2">⏱️ 5 minutes</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">5</div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-bold text-lg mb-2">Aundh, Pune</h3>
+                  <p class="text-muted-foreground">Direct drop to your exact address - Cerebrum IT Park, University Road, Aundh-Baner Road, or any Aundh locality.</p>
+                  <p class="text-sm text-green-600 mt-2">🏁 Your Destination | Total Journey: 2.5 - 3 hours</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <div class="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardContent className="pt-6 text-center">
+              <p class="text-3xl font-bold text-green-600 mb-2">120 km</p>
+              <p class="text-sm text-muted-foreground">Total Distance</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="pt-6 text-center">
+              <p class="text-3xl font-bold text-green-600 mb-2">2.5 hrs</p>
+              <p class="text-sm text-muted-foreground">Average Journey Time</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="pt-6 text-center">
+              <p class="text-3xl font-bold text-green-600 mb-2">90%</p>
+              <p class="text-sm text-muted-foreground">Expressway Travel</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent Flat Rate Pricing</h2>
+          <p class="text-lg text-muted-foreground">₹3,700 all-inclusive for Navi Mumbai Airport to Aundh</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <Card className="border-2 border-green-600">
+            <CardHeader className="bg-green-50">
+              <CardTitle className="text-2xl text-center">Electric Cab Service</CardTitle>
+              <CardDescription className="text-center text-lg font-semibold text-green-600">BYD eMax 7-Seater SUV</CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div class="text-center mb-6">
+                <p class="text-5xl font-bold text-green-600 mb-2">₹3,700</p>
+                <p class="text-muted-foreground">Flat rate, all-inclusive</p>
+              </div>
+
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Premium electric SUV</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Seating for 6 passengers</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Ample luggage space</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>All tolls & parking included</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Professional driver</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Zero emissions, eco-friendly</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-600">✓</span>
+                  <span>Silent, smooth ride</span>
+                </div>
+              </div>
+
+              <Button className="w-full bg-green-600 hover:bg-green-700" size="lg" asChild>
+                <a href="tel:+917498264215">Book Electric Cab Now</a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <div class="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>What's Included in ₹3,700</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <div class="flex justify-between items-center py-2 border-b">
+                  <span>Base Fare (120 km)</span>
+                  <span class="font-semibold">₹2,800</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b">
+                  <span>All Highway Tolls</span>
+                  <span class="font-semibold">₹700</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b">
+                  <span>Parking Charges</span>
+                  <span class="font-semibold">₹100</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b">
+                  <span>Driver Allowance</span>
+                  <span class="font-semibold">₹100</span>
+                </div>
+                <div class="flex justify-between items-center py-2 font-bold text-lg bg-green-50 px-2 rounded">
+                  <span>Total (No Hidden Charges)</span>
+                  <span class="text-green-600">₹3,700</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-blue-50 border-blue-200">
+              <CardContent className="pt-6">
+                <h3 class="font-bold mb-3">Compare & Save</h3>
+                <div class="space-y-2 text-sm">
+                  <div class="flex justify-between">
+                    <span>Other EVs (NMIA-Aundh)</span>
+                    <span class="line-through text-muted-foreground">₹4,200</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Diesel Cabs (NMIA-Aundh)</span>
+                    <span class="line-through text-muted-foreground">₹5,000</span>
+                  </div>
+                  <div class="flex justify-between font-bold text-green-700">
+                    <span>GreenEVCabs</span>
+                    <span>₹3,700</span>
+                  </div>
+                  <div class="pt-2 border-t border-blue-300">
+                    <p class="text-green-700 font-semibold">You save ₹500 - ₹1,300!</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose GreenEVCabs -->
+  <section class="py-16 bg-gradient-to-b from-white to-green-50/30">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose GreenEVCabs?</h2>
+          <p class="text-lg text-muted-foreground">Premium electric cab service, best rates guaranteed</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">⚡</div>
+              <CardTitle>Premium Electric Fleet</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">BYD eMax 7-seater luxury electric SUVs. Spacious, silent, eco-friendly. Perfect for airport transfers with ample luggage space.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">👔</div>
+              <CardTitle>Professional Drivers</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Experienced, verified drivers with excellent route knowledge. Courteous, punctual, and committed to your comfortable journey.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">💰</div>
+              <CardTitle>Best Rates</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Flat ₹3,700 rate beats all competitors. No surge pricing, no hidden charges. Save ₹500-1,300 vs other options.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">🌱</div>
+              <CardTitle>100% Eco-Friendly</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Zero emissions electric vehicles. Contribute to cleaner air while enjoying a premium, silent, and smooth ride experience.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">📱</div>
+              <CardTitle>Easy Booking</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Simple call or WhatsApp booking at +91-7498264215. Instant confirmation. No app downloads or complicated registration needed.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div class="text-4xl mb-2">🕐</div>
+              <CardTitle>24/7 Availability</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Round-the-clock service for early morning and late night flights. Advance and immediate bookings both accepted.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+          <p class="text-lg text-muted-foreground">Everything you need to know about NMIA to Aundh cab service</p>
+        </div>
+
+        <div class="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">What is the distance from Navi Mumbai Airport to Aundh?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">The distance from Navi Mumbai Airport to Aundh is approximately 120 km via Mumbai-Pune Expressway. Travel time is around 2.5 to 3 hours depending on traffic conditions.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">How much does an electric cab cost from Navi Mumbai Airport to Aundh?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">GreenEVCabs offers a flat rate of ₹3,700 for the journey from Navi Mumbai Airport to Aundh, covering all areas including University Road, Cerebrum IT Park, and residential localities. No hidden charges.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Which areas in Aundh do you cover?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">We cover all major Aundh areas including Cerebrum IT Park, IT Park Aundh, University of Pune area, Aundh-Baner Road, Aundh Gaon, and all residential societies along University Road and Parihar Chowk.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Is Navi Mumbai Airport closer to Aundh than Mumbai Airport?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Yes, Navi Mumbai Airport is approximately 40 km closer to Aundh than Mumbai Airport. The journey is also faster via Mumbai-Pune Expressway with less city traffic compared to the route from Mumbai Airport.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Do you provide service to Cerebrum IT Park Aundh?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Yes, we provide direct drop service to Cerebrum IT Park Aundh and all major IT parks in the area. Our flat rate of ₹3,700 covers door-to-door service to your exact office location.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Can I book a cab from Navi Mumbai Airport to Aundh in advance?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Yes, we recommend advance booking to ensure availability, especially during peak hours and weekends. Book via call/WhatsApp at +91-7498264215 or visit greenevcabs.com.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">What is the best route from Navi Mumbai Airport to Aundh?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">The best route is: Navi Mumbai Airport → Sion-Panvel Expressway → Mumbai-Pune Expressway → Chandani Chowk Exit → Old Pune-Mumbai Highway → Aundh. This route avoids city traffic and provides the fastest journey time.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Are electric cabs comfortable for long journeys like NMIA to Aundh?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">Absolutely! Our BYD eMax electric SUVs are specifically designed for long-distance comfort with spacious seating for 6 passengers, ample luggage space, smooth silent ride, and excellent air conditioning. Perfect for the 2.5-hour journey.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-green-600 to-green-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Book Your Ride?</h2>
+        <p class="text-xl mb-8 text-green-50">
+          Navi Mumbai Airport to Aundh | Flat ₹3,700 | Premium Electric Cab
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
+            <a href="tel:+917498264215">📞 Call: +91-7498264215</a>
+          </Button>
+          <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 hover:bg-white/20 text-white border-white" asChild>
+            <a href="https://wa.me/917498264215">💬 WhatsApp Booking</a>
+          </Button>
+        </div>
+
+        <p class="text-green-100">
+          Available 24/7 | Advance & Immediate Bookings | Professional Service
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Routes -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Related Routes from Navi Mumbai Airport</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">
+                <a href="/navi-mumbai-airport-hinjewadi-cab" class="hover:text-green-600">NMIA to Hinjewadi</a>
+              </CardTitle>
+              <CardDescription>100 km | ₹3,700</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">Direct service to all Hinjewadi phases, Infosys, TCS, Wipro campuses</p>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">
+                <a href="/navi-mumbai-airport-baner-cab" class="hover:text-green-600">NMIA to Baner</a>
+              </CardTitle>
+              <CardDescription>115 km | ₹3,700</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">Balewadi High Street, ICC Trade Tower, startup hub coverage</p>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-lg">
+                <a href="/navi-mumbai-airport-wakad-cab" class="hover:text-green-600">NMIA to Wakad</a>
+              </CardTitle>
+              <CardDescription>105 km | ₹3,700</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">Dange Chowk, WTC Wakad, EON IT Park, Kumar Pebble Park</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div class="text-center mt-8">
+          <Button variant="outline" asChild>
+            <a href="/navi-mumbai-airport-to-pune-cab">View All Navi Mumbai Airport Routes</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
