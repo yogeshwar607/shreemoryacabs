@@ -1,0 +1,333 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/seo/Breadcrumbs.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { Calendar, Check, Users, Shield, Clock, MapPin, Phone, MessageCircle, PartyPopper } from "lucide-react";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Event Transportation Services",
+  "serviceType": "Electric Vehicle Event Transportation",
+  "provider": {
+    "@type": "Organization",
+    "name": "GreenEVCabs",
+    "telephone": "+91-7498264215"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Maharashtra"
+  }
+};
+---
+
+<MainLayout
+  title="Event Transportation Services | Electric Cab for Weddings, Corporate Events | GreenEVCabs"
+  description="Premium electric cab services for events in Maharashtra. Weddings, corporate events, conferences, parties. Luxury electric vehicles, group transportation, guest shuttles. Professional service with zero emissions."
+  keywords={[
+    "event transportation",
+    "wedding cab service",
+    "corporate event transport",
+    "guest shuttle service",
+    "group transportation",
+    "electric cab for events",
+    "event vehicle rental"
+  ]}
+>
+  <Breadcrumbs items={[
+    { name: "Home", href: "/" },
+    { name: "Event Transportation", href: "/events" }
+  ]} />
+
+  <StructuredData data={[serviceSchema]} />
+
+  <!-- Hero Section -->
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+    <div class="container px-4 md:px-6">
+      <div class="text-center max-w-4xl mx-auto">
+        <Badge variant="secondary" className="mb-4">
+          <PartyPopper class="h-4 w-4 inline mr-2" />
+          Premium Event Transportation
+        </Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Sustainable Transportation for Your Special Events
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8">
+          Luxury electric cab services for weddings, corporate events, conferences, and private parties. Make your event eco-friendly with our premium zero-emission fleet.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I'm%20interested%20in%20event%20transportation%20services" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Book Event Transportation
+            </Button>
+          </a>
+          <a href="tel:+917498264215">
+            <Button size="lg" variant="outline">
+              <Phone className="mr-2 h-5 w-5" />
+              Call +91 74982 64215
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Types Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
+          Events We Serve
+        </h2>
+        <p class="text-muted-foreground max-w-2xl mx-auto">
+          Professional electric cab services for all types of events
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card>
+          <CardHeader>
+            <PartyPopper class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Weddings & Ceremonies</CardTitle>
+            <CardDescription>
+              Guest pickup/drop, baraat transportation, family shuttles. Luxury electric vehicles for the special day.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Users class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Corporate Events</CardTitle>
+            <CardDescription>
+              Team offsites, conferences, seminars, training sessions. Reliable group transportation solutions.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Calendar class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Conferences & Exhibitions</CardTitle>
+            <CardDescription>
+              Delegate shuttles, VIP transportation, multi-venue coordination. Professional event logistics.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Shield class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Private Parties</CardTitle>
+            <CardDescription>
+              Birthday parties, anniversaries, social gatherings. Safe, comfortable guest transportation.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <MapPin class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Destination Events</CardTitle>
+            <CardDescription>
+              Lonavala, Mahabaleshwar, Nashik events. Outstation group travel in premium electric vehicles.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <Clock class="h-10 w-10 text-primary mb-4" />
+            <CardTitle>Multi-Day Events</CardTitle>
+            <CardDescription>
+              Extended events, festivals, celebrations. Dedicated fleet with consistent drivers.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="w-full py-12 md:py-16 bg-muted/50">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Why Choose GreenEVCabs for Events?</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Fleet Options</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>5-seater to 7-seater premium electric SUVs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Multiple vehicles for large group coordination</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Luxury interiors with climate control</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Spacious luggage capacity for gifts & baggage</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Professional Service</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Uniformed, well-groomed professional drivers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Event coordinator for seamless logistics</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Real-time tracking & communication</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling & route planning</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Sustainability Benefits</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>100% electric, zero-emission fleet</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Make your event eco-friendly & sustainable</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Silent, smooth electric drive experience</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Carbon footprint reporting for corporate events</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Pricing & Packages</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Customized packages for your event size</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Transparent pricing with no hidden charges</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>Volume discounts for multiple vehicles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <Check class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>GST invoicing available for corporate events</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes Section -->
+  <section class="w-full py-12 md:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Popular Event Destinations</h2>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 bg-muted/50 rounded-lg">
+            <h3 class="font-semibold mb-2">Pune Venues</h3>
+            <p class="text-sm text-muted-foreground">
+              Transportation for events at Radisson, JW Marriott, Hyatt, Conrad, and all major Pune venues
+            </p>
+          </div>
+
+          <div class="p-4 bg-muted/50 rounded-lg">
+            <h3 class="font-semibold mb-2">Lonavala Resorts</h3>
+            <p class="text-sm text-muted-foreground">
+              Destination weddings & corporate offsites at Della Resorts, Machan, and hill station properties
+            </p>
+          </div>
+
+          <div class="p-4 bg-muted/50 rounded-lg">
+            <h3 class="font-semibold mb-2">Mumbai Events</h3>
+            <p class="text-sm text-muted-foreground">
+              Conference centers, convention halls, and luxury hotels in Mumbai & Navi Mumbai
+            </p>
+          </div>
+
+          <div class="p-4 bg-muted/50 rounded-lg">
+            <h3 class="font-semibold mb-2">Nashik Wine Tours</h3>
+            <p class="text-sm text-muted-foreground">
+              Group transportation for wine tour events, vineyard parties, and Nashik celebrations
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="w-full py-12 md:py-16 bg-primary/10">
+    <div class="container px-4 md:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4">Plan Your Event Transportation</h2>
+        <p class="text-muted-foreground mb-8">
+          Let us handle the logistics while you focus on making your event memorable. Contact us for a customized quote.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/917498264215?text=Hi%2C%20I%20need%20event%20transportation.%20Event%20Type%3A%20%0ADate%3A%20%0AGuests%3A%20%0ALocations%3A%20" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              Get Event Quote on WhatsApp
+            </Button>
+          </a>
+          <a href="/routes">
+            <Button size="lg" variant="outline">
+              View Popular Routes
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

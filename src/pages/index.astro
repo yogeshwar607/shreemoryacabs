@@ -336,7 +336,7 @@ const reviewSchema = {
               ✈️ Premium Airport Service • Best Rates • Professional Drivers
             </Badge>
             <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-              Premium Airport Transfers | Starting ₹2,700
+              Premium Airport Transfers | Starting ₹2,300
             </h2>
             <p class="text-lg text-muted-foreground mb-6">
               Experience luxury airport transfers with professional drivers at unbeatable rates. Premium electric vehicles, meet & greet service, flight tracking—all at the most competitive price in Maharashtra. Excellence without the premium price tag.
@@ -378,13 +378,22 @@ const reviewSchema = {
                 <CardTitle class="text-lg">Popular Airport Routes</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <a href="/routes/pune-to-mumbai-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
+                <a href="/routes/pune-to-navi-mumbai-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
                   <div class="flex justify-between items-center">
                     <div>
-                      <p class="font-semibold">Pune → Mumbai Airport</p>
-                      <p class="text-xs text-muted-foreground">148 km • 2.5-3 hrs</p>
+                      <p class="font-semibold">Pune → Navi Mumbai Airport</p>
+                      <p class="text-xs text-muted-foreground">120 km • 2.5-3 hrs</p>
                     </div>
-                    <p class="font-bold text-primary">from ₹2,700</p>
+                    <p class="font-bold text-primary">from ₹2,300</p>
+                  </div>
+                </a>
+                <a href="/routes/navi-mumbai-to-pune-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <p class="font-semibold">Navi-mumbai → Pune</p>
+                      <p class="text-xs text-muted-foreground">120 km • 2.5-3 hrs</p>
+                    </div>
+                    <p class="font-bold text-primary">from ₹2,300</p>
                   </div>
                 </a>
                 <a href="/routes/mumbai-airport-to-pune" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
@@ -396,10 +405,10 @@ const reviewSchema = {
                     <p class="font-bold text-primary">from ₹2,700</p>
                   </div>
                 </a>
-                <a href="/routes/hinjewadi-to-mumbai-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
+                <a href="/routes/pune-to-mumbai-airport" class="block p-3 bg-muted/50 rounded hover:bg-muted transition-colors">
                   <div class="flex justify-between items-center">
                     <div>
-                      <p class="font-semibold">Hinjewadi → Mumbai Airport</p>
+                      <p class="font-semibold">Pune → Mumbai Airport</p>
                       <p class="text-xs text-muted-foreground">Corporate packages available</p>
                     </div>
                     <p class="font-bold text-primary">from ₹2,700</p>
@@ -930,8 +939,37 @@ const reviewSchema = {
                 </div>
               </div>
               <div class="flex-shrink-0">
-                <a href="/nmia-faq">
+                <a href="/navi-mumbai-airport-to-pune-cab-faq">
                   <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+                    View Complete FAQ →
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <!-- Pune to NMIA FAQ -->
+        <Card className="border-purple-200 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30">
+          <CardContent className="pt-6">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-2">
+                  📋 Pune to Navi Mumbai Airport - Complete FAQ
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  50+ frequently asked questions about Pune to NMIA airport drop service. Everything about pricing, early morning pickups, booking, routes, timing, safety, and more.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm text-muted-foreground">
+                  <Badge variant="outline" className="bg-white dark:bg-gray-800">Starting from ₹2,300</Badge>
+                  <Badge variant="outline" className="bg-white dark:bg-gray-800">No Surge Pricing</Badge>
+                  <Badge variant="outline" className="bg-white dark:bg-gray-800">Early Morning Specialty</Badge>
+                  <Badge variant="outline" className="bg-white dark:bg-gray-800">All Pune Areas</Badge>
+                </div>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="/pune-to-navi-mumbai-airport-cab-faq">
+                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
                     View Complete FAQ →
                   </Button>
                 </a>
