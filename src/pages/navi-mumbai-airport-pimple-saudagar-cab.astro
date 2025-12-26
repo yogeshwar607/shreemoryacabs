@@ -1,0 +1,62 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Electric Cab Navi Mumbai Airport to Pimple Saudagar",
+  "provider": { "@type": "LocalBusiness", "name": "GreenEVCabs", "telephone": "+917498264215" },
+  "areaServed": { "@type": "Place", "name": "Pimple Saudagar, Pune" },
+  "offers": { "@type": "Offer", "price": "3700", "priceCurrency": "INR" }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "NMIA Cabs", url: "/navi-mumbai-airport-to-pune-cab" },
+  { name: "Pimple Saudagar", url: "/navi-mumbai-airport-pimple-saudagar-cab" }
+]);
+---
+
+<MainLayout
+  title="Navi Mumbai Airport to Pimple Saudagar Cab ₹3,700 | NMIA PS Taxi"
+  description="NMIA to Pimple Saudagar electric cab ₹3,700. Covers MIDC, Yamuna Nagar, Pimple Nilakh. 110 km via Expressway. Book 24/7!"
+  keywords={["navi mumbai airport pimple saudagar", "nmia ps cab", "pimple saudagar midc nmia"]}
+>
+  <StructuredData data={[serviceSchema, breadcrumbSchema]} />
+
+  <section class="py-20 bg-gradient-to-b from-green-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+      <Badge className="mb-4 bg-green-600 text-white">NMIA to Pimple Saudagar</Badge>
+      <h1 class="text-5xl font-bold mb-6">NMIA to Pimple Saudagar<br/>Electric Cab - ₹3,700</h1>
+      <p class="text-xl mb-8">110 km | 2.5 Hours | MIDC & Residential Hub</p>
+      <div class="flex gap-4 justify-center">
+        <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Call Now</a></Button>
+        <Button size="lg" variant="outline" asChild><a href="https://wa.me/917498264215">💬 WhatsApp</a></Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Coverage Areas</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <Card><CardHeader><CardTitle>Industrial</CardTitle></CardHeader><CardContent><p>Pimple Saudagar MIDC</p><p>Industrial estates</p><p>Manufacturing units</p></CardContent></Card>
+        <Card><CardHeader><CardTitle>Residential</CardTitle></CardHeader><CardContent><p>Yamuna Nagar</p><p>Pimple Nilakh</p><p>Residential societies</p></CardContent></Card>
+        <Card><CardHeader><CardTitle>Commercial</CardTitle></CardHeader><CardContent><p>Pimple Saudagar Chowk</p><p>Market area</p><p>IT offices</p></CardContent></Card>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-green-50 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">₹3,700 Flat Rate</h2>
+      <p class="text-xl">All-inclusive | Premium EV | Professional Driver</p>
+      <Button size="lg" className="mt-6 bg-green-600" asChild><a href="tel:+917498264215">Book Now</a></Button>
+    </div>
+  </section>
+</MainLayout>

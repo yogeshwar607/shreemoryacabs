@@ -1,0 +1,185 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Electric Cab Service Navi Mumbai Airport to Hadapsar",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "GreenEVCabs",
+    "url": "https://greenevcabs.com",
+    "telephone": "+917498264215"
+  },
+  "areaServed": { "@type": "Place", "name": "Hadapsar, Pune" },
+  "description": "Electric cab from Navi Mumbai Airport to Hadapsar IT Hub. ₹3,700 flat rate covering BNY Mellon, Zensar, Syntel, MIDC & all Hadapsar areas.",
+  "offers": {
+    "@type": "Offer",
+    "price": "3700",
+    "priceCurrency": "INR"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Distance from Navi Mumbai Airport to Hadapsar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "135 km via Mumbai-Pune Expressway, approximately 3 hours travel time. Flat ₹3,700 rate covering all Hadapsar IT parks and residential areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you cover BNY Mellon and IT companies in Hadapsar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Direct drops to BNY Mellon, Zensar, Syntel, Bharti Airtel, Jijamata IT Park, and all Hadapsar IT locations at ₹3,700 flat rate."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Navi Mumbai Airport Cabs", url: "/navi-mumbai-airport-to-pune-cab" },
+  { name: "Hadapsar", url: "/navi-mumbai-airport-hadapsar-cab" }
+]);
+---
+
+<MainLayout
+  title="Navi Mumbai Airport to Hadapsar Cab ₹3,700 | IT Hub BNY Mellon Taxi"
+  description="NMIA to Hadapsar electric cab ₹3,700. Direct to BNY Mellon, Zensar, Syntel, Jijamata IT Park. 135 km via Expressway. 24/7 service. Book now!"
+  keywords={["navi mumbai airport to hadapsar", "nmia hadapsar cab", "hadapsar bny mellon cab", "navi mumbai airport it park hadapsar"]}
+>
+  <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
+
+  <section class="relative py-20 md:py-28">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50 -z-10"></div>
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <Badge className="mb-4 bg-green-600 text-white">✈️ NMIA Now Open - IT Hub Service</Badge>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Navi Mumbai Airport to Hadapsar<br/>Electric Cab - ₹3,700
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-4">
+          135 km | 3 Hours | IT Hub & MIDC Coverage
+        </p>
+        <p class="text-lg text-muted-foreground mb-8">
+          Direct to BNY Mellon, Zensar, Syntel, Jijamata IT Park & all Hadapsar areas
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
+            <a href="tel:+917498264215">📞 Call: +91-7498264215</a>
+          </Button>
+          <Button size="lg" variant="outline" asChild>
+            <a href="https://wa.me/917498264215">💬 WhatsApp</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Complete Hadapsar IT & Residential Coverage</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>🏢 Major IT Companies</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <p class="font-semibold">BNY Mellon Technology</p>
+              <p class="font-semibold">Zensar Technologies</p>
+              <p class="font-semibold">Syntel (Atos)</p>
+              <p class="font-semibold">Bharti Airtel Office</p>
+              <p class="font-semibold">Jijamata IT Park</p>
+              <p class="font-semibold">MIDC Hadapsar</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>🏘️ Residential Areas</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <p>Magarpatta Road</p>
+              <p>Hadapsar Gaon</p>
+              <p>Gadital</p>
+              <p>Manjri Road</p>
+              <p>Phursungi</p>
+              <p>Seasonal Living societies</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>📍 Key Landmarks</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <p>Seasons Mall</p>
+              <p>Phoenix Marketcity nearby</p>
+              <p>Pune Airport nearby</p>
+              <p>Hadapsar Industrial Area</p>
+              <p>Magarpatta City adjacent</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-green-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Flat ₹3,700 Rate</h2>
+      <div class="max-w-2xl mx-auto">
+        <Card>
+          <CardContent className="pt-6">
+            <p class="text-5xl font-bold text-green-600 mb-4">₹3,700</p>
+            <p class="text-muted-foreground mb-4">All-inclusive | No hidden charges</p>
+            <div class="text-left space-y-2">
+              <p>✓ 135 km journey covered</p>
+              <p>✓ All tolls included</p>
+              <p>✓ Premium electric SUV</p>
+              <p>✓ Professional driver</p>
+              <p>✓ 24/7 availability</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Related NMIA Routes</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle><a href="/navi-mumbai-airport-magarpatta-cab" class="hover:text-green-600">NMIA to Magarpatta</a></CardTitle>
+            <CardDescription>130 km | ₹3,700</CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle><a href="/navi-mumbai-airport-kharadi-cab" class="hover:text-green-600">NMIA to Kharadi</a></CardTitle>
+            <CardDescription>130 km | ₹3,700</CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle><a href="/navi-mumbai-airport-to-pune-cab" class="hover:text-green-600">All NMIA Routes</a></CardTitle>
+            <CardDescription>View all destinations</CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
+    </div>
+  </section>
+</MainLayout>

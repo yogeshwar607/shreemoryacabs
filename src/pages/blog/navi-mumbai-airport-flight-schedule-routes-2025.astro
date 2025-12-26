@@ -1,0 +1,135 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Navi Mumbai Airport Flight Schedule & Routes Guide 2025", "datePublished": "2025-12-26" };
+const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: "NMIA Flights", url: "/blog/navi-mumbai-airport-flight-schedule-routes-2025" }]);
+---
+
+<MainLayout title="Navi Mumbai Airport Flights 2025: Complete Schedule & Routes Guide" description="NMIA flight schedule, airlines, routes, timings. IndiGo, Akasa Air, Air India Express flights from Navi Mumbai Airport. Updated Dec 2025." keywords={["nmia flights", "navi mumbai airport schedule", "nmia airlines routes"]}>
+  <StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+  <article class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Navi Mumbai Airport Flights 2025: Complete Schedule & Routes Guide</h1>
+      <p class="text-xl text-muted-foreground mb-8">Updated Dec 26, 2025 | Current operations & expansion plans</p>
+
+      <div class="prose prose-lg max-w-none">
+        <h2 class="text-3xl font-bold mt-8 mb-4">Current Operations (Dec 2025 - Jan 2026)</h2>
+        <div class="not-prose my-6">
+          <Card className="bg-blue-50">
+            <CardHeader><CardTitle>Quick Facts</CardTitle></CardHeader>
+            <CardContent>
+              <ul class="space-y-2">
+                <li><strong>Operational Since:</strong> December 25, 2025</li>
+                <li><strong>Operating Hours:</strong> 8 AM to 8 PM daily</li>
+                <li><strong>24/7 Operations:</strong> From February 2026</li>
+                <li><strong>Airlines:</strong> IndiGo, Akasa Air, Air India Express, Star Air</li>
+                <li><strong>Daily Flights:</strong> ~15 flights (expanding to 50+ by March 2026)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Airlines Operating from NMIA</h2>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">1. IndiGo (6E)</h3>
+        <p><strong>Routes from NMIA:</strong></p>
+        <ul>
+          <li>Bengaluru (BLR) - 4 daily flights</li>
+          <li>Delhi (DEL) - 3 daily flights</li>
+          <li>Hyderabad (HYD) - 2 daily flights</li>
+          <li>Goa (GOI) - 1 daily flight</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">2. Akasa Air (QP)</h3>
+        <p><strong>Routes from NMIA:</strong></p>
+        <ul>
+          <li>Bengaluru (BLR) - 2 daily flights</li>
+          <li>Kochi (COK) - 1 daily flight</li>
+          <li>Ahmedabad (AMD) - 1 daily flight</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">3. Air India Express (IX)</h3>
+        <ul>
+          <li>Bengaluru (BLR) - 1 daily</li>
+          <li>Chennai (MAA) - 1 daily</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">4. Star Air (S5)</h3>
+        <ul>
+          <li>Belagavi (IXG) - 3 weekly</li>
+          <li>Jodhpur (JDH) - 3 weekly</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Popular Routes for Pune Travelers</h2>
+
+        <div class="not-prose my-8">
+          <div class="grid md:grid-cols-2 gap-4">
+            <Card>
+              <CardHeader><CardTitle>NMIA → Bengaluru</CardTitle></CardHeader>
+              <CardContent>
+                <p class="font-semibold">7 daily flights</p>
+                <p class="text-sm">Duration: 1h 30m</p>
+                <p class="text-sm">Operators: IndiGo, Akasa Air, Air India Express</p>
+                <p class="text-sm text-green-600">Best for: IT professionals, weekend trips</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>NMIA → Delhi</CardTitle></CardHeader>
+              <CardContent>
+                <p class="font-semibold">3 daily flights</p>
+                <p class="text-sm">Duration: 2h 15m</p>
+                <p class="text-sm">Operator: IndiGo</p>
+                <p class="text-sm text-green-600">Best for: Business travel, connecting flights</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>NMIA → Hyderabad</CardTitle></CardHeader>
+              <CardContent>
+                <p class="font-semibold">2 daily flights</p>
+                <p class="text-sm">Duration: 1h 20m</p>
+                <p class="text-sm">Operator: IndiGo</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>NMIA → Goa</CardTitle></CardHeader>
+              <CardContent>
+                <p class="font-semibold">1 daily flight</p>
+                <p class="text-sm">Duration: 1h</p>
+                <p class="text-sm">Operator: IndiGo</p>
+                <p class="text-sm text-green-600">Best for: Weekend getaways</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Upcoming Routes (Q1-Q2 2026)</h2>
+        <p>NMIA is rapidly expanding with these routes expected:</p>
+        <ul>
+          <li>Mumbai domestic connection</li>
+          <li>More flights to Bengaluru, Delhi, Hyderabad</li>
+          <li>New routes: Kolkata, Jaipur, Chandigarh</li>
+          <li>International: Dubai, Singapore, Bangkok (coming 2026)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">How to Book NMIA Flights</h2>
+        <ol>
+          <li>Visit airline websites or booking platforms</li>
+          <li>Select "Navi Mumbai (NMIA)" as departure airport</li>
+          <li>Book your preferred flight</li>
+          <li>Book your Pune to NMIA cab: ₹3,700 flat rate</li>
+        </ol>
+
+        <div class="not-prose mt-8 p-6 bg-green-50 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Book NMIA Cab from Pune - ₹3,700</h3>
+          <p class="mb-4">110 km | 2-2.5 hours | All Pune localities covered</p>
+          <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Call Now</a></Button>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

@@ -1,0 +1,142 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
+
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Navi Mumbai Airport Terminal Guide for Pune Travelers", "datePublished": "2025-12-26" };
+const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: "NMIA Terminal Guide", url: "/blog/navi-mumbai-airport-terminal-guide-pune-travelers" }]);
+---
+
+<MainLayout title="Navi Mumbai Airport Terminal Guide: Complete Walkthrough for Pune Travelers" description="NMIA terminal layout, facilities, check-in, security, arrivals, cab pickup. Complete guide for Pune passengers flying from Navi Mumbai Airport." keywords={["nmia terminal guide", "navi mumbai airport layout", "nmia facilities"]}>
+  <StructuredData data={[articleSchema, breadcrumbSchema]} />
+
+  <article class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Navi Mumbai Airport Terminal Guide: Complete Walkthrough for Pune Travelers</h1>
+      <p class="text-xl text-muted-foreground mb-8">Updated Dec 26, 2025 | Everything you need to know</p>
+
+      <div class="prose prose-lg max-w-none">
+        <h2 class="text-3xl font-bold mb-6">Terminal Overview</h2>
+        <div class="not-prose my-6">
+          <Card className="bg-blue-50">
+            <CardContent className="pt-6">
+              <ul class="space-y-2">
+                <li><strong>Status:</strong> Newly opened (Dec 25, 2025)</li>
+                <li><strong>Size:</strong> Modern, spacious design</li>
+                <li><strong>Terminals:</strong> Single terminal (Phase 1)</li>
+                <li><strong>Capacity:</strong> Designed for efficient passenger flow</li>
+                <li><strong>Condition:</strong> Brand new, state-of-the-art facilities</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Departures: Step-by-Step</h2>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">1. Arrival at Airport (Recommended: 2 hours before departure)</h3>
+        <ul>
+          <li><strong>Cab drop-off:</strong> Designated drop zone at Departures level</li>
+          <li><strong>Entry:</strong> Show flight ticket/booking confirmation</li>
+          <li><strong>First impression:</strong> Modern, clean, less crowded than Mumbai Airport</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">2. Check-in</h3>
+        <ul>
+          <li><strong>Web check-in:</strong> Recommended (open 48 hours before)</li>
+          <li><strong>Counters:</strong> Clearly marked by airline</li>
+          <li><strong>Baggage drop:</strong> Quick processing (new airport = faster)</li>
+          <li><strong>Average time:</strong> 10-15 minutes</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">3. Security Check</h3>
+        <ul>
+          <li><strong>Location:</strong> After check-in, follow signs</li>
+          <li><strong>Queue time:</strong> 10-20 minutes (much faster than BOM)</li>
+          <li><strong>Process:</strong> Standard security (liquids, laptops, belts)</li>
+          <li><strong>Tip:</strong> Keep boarding pass and ID ready</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">4. Post-Security Area</h3>
+        <ul>
+          <li>Duty-free shops</li>
+          <li>Food courts & restaurants</li>
+          <li>Seating areas near gates</li>
+          <li>Charging points</li>
+          <li>Clean washrooms</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">5. Boarding</h3>
+        <ul>
+          <li><strong>Gates:</strong> Clearly marked, easy to find</li>
+          <li><strong>Walking distance:</strong> Shorter than Mumbai Airport</li>
+          <li><strong>Boarding:</strong> Starts 30-45 minutes before departure</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Arrivals: What to Expect</h2>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">1. Landing & Disembarkation</h3>
+        <ul>
+          <li>Modern aerobridges or bus to terminal</li>
+          <li>Short walk to baggage claim</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">2. Baggage Claim</h3>
+        <ul>
+          <li><strong>Location:</strong> Ground level, clearly marked</li>
+          <li><strong>Wait time:</strong> 10-20 minutes (new airport = efficient)</li>
+          <li><strong>Belts:</strong> Electronic displays show flight numbers</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">3. Exit & Cab Pickup</h3>
+        <ul>
+          <li><strong>Location:</strong> Ground level, outside Arrivals</li>
+          <li><strong>Signage:</strong> Clear "Taxi Pickup" signs</li>
+          <li><strong>GreenEVCabs pickup:</strong> Driver waits with name board</li>
+          <li><strong>Parking:</strong> Free 30 minutes for pickups</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Facilities at NMIA</h2>
+
+        <div class="not-prose my-8">
+          <div class="grid md:grid-cols-2 gap-4">
+            <Card><CardContent className="pt-6"><p class="font-semibold">✓ Food & Beverage</p><p class="text-sm">Cafes, restaurants, quick bites</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p class="font-semibold">✓ Shopping</p><p class="text-sm">Duty-free, retail outlets</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p class="font-semibold">✓ WiFi</p><p class="text-sm">Free high-speed internet</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p class="font-semibold">✓ Lounges</p><p class="text-sm">Airline lounges coming soon</p></CardContent></Card>
+          </div>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">Tips for Pune Travelers at NMIA</h2>
+        <ol>
+          <li><strong>Arrive 2 hours early:</strong> Even though processing is fast, don't rush</li>
+          <li><strong>Web check-in:</strong> Save time, just drop baggage</li>
+          <li><strong>Pre-book cab:</strong> Call +91-7498264215 for guaranteed pickup</li>
+          <li><strong>Track flight:</strong> NMIA is new, monitor for any schedule changes</li>
+          <li><strong>Enjoy the experience:</strong> Brand new airport, modern facilities</li>
+        </ol>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">NMIA vs Mumbai Airport Terminal Experience</h2>
+        <p><strong>Why NMIA is better:</strong></p>
+        <ul>
+          <li>Brand new (opened Dec 2025) vs old terminals</li>
+          <li>Less crowded = faster processing</li>
+          <li>Shorter walking distances</li>
+          <li>Cleaner facilities</li>
+          <li>Easier cab pickup</li>
+          <li>Modern amenities</li>
+        </ul>
+
+        <div class="not-prose mt-8 p-6 bg-green-50 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Book Your NMIA Cab from Pune</h3>
+          <p class="mb-4">₹3,700 flat rate | All Pune localities | Flight tracking included</p>
+          <div class="flex gap-4">
+            <Button size="lg" className="bg-green-600" asChild><a href="tel:+917498264215">📞 Call: +91-7498264215</a></Button>
+            <Button size="lg" variant="outline" asChild><a href="https://wa.me/917498264215">💬 WhatsApp</a></Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
