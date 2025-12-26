@@ -1,8 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateBreadcrumbSchema } from "@/lib/seo";
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -104,37 +106,28 @@ const faqSchema = {
   ]
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://greenevcabs.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Navi Mumbai Airport Cabs",
-      "item": "https://greenevcabs.com/navi-mumbai-airport-to-pune-cab"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Aundh",
-      "item": "https://greenevcabs.com/navi-mumbai-airport-aundh-cab"
-    }
-  ]
-};
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Navi Mumbai Airport to Pune Cab", url: "/navi-mumbai-airport-to-pune-cab" },
+  { name: "Aundh", url: "/navi-mumbai-airport-aundh-cab" }
+]);
 ---
 
-<Layout
+<MainLayout
   title="Navi Mumbai Airport to Aundh Cab | Electric Cab ₹3,700 - GreenEVCabs"
   description="Book electric cab from Navi Mumbai Airport to Aundh, Pune. Flat rate ₹3,700 | Direct service to Cerebrum IT Park, University Road & all Aundh areas | Book now!"
-  schema={[serviceSchema, faqSchema, breadcrumbSchema]}
+  keywords={[
+    "navi mumbai airport to aundh cab",
+    "navi mumbai airport to aundh",
+    "nmia to aundh taxi",
+    "panvel airport to aundh",
+    "navi mumbai airport aundh cerebrum it park",
+    "navi mumbai airport university road",
+    "electric cab aundh nmia",
+    "aundh to navi mumbai airport cab fare"
+  ]}
 >
+  <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
   <!-- Hero Section -->
   <section class="relative py-20 md:py-28 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50 -z-10"></div>
@@ -849,4 +842,4 @@ const breadcrumbSchema = {
       </div>
     </div>
   </section>
-</Layout>
+</MainLayout>
