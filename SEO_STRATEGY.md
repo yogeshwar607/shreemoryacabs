@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This comprehensive SEO strategy is designed to rank GreenEVCabs for high-intent keywords "ev cabs pune" and "ev taxi pune". The strategy combines technical SEO, on-page optimization, content marketing, local SEO, and link building to achieve top rankings in Google search results.
+This comprehensive SEO strategy is designed to rank Shree Morya Cabs for high-intent keywords "ev cabs pune" and "ev taxi pune". The strategy combines technical SEO, on-page optimization, content marketing, local SEO, and link building to achieve top rankings in Google search results.
 
 **Target Keywords:**
 - Primary: "ev cabs pune", "ev taxi pune"
@@ -28,7 +28,7 @@ This comprehensive SEO strategy is designed to rank GreenEVCabs for high-intent 
    - Both include: keyword-rich content, local area coverage, service details, FAQs, CTAs, breadcrumbs, schema markup
 
 3. **Homepage Optimization**
-   - Title: "GreenEVCabs - EV Cabs Pune | Electric Taxi Service | Book Online 24/7"
+   - Title: "Shree Morya Cabs - EV Cabs Pune | Electric Taxi Service | Book Online 24/7"
    - H1: "EV Cabs Pune | Electric Taxi Service Across Maharashtra"
    - Meta description optimized with target keywords and CTAs
    - Added internal linking section to new landing pages
@@ -111,13 +111,13 @@ Each location page should include:
 ### Google Business Profile Setup
 
 **Create profile with:**
-- **Business Name:** GreenEVCabs - EV Cabs Pune
+- **Business Name:** Shree Morya Cabs - EV Cabs Pune
 - **Categories:** 
   - Primary: Taxi Service
   - Secondary: Electric Vehicle Rental, Transportation Service
 - **Service Areas:** Pune, Pimpri-Chinchwad, Mumbai, Maharashtra
 - **Phone:** +91-74982-64215
-- **Website:** https://greenevcabs.com
+- **Website:** https://shreemoryacabs.com
 - **Hours:** Open 24 hours
 - **Description:** Include "ev cabs pune", "electric taxi" naturally
 
@@ -130,7 +130,7 @@ Each location page should include:
 
 **Review Strategy:**
 - Goal: 50+ reviews with 4.5+ rating in 3 months
-- Send WhatsApp message after every ride: "Thanks for choosing GreenEVCabs! Please share your experience with a quick Google review [link]"
+- Send WhatsApp message after every ride: "Thanks for choosing Shree Morya Cabs! Please share your experience with a quick Google review [link]"
 - Respond to ALL reviews within 24 hours
 - Include keywords naturally in responses
 
@@ -157,9 +157,9 @@ Each location page should include:
 
 **NAP Consistency (CRITICAL):**
 Use identical information across ALL listings:
-- Name: GreenEVCabs - EV Cabs Pune
+- Name: Shree Morya Cabs - EV Cabs Pune
 - Phone: +91-74982-64215
-- Website: https://greenevcabs.com
+- Website: https://shreemoryacabs.com
 - Description: Include "ev cabs pune" and "electric taxi service"
 
 ---
@@ -195,7 +195,7 @@ Use identical information across ALL listings:
 9. "Weekend Getaways from Pune: Best Routes with Electric Cabs"
 10. "EV Cab Safety Features: Why Electric Taxis Are Safer Than Regular Cabs"
 11. "Wakad to Baner Commute: Why Residents Choose EV Cabs"
-12. "How GreenEVCabs Is Reducing Pune's Carbon Footprint"
+12. "How Shree Morya Cabs Is Reducing Pune's Carbon Footprint"
 
 ### Content Guidelines
 
@@ -270,9 +270,9 @@ Use identical information across ALL listings:
 ### Digital PR
 
 **Press Release Topics:**
-1. "GreenEVCabs Launches Pune's First 100% Electric Taxi Service"
+1. "Shree Morya Cabs Launches Pune's First 100% Electric Taxi Service"
 2. "Electric Cabs Complete 10,000 Zero-Emission Trips in Pune"
-3. "[Major IT Company] Partners with GreenEVCabs for Employee Transport"
+3. "[Major IT Company] Partners with Shree Morya Cabs for Employee Transport"
 
 **Media Outreach:**
 - Pune Mirror, Times of India Pune, Indian Express Pune
@@ -293,14 +293,14 @@ Use identical information across ALL listings:
 - Add Q&A: "Are your cabs electric?" "What areas do you serve?"
 
 **2. Facebook Business Page**
-- Name: "GreenEVCabs - EV Cabs Pune"
+- Name: "Shree Morya Cabs - EV Cabs Pune"
 - Weekly posts with Pune location tags
 - Share blog content
 - Customer testimonials
 - Booking link in every post
 
 **3. Instagram Business**
-- Handle: @greenevcabs_pune
+- Handle: @shreemoryacabs_pune
 - Daily stories showing service (Hinjewadi, Wakad, etc.)
 - Reels: Vehicle tours, customer experiences, route vlogs
 - Hashtags: #evcabspune #evtaxipune #electriccabpune
@@ -313,7 +313,7 @@ Use identical information across ALL listings:
 - Case studies and testimonials
 
 **5. YouTube Channel**
-- "GreenEVCabs Pune"
+- "Shree Morya Cabs Pune"
 - Vehicle walkthroughs (Kia Carens EV, BYD E-MAX 7)
 - Route vlogs (Pune to Mumbai in Electric Cab)
 - Customer testimonials
@@ -326,7 +326,7 @@ Use identical information across ALL listings:
 - #evcabspune
 - #evtaxipune
 - #electriccabpune
-- #greenevcabs
+- #shreemoryacabs
 - #puneevtaxi
 
 **Local (Mix and match):**
@@ -570,11 +570,11 @@ This strategy provides a complete roadmap to dominate search results for "ev cab
 4. Start review collection
 5. Begin content creation
 
-With consistent execution, GreenEVCabs will establish market leadership as Pune's premier electric cab service.
+With consistent execution, Shree Morya Cabs will establish market leadership as Pune's premier electric cab service.
 
 ---
 
 **Document:** SEO Strategy v1.0
 **Created:** October 30, 2025
 **Next Review:** November 30, 2025
-**Owner:** GreenEVCabs Marketing Team
+**Owner:** Shree Morya Cabs Marketing Team

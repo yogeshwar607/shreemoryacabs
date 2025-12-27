@@ -2,7 +2,7 @@
 
 ## Overview
 
-GreenEVCabs website now includes interactive Google Maps showing:
+Shree Morya Cabs website now includes interactive Google Maps showing:
 - **Service Area Map**: All Pune localities served with interactive markers
 - **Route Maps**: Turn-by-turn directions from pickup to NMIA
 - **Embedded Maps**: Simple route visualization without API complexity
@@ -34,7 +34,7 @@ GreenEVCabs website now includes interactive Google Maps showing:
 
 1. Go to **Google Cloud Console**: https://console.cloud.google.com
 2. Click "Select a Project" → "New Project"
-3. Project name: `greenevcabs-maps`
+3. Project name: `shreemoryacabs-maps`
 4. Click "Create"
 
 ### Step 2: Enable Required APIs
@@ -60,7 +60,7 @@ GreenEVCabs website now includes interactive Google Maps showing:
 1. Select "HTTP referrers (websites)"
 2. Add website referrers:
    ```
-   https://greenevcabs.hello-22d.workers.dev/*
+   https://shreemoryacabs.hello-22d.workers.dev/*
    http://localhost:4321/*  (for local development)
    ```
 
@@ -82,7 +82,7 @@ GreenEVCabs website now includes interactive Google Maps showing:
    - 28,000 map loads/month (free tier)
    - 40,000 Directions API calls/month (free tier)
 
-**Cost estimate for GreenEVCabs:**
+**Cost estimate for Shree Morya Cabs:**
 - Expected traffic: 5,000-10,000 map loads/month
 - **Monthly cost: ₹0** (well within free tier)
 
@@ -153,7 +153,7 @@ npm run build
 npx wrangler deploy
 ```
 
-Visit: https://greenevcabs.hello-22d.workers.dev/service-areas-map
+Visit: https://shreemoryacabs.hello-22d.workers.dev/service-areas-map
 
 **Expected result:**
 - Same as local, but faster (cached)
@@ -454,7 +454,7 @@ window.initServiceMap = initServiceMap;
 - **Directions API:** 40,000 requests
 - **Maps Static API:** 28,000 images
 
-### Expected Usage (GreenEVCabs):
+### Expected Usage (Shree Morya Cabs):
 - **Maps JavaScript API:** 8,000 loads
 - **Directions API:** 3,000 requests
 - **Maps Static API:** 1,000 images
@@ -477,7 +477,7 @@ window.initServiceMap = initServiceMap;
 ---
 
 **Questions?**
-- Email: support@greenevcabs.com
+- Email: support@shreemoryacabs.com
 - WhatsApp: +91 91454 99009
 
 **Document Version:** 1.0

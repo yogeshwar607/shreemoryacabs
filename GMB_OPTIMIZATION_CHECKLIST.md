@@ -1,4 +1,4 @@
-# Google My Business Optimization Checklist - GreenEVCabs
+# Google My Business Optimization Checklist - Shree Morya Cabs
 
 ## 🎯 **Goal:** Dominate local search for "electric cab pune mumbai airport" and related keywords
 
@@ -7,7 +7,7 @@
 ## ✅ **Phase 1: Profile Completion (Week 1 - Day 1-3)**
 
 ### **Basic Information (Must Complete 100%)**
-- [ ] **Business Name:** GreenEVCabs - Electric Cab Service
+- [ ] **Business Name:** Shree Morya Cabs - Electric Cab Service
 - [ ] **Primary Category:** Taxi Service
 - [ ] **Additional Categories:**
   - [ ] Airport Shuttle Service
@@ -16,12 +16,12 @@
   - [ ] Cab Service
 - [ ] **Business Description (750 characters):**
   ```
-  GreenEVCabs is Maharashtra's premier 100% electric cab service specializing in airport transfers and outstation trips. We operate premium electric vehicles (Kia Carens EV & BYD E-MAX 7) for Pune to Mumbai Airport, Mumbai to Pune, and all major Maharashtra routes. Our eco-friendly airport transfer service features zero surge pricing (₹4,500 fixed), real-time flight tracking, 24/7 availability, meet & greet with name board, and corporate packages with GST invoices. Perfect for business travelers, families, and IT professionals from Hinjewadi, Wakad, and other Pune areas. Experience zero-emission, comfortable travel with professional drivers. Book instantly via WhatsApp or call for airport pickups, outstation trips, and corporate transportation.
+  Shree Morya Cabs is Maharashtra's premier 100% electric cab service specializing in airport transfers and outstation trips. We operate premium electric vehicles (Kia Carens EV & BYD E-MAX 7) for Pune to Mumbai Airport, Mumbai to Pune, and all major Maharashtra routes. Our eco-friendly airport transfer service features zero surge pricing (₹4,500 fixed), real-time flight tracking, 24/7 availability, meet & greet with name board, and corporate packages with GST invoices. Perfect for business travelers, families, and IT professionals from Hinjewadi, Wakad, and other Pune areas. Experience zero-emission, comfortable travel with professional drivers. Book instantly via WhatsApp or call for airport pickups, outstation trips, and corporate transportation.
   ```
 
 ### **Contact Information**
 - [ ] **Phone:** +91 74982 64215 (ensure it's verified)
-- [ ] **Website:** https://greenevcabs.com
+- [ ] **Website:** https://shreemoryacabs.com
 - [ ] **Booking URL (if different):** https://wa.me/917498264215
 - [ ] **WhatsApp:** +91 74982 64215
 
@@ -107,7 +107,7 @@
 - [ ] Safety equipment
 
 #### **Branding & Certifications (5 photos)**
-- [ ] GreenEVCabs logo
+- [ ] Shree Morya Cabs logo
 - [ ] Vehicle branding
 - [ ] Green certifications (if any)
 - [ ] Awards/recognitions
@@ -117,11 +117,11 @@
 - **Resolution:** Minimum 720px width/height
 - **Format:** JPG preferred (smaller file size)
 - **File Names:** Include keywords
-  - `greenevcabs-electric-cab-mumbai-airport.jpg`
+  - `shreemoryacabs-electric-cab-mumbai-airport.jpg`
   - `pune-to-mumbai-airport-electric-taxi.jpg`
   - `kia-carens-ev-interior-airport-transfer.jpg`
 - **Alt Text:** (Add when uploading via GMB dashboard)
-  - "GreenEVCabs electric cab at Mumbai Airport Terminal 2"
+  - "Shree Morya Cabs electric cab at Mumbai Airport Terminal 2"
   - "Kia Carens EV interior - Premium airport transfer service"
 
 ---
@@ -158,7 +158,7 @@
    - Driver talking about service quality
 
 ### **Video Optimization**
-- **Title Format:** "GreenEVCabs - [Topic] | Electric Cab Pune Mumbai Airport"
+- **Title Format:** "Shree Morya Cabs - [Topic] | Electric Cab Pune Mumbai Airport"
 - **Description:** Include keywords & link to website
 - **Thumbnail:** Clear, high-quality image with text overlay
 
@@ -216,7 +216,7 @@ Experience hassle-free airport pickups: [Link]
    **A:** Our electric cab from Pune to Mumbai Airport costs ₹4,500 (Kia Carens) with zero surge pricing. This includes all tolls, parking, and no hidden charges. Book via WhatsApp: +91 74982 64215
 
 2. **Q:** Do you provide 24/7 service?
-   **A:** Yes! We operate 24/7 including early morning airport drops (3 AM, 4 AM) and late night pickups. Book anytime: https://greenevcabs.com/routes/pune-to-mumbai-airport
+   **A:** Yes! We operate 24/7 including early morning airport drops (3 AM, 4 AM) and late night pickups. Book anytime: https://shreemoryacabs.com/routes/pune-to-mumbai-airport
 
 3. **Q:** How early should I book?
    **A:** We recommend booking 24 hours in advance for guaranteed availability, especially for early morning flights. Last-minute bookings accepted subject to availability.
@@ -234,19 +234,19 @@ Experience hassle-free airport pickups: [Link]
    **A:** Yes, we provide one-way trips from Pune to Mumbai Airport (₹4,500) or Mumbai Airport to Pune (₹4,500). Round trip packages available with 10% discount.
 
 8. **Q:** Do you pick up from Hinjewadi to Mumbai Airport?
-   **A:** Yes! We provide pickup from all Hinjewadi locations (Phase 1, 2, 3 IT parks) to Mumbai Airport at ₹4,500. Corporate packages available: https://greenevcabs.com/routes/hinjewadi-to-mumbai-airport
+   **A:** Yes! We provide pickup from all Hinjewadi locations (Phase 1, 2, 3 IT parks) to Mumbai Airport at ₹4,500. Corporate packages available: https://shreemoryacabs.com/routes/hinjewadi-to-mumbai-airport
 
 9. **Q:** What about luggage space?
    **A:** Our electric cabs accommodate 4-5 large suitcases plus cabin bags. No extra charge for luggage. Perfect for family/group airport transfers.
 
 10. **Q:** How do I book?
-    **A:** Three easy ways: 1) WhatsApp: +91 74982 64215, 2) Call: +91 74982 64215, 3) Website: https://greenevcabs.com - Instant confirmation!
+    **A:** Three easy ways: 1) WhatsApp: +91 74982 64215, 2) Call: +91 74982 64215, 3) Website: https://shreemoryacabs.com - Instant confirmation!
 
 11. **Q:** Are tolls included in price?
     **A:** Yes, all tolls on Mumbai-Pune Expressway (₹440) are included in our ₹4,500 fare. No additional charges.
 
 12. **Q:** Do you serve Navi Mumbai Airport?
-    **A:** Yes! We provide electric cab service to Navi Mumbai International Airport (NMIA) from Pune at ₹4,800. Visit: https://greenevcabs.com/airport
+    **A:** Yes! We provide electric cab service to Navi Mumbai International Airport (NMIA) from Pune at ₹4,800. Visit: https://shreemoryacabs.com/airport
 
 13. **Q:** Can I make stops during journey?
     **A:** Yes, reasonable stops for refreshments/restroom breaks are allowed. Please inform during booking if you plan specific stops.
@@ -288,7 +288,7 @@ Experience hassle-free airport pickups: [Link]
 - [ ] Contact last 50 customers via WhatsApp
 - [ ] Message template:
   ```
-  Hi [Name], thank you for choosing GreenEVCabs! We hope you enjoyed your eco-friendly ride to Mumbai Airport. Would you mind sharing your experience on Google? It helps us serve you better!
+  Hi [Name], thank you for choosing Shree Morya Cabs! We hope you enjoyed your eco-friendly ride to Mumbai Airport. Would you mind sharing your experience on Google? It helps us serve you better!
 
   [Google Review Link]
 
@@ -323,19 +323,19 @@ Experience hassle-free airport pickups: [Link]
 ```
 Thank you so much, [Name]! 🌟 We're thrilled you enjoyed your electric cab ride from Pune to Mumbai Airport. We look forward to serving you again on your next eco-friendly journey! Safe travels! 🚗⚡
 
-Book again: https://greenevcabs.com
+Book again: https://shreemoryacabs.com
 ```
 
 **For 4-Star Reviews:**
 ```
-Thank you for your feedback, [Name]! We're glad you chose GreenEVCabs for your airport transfer. We'd love to know how we can make your next experience 5-star. Feel free to reach us at +91 74982 64215. See you soon! 🌱
+Thank you for your feedback, [Name]! We're glad you chose Shree Morya Cabs for your airport transfer. We'd love to know how we can make your next experience 5-star. Feel free to reach us at +91 74982 64215. See you soon! 🌱
 ```
 
 **For 3-Star or Lower:**
 ```
 Thank you for bringing this to our attention, [Name]. We sincerely apologize for falling short of expectations. I'd like to personally discuss this with you to make it right. Please call/WhatsApp me at +91 74982 64215 at your convenience. We value your patronage.
 
-- Team GreenEVCabs
+- Team Shree Morya Cabs
 ```
 
 ---
@@ -346,43 +346,43 @@ Thank you for bringing this to our attention, [Name]. We sincerely apologize for
 
 1. **Pune to Mumbai Airport Electric Cab**
    - Description: "Zero surge ₹4,500 | Flight tracking | 24/7"
-   - Link: https://greenevcabs.com/routes/pune-to-mumbai-airport
+   - Link: https://shreemoryacabs.com/routes/pune-to-mumbai-airport
 
 2. **Mumbai Airport to Pune Cab Pickup**
    - Description: "Meet & greet | Name board | Flight delay adjustment"
-   - Link: https://greenevcabs.com/routes/mumbai-airport-to-pune
+   - Link: https://shreemoryacabs.com/routes/mumbai-airport-to-pune
 
 3. **Hinjewadi to Mumbai Airport Electric Taxi**
    - Description: "Corporate packages | GST invoice | IT Park pickup"
-   - Link: https://greenevcabs.com/routes/hinjewadi-to-mumbai-airport
+   - Link: https://shreemoryacabs.com/routes/hinjewadi-to-mumbai-airport
 
 4. **Pune to Mumbai Electric Cab**
    - Description: "Expressway route | 148 km | ₹4,500"
-   - Link: https://greenevcabs.com/routes/pune-mumbai
+   - Link: https://shreemoryacabs.com/routes/pune-mumbai
 
 5. **Mumbai to Pune Electric Cab**
    - Description: "Return trips | Zero emissions | Premium EVs"
-   - Link: https://greenevcabs.com/routes/mumbai-pune
+   - Link: https://shreemoryacabs.com/routes/mumbai-pune
 
 6. **Electric Cab Airport Transfer Service**
    - Description: "All Maharashtra airports | Zero surge | 24/7"
-   - Link: https://greenevcabs.com/airport
+   - Link: https://shreemoryacabs.com/airport
 
 7. **Pune to Shirdi Electric Cab**
    - Description: "Temple visits | Spacious 7-seater | ₹5,500"
-   - Link: https://greenevcabs.com/routes/pune-shirdi
+   - Link: https://shreemoryacabs.com/routes/pune-shirdi
 
 8. **Pune to Lonavala Electric Cab**
    - Description: "Weekend getaways | Hill station | ₹2,800"
-   - Link: https://greenevcabs.com/routes/pune-lonavala
+   - Link: https://shreemoryacabs.com/routes/pune-lonavala
 
 9. **Corporate Electric Cab Service**
    - Description: "Monthly packages | Employee transport | GST invoices"
-   - Link: https://greenevcabs.com/corporate
+   - Link: https://shreemoryacabs.com/corporate
 
 10. **Electric Cab Outstation Service**
     - Description: "Maharashtra-wide | Zero emissions | Premium comfort"
-    - Link: https://greenevcabs.com/routes
+    - Link: https://shreemoryacabs.com/routes
 
 11. **Wakad to Mumbai Airport Cab**
     - Description: "Fixed ₹4,500 | No surge | Early morning available"
@@ -409,7 +409,7 @@ Thank you for bringing this to our attention, [Name]. We sincerely apologize for
 - [ ] Total searches for "electric cab"
 - [ ] Total searches for "airport transfer"
 - [ ] Total searches for "pune mumbai"
-- [ ] Direct searches (people searching for "GreenEVCabs")
+- [ ] Direct searches (people searching for "Shree Morya Cabs")
 - [ ] Discovery searches (people finding you organically)
 
 #### **Action Metrics**
@@ -564,7 +564,7 @@ Thank you for bringing this to our attention, [Name]. We sincerely apologize for
 ```
 Hi [Customer Name]! 👋
 
-Thank you for choosing GreenEVCabs for your [Pune to Mumbai Airport / Other Route] journey! We hope you enjoyed the comfortable, eco-friendly ride in our electric cab.
+Thank you for choosing Shree Morya Cabs for your [Pune to Mumbai Airport / Other Route] journey! We hope you enjoyed the comfortable, eco-friendly ride in our electric cab.
 
 Your feedback means a lot to us! Would you mind taking 1 minute to share your experience on Google?
 
@@ -574,12 +574,12 @@ As a thank you, enjoy ₹200 OFF your next booking! 🎁
 
 Use code: REVIEW200
 
-Book again: https://greenevcabs.com
+Book again: https://shreemoryacabs.com
 WhatsApp: +91 74982 64215
 
 Thank you for going green with us! 🌱⚡
 
-- Team GreenEVCabs
+- Team Shree Morya Cabs
 ```
 
 ---
@@ -608,4 +608,4 @@ Thank you for going green with us! 🌱⚡
 
 ---
 
-**This checklist ensures GreenEVCabs dominates local search for electric cab services and becomes the #1 choice for Pune-Mumbai airport transfers!** 🚀🌱⚡
+**This checklist ensures Shree Morya Cabs dominates local search for electric cab services and becomes the #1 choice for Pune-Mumbai airport transfers!** 🚀🌱⚡

@@ -1,5 +1,5 @@
 # SEO Implementation Progress Report
-## GreenEVCabs - December 6, 2025
+## Shree Morya Cabs - December 6, 2025
 
 **Status:** Phase 1 Quick Wins - IN PROGRESS
 **Time Spent:** 3 hours
@@ -180,7 +180,7 @@
 ### Morning (2 hours):
 1. **Claim Google Business Profile** (30 min) - **HIGHEST PRIORITY**
    - Go to business.google.com
-   - Claim "GreenEVCabs" (or create if doesn't exist)
+   - Claim "Shree Morya Cabs" (or create if doesn't exist)
    - Verify ownership (phone/postcard)
 
 2. **Upload 10 Essential Photos** (1 hour)

@@ -130,7 +130,7 @@
 ## File Structure
 
 ```
-greenevcabs/
+shreemoryacabs/
 ├── src/
 │   ├── components/
 │   │   └── maps/
@@ -150,13 +150,13 @@ greenevcabs/
 ### **Step 1: Get Google Maps API Key** (15 minutes)
 
 1. Go to https://console.cloud.google.com
-2. Create project: "greenevcabs-maps"
+2. Create project: "shreemoryacabs-maps"
 3. Enable APIs:
    - Maps JavaScript API
    - Directions API
    - Maps Static API (optional)
 4. Create API key
-5. Restrict to your domain: `https://greenevcabs.hello-22d.workers.dev/*`
+5. Restrict to your domain: `https://shreemoryacabs.hello-22d.workers.dev/*`
 6. Enable billing (free tier - no charges expected)
 
 **Detailed guide:** See `GOOGLE_MAPS_SETUP.md`
@@ -222,7 +222,7 @@ npm run build
 npx wrangler deploy
 ```
 
-Visit: https://greenevcabs.hello-22d.workers.dev/service-areas-map
+Visit: https://shreemoryacabs.hello-22d.workers.dev/service-areas-map
 
 **Expected result:** Same as local, but faster (Cloudflare edge caching)
 
@@ -382,7 +382,7 @@ import EmbeddedRouteMap from "@/components/maps/EmbeddedRouteMap.astro";
 - 40,000 Directions API calls
 - ₹0 cost
 
-### **Expected Usage (GreenEVCabs):**
+### **Expected Usage (Shree Morya Cabs):**
 - ~8,000 map loads/month
 - ~3,000 Directions API calls/month
 - **Cost: ₹0/month** ✅
@@ -462,7 +462,7 @@ Before going live, test:
 - Google Maps Docs: https://developers.google.com/maps/documentation
 
 **Need Help?**
-- Email: support@greenevcabs.com
+- Email: support@shreemoryacabs.com
 - WhatsApp: +91 91454 99009
 
 **Estimated Time to Go Live:**

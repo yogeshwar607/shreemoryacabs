@@ -1,4 +1,4 @@
-# Competitive Outrank Strategy: GreenEVCabs vs GrEL Cabs & KK Travels
+# Competitive Outrank Strategy: Shree Morya Cabs vs GrEL Cabs & KK Travels
 ## How to Dominate Search Results & Capture Market Share
 
 **Document Version:** 1.0
@@ -125,7 +125,7 @@ Win "position zero" for 20+ high-intent queries.
 ## How Much Does Electric Cab Cost from Pune to Mumbai?
 
 **Direct Answer (60-80 words in first section):**
-GreenEVCabs charges ₹3,700 for Kia Carens EV and ₹4,200 for BYD eMax 7
+Shree Morya Cabs charges ₹3,700 for Kia Carens EV and ₹4,200 for BYD eMax 7
 (7-seater). This is ₹500-1,300 cheaper than traditional cabs. Pre-booking
 24 hours in advance gets 10% discount. No surge pricing. Zero hidden charges.
 
@@ -162,7 +162,7 @@ Create detailed comparison pages. GrEL avoids this because they fear direct comp
 
 **Key Comparison Pages to Create:**
 
-1. **"GreenEVCabs vs GrEL Cabs: Complete Comparison"** (2,500 words)
+1. **"Shree Morya Cabs vs GrEL Cabs: Complete Comparison"** (2,500 words)
    - Price comparison (you're cheaper: ₹3,700 vs their higher rates)
    - Service quality comparison
    - Vehicle comparison
@@ -172,7 +172,7 @@ Create detailed comparison pages. GrEL avoids this because they fear direct comp
    - **Format:** Use comparison table for easy scanning
    - **Honesty:** Be fair but highlight your advantages
    - **Data:** Include real pricing, real benefits
-   - **CTA:** "Choose GreenEVCabs - Better Value, Same Quality"
+   - **CTA:** "Choose Shree Morya Cabs - Better Value, Same Quality"
 
 2. **"Electric Cabs vs Ola/Uber in Pune"** (2,000 words)
    - Price comparison (show your savings)
@@ -182,7 +182,7 @@ Create detailed comparison pages. GrEL avoids this because they fear direct comp
    - Driver quality
    - Booking guarantee
 
-3. **"Why Corporate Clients Choose GreenEVCabs Over Competitors"** (1,500 words)
+3. **"Why Corporate Clients Choose Shree Morya Cabs Over Competitors"** (1,500 words)
    - Fleet reliability
    - Bulk booking benefits
    - Fixed pricing (no surge)
@@ -226,7 +226,7 @@ Make your advantage (lower pricing) front and center in content.
    - "Save ₹X vs traditional cabs" messaging
 
 3. **Cost Breakdown Content:**
-   - "Why Are GreenEVCabs Cheaper?" (1,000 words)
+   - "Why Are Shree Morya Cabs Cheaper?" (1,000 words)
      - Electric vehicle efficiency explained
      - No fuel costs vs diesel
      - Government EV incentives
@@ -426,9 +426,9 @@ Write content answering REAL user questions vs corporate announcements.
    - All with same NAP info (consistency critical)
 
 3. **Local Citations (NAP Consistency)**
-   - Name: GreenEVCabs - EV Cabs Pune
+   - Name: Shree Morya Cabs - EV Cabs Pune
    - Phone: +91-74982-64215
-   - Website: https://greenevcabs.com
+   - Website: https://shreemoryacabs.com
    - Same info everywhere = Google trusts you
 
 **Expected Result:**
@@ -507,7 +507,7 @@ Dominate the big keywords
 
 ### Competitive Advantages Summary
 
-| Advantage | GreenEVCabs | GrEL Cabs | KK Travels |
+| Advantage | Shree Morya Cabs | GrEL Cabs | KK Travels |
 |-----------|-------------|----------|-----------|
 | **Pricing** | ₹3,700 (Lowest) | Higher | Medium |
 | **Content** | 100+ pages planned | 50-80 pages | 5-10 pages |
@@ -530,17 +530,17 @@ Dominate the big keywords
 - #6-10: Various players
 
 **January 2025:**
-- #3-5: GreenEVCabs (new page)
+- #3-5: Shree Morya Cabs (new page)
 - #1-2: Competitors
 - #10+: KK Travels
 
 **March 2025:**
-- #1-2: GreenEVCabs (with local authority)
+- #1-2: Shree Morya Cabs (with local authority)
 - #3-4: GrEL Cabs
 - #5+: Others
 
 **June 2025 (TARGET):**
-- #1: GreenEVCabs
+- #1: Shree Morya Cabs
 - #2: GrEL Cabs
 - #3-5: Others
 - #10+: KK Travels
@@ -665,5 +665,5 @@ GrEL is strong on brand, weak on SEO. KK Travels is strong on local knowledge, w
 **Document:** Competitive Outrank Strategy v1.0
 **Created:** December 6, 2025
 **Review:** Monthly (check rankings, adjust tactics)
-**Owner:** GreenEVCabs Marketing Team
+**Owner:** Shree Morya Cabs Marketing Team
 

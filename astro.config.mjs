@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://greenevcabs.com',
+  site: 'https://shreemoryacabs.com',
   integrations: [
     react(),
     tailwind({

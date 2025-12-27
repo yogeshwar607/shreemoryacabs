@@ -8,7 +8,7 @@ Canonical URLs tell search engines which version of a page is the "official" one
 
 Canonical URLs are automatically generated for all pages based on the page's URL path and the site domain configured in `astro.config.mjs`.
 
-**Site URL:** `https://greenevcabs.com`
+**Site URL:** `https://shreemoryacabs.com`
 
 ## How to Use Custom Canonical URLs
 
@@ -36,7 +36,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 <MainLayout
   title="Your Page Title"
   description="Your page description"
-  canonicalURL="https://greenevcabs.com/the-canonical-page"
+  canonicalURL="https://shreemoryacabs.com/the-canonical-page"
 >
   <!-- Your content -->
 </MainLayout>
@@ -111,7 +111,7 @@ These redirects ensure old URLs point to the new hierarchical structure.
 ### With curl
 
 ```bash
-curl -s https://greenevcabs.com/routes | grep canonical
+curl -s https://shreemoryacabs.com/routes | grep canonical
 ```
 
 ### In Google Search Console
@@ -152,7 +152,7 @@ Check `astro.config.mjs` - the `site` property should be:
 
 ```js
 export default defineConfig({
-  site: 'https://greenevcabs.com',
+  site: 'https://shreemoryacabs.com',
   // ...
 });
 ```

@@ -1,5 +1,5 @@
 # Post-Deployment Monitoring Strategy
-**Project:** GreenEVCabs Programmatic SEO Refactoring
+**Project:** Shree Morya Cabs Programmatic SEO Refactoring
 **Date:** December 26, 2025
 **Phases Completed:** 1-4 (Data Layer, Template Consolidation, Internal Linking, URL Optimization)
 
@@ -33,7 +33,7 @@ This document outlines the monitoring strategy for the first 2 weeks after deplo
 
 **Action if Issues:**
 - If 404s spike > 5%, investigate immediately
-- Check if redirects are working: `curl -I https://greenevcabs.com/electric-cab-service-hinjewadi`
+- Check if redirects are working: `curl -I https://shreemoryacabs.com/electric-cab-service-hinjewadi`
 - Verify sitemap.xml includes all pages
 
 **Tools:**
@@ -51,9 +51,9 @@ This document outlines the monitoring strategy for the first 2 weeks after deplo
 **Test Commands:**
 ```bash
 # Test each redirect
-curl -I https://greenevcabs.com/electric-cab-service-hinjewadi
-curl -I https://greenevcabs.com/electric-cab-service-wakad
-curl -I https://greenevcabs.com/electric-cab-service-baner
+curl -I https://shreemoryacabs.com/electric-cab-service-hinjewadi
+curl -I https://shreemoryacabs.com/electric-cab-service-wakad
+curl -I https://shreemoryacabs.com/electric-cab-service-baner
 # ... (all 13 localities)
 ```
 
@@ -181,7 +181,7 @@ curl -I https://greenevcabs.com/electric-cab-service-baner
 "electric cab hinjewadi to mumbai airport"
 "electric cab service pune"
 "pune mumbai airport cab"
-"greenevcabs"
+"shreemoryacabs"
 ... (top 10-20 queries)
 ```
 
@@ -241,7 +241,7 @@ Click 2-3 links → should work
 
 **Manual Check:**
 ```bash
-curl https://greenevcabs.com/sitemap.xml | grep -c "<loc>"
+curl https://shreemoryacabs.com/sitemap.xml | grep -c "<loc>"
 # Should return ~107
 ```
 
@@ -311,7 +311,7 @@ npm run build
 # (depends on your deployment process)
 
 # 4. Verify in browser
-curl -I https://greenevcabs.com/
+curl -I https://shreemoryacabs.com/
 
 # 5. Monitor for 1 hour
 # Check 404s, traffic, errors

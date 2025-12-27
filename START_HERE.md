@@ -1,8 +1,8 @@
-# GreenEVCabs SEO Strategy - START HERE
+# Shree Morya Cabs SEO Strategy - START HERE
 ## Complete Document Index & Quick Navigation
 
 **Created:** December 6, 2025
-**For:** GreenEVCabs Marketing Team
+**For:** Shree Morya Cabs Marketing Team
 **Status:** Ready for Implementation
 
 ---

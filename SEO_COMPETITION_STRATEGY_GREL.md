@@ -1,4 +1,4 @@
-# SEO Competition Strategy: GreenEVCabs vs GrEL Cabs
+# SEO Competition Strategy: Shree Morya Cabs vs GrEL Cabs
 
 ## Executive Summary
 
@@ -95,7 +95,7 @@
 #### B. On-Page SEO Enhancements
 
 **Homepage Updates:**
-- Meta Title: "Electric Cab Pune to Mumbai ₹3,700 | Best Rates | Professional Drivers - GreenEVCabs"
+- Meta Title: "Electric Cab Pune to Mumbai ₹3,700 | Best Rates | Professional Drivers - Shree Morya Cabs"
 - Meta Description: "Premium electric cab Pune-Mumbai at ₹3,700. Save ₹500-1,300 vs competitors. Professional drivers, luxury SUVs, zero surge. Book 24/7. Best rated EV taxi service."
 - Add H2: "Cheapest Electric Cab Pune to Mumbai - Starting ₹3,700"
 - Add comparison table (you vs GrEL vs diesel)
@@ -118,7 +118,7 @@
 5. `/green-cab-service-maharashtra` - State-wide page
 
 **Comparison Pages (Target GrEL Directly):**
-1. `/greenevcabs-vs-grel-cabs` - Direct comparison
+1. `/shreemoryacabs-vs-grel-cabs` - Direct comparison
 2. `/best-electric-cab-pune-comparison` - Multi-competitor
 3. `/cheapest-ev-cab-pune-mumbai` - Price-focused
 
@@ -136,7 +136,7 @@
 #### A. Blog Strategy (4-6 posts per month)
 
 **Comparison & Decision Content:**
-1. "GrEL vs GreenEVCabs: Complete Comparison 2025 [Price, Service, Reviews]"
+1. "GrEL vs Shree Morya Cabs: Complete Comparison 2025 [Price, Service, Reviews]"
 2. "5 Things to Check Before Booking Electric Cab Pune to Mumbai"
 3. "Electric Cab vs Diesel Cab Pune-Mumbai: Real Cost Comparison"
 4. "Best Electric Cab Service in Pune: Complete Guide 2025"
@@ -164,11 +164,11 @@
 #### B. FAQ Page Enhancement
 
 Create comprehensive FAQ targeting GrEL comparison queries:
-- "Is GreenEVCabs cheaper than GrEL?"
-- "Which is better: GrEL or GreenEVCabs for airport transfers?"
-- "Why is GreenEVCabs ₹500 cheaper than other EV cabs?"
-- "Does GreenEVCabs charge surge pricing like other cabs?"
-- "What's included in GreenEVCabs ₹3,700 rate?"
+- "Is Shree Morya Cabs cheaper than GrEL?"
+- "Which is better: GrEL or Shree Morya Cabs for airport transfers?"
+- "Why is Shree Morya Cabs ₹500 cheaper than other EV cabs?"
+- "Does Shree Morya Cabs charge surge pricing like other cabs?"
+- "What's included in Shree Morya Cabs ₹3,700 rate?"
 
 ---
 
@@ -233,7 +233,7 @@ Build presence on:
    - Startup India listings (you have Soulputs backing)
 
 2. **News & PR:**
-   - Press release: "GreenEVCabs offers ₹500 cheaper EV service than competitors"
+   - Press release: "Shree Morya Cabs offers ₹500 cheaper EV service than competitors"
    - Local Pune news sites (Pune Mirror, Times of Pune)
    - Startup news (YourStory, Inc42)
 
@@ -275,7 +275,7 @@ Build presence on:
 - "7 seater electric cab pune to mumbai"
 
 *Comparison Queries:*
-- "grel vs greenevcabs comparison"
+- "grel vs shreemoryacabs comparison"
 - "grel cabs alternative pune"
 - "cheaper than grel cabs pune mumbai"
 - "best electric cab service pune"
@@ -302,9 +302,9 @@ Build presence on:
 
 **Create & Optimize YouTube Videos:**
 
-1. "GreenEVCabs Review: ₹3,700 Pune to Mumbai Airport in Electric SUV"
-2. "Kia Carens EV Interior Tour | GreenEVCabs Experience"
-3. "GrEL vs GreenEVCabs: Which is Better? [Honest Comparison]"
+1. "Shree Morya Cabs Review: ₹3,700 Pune to Mumbai Airport in Electric SUV"
+2. "Kia Carens EV Interior Tour | Shree Morya Cabs Experience"
+3. "GrEL vs Shree Morya Cabs: Which is Better? [Honest Comparison]"
 4. "How to Book Cheapest Electric Cab Pune-Mumbai"
 5. "BYD eMax 7 Ride Experience: Pune to Mumbai Airport"
 
@@ -378,7 +378,7 @@ Build presence on:
 - Partner logos (Soulputs Technology)
 
 **Comparison Section:**
-- Side-by-side: GreenEVCabs vs GrEL vs Others
+- Side-by-side: Shree Morya Cabs vs GrEL vs Others
 - Feature checklist
 - Price difference highlighted
 - "Why we're cheaper" explanation
@@ -424,7 +424,7 @@ Build presence on:
 - Cost per acquisition (organic)
 
 **Competitive Metrics:**
-- Brand search volume: "GreenEVCabs" vs "GrEL Cabs"
+- Brand search volume: "Shree Morya Cabs" vs "GrEL Cabs"
 - Review count and rating vs GrEL
 - Backlink profile comparison
 - Content freshness comparison
@@ -522,7 +522,7 @@ At ₹3,700 per booking, break-even in Month 2-3.
 - [ ] Add GrEL comparison page to website
 - [ ] Create Google Business Profile (if not exists)
 - [ ] Implement FAQ schema on homepage
-- [ ] Write "GreenEVCabs vs GrEL" blog post
+- [ ] Write "Shree Morya Cabs vs GrEL" blog post
 - [ ] Start review collection campaign
 - [ ] Optimize meta titles for top 10 pages
 - [ ] Create location-specific landing pages

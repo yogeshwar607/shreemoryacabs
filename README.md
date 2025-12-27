@@ -1,4 +1,4 @@
-# GreenEVCabs
+# Shree Morya Cabs
 
 A modern, eco-friendly electric cab booking website built with Astro, React, and Tailwind CSS.
 
@@ -25,7 +25,7 @@ A modern, eco-friendly electric cab booking website built with Astro, React, and
 ## Project Structure
 
 ```
-greenevcabs/
+shreemoryacabs/
 ├── src/
 │   ├── components/
 │   │   ├── ui/          # shadcn/ui components
@@ -61,7 +61,7 @@ cp .env.example .env
 
 3. Update `.env` with your details:
 ```env
-PUBLIC_SITE_URL=https://greenevcabs.com
+PUBLIC_SITE_URL=https://shreemoryacabs.com
 PUBLIC_WHATSAPP_NUMBER=917498264215
 PUBLIC_GA_ID=G-XXXXXXXXXX
 ```

@@ -42,7 +42,7 @@ export function MobileMenu({ links }: MobileMenuProps) {
         <div className="fixed inset-0 z-50 bg-background md:hidden">
           <div className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b px-4">
             <a href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold text-primary">GreenEVCabs</span>
+              <span className="text-xl font-bold text-primary">Shree Morya Cabs</span>
             </a>
             <Button
               variant="ghost"

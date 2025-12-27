@@ -1,7 +1,7 @@
 # SEO Implementation Quick Start Guide
 ## Start Today - Win Tomorrow
 
-**For:** GreenEVCabs Management
+**For:** Shree Morya Cabs Management
 **Timeline:** Start immediately
 **Expected Results:** First results in 4 weeks
 
@@ -21,7 +21,7 @@
 - [ ] Setup Google Search Console (if not done)
   - Go to: search.google.com/search-console
   - Verify your domain
-  - Submit sitemap: greenevcabs.com/sitemap.xml
+  - Submit sitemap: shreemoryacabs.com/sitemap.xml
 
 - [ ] Setup Google Business Profile (CRITICAL)
   - Go to: business.google.com
@@ -255,7 +255,7 @@
 - Use ChatGPT with prompt:
   ```
   Write a 4,000 word comprehensive guide on "Electric Cabs in Pune"
-  for the website greenevcabs.com. Follow this outline: [paste outline]
+  for the website shreemoryacabs.com. Follow this outline: [paste outline]
 
   Include:
   - Keyword "electric cab pune" naturally 8-10 times
@@ -317,9 +317,9 @@ Add to your page's HTML:
   "description": "Complete guide to electric cabs in Pune",
   "author": {
     "@type": "Organization",
-    "name": "GreenEVCabs"
+    "name": "Shree Morya Cabs"
   },
-  "image": "https://greenevcabs.com/image.jpg"
+  "image": "https://shreemoryacabs.com/image.jpg"
 }
 </script>
 ```
@@ -440,7 +440,7 @@ Add to your page's HTML:
 "Electric cabs pune electric taxi pune ev cabs pune best electric cabs pune..."
 
 **Right:**
-"GreenEVCabs offers electric taxi service throughout Pune. Our eco-friendly cabs provide affordable transportation solutions..."
+"Shree Morya Cabs offers electric taxi service throughout Pune. Our eco-friendly cabs provide affordable transportation solutions..."
 
 ### 2. ❌ Thin Content
 **Wrong:** 500-word articles on topics that deserve 2,000+ words
@@ -559,7 +559,7 @@ Most competitors won't follow through. You're reading this because you're seriou
 **Created:** December 6, 2025
 **Start Date:** December 6, 2025 (TODAY)
 **First Target Review:** January 31, 2026
-**Owner:** GreenEVCabs Team
+**Owner:** Shree Morya Cabs Team
 
 **Next Step:** Pick your first 4 content pieces and start writing/outsourcing today.
 

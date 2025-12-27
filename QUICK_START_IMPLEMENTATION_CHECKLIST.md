@@ -1,5 +1,5 @@
 # Quick-Start Implementation Checklist
-## GreenEVCabs Competitive Attack - 90-Day Sprint
+## Shree Morya Cabs Competitive Attack - 90-Day Sprint
 **Start Date:** January 1, 2026
 **Duration:** 90 Days (through March 31, 2026)
 **Target:** 40-65 organic bookings = ₹148K-240K revenue
@@ -54,7 +54,7 @@
 
 ### Days 4-5: First Content Piece
 **PRIORITY: GrEL Comparison Page**
-- [ ] Outline `/greenevcabs-vs-grel` page
+- [ ] Outline `/shreemoryacabs-vs-grel` page
 - [ ] Write 1,500+ word comparison
 - [ ] Create comparison table (features, pricing, vehicles, service)
 - [ ] Add customer testimonials (minimum 3)
@@ -108,7 +108,7 @@
 - [ ] Implement FAQ schema
 - [ ] Key questions:
   - "Can electric cab make Pune to Mumbai?"
-  - "Is GreenEVCabs cheaper than GrEL?"
+  - "Is Shree Morya Cabs cheaper than GrEL?"
   - "How far can electric cabs go?"
   - "What happens if car runs out of battery?"
   - Etc.
@@ -238,7 +238,7 @@
 ### Week 3: Authority & Blog Expansion
 
 **Days 15-21: Blog Posts (4 total)**
-- [ ] Blog Post 2: "GrEL vs GreenEVCabs: Complete 2025 Comparison" (3,000 words)
+- [ ] Blog Post 2: "GrEL vs Shree Morya Cabs: Complete 2025 Comparison" (3,000 words)
 - [ ] Blog Post 3: "Why Electric Cabs Cost More (And Why That's OK)" (2,000 words)
 - [ ] Blog Post 4: "Pune to Mumbai in an Electric Car: Everything You Need to Know" (2,500 words)
 - [ ] Blog Post 5: "7 Seater Electric Cabs: The Future of Group Travel" (2,000 words)

@@ -1,7 +1,7 @@
 # Content Management Guide
 
 ## Overview
-The `content.json` file is the central place to manage all pricing, routes, vehicles, and business information for GreenEVCabs website.
+The `content.json` file is the central place to manage all pricing, routes, vehicles, and business information for Shree Morya Cabs website.
 
 ## How to Update Prices
 
@@ -120,7 +120,7 @@ Add new route to appropriate airport section:
 ```json
 "contact": {
   "phone": "+91 74982 64215",      // ← Update phone
-  "email": "greenevcabs@gmail.com", // ← Update email
+  "email": "shreemoryacabs@gmail.com", // ← Update email
   "whatsapp": "917498264215"       // ← Update WhatsApp number
 }
 ```

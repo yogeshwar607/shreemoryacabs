@@ -1,4 +1,4 @@
-# GreenEVCabs Competitive Attack Roadmap
+# Shree Morya Cabs Competitive Attack Roadmap
 ## 90-Day Implementation Plan to Dominate Pune-Mumbai Corridor
 **Date:** December 2025
 **Duration:** 90 Days (January - March 2026)
@@ -40,7 +40,7 @@
 
 #### Day 3-4: Comparison Page Creation
 **Tasks:**
-- [ ] Write `/greenevcabs-vs-grel` comparison page (1,500+ words)
+- [ ] Write `/shreemoryacabs-vs-grel` comparison page (1,500+ words)
   - Feature-by-feature comparison table
   - Pricing transparency comparison
   - Customer review analysis
@@ -105,7 +105,7 @@
 - [ ] Expand FAQ page with 15+ new questions
   - "Can electric cabs make Pune to Mumbai?"
   - "How much does electric cab cost?"
-  - "Is GreenEVCabs cheaper than GrEL?"
+  - "Is Shree Morya Cabs cheaper than GrEL?"
   - Etc. (from keyword research)
 - [ ] Implement FAQ schema
 
@@ -280,7 +280,7 @@
 
 **Week 3-4 Blog Posts (4-6 posts):**
 
-**Post 1: "GrEL vs GreenEVCabs: Complete 2025 Comparison"**
+**Post 1: "GrEL vs Shree Morya Cabs: Complete 2025 Comparison"**
 - Word count: 3,000+
 - Sections: Features, pricing, reviews, vehicles, service areas
 - Target: "GrEL alternative", "GrEL comparison"
@@ -434,7 +434,7 @@
   - Target: YouTube + website embed
   - Timeline: 4 hours (shoot + edit)
 
-- [ ] "GreenEVCabs Customer Testimonials" (3-5 minutes)
+- [ ] "Shree Morya Cabs Customer Testimonials" (3-5 minutes)
   - 3-4 customer stories
   - Emphasize transparency, reliability
   - Timeline: 4 hours
@@ -833,7 +833,7 @@ This 90-day roadmap is aggressive but achievable. Success requires:
 4. **Team Alignment:** Clear ownership + accountability
 5. **Patience:** Rankings take 4-12 weeks to materialize
 
-**By Day 90, GreenEVCabs should be:**
+**By Day 90, Shree Morya Cabs should be:**
 - Clear market leader in Pune-Mumbai electric cab specialization
 - Visible for 20+ competitive keywords
 - Generating 40-65 organic bookings monthly

@@ -1,13 +1,13 @@
-# robots.txt for GreenEVCabs - Electric Cab Service Pune
-# https://greenevcabs.com
+# robots.txt for Shree Morya Cabs - Electric Cab Service Pune
+# https://shreemoryacabs.com
 
 # Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://greenevcabs.com/sitemap.xml
-Sitemap: https://greenevcabs.com/sitemap-index.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap-index.xml
 
 # Crawl-delay to prevent server overload
 Crawl-delay: 1

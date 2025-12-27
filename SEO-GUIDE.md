@@ -1,6 +1,6 @@
-# SEO Implementation Guide - GreenEVCabs
+# SEO Implementation Guide - Shree Morya Cabs
 
-This document outlines all SEO optimizations implemented in the GreenEVCabs project.
+This document outlines all SEO optimizations implemented in the Shree Morya Cabs project.
 
 ## Table of Contents
 1. [Meta Tags](#meta-tags)
@@ -64,7 +64,7 @@ All structured data is implemented using JSON-LD format in `<script type="applic
 ```json
 {
   "@type": "LocalBusiness",
-  "name": "GreenEVCabs",
+  "name": "Shree Morya Cabs",
   "address": { "addressLocality": "Pune", "addressRegion": "Maharashtra" },
   "telephone": "+917498264215",
   "openingHours": "24/7",
@@ -76,9 +76,9 @@ All structured data is implemented using JSON-LD format in `<script type="applic
 ```json
 {
   "@type": "Organization",
-  "name": "GreenEVCabs",
-  "url": "https://greenevcabs.com",
-  "logo": "https://greenevcabs.com/logo.png",
+  "name": "Shree Morya Cabs",
+  "url": "https://shreemoryacabs.com",
+  "logo": "https://shreemoryacabs.com/logo.png",
   "contactPoint": { "contactType": "Customer Service" }
 }
 ```
@@ -87,8 +87,8 @@ All structured data is implemented using JSON-LD format in `<script type="applic
 ```json
 {
   "@type": "WebSite",
-  "url": "https://greenevcabs.com",
-  "name": "GreenEVCabs",
+  "url": "https://shreemoryacabs.com",
+  "name": "Shree Morya Cabs",
   "potentialAction": { "@type": "SearchAction" }
 }
 ```
@@ -162,7 +162,7 @@ Automatically generated sitemap includes:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
 Crawl-delay: 1
 ```
 

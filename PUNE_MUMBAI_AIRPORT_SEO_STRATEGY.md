@@ -361,7 +361,7 @@ H2: FAQs for [Locality] to Mumbai Airport
 - Pricing comparison
 - Customer review comparison
 - Environmental impact comparison
-- Winner: GreenEVCabs (with justification)
+- Winner: Shree Morya Cabs (with justification)
 
 **Blog 4:** "Early Morning Cab from Pune to Mumbai Airport: Complete Guide"
 - Target: "early morning cab pune to mumbai airport"
@@ -483,7 +483,7 @@ H2: FAQs for [Locality] to Mumbai Airport
 "[Locality] to Mumbai Airport Cab | Electric Taxi from ₹4,500"
 
 **Blog Posts:**
-"[Primary Keyword]: [Benefit/Hook] | GreenEVCabs Blog"
+"[Primary Keyword]: [Benefit/Hook] | Shree Morya Cabs Blog"
 
 ### Meta Description Formulas
 
@@ -577,14 +577,14 @@ Example: "Pune to Mumbai Airport Electric Cab | Zero Emission EV Taxi ₹4,500"
 **Anchor Text Variety:**
 - Exact match: "pune to mumbai airport cab" (20%)
 - Partial match: "electric cab to Mumbai airport from Pune" (30%)
-- Branded: "GreenEVCabs Pune-Mumbai service" (20%)
+- Branded: "Shree Morya Cabs Pune-Mumbai service" (20%)
 - Generic: "learn more", "check pricing" (30%)
 
 ### Image Optimization
 
 **Every Page Needs:**
 - Hero image: Electric cab with airport in background
-- Alt text: "[Route] electric cab service - GreenEVCabs eco-friendly airport transfer"
+- Alt text: "[Route] electric cab service - Shree Morya Cabs eco-friendly airport transfer"
 - File name: `pune-mumbai-airport-electric-cab.jpg`
 - Image size: Under 200KB (use WebP format)
 - Lazy loading: Enabled
@@ -671,7 +671,7 @@ Example: "Pune to Mumbai Airport Electric Cab | Zero Emission EV Taxi ₹4,500"
 ```json
 {
   "@type": "LocalBusiness",
-  "name": "GreenEVCabs",
+  "name": "Shree Morya Cabs",
   "priceRange": "₹₹",
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -743,7 +743,7 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /thank-you/
 
-Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
 ```
 
 ---
@@ -753,7 +753,7 @@ Sitemap: https://greenevcabs.com/sitemap.xml
 ### Google Business Profile Optimization
 
 **Primary Listing:**
-- Business Name: GreenEVCabs - Electric Cab Service
+- Business Name: Shree Morya Cabs - Electric Cab Service
 - Category: Taxi Service (Primary)
 - Additional Categories:
   - Airport Shuttle Service
@@ -826,7 +826,7 @@ Sitemap: https://greenevcabs.com/sitemap.xml
 
 **Process:**
 1. After trip completion, send WhatsApp message:
-   "Thank you for choosing GreenEVCabs! We hope you enjoyed your eco-friendly ride. Would you mind sharing your experience? [Google Review Link]"
+   "Thank you for choosing Shree Morya Cabs! We hope you enjoyed your eco-friendly ride. Would you mind sharing your experience? [Google Review Link]"
 
 2. Incentive: "Leave a review and get ₹200 off your next booking!"
 
@@ -862,10 +862,10 @@ Sitemap: https://greenevcabs.com/sitemap.xml
 10. Thrillophilia (Transport Section)
 
 **Information to Maintain Consistently (NAP):**
-- Name: GreenEVCabs
+- Name: Shree Morya Cabs
 - Address: [Your Pune office address]
 - Phone: +91 74982 64215
-- Website: https://greenevcabs.com
+- Website: https://shreemoryacabs.com
 - Description: (Standardize across all platforms)
 
 **Mumbai Specific Listings:**
@@ -931,10 +931,10 @@ Create dedicated location pages beyond route pages:
 ### Digital PR & Media Outreach
 
 **Press Release Opportunities:**
-1. "GreenEVCabs Completes 500+ Zero Emission Airport Transfers"
+1. "Shree Morya Cabs Completes 500+ Zero Emission Airport Transfers"
 2. "New Subscription Model Makes EV Airport Travel Affordable"
 3. "Corporate Pune Switches to Electric Cabs for Airport Transfers"
-4. "GreenEVCabs Saves X Tons of CO2 on Pune-Mumbai Route"
+4. "Shree Morya Cabs Saves X Tons of CO2 on Pune-Mumbai Route"
 
 **Media Targets:**
 - Times of India (Pune & Mumbai editions)
@@ -1065,7 +1065,7 @@ Create dedicated location pages beyond route pages:
   - Customer testimonial series (10 videos)
 
 **Optimize Videos:**
-- Title: "[Keyword-rich title] | GreenEVCabs"
+- Title: "[Keyword-rich title] | Shree Morya Cabs"
 - Description: Include link to route page
 - Tags: pune to mumbai airport, electric cab, airport transfer, etc.
 - Transcription: Enable for SEO
@@ -1178,7 +1178,7 @@ Create dedicated location pages beyond route pages:
 
 **Create this on main route page:**
 
-| Feature | GreenEVCabs | Green Rides | GrEL Cabs | Ola/Uber |
+| Feature | Shree Morya Cabs | Green Rides | GrEL Cabs | Ola/Uber |
 |---------|-------------|-------------|-----------|----------|
 | Base Fare | ₹4,200 | ₹3,700 | Hidden | ₹3,500+ |
 | Surge Pricing | Never | ? | ? | Yes (2-3x) |
@@ -1861,7 +1861,7 @@ Create dedicated location pages beyond route pages:
 
 ## Final Thoughts
 
-This comprehensive SEO strategy positions GreenEVCabs to completely dominate the Pune-Mumbai airport electric cab market. By focusing on:
+This comprehensive SEO strategy positions Shree Morya Cabs to completely dominate the Pune-Mumbai airport electric cab market. By focusing on:
 
 ✅ **Superior content** (detailed route pages vs generic cab sites)
 ✅ **Local SEO dominance** (GMB optimization, reviews, citations)
@@ -1885,5 +1885,5 @@ We'll outrank and outperform all competitors within 6 months.
 
 **Document Version:** 1.0
 **Created:** October 2025
-**Owner:** GreenEVCabs SEO Team
+**Owner:** Shree Morya Cabs SEO Team
 **Next Review:** End of Month 1

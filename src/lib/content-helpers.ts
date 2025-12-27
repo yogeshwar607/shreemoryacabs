@@ -212,7 +212,7 @@ export function generateLocalityFAQs(locality: Locality): FAQ[] {
   // Price FAQ
   faqs.push({
     question: `How much does electric cab from ${locality.name} to Mumbai Airport cost?`,
-    answer: `GreenEVCabs charges ₹${locality.pricing.mumbaiAirport.toLocaleString('en-IN')} all-inclusive for electric cab from ${locality.name} to Mumbai Airport. This includes pickup from any ${locality.name} location, all tolls, driver allowance, and parking. No hidden charges, no surge pricing - same rate 24/7.`
+    answer: `Shree Morya Cabs charges ₹${locality.pricing.mumbaiAirport.toLocaleString('en-IN')} all-inclusive for electric cab from ${locality.name} to Mumbai Airport. This includes pickup from any ${locality.name} location, all tolls, driver allowance, and parking. No hidden charges, no surge pricing - same rate 24/7.`
   });
 
   // Coverage FAQ (if has coverage areas)

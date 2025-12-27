@@ -1,4 +1,4 @@
-# GreenEVCabs Monthly Content Calendar - 6 Month Plan
+# Shree Morya Cabs Monthly Content Calendar - 6 Month Plan
 ## Detailed Week-by-Week Breakdown with Deliverables
 
 ---
@@ -274,21 +274,21 @@ A: [Answer in 50-100 words]
 #### Advanced Comparison Pages (Updates + New)
 | Comparison | Word Count | Target Keywords | Status | Owner |
 |-----------|-----------|-----------------|--------|-------|
-| **GreenEVCabs vs Competitors: Complete Comparison** | 2,500 | comparison, why choose us, competitive advantages | UPDATE | [Name] |
-| **GreenEVCabs vs GrEL Cabs: Detailed Analysis** | 2,000 | grel cabs comparison, service differences | NEW | [Name] |
+| **Shree Morya Cabs vs Competitors: Complete Comparison** | 2,500 | comparison, why choose us, competitive advantages | UPDATE | [Name] |
+| **Shree Morya Cabs vs GrEL Cabs: Detailed Analysis** | 2,000 | grel cabs comparison, service differences | NEW | [Name] |
 | **Electric vs Ola/Uber in Pune: Which is Better?** | 2,000 | ola uber vs electric cab, price comparison | NEW | [Name] |
 
 **Comparison Page Structure:**
 ```
 1. Introduction (300 words) - Options available
-2. GreenEVCabs Overview (400 words) - Our service, benefits
+2. Shree Morya Cabs Overview (400 words) - Our service, benefits
 3. Competitor 1 Overview (400 words) - Their service, benefits
 4. Head-to-Head Comparison (600 words)
    - Price comparison table
    - Service quality comparison
    - Vehicle options comparison
    - Customer satisfaction
-5. When to Choose GreenEVCabs (300 words) - Best scenarios
+5. When to Choose Shree Morya Cabs (300 words) - Best scenarios
 6. Why We're Different (400 words) - Unique advantages
 7. Customer Testimonials (200 words) - Real reviews
 8. FAQ (300 words) - Comparison questions
@@ -438,7 +438,7 @@ A: [Answer in 50-100 words]
 |----------|--------|-----------|--------|
 | What are the advantages of electric cabs? | List (7 items) | 500 | [Name] |
 | How do I identify electric cab at Mumbai Airport? | Steps (6 steps) | 500 | [Name] |
-| Which areas does GreenEVCabs serve? | List + Map | 400 | [Name] |
+| Which areas does Shree Morya Cabs serve? | List + Map | 400 | [Name] |
 | What's included in airport transfer service? | Features list | 400 | [Name] |
 | How much luggage can fit in electric cab? | Capacity table | 350 | [Name] |
 | When should I book airport transfer? | Timeline table | 400 | [Name] |
@@ -910,5 +910,5 @@ This detailed calendar provides a clear roadmap for content creation over 6 mont
 **Document:** Monthly Content Calendar v1.0
 **Created:** December 6, 2025
 **Next Review:** Monthly (last week of each month)
-**Owner:** GreenEVCabs Marketing/Content Team
+**Owner:** Shree Morya Cabs Marketing/Content Team
 

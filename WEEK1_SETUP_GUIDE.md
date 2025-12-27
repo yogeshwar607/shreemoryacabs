@@ -23,10 +23,10 @@ These tasks have been completed automatically:
 1. Go to [Google Analytics](https://analytics.google.com/)
 2. Sign in with your Google account
 3. Click **"Admin"** (gear icon in bottom left)
-4. Under **"Account"**, select or create an account for GreenEVCabs
+4. Under **"Account"**, select or create an account for Shree Morya Cabs
 5. Under **"Property"**, click **"Create Property"**
 6. Fill in the details:
-   - **Property name:** GreenEVCabs
+   - **Property name:** Shree Morya Cabs
    - **Reporting time zone:** (GMT+05:30) India Time - Kolkata
    - **Currency:** Indian Rupee (₹)
 7. Click **"Next"**
@@ -41,8 +41,8 @@ These tasks have been completed automatically:
 1. After creating property, you'll see "Choose a platform"
 2. Select **"Web"**
 3. Enter website details:
-   - **Website URL:** https://greenevcabs.com
-   - **Stream name:** GreenEVCabs Website
+   - **Website URL:** https://shreemoryacabs.com
+   - **Stream name:** Shree Morya Cabs Website
 4. Click **"Create stream"**
 5. **Copy the Measurement ID** (format: G-XXXXXXXXXX)
 
@@ -93,7 +93,7 @@ These tasks have been completed automatically:
 #### Step 7: Verify Tracking
 
 1. Deploy your changes (see deployment section below)
-2. Visit https://greenevcabs.com in a new incognito window
+2. Visit https://shreemoryacabs.com in a new incognito window
 3. In GA4, go to **Reports → Realtime**
 4. You should see your visit appear within 30 seconds
 5. Click the WhatsApp button on the site
@@ -109,7 +109,7 @@ These tasks have been completed automatically:
 2. Sign in with your Google account
 3. Click **"Add Property"**
 4. Choose **"URL prefix"** (recommended for this case)
-5. Enter: `https://greenevcabs.com`
+5. Enter: `https://shreemoryacabs.com`
 6. Click **"Continue"**
 
 #### Step 2: Verify Ownership
@@ -136,7 +136,7 @@ You have multiple verification options. Choose ONE:
 #### Step 3: Submit Sitemap
 
 1. Once verified, in Search Console, go to **Sitemaps** (left sidebar)
-2. Enter sitemap URL: `https://greenevcabs.com/sitemap-index.xml`
+2. Enter sitemap URL: `https://shreemoryacabs.com/sitemap-index.xml`
 3. Click **"Submit"**
 4. Wait 24-48 hours for Google to crawl the sitemap
 
@@ -148,28 +148,28 @@ After sitemap submission, manually request indexing for priority pages:
 2. Enter each URL one by one:
 
 **Locality Pages (10):**
-- https://greenevcabs.com/electric-cab-service-ravet
-- https://greenevcabs.com/electric-cab-service-pcmc
-- https://greenevcabs.com/electric-cab-service-nigdi
-- https://greenevcabs.com/electric-cab-service-pimple-saudagar
-- https://greenevcabs.com/electric-cab-service-pimple-nilakh
-- https://greenevcabs.com/electric-cab-service-aundh
-- https://greenevcabs.com/electric-cab-service-balewadi
-- https://greenevcabs.com/electric-cab-service-kothrud
-- https://greenevcabs.com/electric-cab-service-hadapsar
-- https://greenevcabs.com/electric-cab-service-viman-nagar
+- https://shreemoryacabs.com/electric-cab-service-ravet
+- https://shreemoryacabs.com/electric-cab-service-pcmc
+- https://shreemoryacabs.com/electric-cab-service-nigdi
+- https://shreemoryacabs.com/electric-cab-service-pimple-saudagar
+- https://shreemoryacabs.com/electric-cab-service-pimple-nilakh
+- https://shreemoryacabs.com/electric-cab-service-aundh
+- https://shreemoryacabs.com/electric-cab-service-balewadi
+- https://shreemoryacabs.com/electric-cab-service-kothrud
+- https://shreemoryacabs.com/electric-cab-service-hadapsar
+- https://shreemoryacabs.com/electric-cab-service-viman-nagar
 
 **Route Pages (5):**
-- https://greenevcabs.com/routes/ravet-to-mumbai-airport
-- https://greenevcabs.com/routes/pcmc-to-mumbai-airport
-- https://greenevcabs.com/routes/aundh-to-mumbai-airport
-- https://greenevcabs.com/routes/pimple-saudagar-to-mumbai-airport
-- https://greenevcabs.com/routes/nigdi-to-mumbai-airport
+- https://shreemoryacabs.com/routes/ravet-to-mumbai-airport
+- https://shreemoryacabs.com/routes/pcmc-to-mumbai-airport
+- https://shreemoryacabs.com/routes/aundh-to-mumbai-airport
+- https://shreemoryacabs.com/routes/pimple-saudagar-to-mumbai-airport
+- https://shreemoryacabs.com/routes/nigdi-to-mumbai-airport
 
 **Important Pages (3):**
-- https://greenevcabs.com/locations
-- https://greenevcabs.com/routes
-- https://greenevcabs.com
+- https://shreemoryacabs.com/locations
+- https://shreemoryacabs.com/routes
+- https://shreemoryacabs.com
 
 3. For each URL:
    - Click **"Request Indexing"**
@@ -212,15 +212,15 @@ npx wrangler deploy
 
 ```bash
 # Test robots.txt
-curl -s https://greenevcabs.hello-22d.workers.dev/robots.txt | grep "electric-cab-service-ravet"
+curl -s https://shreemoryacabs.hello-22d.workers.dev/robots.txt | grep "electric-cab-service-ravet"
 
 # Test WhatsApp button (should load without errors)
-curl -s https://greenevcabs.hello-22d.workers.dev/ | grep "WhatsAppButton"
+curl -s https://shreemoryacabs.hello-22d.workers.dev/ | grep "WhatsAppButton"
 ```
 
 #### Step 4: Test in Browser
 
-1. Visit https://greenevcabs.hello-22d.workers.dev
+1. Visit https://shreemoryacabs.hello-22d.workers.dev
 2. Open browser DevTools (F12)
 3. Go to Network tab
 4. Click WhatsApp button
@@ -233,7 +233,7 @@ curl -s https://greenevcabs.hello-22d.workers.dev/ | grep "WhatsAppButton"
 Use this checklist to ensure everything is set up correctly:
 
 ### Google Analytics 4
-- [ ] GA4 property created for GreenEVCabs
+- [ ] GA4 property created for Shree Morya Cabs
 - [ ] Web data stream created
 - [ ] Measurement ID copied
 - [ ] .env file created with correct Measurement ID
@@ -243,7 +243,7 @@ Use this checklist to ensure everything is set up correctly:
 - [ ] WhatsApp click event tracked (saw event in Realtime → Events)
 
 ### Google Search Console
-- [ ] Property added for https://greenevcabs.com
+- [ ] Property added for https://shreemoryacabs.com
 - [ ] Ownership verified (HTML file, meta tag, or DNS)
 - [ ] Sitemap submitted (sitemap-index.xml)
 - [ ] Indexing requested for 10 locality pages
@@ -289,7 +289,7 @@ Use this checklist to ensure everything is set up correctly:
 
 **Solutions:**
 1. Check sitemap was submitted successfully
-2. Verify sitemap URL is accessible: https://greenevcabs.com/sitemap-index.xml
+2. Verify sitemap URL is accessible: https://shreemoryacabs.com/sitemap-index.xml
 3. Wait 24-48 hours after sitemap submission
 4. Try requesting indexing again
 

@@ -1,4 +1,4 @@
-# Google Business Profile Setup Guide - GreenEVCabs
+# Google Business Profile Setup Guide - Shree Morya Cabs
 
 **Priority:** CRITICAL (Highest impact for local SEO & discovery)
 **Estimated Setup Time:** 60-90 minutes
@@ -33,9 +33,9 @@ With proper optimization, Google Business Profile can generate **20-30 bookings 
 **URL:** https://business.google.com
 
 **Steps:**
-1. Sign in with Google account (use business email: support@greenevcabs.com)
+1. Sign in with Google account (use business email: support@shreemoryacabs.com)
 2. Click "Manage now" or "Add your business"
-3. Enter business name: **GreenEVCabs**
+3. Enter business name: **Shree Morya Cabs**
 4. Choose business category (see Section 2.1 below)
 
 ### 1.2 Business Verification
@@ -75,12 +75,12 @@ With proper optimization, Google Business Profile can generate **20-30 bookings 
 
 ### 2.2 Business Name & Description
 
-**Business Name:** GreenEVCabs
+**Business Name:** Shree Morya Cabs
 (Do NOT add keywords like "Pune" or "NMIA" in name - against Google policies)
 
 **Business Description (750 characters max):**
 ```
-GreenEVCabs provides premium electric cab service from Pune to Navi Mumbai International Airport (NMIA) and Mumbai Airport. Our fleet of KIA Carens EV and BYD eMax 7 electric vehicles offers silent, eco-friendly, and comfortable travel for business and leisure travelers.
+Shree Morya Cabs provides premium electric cab service from Pune to Navi Mumbai International Airport (NMIA) and Mumbai Airport. Our fleet of KIA Carens EV and BYD eMax 7 electric vehicles offers silent, eco-friendly, and comfortable travel for business and leisure travelers.
 
 Fixed flat rate of ₹3,700 for any Pune locality to NMIA - all-inclusive pricing with zero surge charges. Perfect for Bengaluru commuters with NMIA's 7 daily direct flights.
 
@@ -122,12 +122,12 @@ Book instantly via WhatsApp: +91 91454 99009
 - Enable call tracking: YES (to measure Google calls)
 - Enable text messaging: YES (SMS to WhatsApp)
 
-**Website:** https://greenevcabs.hello-22d.workers.dev
+**Website:** https://shreemoryacabs.hello-22d.workers.dev
 
 **Appointment URL:** https://wa.me/919145499009?text=I%20need%20a%20cab%20to%20NMIA
 (Direct WhatsApp booking link)
 
-**Email:** support@greenevcabs.com
+**Email:** support@shreemoryacabs.com
 (Publicly visible for inquiries)
 
 ### 2.5 Business Hours
@@ -189,7 +189,7 @@ Book instantly via WhatsApp: +91 91454 99009
 ### 4.2 Photo Categories & Checklist
 
 #### Logo (Required)
-- [ ] GreenEVCabs logo (square format, 1024x1024px, transparent background)
+- [ ] Shree Morya Cabs logo (square format, 1024x1024px, transparent background)
 
 #### Cover Photo (Required)
 - [ ] KIA Carens EV exterior shot (1080x608px, horizontal)
@@ -301,7 +301,7 @@ A: Booking is simple via WhatsApp:
 3. Receive instant confirmation within 5 minutes
 4. Get driver details 3-4 hours before pickup
 
-You can also book through our website: greenevcabs.hello-22d.workers.dev
+You can also book through our website: shreemoryacabs.hello-22d.workers.dev
 
 **Q3: Do you provide return journey from NMIA to Pune?**
 A: Yes! Same fixed ₹3,700 rate. Pre-book your return journey and we'll track your flight automatically. If your flight is delayed, we adjust the pickup time automatically at no extra charge.
@@ -360,7 +360,7 @@ Last-minute bookings (2-4 hours) are accepted subject to availability.
 
 Navi Mumbai International Airport (NMIA) is operational with 7 daily direct flights to Bengaluru.
 
-GreenEVCabs offers:
+Shree Morya Cabs offers:
 ✓ Fixed ₹3,700 cab fare (any Pune locality)
 ✓ Electric vehicles (KIA Carens EV, BYD eMax 7)
 ✓ 2-hour comfortable journey
@@ -412,7 +412,7 @@ Book: +91 91454 99009
 ```
 📊 Corporate Travel Managers: Monthly Billing Available
 
-GreenEVCabs offers:
+Shree Morya Cabs offers:
 → Consolidated monthly invoices
 → Volume discounts (5-15%)
 → GST-compliant billing
@@ -435,7 +435,7 @@ Setup: +91 91454 99009
 ```
 Hi [Customer Name]!
 
-Thank you for traveling with GreenEVCabs to NMIA today. We hope you had a comfortable journey!
+Thank you for traveling with Shree Morya Cabs to NMIA today. We hope you had a comfortable journey!
 
 If you enjoyed our service, please leave us a 5-star Google review. It takes just 30 seconds:
 
@@ -444,7 +444,7 @@ If you enjoyed our service, please leave us a 5-star Google review. It takes jus
 Your feedback helps us serve you better!
 
 Safe travels,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ### 8.2 Review Response Templates
@@ -458,7 +458,7 @@ We're thrilled you enjoyed your NMIA journey with us. Our team works hard to pro
 Looking forward to serving you again soon!
 
 Safe travels,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **3-Star or Below:**
@@ -469,11 +469,11 @@ We sincerely apologize for not meeting your expectations. This isn't the experie
 
 We'd like to make this right. Please contact us directly:
 📞 +91 91454 99009
-📧 support@greenevcabs.com
+📧 support@shreemoryacabs.com
 
 We're committed to resolving your concerns.
 
-- GreenEVCabs Management
+- Shree Morya Cabs Management
 ```
 
 ---
@@ -520,4 +520,4 @@ We're committed to resolving your concerns.
 
 **Document Version:** 2.0
 **Last Updated:** December 26, 2025
-**Contact:** support@greenevcabs.com | WhatsApp: +91 91454 99009
+**Contact:** support@shreemoryacabs.com | WhatsApp: +91 91454 99009

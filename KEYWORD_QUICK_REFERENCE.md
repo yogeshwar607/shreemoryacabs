@@ -1,4 +1,4 @@
-# GreenEVCabs Keyword Strategy - Quick Reference Sheet
+# Shree Morya Cabs Keyword Strategy - Quick Reference Sheet
 
 ## Top 25 Keywords (Prioritized)
 
@@ -161,7 +161,7 @@
 - "baner cab service" - ✗ Missing
 
 **Comparison:**
-- "greenevcabs vs other services" - Partial
+- "shreemoryacabs vs other services" - Partial
 - "ev cab vs personal car cost" - ✗ Missing
 - "electric vs diesel cab safety" - Partial
 
@@ -397,5 +397,5 @@ ENGAGEMENT:
 
 **Last Updated:** December 6, 2025
 **Review Date:** January 6, 2026
-**Owner:** GreenEVCabs Team
+**Owner:** Shree Morya Cabs Team
 **Version:** 1.0 - Quick Reference

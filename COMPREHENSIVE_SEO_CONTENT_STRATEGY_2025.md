@@ -1,9 +1,9 @@
-# Comprehensive SEO Content Strategy for GreenEVCabs
+# Comprehensive SEO Content Strategy for Shree Morya Cabs
 ## 6-Month Domination Plan (January - June 2025)
 
 **Document Version:** 2.0
 **Created:** December 6, 2025
-**Prepared for:** GreenEVCabs Marketing Team
+**Prepared for:** Shree Morya Cabs Marketing Team
 **Objective:** Establish topical authority and dominate Pune-Mumbai electric cab market
 
 ---
@@ -66,7 +66,7 @@ Your website has an excellent foundation with 30+ pages of content, but to domin
 | best electric cab service pune | 50-100 | Transactional | Medium |
 | electric cab pune price | 40-80 | Transactional | Low |
 | electric cab vs ola uber pune | 60-120 | Informational | Medium |
-| greenevcabs vs grel cabs | 20-50 | Transactional | Low |
+| shreemoryacabs vs grel cabs | 20-50 | Transactional | Low |
 
 **Current Status:** You have comparison pages but they can be optimized better.
 
@@ -366,10 +366,10 @@ Your website has an excellent foundation with 30+ pages of content, but to domin
 - Service quality
 
 **Supporting Content:**
-1. `/greenevcabs-vs-competitors` ✅ Already have
-2. `/greenevcabs-vs-ola-uber` ✅ Already have
+1. `/shreemoryacabs-vs-competitors` ✅ Already have
+2. `/shreemoryacabs-vs-ola-uber` ✅ Already have
 3. `/electric-vs-diesel-cabs-pune` ✅ Already have
-4. `/greenevcabs-vs-grel-cabs` ✅ Already have (update needed)
+4. `/shreemoryacabs-vs-grel-cabs` ✅ Already have (update needed)
 5. Blog: "Cost Analysis: Electric vs Regular Cabs"
 6. Blog: "Environmental Impact Comparison"
 
@@ -475,8 +475,8 @@ CTA → Links to booking page
 3. "Lonavala Weekend Trip: Eco-Friendly Travel" (1,800 words)
 
 #### Week 2-3: Comparison Content Deep Dives
-1. "GreenEVCabs vs Competitors: Complete Comparison" (Update existing - 2,500 words)
-2. "GreenEVCabs vs GrEL Cabs: Detailed Analysis" (2,000 words)
+1. "Shree Morya Cabs vs Competitors: Complete Comparison" (Update existing - 2,500 words)
+2. "Shree Morya Cabs vs GrEL Cabs: Detailed Analysis" (2,000 words)
 3. "Electric Cabs vs Ola/Uber in Pune: Which is Better?" (2,000 words)
 
 #### Week 3-4: Expanded Blog Series
@@ -654,7 +654,7 @@ CTA → Links to booking page
 
 ## SECTION 5: COMPETITIVE CONTENT STRATEGY
 
-### 5.1 Competitor Analysis: GrEL Cabs vs GreenEVCabs
+### 5.1 Competitor Analysis: GrEL Cabs vs Shree Morya Cabs
 
 #### GrEL Cabs Strengths:
 - Strong brand recognition (10,000+ reviews)
@@ -691,7 +691,7 @@ CTA → Links to booking page
 **4. Comparison Angles**
 - Where: They avoid comparison content
 - You: Create detailed comparison pages showing your advantages
-- Example: "Why GreenEVCabs is Better than GrEL" (without being negative)
+- Example: "Why Shree Morya Cabs is Better than GrEL" (without being negative)
 
 **5. Featured Snippets**
 - Where: Competitors ignore snippet optimization
@@ -946,7 +946,7 @@ Electric cabs from Pune to Mumbai cost between ₹3,700 and ₹4,200 depending o
 - Travel date (peak vs off-season)
 - Additional services (luggage, premium seating)
 
-GreenEVCabs charges ₹3,700 for standard Kia Carens EV - the lowest rate in the market. The BYD eMax 7 (7-seater) costs ₹4,200. Pre-booking 24 hours in advance gets you 10% discount.
+Shree Morya Cabs charges ₹3,700 for standard Kia Carens EV - the lowest rate in the market. The BYD eMax 7 (7-seater) costs ₹4,200. Pre-booking 24 hours in advance gets you 10% discount.
 
 ### Cost Breakdown:
 - Base fare: ₹3,700 (Kia) / ₹4,200 (BYD)
@@ -1016,7 +1016,7 @@ Compare this to traditional cabs which charge ₹4,500-5,500 for the same route.
 
 ## Introduction
 - Why [Location] needs electric cab service
-- GreenEVCabs coverage in the area
+- Shree Morya Cabs coverage in the area
 
 ## Popular Routes from [Location]
 - To Mumbai Airport
@@ -1036,7 +1036,7 @@ Compare this to traditional cabs which charge ₹4,500-5,500 for the same route.
 - [Location] to Navi Mumbai: ₹XXXX
 - Within [Location]: ₹XXXX
 
-## Why Choose GreenEVCabs
+## Why Choose Shree Morya Cabs
 - Reliable service
 - Eco-friendly
 - Best rates in area
@@ -1068,7 +1068,7 @@ Compare this to traditional cabs which charge ₹4,500-5,500 for the same route.
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "GreenEVCabs - Electric Cab Service in [Location]",
+  "name": "Shree Morya Cabs - Electric Cab Service in [Location]",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "[Headquarters Address]",
@@ -1084,7 +1084,7 @@ Compare this to traditional cabs which charge ₹4,500-5,500 for the same route.
     "Maharashtra"
   ],
   "telephone": "+91-74982-64215",
-  "url": "https://greenevcabs.com/[location-electric-cab]",
+  "url": "https://shreemoryacabs.com/[location-electric-cab]",
   "priceRange": "₹XXXX - ₹XXXX",
   "areaServed": [
     {
@@ -1125,7 +1125,7 @@ Voice search queries are typically longer and more conversational.
 **Example: Voice Search Optimized Paragraph**
 ```
 "Many people ask: how much does it cost to book an electric cab from Pune to Mumbai Airport?
-The answer is simple. GreenEVCabs charges ₹3,700 for our standard Kia Carens EV, making it the
+The answer is simple. Shree Morya Cabs charges ₹3,700 for our standard Kia Carens EV, making it the
 cheapest option in the market. Our BYD eMax 7, which seats 7 passengers, costs ₹4,200. If you
 book 24 hours in advance, you get a 10% discount. We guarantee zero surge pricing, meaning no
 hidden costs. You pay exactly what you see quoted."
@@ -1159,7 +1159,7 @@ hidden costs. You pay exactly what you see quoted."
 
 #### Category D: Comparison & Decision
 1. "Electric vs Diesel Cabs: Complete Comparison 2025"
-2. "GreenEVCabs vs Ola/Uber: Which is Better?"
+2. "Shree Morya Cabs vs Ola/Uber: Which is Better?"
 3. "Kia Carens EV vs BYD eMax 7: Which Vehicle to Choose?"
 4. "Why Businesses Choose Electric Cabs for Corporate Travel"
 
@@ -1215,9 +1215,9 @@ hidden costs. You pay exactly what you see quoted."
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "GreenEVCabs",
-  "url": "https://greenevcabs.com",
-  "logo": "https://greenevcabs.com/logo.png",
+  "name": "Shree Morya Cabs",
+  "url": "https://shreemoryacabs.com",
+  "logo": "https://shreemoryacabs.com/logo.png",
   "description": "Premium electric cab service Pune-Mumbai",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -1231,7 +1231,7 @@ hidden costs. You pay exactly what you see quoted."
 ```json
 {
   "@type": "LocalBusiness",
-  "name": "GreenEVCabs [Location]",
+  "name": "Shree Morya Cabs [Location]",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "...",
@@ -1249,7 +1249,7 @@ hidden costs. You pay exactly what you see quoted."
   "name": "Electric Cab Service",
   "provider": {
     "@type": "Organization",
-    "name": "GreenEVCabs"
+    "name": "Shree Morya Cabs"
   },
   "serviceType": "Taxi Service",
   "areaServed": "Pune, Mumbai, Maharashtra"
@@ -1294,7 +1294,7 @@ hidden costs. You pay exactly what you see quoted."
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://greenevcabs.com"
+      "item": "https://shreemoryacabs.com"
     }
   ]
 }
@@ -1851,7 +1851,7 @@ Action: Create page with:
    - Residential areas
    - Hospitals, malls
 
-5. Why Choose GreenEVCabs (300 words)
+5. Why Choose Shree Morya Cabs (300 words)
    - Local expertise
    - Reliability
    - Eco-friendly
@@ -1938,7 +1938,7 @@ You have an excellent foundation. With this comprehensive content strategy, you 
 **Document:** Comprehensive SEO Content Strategy v2.0
 **Created:** December 6, 2025
 **Next Review:** January 15, 2026
-**Owner:** GreenEVCabs Marketing Team
+**Owner:** Shree Morya Cabs Marketing Team
 
 ---
 

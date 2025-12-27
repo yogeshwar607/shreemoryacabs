@@ -4,7 +4,7 @@ import { routes } from '@/data/routes';
 import { localities } from '@/data/localities';
 import { blogPosts } from '@/data/blog-posts';
 
-const BASE_URL = 'https://greenevcabs.com';
+const BASE_URL = 'https://shreemoryacabs.com';
 
 export const GET: APIRoute = async () => {
   const staticPages = [
@@ -25,9 +25,9 @@ export const GET: APIRoute = async () => {
     '/blog',
     '/cab-fare-calculator',
     '/electric-vs-diesel-cabs-pune',
-    '/greenevcabs-vs-ola-uber',
-    '/greenevcabs-vs-competitors',
-    '/greenevcabs-vs-grel-cabs',
+    '/shreemoryacabs-vs-ola-uber',
+    '/shreemoryacabs-vs-competitors',
+    '/shreemoryacabs-vs-grel-cabs',
     '/corporate-electric-cab-pune',
     '/ev-cabs-pune',
     '/ev-taxi-pune',

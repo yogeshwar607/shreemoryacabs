@@ -1,5 +1,5 @@
 # 🎉 SEO IMPLEMENTATION - EXECUTION SUMMARY
-## GreenEVCabs - Phase 1 Complete
+## Shree Morya Cabs - Phase 1 Complete
 
 **Date:** December 6, 2025, 5:30 PM
 **Status:** ✅ **PHASE 1 SUCCESSFULLY COMPLETED**
@@ -139,7 +139,7 @@ With consistent execution:
 **1. Claim Google Business Profile (30 min)**
 ```
 ACTION: Go to business.google.com
-TASK: Claim "GreenEVCabs" or create new
+TASK: Claim "Shree Morya Cabs" or create new
 VERIFY: Phone verification
 IMPACT: 40% of local search traffic
 ```
@@ -162,7 +162,7 @@ USE: GOOGLE_BUSINESS_PROFILE_SETUP.md (has exact text to copy)
 ADD:
 - Business description (copy from document)
 - Phone: +91 74982 64215
-- Website: https://greenevcabs.com
+- Website: https://shreemoryacabs.com
 - Booking button (WhatsApp link)
 - Business hours: Open 24 hours
 - All service categories
@@ -174,7 +174,7 @@ ADD:
 ```
 STEPS:
 1. Get Google review link from GBP dashboard
-2. Create short URL: bit.ly/greenevcabs-review
+2. Create short URL: bit.ly/shreemoryacabs-review
 3. Copy review request templates from REVIEW_GENERATION_SYSTEM.md
 4. Setup WhatsApp Business quick replies
 5. Create tracking spreadsheet
@@ -195,15 +195,15 @@ ACTION:
 TARGET: 2-3 reviews by end of week
 
 MESSAGE TEMPLATE:
-"Hi [Name], thank you for choosing GreenEVCabs!
+"Hi [Name], thank you for choosing Shree Morya Cabs!
 
 Hope you enjoyed your [Route] trip. Could you spare 60 seconds to share your experience?
 
-Review link: bit.ly/greenevcabs-review
+Review link: bit.ly/shreemoryacabs-review
 
 As a thank you, you'll get priority booking!
 
-- GreenEVCabs Team"
+- Shree Morya Cabs Team"
 ```
 
 **6. Deploy Updated Website (30 min)**
@@ -211,11 +211,11 @@ As a thank you, you'll get priority booking!
 COMMANDS:
 cd /Users/funnel/Code/personal/greenevcab
 npm run build
-npx wrangler pages deploy dist --project-name=greenevcabs
+npx wrangler pages deploy dist --project-name=shreemoryacabs
 
 VERIFY:
-- Check https://greenevcabs.com/electric-cab-service-hinjewadi
-- Check https://greenevcabs.com/electric-cab-service-wakad
+- Check https://shreemoryacabs.com/electric-cab-service-hinjewadi
+- Check https://shreemoryacabs.com/electric-cab-service-wakad
 - Verify both pages load correctly
 ```
 
@@ -251,9 +251,9 @@ VERIFY:
 **1. Google Search Console**
 ```
 URL: search.google.com/search-console
-ACTION: Add property https://greenevcabs.com
+ACTION: Add property https://shreemoryacabs.com
 VERIFY: DNS or HTML file upload
-SUBMIT: Sitemap at https://greenevcabs.com/sitemap.xml
+SUBMIT: Sitemap at https://shreemoryacabs.com/sitemap.xml
 
 TRACK:
 - Pages indexed

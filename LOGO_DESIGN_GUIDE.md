@@ -1,4 +1,4 @@
-# GreenEVCabs Logo & Social Media Design Guide
+# Shree Morya Cabs Logo & Social Media Design Guide
 
 ## Logo Files Created
 
@@ -90,7 +90,7 @@ convert -background none logo-social.svg -resize 1080x1080 logo-instagram-post.p
 2. Create account
 3. Search "Logo" templates
 4. Customize with:
-   - Text: "GreenEVCabs"
+   - Text: "Shree Morya Cabs"
    - Colors: Green (#10B981), Dark Green (#047857)
    - Icons: Electric car, leaf, lightning bolt
    - Tagline: "Premium • Electric • Affordable"
@@ -98,7 +98,7 @@ convert -background none logo-social.svg -resize 1080x1080 logo-instagram-post.p
 ### Option 2: AI Logo Generators
 
 **1. LogoAI (https://www.logoai.com)**
-- Prompt: "Modern electric cab service logo with green colors, car and lightning bolt, name GreenEVCabs"
+- Prompt: "Modern electric cab service logo with green colors, car and lightning bolt, name Shree Morya Cabs"
 - Generates multiple variations
 - Export in all social media sizes
 
@@ -111,7 +111,7 @@ convert -background none logo-social.svg -resize 1080x1080 logo-instagram-post.p
 **3. Hatchful by Shopify (Free)**
 - https://www.shopify.com/tools/logo-maker
 - Choose "Transportation" category
-- Input "GreenEVCabs"
+- Input "Shree Morya Cabs"
 - Download free versions
 
 ### Option 3: Hire a Designer (Best Quality)
@@ -123,7 +123,7 @@ convert -background none logo-social.svg -resize 1080x1080 logo-instagram-post.p
 
 **Brief to Share:**
 ```
-Business Name: GreenEVCabs
+Business Name: Shree Morya Cabs
 Industry: Electric Cab Service
 Location: Pune-Mumbai, Maharashtra
 Colors: Green (#10B981, #047857), White, Yellow/Gold accents
@@ -193,7 +193,7 @@ Book Now: WhatsApp +91 74982 64215
 ```
 [Split design]
 Other Cabs: ₹5,000
-GreenEVCabs: ₹3,700
+Shree Morya Cabs: ₹3,700
 💰 Save ₹1,300!
 [Show car image]
 #ElectricCab #PuneMumbai
@@ -232,7 +232,7 @@ Book at Best Rates
 ⚡ 100% Electric | Zero Emissions
 💚 Best Rates | Professional Drivers
 📱 Book: +91 74982 64215
-🔗 greenevcabs.com
+🔗 shreemoryacabs.com
 ```
 
 **Option 2 (Comparison Focus):**
@@ -247,7 +247,7 @@ Book at Best Rates
 
 **Option 3 (Service Focus):**
 ```
-🌱 GreenEVCabs - Sustainable Travel
+🌱 Shree Morya Cabs - Sustainable Travel
 🚕 Premium Electric Cab Service
 ✈️ Airport Transfers | City Rides
 ⚡ Kia Carens EV | BYD eMax 7
@@ -285,10 +285,10 @@ This design:
    - Use for Instagram/Facebook/Twitter profile
 
 2. **Create Social Media Accounts:**
-   - Instagram: @greenevcabs
-   - Facebook: @greenevcabs
-   - Twitter: @greenevcabs
-   - LinkedIn: GreenEVCabs
+   - Instagram: @shreemoryacabs
+   - Facebook: @shreemoryacabs
+   - Twitter: @shreemoryacabs
+   - LinkedIn: Shree Morya Cabs
 
 3. **Design First Posts:**
    - Welcome post with logo
@@ -331,11 +331,11 @@ This design:
 ## File Naming Convention
 
 Save your exports as:
-- `greenevcabs-logo-instagram-profile.png` (500x500)
-- `greenevcabs-logo-instagram-post.png` (1080x1080)
-- `greenevcabs-logo-facebook-cover.png` (820x312)
-- `greenevcabs-logo-twitter-header.png` (1500x500)
-- `greenevcabs-favicon.png` (512x512)
+- `shreemoryacabs-logo-instagram-profile.png` (500x500)
+- `shreemoryacabs-logo-instagram-post.png` (1080x1080)
+- `shreemoryacabs-logo-facebook-cover.png` (820x312)
+- `shreemoryacabs-logo-twitter-header.png` (1500x500)
+- `shreemoryacabs-favicon.png` (512x512)
 
 ---
 

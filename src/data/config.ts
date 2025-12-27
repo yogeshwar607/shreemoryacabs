@@ -7,16 +7,16 @@
 
 export const SITE_CONFIG = {
   // Basic Site Info
-  url: 'https://greenevcabs.com',
-  name: 'GreenEVCabs',
-  tagline: 'Premium Electric Cab Service - Pune to Mumbai',
-  description: 'Premium electric cab service from Pune to Mumbai Airport. Luxury 7-seater EVs, transparent pricing, professional drivers. Book 24/7.',
+  url: 'https://shreemoryacabs.com',
+  name: 'Shree Morya Cabs',
+  tagline: 'Premium Electric Cab Service - Blessed by Lord Ganesha',
+  description: 'Premium electric cab service from Pune to Mumbai Airport blessed by Lord Ganesha. Luxury 7-seater EVs, transparent pricing, professional drivers. Book 24/7.',
 
   // Contact Information
   contact: {
     phone: '+917498264215',
     phoneDisplay: '+91 74982 64215',
-    email: 'greenevcabs@gmail.com',
+    email: 'shreemoryacabs@gmail.com',
     whatsapp: '917498264215', // Without + for WhatsApp API
     whatsappLink: 'https://wa.me/917498264215'
   },
@@ -124,7 +124,7 @@ export const SEO_TEMPLATES = {
   // Locality Page Templates
   locality: {
     title: (locality: string, price: number = 3700) =>
-      `Electric Cab Service ${locality} ₹${price.toLocaleString('en-IN')} | Mumbai Airport | 24/7 - GreenEVCabs`,
+      `Electric Cab Service ${locality} ₹${price.toLocaleString('en-IN')} | Mumbai Airport | 24/7 - Shree Morya Cabs`,
 
     description: (locality: string, area: string, highlights: string) =>
       `Premium electric cab service from ${locality} to Mumbai Airport at ₹3,700 all-inclusive. ${highlights}. Professional drivers, luxury 7-seater EVs, zero surge pricing. Book 24/7 for IT professionals.`,
@@ -139,7 +139,7 @@ export const SEO_TEMPLATES = {
   // Route Page Templates
   route: {
     title: (from: string, to: string, price: number, distance: string) =>
-      `${from} to ${to} Electric Cab ₹${price.toLocaleString('en-IN')} | ${distance} | GreenEVCabs`,
+      `${from} to ${to} Electric Cab ₹${price.toLocaleString('en-IN')} | ${distance} | Shree Morya Cabs`,
 
     description: (from: string, to: string, price: number, duration: string) =>
       `Premium electric cab from ${from} to ${to} at ₹${price.toLocaleString('en-IN')} all-inclusive. ${duration} journey in luxury 7-seater EVs. Professional drivers, zero surge pricing. Book 24/7.`,
@@ -154,10 +154,10 @@ export const SEO_TEMPLATES = {
   // Blog Post Templates
   blog: {
     title: (title: string) =>
-      `${title} | GreenEVCabs Blog`,
+      `${title} | Shree Morya Cabs Blog`,
 
     description: (excerpt: string) =>
-      `${excerpt} | Premium electric cab service blog by GreenEVCabs.`,
+      `${excerpt} | Premium electric cab service blog by Shree Morya Cabs.`,
 
     ogTitle: (title: string) =>
       title,
@@ -168,10 +168,10 @@ export const SEO_TEMPLATES = {
 
   // Default/Homepage Templates
   default: {
-    title: 'GreenEVCabs | Premium Electric Cab Service Pune to Mumbai',
-    description: 'Premium electric cab service from Pune to Mumbai Airport. Luxury 7-seater EVs, transparent pricing ₹3,700, professional drivers. Corporate packages available. Book 24/7.',
-    ogTitle: 'GreenEVCabs | Premium Electric Cab Service',
-    ogDescription: 'Premium electric cab service from Pune to Mumbai. Luxury EVs, transparent pricing, professional drivers. Book 24/7.'
+    title: 'Shree Morya Cabs | Premium Electric Cab Service Pune to Mumbai',
+    description: 'Premium electric cab service from Pune to Mumbai Airport blessed by Lord Ganesha. Luxury 7-seater EVs, transparent pricing ₹3,700, professional drivers. Corporate packages available. Book 24/7.',
+    ogTitle: 'Shree Morya Cabs | Premium Electric Cab Service',
+    ogDescription: 'Premium electric cab service from Pune to Mumbai blessed by Lord Ganesha. Luxury EVs, transparent pricing, professional drivers. Book 24/7.'
   }
 };
 

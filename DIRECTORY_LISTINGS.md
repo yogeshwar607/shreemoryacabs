@@ -3,14 +3,14 @@
 ## Business Information (Standard Across All Directories)
 
 ### Basic Details
-- **Business Name:** GreenEVCabs
+- **Business Name:** Shree Morya Cabs
 - **Category:** Cab Service / Electric Cab Service / Airport Taxi Service
 - **Sub-Categories:** Electric Vehicle Rental, Airport Transfer Service, Corporate Cab Service
 - **Founded:** 2024
 - **Phone:** +91 91454 99009
 - **WhatsApp:** +91 91454 99009
-- **Email:** support@greenevcabs.com
-- **Website:** https://greenevcabs.hello-22d.workers.dev
+- **Email:** support@shreemoryacabs.com
+- **Website:** https://shreemoryacabs.hello-22d.workers.dev
 
 ### Service Area
 - **Primary City:** Pune, Maharashtra
@@ -21,10 +21,10 @@
 Premium electric cab service from Pune to Navi Mumbai Airport (NMIA), Mumbai Airport. Fixed ₹3,700 rate. KIA Carens & BYD eMax 7. Book via WhatsApp.
 
 ### Business Description (Medium - 500 characters)
-GreenEVCabs provides premium electric cab service from Pune to Navi Mumbai International Airport (NMIA) and Mumbai Airport. Our fleet includes KIA Carens EV and BYD eMax 7 electric vehicles offering silent, eco-friendly travel. Fixed flat rate of ₹3,700 for any Pune locality to NMIA. Perfect for Bengaluru commuters (7 daily direct NMIA-BLR flights). 24/7 WhatsApp booking, professional drivers, zero surge pricing. Serving IT professionals, families, and corporate travelers with reliable, comfortable electric mobility.
+Shree Morya Cabs provides premium electric cab service from Pune to Navi Mumbai International Airport (NMIA) and Mumbai Airport. Our fleet includes KIA Carens EV and BYD eMax 7 electric vehicles offering silent, eco-friendly travel. Fixed flat rate of ₹3,700 for any Pune locality to NMIA. Perfect for Bengaluru commuters (7 daily direct NMIA-BLR flights). 24/7 WhatsApp booking, professional drivers, zero surge pricing. Serving IT professionals, families, and corporate travelers with reliable, comfortable electric mobility.
 
 ### Business Description (Long - 1000 characters)
-GreenEVCabs is Pune's leading electric cab service specializing in airport transfers to Navi Mumbai International Airport (NMIA) and Mumbai Airport. We operate a premium fleet of KIA Carens EV and BYD eMax 7 electric vehicles, providing eco-friendly, silent, and comfortable travel for business and leisure travelers.
+Shree Morya Cabs is Pune's leading electric cab service specializing in airport transfers to Navi Mumbai International Airport (NMIA) and Mumbai Airport. We operate a premium fleet of KIA Carens EV and BYD eMax 7 electric vehicles, providing eco-friendly, silent, and comfortable travel for business and leisure travelers.
 
 **Key Services:**
 - Pune to NMIA: Fixed ₹3,700 (all-inclusive, any locality)
@@ -76,7 +76,7 @@ Serving all Pune localities: Hinjewadi, Wakad, Kharadi, Magarpatta, Aundh, Baner
 5. Electric Vehicle Rental
 
 **Posts to Create (Weekly):**
-- Week 1: "NMIA Direct Bengaluru Flights: Why Weekly Commuters Choose GreenEVCabs"
+- Week 1: "NMIA Direct Bengaluru Flights: Why Weekly Commuters Choose Shree Morya Cabs"
 - Week 2: "Monsoon Season Special: Safe Electric Cab Travel Tips"
 - Week 3: "Corporate Travel Made Easy: Monthly Billing Available"
 - Week 4: "Weekend Getaway? Book Your NMIA Cab in 2 Minutes"
@@ -114,11 +114,11 @@ Serving all Pune localities: Hinjewadi, Wakad, Kharadi, Magarpatta, Aundh, Baner
 **Listing URL:** https://www.justdial.com/business-registration
 
 **Business Listing:**
-- Business Name: GreenEVCabs - Electric Cab Service Pune
+- Business Name: Shree Morya Cabs - Electric Cab Service Pune
 - Category: Cab Services, Airport Taxi Services, Electric Vehicle Services
 - Mobile: +91 91454 99009
-- Email: support@greenevcabs.com
-- Website: https://greenevcabs.hello-22d.workers.dev
+- Email: support@shreemoryacabs.com
+- Website: https://shreemoryacabs.hello-22d.workers.dev
 - Address: Serving All Pune Localities (mention: Hinjewadi, Wakad, Kharadi)
 
 **Services Section:**
@@ -134,7 +134,7 @@ Serving all Pune localities: Hinjewadi, Wakad, Kharadi, Magarpatta, Aundh, Baner
 ```
 
 **About Us:**
-"GreenEVCabs offers premium electric cab service from Pune to Navi Mumbai International Airport (NMIA). Fixed ₹3,700 rate for any Pune locality. Fleet includes KIA Carens EV and BYD eMax 7 electric vehicles. Perfect for Bengaluru commuters using NMIA's 7 daily direct flights. Book instantly via WhatsApp: +91 91454 99009. Available 24/7, professional drivers, automatic flight delay tracking."
+"Shree Morya Cabs offers premium electric cab service from Pune to Navi Mumbai International Airport (NMIA). Fixed ₹3,700 rate for any Pune locality. Fleet includes KIA Carens EV and BYD eMax 7 electric vehicles. Perfect for Bengaluru commuters using NMIA's 7 daily direct flights. Book instantly via WhatsApp: +91 91454 99009. Available 24/7, professional drivers, automatic flight delay tracking."
 
 **Payment Options:**
 - Cash, UPI, Credit Card, Debit Card, Google Pay, PhonePe, Paytm
@@ -149,12 +149,12 @@ Serving all Pune localities: Hinjewadi, Wakad, Kharadi, Magarpatta, Aundh, Baner
 **Listing URL:** https://www.sulekha.com/sell-here
 
 **Business Information:**
-- Business Name: GreenEVCabs
+- Business Name: Shree Morya Cabs
 - Category: Taxi & Cab Services > Airport Taxi Service
 - Location: Pune, Maharashtra
 - Contact: +91 91454 99009
 - WhatsApp: +91 91454 99009
-- Website: https://greenevcabs.hello-22d.workers.dev
+- Website: https://shreemoryacabs.hello-22d.workers.dev
 
 **Service Description:**
 "Premium Electric Cab Service - Pune to Navi Mumbai Airport (NMIA). Fixed ₹3,700 all-inclusive rate from any Pune locality. Eco-friendly KIA Carens EV & BYD eMax 7 vehicles. Perfect for weekly Bengaluru commuters (NMIA has 7 daily direct BLR flights). Corporate billing available. Book via WhatsApp 24/7."
@@ -184,7 +184,7 @@ Hinjewadi, Wakad, Baner, Aundh, Kharadi, Viman Nagar, Magarpatta, Hadapsar, Koth
 - Minimum Order Quantity: 1 trip
 
 **Product Description:**
-"GreenEVCabs provides electric cab service from Pune to Navi Mumbai International Airport (NMIA). Our premium fleet includes KIA Carens EV and BYD eMax 7 electric vehicles offering silent, comfortable, eco-friendly travel.
+"Shree Morya Cabs provides electric cab service from Pune to Navi Mumbai International Airport (NMIA). Our premium fleet includes KIA Carens EV and BYD eMax 7 electric vehicles offering silent, comfortable, eco-friendly travel.
 
 **Service Details:**
 - Route: Any Pune locality to NMIA
@@ -218,12 +218,12 @@ Contact: WhatsApp +91 91454 99009 for instant booking"
 
 ### 5. Yelp India
 
-**Business Name:** GreenEVCabs - Electric Cab Service Pune to NMIA
+**Business Name:** Shree Morya Cabs - Electric Cab Service Pune to NMIA
 **Category:** Taxis, Airport Shuttles, Transportation
-**Website:** https://greenevcabs.hello-22d.workers.dev
+**Website:** https://shreemoryacabs.hello-22d.workers.dev
 **Phone:** +91 91454 99009
 
-**About GreenEVCabs:**
+**About Shree Morya Cabs:**
 "Premium electric cab service specializing in Pune to Navi Mumbai Airport transfers. Fixed ₹3,700 flat rate. Fleet: KIA Carens EV, BYD eMax 7. Perfect for Bengaluru commuters. 24/7 WhatsApp booking. Professional drivers, zero surge pricing."
 
 **Specialties:**
@@ -245,15 +245,15 @@ Contact: WhatsApp +91 91454 99009 for instant booking"
 
 ### 6. MouthShut (Reviews Platform)
 
-**Business Name:** GreenEVCabs
+**Business Name:** Shree Morya Cabs
 **Category:** Travel & Tourism > Cab Services
-**Website:** https://greenevcabs.hello-22d.workers.dev
+**Website:** https://shreemoryacabs.hello-22d.workers.dev
 
 **Company Info:**
-"GreenEVCabs operates premium electric cab service from Pune to Navi Mumbai International Airport (NMIA). Serving IT professionals, families, and corporate travelers with eco-friendly KIA Carens EV and BYD eMax 7 vehicles. Fixed ₹3,700 rate. Book via WhatsApp 24/7."
+"Shree Morya Cabs operates premium electric cab service from Pune to Navi Mumbai International Airport (NMIA). Serving IT professionals, families, and corporate travelers with eco-friendly KIA Carens EV and BYD eMax 7 vehicles. Fixed ₹3,700 rate. Book via WhatsApp 24/7."
 
 **Review Prompts to Request from Customers:**
-1. "How was your experience with GreenEVCabs for your NMIA trip?"
+1. "How was your experience with Shree Morya Cabs for your NMIA trip?"
 2. "Was the electric vehicle comfortable for the Pune-NMIA journey?"
 3. "How was the booking process via WhatsApp?"
 4. "Did the driver arrive on time? How was the service?"
@@ -262,7 +262,7 @@ Contact: WhatsApp +91 91454 99009 for instant booking"
 
 ### 7. TradeIndia
 
-**Company Name:** GreenEVCabs Electric Taxi Service
+**Company Name:** Shree Morya Cabs Electric Taxi Service
 **Product Category:** Transportation & Logistics > Taxi Services
 **Contact:** +91 91454 99009
 
@@ -302,11 +302,11 @@ Contact: WhatsApp +91 91454 99009"
 **Locality Pages to Create:**
 
 **Hinjewadi Listing:**
-"GreenEVCabs - NMIA Cab Service from Hinjewadi
+"Shree Morya Cabs - NMIA Cab Service from Hinjewadi
 Dedicated electric cab service from Hinjewadi (all phases) to Navi Mumbai Airport. ₹3,700 fixed rate. Perfect for IT professionals at Rajiv Gandhi Infotech Park traveling to Bengaluru. 24/7 WhatsApp booking: +91 91454 99009"
 
 **Wakad Listing:**
-"GreenEVCabs - NMIA Cab Service from Wakad
+"Shree Morya Cabs - NMIA Cab Service from Wakad
 Electric cab from Wakad to Navi Mumbai Airport. ₹3,700 all-inclusive. Serving Datta Mandir Road, Wakad Chowk, Thergaon. Book: +91 91454 99009"
 
 *(Repeat for Kharadi, Baner, Aundh, Magarpatta, etc.)*

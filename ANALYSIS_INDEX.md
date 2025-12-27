@@ -1,4 +1,4 @@
-# GreenEVCabs Competitive Analysis - Complete Index
+# Shree Morya Cabs Competitive Analysis - Complete Index
 ## December 2025 Research Package
 
 This package contains a comprehensive competitive analysis of the Pune-Mumbai electric cab market, with actionable strategies and implementation plans.

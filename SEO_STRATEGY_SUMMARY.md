@@ -1,4 +1,4 @@
-# GreenEVCabs SEO Strategy - Complete Summary
+# Shree Morya Cabs SEO Strategy - Complete Summary
 ## Your Roadmap to Market Dominance (6 Months)
 
 **Created:** December 6, 2025
@@ -439,7 +439,7 @@
 
 ## 🚀 FINAL WORD
 
-This is the most comprehensive SEO strategy created for GreenEVCabs. You have:
+This is the most comprehensive SEO strategy created for Shree Morya Cabs. You have:
 
 ✅ A clear 6-month roadmap
 ✅ Month-by-month deliverables  
@@ -450,7 +450,7 @@ This is the most comprehensive SEO strategy created for GreenEVCabs. You have:
 
 **What you need to do:** Pick a deadline, allocate a budget, assign an owner, and start executing TODAY.
 
-The next 6 months will determine whether GreenEVCabs becomes the market leader in Pune-Mumbai electric cab services. Your competitors (GrEL, KK Travels) aren't doing this level of SEO strategy. You have a window of opportunity.
+The next 6 months will determine whether Shree Morya Cabs becomes the market leader in Pune-Mumbai electric cab services. Your competitors (GrEL, KK Travels) aren't doing this level of SEO strategy. You have a window of opportunity.
 
 **Use it.**
 

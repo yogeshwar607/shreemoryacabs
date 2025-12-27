@@ -1,5 +1,5 @@
 # Review Generation System - Complete Templates
-## GreenEVCabs Customer Review Collection
+## Shree Morya Cabs Customer Review Collection
 
 **Created:** December 6, 2025
 **Priority:** HIGH - Critical for competing with GrEL Cabs (10K reviews)
@@ -35,17 +35,17 @@
 
 **For 5-Star Experiences (Use judgment based on trip quality):**
 ```
-Hi [CustomerName], thank you for choosing GreenEVCabs!
+Hi [CustomerName], thank you for choosing Shree Morya Cabs!
 
 Hope you enjoyed your [Route] trip in our electric cab with [DriverName].
 
 Could you spare 60 seconds to share your experience on Google? It helps travelers choose eco-friendly transport.
 
-Review link: [bit.ly/greenevcabs-review]
+Review link: [bit.ly/shreemoryacabs-review]
 
 As a thank you, you'll get priority booking for your next trip!
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 +91 74982 64215
 ```
 
@@ -57,14 +57,14 @@ As a thank you, you'll get priority booking for your next trip!
 ```
 Hi [CustomerName],
 
-Thank you for traveling with GreenEVCabs!
+Thank you for traveling with Shree Morya Cabs!
 
 How was your [Route] trip? We'd love to hear your feedback:
-[bit.ly/greenevcabs-review]
+[bit.ly/shreemoryacabs-review]
 
 Your review helps us improve and helps other travelers.
 
-- GreenEVCabs
+- Shree Morya Cabs
 ```
 
 **Character Count:** 214 chars
@@ -77,7 +77,7 @@ Your review helps us improve and helps other travelers.
 ```
 🙏 Hi [CustomerName],
 
-Thank you for choosing GreenEVCabs for your [Route] trip!
+Thank you for choosing Shree Morya Cabs for your [Route] trip!
 
 ✅ How was your experience with our electric cab service?
 
@@ -93,7 +93,7 @@ As a thank you, you'll get:
 Thank you for going green with us! 🌱
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 +91 74982 64215
 ```
 
@@ -103,7 +103,7 @@ GreenEVCabs Team
 ```
 Hi [CustomerName]! 👋
 
-Thanks for traveling with GreenEVCabs today.
+Thanks for traveling with Shree Morya Cabs today.
 
 Quick question: How was your [Route] trip with [DriverName]?
 
@@ -113,7 +113,7 @@ Quick question: How was your [Route] trip with [DriverName]?
 Get priority booking on your next trip!
 
 Thank you 🙏
-- GreenEVCabs
+- Shree Morya Cabs
 ```
 
 ---
@@ -136,7 +136,7 @@ Your feedback means the world to us and helps other travelers choose sustainable
 As a thank you - priority booking for life! 🎉
 
 Best,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ---
@@ -144,19 +144,19 @@ GreenEVCabs Team
 ### Template 3: Email (Professional Follow-up)
 
 **Subject Line Options:**
-1. "How was your GreenEVCabs experience, [CustomerName]?"
+1. "How was your Shree Morya Cabs experience, [CustomerName]?"
 2. "[CustomerName], we'd love your feedback!"
 3. "Quick question about your [Route] trip"
-4. "5 stars? ⭐ Share your GreenEVCabs experience"
+4. "5 stars? ⭐ Share your Shree Morya Cabs experience"
 
 **Email Body (HTML Template):**
 
 ```html
-Subject: How was your GreenEVCabs experience?
+Subject: How was your Shree Morya Cabs experience?
 
 Hi [CustomerName],
 
-Thank you for choosing GreenEVCabs for your [Route] trip on [Date]!
+Thank you for choosing Shree Morya Cabs for your [Route] trip on [Date]!
 
 We hope you enjoyed your journey in our luxury electric SUV with our driver [DriverName].
 
@@ -193,11 +193,11 @@ Your review takes just 60 seconds and makes a real difference.
 Thank you for going green with us! 🌱
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 
 +91 74982 64215
-greenevcabs@gmail.com
-https://greenevcabs.com
+shreemoryacabs@gmail.com
+https://shreemoryacabs.com
 
 [Social media icons: Facebook, Instagram, WhatsApp]
 
@@ -213,7 +213,7 @@ P.S. Having an issue? Please reply to this email and we'll resolve it immediatel
 ```
 Hi [CustomerName],
 
-Thank you for choosing GreenEVCabs for your [Route] trip!
+Thank you for choosing Shree Morya Cabs for your [Route] trip!
 
 We hope you enjoyed your journey in our luxury electric SUV with [DriverName].
 
@@ -247,7 +247,7 @@ Your review takes just 60 seconds and makes a real difference.
 Thank you for going green with us!
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 +91 74982 64215
 
 P.S. Having an issue? Please reply and we'll resolve it immediately.
@@ -264,7 +264,7 @@ P.S. Having an issue? Please reply and we'll resolve it immediately.
 
 ### Day 3: Gentle Reminder (If no response)
 **Channel:** Email
-**Subject:** "Quick reminder: Share your GreenEVCabs experience"
+**Subject:** "Quick reminder: Share your Shree Morya Cabs experience"
 **Body:**
 ```
 Hi [CustomerName],
@@ -276,7 +276,7 @@ We'd really appreciate if you could take 60 seconds to share your experience fro
 Leave Review: [link]
 
 Thank you!
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ### Day 7: Final Reminder (If no response)
@@ -287,11 +287,11 @@ Hi [CustomerName],
 
 Last reminder! 🙂
 
-If you have a minute, we'd love your feedback on your recent GreenEVCabs trip:
+If you have a minute, we'd love your feedback on your recent Shree Morya Cabs trip:
 [Review Link]
 
 Thank you for considering!
-- GreenEVCabs
+- Shree Morya Cabs
 ```
 
 **STOP AFTER DAY 7** - Don't spam!
@@ -311,7 +311,7 @@ We're thrilled you enjoyed your [Route] trip in our electric cab. Our driver [Dr
 We look forward to serving you again on your next journey!
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **Template 2: Detailed**
@@ -324,22 +324,22 @@ We're so happy you enjoyed your [Route] trip and appreciated [specific aspect th
 
 Our entire team, especially [DriverName], works hard to provide premium eco-friendly service, and your feedback means the world to us.
 
-Looking forward to your next trip with GreenEVCabs!
+Looking forward to your next trip with Shree Morya Cabs!
 
 Best,
-The GreenEVCabs Team
+The Shree Morya Cabs Team
 ```
 
 **Template 3: With Call-to-Action**
 ```
 Thank you, [CustomerName]! ⭐⭐⭐⭐⭐
 
-We're delighted you had a great experience with GreenEVCabs.
+We're delighted you had a great experience with Shree Morya Cabs.
 
 Next time you need an eco-friendly ride, message us on WhatsApp (+91 74982 64215) for priority booking!
 
 See you soon,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ---
@@ -357,14 +357,14 @@ We'd love to know what we could improve to make it 5-star next time. Please feel
 Your input helps us serve you better!
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **Template 2: Specific Follow-up**
 ```
 Hi [CustomerName],
 
-Thank you for the 4-star review and for choosing GreenEVCabs!
+Thank you for the 4-star review and for choosing Shree Morya Cabs!
 
 We noticed you mentioned [specific aspect]. We'd love to discuss this further and ensure a 5-star experience next time.
 
@@ -373,7 +373,7 @@ Could you please call/WhatsApp us at +91 74982 64215 when convenient?
 Thank you for helping us improve!
 
 Best,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ---
@@ -393,7 +393,7 @@ Our manager will contact you within 24 hours at [phone] to discuss and resolve a
 We appreciate the opportunity to improve.
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 ---
@@ -419,7 +419,7 @@ Thank you for bringing this to our attention.
 
 Sincerely,
 [Manager Name]
-GreenEVCabs Team
+Shree Morya Cabs Team
 +91 74982 64215
 ```
 
@@ -438,12 +438,12 @@ GreenEVCabs Team
 
 **Format:** `https://g.page/r/[YourPlaceID]/review`
 
-**Short URL:** `bit.ly/greenevcabs-review`
+**Short URL:** `bit.ly/shreemoryacabs-review`
 
 ### 2. Facebook Review Link
-`https://facebook.com/greenevcabs/reviews`
+`https://facebook.com/shreemoryacabs/reviews`
 
-**Short URL:** `bit.ly/greenevcabs-fb`
+**Short URL:** `bit.ly/shreemoryacabs-fb`
 
 ### 3. JustDial Review Link
 `[Your JustDial Profile]/reviews`

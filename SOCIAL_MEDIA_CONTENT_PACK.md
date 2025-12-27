@@ -1,4 +1,4 @@
-# Social Media Content Pack - GreenEVCabs
+# Social Media Content Pack - Shree Morya Cabs
 
 **Campaign Period:** 4 weeks (December 26, 2025 - January 23, 2026)
 **Posting Frequency:** 3 posts per week (Monday, Wednesday, Friday)
@@ -83,7 +83,7 @@ Book now: WhatsApp +91 91454 99009
 ```
 💡 Transparent Pricing. No Surprises. No Surge.
 
-GreenEVCabs Fixed Rate: ₹3,700 (All-Inclusive)
+Shree Morya Cabs Fixed Rate: ₹3,700 (All-Inclusive)
 ✓ Tolls included
 ✓ Taxes included
 ✓ Driver charges included
@@ -92,7 +92,7 @@ GreenEVCabs Fixed Rate: ₹3,700 (All-Inclusive)
 Compare:
 • Traditional cabs: ₹4,200-5,000 (+ surge 1.5x-2x during peak)
 • Ola/Uber: ₹3,800-4,500 (surge varies by time)
-• GreenEVCabs: ₹3,700 (Always. Every time.)
+• Shree Morya Cabs: ₹3,700 (Always. Every time.)
 
 Bonus benefits:
 🌱 Zero emissions electric vehicles
@@ -152,7 +152,7 @@ Comment your reason! 👇
 🚗 Need a cab to NMIA? We've got you covered 24/7.
 WhatsApp: +91 91454 99009
 
-#PuneTravelers #NMIAAirport #TravelPoll #GreenEVCabs
+#PuneTravelers #NMIAAirport #TravelPoll #Shree Morya Cabs
 ```
 
 **Instagram Stories Poll:**
@@ -232,7 +232,7 @@ What our customers love:
 ✓ Fixed ₹3,700 rate (no surprises)
 ✓ Flight tracking (free, automatic)
 
-Join 100+ satisfied travelers who chose GreenEVCabs for NMIA airport transfer.
+Join 100+ satisfied travelers who chose Shree Morya Cabs for NMIA airport transfer.
 
 Book your electric cab: +91 91454 99009
 
@@ -247,7 +247,7 @@ Book your electric cab: +91 91454 99009
 
 - Rajesh, Hinjewadi
 
-100+ happy travelers trust GreenEVCabs for NMIA trips.
+100+ happy travelers trust Shree Morya Cabs for NMIA trips.
 
 Book yours: +91 91454 99009
 
@@ -268,7 +268,7 @@ Book yours: +91 91454 99009
 ```
 📊 Corporate Travel Managers: Simplify NMIA Airport Transfers
 
-GreenEVCabs Corporate Billing Solutions:
+Shree Morya Cabs Corporate Billing Solutions:
 
 1️⃣ Monthly Consolidated Invoice
    → Single bill for all employee trips
@@ -325,7 +325,7 @@ Setup takes 15 minutes. DM or WhatsApp: +91 91454 99009
 ```
 🌧️ Monsoon Season NMIA Travel: Safety First
 
-How GreenEVCabs ensures safe Pune-NMIA travel during heavy rains:
+How Shree Morya Cabs ensures safe Pune-NMIA travel during heavy rains:
 
 🚗 Vehicle Safety Features:
 ✓ Electric vehicles = Lower center of gravity (better stability)
@@ -512,7 +512,7 @@ Need a cab to NMIA? Fixed ₹3,700 from anywhere in Pune.
 
 Book: +91 91454 99009
 
-#TravelPoll #NMIAAirport #PuneTravel #GreenEVCabs
+#TravelPoll #NMIAAirport #PuneTravel #Shree Morya Cabs
 ```
 
 **Visual:** NMIA terminal photo, destination city collage
@@ -545,7 +545,7 @@ What This Means for You:
 ⚠️ Peak hours (4-6 AM, 2-4 PM) fill fast
 ⚠️ Alternative options: Higher prices, longer wait
 
-GreenEVCabs Solution:
+Shree Morya Cabs Solution:
 ✅ Pre-book up to 30 days in advance
 ✅ Fixed ₹3,700 rate (no surge even during rush)
 ✅ Confirmed booking (guaranteed cab)
@@ -582,20 +582,20 @@ WhatsApp: +91 91454 99009
 
 **LinkedIn Post:**
 ```
-📊 Case Study: How Priya Saves 8 Hours/Month with GreenEVCabs
+📊 Case Study: How Priya Saves 8 Hours/Month with Shree Morya Cabs
 
 Meet Priya, Senior Manager at a Bengaluru-based IT firm:
 • Lives: Wakad, Pune
 • Office: Bengaluru (every Tuesday-Thursday)
 • Uses: NMIA for Bengaluru commute
 
-Her Journey Before GreenEVCabs:
+Her Journey Before Shree Morya Cabs:
 🚗 Drive to Pune Airport (30 min)
 🅿️ Parking hassles (₹200/day, often full)
 ✈️ Limited flight options (3 daily)
 ⏰ Total weekly commute prep: 2+ hours
 
-Her Journey Now with GreenEVCabs + NMIA:
+Her Journey Now with Shree Morya Cabs + NMIA:
 📱 WhatsApp booking (30 seconds)
 🚗 Pickup from home (zero parking cost)
 ⏱️ Work during 2-hour ride (productive time)
@@ -611,7 +611,7 @@ Monthly Savings & Benefits:
 ✅ ESG contribution: Zero-emission electric travel
 
 Priya's Quote:
-"I used to dread Monday night packing and Tuesday 5 AM driving. Now I just WhatsApp GreenEVCabs, sleep in the cab, and wake up at NMIA refreshed. My team jokes that I'm more productive during my Pune-NMIA ride than they are in office!"
+"I used to dread Monday night packing and Tuesday 5 AM driving. Now I just WhatsApp Shree Morya Cabs, sleep in the cab, and wake up at NMIA refreshed. My team jokes that I'm more productive during my Pune-NMIA ride than they are in office!"
 
 Cost-Benefit Analysis (Monthly):
 • 4 roundtrips: 8 cab rides × ₹3,700 = ₹29,600
@@ -660,7 +660,7 @@ Weekend Special:
 Book roundtrip together → ₹7,000 (₹400 discount)
 Valid for: January 2026 bookings
 
-Why GreenEVCabs for Weekend Trips?
+Why Shree Morya Cabs for Weekend Trips?
 ✓ Spacious EVs (fit 4 bags easily)
 ✓ Silent ride (rest before vacation)
 ✓ Flight delay tracking (stress-free returns)
@@ -678,7 +678,7 @@ Book roundtrip: WhatsApp +91 91454 99009
 
 Offer valid: Jan 1-31, 2026
 
-#WeekendGetaway #GoaTrip #NMIAFlights #PuneToGoa #TravelDeals #GreenEVCabs
+#WeekendGetaway #GoaTrip #NMIAFlights #PuneToGoa #TravelDeals #Shree Morya Cabs
 ```
 
 **Instagram Post (Carousel):**
@@ -736,7 +736,7 @@ Tag your travel buddy! 👥
 ## Hashtag Strategy
 
 ### Primary Hashtags (Use in ALL posts)
-#GreenEVCabs #NMIACabs #PuneToNMIA #ElectricVehicles
+#Shree Morya Cabs #NMIACabs #PuneToNMIA #ElectricVehicles
 
 ### Platform-Specific Hashtags
 
@@ -782,7 +782,7 @@ Tag your travel buddy! 👥
 
 **Design Guidelines:**
 - Brand colors: Green (#10B981), White (#FFFFFF), Dark (#1F2937)
-- Logo: Include GreenEVCabs logo on all graphics
+- Logo: Include Shree Morya Cabs logo on all graphics
 - Fonts: Clean, modern sans-serif (e.g., Inter, Montserrat)
 - CTAs: Always include WhatsApp number prominently
 
@@ -998,5 +998,5 @@ Yes! We serve all Pune localities including [mention their area]. Fixed ₹3,700
 ---
 
 **Questions? Contact:**
-Email: support@greenevcabs.com
+Email: support@shreemoryacabs.com
 WhatsApp: +91 91454 99009

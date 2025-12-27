@@ -324,7 +324,7 @@
 - Not consumer/retail focused (Pune-Mumbai airport transfers)
 - Enterprise sales cycle (long, complex)
 - Not relevant for one-off airport trips
-- High barrier to entry (not for GreenEVCabs direct competition)
+- High barrier to entry (not for Shree Morya Cabs direct competition)
 - Corporate pricing likely premium
 
 **Your Attack Strategy:**
@@ -648,7 +648,7 @@
 
 ## COMPETITIVE ADVANTAGE SUMMARY
 
-### GreenEVCabs Unique Advantages
+### Shree Morya Cabs Unique Advantages
 1. **Transparent Pricing** - ₹3,700 clearly displayed
 2. **Route Specialization** - Pune-Mumbai expert positioning
 3. **Vehicle Clarity** - Specific models (Kia, BYD) with specs
@@ -664,9 +664,9 @@
 ### Market Opportunity Summary
 - **Total Available Market:** 4-5 million annual Pune-Mumbai transfers
 - **EV Segment:** 2-5% = 80,000-250,000 annual trips
-- **GreenEVCabs Target (Year 1):** 0.5-1% = 400-2,500 trips
+- **Shree Morya Cabs Target (Year 1):** 0.5-1% = 400-2,500 trips
 - **Addressable by organic/content:** 200-500 trips = ₹740K-1.85M
-- **GreenEVCabs Revenue Potential:** ₹1.5M-9.2M (Year 1)
+- **Shree Morya Cabs Revenue Potential:** ₹1.5M-9.2M (Year 1)
 
 ---
 

@@ -1,7 +1,7 @@
-# GreenEVCabs Keyword Strategy Analysis - Executive Summary
+# Shree Morya Cabs Keyword Strategy Analysis - Executive Summary
 
 **Prepared:** December 6, 2025
-**For:** GreenEVCabs Marketing Team
+**For:** Shree Morya Cabs Marketing Team
 **Status:** Ready for Implementation
 **Investment Required:** 40-50 hours over 3 months + content investment
 
@@ -124,7 +124,7 @@
 
 ### Strategic Keywords (Decision Stage - Highest Conversion)
 - "best electric cab service pune" - 30-60/month, HIGH intent
-- "greenevcabs vs competitors" - 20-40/month, CRITICAL conversion stage
+- "shreemoryacabs vs competitors" - 20-40/month, CRITICAL conversion stage
 - "electric cab vs diesel comparison" - 50-100/month, informational → transactional
 
 ---
@@ -341,7 +341,7 @@
 
 ## Competitive Advantage Strategy
 
-### Why GreenEVCabs Can Win
+### Why Shree Morya Cabs Can Win
 1. **Cheaper:** ₹500 less than GrEL for Pune-Mumbai = clear messaging
 2. **Only Electric:** Pure play electric cab = differentiation
 3. **No Surge:** Fixed pricing = unique advantage
@@ -355,7 +355,7 @@
 
 ### Competitive Content Ideas
 - "Why Choose Electric vs Diesel" (vs traditional cabs)
-- "GreenEVCabs vs GrEL: Cheaper Alternative" (direct comparison)
+- "Shree Morya Cabs vs GrEL: Cheaper Alternative" (direct comparison)
 - "Why IT Professionals Choose EV Cabs" (B2B angle)
 
 ---
@@ -491,14 +491,14 @@ Payback period: 2-3 weeks
 
 ## Final Thoughts
 
-GreenEVCabs has excellent positioning in the market. The website foundation is strong. The keyword strategy outlined is realistic, achievable, and has significant revenue potential.
+Shree Morya Cabs has excellent positioning in the market. The website foundation is strong. The keyword strategy outlined is realistic, achievable, and has significant revenue potential.
 
 The three biggest opportunities:
 1. **Location pages** - Low effort, high immediate impact (Hinjewadi, Wakad)
 2. **Cost positioning** - Reinforce "cheapest" across all channels
 3. **Voice search** - FAQ expansion for position zero rankings
 
-If executed consistently over 6 months, GreenEVCabs will establish dominant market position for electric cab services in Pune. The question isn't "if" you'll rank, but "when" and "how aggressively."
+If executed consistently over 6 months, Shree Morya Cabs will establish dominant market position for electric cab services in Pune. The question isn't "if" you'll rank, but "when" and "how aggressively."
 
 **Recommendation:** Start with Phase 1 (quick wins) this week. You should see measurable results within 4-6 weeks.
 
@@ -506,4 +506,4 @@ If executed consistently over 6 months, GreenEVCabs will establish dominant mark
 
 **Document Version:** 1.0 - Final
 **Review Date:** January 6, 2026
-**Prepared for:** GreenEVCabs Marketing Team
+**Prepared for:** Shree Morya Cabs Marketing Team

@@ -84,11 +84,11 @@ Tested link: 200 OK
 Total URLs in sitemap: 92
 Locality pages included: 13
 Sample URLs:
-  - https://greenevcabs.com/electric-cab-service/hinjewadi
-  - https://greenevcabs.com/electric-cab-service/wakad
-  - https://greenevcabs.com/electric-cab-service/baner
-  - https://greenevcabs.com/electric-cab-service/ravet
-  - https://greenevcabs.com/electric-cab-service/pcmc
+  - https://shreemoryacabs.com/electric-cab-service/hinjewadi
+  - https://shreemoryacabs.com/electric-cab-service/wakad
+  - https://shreemoryacabs.com/electric-cab-service/baner
+  - https://shreemoryacabs.com/electric-cab-service/ravet
+  - https://shreemoryacabs.com/electric-cab-service/pcmc
 ```
 
 **URL Format:** Correct hierarchical structure ✅
@@ -211,7 +211,7 @@ The dev server is running at **http://localhost:4321**
 - [ ] Contains locality URLs (/electric-cab-service/*)
 - [ ] Contains route URLs (/routes/*)
 - [ ] No duplicate URLs
-- [ ] URLs use correct domain (greenevcabs.com)
+- [ ] URLs use correct domain (shreemoryacabs.com)
 
 **Expected Result:** Valid XML sitemap
 

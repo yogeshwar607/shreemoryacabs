@@ -43,10 +43,10 @@ npx wrangler deploy
 
 1. Go to: https://google.com/business
 2. Click "Manage Now"
-3. Enter "GreenEVCabs"
+3. Enter "Shree Morya Cabs"
 4. Add your address (same as schema)
 5. Add phone: +91 74982 64215
-6. Add website: https://greenevcabs.com
+6. Add website: https://shreemoryacabs.com
 7. Set hours: Open 24 hours
 8. Upload 5 photos minimum
 
@@ -57,11 +57,11 @@ npx wrangler deploy
 **Email template to send to last 10 customers:**
 
 ```
-Subject: How was your recent trip with GreenEVCabs?
+Subject: How was your recent trip with Shree Morya Cabs?
 
 Hi [Name],
 
-Thank you for choosing GreenEVCabs for your Pune-Mumbai trip!
+Thank you for choosing Shree Morya Cabs for your Pune-Mumbai trip!
 
 We'd love to hear about your experience. Could you take 2 minutes to leave us a Google review?
 
@@ -70,7 +70,7 @@ We'd love to hear about your experience. Could you take 2 minutes to leave us a 
 Your feedback helps us improve and helps other travelers make informed decisions.
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 +91 74982 64215
 ```
 
@@ -119,13 +119,13 @@ mkdir -p public/images/vehicles
 
 ### 1. Test Breadcrumb Schema (2 minutes)
 1. Go to: https://search.google.com/test/rich-results
-2. Enter: https://greenevcabs.com/routes/pune-to-mumbai-airport
+2. Enter: https://shreemoryacabs.com/routes/pune-to-mumbai-airport
 3. Click "Test URL"
 4. Should show: ✅ No errors in breadcrumb schema
 
 ### 2. Test Local Business Schema (2 minutes)
 1. Go to: https://validator.schema.org/
-2. Enter: https://greenevcabs.com
+2. Enter: https://shreemoryacabs.com
 3. Expand "LocalBusiness"
 4. Should show: ✅ Street address, postal code present
 
@@ -141,7 +141,7 @@ mkdir -p public/images/vehicles
 
 ### Google Search Console (Check Weekly)
 - URL: https://search.google.com/search-console
-- Add property: greenevcabs.com
+- Add property: shreemoryacabs.com
 - Verify ownership (HTML file or DNS)
 - Monitor:
   - Impressions (target: +50% monthly)
@@ -172,7 +172,7 @@ npm run build
 **Solution:**
 - Clear browser cache
 - Do hard rebuild: `rm -rf dist && npm run build`
-- Check astro.config.mjs has site: 'https://greenevcabs.com'
+- Check astro.config.mjs has site: 'https://shreemoryacabs.com'
 
 ### Images not showing
 **Solution:**

@@ -1,4 +1,4 @@
-# Review Collection Strategy for GreenEVCabs
+# Review Collection Strategy for Shree Morya Cabs
 
 **Last Updated:** January 2025
 **Goal:** Collect 50+ authentic 5-star reviews in 90 days to outrank competitors
@@ -129,7 +129,7 @@ Once review is posted, send personalized thank you message
 ```
 Hi [Customer Name] 👋
 
-Thank you for choosing GreenEVCabs today! We hope you had a comfortable ride from [Pickup] to [Destination].
+Thank you for choosing Shree Morya Cabs today! We hope you had a comfortable ride from [Pickup] to [Destination].
 
 Your feedback means a lot to us. Could you spare 30 seconds to share your experience on Google? It helps other passengers discover our service.
 
@@ -137,7 +137,7 @@ Your feedback means a lot to us. Could you spare 30 seconds to share your experi
 
 Thank you for traveling with us! 🚗⚡
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** Standard request for all satisfied customers
@@ -159,7 +159,7 @@ We'd be incredibly grateful if you could share your experience with a quick Goog
 
 Thank you for supporting green transportation! 🌱⚡
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** Customer gave verbal compliments during ride
@@ -172,7 +172,7 @@ Thank you for supporting green transportation! 🌱⚡
 ```
 Hi [Customer Name]!
 
-Thank you for trusting GreenEVCabs for your first ride with us! We hope the experience was better than [previous service they mentioned] 😊
+Thank you for trusting Shree Morya Cabs for your first ride with us! We hope the experience was better than [previous service they mentioned] 😊
 
 If you're happy with our ₹3,700 fixed pricing, zero surge, and professional service, would you consider leaving us a Google review? Your honest feedback helps other passengers make the switch!
 
@@ -180,7 +180,7 @@ If you're happy with our ₹3,700 fixed pricing, zero surge, and professional se
 
 Looking forward to serving you again soon! 🚗⚡
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** Customer switched from competitor (GrEL, Ola, Uber, Rapido)
@@ -194,7 +194,7 @@ Looking forward to serving you again soon! 🚗⚡
 ```
 Hi [Customer Name]!
 
-This was your [5th/10th] trip with GreenEVCabs - thank you for your continued trust! 🙏
+This was your [5th/10th] trip with Shree Morya Cabs - thank you for your continued trust! 🙏
 
 Since you're now a regular traveler with us, your review would mean the world to our team. Could you share what keeps you coming back?
 
@@ -202,7 +202,7 @@ Since you're now a regular traveler with us, your review would mean the world to
 
 As a small thank you, we're applying a ₹100 discount to your next booking! 🎁
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** After 5th or 10th trip with same customer
@@ -218,13 +218,13 @@ Hi [Customer Name]!
 
 We hope your [flight/trip to Shirdi] went smoothly! 🛫
 
-Thank you for trusting GreenEVCabs for your [airport transfer/outstation trip]. We'd love to know how your experience was - especially [driver's flight tracking/comfortable long-distance ride].
+Thank you for trusting Shree Morya Cabs for your [airport transfer/outstation trip]. We'd love to know how your experience was - especially [driver's flight tracking/comfortable long-distance ride].
 
 ⭐ Share your feedback: [GOOGLE_REVIEW_LINK]
 
 Safe travels, and we hope to serve you again! 🚗⚡
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** Airport transfers, outstation trips, special occasions
@@ -237,7 +237,7 @@ Safe travels, and we hope to serve you again! 🚗⚡
 ```
 Hi [Customer Name]!
 
-Quick follow-up on our message yesterday. We'd really appreciate your feedback on your recent trip with GreenEVCabs.
+Quick follow-up on our message yesterday. We'd really appreciate your feedback on your recent trip with Shree Morya Cabs.
 
 ⭐ Review link: [GOOGLE_REVIEW_LINK]
 
@@ -245,7 +245,7 @@ No worries if you're busy - we just wanted to make it easy for you! 😊
 
 Thanks for your time!
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** 24 hours after first request with no response
@@ -267,7 +267,7 @@ We're grateful for your support. Looking forward to serving you again soon!
 
 P.S. We've saved your details for faster booking next time. Just message us directly!
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **When to Use:** Immediately after customer posts 5-star review
@@ -281,7 +281,7 @@ P.S. We've saved your details for faster booking next time. Just message us dire
 
 **Method 1: Google's Review Link Generator (Recommended)**
 1. Go to: https://whitespark.ca/google-review-link-generator/
-2. Enter your business name: GreenEVCabs
+2. Enter your business name: Shree Morya Cabs
 3. Select your Google Business Profile from results
 4. Copy the generated link
 
@@ -299,10 +299,10 @@ https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID
 ### Shorten Your Review Link
 
 Use a URL shortener for cleaner WhatsApp messages:
-- **Bitly:** https://bitly.com → Create: `bit.ly/greenevcabs-review`
-- **TinyURL:** https://tinyurl.com → Create: `tinyurl.com/greenevcabs`
+- **Bitly:** https://bitly.com → Create: `bit.ly/shreemoryacabs-review`
+- **TinyURL:** https://tinyurl.com → Create: `tinyurl.com/shreemoryacabs`
 
-**Recommended Short Link:** `bit.ly/greenevcabs-review`
+**Recommended Short Link:** `bit.ly/shreemoryacabs-review`
 
 **Update all templates above with your actual review link!**
 
@@ -433,7 +433,7 @@ Best Performing Route: Hinjewadi to Mumbai Airport - 9 reviews
 
 COMPARISON:
 GrEL Cabs: 24 reviews, 4.3 rating
-GreenEVCabs: 18 reviews, 4.9 rating
+Shree Morya Cabs: 18 reviews, 4.9 rating
 Gap: -6 reviews (closing fast!)
 ```
 
@@ -457,11 +457,11 @@ Gap: -6 reviews (closing fast!)
 ```
 Thank you so much, [Customer Name]! 🌟
 
-We're thrilled you had a wonderful experience with GreenEVCabs. [Personalize: mention specific detail from their review, e.g., "We're glad you appreciated the spacious SUV and smooth ride!"]
+We're thrilled you had a wonderful experience with Shree Morya Cabs. [Personalize: mention specific detail from their review, e.g., "We're glad you appreciated the spacious SUV and smooth ride!"]
 
 Looking forward to serving you again on your next trip!
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **Personalization Tips:**
@@ -478,11 +478,11 @@ Looking forward to serving you again on your next trip!
 ```
 Thank you for your feedback, [Customer Name]!
 
-We're glad you had a good experience with GreenEVCabs. We'd love to know what we can do to make your next ride a 5-star experience! Please feel free to share any suggestions at +91 74982 64215.
+We're glad you had a good experience with Shree Morya Cabs. We'd love to know what we can do to make your next ride a 5-star experience! Please feel free to share any suggestions at +91 74982 64215.
 
 Looking forward to serving you again soon!
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **Action:** Proactively call customer within 24 hours to understand improvement areas
@@ -501,7 +501,7 @@ Could you please reach out to us at +91 74982 64215 so we can discuss your exper
 
 We're committed to providing the best service possible.
 
-- GreenEVCabs Management
+- Shree Morya Cabs Management
 ```
 
 **Action:** Call customer immediately, offer partial refund or free next trip if issue is valid
@@ -514,13 +514,13 @@ We're committed to providing the best service possible.
 ```
 Dear [Customer Name],
 
-We sincerely apologize that we did not meet your expectations. This is absolutely not the standard of service we strive for at GreenEVCabs.
+We sincerely apologize that we did not meet your expectations. This is absolutely not the standard of service we strive for at Shree Morya Cabs.
 
 We take your concerns very seriously and would like to make this right. Please contact us directly at +91 74982 64215 so we can discuss what went wrong and how we can resolve it.
 
 Thank you for bringing this to our attention. We are committed to improving.
 
-- [Your Name], GreenEVCabs Management
+- [Your Name], Shree Morya Cabs Management
 ```
 
 **Critical Actions:**
@@ -565,7 +565,7 @@ Thank you for bringing this to our attention. We are committed to improving.
 - Loss of ranking
 - Permanent ban
 
-### GreenEVCabs Review Ethics Policy
+### Shree Morya Cabs Review Ethics Policy
 
 **Our Commitment:**
 1. We will only request HONEST reviews from real customers
@@ -587,7 +587,7 @@ Thank you for bringing this to our attention. We are committed to improving.
 
 ### Week 1: Setup
 - [ ] Generate Google Review link using Whitespark tool
-- [ ] Shorten review link using Bitly: bit.ly/greenevcabs-review
+- [ ] Shorten review link using Bitly: bit.ly/shreemoryacabs-review
 - [ ] Update all WhatsApp templates with actual review link
 - [ ] Create Review Request Tracker (Google Sheet)
 - [ ] Train all drivers on review request process

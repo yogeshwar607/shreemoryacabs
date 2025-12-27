@@ -1,5 +1,5 @@
 # TECHNICAL SEO & LOCAL SEO OPTIMIZATION PLAN
-## GreenEVCabs Complete Implementation Guide
+## Shree Morya Cabs Complete Implementation Guide
 
 **Created:** December 6, 2025
 **Priority:** HIGH - Critical for ranking success
@@ -73,7 +73,7 @@ Add to ALL major pages:
     "name": "How much does electric cab from Pune to Mumbai cost?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "GreenEVCabs charges ₹3,700 all-inclusive for Pune to Mumbai in luxury 7-seater electric SUV. This includes tolls, driver allowance, and parking with no hidden charges."
+      "text": "Shree Morya Cabs charges ₹3,700 all-inclusive for Pune to Mumbai in luxury 7-seater electric SUV. This includes tolls, driver allowance, and parking with no hidden charges."
     }
   }]
 }
@@ -106,17 +106,17 @@ Add to ALL major pages:
     "@type": "ListItem",
     "position": 1,
     "name": "Home",
-    "item": "https://greenevcabs.com/"
+    "item": "https://shreemoryacabs.com/"
   }, {
     "@type": "ListItem",
     "position": 2,
     "name": "Routes",
-    "item": "https://greenevcabs.com/routes"
+    "item": "https://shreemoryacabs.com/routes"
   }, {
     "@type": "ListItem",
     "position": 3,
     "name": "Pune to Mumbai Airport",
-    "item": "https://greenevcabs.com/routes/pune-to-mumbai-airport"
+    "item": "https://shreemoryacabs.com/routes/pune-to-mumbai-airport"
   }]
 }
 ```
@@ -205,9 +205,9 @@ Add to instructional blog posts:
 User-agent: *
 Allow: /
 
-Sitemap: https://greenevcabs.com/sitemap.xml
-Sitemap: https://greenevcabs.com/sitemap-blog.xml
-Sitemap: https://greenevcabs.com/sitemap-routes.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap-blog.xml
+Sitemap: https://shreemoryacabs.com/sitemap-routes.xml
 
 # Block admin and thank you pages
 Disallow: /admin/
@@ -261,9 +261,9 @@ Create internal linking hubs:
 **Hub 4: Comparison Pages**
 - Main hub: `/compare/` (create)
 - Links to:
-  - GreenEVCabs vs GrEL Cabs
+  - Shree Morya Cabs vs GrEL Cabs
   - Electric vs Diesel Cabs
-  - GreenEVCabs vs Ola/Uber
+  - Shree Morya Cabs vs Ola/Uber
   - Comparison calculator
 
 #### 2. Contextual Links in Content
@@ -274,7 +274,7 @@ Add 3-5 contextual links in every blog post/page:
 - Link to corporate page when mentioning business travel
 
 **Example:**
-"Our **[Kia Carens EV](/fleet/kia-carens-ev)** offers 400+ km range, perfect for **[Pune to Mumbai Airport](/routes/pune-to-mumbai-airport)** trips. Compare our pricing with **[other electric cab services](/greenevcabs-vs-competitors)**."
+"Our **[Kia Carens EV](/fleet/kia-carens-ev)** offers 400+ km range, perfect for **[Pune to Mumbai Airport](/routes/pune-to-mumbai-airport)** trips. Compare our pricing with **[other electric cab services](/shreemoryacabs-vs-competitors)**."
 
 #### 3. Related Content Sections
 Add to every page template:
@@ -305,7 +305,7 @@ Add to every page template:
 ```json
 {
   "@type": "ImageObject",
-  "contentUrl": "https://greenevcabs.com/images/kia-carens-ev.jpg",
+  "contentUrl": "https://shreemoryacabs.com/images/kia-carens-ev.jpg",
   "description": "Kia Carens EV 7-seater electric SUV for Pune-Mumbai cab service"
 }
 ```
@@ -383,7 +383,7 @@ Add to every page template:
 #### Step 1: Claim/Verify Google Business Profile
 
 **Business Info:**
-- **Business Name:** GreenEVCabs - Electric Cab Service Pune
+- **Business Name:** Shree Morya Cabs - Electric Cab Service Pune
 - **Category (Primary):** Taxi Service
 - **Category (Secondary):**
   - Airport Transportation Service
@@ -394,7 +394,7 @@ Add to every page template:
   - Mumbai (CSMIA Airport, Navi Mumbai Airport)
   - Outstation (within 300 km)
 - **Phone:** +91 74982 64215
-- **Website:** https://greenevcabs.com
+- **Website:** https://shreemoryacabs.com
 - **Booking URL:** WhatsApp link
 
 **Implementation Time:** 30 minutes
@@ -408,7 +408,7 @@ Add to every page template:
 
 1. **Business Description** (750 characters max)
 ```
-GreenEVCabs is Pune's premier 100% electric cab service specializing in Pune-Mumbai Airport transfers and outstation trips. Our luxury 7-seater electric SUVs (Kia Carens EV, BYD eMax 7) offer silent, eco-friendly travel at competitive rates starting from ₹3,700. We provide transparent pricing with no surge charges, professional drivers, 24/7 service, and zero emissions. Perfect for airport transfers, corporate travel, family trips, and weekend getaways. Serving all Pune areas including Hinjewadi, Wakad, Baner, Kothrud. Book instantly via WhatsApp or call. Licensed, insured, and committed to sustainable transportation.
+Shree Morya Cabs is Pune's premier 100% electric cab service specializing in Pune-Mumbai Airport transfers and outstation trips. Our luxury 7-seater electric SUVs (Kia Carens EV, BYD eMax 7) offer silent, eco-friendly travel at competitive rates starting from ₹3,700. We provide transparent pricing with no surge charges, professional drivers, 24/7 service, and zero emissions. Perfect for airport transfers, corporate travel, family trips, and weekend getaways. Serving all Pune areas including Hinjewadi, Wakad, Baner, Kothrud. Book instantly via WhatsApp or call. Licensed, insured, and committed to sustainable transportation.
 ```
 
 2. **Services** (Add all major services)
@@ -422,7 +422,7 @@ GreenEVCabs is Pune's premier 100% electric cab service specializing in Pune-Mum
    - Monthly Corporate Packages
 
 3. **Photos** (CRITICAL - businesses with photos get 42% more direction requests)
-   - **Logo:** Professional GreenEVCabs logo
+   - **Logo:** Professional Shree Morya Cabs logo
    - **Cover Photo:** Kia Carens EV on expressway
    - **Vehicle Photos:** All fleet (10+ photos)
      - Kia Carens EV exterior (3 angles)
@@ -500,10 +500,10 @@ Book Now: +91 74982 64215
 ### NAP (Name, Address, Phone) Consistency
 
 **Your NAP Details:**
-- **Name:** GreenEVCabs
+- **Name:** Shree Morya Cabs
 - **Address:** [Your registered business address - add if you have office]
 - **Phone:** +91 74982 64215
-- **Website:** https://greenevcabs.com
+- **Website:** https://shreemoryacabs.com
 
 **Critical Rule:** Use EXACT same NAP across all platforms
 
@@ -658,7 +658,7 @@ Book Now: +91 74982 64215
 
 **SMS Template:**
 ```
-Hi [Name], thank you for choosing GreenEVCabs!
+Hi [Name], thank you for choosing Shree Morya Cabs!
 
 Hope you enjoyed your [route] trip in our electric cab.
 
@@ -667,14 +667,14 @@ Review us here: [short-link]
 
 It takes just 1 minute and helps us serve you better.
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **WhatsApp Template:**
 ```
 🙏 Hi [Name],
 
-Thank you for traveling with GreenEVCabs!
+Thank you for traveling with Shree Morya Cabs!
 
 ✅ How was your experience with our electric cab service?
 
@@ -688,11 +688,11 @@ Thank you! 🌱
 
 **Email Template:**
 ```
-Subject: How was your GreenEVCabs experience?
+Subject: How was your Shree Morya Cabs experience?
 
 Hi [Name],
 
-Thank you for choosing GreenEVCabs for your [Pune to Mumbai Airport] trip!
+Thank you for choosing Shree Morya Cabs for your [Pune to Mumbai Airport] trip!
 
 We hope you enjoyed your journey in our luxury electric SUV with [Driver Name].
 
@@ -703,7 +703,7 @@ Would you mind taking 60 seconds to share your experience?
 Your feedback helps us improve and helps other travelers discover eco-friendly cab options.
 
 Best regards,
-GreenEVCabs Team
+Shree Morya Cabs Team
 
 P.S. As a thank you, you'll get priority booking for your next trip!
 ```
@@ -773,7 +773,7 @@ We're thrilled you enjoyed your [route] trip in our electric cab. Our driver [Dr
 We look forward to serving you again on your next journey!
 
 Best,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **For 4-Star Reviews:**
@@ -785,7 +785,7 @@ We're glad you had a good experience. We'd love to know what we could improve to
 Feel free to message us at [phone] with any suggestions.
 
 Best,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **For 1-3 Star Reviews:**
@@ -801,7 +801,7 @@ Our manager will contact you within 24 hours at [phone].
 Thank you for bringing this to our attention.
 
 Best,
-GreenEVCabs Team
+Shree Morya Cabs Team
 ```
 
 **Implementation Time:** 10 minutes/day
@@ -1070,8 +1070,8 @@ GreenEVCabs Team
 ## 🚨 COMMON MISTAKES TO AVOID
 
 1. **Keyword Stuffing in GBP**
-   - ❌ "GreenEVCabs Electric Cab Taxi Service Pune Mumbai Best Cheap"
-   - ✅ "GreenEVCabs - Electric Cab Service Pune"
+   - ❌ "Shree Morya Cabs Electric Cab Taxi Service Pune Mumbai Best Cheap"
+   - ✅ "Shree Morya Cabs - Electric Cab Service Pune"
 
 2. **Buying Fake Reviews**
    - NEVER buy reviews on Fiverr/similar

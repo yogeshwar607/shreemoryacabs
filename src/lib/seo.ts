@@ -1,8 +1,8 @@
 import type { Vehicle } from '@/data/vehicles';
 import type { Route } from '@/data/routes';
 
-const SITE_URL = 'https://greenevcabs.com';
-const BUSINESS_NAME = 'GreenEVCabs';
+const SITE_URL = 'https://shreemoryacabs.com';
+const BUSINESS_NAME = 'Shree Morya Cabs';
 
 // Local Business Schema
 export function generateLocalBusinessSchema() {
@@ -14,7 +14,7 @@ export function generateLocalBusinessSchema() {
     image: `${SITE_URL}/og-image.jpg`,
     url: SITE_URL,
     telephone: '+917498264215',
-    email: 'greenevcabs@gmail.com',
+    email: 'shreemoryacabs@gmail.com',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -44,9 +44,9 @@ export function generateLocalBusinessSchema() {
       closes: '23:59',
     },
     sameAs: [
-      'https://www.facebook.com/greenevcabs',
-      'https://www.instagram.com/greenevcabs',
-      'https://twitter.com/greenevcabs',
+      'https://www.facebook.com/shreemoryacabs',
+      'https://www.instagram.com/shreemoryacabs',
+      'https://twitter.com/shreemoryacabs',
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -167,7 +167,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+917498264215',
       contactType: 'Customer Service',
-      email: 'greenevcabs@gmail.com',
+      email: 'shreemoryacabs@gmail.com',
       availableLanguage: ['English', 'Hindi', 'Marathi'],
     },
     address: {
@@ -179,9 +179,9 @@ export function generateOrganizationSchema() {
       addressCountry: 'IN',
     },
     sameAs: [
-      'https://www.facebook.com/greenevcabs',
-      'https://www.instagram.com/greenevcabs',
-      'https://twitter.com/greenevcabs',
+      'https://www.facebook.com/shreemoryacabs',
+      'https://www.instagram.com/shreemoryacabs',
+      'https://twitter.com/shreemoryacabs',
     ],
   };
 }

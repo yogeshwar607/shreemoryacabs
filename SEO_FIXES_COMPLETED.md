@@ -1,4 +1,4 @@
-# ✅ SEO Fixes Completed - GreenEVCabs
+# ✅ SEO Fixes Completed - Shree Morya Cabs
 
 ## Date: October 30, 2025
 
@@ -9,7 +9,7 @@
 ### 1. ✅ Fixed Breadcrumb Schema "undefined" Bug
 **File:** `src/components/seo/Breadcrumbs.astro`
 
-**Issue:** Breadcrumb schema was generating URLs like `https://greenevcabs.comundefined` because route pages were passing `href` but component expected `url`.
+**Issue:** Breadcrumb schema was generating URLs like `https://shreemoryacabs.comundefined` because route pages were passing `href` but component expected `url`.
 
 **Fix:**
 - Updated component to accept both `href` and `url` properties

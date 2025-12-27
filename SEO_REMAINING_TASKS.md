@@ -37,11 +37,11 @@ postalCode: '411057',
 **Steps:**
 1. Go to google.com/business
 2. Click "Manage Now"
-3. Enter business name: "GreenEVCabs"
+3. Enter business name: "Shree Morya Cabs"
 4. Select category: "Taxi Service" or "Transportation Service"
 5. Add location: Use same address from schema
 6. Add phone: +91 74982 64215
-7. Add website: https://greenevcabs.com
+7. Add website: https://shreemoryacabs.com
 8. Add business hours: 24/7
 9. Add service areas:
    - Pune
@@ -124,10 +124,10 @@ postalCode: '411057',
 2. Create Google Review link shortener:
    - Get your Google Maps listing URL
    - Add `?review=1` at the end
-   - Use bitly or similar to create: greenevcabs.com/review
+   - Use bitly or similar to create: shreemoryacabs.com/review
 3. Add review request to post-trip WhatsApp message:
    ```
-   Thanks for traveling with GreenEVCabs!
+   Thanks for traveling with Shree Morya Cabs!
    Enjoyed your trip? Leave us a review: [link]
    ```
 4. Target: 25 reviews in Month 1, 100 reviews in 6 months
@@ -256,10 +256,10 @@ Submit business to these directories:
 - [ ] Foursquare
 
 **Ensure NAP consistency:**
-- Name: GreenEVCabs
+- Name: Shree Morya Cabs
 - Address: [Your address from schema]
 - Phone: +91 74982 64215
-- Website: https://greenevcabs.com
+- Website: https://shreemoryacabs.com
 
 ---
 
@@ -276,7 +276,7 @@ Create these pages:
    - Feature comparison
    - Real customer scenarios
 
-2. **`/compare/greenevcabs-vs-ola-outstation`**
+2. **`/compare/shreemoryacabs-vs-ola-outstation`**
    - Pricing comparison
    - Zero surge benefit
    - Service quality

@@ -1,4 +1,4 @@
-# GreenEVCabs - Claude CLI Export Package
+# Shree Morya Cabs - Claude CLI Export Package
 
 This is a complete project specification for Claude CLI to generate all files.
 
@@ -7,7 +7,7 @@ This is a complete project specification for Claude CLI to generate all files.
 ## PROJECT STRUCTURE
 
 ```
-greenevcabs/
+shreemoryacabs/
 ├── package.json
 ├── astro.config.mjs
 ├── tailwind.config.mjs
@@ -58,7 +58,7 @@ greenevcabs/
 ### package.json
 ```json
 {
-  "name": "greenevcabs",
+  "name": "shreemoryacabs",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -99,7 +99,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://greenevcabs.com',
+  site: 'https://shreemoryacabs.com',
   integrations: [
     react(),
     tailwind({
@@ -184,7 +184,7 @@ export default {
 
 ### .env.example
 ```
-PUBLIC_SITE_URL=https://greenevcabs.com
+PUBLIC_SITE_URL=https://shreemoryacabs.com
 PUBLIC_WHATSAPP_NUMBER=917498264215
 PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
@@ -209,7 +209,7 @@ dist/
 User-agent: *
 Allow: /
 
-Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
 
 Crawl-delay: 1
 ```
@@ -220,11 +220,11 @@ Crawl-delay: 1
 
 To generate this project using Claude CLI:
 
-1. Save this entire markdown file as `greenevcabs-project.md`
+1. Save this entire markdown file as `shreemoryacabs-project.md`
 
 2. Run Claude CLI with the following command:
 ```bash
-claude --project greenevcabs-project.md "Generate the complete GreenEVCabs project structure with all files. Create every file mentioned in the project structure section with the exact code provided. Include all components, pages, layouts, and configuration files."
+claude --project shreemoryacabs-project.md "Generate the complete Shree Morya Cabs project structure with all files. Create every file mentioned in the project structure section with the exact code provided. Include all components, pages, layouts, and configuration files."
 ```
 
 3. Or use it interactively:
@@ -233,14 +233,14 @@ claude --project greenevcabs-project.md "Generate the complete GreenEVCabs proje
 claude
 
 # Then paste:
-Read the file greenevcabs-project.md and generate all the files for the GreenEVCabs project. Create the complete directory structure and all code files as specified.
+Read the file shreemoryacabs-project.md and generate all the files for the Shree Morya Cabs project. Create the complete directory structure and all code files as specified.
 ```
 
 4. For individual file generation:
 ```bash
 # Generate specific components
-claude --project greenevcabs-project.md "Create the src/components/ui/button.tsx file"
-claude --project greenevcabs-project.md "Create the src/pages/index.astro file"
+claude --project shreemoryacabs-project.md "Create the src/components/ui/button.tsx file"
+claude --project shreemoryacabs-project.md "Create the src/pages/index.astro file"
 ```
 
 ---
@@ -287,7 +287,7 @@ If you have the artifact conversation accessible, you can reference specific art
 
 ```bash
 # Reference the artifacts from this conversation
-claude "Create all files from the GreenEVCabs project artifacts. Use artifact IDs: greenevcabs-project, greenevcabs-components, greenevcabs-pages, greenevcabs-dynamic-pages"
+claude "Create all files from the Shree Morya Cabs project artifacts. Use artifact IDs: shreemoryacabs-project, shreemoryacabs-components, shreemoryacabs-pages, shreemoryacabs-dynamic-pages"
 ```
 
 ---
@@ -298,8 +298,8 @@ If you prefer to generate files one at a time:
 
 ```bash
 # Configuration files
-claude "Create package.json for GreenEVCabs Astro project with React and Tailwind"
-claude "Create astro.config.mjs for GreenEVCabs with sitemap and React"
+claude "Create package.json for Shree Morya Cabs Astro project with React and Tailwind"
+claude "Create astro.config.mjs for Shree Morya Cabs with sitemap and React"
 claude "Create tailwind.config.mjs with dark mode and shadcn colors"
 claude "Create tsconfig.json for Astro with path aliases"
 
@@ -324,7 +324,7 @@ claude "Create src/components/layout/Footer.astro with contact info"
 claude "Create src/layouts/MainLayout.astro with SEO and dark mode"
 
 # Pages
-claude "Create src/pages/index.astro for GreenEVCabs homepage"
+claude "Create src/pages/index.astro for Shree Morya Cabs homepage"
 claude "Create src/pages/fleet/index.astro fleet listing page"
 claude "Create src/pages/fleet/[slug].astro dynamic vehicle pages"
 claude "Create src/pages/routes/index.astro routes listing page"
@@ -366,7 +366,7 @@ mkdir -p src/{components/{ui,react,layout},lib,data,layouts,pages/{fleet,routes}
 mkdir -p public/images/{vehicles,routes,og-images}
 
 # Then generate files
-claude --project greenevcabs-project.md "Generate all code files"
+claude --project shreemoryacabs-project.md "Generate all code files"
 ```
 
 **Issue: Dependencies not installing**
@@ -391,7 +391,7 @@ Save this as `setup.sh` and run after generation:
 ```bash
 #!/bin/bash
 
-echo "🚗 Setting up GreenEVCabs..."
+echo "🚗 Setting up Shree Morya Cabs..."
 
 # Install dependencies
 npm install
@@ -424,4 +424,4 @@ This export package contains:
 - ✅ Verification checklist
 - ✅ Troubleshooting guide
 
-Use this with Claude CLI to generate the entire GreenEVCabs project automatically!
+Use this with Claude CLI to generate the entire Shree Morya Cabs project automatically!

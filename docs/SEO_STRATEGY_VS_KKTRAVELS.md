@@ -90,7 +90,7 @@
 
 ### Critical SEO Gaps to Exploit
 
-| KK Travels Weakness | GreenEVCabs Opportunity | Impact Level |
+| KK Travels Weakness | Shree Morya Cabs Opportunity | Impact Level |
 |---------------------|------------------------|--------------|
 | Single-page website | Multi-page site with 50+ pages | 🔴 CRITICAL |
 | No blog content | 20+ blogs in 90 days | 🔴 CRITICAL |
@@ -101,7 +101,7 @@
 | Weak local SEO | Hyperlocal content for 20+ Pune/Mumbai areas | 🟠 HIGH |
 | No schema markup | Rich snippets for every page | 🟡 MEDIUM |
 | Old booking process | WhatsApp-first, frictionless booking | 🟡 MEDIUM |
-| No comparison content | "KK Travels vs GreenEVCabs" content | 🟡 MEDIUM |
+| No comparison content | "KK Travels vs Shree Morya Cabs" content | 🟡 MEDIUM |
 
 ---
 
@@ -119,7 +119,7 @@
 - Long-tail: "pune airport to hinjewadi cab"
 - Long-tail: "navi mumbai airport to pune taxi"
 
-**GreenEVCabs Content to Create:**
+**Shree Morya Cabs Content to Create:**
 - Dedicated page: `/mumbai-airport-to-pune-electric-cab`
 - Dedicated page: `/pune-airport-cab-service`
 - Dedicated page: `/navi-mumbai-airport-to-pune-cab`
@@ -134,7 +134,7 @@
 - Long-tail: "monthly car rental for employees pune"
 - Long-tail: "corporate airport transfer pune"
 
-**GreenEVCabs Content to Create:**
+**Shree Morya Cabs Content to Create:**
 - Service page: `/corporate-electric-cab-pune`
 - Service page: `/corporate-car-rental-mumbai-pune`
 - Blog: "Corporate Travel Made Green: Why Companies Are Switching to Electric Cabs"
@@ -150,7 +150,7 @@
 - Long-tail: "electric cab outstation pune"
 - Long-tail: "weekend getaway cab from pune"
 
-**GreenEVCabs Content to Create:**
+**Shree Morya Cabs Content to Create:**
 - Route pages: `/pune-to-shirdi-electric-cab`, `/pune-to-lonavala-cab`, `/pune-to-mahabaleshwar-cab`
 - Blog: "Top 10 Weekend Getaways from Pune by Electric Cab"
 - Blog: "Pune to Shirdi Temple Visit: Complete Guide & Best Cab Service"
@@ -163,7 +163,7 @@
 - Primary: "half day cab pune"
 - Long-tail: "hourly cab rental pune"
 
-**GreenEVCabs Content to Create:**
+**Shree Morya Cabs Content to Create:**
 - Service page: `/local-cab-pune-full-day-rental`
 - Service page: `/hourly-electric-cab-rental-pune`
 - Blog: "Full Day Pune City Tour by Electric Cab: Itinerary & Cost"
@@ -209,7 +209,7 @@
 - "pune airport to hinjewadi distance and cost"
 
 **Comparison Keywords**
-- "greenevcabs vs kk travels"
+- "shreemoryacabs vs kk travels"
 - "electric cab vs diesel cab pune"
 - "kk travels vs ola vs uber pune"
 - "best cab service pune comparison"
@@ -238,7 +238,7 @@
    - Content: Terminal-wise pickup locations, flight tracking, pricing comparison vs KK Travels
    - Schema: Service + FAQ + HowTo
    - Word count: 3,000+
-   - Comparison table: GreenEVCabs (₹3,700) vs KK Travels (₹4,500+) vs Ola/Uber (surge pricing)
+   - Comparison table: Shree Morya Cabs (₹3,700) vs KK Travels (₹4,500+) vs Ola/Uber (surge pricing)
 
 2. **`/pune-airport-cab-service.astro`**
    - Target: "pune airport cab service", "pune airport taxi"
@@ -258,7 +258,7 @@
    - Target: "mumbai airport to pune travel", "how to reach pune from mumbai airport"
    - Content: 5,000+ words comprehensive guide
      - All transport options comparison (cab, bus, train, flight)
-     - Cab pricing comparison (GreenEVCabs vs KK Travels vs Uber/Ola)
+     - Cab pricing comparison (Shree Morya Cabs vs KK Travels vs Uber/Ola)
      - Terminal-wise pickup instructions
      - Best time to travel
      - Toll plaza details
@@ -285,7 +285,7 @@
    - Target: "corporate cab service pune", "employee transport pune"
    - Content:
      - Monthly packages for IT companies (Hinjewadi, Wakad, Baner)
-     - Cost comparison: In-house fleet vs KK Travels vs GreenEVCabs
+     - Cost comparison: In-house fleet vs KK Travels vs Shree Morya Cabs
      - CSR benefits of electric fleet (ESG reporting)
      - GST invoicing
      - Dedicated driver option
@@ -359,7 +359,7 @@
     - Target: "weekend getaways from pune", "pune nearby places cab"
     - Content: 5,000+ words mega guide
       - 10 destinations with complete itinerary
-      - Pricing for each route with GreenEVCabs
+      - Pricing for each route with Shree Morya Cabs
       - Best time to visit
       - 2-day vs day trip options
       - Eco-tourism angle (electric cab for nature trips)
@@ -415,7 +415,7 @@
 
 **Blogs to Create:**
 
-19. **`/blog/greenevcabs-vs-kk-travels-honest-comparison.astro`**
+19. **`/blog/shreemoryacabs-vs-kk-travels-honest-comparison.astro`**
     - Target: "kk travels review", "best cab pune comparison"
     - Content: 3,500+ words HONEST comparison
       - Price comparison table
@@ -423,14 +423,14 @@
       - Technology comparison (EV vs diesel, modern vs traditional)
       - Pros and cons of BOTH services (be fair!)
       - When to choose KK Travels (Pan-India network, corporate accounts)
-      - When to choose GreenEVCabs (Pune-Mumbai, eco-friendly, transparent pricing)
+      - When to choose Shree Morya Cabs (Pune-Mumbai, eco-friendly, transparent pricing)
     - **Tone:** Respectful, factual, not bashing competitor
     - Schema: Article + FAQ + BreadcrumbList
 
 20. **`/blog/pune-cab-service-comparison-2025.astro`**
     - Target: "best cab service pune", "pune cab comparison"
     - Content: 4,500+ words
-      - Compare 6 services: GreenEVCabs, KK Travels, Ola, Uber, Savaari, Meru
+      - Compare 6 services: Shree Morya Cabs, KK Travels, Ola, Uber, Savaari, Meru
       - Comparison matrix:
         - Pricing transparency
         - Surge pricing
@@ -450,7 +450,7 @@
       - Safety considerations
       - Time efficiency
       - When to choose which option
-      - GreenEVCabs doesn't offer shared (position as premium, private always)
+      - Shree Morya Cabs doesn't offer shared (position as premium, private always)
     - Schema: Article + FAQ
 
 ---
@@ -610,7 +610,7 @@
   "availability": "https://schema.org/InStock",
   "validFrom": "2025-01-01",
   "priceValidUntil": "2025-12-31",
-  "url": "https://greenevcabs.com/pune-mumbai-electric-cab"
+  "url": "https://shreemoryacabs.com/pune-mumbai-electric-cab"
 }
 ```
 
@@ -723,12 +723,12 @@ All 6 pages link to each other + to booking page
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://greenevcabs.com/</loc>
+    <loc>https://shreemoryacabs.com/</loc>
     <lastmod>2025-01-15</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://greenevcabs.com/pune-mumbai-electric-cab</loc>
+    <loc>https://shreemoryacabs.com/pune-mumbai-electric-cab</loc>
     <lastmod>2025-01-15</lastmod>
     <priority>0.9</priority>
   </url>
@@ -742,7 +742,7 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
-Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
 ```
 
 ---
@@ -777,7 +777,7 @@ Sitemap: https://greenevcabs.com/sitemap.xml
 
 **National Directories:**
 1. **Justdial** - https://www.justdial.com
-   - Submit GreenEVCabs listing for Pune & Mumbai
+   - Submit Shree Morya Cabs listing for Pune & Mumbai
    - Category: Electric Cab Service, Taxi Service
    - Include pricing, WhatsApp number, website
 
@@ -814,7 +814,7 @@ Sitemap: https://greenevcabs.com/sitemap.xml
 
 **NAP Consistency (Critical!):**
 Ensure exact same business information across ALL directories:
-- **Name:** GreenEVCabs (exact spelling)
+- **Name:** Shree Morya Cabs (exact spelling)
 - **Address:** Hinjewadi Phase 1, Pune, Maharashtra 411057
 - **Phone:** +91 74982 64215
 
@@ -931,7 +931,7 @@ Example: **`/blog/hinjewadi-pune-complete-area-guide.astro`**
 - **Partnerships:** Partner with hotels, get listed on their website
 - **Press Releases:** Send to local media every month (new routes, milestones)
 - **Resource Pages:** Get listed on "Transportation in Pune" resource pages
-- **Unlinked Mentions:** Use Google Alerts to find mentions of GreenEVCabs without link, reach out to add link
+- **Unlinked Mentions:** Use Google Alerts to find mentions of Shree Morya Cabs without link, reach out to add link
 
 ---
 
@@ -988,7 +988,7 @@ Subject: Guest Post Pitch: [Relevant Topic] for [Blog Name]
 
 Hi [Editor Name],
 
-I'm [Your Name] from GreenEVCabs, Pune's first all-electric cab service. I've been reading your blog and particularly enjoyed your recent article on [specific article].
+I'm [Your Name] from Shree Morya Cabs, Pune's first all-electric cab service. I've been reading your blog and particularly enjoyed your recent article on [specific article].
 
 I'd like to contribute a guest post on "[Proposed Topic]" which would be relevant to your audience because [reason].
 
@@ -1000,7 +1000,7 @@ Would you be interested? I'm happy to discuss other topic ideas as well.
 
 Best regards,
 [Your Name]
-GreenEVCabs
+Shree Morya Cabs
 ```
 
 ---
@@ -1010,9 +1010,9 @@ GreenEVCabs
 **Week 5-6: Local News & Media (3-5 links)**
 
 **Press Release Topics:**
-1. "Pune-Based GreenEVCabs Completes 10,000 Zero-Emission Trips"
+1. "Pune-Based Shree Morya Cabs Completes 10,000 Zero-Emission Trips"
 2. "Electric Cab Service Saves Pune-Mumbai Commuters ₹1,300 Per Trip"
-3. "GreenEVCabs Partners with [Corporate Name] for Employee Transport"
+3. "Shree Morya Cabs Partners with [Corporate Name] for Employee Transport"
 4. "New Route Launch: Electric Cabs to Shirdi Temple"
 
 **Media Pitch Template:**
@@ -1023,7 +1023,7 @@ Hi [Journalist Name],
 
 I noticed your recent coverage of [related topic]. I wanted to share a story that might interest your readers.
 
-GreenEVCabs is Pune's first all-electric intercity cab service, and we're seeing rapid adoption:
+Shree Morya Cabs is Pune's first all-electric intercity cab service, and we're seeing rapid adoption:
 - 10,000+ trips completed in [X] months
 - ₹1.2 crore in fuel savings for customers
 - 850 tons of CO2 emissions prevented
@@ -1059,7 +1059,7 @@ Subject: Partnership Opportunity: Premium Electric Cab Service
 
 Dear [Hotel Manager / Corporate Admin],
 
-I'm reaching out from GreenEVCabs to explore a partnership for your guests'/employees' transportation needs.
+I'm reaching out from Shree Morya Cabs to explore a partnership for your guests'/employees' transportation needs.
 
 What we offer:
 - Premium 7-seater electric SUVs (Kia Carens EV, BYD eMax 7)
@@ -1079,7 +1079,7 @@ Would you be open to a 15-minute call to discuss this?
 
 Best regards,
 [Your Name]
-GreenEVCabs
+Shree Morya Cabs
 +91 74982 64215
 ```
 
@@ -1104,14 +1104,14 @@ Hi [Webmaster],
 
 I came across your excellent resource page on [topic] at [URL]. It's really comprehensive!
 
-I noticed you've included [existing resource]. You might also want to consider adding GreenEVCabs - we're Pune's first all-electric intercity cab service.
+I noticed you've included [existing resource]. You might also want to consider adding Shree Morya Cabs - we're Pune's first all-electric intercity cab service.
 
 We'd be a valuable addition because:
 - Only electric cab service for Pune-Mumbai route
 - Fixed pricing (₹3,700) with no surge
 - Featured in [news outlet] for sustainable transportation
 
-Here's our page that would be relevant: https://greenevcabs.com/pune-mumbai-electric-cab
+Here's our page that would be relevant: https://shreemoryacabs.com/pune-mumbai-electric-cab
 
 Either way, thanks for putting together such a helpful resource!
 
@@ -1162,7 +1162,7 @@ Best,
 
 **Competitive Advantage Over KK Travels:**
 - KK Travels: Multiple forms, login required, complex process
-- GreenEVCabs: 1-click WhatsApp, no login, instant confirmation ✅
+- Shree Morya Cabs: 1-click WhatsApp, no login, instant confirmation ✅
 
 ---
 
@@ -1201,7 +1201,7 @@ Best,
 "Still planning your Pune-Mumbai trip? Book now at ₹3,700 - ₹500 cheaper than others! No surge, no hidden charges."
 
 **Ad 2: Social Proof**
-"Join 10,000+ happy travelers who chose GreenEVCabs. 4.9★ rated electric cab service."
+"Join 10,000+ happy travelers who chose Shree Morya Cabs. 4.9★ rated electric cab service."
 
 **Ad 3: Urgency**
 "Don't wait for surge pricing! Book your electric cab now at fixed ₹3,700."
@@ -1306,7 +1306,7 @@ Best,
 
 #### Week 7-8: Comparison Content
 **Create Comparison Content:**
-- [ ] `/blog/greenevcabs-vs-kk-travels-honest-comparison.astro` (KEY!)
+- [ ] `/blog/shreemoryacabs-vs-kk-travels-honest-comparison.astro` (KEY!)
 - [ ] `/blog/pune-cab-service-comparison-2025.astro`
 - [ ] `/blog/shared-cab-vs-private-cab-pune-mumbai.astro`
 - [ ] `/blog/electric-cab-vs-diesel-cab-cost-analysis.astro` (deeper dive)
@@ -1428,7 +1428,7 @@ Best,
 - Blog-to-booking conversion rate: 5%+
 
 **Top Performing Content (expect these to win):**
-1. "GreenEVCabs vs KK Travels Comparison"
+1. "Shree Morya Cabs vs KK Travels Comparison"
 2. "Mumbai Airport to Pune Complete Guide"
 3. "Top 10 Weekend Getaways from Pune"
 4. "How to Save ₹500 on Pune-Mumbai Cab"
@@ -1598,7 +1598,7 @@ Best,
 | Week 5 | Pune to Mahabaleshwar Cab | Page | pune to mahabaleshwar |
 | Week 6 | Weekend Getaways Guide | Blog | weekend trips pune |
 | Week 6 | Shirdi Temple Complete Guide | Blog | pune to shirdi guide |
-| Week 7 | GreenEVCabs vs KK Travels | Blog | kk travels comparison |
+| Week 7 | Shree Morya Cabs vs KK Travels | Blog | kk travels comparison |
 | Week 7 | Pune Cab Service Comparison | Blog | best cab pune |
 | Week 8 | Local Cab Full Day Rental | Page | full day cab pune |
 | Week 8 | Shared vs Private Cab | Blog | shared cab pune mumbai |

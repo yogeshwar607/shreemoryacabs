@@ -1,4 +1,4 @@
-# GreenEVCabs Airport Transfer SEO Strategy
+# Shree Morya Cabs Airport Transfer SEO Strategy
 
 ## Executive Summary
 Comprehensive SEO strategy focused on dominating airport transfer searches for Mumbai Airport, Navi Mumbai Airport, and Pune Airport with electric cab services.
@@ -144,7 +144,7 @@ Comprehensive SEO strategy focused on dominating airport transfer searches for M
 {
   "@type": "Service",
   "serviceType": "Airport Transfer Service",
-  "provider": "GreenEVCabs",
+  "provider": "Shree Morya Cabs",
   "areaServed": [
     "Chhatrapati Shivaji Maharaj International Airport",
     "Navi Mumbai International Airport",
@@ -152,7 +152,7 @@ Comprehensive SEO strategy focused on dominating airport transfer searches for M
   ],
   "availableChannel": {
     "@type": "ServiceChannel",
-    "serviceUrl": "https://greenevcabs.com/services/airport-transfers",
+    "serviceUrl": "https://shreemoryacabs.com/services/airport-transfers",
     "availableLanguage": ["English", "Hindi", "Marathi"]
   }
 }
@@ -218,7 +218,7 @@ Comprehensive SEO strategy focused on dominating airport transfer searches for M
 ### Video Content Ideas
 - Airport pickup demonstration
 - Meet & greet service walkthrough
-- How to identify GreenEVCabs at airport
+- How to identify Shree Morya Cabs at airport
 - Customer testimonials at airports
 - Inside look at electric cab comfort
 
@@ -463,4 +463,4 @@ Comprehensive SEO strategy focused on dominating airport transfer searches for M
    - Preferred vehicle selection
    - Invoice generation
 
-This comprehensive airport-focused SEO strategy will position GreenEVCabs as the premier electric cab service for all airport transfers in Maharashtra!
+This comprehensive airport-focused SEO strategy will position Shree Morya Cabs as the premier electric cab service for all airport transfers in Maharashtra!

@@ -323,7 +323,7 @@ Each locality needs to target these keyword patterns:
 ### Page Structure (2,500-3,500 words per page)
 
 #### Section 1: Hero (Above the Fold)
-- **H1:** `Electric Cab Service {Locality} | ₹X,XXX Mumbai Airport | 24/7 - GreenEVCabs`
+- **H1:** `Electric Cab Service {Locality} | ₹X,XXX Mumbai Airport | 24/7 - Shree Morya Cabs`
 - **Tagline:** Premium electric cab service from {Locality} to Mumbai Airport, Pune Airport, and all destinations
 - **Quick Stats:** Price, Distance, Rating, Coverage areas
 - **CTA:** WhatsApp booking + Call button
@@ -436,13 +436,13 @@ Internal links to:
 
 #### Title Tag (55-60 characters)
 ```
-Electric Cab Service {Locality} ₹{Price} | Airport | 24/7 - GreenEVCabs
+Electric Cab Service {Locality} ₹{Price} | Airport | 24/7 - Shree Morya Cabs
 ```
 
 **Examples:**
-- `Electric Cab Service Ravet ₹3,700 | Mumbai Airport | 24/7 - GreenEVCabs`
-- `Electric Cab Service PCMC ₹3,600 | Airport Drop | 24/7 - GreenEVCabs`
-- `Electric Cab Service Aundh ₹3,700 | Mumbai Airport | 24/7 - GreenEVCabs`
+- `Electric Cab Service Ravet ₹3,700 | Mumbai Airport | 24/7 - Shree Morya Cabs`
+- `Electric Cab Service PCMC ₹3,600 | Airport Drop | 24/7 - Shree Morya Cabs`
+- `Electric Cab Service Aundh ₹3,700 | Mumbai Airport | 24/7 - Shree Morya Cabs`
 
 #### Meta Description (150-160 characters)
 ```
@@ -543,7 +543,7 @@ Each locality page should include:
   "serviceType": "Electric Cab Service from {Locality} to Mumbai Airport",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "GreenEVCabs",
+    "name": "Shree Morya Cabs",
     "telephone": "+91-74982-64215"
   },
   "areaServed": {
@@ -1198,7 +1198,7 @@ Each locality page needs unique angles:
 
 ## 22. Conclusion
 
-This SEO domination plan provides a systematic approach to capturing long-tail keyword traffic from 7 key Pune localities for airport drop services. By creating comprehensive, locality-specific content pages optimized for local search, GreenEVCabs can establish authority in these under-served markets and capture high-intent booking traffic.
+This SEO domination plan provides a systematic approach to capturing long-tail keyword traffic from 7 key Pune localities for airport drop services. By creating comprehensive, locality-specific content pages optimized for local search, Shree Morya Cabs can establish authority in these under-served markets and capture high-intent booking traffic.
 
 **Key Success Factors:**
 1. **Comprehensive Content:** 2,500-3,500 words per locality with unique angles
@@ -1214,7 +1214,7 @@ This SEO domination plan provides a systematic approach to capturing long-tail k
 - **Phase 3 (Weeks 5-6):** Upgrade existing pages - Maximize existing assets
 - **Phase 4-5 (Weeks 7-12):** Route pages and hyperlocal blogs - Long-tail domination
 
-By executing this plan systematically, GreenEVCabs can achieve SEO domination for locality-based airport drop services in Pune within 6 months, resulting in significant organic traffic and booking growth.
+By executing this plan systematically, Shree Morya Cabs can achieve SEO domination for locality-based airport drop services in Pune within 6 months, resulting in significant organic traffic and booking growth.
 
 ---
 

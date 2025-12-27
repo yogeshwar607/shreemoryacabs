@@ -1,5 +1,5 @@
 # SEO Keyword Competitive Intelligence Report
-## GreenEVCabs vs Competitor Rankings
+## Shree Morya Cabs vs Competitor Rankings
 **Date:** December 2025
 **Analysis Scope:** Pune-Mumbai Electric Cab Service Keywords
 
@@ -15,7 +15,7 @@
   - GrEL Cabs (Position 1-3 estimated)
   - Local directories
   - Google Business results
-- **GreenEVCabs Status:** Not in top 10 (low visibility)
+- **Shree Morya Cabs Status:** Not in top 10 (low visibility)
 - **Difficulty:** High
 - **Opportunity Score:** 4/10 (Too competitive for new site)
 - **Strategy:** Not recommended as primary target. Focus on long-tail variants.
@@ -28,7 +28,7 @@
   - OLA
   - Uber
   - Traditional operators (MakeMyTrip, etc.)
-- **GreenEVCabs Status:** Not visible
+- **Shree Morya Cabs Status:** Not visible
 - **Difficulty:** Very High
 - **Opportunity Score:** 2/10 (Too broad, too competitive)
 - **Strategy:** Skip. These operators have massive authority. Unwinnable territory.
@@ -42,7 +42,7 @@
   - Kesari Nandan
   - OneWay, budget operators
   - **GrEL not visible** (interesting gap!)
-- **GreenEVCabs Status:** Opportunity to enter top 10
+- **Shree Morya Cabs Status:** Opportunity to enter top 10
 - **Difficulty:** Medium-High
 - **Opportunity Score:** 7/10 (Excellent opportunity)
 - **Strategy:** PRIMARY TARGET
@@ -60,7 +60,7 @@
   - KK Travels
   - OneWay.cab
   - Budget operators
-- **GreenEVCabs Status:** Not visible
+- **Shree Morya Cabs Status:** Not visible
 - **Difficulty:** Medium
 - **Opportunity Score:** 6/10 (Good opportunity)
 - **Strategy:** Secondary target
@@ -73,14 +73,14 @@
 
 ### Category B: Comparison Keywords (High Intent)
 
-#### 5. "GrEL vs GreenEVCabs" OR "GrEL alternative"
+#### 5. "GrEL vs Shree Morya Cabs" OR "GrEL alternative"
 - **Search Volume:** Very Low (10-50 searches/month, growing)
 - **Current Top Rankers:** None explicitly
-- **GreenEVCabs Status:** Opportunity to OWN this phrase
+- **Shree Morya Cabs Status:** Opportunity to OWN this phrase
 - **Difficulty:** Very Low
 - **Opportunity Score:** 9/10 (BEST OPPORTUNITY)
 - **Strategy:** ATTACK
-  - Create: `/greenevcabs-vs-grel`
+  - Create: `/shreemoryacabs-vs-grel`
   - Direct comparison, feature-by-feature
   - Highlight transparency, pricing
   - Target your own name in queries
@@ -95,7 +95,7 @@
   - OneWay.cab
   - Budget aggregators
   - **GrEL not visible** (not their positioning)
-- **GreenEVCabs Status:** Strong opportunity
+- **Shree Morya Cabs Status:** Strong opportunity
 - **Difficulty:** Medium-Low
 - **Opportunity Score:** 8/10 (Strong position for your pricing)
 - **Strategy:** ATTACK
@@ -112,7 +112,7 @@
 - **Current Top Rankers:**
   - GrEL Cabs
   - Local operators
-- **GreenEVCabs Status:** Not visible
+- **Shree Morya Cabs Status:** Not visible
 - **Difficulty:** Medium-High
 - **Opportunity Score:** 5/10 (Moderate, competitive)
 - **Strategy:** Secondary
@@ -127,7 +127,7 @@
 - **Current Top Rankers:**
   - General EV blogs
   - No local competitors positioned here
-- **GreenEVCabs Status:** MAJOR OPPORTUNITY
+- **Shree Morya Cabs Status:** MAJOR OPPORTUNITY
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10 (UNCONTESTED)
 - **Strategy:** CREATE IMMEDIATELY
@@ -145,7 +145,7 @@
 #### 9. "Hinjewadi to Mumbai airport electric cab"
 - **Search Volume:** Low (20-50 searches/month)
 - **Current Top Rankers:** None visible (gap!)
-- **GreenEVCabs Status:** PERFECT TARGET
+- **Shree Morya Cabs Status:** PERFECT TARGET
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10 (Uncontested niche)
 - **Strategy:** CREATE IMMEDIATELY
@@ -160,7 +160,7 @@
 #### 10. "Wakad to Mumbai airport electric cab"
 - **Search Volume:** Low (15-40 searches/month)
 - **Current Top Rankers:** None (gap!)
-- **GreenEVCabs Status:** PERFECT TARGET
+- **Shree Morya Cabs Status:** PERFECT TARGET
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:** Create immediately (same template as Hinjewadi)
@@ -170,7 +170,7 @@
 #### 11. "Kothrud to Mumbai airport electric cab"
 - **Search Volume:** Low (15-40 searches/month)
 - **Current Top Rankers:** None
-- **GreenEVCabs Status:** PERFECT TARGET
+- **Shree Morya Cabs Status:** PERFECT TARGET
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:** Create immediately
@@ -180,7 +180,7 @@
 #### 12. "Hadapsar to Mumbai airport electric cab"
 - **Search Volume:** Low (15-40 searches/month)
 - **Current Top Rankers:** None
-- **GreenEVCabs Status:** PERFECT TARGET
+- **Shree Morya Cabs Status:** PERFECT TARGET
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:** Create immediately
@@ -190,7 +190,7 @@
 #### 13. "Baner to Mumbai airport electric cab"
 - **Search Volume:** Low (15-40 searches/month)
 - **Current Top Rankers:** None
-- **GreenEVCabs Status:** PERFECT TARGET
+- **Shree Morya Cabs Status:** PERFECT TARGET
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:** Create immediately
@@ -204,7 +204,7 @@
 - **Current Top Rankers:**
   - OneWay.cab
   - Traditional operators
-- **GreenEVCabs Status:** Opportunity
+- **Shree Morya Cabs Status:** Opportunity
 - **Difficulty:** Medium
 - **Opportunity Score:** 6/10
 - **Strategy:** Secondary target
@@ -220,7 +220,7 @@
 - **Current Top Rankers:**
   - GrEL (pages visible in search)
   - Local operators
-- **GreenEVCabs Status:** Not visible
+- **Shree Morya Cabs Status:** Not visible
 - **Difficulty:** Medium-High
 - **Opportunity Score:** 5/10
 - **Strategy:** Secondary
@@ -237,7 +237,7 @@
   - OneWay.cab
   - Budget operator websites
   - **GrEL not visible** (no pricing shown!)
-- **GreenEVCabs Status:** STRONG OPPORTUNITY
+- **Shree Morya Cabs Status:** STRONG OPPORTUNITY
 - **Difficulty:** Medium
 - **Opportunity Score:** 8/10
 - **Strategy:**
@@ -251,7 +251,7 @@
 #### 17. "Is electric cab cheaper than diesel Pune"
 - **Search Volume:** Low-Medium (50-150 searches/month)
 - **Current Top Rankers:** General EV blogs, not local
-- **GreenEVCabs Status:** OPPORTUNITY
+- **Shree Morya Cabs Status:** OPPORTUNITY
 - **Difficulty:** Low
 - **Opportunity Score:** 9/10
 - **Strategy:**
@@ -265,7 +265,7 @@
 #### 18. "Can electric cab make Pune to Mumbai journey"
 - **Search Volume:** Low (20-50 searches/month)
 - **Current Top Rankers:** None visible
-- **GreenEVCabs Status:** PERFECT FOR FAQ
+- **Shree Morya Cabs Status:** PERFECT FOR FAQ
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:**
@@ -279,7 +279,7 @@
 #### 19. "What's included in electric cab fare Pune"
 - **Search Volume:** Low (30-70 searches/month)
 - **Current Top Rankers:** None
-- **GreenEVCabs Status:** OPPORTUNITY
+- **Shree Morya Cabs Status:** OPPORTUNITY
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:**
@@ -296,7 +296,7 @@
 - **Current Top Rankers:**
   - SKIL Cabs
   - Traditional operators
-- **GreenEVCabs Status:** OPPORTUNITY
+- **Shree Morya Cabs Status:** OPPORTUNITY
 - **Difficulty:** Medium
 - **Opportunity Score:** 7/10 (High-value segment)
 - **Strategy:**
@@ -312,7 +312,7 @@
 - **Current Top Rankers:**
   - Local options
   - IT park directories
-- **GreenEVCabs Status:** Opportunity
+- **Shree Morya Cabs Status:** Opportunity
 - **Difficulty:** Low-Medium
 - **Opportunity Score:** 7/10
 - **Strategy:**
@@ -325,7 +325,7 @@
 #### 22. "Bulk electric cab booking Pune Mumbai"
 - **Search Volume:** Low (30-80 searches/month)
 - **Current Top Rankers:** None visible
-- **GreenEVCabs Status:** PERFECT FOR CORPORATE
+- **Shree Morya Cabs Status:** PERFECT FOR CORPORATE
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10 (High intent, low competition)
 - **Strategy:**
@@ -342,7 +342,7 @@
 #### 23. "Kia Carens EV Pune"
 - **Search Volume:** Very Low (<30 searches/month)
 - **Current Top Rankers:** None (vehicle-specific)
-- **GreenEVCabs Status:** UNIQUE OPPORTUNITY
+- **Shree Morya Cabs Status:** UNIQUE OPPORTUNITY
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10 (No competition)
 - **Strategy:**
@@ -357,7 +357,7 @@
 #### 24. "BYD e-Max 7 seat cab Pune"
 - **Search Volume:** Very Low (<30 searches/month)
 - **Current Top Rankers:** None
-- **GreenEVCabs Status:** UNIQUE
+- **Shree Morya Cabs Status:** UNIQUE
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:**
@@ -371,7 +371,7 @@
 #### 25. "7 seater electric cab Pune"
 - **Search Volume:** Low (30-80 searches/month)
 - **Current Top Rankers:** None (gap!)
-- **GreenEVCabs Status:** PERFECT POSITION
+- **Shree Morya Cabs Status:** PERFECT POSITION
 - **Difficulty:** Very Low
 - **Opportunity Score:** 10/10
 - **Strategy:**
@@ -392,7 +392,7 @@
 
 | Keyword | Volume | Difficulty | Opportunity | Content Type | Timeline |
 |---------|--------|-----------|-------------|--------------|----------|
-| GrEL vs GreenEVCabs | Very Low | Very Low | 10/10 | Comparison page | 1 week |
+| GrEL vs Shree Morya Cabs | Very Low | Very Low | 10/10 | Comparison page | 1 week |
 | Electric cab vs diesel Pune | Low | Very Low | 10/10 | Blog post | 1 week |
 | Hinjewadi to Mumbai airport EV cab | Low | Very Low | 10/10 | Location page | 1 week |
 | 7 seater electric cab Pune | Low | Very Low | 10/10 | Service page | 1 week |
@@ -441,7 +441,7 @@
 ## 3. CONTENT CREATION CALENDAR (90 Days)
 
 ### Phase 1: Weeks 1-2 (Tier 1 Content)
-- [ ] Create: `/greenevcabs-vs-grel` comparison page
+- [ ] Create: `/shreemoryacabs-vs-grel` comparison page
 - [ ] Create: `/electric-cab-vs-diesel-pune` blog post
 - [ ] Create: `/hinjewadi-to-mumbai-airport-electric-cab` location page
 - [ ] Create: `/7-seater-electric-cab-pune` service page
@@ -614,7 +614,7 @@
 **Group A: Priority Keywords (Track Weekly)**
 1. Electric cab Pune to Mumbai - Current position? Target: Top 10
 2. Cheapest electric cab Pune - Current position? Target: Top 5
-3. GrEL vs GreenEVCabs - Current position? Target: #1
+3. GrEL vs Shree Morya Cabs - Current position? Target: #1
 4. 7 seater electric cab Pune - Current position? Target: #1
 5. Hinjewadi to Mumbai airport EV - Current position? Target: #1
 
@@ -634,7 +634,7 @@
 
 ## 8. QUICK WIN CHECKLIST (This Week)
 
-- [ ] Create `/greenevcabs-vs-grel` page (target: rank #1 within 2 weeks)
+- [ ] Create `/shreemoryacabs-vs-grel` page (target: rank #1 within 2 weeks)
 - [ ] Add FAQ schema to FAQ page
 - [ ] Create Google Business Profile (if missing)
 - [ ] Submit sitemap to Google Search Console
@@ -651,7 +651,7 @@
 
 ### Auto-Complete Opportunities (What Google Suggests)
 
-Based on competitive analysis, GreenEVCabs should target:
+Based on competitive analysis, Shree Morya Cabs should target:
 
 ```
 Electric cab Pune...
@@ -718,7 +718,7 @@ Electric car rental Pune...
 ### Priority Actions (Next 30 Days)
 
 **Must-Do:** Create these 5 pages
-1. `/greenevcabs-vs-grel` - Rank #1 within 2 weeks
+1. `/shreemoryacabs-vs-grel` - Rank #1 within 2 weeks
 2. `/electric-cab-vs-diesel-pune` - Rank #1 within 3 weeks
 3. `/7-seater-electric-cab-pune` - Rank #1 within 2 weeks
 4. `/hinjewadi-to-mumbai-airport-electric-cab` - Rank #1 within 2 weeks

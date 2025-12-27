@@ -1,4 +1,4 @@
-# Schema Validation Report - GreenEVCabs
+# Schema Validation Report - Shree Morya Cabs
 
 **Generated:** 2025-12-26
 **Pages Analyzed:** 3 sample pages (HowTo, FAQPage, Article)
@@ -90,8 +90,8 @@ All tested pages contain properly structured JSON-LD schema markup compliant wit
 - `description`: Present
 - `datePublished`: "2025-12-26"
 - `dateModified`: "2025-12-26"
-- `author`: Organization (GreenEVCabs)
-- `publisher`: Organization (GreenEVCabs)
+- `author`: Organization (Shree Morya Cabs)
+- `publisher`: Organization (Shree Morya Cabs)
 
 ### ⚠️ Missing Optional Fields
 | Field | Status | Impact |
@@ -108,7 +108,7 @@ All tested pages contain properly structured JSON-LD schema markup compliant wit
    ```json
    "image": {
      "@type": "ImageObject",
-     "url": "https://greenevcabs.hello-22d.workers.dev/images/monsoon-travel-nmia.jpg",
+     "url": "https://shreemoryacabs.hello-22d.workers.dev/images/monsoon-travel-nmia.jpg",
      "width": 1200,
      "height": 630
    }
@@ -148,7 +148,7 @@ All tested pages contain properly structured JSON-LD schema markup compliant wit
       "@type": "ListItem",
       "position": 1,
       "name": "Blog",
-      "item": "https://greenevcabs.hello-22d.workers.dev/blog"
+      "item": "https://shreemoryacabs.hello-22d.workers.dev/blog"
     },
     {
       "@type": "ListItem",
@@ -213,10 +213,10 @@ All tested pages contain properly structured JSON-LD schema markup compliant wit
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "GreenEVCabs",
-  "image": "https://greenevcabs.hello-22d.workers.dev/images/logo.png",
-  "@id": "https://greenevcabs.hello-22d.workers.dev",
-  "url": "https://greenevcabs.hello-22d.workers.dev",
+  "name": "Shree Morya Cabs",
+  "image": "https://shreemoryacabs.hello-22d.workers.dev/images/logo.png",
+  "@id": "https://shreemoryacabs.hello-22d.workers.dev",
+  "url": "https://shreemoryacabs.hello-22d.workers.dev",
   "telephone": "+919145499009",
   "priceRange": "₹₹",
   "address": {
@@ -237,8 +237,8 @@ All tested pages contain properly structured JSON-LD schema markup compliant wit
     "closes": "23:59"
   },
   "sameAs": [
-    "https://www.facebook.com/greenevcabs",
-    "https://www.linkedin.com/company/greenevcabs"
+    "https://www.facebook.com/shreemoryacabs",
+    "https://www.linkedin.com/company/shreemoryacabs"
   ]
 }
 ```

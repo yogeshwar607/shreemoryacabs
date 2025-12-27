@@ -12,7 +12,7 @@
 - **Market Size:** 4-5 million annual Pune-Mumbai transfers; 2-5% electric segment
 - **Competitive Intensity:** MODERATE - No dominant player yet
 - **Market Growth Rate:** 40-50% annually (EV adoption curve)
-- **GreenEVCabs Addressable Opportunity:** 400-2,500 trips annually (Year 1) = ₹1.5M-9.2M potential
+- **Shree Morya Cabs Addressable Opportunity:** 400-2,500 trips annually (Year 1) = ₹1.5M-9.2M potential
 
 ### Competitive Ranking
 
@@ -379,7 +379,7 @@ This analysis includes 4 comprehensive documents:
 
 ## CONCLUSION
 
-**Bottom Line:** GreenEVCabs operates in a **market opportunity sweet spot**:
+**Bottom Line:** Shree Morya Cabs operates in a **market opportunity sweet spot**:
 - Market is growing (40-50% annually)
 - No clear dominant player exists
 - GrEL is strong but NEW to Pune-Mumbai corridor

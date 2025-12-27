@@ -1,4 +1,4 @@
-# GreenEVCabs Keyword Strategy - Implementation Checklist
+# Shree Morya Cabs Keyword Strategy - Implementation Checklist
 
 ## Quick Reference: Top 25 Keywords to Target
 
@@ -50,7 +50,7 @@
 **Current H2s to Enhance:**
 ```
 CURRENT: "Why Choose Electric Cabs in Pune"
-ACTION: Add LSI - "Why Choose GreenEVCabs: Premium 7-Seater Electric Taxi Service"
+ACTION: Add LSI - "Why Choose Shree Morya Cabs: Premium 7-Seater Electric Taxi Service"
 KEYWORDS ADDED: 7-seater, electric taxi, service
 
 CURRENT: "Our Fleet of Premium Electric Vehicles"
@@ -72,8 +72,8 @@ KEYWORDS ADDED: pricing, booking, fleet
 
 **Recommendation:**
 ```
-Old: "Book premium electric cabs in Pune with GreenEVCabs..."
-New: "Book the cheapest premium electric cabs in Pune with GreenEVCabs.
+Old: "Book premium electric cabs in Pune with Shree Morya Cabs..."
+New: "Book the cheapest premium electric cabs in Pune with Shree Morya Cabs.
 Our fleet of 7-seater electric vehicles (Kia Carens EV & BYD E-MAX 7)
 provides eco-friendly, reliable taxi service 24/7 across Pune, Mumbai,
 and all three airports. Available for airport transfers, corporate travel,
@@ -111,7 +111,7 @@ and long-distance routes starting at ₹2,999."
 **Implementation for 5-10 images:**
 - Kia image: "7-seater electric cab Pune - Kia Carens EV with premium features"
 - BYD image: "Luxury electric taxi Pune - BYD E-MAX 7 with extended range"
-- Fleet image: "GreenEVCabs electric vehicle fleet - eco-friendly cabs"
+- Fleet image: "Shree Morya Cabs electric vehicle fleet - eco-friendly cabs"
 - Service image: "24/7 electric cab service Pune - professional drivers"
 - Airport transfer: "Airport transfer electric cab Pune - reliable EV taxi"
 
@@ -140,7 +140,7 @@ Professional drivers, eco-friendly. WhatsApp or call now!"
 1. "What's the cheapest electric cab rate in Pune?"
 2. "How much does an electric taxi cost from Pune to Mumbai?"
 3. "Are there any hidden charges in your electric cab pricing?"
-4. "Does GreenEVCabs offer discount for advance bookings?"
+4. "Does Shree Morya Cabs offer discount for advance bookings?"
 5. "Is your pricing cheaper than GrEL and other EV services?"
 
 #### Category B: Booking & Availability (Add 5)
@@ -178,7 +178,7 @@ Professional drivers, eco-friendly. WhatsApp or call now!"
 Add to FAQ schema:
 {
   "question": "What's the cheapest electric cab rate in Pune?",
-  "answer": "GreenEVCabs offers the cheapest EV cab rates in Pune starting at ₹2,999 for local trips and ₹3,700 for Pune-Mumbai journeys. Our 7-seater electric taxis (Kia Carens EV & BYD E-MAX 7) provide transparent pricing with no surge charges, hidden fees, or commissions—far cheaper than app-based alternatives."
+  "answer": "Shree Morya Cabs offers the cheapest EV cab rates in Pune starting at ₹2,999 for local trips and ₹3,700 for Pune-Mumbai journeys. Our 7-seater electric taxis (Kia Carens EV & BYD E-MAX 7) provide transparent pricing with no surge charges, hidden fees, or commissions—far cheaper than app-based alternatives."
 }
 ```
 
@@ -204,7 +204,7 @@ H1: "Electric Cab in Hinjewadi | Best EV Taxi Service for Airport Transfers"
 
 **Sections to Include:**
 1. Quick intro + pricing banner
-2. Why Hinjewadi residents choose GreenEVCabs
+2. Why Hinjewadi residents choose Shree Morya Cabs
 3. Popular routes from Hinjewadi:
    - Hinjewadi → Mumbai Airport (30km, ₹800-900)
    - Hinjewadi → Navi Mumbai Airport (25km, ₹700-800)
@@ -285,7 +285,7 @@ H1: "Electric Taxi in Wakad | Affordable EV Cab Service 24/7"
 3. Expand FAQ from 5 to 15 questions
    Add voice search variations
 
-4. Add section: "Why GreenEVCabs is Cheaper Than Alternatives"
+4. Add section: "Why Shree Morya Cabs is Cheaper Than Alternatives"
    Include cost comparison data
 
 5. Update internal links to new location pages
@@ -378,7 +378,7 @@ H1: "Electric Taxi in Wakad | Affordable EV Cab Service 24/7"
    Update: "Book the cheapest electric cab from Pune to Mumbai"
 
 2. Create pricing comparison section
-   Show: GreenEVCabs vs competitors vs diesel cabs
+   Show: Shree Morya Cabs vs competitors vs diesel cabs
 
 3. Add voice search FAQ
    "How much does EV cab from Pune to Mumbai cost?"
@@ -411,10 +411,10 @@ H1: "Electric Taxi in Wakad | Affordable EV Cab Service 24/7"
 **LSI:** price comparison, budget cabs, cost analysis, rates
 **Word Count:** 2,500-3,000
 **Sections:**
-- Opening: GreenEVCabs rates vs competitors
+- Opening: Shree Morya Cabs rates vs competitors
 - Pricing comparison table
 - Hidden costs other services charge
-- Why GreenEVCabs is cheaper
+- Why Shree Morya Cabs is cheaper
 - Booking tips to save money
 - FAQ
 
@@ -475,10 +475,10 @@ H1: "Electric Taxi in Wakad | Affordable EV Cab Service 24/7"
 
 #### Lower Priority (Remaining)
 
-- "Zero Emission Commitment: Carbon Saved by GreenEVCabs"
+- "Zero Emission Commitment: Carbon Saved by Shree Morya Cabs"
 - "Kia Carens EV vs BYD E-MAX 7: Detailed Comparison"
 - "24/7 Electric Cab Service: Why Availability Matters"
-- "Corporate Travel: Why Companies Choose GreenEVCabs"
+- "Corporate Travel: Why Companies Choose Shree Morya Cabs"
 - "Multi-Stop Journeys: Book Electric Cab with Multiple Destinations"
 - "Annual Rental Plans: Save 20% on EV Cabs"
 - "Wakad to Mumbai Airport: Electric Cab Guide"
@@ -569,7 +569,7 @@ H1: "Electric Taxi in Wakad | Affordable EV Cab Service 24/7"
 |-------|------------|-----------------|---|
 | kia-carens.jpg | "Kia Carens EV" | "Kia Carens EV - 7-seater electric cab Pune with ₹3,700 fixed rates" | 7-seater, electric cab, fixed rates |
 | byd-emax.jpg | "BYD E-MAX 7" | "BYD E-MAX 7 - Luxury electric taxi Pune with 530+ km range" | luxury, electric taxi, range |
-| homepage-hero.jpg | "GreenEVCabs" | "GreenEVCabs - Book cheapest electric cab in Pune, 24/7 service" | cheapest, 24/7 |
+| homepage-hero.jpg | "Shree Morya Cabs" | "Shree Morya Cabs - Book cheapest electric cab in Pune, 24/7 service" | cheapest, 24/7 |
 | airport-transfer.jpg | "Airport" | "Airport transfer electric cab Pune - reliable EV taxi to Mumbai Airport" | airport transfer, reliable, Mumbai Airport |
 | hinjewadi.jpg | "Hinjewadi" | "Hinjewadi EV cab service - electric taxi for IT professionals" | hinjewadi, IT professionals |
 
@@ -763,4 +763,4 @@ Before publishing any page:
 **Document Version:** 1.0
 **Created:** December 6, 2025
 **Next Review:** January 6, 2026
-**Owner:** GreenEVCabs Marketing Team
+**Owner:** Shree Morya Cabs Marketing Team

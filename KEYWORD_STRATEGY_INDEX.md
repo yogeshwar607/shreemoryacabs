@@ -1,4 +1,4 @@
-# GreenEVCabs Keyword Strategy - Complete Documentation Index
+# Shree Morya Cabs Keyword Strategy - Complete Documentation Index
 
 **Documentation Package:** Complete Keyword Strategy Analysis
 **Prepared:** December 6, 2025
@@ -224,7 +224,7 @@
   - Immediate wins to track
   - Milestone targets (Month 1, 3, 6)
 - Competitive Advantage Strategy
-  - Why GreenEVCabs can win
+  - Why Shree Morya Cabs can win
   - How to win keywords
   - Competitive content ideas
 - Quick Start (Do These This Week)

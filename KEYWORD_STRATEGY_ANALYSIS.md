@@ -1,4 +1,4 @@
-# GreenEVCabs Comprehensive Keyword Strategy Analysis
+# Shree Morya Cabs Comprehensive Keyword Strategy Analysis
 
 **Analysis Date:** December 6, 2025
 **Focus:** Electric Cab Service in Pune & Mumbai
@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-GreenEVCabs has a **strong foundational keyword strategy** with excellent coverage of primary and secondary keywords. However, there are significant **high-value keyword gaps** and **opportunities for optimization** in semantic variations, voice search, and intent-based content.
+Shree Morya Cabs has a **strong foundational keyword strategy** with excellent coverage of primary and secondary keywords. However, there are significant **high-value keyword gaps** and **opportunities for optimization** in semantic variations, voice search, and intent-based content.
 
 **Current State:**
 - Primary keyword density: Well-balanced (not over-optimized)
@@ -104,7 +104,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 
 **Implementation:**
 - Create dedicated section: "Transparent Pricing - Cheapest EV Cab Rates in Pune"
-- Add price comparison table (GreenEVCabs vs competitors) on homepage
+- Add price comparison table (Shree Morya Cabs vs competitors) on homepage
 - Use LSI: "most affordable", "lowest rates", "budget electric taxi"
 
 #### Gap 2: Question-Based Keywords (Voice Search + Featured Snippets)
@@ -134,17 +134,17 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 #### Gap 3: Competitor Comparison Keywords
 **Current:** Have pages for vs Ola/Uber and vs GrEL; missing others
 **Missing Keywords:**
-- "greenevcabs vs meru cab pune"
+- "shreemoryacabs vs meru cab pune"
 - "electric taxi vs regular taxi safety"
 - "ev cab vs personal cab ownership cost"
-- "greenevcabs pricing transparency comparison"
+- "shreemoryacabs pricing transparency comparison"
 - "ola uber vs electric cab service quality"
 
 **Why It Matters:** Comparison keywords indicate decision-stage intent (highest conversion potential)
 
 **Implementation:**
 - Expand comparison pages to include all major competitors
-- Create dedicated "Why Choose GreenEVCabs" page
+- Create dedicated "Why Choose Shree Morya Cabs" page
 - Add competitor comparison tables on route pages
 
 #### Gap 4: Seasonal/Event-Based Keywords
@@ -245,7 +245,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 **Pattern 4: Decision Stage**
 - "When choosing an electric cab service in Pune, consider..."
 - "The best electric taxi for airport transfers should offer..."
-- "Why customers prefer GreenEVCabs' electric service: reliability, pricing, comfort..."
+- "Why customers prefer Shree Morya Cabs' electric service: reliability, pricing, comfort..."
 
 ---
 
@@ -370,14 +370,14 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 
 #### NAVIGATIONAL INTENT (10% of traffic = Known brand)
 
-**Purpose:** Users already decided; finding GreenEVCabs
+**Purpose:** Users already decided; finding Shree Morya Cabs
 
 **Keywords:**
-- "greenevcabs" (brand name)
+- "shreemoryacabs" (brand name)
 - "green ev cabs pune"
-- "greenevcabs booking"
-- "greenevcabs contact"
-- "greenevcabs reviews"
+- "shreemoryacabs booking"
+- "shreemoryacabs contact"
+- "shreemoryacabs reviews"
 
 **Content Required:**
 - Clear about/contact pages ✓
@@ -394,8 +394,8 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 **Purpose:** Detailed comparison before deciding
 
 **Keywords:**
-- "greenevcabs vs grel" ✓ (Have page)
-- "greenevcabs vs ola uber" ✓ (Have page)
+- "shreemoryacabs vs grel" ✓ (Have page)
+- "shreemoryacabs vs ola uber" ✓ (Have page)
 - "best electric cab service pune" (Need expansion)
 - "electric cab service reviews pune" (Need content)
 - "most reliable ev taxi pune"
@@ -458,7 +458,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 
 1. **In H2 subheadings:** Add LSI variations
    - Current: "Why Choose Electric Cabs in Pune"
-   - Better: "Why Choose GreenEVCabs: Best 7-Seater EV Taxi in Pune with Lowest Rates"
+   - Better: "Why Choose Shree Morya Cabs: Best 7-Seater EV Taxi in Pune with Lowest Rates"
 
 2. **In body paragraphs:** Natural incorporation
    - Current: "Our electric cab service..."
@@ -530,7 +530,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 5. "Can I book an electric car for airport transfer in Pune?"
 6. "Are electric cabs available 24 hours in Pune?"
 7. "Which electric cab is best for families in Pune?"
-8. "What's the range of electric cabs used by GreenEVCabs?"
+8. "What's the range of electric cabs used by Shree Morya Cabs?"
 9. "Is it safe to travel by electric cab on long routes?"
 10. "Can I track my electric cab in real time?"
 
@@ -624,13 +624,13 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 4. "Best Time to Book Electric Cab: Peak Hours, Traffic Patterns, Prices" (Time-based)
 5. "Hinjewadi to Mumbai Airport: Electric Cab Guide" (Location-specific)
 6. "Wakad Residents Guide: Cheapest Airport Cab Options" (Location-specific)
-7. "Corporate Travel: Why Companies Choose GreenEVCabs" (B2B)
+7. "Corporate Travel: Why Companies Choose Shree Morya Cabs" (B2B)
 8. "Monsoon Travel Safety: Electric Cabs vs Diesel" (Seasonal)
 9. "7-Seater vs 5-Seater Electric Cab: Which to Choose?" (Comparison)
 10. "Can I Book Electric Cab for Early Morning Flights?" (Schedule-specific)
 11. "Zero Emission Commitment: How Much Carbon Do Our Cabs Save?" (Eco-angle)
 12. "Kia Carens EV vs BYD E-MAX 7: Which Cab Should You Choose?" (Vehicle comparison)
-13. "Hidden Costs in Cab Services: Why GreenEVCabs is Transparent" (Pricing transparency)
+13. "Hidden Costs in Cab Services: Why Shree Morya Cabs is Transparent" (Pricing transparency)
 14. "Multi-stop Journeys: Book Electric Cab with Multiple Destinations" (Service feature)
 15. "Annual Rental Plans for Frequent Flyers: Save 20% on EV Cabs" (Retention angle)
 
@@ -646,12 +646,12 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 - Keywords: ev cabs, electric taxi, pune, cheapest
 
 **H2s (Use 6-8 throughout page):**
-1. "Why Choose GreenEVCabs: Premium 7-Seater Electric Taxi in Pune"
+1. "Why Choose Shree Morya Cabs: Premium 7-Seater Electric Taxi in Pune"
 2. "Cheapest EV Cab Rates: Pune to Mumbai Starts at ₹3,700"
 3. "24/7 Electric Cab Service Across Pune & Mumbai"
 4. "Book Your Electric Taxi Now - WhatsApp, Phone, or Online"
 5. "Frequently Asked Questions About Our EV Cab Service"
-6. "What Our Customers Say About GreenEVCabs Electric Taxi"
+6. "What Our Customers Say About Shree Morya Cabs Electric Taxi"
 7. "Airport Transfers: Reliable Electric Cabs to All 3 Airports"
 8. "Service Areas: Electric Cab Available in Hinjewadi, Wakad, Baner & More"
 
@@ -689,7 +689,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 2. Popular routes (Hinjewadi → Mumbai Airport, Hinjewadi → Pune Airport)
 3. Distance & time from key landmarks
 4. Pricing for this area
-5. Why Hinjewadi professionals choose GreenEVCabs
+5. Why Hinjewadi professionals choose Shree Morya Cabs
 6. Testimonials from Hinjewadi users
 7. Booking process
 8. FAQ specific to Hinjewadi
@@ -776,7 +776,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 **Blog Content (5-6 posts):**
 - "Monsoon Travel: Why Electric Cabs Are Safer"
 - "Complete Guide: Pune-Mumbai Electric Cab Everything You Need to Know"
-- "Corporate Travel: Why Companies Choose GreenEVCabs"
+- "Corporate Travel: Why Companies Choose Shree Morya Cabs"
 - "Early Morning Flights: 24/7 Electric Cab Availability"
 - "Multi-Stop Journeys: Electric Cab with Multiple Destinations"
 
@@ -792,7 +792,7 @@ GreenEVCabs has a **strong foundational keyword strategy** with excellent covera
 
 **Content:**
 - "Complete SEO Guide: Hiring Best Cab Service in Pune" (5,000+ words)
-- "Electric Vehicle Adoption in Maharashtra: GreenEVCabs Case Study"
+- "Electric Vehicle Adoption in Maharashtra: Shree Morya Cabs Case Study"
 - Video series: Vehicle tours, customer testimonials, route guides
 
 **Expected Impact:** Top 3 for all primary keywords, 50%+ traffic increase
@@ -1012,4 +1012,4 @@ The strategy is realistic, executable, and based on current market data for Pune
 **Document Version:** 2.0
 **Last Updated:** December 6, 2025
 **Review Date:** January 6, 2026
-**Prepared for:** GreenEVCabs Marketing Team
+**Prepared for:** Shree Morya Cabs Marketing Team

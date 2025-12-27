@@ -1,4 +1,4 @@
-# GreenEVCabs SEO Roadmap 2025
+# Shree Morya Cabs SEO Roadmap 2025
 
 ## Overview
 Comprehensive SEO implementation plan to dominate electric cab market in Maharashtra. Target: 10x organic traffic in 6 months.
@@ -52,7 +52,7 @@ Comprehensive SEO implementation plan to dominate electric cab market in Maharas
 - [ ] "Kia Carens EV vs BYD E-MAX 7: Which Electric Cab is Better?"
 - [ ] "Electric Cab vs Diesel Cab: Total Cost Comparison 2025"
 - [ ] "Pune to Mumbai: Train vs Bus vs Cab - Which is Best?"
-- [ ] "GreenEVCabs vs Ola/Uber: Which is Actually Cheaper?"
+- [ ] "Shree Morya Cabs vs Ola/Uber: Which is Actually Cheaper?"
 
 #### Category 3: Local Guides
 - [ ] "Best Time to Travel Pune to Mumbai Airport (Traffic Analysis)"
@@ -91,11 +91,11 @@ Comprehensive SEO implementation plan to dominate electric cab market in Maharas
 ### Google Business Profile
 - [ ] Create primary GBP (Pune - Main)
 - [ ] Create location-specific GBPs:
-  - [ ] GreenEVCabs Hinjewadi
-  - [ ] GreenEVCabs Wakad
-  - [ ] GreenEVCabs Baner
-  - [ ] GreenEVCabs Kothrud
-  - [ ] GreenEVCabs Hadapsar
+  - [ ] Shree Morya Cabs Hinjewadi
+  - [ ] Shree Morya Cabs Wakad
+  - [ ] Shree Morya Cabs Baner
+  - [ ] Shree Morya Cabs Kothrud
+  - [ ] Shree Morya Cabs Hadapsar
 
 ### GBP Optimization
 - [ ] Upload 20+ photos per location
@@ -170,7 +170,7 @@ Comprehensive SEO implementation plan to dominate electric cab market in Maharas
 
 #### Digital PR (Target: 10 media mentions)
 - [ ] Press release: "Pune Startup Completes 1000 Zero-Emission Trips"
-- [ ] Press release: "GreenEVCabs Saves 10 Tons of CO₂ in First Year"
+- [ ] Press release: "Shree Morya Cabs Saves 10 Tons of CO₂ in First Year"
 - [ ] Pitch to YourStory: Startup success story
 - [ ] Pitch to Inc42: EV innovation angle
 - [ ] Pitch to Pune Mirror: Local business growth
@@ -205,7 +205,7 @@ Comprehensive SEO implementation plan to dominate electric cab market in Maharas
 **Goal:** Dominate video search & YouTube
 
 ### YouTube Channel Setup
-- [ ] Create GreenEVCabs YouTube channel
+- [ ] Create Shree Morya Cabs YouTube channel
 - [ ] Design channel art & profile
 - [ ] Write channel description with keywords
 - [ ] Set up playlists
@@ -542,5 +542,5 @@ Comprehensive SEO implementation plan to dominate electric cab market in Maharas
 
 **Last Updated:** 2025-10-31
 **Next Review:** 2025-11-30
-**Owner:** GreenEVCabs Founder
+**Owner:** Shree Morya Cabs Founder
 **Status:** 🚀 In Progress

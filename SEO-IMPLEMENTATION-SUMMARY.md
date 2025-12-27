@@ -1,8 +1,8 @@
-# SEO Implementation Summary - GreenEVCabs
+# SEO Implementation Summary - Shree Morya Cabs
 
 ## ✅ Complete SEO Implementation
 
-Your GreenEVCabs project is now **fully SEO-optimized** with enterprise-level search engine optimization.
+Your Shree Morya Cabs project is now **fully SEO-optimized** with enterprise-level search engine optimization.
 
 ---
 
@@ -131,7 +131,7 @@ Features:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://greenevcabs.com/sitemap.xml
+Sitemap: https://shreemoryacabs.com/sitemap.xml
 Crawl-delay: 1
 ```
 
@@ -312,20 +312,20 @@ Two comprehensive guides created:
 
 ### Homepage
 ```html
-<title>GreenEVCabs - Premium Electric Cab Services in Maharashtra | Book EV Cabs Online</title>
+<title>Shree Morya Cabs - Premium Electric Cab Services in Maharashtra | Book EV Cabs Online</title>
 <meta name="description" content="Book premium electric cabs in Pune, Mumbai & Maharashtra. 100% EV fleet with Kia Carens & BYD E-MAX 7. Zero emissions, 24/7 service. Airport transfers, outstation trips & corporate bookings.">
 <meta name="keywords" content="electric cab, EV cab, electric taxi, eco-friendly transport, electric cab Pune, EV cab Mumbai...">
 ```
 
 ### Vehicle Page (Kia Carens EV)
 ```html
-<title>Kia Carens EV - Book Electric Cab Online | GreenEVCabs</title>
+<title>Kia Carens EV - Book Electric Cab Online | Shree Morya Cabs</title>
 <meta name="description" content="Book Kia Carens EV for your journey in Maharashtra. 7-seater electric cab with 400+ km range. Features: Seating for 6-7 passengers, Spacious cabin with premium interiors, Advanced safety features. Starting from ₹18/km.">
 ```
 
 ### Route Page (Pune-Mumbai)
 ```html
-<title>Pune to Mumbai Electric Cab - Book Online from ₹4500 | GreenEVCabs</title>
+<title>Pune to Mumbai Electric Cab - Book Online from ₹4500 | Shree Morya Cabs</title>
 <meta name="description" content="Book electric cab for Pune to Mumbai. 148 km journey in 3-3.5 hours. Zero emissions, comfortable travel. Starting ₹4500. Mumbai-Pune Expressway - smooth, fast highway. Scenic mountain views.">
 ```
 
@@ -388,7 +388,7 @@ Two comprehensive guides created:
 
 ## ✨ Summary
 
-Your GreenEVCabs project is now **production-ready** with enterprise-level SEO:
+Your Shree Morya Cabs project is now **production-ready** with enterprise-level SEO:
 
 ✅ All pages have unique, optimized meta tags
 ✅ 9 types of structured data implemented

@@ -1,4 +1,4 @@
-# Google Business Profile Optimization Guide for GreenEVCabs
+# Google Business Profile Optimization Guide for Shree Morya Cabs
 
 **Last Updated:** January 2025
 **Purpose:** Maximize local SEO visibility and compete effectively against GrEL Cabs and other electric cab services
@@ -25,8 +25,8 @@
 
 **If Not Yet Created:**
 1. Go to https://business.google.com
-2. Sign in with your business email (greenevcabs@gmail.com)
-3. Enter business name: **GreenEVCabs**
+2. Sign in with your business email (shreemoryacabs@gmail.com)
+3. Enter business name: **Shree Morya Cabs**
 4. Select category: **Taxi Service** (Primary)
 5. Add location: Hinjewadi Phase 1, Pune, Maharashtra 411057
 6. Choose "No" for physical location since it's a service-area business
@@ -59,16 +59,16 @@
 ### Business Information (100% Completion Required)
 
 **✅ Primary Details:**
-- [x] Business Name: GreenEVCabs
+- [x] Business Name: Shree Morya Cabs
 - [x] Category: Taxi Service (Primary)
 - [x] Phone: +91 74982 64215
-- [x] Website: https://greenevcabs.com
+- [x] Website: https://shreemoryacabs.com
 - [x] WhatsApp: Enable WhatsApp messaging to +91 74982 64215
 
 **✅ Business Description (750 characters max - Use every character!):**
 
 ```
-GreenEVCabs offers premium electric cab services across Maharashtra at the best rates. Travel Pune-Mumbai at just ₹3,700 with zero surge pricing - save ₹500 vs other electric cabs and ₹1,300 vs diesel cabs. Our luxury 7-seater SUVs (Kia Carens EV & BYD eMax 7) provide spacious, comfortable rides with professional drivers. All-inclusive pricing covers tolls, parking, and driver charges - no hidden fees. Available 24/7 for airport transfers, outstation trips, and corporate bookings. No advance payment required, free cancellation up to 2 hours. Book instantly via WhatsApp. Eco-friendly travel without compromising on comfort or your budget. Serving Pune, Mumbai, Shirdi, Lonavala, Nashik, and all Maharashtra.
+Shree Morya Cabs offers premium electric cab services across Maharashtra at the best rates. Travel Pune-Mumbai at just ₹3,700 with zero surge pricing - save ₹500 vs other electric cabs and ₹1,300 vs diesel cabs. Our luxury 7-seater SUVs (Kia Carens EV & BYD eMax 7) provide spacious, comfortable rides with professional drivers. All-inclusive pricing covers tolls, parking, and driver charges - no hidden fees. Available 24/7 for airport transfers, outstation trips, and corporate bookings. No advance payment required, free cancellation up to 2 hours. Book instantly via WhatsApp. Eco-friendly travel without compromising on comfort or your budget. Serving Pune, Mumbai, Shirdi, Lonavala, Nashik, and all Maharashtra.
 ```
 
 **✅ Opening Hours:**
@@ -148,7 +148,7 @@ Each service should have:
 ### Photo Categories & Quantity
 
 #### 1. Logo & Cover Photos (Required)
-- **Logo:** Square version of GreenEVCabs logo, 720x720px minimum
+- **Logo:** Square version of Shree Morya Cabs logo, 720x720px minimum
 - **Cover Photo:** Hero image showing Kia Carens EV or BYD eMax 7 with Pune skyline, 1024x576px minimum
 
 #### 2. Vehicle Photos (Upload 20+ photos)
@@ -207,7 +207,7 @@ Each service should have:
 
 **Photo Naming Convention (for SEO):**
 When uploading, rename files to:
-- `greenevcabs-kia-carens-ev-pune-1.jpg`
+- `shreemoryacabs-kia-carens-ev-pune-1.jpg`
 - `electric-cab-interior-spacious-7-seater.jpg`
 - `pune-mumbai-electric-taxi-driver.jpg`
 
@@ -238,7 +238,7 @@ When uploading, rename files to:
 
 Book now via WhatsApp: +91 74982 64215
 
-#ElectricCab #PuneMumbai #GreenEVCabs #ZeroEmissions
+#ElectricCab #PuneMumbai #Shree Morya Cabs #ZeroEmissions
 ```
 
 **Frequency:** Every Monday
@@ -252,10 +252,10 @@ Electric Cab: ₹3,700 (all-inclusive)
 vs
 Diesel Cab: ₹5,000+
 
-Switch to GreenEVCabs and save money while saving the planet! 🌱
+Switch to Shree Morya Cabs and save money while saving the planet! 🌱
 
 Call/WhatsApp: +91 74982 64215
-Book: greenevcabs.com
+Book: shreemoryacabs.com
 
 #SaveMoney #ElectricVsDeiesel #EcoFriendly
 ```
@@ -274,7 +274,7 @@ No surge pricing during festivals! Pay just ₹3,700 for Pune-Mumbai, whether yo
 
 Book your slot early: +91 74982 64215
 
-Happy Diwali from GreenEVCabs! 🪔
+Happy Diwali from Shree Morya Cabs! 🪔
 
 #DiwaliTravel #NoSurge #ElectricCab
 ```
@@ -293,7 +293,7 @@ Happy Diwali from GreenEVCabs! 🪔
 - Fast charging capability
 - Zero emissions
 
-Experience the future of travel: greenevcabs.com
+Experience the future of travel: shreemoryacabs.com
 
 #BYDeMax7 #LuxuryEV #ElectricSUV
 ```
@@ -310,7 +310,7 @@ Experience the future of travel: greenevcabs.com
 🔇 Comfort: Silent, smooth ride
 ⚡ Performance: Instant acceleration
 
-Read full comparison: greenevcabs.com/blog/electric-vs-diesel
+Read full comparison: shreemoryacabs.com/blog/electric-vs-diesel
 
 #ElectricMobility #SustainableTravel #EVBenefits
 ```
@@ -322,7 +322,7 @@ Read full comparison: greenevcabs.com/blog/electric-vs-diesel
 ```
 ⭐ "Saved ₹500 and got a much better ride!" - Rahul M.
 
-Switched from another electric cab service to GreenEVCabs and loves:
+Switched from another electric cab service to Shree Morya Cabs and loves:
 ✅ Lower price (₹3,700 vs ₹4,200)
 ✅ No surge pricing surprises
 ✅ Spacious 7-seater SUV
@@ -363,18 +363,18 @@ Your turn! Book today: +91 74982 64215
 
 Template:
 ```
-Thank you so much [Name]! We're thrilled you had a comfortable ride with GreenEVCabs. Your feedback about [specific detail they mentioned] means a lot to our team. Looking forward to serving you again soon! 🚗⚡
+Thank you so much [Name]! We're thrilled you had a comfortable ride with Shree Morya Cabs. Your feedback about [specific detail they mentioned] means a lot to our team. Looking forward to serving you again soon! 🚗⚡
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **Neutral Reviews (3 stars) - Respond within 12 hours:**
 
 Template:
 ```
-Thank you for your feedback, [Name]. We appreciate you choosing GreenEVCabs. We'd love to know how we can improve your experience to make it 5-star next time. Please feel free to reach out to us at +91 74982 64215.
+Thank you for your feedback, [Name]. We appreciate you choosing Shree Morya Cabs. We'd love to know how we can improve your experience to make it 5-star next time. Please feel free to reach out to us at +91 74982 64215.
 
-- GreenEVCabs Team
+- Shree Morya Cabs Team
 ```
 
 **Negative Reviews (1-2 stars) - Respond within 4 hours:**
@@ -383,7 +383,7 @@ Template:
 ```
 We sincerely apologize for not meeting your expectations, [Name]. This is not the standard of service we aim for. We'd like to make this right - please contact us directly at +91 74982 64215 so we can understand what went wrong and ensure it doesn't happen again. Thank you for bringing this to our attention.
 
-- GreenEVCabs Management
+- Shree Morya Cabs Management
 ```
 
 **Critical Response Rules:**
@@ -410,15 +410,15 @@ We sincerely apologize for not meeting your expectations, [Name]. This is not th
 
 #### Q1: "How much does Pune to Mumbai cab cost?"
 **Answer:**
-GreenEVCabs charges ₹3,700 all-inclusive for Pune to Mumbai in a luxury 7-seater electric SUV (Kia Carens EV or BYD eMax 7). This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges or surge pricing. Book via WhatsApp: +91 74982 64215 or visit greenevcabs.com
+Shree Morya Cabs charges ₹3,700 all-inclusive for Pune to Mumbai in a luxury 7-seater electric SUV (Kia Carens EV or BYD eMax 7). This includes tolls (₹430), driver allowance (₹500), parking (₹70), and GST. No hidden charges or surge pricing. Book via WhatsApp: +91 74982 64215 or visit shreemoryacabs.com
 
-#### Q2: "Is GreenEVCabs cheaper than other electric cabs?"
+#### Q2: "Is Shree Morya Cabs cheaper than other electric cabs?"
 **Answer:**
-Yes, we're ₹500 cheaper than most electric cab services. GreenEVCabs: ₹3,700 all-inclusive vs Others: ₹4,200-4,500. We offer direct bookings without middleman commissions, passing the savings to you. Same luxury electric SUVs, better price!
+Yes, we're ₹500 cheaper than most electric cab services. Shree Morya Cabs: ₹3,700 all-inclusive vs Others: ₹4,200-4,500. We offer direct bookings without middleman commissions, passing the savings to you. Same luxury electric SUVs, better price!
 
 #### Q3: "Do you charge surge pricing?"
 **Answer:**
-No, GreenEVCabs has ZERO surge pricing. We charge ₹3,700 for Pune-Mumbai 24/7 - no extra charges during peak hours, rain, festivals, or holidays. Unlike app-based services that charge 1.5x-3x surge, our prices are fixed and transparent.
+No, Shree Morya Cabs has ZERO surge pricing. We charge ₹3,700 for Pune-Mumbai 24/7 - no extra charges during peak hours, rain, festivals, or holidays. Unlike app-based services that charge 1.5x-3x surge, our prices are fixed and transparent.
 
 #### Q4: "What type of vehicles do you have?"
 **Answer:**
@@ -430,7 +430,7 @@ No advance payment required. Pay only after your trip completes. We accept UPI, 
 
 #### Q6: "How do I book?"
 **Answer:**
-Book instantly via WhatsApp at +91 74982 64215 or call directly. Share pickup location, date, time, and destination. Get instant confirmation with driver details. Available 24/7. Visit greenevcabs.com for online booking.
+Book instantly via WhatsApp at +91 74982 64215 or call directly. Share pickup location, date, time, and destination. Get instant confirmation with driver details. Available 24/7. Visit shreemoryacabs.com for online booking.
 
 #### Q7: "Are electric cabs safe for long distance?"
 **Answer:**
@@ -463,7 +463,7 @@ Yes! We provide pickups/drop-offs at Pune Airport, Mumbai Airport, and Navi Mumb
 
 ### Messaging Configuration
 - Enable messaging: Yes
-- Welcome message: "Hi! Thanks for choosing GreenEVCabs. Please share your trip details: pickup location, date, time, and destination. We'll confirm your booking instantly! 🚗⚡"
+- Welcome message: "Hi! Thanks for choosing Shree Morya Cabs. Please share your trip details: pickup location, date, time, and destination. We'll confirm your booking instantly! 🚗⚡"
 - Response time goal: Under 5 minutes
 
 ### Attributes to Enable
@@ -651,7 +651,7 @@ Add GBP link to:
 
 **Contact for Issues:**
 - Google Business support: Via GBP dashboard
-- GreenEVCabs internal: Use this guide as SOP
+- Shree Morya Cabs internal: Use this guide as SOP
 
 ---
 

@@ -1,7 +1,7 @@
 {
-  "name": "GreenEVCabs",
-  "short_name": "GreenEVCabs",
-  "description": "Sustainable Electric Cab Services - Zero Emissions, Premium Comfort, 24/7 Service",
+  "name": "Shree Morya Cabs",
+  "short_name": "Shree Morya",
+  "description": "Premium Electric Cab Service Blessed by Lord Ganesha - Zero Emissions, Premium Comfort, 24/7 Service",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -14,8 +14,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#10b981",
-  "background_color": "#ffffff",
+  "theme_color": "#e60000",
+  "background_color": "#f5f0e8",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"
