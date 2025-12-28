@@ -14,7 +14,7 @@ const serviceSchema = {
   "provider": {
     "@type": "LocalBusiness",
     "name": "Shree Morya Cabs",
-    "description": "Premium electric cab service from Mumbai Airport to Pune with flight tracking, 30 minutes free waiting, and professional drivers",
+    "description": "Reliable electric cab service from Mumbai Airport to Pune with flight tracking, 30 minutes free waiting, and professional drivers",
     "telephone": "+917498264215"
   },
   "areaServed": [
@@ -134,7 +134,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 <MainLayout
   title="Mumbai Airport to Pune Electric Cab ₹2,700 | Flight Tracking | Free Waiting - Shree Morya Cabs"
-  description="Mumbai Airport to Pune electric cab at ₹2,700 all-inclusive. Flight tracking, 30 min free waiting, pickup from T1/T2/Navi Mumbai Airport. Professional drivers, luxury 7-seater SUVs. Book 24/7."
+  description="Mumbai Airport to Pune electric cab at ₹2,700 all-inclusive. Flight tracking, 30 min free waiting, pickup from T1/T2/Navi Mumbai Airport. Friendly, experienced drivers, luxury 7-seater SUVs. Book 24/7."
   keywords={[
     "mumbai airport to pune cab",
     "mumbai airport to pune electric cab",
@@ -149,7 +149,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   <StructuredData data={[serviceSchema, faqSchema, breadcrumbSchema]} />
 
   <!-- Hero Section -->
-  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-orange-50 dark:from-orange-950/20 to-background">
     <div class="container px-4 md:px-6">
       <div class="max-w-5xl mx-auto text-center">
         <Badge variant="secondary" className="mb-4">✈️ Airport Pickup Service</Badge>
@@ -160,7 +160,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           Flight Tracking | 30 Minutes Free Waiting | All Terminals Pickup
         </p>
         <p class="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-          Premium 7-seater electric SUVs from Mumbai Airport (T1, T2) & Navi Mumbai Airport to anywhere in Pune. Zero surge pricing. Professional drivers. Available 24/7.
+          Premium 7-seater electric SUVs from Mumbai Airport (T1, T2) & Navi Mumbai Airport to anywhere in Pune. Zero surge pricing. Friendly, experienced drivers. Available 24/7.
         </p>
 
         <!-- Price Comparison -->
@@ -189,7 +189,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://wa.me/917498264215?text=Book%20Mumbai%20Airport%20to%20Pune%20Electric%20Cab" target="_blank">
-            <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-8">
+            <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-lg px-8">
               <Phone class="w-5 h-5 mr-2" />
               Book on WhatsApp
             </Button>
@@ -218,7 +218,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card>
             <CardHeader>
-              <Plane class="w-10 h-10 text-primary mb-2" />
+              <Plane class="w-10 h-10 text-orange-600 dark:text-orange-400 mb-2" />
               <CardTitle>Flight Tracking</CardTitle>
             </CardHeader>
             <CardContent>
@@ -230,7 +230,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <Card>
             <CardHeader>
-              <Clock class="w-10 h-10 text-primary mb-2" />
+              <Clock class="w-10 h-10 text-orange-600 dark:text-orange-400 mb-2" />
               <CardTitle>30 Min Free Wait</CardTitle>
             </CardHeader>
             <CardContent>
@@ -242,7 +242,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <Card>
             <CardHeader>
-              <IndianRupee class="w-10 h-10 text-primary mb-2" />
+              <IndianRupee class="w-10 h-10 text-orange-600 dark:text-orange-400 mb-2" />
               <CardTitle>Fixed ₹2,700 Rate</CardTitle>
             </CardHeader>
             <CardContent>
@@ -254,7 +254,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <Card>
             <CardHeader>
-              <Users class="w-10 h-10 text-primary mb-2" />
+              <Users class="w-10 h-10 text-orange-600 dark:text-orange-400 mb-2" />
               <CardTitle>7-Seater SUVs</CardTitle>
             </CardHeader>
             <CardContent>
@@ -281,7 +281,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MapPin class="w-5 h-5 text-primary" />
+                <MapPin class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                 Terminal 1 (Domestic)
               </CardTitle>
             </CardHeader>
@@ -289,14 +289,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <p class="text-sm"><strong>Airlines:</strong> IndiGo, SpiceJet, Go First (some flights)</p>
               <p class="text-sm"><strong>Pickup Point:</strong> Arrivals exit, near Pillar 5-6</p>
               <p class="text-sm"><strong>What to Do:</strong> Exit arrivals, look for driver with name board near taxi stand area</p>
-              <p class="text-sm text-primary font-semibold">Contact: +91 74982 64215</p>
+              <p class="text-sm text-orange-600 dark:text-orange-400 font-semibold">Contact: +91 74982 64215</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MapPin class="w-5 h-5 text-primary" />
+                <MapPin class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                 Terminal 2 (Intl & Domestic)
               </CardTitle>
             </CardHeader>
@@ -304,14 +304,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <p class="text-sm"><strong>Airlines:</strong> Air India, Vistara, International flights, Go First (most)</p>
               <p class="text-sm"><strong>Pickup Point:</strong> Arrivals Level 2, Gate 6-7 area</p>
               <p class="text-sm"><strong>What to Do:</strong> After baggage claim, exit to arrivals. Driver waits near Gate 6-7 with your name</p>
-              <p class="text-sm text-primary font-semibold">Contact: +91 74982 64215</p>
+              <p class="text-sm text-orange-600 dark:text-orange-400 font-semibold">Contact: +91 74982 64215</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MapPin class="w-5 h-5 text-primary" />
+                <MapPin class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                 Navi Mumbai Airport
               </CardTitle>
             </CardHeader>
@@ -319,7 +319,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <p class="text-sm"><strong>New Airport:</strong> Opened 2024, Panvel area</p>
               <p class="text-sm"><strong>Pickup Point:</strong> Main arrivals exit</p>
               <p class="text-sm"><strong>Distance to Pune:</strong> 110 km via Pune-Mumbai Expressway (2-2.5 hours)</p>
-              <p class="text-sm text-primary font-semibold">Same ₹2,700 rate!</p>
+              <p class="text-sm text-orange-600 dark:text-orange-400 font-semibold">Same ₹2,700 rate!</p>
             </CardContent>
           </Card>
         </div>
@@ -327,7 +327,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <Card className="bg-blue-50 dark:bg-blue-900/30 border-blue-200">
           <CardContent className="pt-6">
             <h3 class="font-semibold mb-3 flex items-center gap-2">
-              <Shield class="w-5 h-5 text-primary" />
+              <Shield class="w-5 h-5 text-orange-600 dark:text-orange-400" />
               Can't Find Your Driver?
             </h3>
             <p class="text-sm mb-3">
@@ -490,9 +490,9 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <ul class="text-sm space-y-2">
-                <li>• <a href="/hinjewadi-to-mumbai-airport-cab" class="text-primary hover:underline">Hinjewadi</a> (IT Park, Phase 1/2/3)</li>
-                <li>• <a href="/wakad-to-pune-airport-cab" class="text-primary hover:underline">Wakad</a></li>
-                <li>• <a href="/baner-to-mumbai-cab-service" class="text-primary hover:underline">Baner</a> (Sus Road, Aundh Road)</li>
+                <li>• <a href="/hinjewadi-to-mumbai-airport-cab" class="text-orange-600 dark:text-orange-400 hover:underline">Hinjewadi</a> (IT Park, Phase 1/2/3)</li>
+                <li>• <a href="/wakad-to-pune-airport-cab" class="text-orange-600 dark:text-orange-400 hover:underline">Wakad</a></li>
+                <li>• <a href="/baner-to-mumbai-cab-service" class="text-orange-600 dark:text-orange-400 hover:underline">Baner</a> (Sus Road, Aundh Road)</li>
                 <li>• Balewadi (High Street)</li>
                 <li>• Pimple Saudagar</li>
                 <li>• Pimple Nilakh</li>
@@ -510,7 +510,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                 <li>• Shivajinagar</li>
                 <li>• Deccan Gymkhana</li>
                 <li>• Koregaon Park</li>
-                <li>• <a href="/kothrud-to-mumbai-airport-cab" class="text-primary hover:underline">Kothrud</a></li>
+                <li>• <a href="/kothrud-to-mumbai-airport-cab" class="text-orange-600 dark:text-orange-400 hover:underline">Kothrud</a></li>
                 <li>• Karve Nagar</li>
                 <li>• Katraj</li>
                 <li>• Sinhagad Road</li>
@@ -524,9 +524,9 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </CardHeader>
             <CardContent>
               <ul class="text-sm space-y-2">
-                <li>• <a href="/viman-nagar-to-mumbai-cab" class="text-primary hover:underline">Viman Nagar</a></li>
+                <li>• <a href="/viman-nagar-to-mumbai-cab" class="text-orange-600 dark:text-orange-400 hover:underline">Viman Nagar</a></li>
                 <li>• Kharadi (EON IT Park, WTC)</li>
-                <li>• <a href="/hadapsar-to-mumbai-airport-cab" class="text-primary hover:underline">Hadapsar</a> (Magarpatta)</li>
+                <li>• <a href="/hadapsar-to-mumbai-airport-cab" class="text-orange-600 dark:text-orange-400 hover:underline">Hadapsar</a> (Magarpatta)</li>
                 <li>• Wanowrie</li>
                 <li>• Wagholi</li>
                 <li>• Pimpri-Chinchwad</li>
@@ -688,7 +688,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
           <p class="text-lg mb-6">Book your Mumbai Airport pickup now!</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/917498264215?text=Book%20Mumbai%20Airport%20to%20Pune%20-%20Flight:%20[Your%20Flight]%20Date:%20[Date]%20Drop:%20[Pune%20Address]" target="_blank">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
                 Book on WhatsApp - ₹2,700
               </Button>
             </a>
@@ -810,7 +810,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   </section>
 
   <!-- Final CTA -->
-  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-orange-50 dark:from-orange-950/20 to-background">
     <div class="container px-4 md:px-6">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Book Your Mumbai Airport Pickup?</h2>
@@ -824,7 +824,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/917498264215?text=Book%20Mumbai%20Airport%20to%20Pune%20Electric%20Cab" target="_blank">
-              <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-lg px-12">
+              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-lg px-12">
                 Book on WhatsApp Now
               </Button>
             </a>

@@ -32,33 +32,33 @@ const serviceSchema = generateServiceSchema();
   ]} />
 
   <!-- Hero Section -->
-  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-primary/10 to-background">
+  <section class="w-full py-12 md:py-20 bg-gradient-to-b from-orange-50 to-background dark:from-orange-950/20 dark:to-background">
     <div class="container px-4 md:px-6">
       <div class="max-w-4xl mx-auto text-center">
-        <Badge variant="secondary" className="mb-4">
-          <Zap class="w-4 h-4 mr-2" />
-          100% Electric • Zero Emissions
+        <Badge variant="secondary" className="mb-4 bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100">
+          <Users class="w-4 h-4 mr-2" />
+          Trusted by 5,000+ Customers • Always Reliable
         </Badge>
 
         <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
-          Electric Cab Services in Pune
+          Electric Cab Services for Every Journey
         </h1>
 
         <p class="text-xl text-muted-foreground mb-8">
-          Premium electric taxi services for every need. Airport transfers, corporate travel, outstation trips,
-          and hourly rentals. Transparent pricing, luxury 7-seater SUVs, professional drivers across all Pune locations.
+          Whether you're catching a flight, heading to a meeting, or planning a family trip - we've got you covered.
+          Clean electric cars, friendly drivers, and honest prices. It's that simple.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+            <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
               <Phone class="mr-2 h-5 w-5" />
-              Book Now - WhatsApp
+              Quick WhatsApp Booking
             </Button>
           </a>
           <a href="tel:+917498264215">
             <Button size="lg" variant="outline">
-              Call +91 74982 64215
+              or Call: +91 74982 64215
             </Button>
           </a>
         </div>
@@ -67,71 +67,87 @@ const serviceSchema = generateServiceSchema();
   </section>
 
   <!-- Airport Services -->
-  <section class="w-full py-16 bg-white dark:bg-gray-800">
+  <section class="w-full py-16 bg-white dark:bg-gray-900">
     <div class="container px-4 md:px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center gap-3 mb-8">
-          <Plane class="h-8 w-8 text-primary" />
-          <h2 class="text-3xl font-bold">Airport Transfer Services</h2>
+          <Plane class="h-8 w-8 text-orange-600" />
+          <h2 class="text-3xl font-bold">Airport Rides - Never Miss Your Flight</h2>
         </div>
 
+        <p class="text-muted-foreground mb-8 text-lg">
+          Getting to the airport on time shouldn't be stressful. We track your flight, arrive early, and handle your luggage.
+        </p>
+
         <div class="grid md:grid-cols-3 gap-6 mb-6">
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-shadow border-2 border-orange-100 dark:border-orange-900">
             <CardHeader>
-              <CardTitle>Mumbai Airport</CardTitle>
-              <CardDescription>Pune to Mumbai Airport & Return</CardDescription>
+              <CardTitle className="flex items-center gap-2">
+                <span>🛫</span> Mumbai Airport (BOM)
+              </CardTitle>
+              <CardDescription>Catch your flight stress-free</CardDescription>
             </CardHeader>
             <CardContent>
-              <p class="text-3xl font-bold text-primary mb-4">₹3,700</p>
+              <p class="text-3xl font-bold text-orange-600 mb-4">from ₹2,700</p>
               <ul class="space-y-2 text-sm mb-4">
-                <li>✓ 150 km • 2.5-3 hours</li>
-                <li>✓ Terminal 1 & Terminal 2</li>
-                <li>✓ Flight tracking included</li>
-                <li>✓ 30 min free waiting</li>
+                <li>✓ 148 km • 3-3.5 hours journey</li>
+                <li>✓ Both T1 & T2 terminals</li>
+                <li>✓ We track flight delays</li>
+                <li>✓ Free wait if flight is late</li>
               </ul>
-              <Button asChild className="w-full">
-                <a href="/mumbai-airport-to-pune-electric-cab">View Details</a>
+              <Button asChild className="w-full bg-orange-600 hover:bg-orange-700">
+                <a href="/mumbai-airport-to-pune-electric-cab">Book Mumbai Airport</a>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-shadow border-2 border-blue-100 dark:border-blue-900">
             <CardHeader>
-              <CardTitle>Navi Mumbai Airport</CardTitle>
-              <CardDescription>Pune to Navi Mumbai Airport</CardDescription>
+              <CardTitle className="flex items-center gap-2">
+                <span>✈️</span> Navi Mumbai Airport (NMIA)
+              </CardTitle>
+              <CardDescription>Closest airport to Pune</CardDescription>
             </CardHeader>
             <CardContent>
-              <p class="text-3xl font-bold text-primary mb-4">₹3,900</p>
+              <p class="text-3xl font-bold text-blue-600 mb-4">from ₹2,300</p>
               <ul class="space-y-2 text-sm mb-4">
-                <li>✓ 120 km • 2-2.5 hours</li>
-                <li>✓ Brand new terminal</li>
-                <li>✓ Real-time flight status</li>
-                <li>✓ Meet & greet service</li>
+                <li>✓ 120 km • 2.5-3 hours journey</li>
+                <li>✓ New, modern terminal</li>
+                <li>✓ Live flight updates</li>
+                <li>✓ Meet & greet at arrivals</li>
               </ul>
-              <Button asChild className="w-full">
-                <a href="/navi-mumbai-airport-to-pune-cab">View Details</a>
+              <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                <a href="/navi-mumbai-airport-to-pune-cab">Book Navi Mumbai Airport</a>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-shadow border-2 border-green-100 dark:border-green-900">
             <CardHeader>
-              <CardTitle>Pune Airport</CardTitle>
-              <CardDescription>Local Airport Transfers</CardDescription>
+              <CardTitle className="flex items-center gap-2">
+                <span>🏠</span> Pune Airport (PNQ)
+              </CardTitle>
+              <CardDescription>Quick local transfers</CardDescription>
             </CardHeader>
             <CardContent>
-              <p class="text-3xl font-bold text-primary mb-4">₹700-900</p>
+              <p class="text-3xl font-bold text-green-600 mb-4">from ₹700</p>
               <ul class="space-y-2 text-sm mb-4">
-                <li>✓ All Pune locations</li>
-                <li>✓ 24/7 availability</li>
-                <li>✓ Quick pickup service</li>
-                <li>✓ Terminal assistance</li>
+                <li>✓ All Pune pickup locations</li>
+                <li>✓ Available 24/7</li>
+                <li>✓ 30-min pickup guarantee</li>
+                <li>✓ Help with luggage</li>
               </ul>
-              <Button asChild className="w-full">
-                <a href="/pune-airport-cab-service">View Details</a>
+              <Button asChild className="w-full bg-orange-600 hover:bg-orange-700">
+                <a href="/pune-airport-cab-service">Book Pune Airport</a>
               </Button>
             </CardContent>
           </Card>
+        </div>
+
+        <div class="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg mt-6">
+          <p class="text-center text-muted-foreground">
+            <strong>Early morning flights?</strong> We pick up from 3 AM onwards. Your driver will be there 10 minutes early, every time.
+          </p>
         </div>
       </div>
     </div>
@@ -142,12 +158,12 @@ const serviceSchema = generateServiceSchema();
     <div class="container px-4 md:px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center gap-3 mb-8">
-          <MapPin class="h-8 w-8 text-primary" />
+          <MapPin class="h-8 w-8 text-orange-600 dark:text-orange-400" />
           <h2 class="text-3xl font-bold">Location-Based Services</h2>
         </div>
 
         <p class="text-muted-foreground mb-8 max-w-3xl">
-          Electric cab service available from all major Pune locations. Professional drivers familiar with every area,
+          Electric cab service available from all major Pune locations. Friendly, experienced drivers familiar with every area,
           IT park, residential society, and landmark across Pune and PCMC.
         </p>
 
@@ -201,7 +217,7 @@ const serviceSchema = generateServiceSchema();
     <div class="container px-4 md:px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center gap-3 mb-8">
-          <Building2 class="h-8 w-8 text-primary" />
+          <Building2 class="h-8 w-8 text-orange-600 dark:text-orange-400" />
           <h2 class="text-3xl font-bold">Corporate Services</h2>
         </div>
 
@@ -214,23 +230,23 @@ const serviceSchema = generateServiceSchema();
             <CardContent>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Monthly Billing:</strong> Consolidated invoices with GST</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Priority Booking:</strong> Dedicated vehicles for regular routes</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Account Manager:</strong> Single point of contact</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Volume Discounts:</strong> 10-20% off for regular bookings</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Employee Transport:</strong> Daily office commute solutions</span>
                 </li>
               </ul>
@@ -242,29 +258,29 @@ const serviceSchema = generateServiceSchema();
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Executive Travel</CardTitle>
-              <CardDescription>Premium service for business travelers</CardDescription>
+              <CardTitle>Comfortable Travel</CardTitle>
+              <CardDescription>Reliable service for business travelers</CardDescription>
             </CardHeader>
             <CardContent>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
-                  <span><strong>Professional Chauffeurs:</strong> Business etiquette trained</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
+                  <span><strong>Professional Drivers:</strong> Business etiquette trained</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Premium Vehicles:</strong> Latest EVs with WiFi & charging</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Silent Workspace:</strong> Take calls, work on laptop</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Airport Assistance:</strong> Meet & greet, luggage help</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary">✓</span>
+                  <span class="text-orange-600 dark:text-orange-400">✓</span>
                   <span><strong>Flexible Scheduling:</strong> 24/7 availability</span>
                 </li>
               </ul>
@@ -283,7 +299,7 @@ const serviceSchema = generateServiceSchema();
     <div class="container px-4 md:px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center gap-3 mb-8">
-          <Route class="h-8 w-8 text-primary" />
+          <Route class="h-8 w-8 text-orange-600 dark:text-orange-400" />
           <h2 class="text-3xl font-bold">Outstation Services</h2>
         </div>
 
@@ -293,7 +309,7 @@ const serviceSchema = generateServiceSchema();
               <CardTitle>Shirdi Darshan</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-2xl font-bold text-primary mb-2">₹5,000</p>
+              <p class="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-2">₹5,000</p>
               <p class="text-sm text-muted-foreground mb-4">240 km • One way</p>
               <ul class="text-sm space-y-1 mb-4">
                 <li>• Sai Baba temple packages</li>
@@ -311,7 +327,7 @@ const serviceSchema = generateServiceSchema();
               <CardTitle>Lonavala</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-2xl font-bold text-primary mb-2">₹1,800</p>
+              <p class="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-2">₹1,800</p>
               <p class="text-sm text-muted-foreground mb-4">65 km • One way</p>
               <ul class="text-sm space-y-1 mb-4">
                 <li>• Weekend getaways</li>
@@ -329,7 +345,7 @@ const serviceSchema = generateServiceSchema();
               <CardTitle>Custom Trips</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-2xl font-bold text-primary mb-2">Custom</p>
+              <p class="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-2">Custom</p>
               <p class="text-sm text-muted-foreground mb-4">Anywhere in Maharashtra</p>
               <ul class="text-sm space-y-1 mb-4">
                 <li>• Nashik, Alibaug, Goa</li>
@@ -355,37 +371,37 @@ const serviceSchema = generateServiceSchema();
         <div class="grid md:grid-cols-4 gap-6">
           <Card className="text-center">
             <CardContent className="pt-6">
-              <Calendar class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <Calendar class="h-12 w-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
               <h3 class="font-semibold mb-2">Hourly Rentals</h3>
               <p class="text-sm text-muted-foreground mb-3">4/8/12 hour packages for local use</p>
-              <p class="text-lg font-bold text-primary">From ₹800/hr</p>
+              <p class="text-lg font-bold text-orange-600 dark:text-orange-400">From ₹800/hr</p>
             </CardContent>
           </Card>
 
           <Card className="text-center">
             <CardContent className="pt-6">
-              <Users class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <Users class="h-12 w-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
               <h3 class="font-semibold mb-2">Group Travel</h3>
               <p class="text-sm text-muted-foreground mb-3">Multiple vehicles for large groups</p>
-              <p class="text-lg font-bold text-primary">Best Rates</p>
+              <p class="text-lg font-bold text-orange-600 dark:text-orange-400">Best Rates</p>
             </CardContent>
           </Card>
 
           <Card className="text-center">
             <CardContent className="pt-6">
-              <Plane class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <Plane class="h-12 w-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
               <h3 class="font-semibold mb-2">Early Morning</h3>
               <p class="text-sm text-muted-foreground mb-3">3-5 AM pickups for early flights</p>
-              <p class="text-lg font-bold text-primary">No Extra Cost</p>
+              <p class="text-lg font-bold text-orange-600 dark:text-orange-400">No Extra Cost</p>
             </CardContent>
           </Card>
 
           <Card className="text-center">
             <CardContent className="pt-6">
-              <Car class="h-12 w-12 mx-auto mb-4 text-primary" />
+              <Car class="h-12 w-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
               <h3 class="font-semibold mb-2">Round Trips</h3>
               <p class="text-sm text-muted-foreground mb-3">Same-day or multi-day returns</p>
-              <p class="text-lg font-bold text-primary">Save 10%</p>
+              <p class="text-lg font-bold text-orange-600 dark:text-orange-400">Save 10%</p>
             </CardContent>
           </Card>
         </div>
@@ -394,7 +410,7 @@ const serviceSchema = generateServiceSchema();
   </section>
 
   <!-- CTA Section -->
-  <section class="w-full py-16 bg-gradient-to-r from-primary to-primary/90 text-white">
+  <section class="w-full py-16 bg-gradient-to-r from-orange-600 to-amber-600/90 text-white">
     <div class="container px-4 md:px-6">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-4">Ready to Book Your Electric Cab?</h2>
@@ -403,7 +419,7 @@ const serviceSchema = generateServiceSchema();
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://wa.me/917498264215?text=Hi%2C%20I%27d%20like%20to%20book%20an%20electric%20cab">
-            <Button size="lg" variant="secondary" className="bg-white dark:bg-gray-800 text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+            <Button size="lg" variant="secondary" className="bg-white dark:bg-gray-800 text-orange-600 dark:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700">
               <Phone class="mr-2 h-5 w-5" />
               Book on WhatsApp
             </Button>

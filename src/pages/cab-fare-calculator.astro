@@ -42,10 +42,10 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
 
     <!-- Calculator -->
     <div class="mb-16 max-w-4xl mx-auto">
-      <Card className="border-2 border-primary">
+      <Card className="border-2 border-orange-600">
         <CardHeader className="bg-primary/5">
           <CardTitle class="text-2xl flex items-center gap-2">
-            <Calculator className="h-6 w-6 text-primary" />
+            <Calculator className="h-6 w-6 text-orange-600 dark:text-orange-400" />
             Calculate Your Cab Fare
           </CardTitle>
         </CardHeader>
@@ -95,7 +95,7 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
             <div>
               <label class="block text-sm font-medium mb-3">Select Vehicle</label>
               <div class="grid md:grid-cols-2 gap-4">
-                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-orange-600 transition-colors">
                   <input type="radio" name="vehicle" value="kia" class="mt-1" checked />
                   <div class="flex-1">
                     <div class="font-semibold">Kia Carens EV</div>
@@ -103,7 +103,7 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
                     <div class="text-sm text-muted-foreground">400+ km range</div>
                   </div>
                 </label>
-                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-orange-600 transition-colors">
                   <input type="radio" name="vehicle" value="byd" class="mt-1" />
                   <div class="flex-1">
                     <div class="font-semibold">BYD E-MAX 7</div>
@@ -118,14 +118,14 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
             <div>
               <label class="block text-sm font-medium mb-3">Trip Type</label>
               <div class="grid md:grid-cols-2 gap-4">
-                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-orange-600 transition-colors">
                   <input type="radio" name="tripType" value="oneway" class="mt-1" checked />
                   <div class="flex-1">
                     <div class="font-semibold">One-Way Trip</div>
                     <div class="text-sm text-muted-foreground">Single journey</div>
                   </div>
                 </label>
-                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-primary transition-colors">
+                <label class="flex items-start gap-3 p-4 border-2 rounded-md cursor-pointer hover:border-orange-600 transition-colors">
                   <input type="radio" name="tripType" value="roundtrip" class="mt-1" />
                   <div class="flex-1">
                     <div class="font-semibold">Round Trip</div>
@@ -138,7 +138,7 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
             <!-- Calculate Button -->
             <button
               type="submit"
-              class="w-full bg-primary text-primary-foreground hover:bg-primary/90 p-4 rounded-md font-semibold text-lg transition-colors"
+              class="w-full bg-primary text-orange-600 dark:text-orange-400-foreground hover:bg-primary/90 p-4 rounded-md font-semibold text-lg transition-colors"
             >
               Calculate Fare →
             </button>
@@ -150,12 +150,12 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
             <div class="grid md:grid-cols-2 gap-6">
               <div class="text-center">
                 <div class="text-sm text-muted-foreground mb-1">Total Fare</div>
-                <div class="text-4xl font-bold text-primary" id="totalFare">₹0</div>
+                <div class="text-4xl font-bold text-orange-600 dark:text-orange-400" id="totalFare">₹0</div>
                 <div class="text-xs text-muted-foreground mt-1" id="tripTypeLabel">One-way</div>
               </div>
               <div class="text-center">
                 <div class="text-sm text-muted-foreground mb-1">Distance</div>
-                <div class="text-4xl font-bold text-primary" id="totalDistance">0 km</div>
+                <div class="text-4xl font-bold text-orange-600 dark:text-orange-400" id="totalDistance">0 km</div>
                 <div class="text-xs text-muted-foreground mt-1" id="vehicleLabel">Kia Carens EV</div>
               </div>
             </div>
@@ -183,10 +183,10 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
             </div>
 
             <div class="mt-6 flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/917498264215?text=Hi%2C%20I%20calculated%20fare%20and%20want%20to%20book" class="flex-1 bg-green-600 text-white hover:bg-green-700 p-3 rounded-md font-semibold text-center transition-colors">
+              <a href="https://wa.me/917498264215?text=Hi%2C%20I%20calculated%20fare%20and%20want%20to%20book" class="flex-1 bg-orange-600 text-white hover:bg-orange-700 p-3 rounded-md font-semibold text-center transition-colors">
                 Book This Trip on WhatsApp →
               </a>
-              <a href="tel:+917498264215" class="flex-1 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground p-3 rounded-md font-semibold text-center transition-colors">
+              <a href="tel:+917498264215" class="flex-1 border-2 border-orange-600 text-orange-600 dark:text-orange-400 hover:bg-primary hover:text-orange-600 dark:text-orange-400-foreground p-3 rounded-md font-semibold text-center transition-colors">
                 Call +91 74982 64215
               </a>
             </div>
@@ -215,11 +215,11 @@ import { Calculator, MapPin, Navigation, IndianRupee, Info } from "lucide-react"
               <div class="space-y-2">
                 <div class="flex justify-between text-sm">
                   <span>Kia Carens EV:</span>
-                  <span class="font-bold text-primary">{item.kia}</span>
+                  <span class="font-bold text-orange-600 dark:text-orange-400">{item.kia}</span>
                 </div>
                 <div class="flex justify-between text-sm">
                   <span>BYD E-MAX 7:</span>
-                  <span class="font-bold text-primary">{item.byd}</span>
+                  <span class="font-bold text-orange-600 dark:text-orange-400">{item.byd}</span>
                 </div>
               </div>
             </CardContent>

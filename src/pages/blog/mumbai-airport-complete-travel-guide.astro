@@ -124,19 +124,19 @@ const faqSchema = generateFAQSchema([
             <div class="grid md:grid-cols-3 gap-6">
               <div>
                 <p class="text-sm text-muted-foreground mb-1">Distance</p>
-                <p class="text-2xl font-bold text-primary">150 km</p>
+                <p class="text-2xl font-bold text-orange-600 dark:text-orange-400">150 km</p>
               </div>
               <div>
                 <p class="text-sm text-muted-foreground mb-1">Travel Time</p>
-                <p class="text-2xl font-bold text-primary">3-3.5 hrs</p>
+                <p class="text-2xl font-bold text-orange-600 dark:text-orange-400">3-3.5 hrs</p>
               </div>
               <div>
                 <p class="text-sm text-muted-foreground mb-1">Best Option</p>
-                <p class="text-2xl font-bold text-primary">Electric Cab</p>
+                <p class="text-2xl font-bold text-orange-600 dark:text-orange-400">Electric Cab</p>
               </div>
             </div>
             <div class="mt-4 pt-4 border-t">
-              <Button className="bg-green-600 hover:bg-green-700 w-full sm:w-auto" asChild>
+              <Button className="bg-orange-600 hover:bg-orange-700 w-full sm:w-auto" asChild>
                 <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need cab from Mumbai Airport to Pune for ₹2,700`} target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2 h-4 w-4" />
                   Book ₹2,700 Electric Cab Now
@@ -159,14 +159,14 @@ const faqSchema = generateFAQSchema([
           </CardHeader>
           <CardContent>
             <ol class="space-y-2 text-sm">
-              <li><a href="#terminals" class="text-primary hover:underline">1. Mumbai Airport Terminals Overview (T1 vs T2)</a></li>
-              <li><a href="#transport-options" class="text-primary hover:underline">2. Transport Options from Mumbai Airport to Pune</a></li>
-              <li><a href="#terminal-1-guide" class="text-primary hover:underline">3. Terminal 1 (T1) Complete Guide</a></li>
-              <li><a href="#terminal-2-guide" class="text-primary hover:underline">4. Terminal 2 (T2) Complete Guide</a></li>
-              <li><a href="#facilities" class="text-primary hover:underline">5. Airport Facilities & Services</a></li>
-              <li><a href="#travel-tips" class="text-primary hover:underline">6. Insider Travel Tips</a></li>
-              <li><a href="#pune-transport" class="text-primary hover:underline">7. Reaching Pune from Mumbai Airport</a></li>
-              <li><a href="#faq" class="text-primary hover:underline">8. Frequently Asked Questions</a></li>
+              <li><a href="#terminals" class="text-orange-600 dark:text-orange-400 hover:underline">1. Mumbai Airport Terminals Overview (T1 vs T2)</a></li>
+              <li><a href="#transport-options" class="text-orange-600 dark:text-orange-400 hover:underline">2. Transport Options from Mumbai Airport to Pune</a></li>
+              <li><a href="#terminal-1-guide" class="text-orange-600 dark:text-orange-400 hover:underline">3. Terminal 1 (T1) Complete Guide</a></li>
+              <li><a href="#terminal-2-guide" class="text-orange-600 dark:text-orange-400 hover:underline">4. Terminal 2 (T2) Complete Guide</a></li>
+              <li><a href="#facilities" class="text-orange-600 dark:text-orange-400 hover:underline">5. Airport Facilities & Services</a></li>
+              <li><a href="#travel-tips" class="text-orange-600 dark:text-orange-400 hover:underline">6. Insider Travel Tips</a></li>
+              <li><a href="#pune-transport" class="text-orange-600 dark:text-orange-400 hover:underline">7. Reaching Pune from Mumbai Airport</a></li>
+              <li><a href="#faq" class="text-orange-600 dark:text-orange-400 hover:underline">8. Frequently Asked Questions</a></li>
             </ol>
           </CardContent>
         </Card>
@@ -283,7 +283,7 @@ const faqSchema = generateFAQSchema([
           <div class="not-prose space-y-6 mb-8">
             <!-- Option 1: Electric Cab -->
             <Card className="border-green-600 border-2 relative">
-              <Badge className="absolute -top-3 left-4 bg-green-600 hover:bg-green-700">Best Value</Badge>
+              <Badge className="absolute -top-3 left-4 bg-orange-600 hover:bg-orange-700">Best Value</Badge>
               <CardHeader>
                 <div class="flex items-start justify-between">
                   <div>
@@ -323,7 +323,7 @@ const faqSchema = generateFAQSchema([
                     </ul>
                   </div>
                 </div>
-                <Button className="bg-green-600 hover:bg-green-700 w-full" asChild>
+                <Button className="bg-orange-600 hover:bg-orange-700 w-full" asChild>
                   <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Mumbai Airport to Pune cab for ₹2,700`} target="_blank" rel="noopener noreferrer">
                     <Phone className="mr-2 h-4 w-4" />
                     Book Electric Cab - ₹2,700
@@ -525,15 +525,15 @@ const faqSchema = generateFAQSchema([
               <CardContent className="pt-6">
                 <ul class="grid md:grid-cols-3 gap-4 text-sm">
                   <li class="flex items-center gap-2">
-                    <Plane className="h-4 w-4 text-primary" />
+                    <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                     <span><strong>IndiGo</strong> (Most flights)</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <Plane className="h-4 w-4 text-primary" />
+                    <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                     <span><strong>SpiceJet</strong> (All domestic)</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <Plane className="h-4 w-4 text-primary" />
+                    <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                     <span><strong>Go First</strong> (When operating)</span>
                   </li>
                 </ul>
@@ -649,19 +649,19 @@ const faqSchema = generateFAQSchema([
                     <p class="font-semibold mb-3">Domestic Airlines:</p>
                     <ul class="space-y-2 text-sm text-muted-foreground">
                       <li class="flex items-center gap-2">
-                        <Plane className="h-4 w-4 text-primary" />
+                        <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                         <span>Air India (all flights)</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <Plane className="h-4 w-4 text-primary" />
+                        <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                         <span>Vistara (all flights)</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <Plane className="h-4 w-4 text-primary" />
+                        <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                         <span>IndiGo (select routes)</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <Plane className="h-4 w-4 text-primary" />
+                        <Plane className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                         <span>Air Asia India</span>
                       </li>
                     </ul>
@@ -854,7 +854,7 @@ const faqSchema = generateFAQSchema([
           <p class="text-muted-foreground mb-4">
             Book Shree Morya Cabs electric cab for ₹2,700 all-inclusive. 30 minutes free waiting, flight tracking, spacious 7-seater SUV.
           </p>
-          <Button className="bg-green-600 hover:bg-green-700" size="lg" asChild>
+          <Button className="bg-orange-600 hover:bg-orange-700" size="lg" asChild>
             <a href={`https://wa.me/${CONTACT.phone}?text=Hi, I need Mumbai Airport to Pune cab`} target="_blank" rel="noopener noreferrer">
               <Phone className="mr-2 h-5 w-5" />
               Book Now - ₹2,700

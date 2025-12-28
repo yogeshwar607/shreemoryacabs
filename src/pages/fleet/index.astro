@@ -15,7 +15,7 @@ const vehicleSchemas = vehicles.map((vehicle) => generateVehicleSchema(vehicle))
 
 <MainLayout
   title="Electric Fleet - Premium EV Cabs in Maharashtra | Shree Morya Cabs"
-  description="Explore our premium electric vehicle fleet. Book Kia Carens EV (7-seater) or BYD E-MAX 7 for comfortable, eco-friendly travel. Zero emissions, spacious interiors, advanced safety features."
+  description="Explore our premium electric vehicle fleet. Book Kia Carens EV (7-seater) or BYD E-MAX 7 for comfortable, eco-friendly travel. Clean electric rides, spacious interiors, advanced safety features."
   keywords={[
     "electric cab fleet",
     "EV cab booking",
@@ -27,7 +27,7 @@ const vehicleSchemas = vehicles.map((vehicle) => generateVehicleSchema(vehicle))
 >
   <StructuredData data={vehicleSchemas} />
   <!-- Hero Section -->
-  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-primary/10 to-background">
+  <section class="w-full py-12 md:py-24 bg-gradient-to-b from-orange-50 dark:from-orange-950/20 to-background">
     <div class="container px-4 md:px-6">
       <div class="max-w-3xl">
         <Breadcrumbs items={[{ name: "Fleet", url: "/fleet" }]} />
@@ -39,7 +39,7 @@ const vehicleSchemas = vehicles.map((vehicle) => generateVehicleSchema(vehicle))
         </h1>
         <p class="text-lg text-muted-foreground">
           Choose from our carefully selected fleet of electric vehicles. Each car offers zero emissions,
-          premium comfort, and the latest safety features for your journey.
+          comfortable journey, and the latest safety features for your journey.
         </p>
       </div>
     </div>
@@ -80,15 +80,15 @@ const vehicleSchemas = vehicles.map((vehicle) => generateVehicleSchema(vehicle))
                   <!-- Quick Stats -->
                   <div class="flex flex-wrap gap-4">
                     <div class="flex items-center gap-2">
-                      <Battery class="w-5 h-5 text-primary" />
+                      <Battery class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                       <span class="text-sm font-medium">{vehicle.range}</span>
                     </div>
                     <div class="flex items-center gap-2">
-                      <Users class="w-5 h-5 text-primary" />
+                      <Users class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                       <span class="text-sm font-medium">{vehicle.seating} Passengers</span>
                     </div>
                     <div class="flex items-center gap-2">
-                      <Zap class="w-5 h-5 text-primary" />
+                      <Zap class="w-5 h-5 text-orange-600 dark:text-orange-400" />
                       <span class="text-sm font-medium">{vehicle.specifications.battery}</span>
                     </div>
                   </div>
