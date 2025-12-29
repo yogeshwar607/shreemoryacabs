@@ -69,7 +69,7 @@ const blogPosts = [
     readTime: "12 min read"
   },
   {
-    title: "5-Seater vs 7-Seater Electric Cab: Complete Selection Guide 2025",
+    title: "5-Seater vs 7-Seater Electric Cab: Practical Selection Guide 2025",
     slug: "5-seater-vs-7-seater-electric-cab-guide",
     description: "Choosing between 5-seater and 7-seater electric cab? Compare pricing, comfort, luggage space, and find the perfect fit for your trip.",
     date: "2025-01-31",
@@ -79,13 +79,13 @@ const blogPosts = [
   {
     title: "Pune to Mumbai: Train vs Bus vs Cab - Complete Comparison 2025",
     slug: "pune-mumbai-train-vs-bus-vs-cab-comparison",
-    description: "Comprehensive comparison of train, bus, and cab travel from Pune to Mumbai. Cost, comfort, convenience, and time analysis for airport trips.",
+    description: "Helpful comparison of train, bus, and cab travel from Pune to Mumbai. Cost, comfort, convenience, and time analysis for airport trips.",
     date: "2025-01-31",
     category: "Travel Comparison",
     readTime: "11 min read"
   },
   {
-    title: "Navi Mumbai Airport to Pune: Complete Travel Guide 2025",
+    title: "Navi Mumbai Airport to Pune: Practical Travel Guide 2025",
     slug: "navi-mumbai-airport-pune-complete-guide",
     description: "Everything you need to know about traveling from Navi Mumbai Airport to Pune. Routes, timing, costs, and booking tips.",
     date: "2025-01-31",
@@ -204,7 +204,7 @@ const breadcrumbSchema = {
   <div class="container mx-auto px-4 py-8">
     <!-- Breadcrumbs -->
     <nav class="text-sm mb-6 text-gray-600 dark:text-gray-300 dark:text-gray-400">
-      <a href="/" class="hover:text-green-600 dark:hover:text-green-400">Home</a>
+      <a href="/" class="hover:text-orange-600 dark:hover:text-green-400">Home</a>
       <span class="mx-2">/</span>
       <span>Blog</span>
     </nav>
@@ -242,7 +242,7 @@ const breadcrumbSchema = {
           <a href={`/blog/${post.slug}`} class="block">
             <div class="p-6">
               <Badge className="mb-3">{post.category}</Badge>
-              <h2 class="text-xl font-bold mb-3 leading-tight hover:text-green-600 transition-colors">
+              <h2 class="text-xl font-bold mb-3 leading-tight hover:text-orange-600 transition-colors">
                 {post.title}
               </h2>
               <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">

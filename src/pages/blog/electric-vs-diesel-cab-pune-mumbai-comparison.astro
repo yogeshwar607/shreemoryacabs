@@ -106,7 +106,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <thead>
                 <tr class="bg-muted">
                   <th class="border p-3 text-left font-semibold">Cost Component</th>
-                  <th class="border p-3 text-center font-semibold bg-green-50 dark:bg-green-900/30">Electric Cab</th>
+                  <th class="border p-3 text-center font-semibold bg-orange-50 dark:bg-orange-900/30">Electric Cab</th>
                   <th class="border p-3 text-center font-semibold bg-red-50 dark:bg-red-900/30">Diesel Cab</th>
                   <th class="border p-3 text-center font-semibold">Your Savings</th>
                 </tr>
@@ -114,37 +114,37 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <tbody>
                 <tr>
                   <td class="border p-3 font-medium">Base Fare</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30">₹3,700</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30">₹3,700</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30">₹4,000</td>
                   <td class="border p-3 text-center">-</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Toll Charges</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400">+ ₹430</td>
                   <td class="border p-3 text-center">₹430</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-medium">Driver Allowance</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400">+ ₹500</td>
                   <td class="border p-3 text-center">₹500</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Parking Charges</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30 text-green-700 dark:text-green-400 font-semibold">Included</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400">+ ₹50</td>
                   <td class="border p-3 text-center">₹50</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-medium">Night Charges (if applicable)</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">₹0</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30 text-green-700 dark:text-green-400 font-semibold">₹0</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400">+ ₹300</td>
                   <td class="border p-3 text-center">₹300</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Surge Pricing Risk</td>
-                  <td class="border p-3 text-center bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-semibold">Never</td>
+                  <td class="border p-3 text-center bg-orange-50 dark:bg-orange-900/30 text-green-700 dark:text-green-400 font-semibold">Never</td>
                   <td class="border p-3 text-center bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400">Occasional</td>
                   <td class="border p-3 text-center">Variable</td>
                 </tr>
@@ -160,31 +160,31 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <div class="grid md:grid-cols-3 gap-6">
             <Card className="border-green-200">
-              <CardHeader className="bg-green-50 dark:bg-green-900/30">
+              <CardHeader className="bg-orange-50 dark:bg-orange-900/30">
                 <CardTitle>Per Trip Savings</CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
-                <p class="text-4xl font-bold text-green-600 mb-2">₹1,300</p>
+                <p class="text-4xl font-bold text-orange-600 mb-2">₹1,300</p>
                 <p class="text-sm text-muted-foreground">Average savings per one-way trip</p>
               </CardContent>
             </Card>
 
             <Card className="border-green-200">
-              <CardHeader className="bg-green-50 dark:bg-green-900/30">
+              <CardHeader className="bg-orange-50 dark:bg-orange-900/30">
                 <CardTitle>Monthly Savings</CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
-                <p class="text-4xl font-bold text-green-600 mb-2">₹5,200</p>
+                <p class="text-4xl font-bold text-orange-600 mb-2">₹5,200</p>
                 <p class="text-sm text-muted-foreground">If you travel twice a month (4 trips)</p>
               </CardContent>
             </Card>
 
             <Card className="border-green-200">
-              <CardHeader className="bg-green-50 dark:bg-green-900/30">
+              <CardHeader className="bg-orange-50 dark:bg-orange-900/30">
                 <CardTitle>Annual Savings</CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
-                <p class="text-4xl font-bold text-green-600 mb-2">₹67,600</p>
+                <p class="text-4xl font-bold text-orange-600 mb-2">₹67,600</p>
                 <p class="text-sm text-muted-foreground">Weekly traveler (52 trips/year)</p>
               </CardContent>
             </Card>
@@ -194,15 +194,15 @@ const breadcrumbSchema = generateBreadcrumbSchema([
         <!-- Environmental Impact -->
         <section class="mb-12">
           <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
-            <Leaf class="w-8 h-8 text-green-600" />
+            <Leaf class="w-8 h-8 text-orange-600" />
             Environmental Impact Comparison
           </h2>
 
           <div class="grid md:grid-cols-2 gap-6 mb-8">
             <Card className="border-green-200">
-              <CardHeader className="bg-green-50 dark:bg-green-900/30">
+              <CardHeader className="bg-orange-50 dark:bg-orange-900/30">
                 <CardTitle className="flex items-center gap-2">
-                  <Check class="w-5 h-5 text-green-600" />
+                  <Check class="w-5 h-5 text-orange-600" />
                   Electric Cab (Zero Emissions)
                 </CardTitle>
               </CardHeader>
@@ -266,22 +266,22 @@ const breadcrumbSchema = generateBreadcrumbSchema([
             </Card>
           </div>
 
-          <div class="bg-green-50 dark:bg-green-900/30 rounded-lg p-6 border-2 border-green-200">
+          <div class="bg-orange-50 dark:bg-orange-900/30 rounded-lg p-6 border-2 border-green-200">
             <h3 class="font-bold text-xl mb-3 text-green-800 dark:text-green-300">🌍 Your Environmental Contribution</h3>
             <p class="text-sm text-green-700 dark:text-green-400 mb-4">
               By choosing electric cab over diesel for Pune-Mumbai, you personally prevent:
             </p>
             <div class="grid md:grid-cols-3 gap-4 text-center">
               <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                <p class="text-3xl font-bold text-green-600">75 kg</p>
+                <p class="text-3xl font-bold text-orange-600">75 kg</p>
                 <p class="text-xs text-muted-foreground">CO2 saved per trip</p>
               </div>
               <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                <p class="text-3xl font-bold text-green-600">3.9 tons</p>
+                <p class="text-3xl font-bold text-orange-600">3.9 tons</p>
                 <p class="text-xs text-muted-foreground">Annual CO2 reduction (weekly travel)</p>
               </div>
               <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                <p class="text-3xl font-bold text-green-600">180</p>
+                <p class="text-3xl font-bold text-orange-600">180</p>
                 <p class="text-xs text-muted-foreground">Trees equivalent impact</p>
               </div>
             </div>
@@ -303,27 +303,27 @@ const breadcrumbSchema = generateBreadcrumbSchema([
                   <CardContent>
                     <ul class="space-y-2 text-sm">
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Silent Operation:</strong> Can have conversation at normal volume, no engine roar</span>
                       </li>
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Smooth Acceleration:</strong> No gear shifts, seamless power delivery</span>
                       </li>
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Zero Vibrations:</strong> Electric motors have minimal moving parts</span>
                       </li>
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Clean Air Inside:</strong> No diesel fumes seeping in, cabin air filter works better</span>
                       </li>
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Modern Interior:</strong> Latest vehicles with premium features</span>
                       </li>
                       <li class="flex gap-2">
-                        <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                        <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                         <span><strong>Better HVAC:</strong> Electric climate control, consistent temperature</span>
                       </li>
                     </ul>
@@ -396,32 +396,32 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <tbody>
                 <tr>
                   <td class="border p-3 font-medium">Vehicle Age</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">2023-2024 models (latest)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">2023-2024 models (latest)</td>
                   <td class="border p-3">2019-2021 models (older)</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Range Anxiety</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">300-400 km range (2x Pune-Mumbai distance)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">300-400 km range (2x Pune-Mumbai distance)</td>
                   <td class="border p-3">600-700 km (more buffer but unnecessary)</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-medium">Maintenance</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">Lower maintenance (fewer moving parts)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">Lower maintenance (fewer moving parts)</td>
                   <td class="border p-3">Higher maintenance (engine, transmission issues)</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Breakdown Risk</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">Very low (electric motors are reliable)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">Very low (electric motors are reliable)</td>
                   <td class="border p-3">Higher (engine problems common in older vehicles)</td>
                 </tr>
                 <tr>
                   <td class="border p-3 font-medium">Safety Features</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">Latest: ABS, airbags, ADAS (some models)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">Latest: ABS, airbags, ADAS (some models)</td>
                   <td class="border p-3">Basic safety features</td>
                 </tr>
                 <tr class="bg-muted/30">
                   <td class="border p-3 font-medium">Resale Value</td>
-                  <td class="border p-3 bg-green-50 dark:bg-green-900/30">Better (future of transport)</td>
+                  <td class="border p-3 bg-orange-50 dark:bg-orange-900/30">Better (future of transport)</td>
                   <td class="border p-3">Declining (emissions norms tightening)</td>
                 </tr>
               </tbody>
@@ -465,19 +465,19 @@ const breadcrumbSchema = generateBreadcrumbSchema([
               <CardContent>
                 <ul class="space-y-2 text-sm">
                   <li class="flex gap-2">
-                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                     <span><strong>Lower Toll Charges:</strong> EVs get discounted tolls on many highways</span>
                   </li>
                   <li class="flex gap-2">
-                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                     <span><strong>Preferred Parking:</strong> EV-only parking spots at airports, malls</span>
                   </li>
                   <li class="flex gap-2">
-                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                     <span><strong>No Odd-Even Restrictions:</strong> EVs exempt from pollution-based restrictions</span>
                   </li>
                   <li class="flex gap-2">
-                    <Check class="w-4 h-4 text-green-600 mt-0.5" />
+                    <Check class="w-4 h-4 text-orange-600 mt-0.5" />
                     <span><strong>Tax Benefits:</strong> Lower GST, road tax exemptions</span>
                   </li>
                 </ul>
@@ -518,7 +518,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
           <div class="grid md:grid-cols-2 gap-6">
             <Card className="border-2 border-green-500 dark:border-green-600">
-              <CardHeader className="bg-green-50 dark:bg-green-900/30">
+              <CardHeader className="bg-orange-50 dark:bg-orange-900/30">
                 <CardTitle className="text-center text-xl">Electric Cab: The Winner 🏆</CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
@@ -619,15 +619,15 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
                 <div class="grid md:grid-cols-3 gap-4 mb-6">
                   <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                    <p class="text-2xl font-bold text-green-600">₹3,700</p>
+                    <p class="text-2xl font-bold text-orange-600">₹3,700</p>
                     <p class="text-sm text-muted-foreground">vs ₹5,000 diesel</p>
                   </div>
                   <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                    <p class="text-2xl font-bold text-green-600">0 kg</p>
+                    <p class="text-2xl font-bold text-orange-600">0 kg</p>
                     <p class="text-sm text-muted-foreground">CO2 emissions</p>
                   </div>
                   <div class="bg-white dark:bg-gray-800 rounded-lg p-4">
-                    <p class="text-2xl font-bold text-green-600">100%</p>
+                    <p class="text-2xl font-bold text-orange-600">100%</p>
                     <p class="text-sm text-muted-foreground">Silent & smooth</p>
                   </div>
                 </div>
